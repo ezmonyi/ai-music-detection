@@ -1,0 +1,240 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=24mm]{geometry}
+\usepackage{booktabs,longtable,tabularx}
+\usepackage{graphicx,float}
+\usepackage{xcolor,listings}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage{seqsplit}
+\newcommand{\filepath}[1]{\path{#1}}
+\newcommand{\hashvalue}[1]{{\ttfamily\seqsplit{#1}}}
+\lstset{basicstyle=\ttfamily\footnotesize,breaklines=true,frame=single,backgroundcolor=\color{black!3}}
+\title{External Validation of a Vocal-Domain Spectral Filter\\\large Revision-Pinned AIME Test Construction, Frozen Evaluation, and Accuracy Analysis}
+\author{Undergraduate Thesis Experiment Archive}
+\date{Experiment frozen and executed: September 2, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report tests the previously developed Human-versus-AI music filter on a fully external, revision-pinned Hugging Face test set. Fifty MTG-Jamendo Human tracks and 50 AI tracks from Udio, Riffusion, Stable Audio v1, and Stable Audio v2 were sampled from AIME. Every Human--AI pair shares the exact same three-tag description, and the five random mixed groups use 50 disjoint semantic conditions. FMA, Suno, HeartMuLa, ACE-Step, and MUSDB18 audio were excluded from the test set. All inputs were native 44.1 or 48 kHz and standardized to 30 s, stereo, 44.1 kHz PCM-16 FLAC. Demucs ran only on an RTX 5090. The frozen all-track representation, \texttt{bias\_corrected\_\_vocals\_without\_5\_10k}, achieved 0.620 accuracy and balanced accuracy but only 0.537 ROC-AUC (95\% CI 0.426--0.654). It preserved Human specificity (0.940) while detecting only 0.300 of AI tracks. The external ranking collapse, from 0.943 internal pooled AUC to 0.537, shows that the current method is not a generator-independent detector. A separately frozen vocal-active variant covered only 19\% of random AIME music and also failed to transfer.
+\end{abstract}
+
+\section{Objective and frozen decision rule}
+
+The question is whether the earlier spectral filter generalizes beyond every audio source used to construct it. Before external labels were joined, the following choices were frozen:
+\begin{itemize}
+  \item primary representation: \texttt{bias\_corrected\_\_vocals\_without\_5\_10k};
+  \item standardized ridge regression with $\alpha=10$;
+  \item decision threshold $s=0$;
+  \item the pre-existing MUSDB18-derived Demucs bias curve, SHA-256 \hashvalue{bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e}; and
+  \item an optional vocal-active sensitivity gate at raw vocal/mix RMS $\geq-18$ dB.
+\end{itemize}
+The representation was the best corrected representation in both the earlier all-track pooled analysis (AUC 0.943) and vocal-active pooled analysis (AUC 0.969). These prior results, rather than any AIME label, determined the primary model.
+
+\section{Hugging Face dataset search and choice}
+
+Dataset cards, repository contents, revisions, and parquet layouts were inspected with the Hugging Face CLI. AIME contains 500 MTG-Jamendo tracks and 6,000 generated tracks from named providers under MTG-Jamendo-derived tag combinations \citep{aime2025dataset,aime2025paper}. It was selected because exact prompt-tag descriptions can be matched across bona-fide and generated music.
+
+\begin{table}[H]
+\centering
+\small
+\caption{External dataset audit and exclusion logic.}
+\begin{tabularx}{\linewidth}{lXl}
+\toprule
+Candidate & Audit outcome & Role \\
+\midrule
+AIME & Human and named AI audio included; common tag descriptions; 44.1/48 kHz selected rows & Primary \\
+Jam-ALT & Clear Jamendo Human vocals, but no paired AI and a vocal-only corpus shift & Future stress set \\
+SONICS & Synthetic audio hosted, while real audio is represented by YouTube IDs; contains Suno & Excluded \\
+Echoes & Generated archive includes current ACE-Step/Suno domains; Human audio availability is unclear from the card & Excluded \\
+AI-vs-Human audio & Hosted at 16 kHz; would create an 8 kHz Nyquist shortcut & Excluded \\
+GTZAN & Human-only, 22.05 kHz mono; would create an 11.025 kHz cutoff & Excluded \\
+MusicGen multigenre & 32 kHz and weak provenance documentation & Excluded \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The AIME main/card revision is \hashvalue{b84d4be5eda830b6eb714998569dba73530f2601}; the HF parquet-conversion revision is \hashvalue{1bdacac93127439e361bdd19d575d8b596bca4e3}. All twelve downloaded shard hashes are recorded in \filepath{source/source_parquet_sha256.txt}.
+
+\section{External test construction}
+
+The existing filter uses FMA Human recordings and Suno, HeartMuLa, and ACE-Step generated recordings; MUSDB18 is used only to estimate separator response. All five domains were forbidden in the external sampler. The chosen external domains are MTG-Jamendo Human and Udio, Riffusion, Stable Audio v1, and Stable Audio v2 AI.
+
+The sampler first found exact matches of the three-tag description text. A seeded bipartite allocation then selected 50 unique semantic conditions while satisfying provider quotas. Each condition contributes one Human and one AI track. The 50 pairs were divided into five disjoint random groups, each containing 10 Human and 10 AI examples and a mixture of all four AI providers.
+
+\begin{table}[H]
+\centering
+\caption{Frozen external cohort.}
+\begin{tabular}{lrrl}
+\toprule
+Source & Label & Tracks & Native rate \\
+\midrule
+MTG-Jamendo & Human & 50 & 48 kHz \\
+Udio & AI & 13 & 48 kHz \\
+Riffusion & AI & 13 & 44.1 kHz \\
+Stable Audio v1 & AI & 12 & 48 kHz \\
+Stable Audio v2 & AI & 12 & 48 kHz \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Selection used only source provenance, exact description text, and seed 20260902. Detector scores and audio features were not available to the sampler. The final manifest SHA-256 is \hashvalue{257f79264c3e00b771639210378e0b8c5df4a67ba8dd9a33fd5f619e7ea83e1a}.
+
+\section{Audio and GPU procedure}
+
+Only the 100 selected embedded waveforms were extracted. Long tracks received a deterministic seed-derived crop; short tracks would have been padded. Every item was converted to exactly 30.000 s, stereo, 44.1 kHz, PCM-16 FLAC without loudness normalization or EQ. Original rate, codec, duration, crop start, source shard and row, raw hash, and standardized hash are retained in \filepath{testset/audio_qc.csv}. All raw and standardized hashes were unique. All inputs met the native-full-band rule $f_s\geq40$ kHz, so no upsampled low-rate item entered the primary result.
+
+Before Demucs inference, GPU 0/1 hosted unrelated vLLM processes; GPUs 2--7 were idle. The test used only RTX 5090 GPU 2. The existing wrapper ran \texttt{htdemucs --two-stems vocals --float32 --shifts 0 --overlap 0.25 --segment 7 --jobs 1} \citep{demucs2021}. It validated 200 stems from 100 tracks and completed in 269.3 s. Frozen correction and feature extraction then completed in 39.2 s.
+
+\section{Evaluation protocol}
+
+The all-track model was refitted on 400 unique FMA Human development rows (repeated only as class weights to 1,200) and 400 development rows from each of Suno, HeartMuLa, and ACE-Step. The separately frozen vocal-active model used 249 unique Human, 268 Suno, 400 HeartMuLa, and 233 ACE-Step development rows. External labels were used only after scores were produced.
+
+Metrics are accuracy, balanced accuracy (BA), ROC-AUC, AI sensitivity, Human specificity, and stratified bootstrap intervals with 2,000 replicates. Because every primary group is balanced, accuracy and BA are equal at the group level.
+
+\section{Results}
+
+\subsection{Primary external result}
+
+\begin{table}[H]
+\centering
+\caption{Frozen all-track result on the 50+50 external set.}
+\begin{tabular}{lrr}
+\toprule
+Metric & Estimate & 95\% bootstrap CI \\
+\midrule
+Accuracy / balanced accuracy & 0.620 & 0.550--0.690 \\
+ROC-AUC & 0.537 & 0.426--0.654 \\
+AI sensitivity & 0.300 & --- \\
+Human specificity & 0.940 & --- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The confusion counts are TN 47, FP 3, FN 35, and TP 15. Thus the threshold behaves conservatively: it rarely calls Human music AI, but misses 70\% of the external AI tracks. The AUC confidence interval includes 0.5, showing that the score ranking is not reliably above chance on this sample.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.72\linewidth]{../evaluation/confusion_matrix.png}
+\caption{Confusion matrix for the frozen all-track rule.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.9\linewidth]{../evaluation/score_distribution.png}
+\caption{Human and AI score distributions under the frozen threshold. Their extensive overlap explains the weak external ROC-AUC.}
+\end{figure}
+
+\subsection{Five random mixed groups}
+
+\begin{table}[H]
+\centering
+\caption{Independent 10+10 group results.}
+\begin{tabular}{lrrrr}
+\toprule
+Group & Accuracy / BA & ROC-AUC & AI sensitivity & Human specificity \\
+\midrule
+G1 & 0.700 & 0.590 & 0.400 & 1.000 \\
+G2 & 0.700 & 0.550 & 0.400 & 1.000 \\
+G3 & 0.500 & 0.520 & 0.200 & 0.800 \\
+G4 & 0.550 & 0.570 & 0.200 & 0.900 \\
+G5 & 0.650 & 0.450 & 0.300 & 1.000 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.93\linewidth]{../evaluation/random_group_balanced_accuracy.png}
+\caption{Balanced accuracy and 95\% stratified bootstrap intervals for the five frozen random groups.}
+\end{figure}
+
+\subsection{Provider breakdown}
+
+\begin{table}[H]
+\centering
+\caption{AI-provider results with each provider's matched Human controls.}
+\begin{tabular}{lrrrr}
+\toprule
+Provider & BA & ROC-AUC & AI sensitivity & Human specificity \\
+\midrule
+Udio & 0.577 & 0.598 & 0.154 & 1.000 \\
+Riffusion & 0.731 & 0.680 & 0.538 & 0.923 \\
+Stable Audio v1 & 0.625 & 0.562 & 0.250 & 1.000 \\
+Stable Audio v2 & 0.542 & 0.403 & 0.250 & 0.833 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Transfer is provider-dependent. Riffusion is the easiest selected source, while Stable Audio v2 reverses the score ranking below 0.5 AUC. This asymmetry is consistent with generator fingerprints rather than one invariant AI-vocal signature.
+
+\subsection{Vocal-active coverage and post-hoc diagnostics}
+
+The frozen $-18$ dB activity gate retained 13/50 Human and 6/50 AI tracks. Its total coverage is therefore only 19\%, with unequal Human/AI coverage of 26\% and 12\%. On these 19 tracks, the separately frozen active model achieved 0.632 raw accuracy, 0.462 BA, 0.436 AUC, zero AI sensitivity, and 0.923 Human specificity. The raw accuracy is misleading because the covered subset is imbalanced; BA is the relevant conditional number.
+
+\begin{table}[H]
+\centering
+\caption{Post-hoc representation audit on all 100 tracks. These rows cannot replace the predeclared primary result.}
+\begin{tabular}{lrr}
+\toprule
+Corrected representation & BA & ROC-AUC \\
+\midrule
+Scalar vocal metrics & 0.650 & 0.731 \\
+Full 0.3--20 kHz vector & 0.630 & 0.692 \\
+Only 5--10 kHz & 0.710 & 0.710 \\
+Without 5--10 kHz (primary) & 0.620 & 0.537 \\
+Only 5--16 kHz & 0.610 & 0.667 \\
+Low/mid 0.3--5 kHz & 0.560 & 0.602 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The 5--10 kHz diagnostic performs better than the primary representation, which omitted that band. This is a useful hypothesis consistent with the original listening observation, but choosing it now would be test-set overfitting. It must be pre-registered and evaluated on a second untouched external set.
+
+\section{Conclusions and thesis implications}
+
+\begin{enumerate}
+  \item The current frozen detector is not externally reliable as a universal AI-music classifier. Its internal pooled AUC of 0.943 falls to 0.537 on unseen Human and generator domains.
+  \item The fixed threshold is strongly Human-biased: specificity remains high, but AI sensitivity falls to 0.300.
+  \item The failure is not explained by a trivial sample-rate cutoff: every selected input is native 44.1 or 48 kHz.
+  \item Random AIME music is mostly outside the intended vocal-active operating region. The gate's 19\% coverage must be treated as a limitation, not hidden behind conditional accuracy.
+  \item High-frequency vocal structure remains a plausible heuristic, but the useful band is not generator-invariant under the present training set. The post-hoc 5--10 kHz result should motivate, not substitute for, a new preregistered experiment.
+\end{enumerate}
+
+The next defensible iteration is to train on more Human corpora and more AI providers, explicitly construct a vocal-tag or verified-vocal cohort, freeze the 5--10 kHz hypothesis, and test once on an untouched source such as a licensed Jam-ALT Human subset paired with newly generated vocal music. Provider, codec, mastering, and separator sensitivity should remain separate report axes.
+
+\section{Artifact reference index}
+
+\begin{longtable}{p{50mm}p{100mm}}
+\toprule
+Path & Contents \\
+\midrule
+\endfirsthead
+\toprule
+Path & Contents \\
+\midrule
+\endhead
+\filepath{EXPERIMENT_PROTOCOL.md} & Frozen design, exclusions, bandwidth rule, and reporting policy \\
+\filepath{DATASET_RESEARCH.md} & Hugging Face candidates, card/provenance audit, and exclusion reasons \\
+\filepath{RUN_LOG.md} & Chronological operations, GPU evidence, timings, and final status \\
+\filepath{REPRODUCE_COMMANDS.md} & Revision-pinned download, standardization, Demucs, feature, and evaluation commands \\
+\filepath{code/build_aime_external_testset.py} & Exact-description matching, seeded disjoint allocation, extraction, standardization, hashes, and manifests \\
+\filepath{code/extract_external_features.py} & Frozen bias-corrected feature extraction without classifier fitting \\
+\filepath{code/evaluate_frozen_external_filter.py} & Refit on old development only, external scoring, metrics, intervals, and figures \\
+\filepath{testset/manifest.jsonl} & Frozen 100-track mixed manifest with revisions, groups, pairs, rates, crops, and hashes \\
+\filepath{testset/groups/group_01.jsonl}--\filepath{group_05.jsonl} & Five randomized 10+10 test groups \\
+\filepath{testset/audio_qc.csv} & Per-track native and standardized audio validation \\
+\filepath{features/} & Raw/corrected scalar metrics, frequency vectors, activity table, and metadata \\
+\filepath{evaluation/scores.csv} & Per-track frozen all-track and vocal-active scores and decisions \\
+\filepath{evaluation/metrics.csv} & Overall, group, provider, and active-cohort statistics and confidence intervals \\
+\filepath{evaluation/representation_diagnostics.csv} & Post-hoc representation comparison, explicitly not model selection \\
+\filepath{evaluation/REPORT.md} & Machine-generated compact results report \\
+\filepath{logs/} and \filepath{state/demucs.jsonl} & Download/build, Demucs, extraction, evaluation, environment, and resume-state evidence \\
+\filepath{/mnt/nfs-code/users/yi/external_filter_test_20260902} & Complete remote source shards, raw audio, standardized clips, 200 stems, and lightweight results \\
+\bottomrule
+\end{longtable}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+\end{document}

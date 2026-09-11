@@ -1,0 +1,117 @@
+% Requires booktabs. Methodology supplement; not a completed-results claim.
+\section{Exploratory source-held-out development after external evaluation}
+\label{sec:v5-exploratory-sourceheldout}
+
+Following the frozen Mureka and Saraga transfer experiments, a new, explicitly
+exploratory development package combines 2,207 accepted 60-second excerpts:
+1,311 Human and 896 AI recordings, from six Human sources and two generators.
+This consists of the original 1,604 development recordings, 500 Mureka
+recordings and 103 Saraga recordings. It is the eligible common-context subset,
+not the entire collected corpus. The original 438 locked and 50 pilot
+recordings remain excluded. A separate origin ledger preserves original
+roles, metadata and admission flags; no upstream role is overwritten.
+
+Mureka and Saraga outcomes have already been examined. Their reuse cannot be
+presented as untouched confirmation of hypotheses motivated by those outcomes.
+Source-held-out evaluation prevents the specified within-fit source overlap,
+but does not remove research-level exposure or establish pretraining
+independence. The preceding frozen experiments remain unchanged.
+
+\subsection{Complete family and quantity ablation}
+
+All 54 existing descriptors are retained: S (15), D (3), R (3), P (6),
+F (15), H (6), and M (6). Every recording and its missing values remain in
+the common cohort. The primary design evaluates all 127 nonempty subsets at
+five caps, with training-only median imputation and missingness indicators.
+Two additional all-cap diagnostic modes use median-imputed values without
+indicators, or missingness indicators alone. These diagnostics do not select
+features or models.
+
+With seed 20260907, global groups are assigned to five hash buckets. Each
+source-held-out arm excludes the entire held-out source and every current
+test-bucket group from training. Its test set contains current-bucket examples
+from the held source and the opposite class. The verified schedule contains
+28 Human-source folds, 10 generator folds, and five ordinary group-disjoint
+descriptive folds. Saraga occupies only three buckets, with 77, 14 and 12
+Human recordings; its two empty source-fold cells are recorded, not filled.
+
+A cap limits groups per class/source within the training fold, retaining all
+recordings in selected groups. It is not a recording count or a balanced
+total sample size. Deterministic group rankings are nested across caps.
+Actual training-row ranges over the 43 valid folds are shown in
+Table~\ref{tab:v5-caps}.
+
+\begin{table}[htbp]
+\centering
+\caption{Verified training quantities in the prospective v5 schedule.
+The cap counts groups per training source, not songs.}
+\label{tab:v5-caps}
+\begin{tabular}{lrr}
+\toprule
+Group cap & Minimum training rows & Maximum training rows \\
+\midrule
+25 & 194 & 389 \\
+50 & 355 & 678 \\
+100 & 578 & 898 \\
+200 & 963 & 1,297 \\
+All & 1,351 & 1,805 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The fixed weighted ridge model has penalty 10 and an unpenalized intercept.
+Training weights balance classes, sources within class, groups within source,
+and recordings within group, then sum to training size $n$. Consequently,
+the mean-loss regularization is $10/n$: quantity also changes effective
+regularization. This design preserves the historical model implementation,
+but is not a causal quantity-only or diversity-only experiment. All decisions
+use raw, unbounded identity-link score $\geq 0.5$; these scores are not
+calibrated probabilities. No full-cohort refit or threshold search is performed.
+
+\subsection{Aggregation and acceptance}
+
+Within each held-source arm, candidate, cap, mode and source, the recording-level
+class-conditional correct rate is the correct count divided by unique
+out-of-fold recordings: Human specificity or AI sensitivity, not joint accuracy.
+The component-level endpoint is the unweighted mean of individual global-group
+correct rates. Averaging fold-level component means would be incorrect when
+buckets contain different numbers of components, as in Saraga's 2/1/2 split.
+
+Two-class summaries average source-pair metrics within a fold, valid folds
+within a held-source arm, and then held-source arms within a fold type.
+Human-source, generator and ordinary group holdouts remain separate.
+Pooled-fold companion metrics are explicitly distinguished. No pooled
+out-of-fold AUC is computed across separately fitted score scales, and no
+raw predictions are pooled across unlike source-held-out arms. All 635
+primary subset/cap cells per reporting arm are retained; no winner or
+statistical significance is inferred from descriptive fold ranges.
+
+The frozen schedule specifies 27,305 primary and 10,922 diagnostic fits,
+with 10,687,558 predictions in total. Every training transformation, model,
+test identity and output metric is persisted. At the time this methodology
+supplement was written, execution was in progress: neither completion nor
+independent numerical acceptance is claimed. Final performance reporting
+requires a complete committed publication and independent score and metric
+reconstruction.
+
+\subsection{Reproducibility references}
+
+All paths below are relative to
+\path{artifacts/audio_phenomena_expansion_20260907/}:
+\begin{itemize}
+\item Protocol: \path{EQUAL60_EXPLORATORY_V5_PROTOCOL_EN.md}.
+\item Derived-data code: \path{code/prepare_evaluation_inputs_v5.py};
+evaluation code: \path{code/evaluate_new_phenomena_v5.py}.
+\item Inputs and original-role ledger:
+\path{results/equal60_exploratory_package_v5_v1/}.
+\item Parent input acceptance:
+\path{audit/exploratory_v5_package_parent_acceptance_v1.json}.
+\item Reviewed split schedule:
+\path{results/equal60_exploratory_v5_draft_v1/}.
+\item Execution authorization:
+\path{preregistration/equal60_exploratory_v5_frozen_v1.json}.
+\item In-progress outputs, not yet accepted results:
+\path{results/equal60_exploratory_v5_results_v1/}.
+\item Existing third-generator context constraints:
+\path{THIRD_GENERATOR_CONTEXT_ELIGIBILITY_EN.md}.
+\end{itemize}

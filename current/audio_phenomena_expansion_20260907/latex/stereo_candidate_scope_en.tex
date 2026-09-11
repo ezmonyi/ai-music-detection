@@ -1,0 +1,82 @@
+\section{Prospective extension: native stereo relationships}
+\label{sec:stereo-candidate-scope}
+
+\paragraph{Evidence boundary.}
+Inter-channel level, phase and coherence describe a production phenomenon
+distinct from within-channel high-frequency energy. Parametric stereo research
+provides a measurement basis, but allows multiple plausible spatial renditions
+of the same music
+(\href{https://archives.ismir.net/ismir2023/paper/000035.pdf}{Serr\`a et al., ISMIR 2023}).
+The music-reconstruction study
+\href{https://arxiv.org/html/2509.14912v2}{\emph{Back to Ear}, arXiv:2509.14912v2}
+measures cross-channel phase preservation relative to an original reference.
+That reference-dependent CCPC must not be relabelled as a blind AI/Human score.
+The proposal below instead measures internal channel relationships; no
+attribution direction is assumed. This is not an admitted eighth family and
+does not change the frozen seven-family v5 evaluation.
+
+\paragraph{Candidate observables.}
+For bandwise STFT coefficients, define
+\[
+ E_L=\sum_f |L_f|^2,\quad E_R=\sum_f |R_f|^2,\quad
+ C=\sum_f L_f\overline{R_f}.
+\]
+Proposed observations are $10\log_{10}(E_L/E_R)$,
+$\operatorname{Re}(C)/\sqrt{E_LE_R}$,
+$|C|/\sqrt{E_LE_R}$, side-energy fraction, and circular adjacent-frame
+changes of $\arg C$. Only active bands are valid; phase changes additionally
+require reliable cross-energy at both adjacent frames. Missing frames cannot
+be bridged. The prospective implementation uses 44.1 kHz, a 4,096-sample
+periodic Hann window, hop 1,024, no padding, and five fixed bands spanning
+80--20,000 Hz. These coarse bands are our adaptation, not a reproduction of
+the cited paper's band system.
+For the 50 candidate scalar descriptors, IID and wrapped IPD increments are
+converted to absolute values before median/IQR aggregation. This preserves
+channel-swap invariance and avoids applying linear quantiles across the
+signed-angle branch cut; the signed per-frame arrays remain available.
+These absolute summaries do not preserve panning direction or temporal order.
+
+\paragraph{Identifiability and controls.}
+The magnitude of a single-bin normalized cross-spectrum is identically one
+when both coefficients are nonzero; aggregation must precede normalization's
+final magnitude interpretation. Duplicated mono and anti-phase stereo both
+have magnitude coherence one but opposite signed coherence. Moreover,
+the side fraction satisfies
+\[
+ q_S=\frac12-\frac{\operatorname{Re}C}{E_L+E_R},
+\]
+so these descriptors are not independent corroborating phenomena. Native
+channel and bandwidth provenance must be retained: duplicating mono during
+standardization cannot manufacture valid spatial evidence. Artistic panning,
+chorus, doubling, reverberation and codec processing are necessary controls.
+
+\paragraph{Admission status and reproducibility.}
+The stored-media inventory found 33 original mono URMP recordings despite
+two-channel standardized outputs. A native-channel gate would remove that
+entire Human source. The other 2,174 recordings (1,278 Human and 896 AI) have
+recorded original two-channel containers; this is not yet acoustic-stereo
+or bandwidth validation. A future spatial-feature comparison must rerun its
+old-feature baseline on exactly the same eligible rows/groups, rather than
+attribute a population-change effect to the feature. See
+\path{artifacts/audio_phenomena_expansion_20260907/V5_CHANNEL_PROVENANCE_INVENTORY_EN.md}
+and its standard-library reproduction helper
+\path{artifacts/audio_phenomena_expansion_20260907/code/summarize_v5_channel_provenance.py}.
+
+At this checkpoint, 14 mathematical/synthetic tests passed parent replay both
+locally and on the existing 5090-5 CPU scientific runtime, with warnings treated
+as errors. Code review corrected circular-summary, short-frame-status and
+finite-overflow issues. The review record is
+\path{artifacts/audio_phenomena_expansion_20260907/audit/stereo_candidate_v1_parent_review.json}.
+No external musical validation or detection gain is claimed. Admission first
+requires a separately frozen external music corpus with paired known spatial
+manipulations and unchanged controls, group-aware parameter-recovery tests,
+and codec/bandwidth stress tests. Only a subsequent, separately frozen
+exploratory experiment could compare this candidate alone and in combinations.
+Source-reused evaluations remain development results.
+The evidence/admission record is
+\path{artifacts/audio_phenomena_expansion_20260907/STEREO_PHENOMENA_ADMISSION_NOTE_EN.md};
+the candidate implementation and tests are
+\path{artifacts/audio_phenomena_expansion_20260907/code/stereo_candidate_v1.py}
+and
+\path{artifacts/audio_phenomena_expansion_20260907/code/test_stereo_candidate_v1.py}.
+This source is a prospective thesis supplement, not a rebuilt released PDF.

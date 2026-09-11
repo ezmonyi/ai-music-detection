@@ -1,0 +1,93 @@
+\section{External Validation of Dynamics, Rhythm, and Structure Heuristics}
+\label{sec:external-mir-benchmark}
+
+The Music Flamingo result in the preceding section rejects an audio-language-model shortcut, but it does not establish that deterministic MIR alternatives are valid. A separate benchmark was therefore frozen before consulting the AI-versus-Human development data. The complete protocol, deployment addendum, provenance audit, commands, and recovery log are indexed as \outref{O14}--\outref{O17}. This experiment tests \emph{measurement validity}, not AI detection: a passing result would mean that a feature measures its claimed musical property on an external annotated corpus, not that the feature separates Human and AI music.
+
+\subsection{Datasets, models, and admission policy}
+
+Table~\ref{tab:external-mir-design} separates the three base tasks from the detector-facing summaries derived from their outputs. Dataset selection used salted deterministic ordering and was fixed before inference. Learned inference was restricted to GPU 0 of an NVIDIA GeForce RTX 5090 on \texttt{5090-5}; deterministic preprocessing, scoring, and 10,000-replicate recording/track-cluster bootstrap ran on the same host.
+
+\begin{table}[H]
+\centering
+\caption{Independent feature-validation design. ``External'' is relative to the released model or to this thesis detector; no AI/Human labels are used in these benchmarks.}
+\label{tab:external-mir-design}
+\begin{tabularx}{\linewidth}{p{24mm}p{32mm}X p{28mm}}
+\toprule
+Family & External data & Base estimator and frozen sample & Detector-facing gate \\
+\midrule
+Rhythm/bar & GTZAN & Beat This! \texttt{final0/1/2}; 993 scored tracks per seed; native non-DBN decoding \citep{beatthisrepo2026} & $\rho\geq0.75$, CI lower $\geq0.65$ \\
+Dynamics & MAESTRO v3 test & 50 composition-disjoint recordings; 200 frozen 30 s windows; aligned MIDI velocity \citep{maestrodataset2026} & $\rho\geq0.50$, CI lower $>0.35$ \\
+Section/bar length & SALAMI & 44 tracks, 68 macro-annotation files; All-In-One boundaries plus Beat This! downbeats \citep{salamirepo2026,allinonerepo2026} & boundary F1@3 s $\geq0.60$, then $\rho\geq0.70$ \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The GTZAN archive had 999 annotation files; six jazz files contained only a beat column and were explicitly excluded by the released downbeat dataloader. MAESTRO transport used a fixed Hugging Face mirror revision, but all 50 WAV and 50 MIDI files were verified against official Google ZIP member names, uncompressed sizes, and CRC-32 values, with 100/100 accepted. SALAMI selection probed all 476 official Internet Archive mappings, found 49 reachable records, and froze all 44 records that also met duration and annotation requirements. The manifests and transport evidence are in \outref{O15}.
+
+The original All-In-One implementation depends on a legacy NATTEN interface unavailable on the RTX 5090. The run therefore used \texttt{openmirlab/all-in-one-infer} commit \texttt{3c93b4a}, which preserves the released architecture/configuration and eight author checkpoints while providing a pure-PyTorch neighborhood-attention backend. This compatibility deviation was recorded before batch inference and did not change data, weights, thresholds, or scoring.
+
+\subsection{Rhythm localization succeeds, rhythm richness does not}
+
+Beat This! passes both timing gates. Across \texttt{final0/1/2}, mean beat F1 is 0.891 (SD 0.004) and mean downbeat F1 is 0.783 (SD 0.005). For \texttt{final0}, track-bootstrap beat F1 is 0.892 (95\% CI 0.879--0.904) and downbeat F1 is 0.787 (0.768--0.806). Beat CMLt/AMLt is 0.798/0.903 and downbeat CMLt/AMLt is 0.678/0.799.
+
+However, none of the five second-order summaries reaches the detector gate (Table~\ref{tab:rhythm-feature-fidelity}). This is not a contradiction: an event tracker can localize most beats while small timing errors, missing events, and downbeat-number errors strongly perturb variation and entropy estimates.
+
+\begin{table}[H]
+\centering
+\caption{GTZAN reference--prediction fidelity of detector-facing rhythm/bar summaries using Beat This! \texttt{final0}. All confidence intervals use 10,000 track-bootstrap replicates.}
+\label{tab:rhythm-feature-fidelity}
+\begin{tabular}{lrrl}
+\toprule
+Summary & Spearman $\rho$ & 95\% CI & Decision \\
+\midrule
+Robust IBI CV & 0.377 & 0.321--0.430 & Reject \\
+Tempo total variation & 0.224 & 0.161--0.285 & Reject \\
+Tempo entropy & 0.532 & 0.482--0.580 & Reject \\
+Bar off-mode fraction & 0.145 & 0.064--0.213 & Reject \\
+Bar-length entropy & 0.144 & 0.067--0.210 & Reject \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Five tracks were excluded from rhythm-pair fidelity because the prediction contained fewer than 16 beats. Bar-summary fidelity excluded 139 tracks: 133 references and 61 predictions contained fewer than eight complete bars, with overlap between reasons. These counts are preserved rather than imputed. Direct outputs are indexed as \analysisref{A10}.
+
+\subsection{MIDI dynamics are recoverable only with oracle support}
+
+The primary MAESTRO experiment evaluates three non-learned acoustic estimators at aligned MIDI note onsets and pitches. Broadband and harmonic onset contrasts fail. In contrast, post-onset harmonic attack level passes: median within-$(\text{recording},\text{pitch})$ $\rho$ is 0.815 (95\% CI 0.800--0.834), and low-versus-high velocity quartile ranking accuracy is 0.948 (0.941--0.956). With oracle onset and pitch, all three 30 s summaries also pass (Table~\ref{tab:dynamics-oracle-deployment}).
+
+A deployed detector does not receive MIDI onset and pitch. Before running the deployment analysis, a separate addendum therefore froze a waveform-only spectral-flux onset detector and harmonic-peak attack estimator. It obtains onset F1 0.751, matched-event $\rho=0.626$ (0.594--0.659), and quartile-ranking accuracy 0.905 (0.890--0.919). Thus, individual attack strength is measurable. Nevertheless, no 30 s dynamics-variety summary reaches the pre-specified window-level gate.
+
+\begin{table}[H]
+\centering
+\caption{MAESTRO window-level dynamics fidelity. Oracle values use aligned MIDI onset/pitch to select the acoustic measurement; waveform-only values use no MIDI input. Constant +6 dB gain drift is below $3.6\times10^{-15}$ for every row.}
+\label{tab:dynamics-oracle-deployment}
+\begin{tabular}{lrrrl}
+\toprule
+Feature & Oracle $\rho$ & Waveform $\rho$ & Waveform 95\% CI & Detector decision \\
+\midrule
+90--10\% dynamics span & 0.857 & 0.414 & 0.250--0.561 & Reject \\
+Dynamics IQR & 0.826 & 0.358 & 0.204--0.495 & Reject \\
+Adjacent attack change & 0.798 & $-0.067$ & $-0.221$--0.091 & Reject \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+This distinction prevents an oracle-to-deployment validity error. The supported claim is narrow: piano attack strength can be estimated from the waveform. The unsupported claim is that the present aggregation measures dynamics variety over a polyphonic 30 s passage faithfully enough for the applied filter. Oracle and waveform outputs are indexed as \analysisref{A11}.
+
+\subsection{Section and bar-length variety fail external validation}
+
+All-In-One plus Beat This! produced complete outputs for 44/44 selected SALAMI tracks. Across 68 annotator rows, macro-boundary F1 is 0.342 (0.289--0.395) at 0.5 s and 0.511 (0.464--0.557) at 3 s. The latter fails both the 0.60 point threshold and 0.55 lower-bound threshold. The derived section-duration and bar-length summaries also have low fidelity: duration median $\rho=0.042$, duration CV $-0.017$, duration entropy 0.065, bars median 0.258, bars CV 0.194, and bar off-mode fraction 0.327. All six are rejected. Functional section labels were not used. Direct outputs are indexed as \analysisref{A12}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../../dynamics_rhythm_external_benchmark_20260903/figures/external_benchmark_dashboard.png}
+\caption{External validity dashboard. Error bars are 95\% recording/track-cluster bootstrap confidence intervals. Panels A and the event-level dynamics result show that a base task may pass even when the downstream heuristic in panels B--D fails. Artifact reference: \texttt{A13}.}
+\label{fig:external-mir-dashboard}
+\end{figure}
+
+\subsection{Gate decision for the applied filter}
+
+\noindent\fcolorbox{black!25}{codegray}{%
+\parbox{0.96\linewidth}{\textbf{Decision: zero waveform-deployable features are admitted.} Consequently, no AI/Human detector ablation was run for these three heuristic families, the Human/Suno/HeartMuLa/ACE-Step development data were not used for rescue selection, and the already examined external AI/Human test was not touched. The machine-readable decision is \analysisref{A13}.}}
+
+This negative result is methodologically useful. Running an AI/Human ablation after observing failed external fidelity would turn the detector dataset into a tuning set for a measurement that has not shown construct validity. The most promising next hypothesis concerns dynamics aggregation rather than event estimation: instrument-aware event clustering, non-vocal sub-stems, and bar-synchronous robust summaries. Such changes require a new frozen external benchmark before detector application.

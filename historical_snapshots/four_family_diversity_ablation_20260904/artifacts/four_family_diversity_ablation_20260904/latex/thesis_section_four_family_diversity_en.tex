@@ -1,0 +1,197 @@
+\section{Four-Family Combinations and Data-Diversity Scaling}
+\label{sec:four-family-diversity}
+
+The preceding experiment evaluated dynamics, rhythm, and phrase/section
+features while keeping the high-frequency detector separate.  This section
+answers the joint question: all 15 non-empty combinations of four families are
+evaluated, and the quantity and generator diversity of the new training data
+are varied independently.  The families are denoted by \textbf{S} (corrected
+high-frequency Demucs-vocal spectrum), \textbf{D} (non-vocal dynamics),
+\textbf{R} (rhythm change), and \textbf{P} (phrase/section bar-length variety).
+Code and process references are \coderef{C40}--\coderef{C42} and
+\outref{O27}--\outref{O29}; numerical results are \analysisref{A19}--\analysisref{A21}.
+
+\subsection{Change of Evaluation Status and Condition-Disjoint Protocol}
+
+At the user's direction, the 5,500 AIME items are now used to improve and
+select the detector.  The former external test is therefore \emph{consumed}:
+its earlier frozen evaluation remains a valid historical result for the old
+model, but it is no longer an untouched confirmation for the new pipeline.
+The present numbers are explicitly exploratory development/CV estimates.
+
+The already frozen five 100-condition groups support five-fold,
+condition-disjoint evaluation.  In each fold, one group is held out and the
+other 400 prompt conditions form the training pool.  New per-source training
+amounts are 25, 50, 100, 200, and 400 conditions.  The same condition IDs are
+selected for MTG-Jamendo and every selected AI generator, preserving the
+prompt/tag matching.  Across folds every one of the 500 items per source serves
+as held-out data once and training data in the other folds.
+
+The 1,600 legacy rows remain in every fit: 400 Human FMA and 400 each from
+Suno, HeartMuLa, and ACE-Step.  The number of added AIME AI generator families
+is independently set to 1, 2, 4, 6, 8, or 10.  Deterministic cyclic generator
+subsets give every generator equal inclusion frequency for each count below
+ten.  Binary classes receive equal total weight, and sources receive equal
+weight within a class.  All combinations use the same linear ridge score
+(penalty 10, decision threshold 0.5), training-median imputation, and explicit
+missingness indicators.  No hyperparameter is selected on the reported folds.
+The primary metric is generator-macro ROC-AUC: every generator is compared with
+the same held-out Human conditions before averaging.
+
+\subsection{High-Frequency Spectral Family}
+
+The spectral family contains 16 scalar features on the 10-second htdemucs
+vocal stem: 1--5 and 5--16 kHz tilt; 5--16, 12--20, and 5--10 kHz ratios;
+high-frequency flatness, entropy, crest, residual peak density and periodicity;
+frame flux and similarity; high-frequency power variation and 4--12 Hz
+modulation share; and sibilance contrast and burst rate.  The MUSDB-oracle
+average Demucs response is removed by multiplying STFT power by
+$10^{-b(f)/10}$.  Frame membership is frozen from the raw-vocal RMS and no
+phase-dependent feature is used.  The formal extraction produced 7,100 unique
+rows with zero non-finite spectral values in 44.8 seconds.
+
+\subsection{All Combinations by New-Data Quantity}
+
+Table~\ref{tab:four-family-quantity} reports all 15 combinations when all ten
+new generator families are represented in training.  The legacy-only column
+uses none of the AIME rows.  The remaining columns are five-fold estimates and
+therefore stop at 400 training conditions per source.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\caption{Generator-macro ROC-AUC by feature-family combination and new AIME
+training conditions per source.  S=spectral, D=dynamics, R=rhythm, and
+P=phrase/section.}
+\label{tab:four-family-quantity}
+\begin{tabular}{lrrrrrr}
+\toprule
+Combination & Legacy 0 & 25 & 50 & 100 & 200 & 400 \\
+\midrule
+D & 0.508 & 0.501 & 0.510 & 0.512 & 0.512 & 0.511 \\
+P & 0.500 & 0.500 & 0.500 & 0.500 & 0.500 & 0.500 \\
+R & 0.477 & 0.577 & 0.590 & 0.576 & 0.579 & 0.585 \\
+S & 0.434 & 0.651 & 0.650 & 0.671 & 0.679 & 0.685 \\
+D+P & 0.508 & 0.501 & 0.510 & 0.512 & 0.512 & 0.511 \\
+D+R & 0.492 & 0.567 & 0.582 & 0.576 & 0.577 & 0.576 \\
+R+P & 0.477 & 0.577 & 0.590 & 0.576 & 0.579 & 0.585 \\
+S+D & 0.441 & 0.649 & 0.652 & 0.674 & 0.684 & 0.687 \\
+S+P & 0.434 & 0.651 & 0.650 & 0.671 & 0.679 & 0.685 \\
+S+R & 0.438 & 0.661 & 0.664 & 0.675 & 0.683 & 0.689 \\
+D+R+P & 0.492 & 0.567 & 0.582 & 0.576 & 0.577 & 0.576 \\
+S+D+P & 0.441 & 0.649 & 0.652 & 0.674 & 0.684 & 0.687 \\
+S+D+R & 0.441 & 0.660 & 0.669 & 0.685 & 0.692 & \textbf{0.695} \\
+S+R+P & 0.438 & 0.661 & 0.664 & 0.675 & 0.683 & 0.689 \\
+S+D+R+P & 0.441 & 0.660 & 0.669 & 0.685 & 0.692 & \textbf{0.695} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The largest change is caused by adapting to new domains and generators, not by
+raw sample count.  S+D+R rises from AUC 0.441 under legacy-only training to
+0.660 after adding only 25 paired conditions per source.  Increasing 25 to 400
+adds a further 0.035.  The CV-leading non-redundant combination is S+D+R at
+AUC 0.695 (fold-level SD 0.018) and balanced accuracy 0.645; S alone reaches
+0.685, so D and R add only 0.010 in the aggregate.  P has zero complete-feature
+coverage at ten seconds.  Every combination containing P consequently matches
+the corresponding combination without it; this is an observability failure,
+not evidence that musical structure is irrelevant.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../../four_family_diversity_ablation_20260904/figures/four_family_combination_quantity_table.png}
+\caption{All 15 family combinations across training quantities.  Values are
+five-fold generator-macro ROC-AUC, except the legacy-only baseline.  This is a
+development comparison after the AIME test was consumed, not an external
+confirmation.  Data reference: \texttt{A19}.}
+\label{fig:four-family-quantity}
+\end{figure}
+
+\subsection{Generator Diversity Versus Examples per Generator}
+
+Table~\ref{tab:generator-diversity} holds the per-source amount at 400 and
+evaluates S+D+R separately on generator families present and absent from
+training.  With one new AI family, the seen-family AUC appears strong at 0.694
+while unseen-family AUC is below chance at 0.472.  Unseen transfer rises
+monotonically to 0.630 when eight new families are represented.  At eight
+training generators, however, increasing the per-source amount from 25 to 400
+changes unseen AUC only from 0.618 to 0.630.  Generator diversity therefore has
+far greater value than adding more tracks from one or two generators.
+
+\begin{table}[H]
+\centering
+\caption{S+D+R transfer at 400 new conditions per source.  The ten-generator
+case has no unseen AIME generator left to test.}
+\label{tab:generator-diversity}
+\begin{tabular}{rrrr}
+\toprule
+New AI generators in training & Seen AUC & Unseen AUC & Unseen BA \\
+\midrule
+1 & 0.694 & 0.472 & 0.497 \\
+2 & 0.686 & 0.516 & 0.525 \\
+4 & 0.692 & 0.552 & 0.543 \\
+6 & 0.689 & 0.580 & 0.561 \\
+8 & 0.689 & 0.630 & 0.601 \\
+10 & 0.695 & -- & -- \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.93\linewidth]{../../four_family_diversity_ablation_20260904/figures/unseen_generator_diversity_curves.png}
+\caption{Unseen-generator AUC versus the number of new AI generator families
+represented in training.  Curves compare 25, 100, and 400 paired conditions per
+source.  Data reference: \texttt{A20}.}
+\label{fig:generator-diversity}
+\end{figure}
+
+\subsection{The Aggregate Combination Gain Is Not Uniform}
+
+Table~\ref{tab:four-family-generator} compares the corrected spectral family
+with S+D+R after training on all ten new families at 400 conditions/source.
+The small macro gain hides large opposing changes: D and R improve AudioLDM 2
+Large and the MusicGen variants, but reduce Riffusion and both Stable Audio
+variants.  The additional families therefore still behave partly as generator
+fingerprints.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Per-generator AUC at 400 new training conditions/source.}
+\label{tab:four-family-generator}
+\begin{tabular}{lrrr}
+\toprule
+Generator & S & S+D+R & Change \\
+\midrule
+AudioLDM 2 Large & 0.701 & 0.785 & $+0.084$ \\
+AudioLDM 2 Music & 0.765 & 0.760 & $-0.005$ \\
+Riffusion & 0.830 & 0.747 & $-0.082$ \\
+MusicGen Medium & 0.690 & 0.733 & $+0.043$ \\
+MusicGen Large & 0.693 & 0.724 & $+0.030$ \\
+MusicGen Small & 0.650 & 0.722 & $+0.072$ \\
+Stable Audio v2 & 0.679 & 0.657 & $-0.022$ \\
+Mustango & 0.610 & 0.629 & $+0.018$ \\
+Stable Audio v1 & 0.632 & 0.606 & $-0.026$ \\
+Udio & 0.601 & 0.588 & $-0.013$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Deployment Candidate and Remaining Diversity Gap}
+
+After exploratory selection, an S+D+R candidate was refitted with all 500 AIME
+rows per source, together with the 1,600 legacy rows.  This 7,100-row model is
+stored in \analysisref{A21}.  Because all AIME rows are consumed, no AIME test
+score is attached to that refit.  Its status is a shadow-mode deployment
+candidate that requires a new untouched test.
+
+AI-generator diversity has increased substantially, but Human diversity remains
+inadequate: the 500 new controls all come from MTG-Jamendo and the legacy Human
+source is only FMA.  Moreover, all ten new generator cohorts share AIME
+packaging and a common tag-derived prompt system.  AUC 0.695 is therefore an
+AIME-domain CV estimate rather than evidence of production-wide AI-music
+detection.  The next confirmatory corpus must contain independent Human
+catalogues, distinct codec/mastering chains, and generator families absent from
+all model-selection stages.

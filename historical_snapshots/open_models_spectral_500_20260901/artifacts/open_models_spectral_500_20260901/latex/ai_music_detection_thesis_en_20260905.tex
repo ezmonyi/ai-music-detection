@@ -1,0 +1,827 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{seqsplit}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{fancyhdr}
+
+\definecolor{linkblue}{RGB}{25,74,133}
+\definecolor{codegray}{RGB}{246,247,249}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkblue,
+  citecolor=linkblue,
+  urlcolor=linkblue,
+  pdftitle={Interpretable Detection of AI-Generated and Human Music: Spectral, Dynamic, and Rhythmic Evidence},
+  pdfauthor={Experiment archive}
+}
+\urlstyle{tt}
+\captionsetup{font=small,labelfont=bf}
+\setlist{nosep,leftmargin=2em}
+\sisetup{detect-all,group-separator={,},group-minimum-digits=4}
+\setlength{\emergencystretch}{3em}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\renewcommand{\arraystretch}{1.18}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Interpretable Detection of AI Music}
+\fancyhead[R]{Updated: 2026-09-05}
+\fancyfoot[C]{\thepage}
+
+\newcommand{\coderef}[1]{\hyperlink{code:#1}{\texttt{#1}}}
+\newcommand{\outref}[1]{\hyperlink{output:#1}{\texttt{#1}}}
+\newcommand{\analysisref}[1]{\hyperlink{analysis:#1}{\texttt{#1}}}
+\newcommand{\codeanchor}[1]{\hypertarget{code:#1}{\texttt{#1}}}
+\newcommand{\outanchor}[1]{\hypertarget{output:#1}{\texttt{#1}}}
+\newcommand{\analysisanchor}[1]{\hypertarget{analysis:#1}{\texttt{#1}}}
+\newcommand{\filepath}[1]{\path{#1}}
+\newcommand{\hashvalue}[1]{{\ttfamily\seqsplit{#1}}}
+\newcommand{\MFFigureRoot}{../../music_flamingo_midi_rhythm_probe_20260903}
+\newcommand{\MFHash}[1]{{\ttfamily\seqsplit{#1}}}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  backgroundcolor=\color{codegray},
+  frame=single,
+  rulecolor=\color{black!15},
+  breaklines=true,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  upquote=true
+}
+
+\title{Interpretable Detection of AI-Generated and Human Music\\
+\large Spectral, Dynamic, and Rhythmic Evidence with Reproducible Artifact References}
+\author{Thesis Experiment Archive}
+\date{Spectral experiment frozen: September 1, 2026\\External dynamics/rhythm/structure validation added: September 3, 2026\\Earlier catalogue-diversity extension: September 4, 2026\\Materialized expansion and re-evaluation: September 5, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This report extends an existing Human-versus-Suno spectral study to HeartMuLa and ACE-Step 1.5 and adds separately frozen validation of dynamics, rhythm, and structure features. The spectral workflow covers a 500-item conditional manifest, RTX 5090 inference, unified audio standardization, Demucs vocal separation, separator-response correction, and within-domain, cross-generator, prompt-paired, and duration-sensitivity analyses. Vocal stems of all three AI generators deviate from Human music in the 10--16 kHz region, while the 16--20 kHz direction depends on the generator. The highest within-domain locked-test ROC-AUC values are 0.922 for Suno, 1.000 for HeartMuLa, and 0.988 for ACE-Step, but cross-generator transfer remains asymmetric. A MIDI-grounded Groove MIDI Dataset probe rejects Music Flamingo as a quantitative dynamics/rhythm extractor. A subsequent independent fidelity benchmark shows that base beat/downbeat localization and event-level piano dynamics are measurable, but its detector-facing summaries fail external fidelity thresholds. A separately frozen controlled-change benchmark then qualifies only non-vocal dynamics as a change-sensitive workflow; rhythm and section/bar-length family gates fail. The three frozen workflows are evaluated without refitting on 5,000 tracks from ten non-Suno, non-HeartMuLa, non-ACE-Step generators and 500 shared Human controls: dynamics reaches only 0.509 all-generator AUC, rhythm reaches 0.477, and structure is unobservable at ten seconds. The same AIME set is subsequently and explicitly consumed for five-fold pipeline development. Across all 15 combinations and five data quantities, corrected high-frequency spectral features dominate; S+D+R reaches generator-macro AUC 0.695 versus 0.685 for S alone at 400 conditions/source. Unseen-generator AUC rises from 0.472 with one new generator family in training to 0.630 with eight, whereas additional examples per represented source yield much smaller gains. A subsequent expansion has now materialized and fully checksum-verified all 2,641 selected new recordings, including 2,091 Human tracks from nine catalogues. The complete union contains 10,141 recording identities, with a separate 4,497-recording unpadded thirty-second cohort. All fifteen nonempty spectral/dynamics/rhythm/section combinations are evaluated at five training quantities. Frozen source-transfer selection favors S+D at ten seconds (mean AUC 0.6334) and S+D+R at thirty seconds (0.7641); the cohorts differ, so this is not a controlled duration comparison. New locked Human specificity remains strongly source-dependent: the thirty-second candidate reaches 0.9515 on MusicNet but only 0.5233 on DEAM. Thus the expanded evidence supports complementary diagnostic features, not a general-purpose AI-music attribution claim. AudioX remains unverified and DiffRhythm remains a ten-condition pilot, neither used for fitting or selection. Stable file references are supplied for every method, log, output, result table, and figure.
+\end{abstract}
+
+\noindent\fcolorbox{black!25}{codegray}{%
+\parbox{0.96\linewidth}{\textbf{Scope of the conclusion.} Historical within-domain spectral separation and exploratory development candidates do not establish a universal AI-music detector. The 5,500-row AIME set is first used for a frozen external evaluation and is then explicitly consumed for five-fold model development, so the later AUC 0.695 is not an independent external result. The September 5 revision adds fully materialized nine-catalogue Human expansion, all-four-family feature accounting, fifteen-by-five source-transfer ablations and previously unscored locked MusicNet/DEAM tests. Earlier results remain dated historical evidence. The latest candidates still have substantial source-dependent false positives and cannot establish universal Human/AI authorship; source-transfer AUC, threshold balanced accuracy and Human specificity are reported separately. Genre, vocal activity, language, mastering, shared benchmark packaging, and source provenance may contribute to discrimination.}}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+\section{Research Questions and Experimental Scope}
+\label{sec:scope}
+
+The study begins with a subjective but operational listening observation: vocals, cymbals, sibilants, and other high-frequency transients often give AI-generated music a different sense of ``air,'' grain, bandwidth edge, or over-smoothing from human recordings. This observation is separated into four research questions:
+
+\begin{enumerate}
+  \item Can this perceptual cue be captured by interpretable measurements of spectral tilt, band-energy ratios, spectral texture, modulation, and pitch periodicity?
+  \item After reducing arrangement-level interference and analyzing only Demucs-separated vocals, do Human--AI differences remain?
+  \item Do the differences disappear after applying an externally frozen estimate of the average Demucs frequency-response bias?
+  \item When transferred across Suno, HeartMuLa, and ACE-Step, do the measurements describe a general AI cue or a fingerprint of a particular generator or codec?
+  \item After external controlled-change validation, do non-vocal dynamics, rhythm change, or section/bar-length variety add locked and generator-held-out information beyond the vocal spectral baseline?
+  \item Across all four feature families, how do detector performance and unseen-generator transfer change with per-source sample quantity and the number of generator families represented in training?
+  \item Does replacing a fixed per-dataset Human quota with catalogue-balanced sampling improve source-held-out reliability without introducing new provenance or codec shortcuts?
+\end{enumerate}
+
+HeartMuLa is an open music-foundation-model family containing HeartCodec and autoregressive song-generation models \citep{heartmula2026,heartlib2026}. ACE-Step 1.5 combines language-model planning with diffusion-based generation \citep{acestep2026,acestepcode2026}. This extension generates 500 items from each system and compares them with the existing 500 Suno and 500 Human items. The frozen experimental protocol and research notes are indexed as \outref{O10} and \outref{O11}.
+
+\section{Experimental Design}
+\label{sec:design}
+
+\subsection{Data Domains and Frozen Splits}
+
+The Human controls come from the FMA domain \citep{fma2017}. The AI domains are Suno, HeartMuLa, and ACE-Step. HeartMuLa and ACE-Step use text metadata from the open Muse dataset \citep{muse2026,musedataset2026}. The accompanying Muse Suno V5 audio was \textbf{not downloaded, decoded, or analyzed}; consequently, no Muse waveform enters this experiment.
+
+The frozen prompt manifest was constructed by \coderef{C01}. Its SHA-256 digest is:
+
+\begin{center}
+\small\hashvalue{bb0941b91d41d10a978cb9e4b077399e89fea92526ee469e0e6743b09efb917b}
+\end{center}
+
+The selection procedure retained 250 Chinese and 250 English examples, required \texttt{style\_sim} $\geq0.4$, required the source metadata to cover at least 30 s, and included only lyric sections within the first 30 s. ACE captions were limited to 512 characters and lyrics to 4,096 characters. Eligible records were ordered by salted SHA-256 so that the selection was independent of source-JSONL ordering. For each language, 200 records were assigned to development and 50 to locked test, yielding a 400/100 split. Every source ID was also mapped to a unique integer seed. The manifest, selected source rows, and metadata are indexed as \outref{O01}.
+
+\begin{table}[H]
+\centering
+\caption{Frozen cohorts and their roles. Each Human-versus-generator comparison contains 500 Human items. The pooled locked evaluation retains only one copy of each Human item.}
+\label{tab:cohort}
+\begin{tabular}{lrrrrl}
+\toprule
+Domain & Total & Development & Locked test & Language control & Role \\
+\midrule
+Human FMA & 500 & 400 & 100 & Unmatched & Control domain \\
+Suno & 500 & 400 & 100 & Existing frozen set & Historical baseline \\
+HeartMuLa & 500 & 400 & 100 & 250 ZH/250 EN & New generator \\
+ACE-Step & 500 & 400 & 100 & 250 ZH/250 EN & New generator \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Frozen Model and Dataset Versions}
+
+To prevent floating code or dataset revisions from undermining reproducibility, code commits, weight revisions, dependency freezes, and file-level hashes were recorded before inference. See \outref{O06}, \outref{O07}, and \outref{O12}.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Frozen generator, code, dataset, and weight versions.}
+\label{tab:model-versions}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+Component & Frozen version \\
+\midrule
+HeartMuLa code & \filepath{HeartMuLa/heartlib@3783bdb8441f2c298b1e64c8651173aac200361c} \\
+HeartMuLa 3B weights & revision \filepath{41f6fc68490e11dc43fdabaa6b5767946408c903} \\
+HeartCodec & revision \filepath{f889dab0532cfa4bf459f2a3367eb6d346b8eeda} \\
+Heart tokenizer/configuration & revision \filepath{9906b2bcd4598772a32cad4aec0760170fe0d177} \\
+ACE-Step code & \filepath{ace-step/ACE-Step-1.5@ca1e85fe9430179831e6bc6be790c332190a3866} \\
+ACE-Step weights & revision \filepath{19671f406d603126926c1b7e2adc169acbcade22} \\
+Muse metadata & revision \filepath{b1bf3bf906daab3a896e14f6dea58cc295848452} \\
+Demucs correction & \filepath{demucs_frequency_bias.npz}, SHA-256 \hashvalue{bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{Inference Parameters and Compute Constraints}
+
+Model inference and Demucs separation were performed only on the RTX 5090 GPUs of host \texttt{5090-4}; UVR was not run locally. Before allocating the host, GPU memory, utilization, compute processes, host load, and disk headroom were checked independently on 5090-2, 5090-4, and 5090-5. At that time, all eight GPUs on 5090-4 showed approximately 2 MiB allocated memory and 0\% utilization, so that host was selected as the isolated experimental machine. The environment and selection evidence are preserved in \outref{O06}.
+
+HeartMuLa was invoked through \coderef{C03} with a target duration of 30,000 ms, top-k 50, temperature 1.0, and CFG 1.5. MuLa used bf16, HeartCodec used fp32, and the model and codec remained resident on separate GPUs. ACE-Step was invoked through \coderef{C02} using \texttt{acestep-v15-turbo}, 30 s, eight diffusion steps, and a fixed seed. Thinking/chain-of-thought rewriting and built-in peak normalization were disabled, while the release implementation's DCW setting \texttt{double/0.05/0.02/Haar} was preserved.
+
+\subsection{Unified Audio Protocol}
+
+Raw outputs from both new generators were standardized by \coderef{C05} to:
+
+\begin{itemize}
+  \item exactly 30 s;
+  \item 44.1 kHz sampling rate;
+  \item stereo;
+  \item 1,323,000 frames per channel;
+  \item PCM-16 FLAC; and
+  \item no loudness normalization, equalization, or full-track peak normalization.
+\end{itemize}
+
+Standardization consisted only of SoundFile decoding, SciPy \texttt{resample\_poly} polyphase resampling, channel normalization, trimming or zero-padding, and PCM encoding. The few samples that exceeded the valid amplitude range after resampling were clipped individually and counted. \coderef{C06} verified sampling rate, duration, channels, finite values, and file counts. When an atomic rename had succeeded but a controlled interruption prevented a state append, \coderef{C04} reconstructed only the missing state entry and did not rewrite the audio.
+
+\subsection{Demucs Vocal Separation}
+
+Separation used \texttt{htdemucs} from Hybrid Transformer Demucs \citep{demucs2021}, a hybrid waveform-and-spectrogram source-separation model. MUSDB18 is a standard associated separation benchmark \citep{musdb18}. The batch wrapper is \coderef{C07}, with the following frozen parameters:
+
+\begin{lstlisting}[language=bash,caption={Frozen Demucs vocal-only parameters.}]
+htdemucs --two-stems vocals --float32 \
+  --shifts 0 --overlap 0.25 --segment 7 --jobs 1
+\end{lstlisting}
+
+The runtime used Demucs 4.0.1 and PyTorch/Torchaudio 2.7.1+cu128. The read-only environment freeze is in \outref{O06}. After a smoke test, formal separation ran only on GPU 3. Each input produced \texttt{vocals.wav} and \texttt{no\_vocals.wav}; both were 44.1 kHz, stereo, 30 s, float32 WAV.
+
+\section{Spectral Measurements and Statistical Methods}
+\label{sec:method}
+
+\subsection{STFT and Spectral Shape}
+
+All metrics were computed on mono vocal stems. Stereo stems were averaged and DC removed. Let $x[m]$ denote the waveform, with a Hann window of length $N=4096$ and hop $H=1024$:
+\begin{equation}
+X(n,k)=\sum_{m=0}^{N-1}x[nH+m]w[m]\exp\!\left(-j\frac{2\pi km}{N}\right).
+\label{eq:stft}
+\end{equation}
+Power was defined as $P(n,k)=|X(n,k)|^2+\epsilon$. The time-frame rate for a 30 s recording was approximately $44100/1024\approx43.1$ Hz. Average-difference heatmaps used 128 logarithmic bands from 300 Hz to 20 kHz and were generated by \coderef{C12}.
+
+The absolute representation preserved overall level. The frame-normalized representation subtracted the mean over the 300 Hz--20 kHz bands from each frame:
+\begin{equation}
+S_{\mathrm{shape}}(n,b)=S(n,b)-\frac{1}{|\mathcal{B}|}\sum_{b'\in\mathcal{B}}S(n,b').
+\label{eq:shape}
+\end{equation}
+This operation attenuated global level differences and emphasized the relative distribution of energy along the frequency axis. The population-average difference between AI and Human was defined as
+\begin{equation}
+\Delta(n,b)=\frac{1}{N_{\mathrm{AI}}}\sum_i S_i^{\mathrm{AI}}(n,b)
+-\frac{1}{N_{\mathrm{H}}}\sum_j S_j^{\mathrm{H}}(n,b).
+\label{eq:average-diff}
+\end{equation}
+Songs were not waveform-aligned. Therefore, the horizontal axis describes a shared position in the 30 s structural window and must not be interpreted as sample-wise cancellation.
+
+\subsection{Frozen Demucs Frequency-Response Correction}
+
+Let $b(k)$ dB denote the average Demucs frequency bias estimated on external MUSDB oracle vocals. It was frozen before the current AI/Human labels were examined and applied identically to every vocal stem:
+\begin{equation}
+X_{\mathrm{corr}}(n,k)=X(n,k)10^{-b(k)/20}.
+\label{eq:bias-correction}
+\end{equation}
+Phase was preserved, followed by ISTFT overlap-add and DC removal. The implementation in \coderef{C11} first performed an STFT/ISTFT identity test with zero bias, requiring relative error no greater than $10^{-8}$. This correction removes only the shared average separator response; it cannot remove class-dependent separation error.
+
+\subsection{Interpretable Scalar Metrics}
+
+Metric computation is centralized in \coderef{C09} and restricted to active frames. The activity threshold for each song was the greater of the 30th percentile of vocal-frame RMS and 35 dB below that song's maximum RMS. If fewer than 16 frames remained, the 16 highest-RMS frames were retained. The metrics were organized into four groups.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Principal vocal spectral features and their perceptual or signal interpretation.}
+\label{tab:metrics}
+\begin{tabularx}{\linewidth}{p{34mm}p{49mm}X}
+\toprule
+Group & Representative metrics & Interpretation \\
+\midrule
+Brightness and tilt & \texttt{hf\_tilt\_5\_16k}, \texttt{hf\_ratio\_5\_16}, \texttt{air\_ratio\_12\_20}, \texttt{sibilance\_ratio} & High-frequency slope, energy relative to the vocal body, air-band energy, and the 5--10 kHz sibilance ratio \\
+High-frequency texture & \texttt{hf\_flatness}, \texttt{hf\_entropy}, \texttt{hf\_crest}, \texttt{fakeprint\_periodicity} & Spectral flatness, entropy, peak-to-average contrast, and fixed-frequency or comb-like texture \\
+High-frequency dynamics & \texttt{hf\_flux}, \texttt{hf\_mod\_4\_12}, \texttt{sibilance\_burst\_rate} & Inter-frame change, 4--12 Hz high-frequency envelope modulation, and sibilance-burst density \\
+Periodicity and pitch & \texttt{CPP}, \texttt{HNR}, \texttt{pitch confidence}, \texttt{vibrato depth} & Glottal periodicity, harmonic-to-noise ratio, pitch stability, and 4--8 Hz vibrato structure \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The high-frequency ratio was $10\log_{10}(E_{5-16\mathrm{k}}/E_{1-5\mathrm{k}})$, and the air ratio compared 12--20 kHz with 1--5 kHz. Spectral tilt was the linear slope of mean-band dB against $\log_2 f$. The sibilance-burst threshold was the within-song median sibilance ratio plus 1.5 times its median absolute deviation; burst count was divided by active duration.
+
+\subsection{Frequency-Band Vectors and Classification}
+
+In addition to the 22 scalar metrics, \coderef{C10} constructed a vector for each frequency representation. Each range was divided into 48 geometrically spaced bands. The active-frame mean and standard deviation in dB were recorded for every band, after which the mean components were centered. The ablations were full 0.3--20 kHz, only 5--10 kHz, without 5--10 kHz, only 5--16 kHz, and low-mid 0.3--5 kHz.
+
+The classifier was a standardized ridge linear score with $\alpha=10$:
+\begin{equation}
+\hat{\mathbf{w}}=(\mathbf{Z}^{\mathsf T}\mathbf{Z}+\alpha\mathbf{I})^{-1}
+\mathbf{Z}^{\mathsf T}(\mathbf{y}'-\bar{y}'),\qquad y'=2y-1.
+\label{eq:ridge}
+\end{equation}
+Development data were used only for fitting; locked-test data were reserved for final evaluation. Reported quantities were ROC-AUC, balanced accuracy at threshold 0, and class-stratified bootstrap 95\% confidence intervals. Within-domain analyses used 2,000 bootstrap samples by default; cross-generator and duration-sensitivity analyses used 1,000. Univariate comparisons used the Mann--Whitney U test, prompt-paired comparisons used the Wilcoxon signed-rank test, and both applied Benjamini--Hochberg multiple-testing correction.
+
+\section{Complete Operational Record and Preserved Failures}
+\label{sec:operations}
+
+\begin{longtable}{p{22mm}p{36mm}p{86mm}}
+\caption{Actual operations from design freeze to archival acceptance. Each row is traceable to code, state, logs, or result artifacts.}
+\label{tab:timeline}\\
+\toprule
+Stage & Entry/reference & Operation and verification \\
+\midrule
+\endfirsthead
+\toprule
+Stage & Entry/reference & Operation and verification \\
+\midrule
+\endhead
+Design freeze & \outref{O10}, \outref{O11} & Reused the Human/Suno 500+500 cohort and 400/100 split; froze the same Demucs bias; defined the 500+500 extension, 30 s audio standard, and conclusion boundary. \\
+Dataset research & \outref{O11}, \coderef{C01} & Compared HeartMuLa-Benchmark, MusicCaps/MusicBench, and Muse. Because the study required vocal-only analysis, Muse metadata was selected for its style fields and time-sectioned lyrics. \\
+Prompt construction & \coderef{C01}, \outref{O01} & Stream-filtered Chinese and English records, selected 500 deterministically by salted SHA-256, and independently rebuilt the manifest to verify the same hash. \\
+Host selection & \outref{O06} & Independently checked several 5090 hosts and selected 5090-4, whose eight GPUs were idle and whose host load was approximately 0.07. \\
+Version freeze & \outref{O07}, \outref{O12} & Frozen Git commits, Hugging Face revisions, pip environments, and weight hashes. Recomputed 87 checkpoint-file hashes after ACE handler initialization. \\
+ACE smoke test & \coderef{C02}, \outref{O06} & Used GPU 2. Cold initialization took approximately 32 s and the first track approximately 6.3 s. Output was 30 s, 48 kHz, stereo PCM-16 FLAC. \\
+Heart smoke test & \coderef{C03}, \outref{O06} & Used GPUs 0/1. Initialization took 29.52 s and generation 29.43 s. Raw output was 30.08 s, 48 kHz, stereo float WAV. \\
+Demucs smoke test & \coderef{C07}, \outref{O05} & Used GPU 3. One standardized ACE item produced two exact 30 s float32 stems. \\
+ACE formal generation & \coderef{C02}, \outref{O02} & Processed 500 manifest items, recorded 500 generated events, obtained 500 valid outputs and zero errors. Steady-state generation was approximately 0.95--1.0 s per item. \\
+ACE standardization failure & \outref{O04}, \outref{O06} & The first Torchaudio standardization attempt failed for 500/500 files because of a TorchCodec/FFmpeg shared-library mismatch. Failed state and logs were preserved without overwriting successful generation records. \\
+ACE standardization recovery & \coderef{C05}, \outref{O04} & Switched to SoundFile plus \texttt{resample\_poly}; 500/500 files succeeded. Minor resampling excursions occurred in 259 songs, totaling 349 samples, and were clipped sample-wise. \\
+ACE Demucs & \coderef{C07}, \outref{O05} & Ran 25 batches of 20 tracks, producing 500 separated tracks and 1,000 stems in 1,075.19 s. \\
+Initial Heart scheduling & \coderef{C03}, \outref{O03} & Three two-GPU workers processed mutually exclusive index ranges. On detecting a possible boundary race, the workers were interrupted before the target sample was written and restarted with explicit limits. \\
+Heart rebalancing & \coderef{C03}, \outref{O03} & After 158 items completed, stopped the old workers and redistributed the actual missing-item list across four two-GPU workers. Valid files were resume-skipped; partial files were removed and retried with the same seeds. \\
+Final Heart state & \coderef{C04}, \outref{O03} & Verified 500 files, 500 final valid IDs, zero partial files, and zero final errors. Four BrokenPipe events among 504 historical generated events came from controlled interruption and were recovered. Reconciliation added zero state entries. \\
+Heart raw validation & \coderef{C06}, \outref{O04} & A strict $\geq30$ s check failed because 42 native generations ended early; the failure JSON was preserved. A subsequent integrity check allowing 5--30.2 s passed. \\
+Heart standardization & \coderef{C05}, \outref{O04} & Zero-padded 42 tracks by 11,501,280 total frames; truncated 457 tracks by at most approximately 80 ms; clipped 5,085 resampling excursions across 164 songs. \\
+Heart Demucs & \coderef{C07}, \outref{O05} & Produced 500 separated tracks and 1,000 stems in 594.36 s. \\
+Analysis layout & \coderef{C08} & Organized the Human baseline, standardized generated audio, and stems into read-only generator-specific comparison layouts, recording the manifest hash. \\
+Primary analysis & \coderef{C09}--\coderef{C12}, \analysisref{A01}--\analysisref{A04} & Computed raw/corrected scalar metrics, frequency vectors, band ablations, univariate effects, and four-panel all/development/locked heatmaps. \\
+Paired analysis & \coderef{C13}, \analysisref{A07} & Compared prompt-matched HeartMuLa and ACE-Step tracks using per-pair metric differences, Wilcoxon/BH tests, and average spectral differences. \\
+Transfer analysis & \coderef{C15}, \analysisref{A05}, \analysisref{A06} & Ran single-generator train/test matrices, leave-one-generator-out, and pooled-all analyses on both the full cohort and the raw-frozen vocal-active subset. \\
+Duration sensitivity & \coderef{C16}, \analysisref{A08} & Excluded 42 short Heart outputs and deterministically sampled an equal number of Human controls within each split before refitting. \\
+Archival acceptance & \coderef{C17}, \outref{O08}, \outref{O09} & Checked primary CSVs for NaN/Inf, remote file counts, metadata hashes, core figure layouts, and hashes for 196 lightweight key artifacts. \\
+\bottomrule
+\end{longtable}
+
+\section{Operational Results and Quality Control}
+\label{sec:qc}
+
+\subsection{Generation and Standardization Statistics}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Generation, standardization, and separation results for HeartMuLa and ACE-Step.}
+\label{tab:generation-qc}
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+Item & HeartMuLa & ACE-Step \\
+\midrule
+Final generation & 500/500; zero effective final errors & 500/500; zero errors \\
+Formal generation time & Approximately 69 min 50 s; median 23.34 s/item & Approximately 8 min 9 s; steady state 0.95--1.0 s/item \\
+Raw format & 48 kHz stereo float WAV & 48 kHz stereo PCM-16 FLAC \\
+Raw duration & Median 30.08 s; 42 below 30 s; minimum 15.12 s & All exactly 30 s \\
+Standardized format & 500/500; exact 30 s, 44.1 kHz stereo PCM-16 FLAC & 500/500; same standard \\
+Padding/truncation & 42 padded; 457 truncated by at most approximately 80 ms & No duration anomaly \\
+Resampling clipping & 164 songs; 5,085 samples & 259 songs; 349 samples \\
+Demucs & 500 tracks/1,000 stems; 594.36 s & 500 tracks/1,000 stems; 1,075.19 s \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+All key counts and format checks are preserved in \outref{O02}--\outref{O05}. The complete remote raw audio, standardized audio, stems, state, and logs are stored under \outref{O09}. The local lightweight archive omits the full audio collection but retains code snapshots, manifests, reports, CSV, PNG, JSON, listening samples, and hash manifests.
+
+\subsection{Vocal-Active Subset}
+
+The vocal-active rule required raw vocal-to-mix RMS of at least $-18$ dB. It was frozen before correction so that correction could not change cohort membership. The development/locked pass counts were Human 249/63, Suno 268/69, HeartMuLa 400/100, and ACE-Step 233/55. The fact that every HeartMuLa item passed is itself a strong domain cue. It may reflect arrangement, vocal proportion, or the response of Demucs to the domain, and must not be interpreted directly as a difference in the underlying generation mechanism.
+
+\section{Primary Spectral Results}
+\label{sec:results}
+
+\subsection{Average Spectral-Shape Differences}
+
+\Cref{fig:profiles} summarizes the locked-test, bias-corrected, frame-normalized AI-minus-Human vocal spectral shapes. All three generators are positive in 10--16 kHz, but they diverge strongly in 16--20 kHz.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/comparison/locked_corrected_spectral_shape_profiles.png}
+\caption{Locked-test mean vocal spectral shapes for the three AI generators relative to Human. A positive value means that AI has greater frame-normalized relative energy at that frequency. Data reference: \texttt{A04}.}
+\label{fig:profiles}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{AI-minus-Human band means for the locked-test, bias-corrected, frame-normalized vocal shape.}
+\label{tab:band-diff}
+\begin{tabular}{lrrrr}
+\toprule
+Generator & 0.3--5 kHz & 5--10 kHz & 10--16 kHz & 16--20 kHz \\
+\midrule
+Suno & $-1.158$ & $+1.812$ & $+4.322$ & $+0.146$ \\
+HeartMuLa & $-1.469$ & $+1.917$ & $+14.104$ & $-15.912$ \\
+ACE-Step & $-2.866$ & $+2.588$ & $+8.465$ & $+10.519$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+HeartMuLa forms a steep bandwidth edge near 16.5 kHz. Relative to Human it is approximately 14.1 dB higher in 10--16 kHz but approximately 15.9 dB lower in 16--20 kHz, a pattern consistent with a codec or bandwidth cutoff. ACE-Step is elevated in both 10--16 kHz and 16--20 kHz, more closely resembling persistent upper-band excess. Suno follows a similar direction but with smaller magnitude. The same subjective impression of unnatural high frequencies can therefore arise from opposite physical spectral shapes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/human_vs_heartmula/average_difference_spectrogram_locked_test.png}
+\caption{Locked-test average-difference spectrogram for Human and HeartMuLa. The four panels show raw/corrected and absolute/frame-normalized representations. Data reference: \texttt{A02}.}
+\label{fig:heart-heatmap}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/human_vs_acestep/average_difference_spectrogram_locked_test.png}
+\caption{Locked-test average-difference spectrogram for Human and ACE-Step. ACE-Step's upper-band excess has the opposite direction from the HeartMuLa cutoff above. Data reference: \texttt{A03}.}
+\label{fig:ace-heatmap}
+\end{figure}
+
+\subsection{Within-Domain Classification}
+
+\begin{table}[H]
+\centering
+\caption{Best bias-corrected frequency representation on each generator's locked test. Every test set contains 100 Human and 100 AI items.}
+\label{tab:single-domain}
+\begin{tabular}{llrrr}
+\toprule
+Generator & Best representation & ROC-AUC & 95\% CI & Balanced accuracy \\
+\midrule
+Suno & without 5--10 kHz & 0.922 & 0.882--0.957 & 0.855 \\
+HeartMuLa & full 0.3--20 kHz & 1.000 & 1.000--1.000 & 1.000 \\
+ACE-Step & without 5--10 kHz & 0.988 & 0.971--0.999 & 0.970 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{../analysis/comparison/locked_auc_by_generator.png}
+\caption{Locked-test band-ablation ROC-AUC for each generator. The 5--10 kHz band alone is discriminative, but the best result generally requires a wider spectral shape. Data reference: \texttt{A04}.}
+\label{fig:domain-auc}
+\end{figure}
+
+The only-5--10-kHz and only-5--16-kHz AUC values were 0.9999 and 0.9998 for HeartMuLa, 0.9713 and 0.9841 for ACE-Step, and 0.8776 and 0.8992 for Suno. High-frequency information is therefore important, but the best representation in all three domains extends beyond 5--10 kHz. Relative low/mid-band energy, the 10--20 kHz shape, and temporal statistics provide additional information. The complete table is in \analysisref{A04}.
+
+\subsection{Effect of Demucs Correction}
+
+Full-band raw/corrected AUC was 0.879/0.876 for Suno, 1.000/1.000 for HeartMuLa, and 0.9785/0.9792 for ACE-Step. The maximum raw-to-corrected change in a locked average map was approximately 0.260 dB for Suno, 0.274 dB for HeartMuLa, and 0.285 dB for ACE-Step. Thus, the shared average Demucs frequency response is not the principal source of discrimination. This result \textbf{does not} rule out different separator errors for Human audio and for individual generators.
+
+\subsection{Sensitivity to Short HeartMuLa Outputs}
+
+Forty-two of 500 raw HeartMuLa generations were shorter than 30 s; zero-padding could therefore become a shortcut. \coderef{C16} excluded these items and deterministically sampled an equal number of Human examples within the development and locked splits, yielding 366+366 development and 92+92 locked items. Full-band corrected AUC and balanced accuracy both remained 1.000. Trailing silence is therefore insufficient to explain the saturated result, although this test does not remove genre, mastering, or separator-domain confounding. Detailed CSV and metadata are in \analysisref{A08}.
+
+\section{Cross-Generator Generalization and Generator Fingerprints}
+\label{sec:cross}
+
+\subsection{Single-Source Train/Test Matrix}
+
+If a representation encoded a universal AI mechanism, it would preserve score direction and ranking across generators. The observed transfer did not satisfy this requirement. For the corrected representation without 5--10 kHz on the full cohort, Suno$\rightarrow$HeartMuLa achieved 0.905, whereas HeartMuLa$\rightarrow$Suno achieved 0.379. HeartMuLa$\rightarrow$ACE-Step achieved 0.326, whereas ACE-Step$\rightarrow$HeartMuLa achieved 0.593. AUC below 0.5 indicates that the score direction reverses after domain shift, rather than merely becoming less accurate.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/cross_generator_vocal_active/cross_generator_auc_heatmaps.png}
+\caption{Cross-generator Human-versus-AI ROC-AUC on the raw-frozen vocal-active subset. Near-perfect diagonal entries and degraded or nearly reversed off-diagonal entries show that high within-domain AUC includes generator-specific fingerprints. Data reference: \texttt{A06}.}
+\label{fig:cross-heatmaps}
+\end{figure}
+
+\subsection{Leave-One-Generator-Out and Pooled Training}
+
+\begin{table}[H]
+\centering
+\caption{Best corrected locked-test AUC under leave-one-generator-out evaluation. The target generator is absent from training.}
+\label{tab:logo}
+\begin{tabular}{lrrl}
+\toprule
+Target generator & Full tracks & Vocal-active & Vocal-active 95\% CI \\
+\midrule
+Suno & 0.698 & 0.702 & 0.612--0.785 \\
+HeartMuLa & 0.949 & 0.942 & 0.891--0.978 \\
+ACE-Step & 0.834 & 0.935 & 0.882--0.980 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+With each locked Human item included only once, pooled-all training achieved AUC 0.943 (0.920--0.963) on the full cohort and 0.969 (0.950--0.987) on the vocal-active cohort. The vocal-active pooled model achieved 0.940, 0.998, and 0.988 on Suno, HeartMuLa, and ACE-Step, respectively. These results support a transferable broadband/high-frequency heuristic. However, leave-one-out transfer to unseen Suno is much weaker than transfer to the other two systems; the current system should not be described as a universal detector.
+
+\section{Prompt-Paired HeartMuLa--ACE-Step Analysis}
+\label{sec:paired}
+
+The two models share the same 500 style descriptions, lyrics, languages, splits, and integer seeds. Their direct comparison therefore controls text conditions more closely than either comparison with Human. The stochastic processes are not equivalent, however, and Demucs may still respond differently to their generated timbres.
+
+\begin{table}[H]
+\centering
+\caption{Prompt-paired HeartMuLa and ACE-Step features on the bias-corrected locked test. H-A is the median within-pair HeartMuLa-minus-ACE-Step difference.}
+\label{tab:paired}
+\begin{tabular}{lrrrr}
+\toprule
+Metric & HeartMuLa & ACE-Step & H-A & Separation AUC \\
+\midrule
+Sibilance burst rate & 1.625 & 1.130 & $+0.527$ & 0.904 \\
+HF crest (dB) & 14.07 & 16.82 & $-2.826$ & 0.857 \\
+HF modulation share & 0.2465 & 0.1417 & $+0.0943$ & 0.770 \\
+Fakeprint periodicity & 0.0327 & 0.0531 & $-0.0286$ & 0.757 \\
+HF tilt 5--16 kHz & $-6.13$ & $-8.06$ & $+3.083$ & 0.707 \\
+HF ratio 5--16 kHz & $-3.639$ & $-6.305$ & $+3.184$ & 0.695 \\
+Air ratio 12--20 kHz & $-13.85$ & $-19.80$ & $+5.947$ & 0.686 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/paired_generators/average_difference_spectrogram_locked_test.png}
+\caption{Prompt-paired locked-test average vocal difference for HeartMuLa minus ACE-Step. The shared correction approximately cancels in the direct dB comparison; the maximum change in the locked absolute map is only approximately 0.271 dB. Data reference: \texttt{A07}.}
+\label{fig:paired-map}
+\end{figure}
+
+The strongest paired differences are sibilance bursts, HF crest, and high-frequency envelope modulation, rather than a single static energy measurement. This supports an applied filter that combines frequency distribution with temporal texture instead of a fixed equalization threshold.
+
+\input{../../music_flamingo_midi_rhythm_probe_20260903/latex/thesis_section_music_flamingo_probe_en}
+
+\input{../../dynamics_rhythm_external_benchmark_20260903/latex/thesis_section_external_benchmark_en}
+
+\input{../../dynamics_rhythm_change_detector_extension_20260903/latex/thesis_section_change_detector_extension_en}
+
+\input{../../external_generator_500_testset_20260904/latex/thesis_section_external_generator_500_en}
+
+\input{../../external_generator_500_heuristics_20260904/latex/thesis_section_external_500_heuristics_en}
+
+\input{../../four_family_diversity_ablation_20260904/latex/thesis_section_four_family_diversity_en}
+
+\begin{quote}\textbf{Historical acquisition-design snapshot (September 4).} The next section preserves the pre-materialization catalogue design. Its item-group counts and partial download totals are historical. The September 5 recording inventory, stronger creator/condition grouping, completed physical audit and numerical re-evaluation appear in Section~\ref{sec:expanded-materialized}.\end{quote}
+
+\input{../../source_diversity_expansion_20260904/latex/thesis_section_source_diversity_en}
+
+\section{Earlier Applied-Filter Interpretation (September 4)}
+\label{sec:conclusion}
+
+\noindent The following interpretation is retained as a dated record of the evidence through September 4. The completed expansion and updated conclusions follow in Section~\ref{sec:expanded-materialized}.
+
+\subsection{Conclusions Supported by the Earlier Evidence}
+
+\begin{enumerate}
+  \item \textbf{The 10--16 kHz region is the most consistent anomalous band across the three current AI domains.} Each generator has a positive frame-normalized mean relative to Human, though the magnitude differs.
+  \item \textbf{Anomalies in 16--20 kHz must be detected in both directions.} HeartMuLa has a sharp cutoff above approximately 16.5 kHz, whereas ACE-Step has an upper-band excess. A rule that equates more high-frequency energy with AI would miss HeartMuLa.
+  \item \textbf{Static spectral shape and dynamic texture should be combined.} HF tilt, band ratios, crest, modulation, sibilance bursts, HNR, and pitch confidence describe complementary phenomena.
+  \item \textbf{The frozen average Demucs correction does not change the main conclusions.} This weakens the explanation that a shared average separator response creates the result, but it does not exclude class-dependent error.
+  \item \textbf{Within-domain AUC substantially overstates universality.} Cross-generator score reversal demonstrates sensitivity to codec, bandwidth, and generation-pipeline fingerprints.
+  \item \textbf{Music Flamingo is not a validated dynamics or rhythm feature.} The MIDI-grounded capability probe produced 0/22 dynamics accuracy, 3/10 rhythm accuracy, and zero physical-choice order consistency.
+  \item \textbf{External fidelity and controlled-change sensitivity answer different questions.} The original detector-facing summaries fail the strict annotation-fidelity gate, but the subsequently frozen end-to-end manipulation test qualifies the non-vocal dynamics family. Its addition raises pooled spectral AUC from 0.8754 to 0.8919 and produces positive, non-zero-crossing increments for all three held-out generators. Rhythm and section/bar-length family gates still fail, so their favorable cohort ablations remain exploratory.
+  \item \textbf{The expanded ten-generator test rejects the three families as general-purpose detectors.} Fixed dynamics reaches all-ten AUC 0.509, with MusicGen-aligned positive transfer but severe reversal on AudioLDM 2 Music and Riffusion. Rhythm reaches 0.477 after its development-set direction reverses, and structure is completely unobservable under the current 10-second minimum-segment rule. Passing a controlled-change gate is therefore necessary but not sufficient for cross-generator discrimination.
+  \item \textbf{High-frequency spectral features dominate the four-family development pipeline, while generator diversity dominates sample count.} After the AIME set is deliberately consumed for five-fold model development, S+D+R reaches generator-macro AUC 0.695 versus 0.685 for S alone. Adding 25 matched conditions/source produces most of the quantity gain, whereas increasing represented new generators from one to eight raises unseen-generator AUC from 0.472 to 0.630. This is development evidence only and replaces neither the earlier negative frozen result nor a new external confirmation.
+  \item \textbf{Human diversity should be measured in catalogues and independent works, not by a 500-row quota.} The frozen v2 expansion contains 2,091 Human tracks from nine catalogues, including only 44 URMP pieces but treating URMP as a full source in source-macro analysis. MusicNet and DEAM contribute 630 untouched locked items. This is an input-design result only; no new accuracy is claimed until the four-family pipeline is run unchanged.
+\end{enumerate}
+
+\subsection{Recommended Layered Applied Filter}
+
+Given the current evidence, the thesis prototype should be organized into five layers instead of treating a within-domain ridge classifier as the final detector:
+
+\begin{enumerate}
+  \item \textbf{Source-control layer:} standardize every item to the same analysis view while retaining native-bandwidth eligibility, balance AI/Human total weight, and give each eligible catalogue equal within-class weight. Report leave-one-Human-catalogue-out and leave-one-generator-out results before any pooled score.
+  \item \textbf{Cross-model layer:} compute the 0.3--20 kHz frame-normalized shape, 5--16 kHz tilt and ratio, 10--16 kHz excess, sibilance bursts, HNR, and pitch confidence on the Demucs vocal stem. Train on multiple generators in development, then evaluate on locked and unseen generators.
+  \item \textbf{Fingerprint layer:} explicitly detect bandwidth cutoffs, 16--20 kHz excess, comb-like periodicity, HF crest, and HF modulation. This layer should answer which known generator a sample resembles, rather than directly equating resemblance with AI status.
+  \item \textbf{Domain-adapted dynamics/rhythm complement:} sum the Demucs bass, drums, and other stems and retain attack-level span, IQR, adjacent change, IBI CV, tempo variation, and entropy. The exploratory S+D+R refit may run in shadow mode, but D and R add only 0.010 macro AUC over S and improve some generators while harming others. They must therefore remain individually exposed rather than being treated as universally signed AI evidence.
+  \item \textbf{Deferred structure layer:} disable All-In-One section/bar-length variety for 10-second decisions because complete-feature coverage is zero and every P-containing combination exactly duplicates its counterpart without P. The earlier 30-second evaluation also had inadequate coverage. Music Flamingo judgments remain disabled.
+\end{enumerate}
+
+The final system should report a continuous score, the principal contributing bands, a vocal-activity flag, and a domain/out-of-distribution warning. The all-500-per-source S+D+R refit is a shadow-mode deployment candidate only. A hard real-world decision threshold is not justified until a matched Human cohort and a new untouched unseen-generator validation are available.
+
+\subsection{Required Limitations and Next Experiments}
+
+The 500 Muse prompts are strongly biased toward Pop (319), Ballad (292), Female Vocal (286), Piano (263), and C-pop (233). The 500 Human FMA items are dominated by Rock (163), Electronic (115), Experimental (45), and Hip-Hop (42), with only 21 Pop items. Current AUC can therefore contain genuine generator fingerprints together with genre, language, vocal-arrangement, mastering, and provenance differences. The next priorities are:
+
+\begin{enumerate}
+  \item materialize the remaining frozen development catalogues, fit with class/source-balanced weights, and run leave-one-Human-catalogue-out analysis before opening MusicNet or DEAM;
+  \item construct matched AI/Human strata for style, language, vocal activity, mastering, and native codec within the expanded catalogues;
+  \item build another untouched, production-matched external collection to validate the S+D+R candidate, because all 500 AIME rows/source have now participated in development and cannot supply its final test;
+  \item test robustness under MP3/AAC compression, resampling, equalization, loudness normalization, and mastering chains;
+  \item repeat the key comparisons using oracle vocals or multiple separators to estimate class-dependent separation error; and
+  \item align the spectral measurements with blinded listening labels to test whether they actually explain the perceived high-frequency cue;
+  \item replicate the language-model capability test on a new, exactly A/B-balanced corpus with a forced-choice prompt frozen in advance;
+  \item repeat the non-vocal dynamics measurement with oracle or alternative stems and compression/mastering perturbations, explicitly modeling opposite generator directions rather than forcing one AI axis;
+  \item freeze any tempo-entropy direction on a new development corpus and evaluate it on a separate untouched corpus, since the old and AIME directions disagree; and
+  \item replace or lengthen the section estimator before re-testing section/bar variety, since complete-feature coverage is zero at 10 s and only 4--12\% in most earlier 30 s locked domains.
+\end{enumerate}
+
+\input{../../source_diversity_expansion_20260905/latex/thesis_section_expanded_materialized_en}
+
+\input{../../source_diversity_expansion_20260905/latex/thesis_updated_conclusions_en}
+
+\section{Reproduction and Integrity}
+\label{sec:repro}
+
+The September 5 expansion is preserved under \filepath{/Users/yi/Documents/code/music/artifacts/source_diversity_expansion_20260905/}. Its exact commands, immutable data roles, code/data hashes, feature-availability audits and frozen candidate files are indexed at the end of Section~\ref{sec:expanded-materialized}.
+
+Exact reproduction commands are indexed as \outref{O12}. The complete remote experiment root is
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/open_models_spectral_500_20260901}
+\end{center}
+and the existing Human/Suno/Demucs-bias baseline is
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/demucs_bias_corrected_1000_20260901}.
+\end{center}
+
+The local lightweight archive root is
+\begin{center}
+\filepath{/Users/yi/Documents/code/music/artifacts/open_models_spectral_500_20260901}.
+\end{center}
+
+The complete Music Flamingo capability experiment and its lightweight thesis archive are, respectively,
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/music_flamingo_midi_rhythm_probe_20260903}\\
+\filepath{/Users/yi/Documents/code/music/artifacts/music_flamingo_midi_rhythm_probe_20260903}.
+\end{center}
+
+The complete external MIR feature benchmark and its local archive are, respectively,
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/dynamics_rhythm_external_benchmark_20260903}\\
+\filepath{/Users/yi/Documents/code/music/artifacts/dynamics_rhythm_external_benchmark_20260903}.
+\end{center}
+
+The complete controlled-change and detector-extension experiment and its local
+lightweight archive are, respectively,
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/dynamics_rhythm_change_detector_extension_20260903}\\
+\filepath{/Users/yi/Documents/code/music/artifacts/dynamics_rhythm_change_detector_extension_20260903}.
+\end{center}
+
+The complete external 500-per-generator test set and its local lightweight
+archive are, respectively,
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/external_generator_500_testset_20260904}\\
+\filepath{/Users/yi/Documents/code/music/artifacts/external_generator_500_testset_20260904}.
+\end{center}
+
+The complete three-family inference/evaluation and its local lightweight
+archive are, respectively,
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/external_generator_500_heuristics_20260904}\\
+\filepath{/Users/yi/Documents/code/music/artifacts/external_generator_500_heuristics_20260904}.
+\end{center}
+
+The complete four-family combination/diversity experiment and its local
+lightweight archive are, respectively,
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/four_family_diversity_ablation_20260904}\\
+\filepath{/Users/yi/Documents/code/music/artifacts/four_family_diversity_ablation_20260904}.
+\end{center}
+
+The Human catalogue-diversity freeze and its local lightweight archive are,
+respectively,
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/source_diversity_expansion_20260904}\\
+\filepath{/Users/yi/Documents/code/music/artifacts/source_diversity_expansion_20260904}.
+\end{center}
+
+The lightweight manifest \outref{O08} covers 196 key files. Its own SHA-256 digest is:
+\begin{center}
+\small\hashvalue{abe0b6b6705aec5f00cd8d516e207a4209428df9e833356d2f13ab2712b8c272}
+\end{center}
+
+\clearpage
+\appendix
+\setlength{\tabcolsep}{5pt}
+
+\section{Code Reference Index}
+\label{app:code}
+
+Unless otherwise stated, paths in the following table are relative to the local lightweight archive root. The main text links to these records through identifiers such as \coderef{C01}. Archived code snapshots keep the reported results tied to the executed implementation even if the working copy later changes.
+
+\begin{longtable}{p{15mm}p{55mm}p{80mm}}
+\caption{Code artifact index.}\\
+\toprule
+ID & Relative path & Function \\
+\midrule
+\endfirsthead
+\toprule
+ID & Relative path & Function \\
+\midrule
+\endhead
+\codeanchor{C01} & \filepath{code/experiment/build_muse_manifest.py} & Filters Muse metadata, constructs lyrics for the first 30 s, deterministically selects 500 items, and assigns splits and seeds. \\
+\codeanchor{C02} & \filepath{code/experiment/run_acestep_batch.py} & Initializes ACE-Step, performs frozen-parameter inference, writes atomically, resumes safely, and records per-item state and hashes. \\
+\codeanchor{C03} & \filepath{code/experiment/run_heartmula_batch.py} & Runs HeartMuLa/HeartCodec on separate GPUs with ranged workers, resume logic, state, and hashes. \\
+\codeanchor{C04} & \filepath{code/experiment/reconcile_generated_state.py} & Read-only verification of existing audio after controlled interruption and reconstruction of missing state entries without changing audio. \\
+\codeanchor{C05} & \filepath{code/experiment/standardize_generated_audio.py} & SoundFile decoding, polyphase resampling, stereo/30 s/PCM-16 FLAC standardization, and clip/pad/truncate accounting. \\
+\codeanchor{C06} & \filepath{code/experiment/validate_generated_batch.py} & Validates manifest/state/audio integrity, sample rate, channels, duration, and finite samples. \\
+\codeanchor{C07} & \filepath{code/experiment/run_demucs_generated.py} & RTX 5090 Demucs batch wrapper, frozen htdemucs parameters, stem metadata verification, and state logging. \\
+\codeanchor{C08} & \filepath{code/experiment/prepare_analysis_layout.py} & Builds analysis layouts and manifests for the Human baseline and each generator's audio and stems. \\
+\codeanchor{C09} & \filepath{code/analysis_lib/stem_spectral_ablation.py} & Implements the STFT, 22 interpretable scalar metrics, active-frame rules, statistics, and ridge model. \\
+\codeanchor{C10} & \filepath{code/analysis_lib/analyze_demucs_artifacts.py} & Computes Demucs artifact metrics, frequency vectors, band ablations, bootstrap intervals, and locked evaluation. \\
+\codeanchor{C11} & \filepath{code/analysis_lib/analyze_bias_corrected_vocals.py} & Applies the frozen Demucs bias filter and compares raw/corrected metrics, univariate effects, and classifications. \\
+\codeanchor{C12} & \filepath{code/experiment/analyze_average_class_spectrogram.py} & Produces 128-band population-average difference spectrograms and four-panel heatmaps. \\
+\codeanchor{C13} & \filepath{code/experiment/analyze_paired_generators.py} & Computes prompt-paired HeartMuLa/ACE metrics, Wilcoxon/BH results, and difference heatmaps. \\
+\codeanchor{C14} & \filepath{code/experiment/compare_generators.py} & Builds cross-generator summary tables, AUC figures, metric effects, and spectral profiles. \\
+\codeanchor{C15} & \filepath{code/experiment/cross_generator_generalization.py} & Runs single-source matrices, leave-one-generator-out, pooled-all, and active-only analyses. \\
+\codeanchor{C16} & \filepath{code/experiment/heartmula_duration_robust_ablation.py} & Excludes short HeartMuLa outputs and deterministically samples equal-size Human controls for sensitivity analysis. \\
+\codeanchor{C17} & \filepath{code/experiment/collect_run_metadata.py} & Collects host, Git, environment, and key-file hashes into run metadata. \\
+\codeanchor{C18} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/prepare_maestro_manifest.py} & Deterministically selects 50 MAESTRO test recordings and freezes four 30 s windows per recording. \\
+\codeanchor{C19} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/verify_maestro_transport.py} & Verifies all transported MAESTRO WAV/MIDI files against official ZIP member size and CRC-32 metadata. \\
+\codeanchor{C20} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/analyze_rhythm_benchmark.py}; \filepath{../dynamics_rhythm_external_benchmark_20260903/code/aggregate_rhythm_results.py} & Scores Beat This! event metrics, detector-facing richness fidelity, exclusions, bootstrap intervals, and three-seed gates. \\
+\codeanchor{C21} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/analyze_maestro_dynamics.py} & Evaluates three acoustic dynamics estimators with oracle MIDI onsets/pitches and gain-invariant window summaries. \\
+\codeanchor{C22} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/analyze_maestro_waveform_dynamics.py} & Implements the deployment-addendum waveform-only onset, harmonic attack, matching, and clustered-bootstrap analysis. \\
+\codeanchor{C23} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/prepare_salami_manifest.py} & Audits official SALAMI Internet Archive URLs and freezes the reachable eligible sample independently of model output. \\
+\codeanchor{C24} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/analyze_salami_structure.py} & Scores All-In-One boundaries and second/bar length fidelity across all annotator files. \\
+\codeanchor{C25} & \filepath{../dynamics_rhythm_external_benchmark_20260903/code/build_external_benchmark_report.py} & Aggregates all external gates and generates the machine-readable decision, report, and dashboard. \\
+\codeanchor{C26} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/prepare_external_change_audio.py} & Creates deterministic MAESTRO gain, SALAMI tempo, and equal/variable section-length controlled audio. \\
+\codeanchor{C27} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/workflow_features.py} & Implements shared waveform-dynamics, beat-derived rhythm, and boundary/downbeat structure features. \\
+\codeanchor{C28} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/analyze_external_change.py} & Runs paired robust composites, 10,000-replicate bootstrap intervals, negative controls, and frozen family gates. \\
+\codeanchor{C29} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/build_detector_manifest.py}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/make_inference_shards.py} & Builds the exact 2,000-row symlink cohort and verifies disjoint balanced RTX 5090 inference shards. \\
+\codeanchor{C30} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/extract_detector_features.py} & Extracts non-vocal dynamics and joins frozen beat, downbeat, and section outputs without dropping missing rows. \\
+\codeanchor{C31} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/build_report.py}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/build_integrity_manifest.py} & Builds the bilingual evidence reports, dashboard, and lightweight SHA-256 manifest. \\
+\codeanchor{C32} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/code/evaluate_detector_extension.py} & Fits the fixed ridge representation, evaluates within/pooled/held-out scenarios, and bootstraps same-track AUC increments. \\
+\codeanchor{C33} & \filepath{../external_generator_500_testset_20260904/code/build_aime_500_testset.py} & Freezes allowed AIME rows, imports prior-overlap flags, assigns prompt groups, materialises deterministic clips, constructs paired model views, and exhaustively verifies all outputs. \\
+\codeanchor{C34} & \filepath{../external_generator_500_testset_20260904/code/audit_aime_source.py} & Hashes the retained revision-pinned parquet shards and records shard-level model counts and byte totals. \\
+\codeanchor{C35} & \filepath{../external_generator_500_heuristics_20260904/code/build_heuristic_cohort.py}; \filepath{../external_generator_500_heuristics_20260904/code/make_inference_shards.py} & Verifies frozen inputs, builds the matched 10-second 7,100-track cohort, and creates eight exact disjoint RTX 5090 shards. \\
+\codeanchor{C36} & \filepath{../external_generator_500_heuristics_20260904/code/workflow_features.py}; \filepath{../external_generator_500_heuristics_20260904/code/extract_features.py} & Implements the frozen 10-second dynamics, rhythm, and structure measurements and joins all rows without dropping missing outputs. \\
+\codeanchor{C37} & \filepath{../external_generator_500_heuristics_20260904/code/run_allinone_shards.sh}; \filepath{../external_generator_500_heuristics_20260904/code/verify_inference.py} & Runs one All-In-One/Demucs shard per RTX 5090, propagates failures, and exhaustively audits beats, JSON, spectrograms, and stems. \\
+\codeanchor{C38} & \filepath{../external_generator_500_heuristics_20260904/code/evaluate_external_heuristics.py} & Fits development-only fixed ridge scores and computes per-generator, aggregate, strict-overlap, five-group, univariate, coverage, coefficient, and paired-bootstrap results. \\
+\codeanchor{C39} & \filepath{../external_generator_500_heuristics_20260904/code/build_report.py}; \filepath{../external_generator_500_heuristics_20260904/code/build_integrity_manifest.py} & Generates the bilingual reports, dashboard, and SHA-256 artifact manifest. \\
+\codeanchor{C40} & \filepath{../four_family_diversity_ablation_20260904/code/extract_vocal_spectral_features.py} & Extracts 16 corrected high-frequency features from every 10-second Demucs vocal stem with raw-frozen frame membership and resumable state. \\
+\codeanchor{C41} & \filepath{../four_family_diversity_ablation_20260904/code/evaluate_four_family_diversity.py} & Evaluates all 15 family combinations across condition-disjoint quantities and balanced generator-diversity subsets, then refits the all-500 deployment candidate. \\
+\codeanchor{C42} & \filepath{../four_family_diversity_ablation_20260904/code/build_reports.py}; \filepath{../four_family_diversity_ablation_20260904/code/validate_outputs.py} & Builds bilingual reports and figures, then checks rows, finite features, fold cells, structural parity, deployment counts, and hashes. \\
+\codeanchor{C43} & \filepath{../source_diversity_expansion_20260904/code/build_frozen_manifest.py}; \filepath{../source_diversity_expansion_20260904/code/export_hf_metadata.py} & Exports pinned metadata and deterministically freezes catalogue-first items, independent groups, roles, revisions, and standardization targets before audio inspection. \\
+\codeanchor{C44} & \filepath{../source_diversity_expansion_20260904/code/materialize_selected_views.py} & Resume-safe parallel download, native-bandwidth probe, deterministic crop, 44.1 kHz stereo FLAC conversion, and file hashing for selected direct-file sources. \\
+\codeanchor{C45} & \filepath{../source_diversity_expansion_20260904/code/validate_manifest.py} & Checks all v2 counts, groups, locked-source gates, vocal strata, raag balance, manifest checksum, and deterministic rebuild. \\
+\bottomrule
+\end{longtable}
+
+\section{Output and Process Reference Index}
+\label{app:outputs}
+
+Except for \outref{O09}, the paths below are relative to the local lightweight archive root.
+
+\begin{longtable}{p{15mm}p{58mm}p{77mm}}
+\caption{Generation, standardization, separation, and audit-output index.}\\
+\toprule
+ID & Path & Contents \\
+\midrule
+\endfirsthead
+\toprule
+ID & Path & Contents \\
+\midrule
+\endhead
+\outanchor{O01} & \filepath{prompts/prompt_manifest.jsonl}; \filepath{prompts/prompt_manifest_metadata.json}; \filepath{prompts/selected_source_rows.jsonl} & Frozen 500-item prompt set with split, language, seed, source fields, and hashes. \\
+\outanchor{O02} & \filepath{state/acestep_generation.jsonl}; \filepath{logs/acestep_generation.log} & Per-item ACE-Step status, duration, format, byte count, SHA-256, and primary log. \\
+\outanchor{O03} & \filepath{state/heartmula_generation*.jsonl}; \filepath{logs/heartmula_generation*.log} & Evidence for HeartMuLa multi-stage workers, controlled interruption, resume/rebalance, and final status. \\
+\outanchor{O04} & \filepath{reports/acestep_standardization_summary.json}; \filepath{reports/heartmula_standardization_summary.json}; \filepath{reports/*generation_validation*.json}; \filepath{state/acestep_standardization_failed_torchcodec.jsonl} & Standardization counts, raw validation, short Heart outputs, and the failed ACE TorchCodec attempt. \\
+\outanchor{O05} & \filepath{state/demucs_acestep.jsonl}; \filepath{state/demucs_heartmula.jsonl}; \filepath{logs/demucs_*.log} & Demucs batches, elapsed time, cumulative validation counts, and smoke/formal logs. \\
+\outanchor{O06} & \filepath{RUN_LOG.md}; \filepath{logs/*pip_freeze.txt}; \filepath{logs/*smoke.log} & Host selection, environment, smoke tests, scheduling, failures, performance, and final status. \\
+\outanchor{O07} & \filepath{logs/heartmula_weight_sha256.txt}; \filepath{logs/acestep_weight_sha256_final.txt} & Frozen weight hashes and per-file hashes for final ACE checkpoints after handler initialization. \\
+\outanchor{O08} & \filepath{reports/LIGHTWEIGHT_SHA256.txt}; \filepath{reports/RUN_METADATA.json} & SHA-256 for 196 lightweight key artifacts and run metadata. \\
+\outanchor{O09} & \filepath{/mnt/nfs-code/users/yi/open_models_spectral_500_20260901} & Complete remote raw/standardized audio, 2,000 stems, state, logs, models, and analysis. \\
+\outanchor{O10} & \filepath{EXPERIMENT_PROTOCOL.md} & Pre-frozen questions, parameters, operational rules, and conclusion boundaries. \\
+\outanchor{O11} & \filepath{MODEL_DATASET_RESEARCH.md}; \filepath{THESIS_RESULTS_CN.md} & Model/dataset selection evidence and the earlier Chinese-stage conclusions. \\
+\outanchor{O12} & \filepath{REPRODUCE_COMMANDS.md} & Exact generation, standardization, validation, Demucs, Human-versus-AI, paired, and cross-generator commands. \\
+\outanchor{O13} & \filepath{samples/README.md}; \filepath{samples/*} & HeartMuLa/ACE mixes and vocal stems for two locked prompts, retained for listening review. \\
+\outanchor{O14} & \filepath{../dynamics_rhythm_external_benchmark_20260903/EXPERIMENT_PROTOCOL.md}; \filepath{../dynamics_rhythm_external_benchmark_20260903/DEPLOYMENT_VALIDATION_ADDENDUM.md}; \filepath{../dynamics_rhythm_external_benchmark_20260903/DATASET_MODEL_AUDIT.md} & Frozen external hypotheses, thresholds, waveform-only addendum, source revisions, licenses, exclusions, and RTX 5090 compatibility deviation. \\
+\outanchor{O15} & \filepath{../dynamics_rhythm_external_benchmark_20260903/manifests/} & Frozen MAESTRO and SALAMI selections, URL audit, exact windows, and 100/100 official-ZIP transport verification. \\
+\outanchor{O16} & \filepath{../dynamics_rhythm_external_benchmark_20260903/RUN_LOG.md}; \filepath{../dynamics_rhythm_external_benchmark_20260903/REPRODUCE_COMMANDS.md}; \filepath{../dynamics_rhythm_external_benchmark_20260903/logs/} & Commands, environment, GPU restriction, failures, resume history, inference logs, and integrity evidence. \\
+\outanchor{O17} & \filepath{/mnt/nfs-code/users/yi/dynamics_rhythm_external_benchmark_20260903} & Complete remote source checkouts, audio, checkpoints, environment, intermediate predictions, logs, and final results. \\
+\outanchor{O18} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/EXPERIMENT_PROTOCOL.md} & Frozen change-sensitivity design plus timestamped outcome-handling and detector-side non-vocal signal addenda. \\
+\outanchor{O19} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/RUN_LOG.md}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/REPRODUCE_COMMANDS.md}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/logs/} & Complete execution history, recovery/re-sharding record, software versions, commands, and inference logs. \\
+\outanchor{O20} & \filepath{/mnt/nfs-code/users/yi/dynamics_rhythm_change_detector_extension_20260903} & Complete remote controlled audio, 2,000 four-stem directories, model intermediates, predictions, results, and reports. \\
+\outanchor{O21} & \filepath{../external_generator_500_testset_20260904/EXPERIMENT_PROTOCOL.md}; \filepath{../external_generator_500_testset_20260904/DATASET_AUDIT.md}; \filepath{../external_generator_500_testset_20260904/TESTSET_REPORT.md}; \filepath{../external_generator_500_testset_20260904/RUN_LOG.md}; \filepath{../external_generator_500_testset_20260904/REPRODUCE_COMMANDS.md} & Frozen evaluation rules, source-selection rationale, cohort interpretation, executed run history, and exact reproduction commands. \\
+\outanchor{O22} & \filepath{../external_generator_500_testset_20260904/testset/}; \filepath{../external_generator_500_testset_20260904/source/audit/}; \filepath{../external_generator_500_testset_20260904/logs/} & Frozen/final manifests, paired per-model and group views, native-band QC, source-shard checksum ledger, summaries, and complete execution logs. \\
+\outanchor{O23} & \filepath{/mnt/nfs-code/users/yi/external_generator_500_testset_20260904} & Complete remote 53.4 GB source mirror, 3.5 GB standardised audio, code, state, manifests, audits, and logs. \\
+\outanchor{O24} & \filepath{../external_generator_500_heuristics_20260904/EXPERIMENT_PROTOCOL.md}; \filepath{../external_generator_500_heuristics_20260904/RUN_LOG.md}; \filepath{../external_generator_500_heuristics_20260904/REPRODUCE_COMMANDS.md} & Pre-frozen test policy, exact execution history, GPU-only inference, preserved failure, conclusion boundary, and reproduction commands. \\
+\outanchor{O25} & \filepath{../external_generator_500_heuristics_20260904/cohort/heuristic_manifest.csv}; \filepath{../external_generator_500_heuristics_20260904/results/inference_verification.json}; \filepath{../external_generator_500_heuristics_20260904/logs/}; \filepath{../external_generator_500_heuristics_20260904/INTEGRITY_MANIFEST.json} & Frozen 7,100-track cohort, exhaustive output audit, smoke/formal/failure-reproduction logs, and lightweight checksums. \\
+\outanchor{O26} & \filepath{/mnt/nfs-code/users/yi/external_generator_500_heuristics_20260904} & Complete remote 5090 inference with 28,400 stems, 7,100 spectrograms, 7,100 structure JSON files, beats, results, reports, and code. \\
+\outanchor{O27} & \filepath{../four_family_diversity_ablation_20260904/EXPERIMENT_PROTOCOL.md}; \filepath{../four_family_diversity_ablation_20260904/RUN_LOG.md}; \filepath{../four_family_diversity_ablation_20260904/REPRODUCE_COMMANDS.md} & Consumed-test boundary, exact CV protocol, feature extraction, timing, results, limitations, and reproduction commands. \\
+\outanchor{O28} & \filepath{../four_family_diversity_ablation_20260904/results/spectral/}; \filepath{../four_family_diversity_ablation_20260904/logs/}; \filepath{../four_family_diversity_ablation_20260904/VALIDATION_SUMMARY.json} & Complete 7,100-row spectral features and state, clean formal logs, output checks, and SHA-256 evidence. \\
+\outanchor{O29} & \filepath{/mnt/nfs-code/users/yi/four_family_diversity_ablation_20260904} & Complete remote four-family features, 42,000 per-generator CV rows, diversity grid, deployment model, figures, reports, code, and logs. \\
+\outanchor{O30} & \filepath{../source_diversity_expansion_20260904/EXPERIMENT_PROTOCOL.md}; \filepath{../source_diversity_expansion_20260904/DATASET_AUDIT.md}; \filepath{../source_diversity_expansion_20260904/FROZEN_STATUS.md}; \filepath{../source_diversity_expansion_20260904/REPRODUCE_COMMANDS.md} & Catalogue-first Human sampling decision, provenance gates, source roles, weighting, non-independence rules, live completion boundary, and exact reproduction commands. \\
+\outanchor{O31} & \filepath{../source_diversity_expansion_20260904/manifests/v2/}; \filepath{../source_diversity_expansion_20260904/source_metadata_snapshot_v2.tar.gz} & Frozen 2,641-row manifest, per-source/group summary, revisions, SHA-256, and compressed metadata evidence used for selection. \\
+\outanchor{O32} & \filepath{/mnt/nfs-code/users/yi/source_diversity_expansion_20260904} & Remote v2 manifest/code plus 144 standardized Human pilot clips, materialization ledger, checksums, and the complete compressed metadata snapshot. \\
+\bottomrule
+\end{longtable}
+
+\section{Data-Analysis Result Reference Index}
+\label{app:analysis}
+
+The following paths are relative to the local lightweight archive root. Each directory contains a human-readable \texttt{REPORT.md}; CSV/JSON/NPZ files are numerical sources, while PNG files are derived visualizations.
+
+\begin{longtable}{p{15mm}p{60mm}p{75mm}}
+\caption{Data-analysis artifact index.}\\
+\toprule
+ID & Path & Associated result or data \\
+\midrule
+\endfirsthead
+\toprule
+ID & Path & Associated result or data \\
+\midrule
+\endhead
+\analysisanchor{A01} & \filepath{analysis/human_vs_suno_average/} & Human-versus-Suno all/development/locked average-difference maps and metadata. \\
+\analysisanchor{A02} & \filepath{analysis/human_vs_heartmula/} & HeartMuLa raw/corrected metrics, band classifications, univariate effects, vocal activity, and average maps. \\
+\analysisanchor{A03} & \filepath{analysis/human_vs_acestep/} & Complete corresponding raw/corrected ACE-Step results. \\
+\analysisanchor{A04} & \filepath{analysis/comparison/} & Three-generator classification comparison, band summary, metric effects, AUC figures, and spectral profiles. \\
+\analysisanchor{A05} & \filepath{analysis/cross_generator/} & Full-cohort single-source matrix, leave-one-out, pooled-all CSV/reports, and heatmaps. \\
+\analysisanchor{A06} & \filepath{analysis/cross_generator_vocal_active/} & Cross-generator results for the raw-frozen vocal-active sensitivity cohort. \\
+\analysisanchor{A07} & \filepath{analysis/paired_generators/} & Metrics for 500 HeartMuLa-versus-ACE pairs, Wilcoxon/BH tests, and four-panel difference maps. \\
+\analysisanchor{A08} & \filepath{analysis/heartmula_duration_robust/} & Duration sensitivity after excluding 42 short outputs, using 366+366/92+92 items. \\
+\analysisanchor{A09} & \filepath{analysis/demucs_frequency_bias.npz} & Demucs frequency bias pre-frozen on external MUSDB oracle vocals. \\
+\analysisanchor{A10} & \filepath{../dynamics_rhythm_external_benchmark_20260903/results/rhythm_benchmark/} & Three-seed Beat This! metrics, final0 bootstrap intervals, exclusions, feature fidelity, and zero rhythm/bar admissions. \\
+\analysisanchor{A11} & \filepath{../dynamics_rhythm_external_benchmark_20260903/results/maestro_dynamics/}; \filepath{../dynamics_rhythm_external_benchmark_20260903/results/maestro_waveform_dynamics/} & Oracle and waveform-only MIDI-dynamics validation, event measurements, window features, bootstrap intervals, and gain tests. \\
+\analysisanchor{A12} & \filepath{../dynamics_rhythm_external_benchmark_20260903/results/salami_structure/} & Boundary metrics and six section/bar-length fidelity results over 44 tracks and 68 annotation files. \\
+\analysisanchor{A13} & \filepath{../dynamics_rhythm_external_benchmark_20260903/results/aggregate_summary.json}; \filepath{../dynamics_rhythm_external_benchmark_20260903/results/admission_decisions.csv}; \filepath{../dynamics_rhythm_external_benchmark_20260903/figures/external_benchmark_dashboard.png}; \filepath{../dynamics_rhythm_external_benchmark_20260903/reports/REPORT_EN.md} & Aggregate zero-admission decision, dashboard, and English evidence report. \\
+\analysisanchor{A14} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/external_results/controlled_change_features.csv}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/external_results/controlled_change_sensitivity.csv}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/external_results/controlled_change_summary.json} & Per-variant features, individual and family paired effects, bootstrap intervals, and sensitivity gates. \\
+\analysisanchor{A15} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/detector_results/evaluation/detector_metrics.csv}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/detector_results/evaluation/incremental_auc_deltas.csv}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/detector_results/evaluation/detector_scores.csv} & Locked within-generator, pooled, and held-out metrics plus paired spectral-extension AUC changes and per-track scores. \\
+\analysisanchor{A16} & \filepath{../dynamics_rhythm_change_detector_extension_20260903/detector_results/new_features.csv}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/detector_results/evaluation/feature_coverage.csv}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/figures/change_detector_extension_dashboard.png}; \filepath{../dynamics_rhythm_change_detector_extension_20260903/reports/REPORT_EN.md} & Joined feature coverage, complete evidence report, and controlled-change/detector dashboard. \\
+\analysisanchor{A17} & \filepath{../external_generator_500_heuristics_20260904/results/evaluation/external_metrics.csv}; \filepath{../external_generator_500_heuristics_20260904/results/evaluation/external_scores.csv}; \filepath{../external_generator_500_heuristics_20260904/results/evaluation/frozen_group_metrics.csv} & Per-generator and aggregate ROC-AUC/BA/confusion counts, 2,000-replicate intervals, strict-overlap sensitivity, five frozen group results, and per-track scores. \\
+\analysisanchor{A18} & \filepath{../external_generator_500_heuristics_20260904/results/evaluation/univariate_external_metrics.csv}; \filepath{../external_generator_500_heuristics_20260904/results/evaluation/feature_coverage.csv}; \filepath{../external_generator_500_heuristics_20260904/results/evaluation/model_coefficients.csv}; \filepath{../external_generator_500_heuristics_20260904/figures/external_500_heuristics_dashboard.png}; \filepath{../external_generator_500_heuristics_20260904/reports/REPORT_EN.md} & Metric directions, missingness and observability, frozen weights, dashboard, and complete English evidence report. \\
+\analysisanchor{A19} & \filepath{../four_family_diversity_ablation_20260904/results/evaluation/combination_by_quantity_k10.csv}; \filepath{../four_family_diversity_ablation_20260904/results/evaluation/combination_full_400_ranked.csv}; \filepath{../four_family_diversity_ablation_20260904/figures/four_family_combination_quantity_table.png} & All 15 feature-family combinations, five training quantities plus legacy baseline, full-data ranking, deltas, fold variation, and heatmap table. \\
+\analysisanchor{A20} & \filepath{../four_family_diversity_ablation_20260904/results/evaluation/diversity_quantity_grid.csv}; \filepath{../four_family_diversity_ablation_20260904/results/evaluation/per_generator_cv_results.csv}; \filepath{../four_family_diversity_ablation_20260904/figures/unseen_generator_diversity_curves.png} & Seen/unseen generator transfer across quantity and diversity, 42,000 per-generator results, and learning curves. \\
+\analysisanchor{A21} & \filepath{../four_family_diversity_ablation_20260904/results/evaluation/deployment_model_all_500.json}; \filepath{../four_family_diversity_ablation_20260904/results/evaluation/evaluation_summary.json}; \filepath{../four_family_diversity_ablation_20260904/reports/REPORT_EN.md} & All-500-per-source S+D+R candidate, feature definitions, source-balanced weights, summary, evidence boundary, and full English report. \\
+\analysisanchor{A22} & \filepath{../source_diversity_expansion_20260904/materialization_manifest_144.jsonl}; \filepath{../source_diversity_expansion_20260904/materialization_summary_144.json}; \filepath{../source_diversity_expansion_20260904/manifests/v2/source_summary.csv} & Per-file native/standardized format, crop, SHA-256 and bandwidth eligibility for 44 URMP plus 100 Hindustani inputs, together with the complete source/group accounting. \\
+\bottomrule
+\end{longtable}
+
+\section{Mapping Reported Numbers to Original Artifacts}
+\label{app:claim-map}
+
+\begingroup
+\footnotesize
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{p{57mm}p{35mm}p{58mm}}
+\caption{Direct data sources for key claims.}\\
+\toprule
+Claim & Reference & Direct file \\
+\midrule
+\endfirsthead
+\toprule
+Claim & Reference & Direct file \\
+\midrule
+\endhead
+Three-generator bandwise AI-minus-Human dB & \analysisref{A04} & \filepath{analysis/comparison/average_spectrogram_band_summary.csv} \\
+Within-domain AUC/CI/balanced accuracy & \analysisref{A04} & \filepath{analysis/comparison/generator_classification_comparison.csv} \\
+Strongest scalar cues for each model & \analysisref{A02}, \analysisref{A03} & \filepath{univariate_effects.csv} and \filepath{REPORT.md} \\
+Leave-one-out and pooled AUC & \analysisref{A05}, \analysisref{A06} & \filepath{cross_generator_evaluation.csv} \\
+HeartMuLa/ACE paired metrics & \analysisref{A07} & \filepath{paired_metric_summary.csv}; \filepath{paired_vocal_metrics.csv} \\
+Sensitivity to 42 short HeartMuLa outputs & \analysisref{A08}, \outref{O04} & \filepath{classification_ablation.csv}; \filepath{heartmula_standardization_summary.json} \\
+Maximum raw/corrected map change & \analysisref{A01}--\analysisref{A03} & \filepath{average_difference_metadata.json} \\
+GPU, timing, failure, and recovery history & \outref{O02}--\outref{O06} & JSONL state, smoke/formal logs, and \filepath{RUN_LOG.md} \\
+Version, weight, and archive integrity & \outref{O07}, \outref{O08} & Weight hashes, \filepath{LIGHTWEIGHT_SHA256.txt}, and \filepath{RUN_METADATA.json} \\
+Beat/downbeat timing versus rhythm-richness fidelity & \analysisref{A10} & \filepath{rhythm_benchmark_summary.json}; per-seed CSV and source summaries \\
+Oracle versus waveform-only dynamics validity & \analysisref{A11} & \filepath{summary.json}; \filepath{window_feature_fidelity.csv}; \filepath{window_features.csv} \\
+SALAMI boundary and section/bar-length fidelity & \analysisref{A12} & \filepath{summary.json}; \filepath{feature_fidelity.csv}; \filepath{per_annotator_metrics.csv} \\
+External gate and no-ablation decision & \analysisref{A13}, \outref{O14}--\outref{O16} & \filepath{aggregate_summary.json}; \filepath{admission_decisions.csv}; protocols and run log \\
+Controlled-change sensitivity and negative controls & \analysisref{A14}, \outref{O18} & \filepath{controlled_change_sensitivity.csv}; \filepath{controlled_change_summary.json} \\
+Qualified dynamics and exploratory rhythm/structure AUC increments & \analysisref{A15} & \filepath{detector_metrics.csv}; \filepath{incremental_auc_deltas.csv}; \filepath{detector_scores.csv} \\
+Feature missingness and 30 s section observability & \analysisref{A16} & \filepath{feature_coverage.csv}; \filepath{new_features.csv}; dashboard and report \\
+External 500-per-generator membership, bandwidth, and integrity & \outref{O21}--\outref{O23} & \filepath{frozen_selection_summary.json}; \filepath{materialization_summary.json}; \filepath{source_audit_summary.json}; manifests, views, and verification log \\
+External ten-generator heuristic transfer and frozen-group stability & \analysisref{A17}, \outref{O24}--\outref{O26} & \filepath{external_metrics.csv}; \filepath{frozen_group_metrics.csv}; \filepath{external_scores.csv}; protocol and run log \\
+External metric directions, coverage, and 10-second structure failure & \analysisref{A18} & \filepath{univariate_external_metrics.csv}; \filepath{feature_coverage.csv}; \filepath{model_coefficients.csv}; dashboard and report \\
+Four-family combinations and quantity scaling & \analysisref{A19}, \outref{O27}--\outref{O29} & \filepath{combination_by_quantity_k10.csv}; \filepath{combination_full_400_ranked.csv}; protocol, logs, and heatmap table \\
+Seen versus unseen transfer under generator diversity & \analysisref{A20} & \filepath{diversity_quantity_grid.csv}; \filepath{per_generator_cv_results.csv}; diversity curves \\
+All-500 deployment candidate and consumed-test boundary & \analysisref{A21} & \filepath{deployment_model_all_500.json}; \filepath{evaluation_summary.json}; \filepath{REPORT_EN.md} \\
+Catalogue-first Human counts, lock roles, materialization, and bandwidth integrity & \analysisref{A22}, \outref{O30}--\outref{O32} & \filepath{manifests/v2/frozen_item_manifest.csv}; \filepath{source_summary.csv}; \filepath{materialization_manifest_144.jsonl}; \filepath{materialization_summary_144.json} \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\clearpage
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

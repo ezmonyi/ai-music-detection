@@ -1,0 +1,73 @@
+% New accepted-results supplement; not yet in the released88-page PDF.
+\subsection{Seven-family evaluation on matched native sixty-second intervals}
+
+After complete neural-output validation, unchanged four-family extraction,
+recovery-provenance review and independent preregistration freezing, we evaluated
+all 127 nonempty S/D/R/P/F/H/M combinations at five training-size caps and five
+shared global-group folds. The cohort contains 1,604 development recordings
+(1,208 Human, 396 Suno; 1,274 global groups). The 438 locked and 50 pilot rows,
+and the separately reserved Mureka500 cohort, do not enter fitting. Each family
+covers the same native 60s interval, but retains its specified measurement front
+end. All 54 numeric descriptors and all unavailable observations are retained.
+Weighted ridge uses penalty 10 and fixed threshold 0.5, with training-only
+imputation and scaling. The caps 25/50/100/200/all are maximum training groups
+per source within each fold, not song counts. The corresponding training-row
+ranges across folds are 240--273, 497--565, 665--738, 955--1,023 and
+1,250--1,328. The same five test folds contain 354, 276, 334, 297 and 343
+recordings under every cap and combination. No winner is selected.
+
+Our headline statistic uniformly averages five Human-source/Suno pairs in each
+of five folds. At all-cap, S/D/R/P yields AUC0.906513 and balanced accuracy
+0.843986. Adding phase-evolution family F yields0.936725/0.870106, a BA increment
+of2.612 percentage points. Adding all F/H/M yields0.943630/0.878733, a BA
+increment of3.475 percentage points. Adding H alone yields0.908258/0.844647;
+adding M alone yields0.910354/0.843268. These are descriptive paired point
+contrasts, not significance tests or established rankings of causal mechanisms.
+At the smallest cap, all seven families yield0.894733/0.824131, below
+S/D/R/P/F at0.905717/0.840459; adding more descriptors is not uniformly useful.
+
+The companion statistic pools all Human rows within each fold before computing
+and averaging its metric. It gives0.864949/0.803214 for S/D/R/P,
+0.904392/0.830497 for S/D/R/P/F and0.917163/0.844176 for all seven.
+These two aggregation conventions must not be conflated. For example,
+MTG-Jamendo versus Suno has seven-family AUC0.848091 and BA0.758256, with
+Human specificity0.645060, much lower than the equal-source aggregate.
+URMP contributes only33 recordings, including two test rows in one fold.
+Suno is the sole development AI source, so source-transfer J is undefined and
+none of these results establishes unseen-generator performance.
+
+Missingness diagnostics qualify the structure proxy P. Its all-cap AUC/BA
+is0.695069/0.650655 with values plus missing indicators,
+0.642236/0.615334 with median-imputed values alone, and0.576730/0.579173
+with missing indicators alone. P-duration columns are missing on265 rows and
+P-bar columns on300; R has at least one missing descriptor on nine rows,
+including five with all three missing. The other four retain IBI CV and are
+not removed by an eligibility filter. The F increment survives
+removal of explicit missing indicators: old-four AUC0.905134 increases to
+0.936692 with F. This does not eliminate genre, instrumentation, codec or
+production-chain confounding. Prior external controls already showed that F
+is sensitive to separation and encoding. H is a pitch-class path proxy, not
+chord transcription, and M is a recurrence proxy, not validated natural-motif
+detection.
+
+Independent numerical auditing passed1,018,540 primary predictions,
+407,416 diagnostic predictions and4,445 saved models, including replayed
+scores, training-only transformations and ridge stationarity checks without
+refitting. All105 matched contrasts and635 candidate/cap cells are preserved.
+Full source-pair and pooled tables, plus all525 contrast/cap cells, are in
+\path{results/presentation_equal60_v4_with_recovery_v1/}; the directly includable
+table source is \path{equal60_presentation_v4_tables_en.tex} within that folder.
+Code references are \path{code/evaluate_new_phenomena_v4.py},
+\path{code/prepare_evaluation_inputs_v4.py},
+\path{code/audit_equal60_v4_results.py}, and
+\path{code/present_equal60_v4.py}. The audit is
+\path{audit/equal60_v4_with_recovery_results_audit_v1.json}, and the full analysis
+is \path{EQUAL60_SEVEN_FAMILY_RESULTS_EN.md}. Paths are relative to
+\path{artifacts/audio_phenomena_expansion_20260907/}.
+
+The full result manifest has SHA-256
+\path{03299363a46da5c9704eacbe672e970e63cbce17513a1bfc56cee3213112c9de}.
+The independent audit receipt has SHA-256
+\path{9b93b558cff42426218abf8ee79ba19833b2a57918319e8855c54aa03bc5a53c}.
+The prior released PDF is preserved; this accepted-results supplement and its
+exhaustive table source require integration and document QA in a later release.

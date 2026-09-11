@@ -1,0 +1,14 @@
+\begin{tabular}{llrrrr}
+\toprule
+Families & Status & Human-source AUC & AI-source AUC & $J$ & Qualified \\
+\midrule
+S & single family & 0.589 & 0.649 & 0.619 & yes \\
+D & single family & 0.549 & 0.548 & 0.549 & yes \\
+R & single family & 0.446 & 0.513 & 0.479 & yes \\
+P & single family & 0.500 & 0.500 & 0.500 & no \\
+S+D & frozen leader & 0.598 & 0.669 & 0.633 & yes \\
+S+D+R+P & all four secondary & 0.590 & 0.665 & 0.627 & no \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+{\footnotesize All values use the full development quantity. The frozen criterion is $J=0.5\,\mathrm{AUC}_{Human}+0.5\,\mathrm{AUC}_{AI}$.}

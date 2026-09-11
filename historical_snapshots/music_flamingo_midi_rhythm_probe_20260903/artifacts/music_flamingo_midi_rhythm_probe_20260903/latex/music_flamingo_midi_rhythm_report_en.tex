@@ -1,0 +1,71 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[a4paper,margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,array}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,urlcolor=blue!50!black]{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+\usepackage{seqsplit}
+
+\setlength{\emergencystretch}{3em}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\renewcommand{\arraystretch}{1.16}
+\newcommand{\MFFigureRoot}{..}
+\newcommand{\MFHash}[1]{{\ttfamily\seqsplit{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Music Flamingo Capability Test}
+\fancyhead[R]{2026-09-03}
+\fancyfoot[C]{\thepage}
+
+\hypersetup{
+  pdftitle={Music Flamingo Capability Test for MIDI-Grounded Dynamics and Rhythm Variation},
+  pdfauthor={Undergraduate Thesis Experiment Archive}
+}
+
+\title{Music Flamingo Capability Test for\\
+MIDI-Grounded Dynamics and Rhythm Variation}
+\author{Undergraduate Thesis Experiment Archive}
+\date{Experiment and report: September 3, 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report evaluates whether Music Flamingo can provide reliable semantic
+features for MIDI-dynamics variation and bar-to-bar rhythm variation in an
+applied AI-versus-Human music detector. Objective targets are recomputed from
+the official Groove MIDI Dataset test split, while Music Flamingo sees only
+paired audio. The preregistered result is negative: dynamics accuracy is 0/22
+(95\% Wilson CI 0.000--0.149), rhythm accuracy is 3/10 (0.108--0.603), and
+physical-choice order consistency is zero for both tasks. A post-hoc
+forced-choice sensitivity test selects the first position in every query,
+showing that its apparent 0.682 dynamics accuracy is a position artifact. The
+model judgment is therefore excluded from the detector; deterministic MIDI/MIR
+measurements remain the recommended heuristics.
+\end{abstract}
+
+\noindent\fcolorbox{black!25}{gray!8}{%
+\parbox{0.96\linewidth}{\textbf{Claim boundary.} This is a controlled
+capability test on human-performed, electronically rendered drum grooves. It is
+not an AI-versus-Human classification evaluation, and it does not establish
+behavior for vocals or pitched instruments.}}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+\input{thesis_section_music_flamingo_probe_en}
+
+\clearpage
+\bibliographystyle{unsrtnat}
+\bibliography{references_music_flamingo}
+\end{document}

@@ -1,0 +1,169 @@
+\section{External Transfer of the Three Heuristic Families}
+\label{sec:external-500-heuristics}
+
+The three previously specified workflows were applied to the frozen external
+set in Section~\ref{sec:external-generator-500}. This is the detector-facing
+stage of the two-stage validation design: first establish whether a workflow
+responds to a controlled change, and only then test whether the same frozen
+representation supplies transferable Human-versus-AI information. The first
+stage admitted only non-vocal dynamics. Rhythm, structure, and any union that
+contains them therefore remain exploratory regardless of the classification
+numbers below.
+
+\subsection{Matched 10-Second Protocol and Execution}
+
+The fitted models use only the 1,600 pre-existing development items: 400 Human
+FMA recordings and 1,200 Suno, HeartMuLa, and ACE-Step recordings. The 400 old
+locked items are excluded. Each training item was deterministically copied as
+its first 10.000 seconds so that the training view matches the external set's
+44.1 kHz, stereo, PCM-16 FLAC standard. The 5,500 external items were never
+used for imputation, scaling, feature selection, model fitting, or threshold
+selection. The combined manifest contains 7,100 unique tracks and has SHA-256
+
+\begin{center}
+\small
+\hashvalue{54b4fb84e5a02fc368daf56f38031378d9ab681f3885997fc0be8c614903ac18}.
+\end{center}
+
+The frozen protocol itself has SHA-256
+\hashvalue{ee8b4204d09db2e35731ba7b7e9b92057e8faf586c939bdc0fe97718a64a3a21}.
+All neural inference ran on the eight RTX 5090 GPUs of host \texttt{5090-5}.
+Beat This! \texttt{final0} supplied beats and downbeats with no DBN. All-In-One
+\texttt{harmonix-all} supplied section boundaries while retaining its default
+FP32 \texttt{htdemucs} bass, drums, other, and vocal stems. An exhaustive audit
+found 7,100 structure JSON files, 7,100 spectrogram arrays, and 28,400 non-empty
+stem WAV files. Beat This! wrote 7,022 files: 88 were legitimate empty
+detections and 78 failed during beat-number serialization with
+\texttt{ValueError: Not all downbeats are beats}. Failures remain missing and
+are not silently repaired.
+
+For dynamics, the Demucs bass, drums, and other stems were summed and the
+10th--90th percentile attack-level span, attack-level IQR, and median adjacent
+attack-level change were computed. This is a proxy for non-vocal performance
+variation; it is not evidence that a track was authored with MIDI. Rhythm uses
+robust IBI CV, normalized tempo total variation, and tempo entropy. Structure
+uses section-duration CV/entropy and section-bar CV/off-mode fraction. The
+minimum observations remain eight attacks, 16 beats, three sections, and four
+downbeats as applicable.
+
+Each family and the all-family union use a ridge score with penalty 10, fitted
+once on old development data. The 400 development Human rows are repeated
+three times to balance 1,200 AI rows. Missing values use training-only medians
+plus explicit missingness indicators. The decision threshold remains 0.5.
+Confidence intervals use 2,000 prompt-condition bootstrap replicates.
+
+\subsection{Coverage Is Part of the Result}
+
+Dynamics is complete for all 5,500 external items. Rhythm coverage is
+source-dependent: 0.420 for AudioLDM 2 Large, 0.614--0.658 for the three
+MusicGen variants, 0.632 for Udio, 0.676 for Stable Audio v1, 0.740 for Stable
+Audio v2, 0.842 for Riffusion, and 0.734 for Human MTG-Jamendo. This makes the
+analyzer's missingness itself a potential source fingerprint.
+
+Structure coverage is exactly zero for every external source and for the old
+10-second development view. The median cleaned All-In-One output contains one
+segment, below the frozen minimum of three. The structure weights are therefore
+all zero, and its nominal classifier is constant. This is an observability
+failure, not evidence that AI and Human section variety are equal.
+
+\subsection{External Classification Results}
+
+Table~\ref{tab:external-heuristic-aggregate} reports the three requested
+families and their union. The six primary generators were absent as families
+from the earlier diagnostic; the four secondary generators were family-seen.
+The shared Human set appears only once in each aggregate.
+
+\begin{table}[H]
+\centering
+\scriptsize
+\caption{Frozen external transfer. BA denotes balanced accuracy.}
+\label{tab:external-heuristic-aggregate}
+\begin{tabular}{llrrrr}
+\toprule
+Cohort & Family & ROC-AUC (95\% CI) & BA (95\% CI) & Human spec. & AI sens. \\
+\midrule
+Primary six & Dynamics & 0.547 (0.523--0.572) & 0.534 (0.515--0.553) & 0.780 & 0.288 \\
+Primary six & Rhythm & 0.493 (0.470--0.513) & 0.548 (0.527--0.567) & 0.706 & 0.389 \\
+Primary six & Structure & 0.500 (0.500--0.500) & 0.500 (0.500--0.500) & 0.000 & 1.000 \\
+Primary six & All three & 0.521 (0.498--0.544) & 0.550 (0.528--0.571) & 0.652 & 0.448 \\
+\midrule
+Secondary four & Dynamics & 0.452 (0.425--0.477) & 0.485 (0.464--0.505) & 0.780 & 0.190 \\
+Secondary four & Rhythm & 0.454 (0.428--0.480) & 0.496 (0.475--0.518) & 0.706 & 0.286 \\
+Secondary four & Structure & 0.500 (0.500--0.500) & 0.500 (0.500--0.500) & 0.000 & 1.000 \\
+Secondary four & All three & 0.449 (0.425--0.474) & 0.492 (0.471--0.514) & 0.652 & 0.331 \\
+\midrule
+All ten & Dynamics & 0.509 (0.484--0.535) & 0.514 (0.496--0.534) & 0.780 & 0.249 \\
+All ten & Rhythm & 0.477 (0.455--0.498) & 0.527 (0.506--0.546) & 0.706 & 0.348 \\
+All ten & Structure & 0.500 (0.500--0.500) & 0.500 (0.500--0.500) & 0.000 & 1.000 \\
+All ten & All three & 0.492 (0.470--0.515) & 0.527 (0.507--0.547) & 0.652 & 0.401 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The dynamics family passed the earlier controlled-change gate, but its current
+all-generator AUC is indistinguishable from chance. Even the positive primary
+aggregate has low sensitivity and is not uniform across generators. Removing
+all 50 prompt conditions touched by the prior 100-track diagnostic gives AUC
+0.556 for the primary six and 0.455 for the secondary four, so exact diagnostic
+overlap does not explain the failure. Across the five pre-frozen 100-condition
+groups, dynamics AUC ranges from 0.466 to 0.591 for the primary six and from
+0.389 to 0.494 for the secondary four.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Per-generator frozen scores against the same 500 Human controls.}
+\label{tab:external-heuristic-generator}
+\begin{tabular}{lrrrr}
+\toprule
+Generator & Dynamics AUC & Rhythm AUC & Structure AUC & All-three AUC \\
+\midrule
+MusicGen Small & 0.639 & 0.538 & 0.500 & 0.598 \\
+MusicGen Medium & 0.625 & 0.525 & 0.500 & 0.591 \\
+MusicGen Large & 0.593 & 0.534 & 0.500 & 0.582 \\
+AudioLDM 2 Large & 0.527 & 0.539 & 0.500 & 0.545 \\
+AudioLDM 2 Music & 0.356 & 0.421 & 0.500 & 0.385 \\
+Mustango & 0.545 & 0.399 & 0.500 & 0.424 \\
+Udio & 0.507 & 0.520 & 0.500 & 0.515 \\
+Riffusion & 0.218 & 0.316 & 0.500 & 0.251 \\
+Stable Audio v1 & 0.492 & 0.483 & 0.500 & 0.485 \\
+Stable Audio v2 & 0.589 & 0.495 & 0.500 & 0.545 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Dynamics transfers moderately to the three MusicGen variants and Stable Audio
+v2, but reverses on AudioLDM 2 Music and especially Riffusion. This is a
+generator fingerprint, not a common AI signature. Threshold calibration is
+also poor: the all-ten dynamics score has Human specificity 0.780 but AI
+sensitivity only 0.249.
+
+The metric directions explain the failure. In development, AI tempo entropy is
+lower than Human (median 0.224 versus 0.258), so the frozen rhythm model assigns
+it a negative coefficient. In the external set, the direction reverses: AI
+median entropy is 0.259 versus Human 0.210, and the raw higher-means-AI AUC is
+0.613. Similarly, external Human dynamics span has median 7.33 dB, compared
+with 9.57--9.72 dB for MusicGen Small/Medium, 5.14 dB for AudioLDM 2 Music,
+and 3.48 dB for Riffusion. One global direction cannot represent these systems.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.98\linewidth]{../../external_generator_500_heuristics_20260904/figures/external_500_heuristics_dashboard.png}
+\caption{Per-generator and aggregate external transfer with complete-feature
+coverage. Dynamics is the only sensitivity-qualified family; all other bars
+are exploratory. Data references: \texttt{A17--A18}.}
+\label{fig:external-500-heuristics}
+\end{figure}
+
+\subsection{Decision}
+
+This larger test rejects activation of any of the three families as a
+standalone general-purpose AI/Human filter. The qualified status of dynamics
+means only that the workflow can detect controlled non-vocal dynamic changes;
+it does not guarantee a generator-invariant class direction. Rhythm reverses
+between development and external domains, and section/bar-length variety is
+not measurable in ten seconds with the current minimum-observation rule.
+Dynamics and rhythm may still be retained as low-level descriptors in a
+known-generator fingerprint or out-of-distribution report. Any new global rule
+derived from the present external medians would be post-hoc and must be tested
+on another untouched, production-matched collection.

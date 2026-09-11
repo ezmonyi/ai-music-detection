@@ -1,0 +1,59 @@
+\subsection{A separate VocalSet vibrato-presence assay}
+\label{sec:vocalset-presence-dev}
+
+The failed MIR-1K rate/extent gate was preserved. A separate, preregistered
+development assay instead tested instructed clip-level straight-tone versus
+vibrato conditions in existing original VocalSet recordings. The metadata-only
+pairing yielded 90 pairs, allocated by singer into 43 development and 47 held-out
+pairs. The archive member with conflicting m9/male8 identity was excluded.
+Matched exercise/vowel identity does not guarantee identical performed pitch,
+and the original breath-annotation-selected subset is not a random VocalSet
+sample. Only the development recordings were opened for this assay.
+
+The primary descriptor was the fraction of independently eligible stable-F0
+windows exhibiting periodic modulation in the fixed 4--8-Hz range. Adequately
+observed straight-tone absence could be zero; insufficient stable pitch remained
+missing. The unchanged coarse pYIN configuration used 16~kHz, frame length
+1024, hop length 160 and C2--C6. Mono 44.1-kHz sources were resampled with a
+Kaiser-5 polyphase filter without gain normalization or DC removal. The
+development-only runner froze source, code, configuration and runtime hashes
+before scoring; twelve unit tests passed.
+
+\begin{table}[htbp]
+\centering\small
+\caption{VocalSet development feasibility result. Technique-conditional ordering
+is encouraging, but differential observability violates the frozen gate.}
+\label{tab:vocalset-presence-dev}
+\begin{tabular}{lr}
+\toprule Measurement & Result \\
+\midrule
+Successfully processed recordings & 86/86 \\
+Numeric straight-tone recordings & 42/43 (97.67\%) \\
+Numeric vibrato recordings & 37/43 (86.05\%) \\
+Absolute observability gap & 11.63 percentage points \\
+Predeclared maximum gap & 10 percentage points \\
+Paired-valid recordings & 37/43 pairs \\
+Positive / tied / negative differences & 33 / 3 / 1 \\
+Median vibrato-minus-straight fraction & $+0.227273$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The development gate failed. Although 33 of 37 observable pairs had the expected
+direction, systematically losing more vibrato recordings could bias conditional
+comparisons. No threshold was relaxed, missing pairs were not removed from
+accounting, and the 47 held-out pairs remained unopened. The result does not
+validate continuous rate/extent, separated-stem robustness, or AI/Human utility;
+V was not admitted as a classifier feature. Independent reconciliation passed
+883 artifact, source/contour, window-accounting and gate checks without refitting
+or rerunning pitch inference.
+
+The experiment is reproduced by
+\path{code/run_vocalset_vibrato_assay_v2.py}, with configuration and source
+inventory in \path{preregistration/vocalset_vibrato_development_v2.json}.
+Outputs are retained in \path{results/vocalset_vibrato_development_v2/},
+including per-clip features, paired differences, singer summaries, contours and
+receipts. The independent audit is
+\path{audit/vocalset_vibrato_development_v2_independent.json}; its code is
+\path{code/audit_vocalset_development_v2.py}. All paths in this subsection are
+relative to \path{artifacts/audio_phenomena_expansion_20260907/}.

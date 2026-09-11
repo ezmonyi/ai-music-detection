@@ -1,0 +1,85 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=24mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,booktabs,longtable,graphicx,xurl,pdflscape}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{3em}
+\title{Bicoherence Development Supplement\\\large Interpretable AI/Human Music Detection Research}
+\author{Experimental methods and reproducibility record}
+\date{7 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This supplement documents a candidate cross-frequency audio phenomenon through
+coefficient-domain counterexamples, continuous-waveform controls and a frozen
+real instrument-note pilot. Independent replay verifies the numerical pipeline.
+The observed responses concern known interventions, not AI/Human accuracy.
+Baseline observability and a retained negative response limit interpretation.
+No external admission gate or bicoherence classifier has passed or been fitted.
+The evidence cutoff is 7 September 2026, 17:39 Asia/Shanghai. At that cutoff,
+the all-combination classification experiment was separately under audit
+and is not reported here.
+\end{abstract}
+\input{../BICOHERENCE_PHENOMENON_THESIS_SECTION_EN.tex}
+\clearpage
+\begin{landscape}
+\begin{figure}[p]
+\centering
+\includegraphics[width=\linewidth,height=0.79\textheight,keepaspectratio]{../results/bc_nsynth_bifrequency_presentation_v1/bifrequency_maps.png}
+\caption{Descriptive bifrequency maps after independent acceptance of the NSynth
+pilot. Top: baseline instrument-balanced mean squared bicoherence and paired
+closed-minus-independent differences. Bottom: eligible notes out of 54, using
+paired eligibility for the differences. Circles mark the target fixed before
+measurement. Different cells can represent different covered subsets. This is
+not a time-frequency spectrogram, significance map or AI/Human classifier.}
+\label{fig:bc-bifrequency-development}
+\end{figure}
+\end{landscape}
+\clearpage
+\section{Artifact identity and evidence boundaries}
+All paths in the methods are relative to the experiment root
+\path{artifacts/audio_phenomena_expansion_20260907/}. The human-readable reports
+are \path{BC_CONTINUOUS_DEVELOPMENT_RESULTS_EN.md} and
+\path{BC_NSYNTH_DEVELOPMENT_RESULTS_EN.md}. They retain complete code, raw-output
+and audit references. The raw note experiment contains 1,299 products totaling
+1,459,355,556 bytes excluding its commit marker, with identical local/NFS copies.
+The visualization has three products totaling 711,513 bytes. This supplement is
+a separate versioned PDF; it does not replace the earlier main thesis PDF.
+
+\begin{description}
+\item[NSynth frozen draft SHA-256]
+\path{7c3c98389ee8c349bb69502b5336ff653ab0910cec58d9f88f181a43265adb9a}
+\item[NSynth raw COMMIT SHA-256]
+\path{c28e0136dfa76f7b0658f04ceeebcb3ae69bf32ddd19f02f149019d3f4e895c3}
+\item[Independent note-replay receipt SHA-256]
+\path{5ac2335ade358056f9ab123189aeee2122c5b37c58959b59747c4a69e5314c59}
+\item[Bifrequency presentation COMMIT SHA-256]
+\path{44bad92abe3e3b4686fc0cb43c01e9e30515b5c2cc19f58cc26f3c0f1e1fee3a}
+\end{description}
+
+The prospective GuitarSet design is
+\path{BC_GUITARSET_DEVELOPMENT_DESIGN_EN.md}. At this cutoff, its official source
+download, full archive/audio validation and scoped overlap audit are unfinished.
+The planned player-and-score-disjoint development and reserved intersections
+have not been frozen or BC-measured. Successful offline tests of its draft tool
+do not establish dataset integrity or scientific measurement performance.
+
+\section{Literature pointers}
+The literature establishes motivation and mathematical interpretation, not
+validated accuracy on this project's music cohort.
+\begin{enumerate}
+\item AlBadawy, E.~A., Lyu, S., and Farid, H. (2019).
+\emph{Detecting AI-Synthesized Speech Using Bispectral Analysis}.
+CVPR Workshops, pp.~104--109.
+\url{https://openaccess.thecvf.com/content_CVPRW_2019/html/Media_Forensics/AlBadawy_Detecting_AI-Synthesized_Speech_Using_Bispectral_Analysis_CVPRW_2019_paper.html}
+\item Fackrell, J.~W.~A., and McLaughlin, S. (1996).
+\emph{Detecting nonlinearities in speech sounds using the bicoherence}.
+Proceedings of the Institute of Acoustics, 18(9), pp.~123--130.
+\url{https://www.ioa.org.uk/system/files/proceedings/jwa_fackrell_s_mclaughlin_detecting_nonlinearities_in_speech_sounds_using_the_bicoherence.pdf}
+The source pointer is retained; no locally downloaded PDF is claimed for this item.
+\end{enumerate}
+\end{document}

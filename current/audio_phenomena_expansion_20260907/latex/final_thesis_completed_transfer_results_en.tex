@@ -1,0 +1,161 @@
+\section{Completed development experiments and transfer boundaries}
+\label{sec:completed-transfer-results}
+
+This section reports completed experiments rather than pending Native30 fits.
+The exact-ten-second and exact-sixty-second cohorts differ; their scores are
+not a controlled comparison of listening duration. All results retain their
+original development status. In particular, inspecting many feature subsets
+does not create an untouched validation set for the selected maximum.
+
+\subsection{Exact10: conditional tonal-path gains}
+
+The five-family S/D/R/F/H experiment evaluated 31 nonempty subsets at five
+training caps on 8,361 development recordings: 2,161 Human recordings from
+seven sources and 6,200 AI recordings from thirteen sources. P was unavailable
+at ten seconds and was not included. At the all-data cap, S+D had
+$J=0.632004$ and mean BA $=0.596233$; S+D+H reached $J=0.660124$ and mean
+BA $=0.616698$. These are the finalized Exact10 values, distinct from the
+slightly different historical four-family evaluation.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Matched additions to S+D in Exact10. The group intervals condition on
+fixed fitted models. Source ranges separately describe observed-source
+composition sensitivity, not confidence intervals for future generators.}
+\label{tab:exact10-conditional}
+\begin{tabular}{lrrr}
+\toprule
+Addition & $\Delta J$ & Group 95\% interval & Source 95\% range\\
+\midrule
+F & $-0.007614$ & $[-0.019946,0.003516]$ & $[-0.060936,0.033818]$\\
+H & $+0.028120$ & $[0.018631,0.036721]$ & $[-0.006843,0.063114]$\\
+F+H & $+0.024647$ & $[0.010972,0.038292]$ & $[-0.022888,0.069376]$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The analysis used 1,000 paired global-group draws and 10,000 separate
+crossed-source draws, retaining the fitted models and threshold. Because 500
+groups crossed labels, the union contained 2,339 groups, not the sum of the
+within-class group counts. Four group draws generated 104 explicitly undefined
+pair cells; none was replaced by a chance score. All aggregate differences
+remained finite under the declared aggregation policy.
+
+The H and F+H conditional group intervals were positive, but every source
+composition range crossed zero (Table~\ref{tab:exact10-conditional}). Thus the
+evidence supports a conditional improvement on these observations, not stable
+improvement under arbitrary source shift. The uncertainty protocol was frozen
+after point estimates were visible and is not a multiplicity-adjusted discovery
+claim. The classifier audit passed 21,380 checks; a separate saved-output
+verification passed 78,111 assertions. These audits establish specified
+numerical and accounting properties, not universal detection validity.
+
+\subsection{Equal60 v6: stereo is not uniformly additive}
+
+The native-stereo, exact-sixty-second cohort contained 2,174 recordings:
+1,278 Human and 896 AI. Human sources were MTG-Jamendo (481), MAESTRO (300),
+MedleyDB (156), MoisesDB (238), and Saraga (103). AI sources were Suno (396)
+and Mureka (500). Mureka and Saraga had already participated in exploratory
+development. Each generator-held-out arm trained on the other generator;
+this is not an external test on a third generator.
+
+Eight families supplied 60 descriptors: S (15), D (3), R (3), P (6), F (15),
+H (6), M (6), and SC (6). Neither BC nor failed modulation family Q was
+included. All 255 nonempty subsets and five caps were evaluated under 38
+valid folds: 23 Human-source, ten generator, and five ordinary-group folds.
+The two empty Saraga fold cells remained omitted. Comparisons below are within
+v6; they do not subtract scores from the different v5 population.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Equal60 v6 all-cap results. Cells give AUC / BA (\%). Seven is
+S+D+R+P+F+H+M; Eight adds SC. Directions are different evaluation estimands.}
+\label{tab:equal60-main}
+\begin{tabular}{lrrr}
+\toprule
+Set & Human-source & Generator & Ordinary-group\\
+\midrule
+S & 0.7882 / 72.07 & 0.6416 / 52.56 & 0.8708 / 81.20\\
+D & 0.7206 / 67.10 & 0.6339 / 61.48 & 0.7334 / 68.65\\
+R & 0.7445 / 67.66 & 0.7331 / 67.37 & 0.7330 / 67.33\\
+P & 0.6907 / 64.41 & 0.6408 / 60.68 & 0.6891 / 64.41\\
+F & 0.8304 / 75.72 & 0.6769 / 57.75 & 0.8580 / 77.94\\
+H & 0.7343 / 67.94 & 0.7076 / 66.38 & 0.7686 / 71.39\\
+M & 0.5153 / 52.42 & 0.5624 / 54.40 & 0.6467 / 60.15\\
+SC & 0.7173 / 72.37 & 0.7230 / 71.88 & 0.7784 / 77.43\\
+S+D+R+P & 0.8545 / 76.72 & 0.7532 / 58.80 & 0.9178 / 85.64\\
+Seven & 0.9071 / 81.17 & 0.7736 / 57.32 & 0.9482 / 88.67\\
+Eight & 0.9056 / 81.97 & 0.7708 / 56.51 & 0.9506 / 89.66\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+SC alone had generator-held-out BA of 71.88\%, yet adding it to Seven
+decreased that endpoint from 57.32\% to 56.51\%. Ordinary-group BA increased
+from 88.67\% to 89.66\%. A standalone association is therefore not sufficient
+to predict a beneficial multivariate increment. Across all 127 matched SC
+additions at the all cap, generator BA increased for 64 subsets and decreased
+for 63. These correlated descriptive counts are not independent trials or
+significance tests.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Matched Equal60 v6 generator-held-out BA by training cap. Adding SC
+to Seven reduced this endpoint at every cap; more groups were not monotonically
+beneficial. Caps are global groups per source.}
+\label{tab:equal60-caps}
+\begin{tabular}{lrr}
+\toprule
+Cap & Seven BA (\%) & Eight BA (\%)\\
+\midrule
+25 & 57.98 & 57.22\\
+50 & 61.17 & 59.87\\
+100 & 57.28 & 55.57\\
+200 & 58.54 & 57.50\\
+All & 57.32 & 56.51\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Errors concealed by an ordinary-group summary}
+
+Under Eight, held-out Mureka sensitivity was 136/500 (27.20\%) and held-out
+Suno sensitivity was 63/396 (15.91\%). Human specificity was 41/103 (39.81\%)
+on Saraga and 273/481 (56.76\%) on MTG-Jamendo. These rates belong to separate
+fitted held-source arms and cannot be combined into one confusion matrix.
+They demonstrate why the 89.66\% ordinary-group BA cannot serve as a claim of
+reliable unseen-generator attribution.
+
+SC missingness-only AUC and BA were 0.5 in all three directions, while its
+values-only results equalled its primary results. This excludes one specific
+missingness explanation for SC within this cohort, but not genre, panning,
+mastering, codec, or source effects. Eight's generator-held-out BA was 56.26\%
+in the values-only diagnostic and 56.32\% in the missingness-only diagnostic,
+versus 56.51\% in the primary representation. These are separately fitted
+diagnostics, not an additive decomposition of the primary score.
+
+The Equal60 numerical audit covered 67,830 models, 19,624,290 score rows and
+60,690 OOF endpoint cells. Maximum affine-score replay discrepancy was
+$3.997\times10^{-15}$. Checks of training transformations, identities,
+denominators, and normal-equation residuals support numerical consistency;
+stationarity checks do not independently reproduce an optimizer or establish
+causal authorship attribution.
+
+\subsection{Result and implementation references}
+
+\begingroup\raggedright
+All paths in this paragraph are relative to the retained experiment root
+\path{artifacts/audio_phenomena_expansion_20260907/}.
+Exact10 full tables are in \path{results/presentation_sdrfh_10s_v2/};
+conditional and source uncertainty outputs are in
+\path{results/uncertainty_sdrfh10_v1/}, implemented by
+\path{code/bootstrap_sdrfh10_uncertainty.py}.
+Equal60 saved models and scores are in
+\path{results/equal60_v6_classification_v1/}, with numerical audit
+\path{audit/equal60_v6_classification_v1.json}.
+The complete 255-subset tables and matched increments are retained in
+\path{results/presentation_equal60_v6_v1/}, produced by
+\path{code/present_equal60_v6_results.py}.
+These references distinguish measurement outputs, analysis outputs and code;
+the final appendix supplies the full artifact and hash index.
+\par\endgroup

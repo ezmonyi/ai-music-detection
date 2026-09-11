@@ -1,0 +1,488 @@
+\section{Expanded-Corpus Four-Family Evaluation}
+\label{sec:expanded-materialized}
+\providecommand{\ExpandedRoot}{../../source_diversity_expansion_20260905}
+
+\subsection{Aim and separation of evidence}
+
+The next experiment addresses two different limitations of the preceding
+development result: incomplete materialization of the frozen catalogue expansion,
+and a restricted distribution of Human reference music. It also separates three
+objects that must not be conflated. The early three-generator average-difference
+plots describe their original cohort. The later per-recording spectral table
+contains 7,100 development inputs, not only the first 1,500 AI recordings. Finally,
+the MUSDB-based separator-response correction is an external calibration object;
+it is intentionally not re-estimated using AI-versus-Human labels.
+
+The four families are denoted S (vocal spectral measurements), D (non-vocal
+attack-level variation), R (beat-interval and local-tempo variation), and P
+(estimated section-length and downbeat-span variation). This study tests their
+classification contribution. It does not convert a source-classification result
+into proof that these proxies measure MIDI velocity, rhythmic creativity, or
+human musical intention. The preceding controlled-change evidence qualifies D
+only for amplitude-change sensitivity; R and P remain exploratory because their
+external measurement gates failed.
+
+\subsection{Frozen acquisition and recording identities}
+
+The selected expansion is the unchanged 2,641-item v2 manifest, with SHA-256
+\hashvalue{d9695922b46bae77b8d9572f450e38e1e637827b9039239283dbbc19a3333d26}.
+It targets 2,091 Human recordings from nine catalogues, 500 provisionally labelled
+AudioX files, and 50 DiffRhythm outputs belonging to ten conditioning groups.
+Among the new Human recordings, 1,261 belong to development, 630 MusicNet/DEAM
+recordings remain locked, and 200 GTZAN/Hindustani recordings remain stress tests.
+The completed union is 10,141 selected recordings: 3,091 Human and 7,050
+AI-labelled files. The latter number includes the 500 unverified AudioX files and
+the small DiffRhythm pilot; it is not a count of approved new AI training examples.
+
+Native files, pinned source archives or parquet containers, deterministic
+10-second views, and unpadded views of up to 60 seconds are retained. Each item
+has source identity, revision, role, crop offsets, native sample rate/duration,
+byte counts, and SHA-256 records. Large artifacts are stored under
+\filepath{/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/}; code, small
+manifests, and analysis outputs are mirrored in the local artifact directory.
+Retrieval failures remain explicit and do not trigger replacement sampling.
+Multiple waveform views or stem files are never counted as independent songs.
+
+The shared condition ID links all AIME generators and their Human reference.
+HeartMuLa and ACE-Step are linked by their Muse source-song identity. Reliable
+artist/creator metadata define within-catalogue groups; exact retained native-byte
+duplicates are linked across items. This is conservative grouping, not a claim
+that every cross-catalogue re-recording, cover, or transcoded duplicate is known.
+A development group overlapping a locked group is excluded from fitting.
+
+\subsection{Duration and bandwidth controls}
+
+The broad experiment uses exact 10-second, 44.1-kHz, stereo PCM-16 FLAC inputs.
+A separate 30-second experiment includes only recordings with at least 30 seconds
+of actual native and decoded audio. Forty-two early HeartMuLa outputs are too
+short for this experiment. Cached AIME parquet contains sufficient native audio
+for 500 Udio and 500 MTG-Jamendo recordings; their restored 30-second views contain
+the previous 10-second anchors. The other short AIME outputs are not padded to
+manufacture long-window eligibility. Thus the two duration experiments have
+different cohorts, and their aggregate scores are not a matched duration effect.
+
+Resampling to 44.1 kHz standardizes a representation but cannot reconstruct absent
+native bandwidth. Three spectral representations are therefore kept separate:
+
+\begin{enumerate}
+\item A primary partial-bandwidth control, S8, uses 15 statistics with its highest
+analysis bin below 7.5 kHz and requires a native sample rate of at least 16 kHz.
+Its high band is 5--7.5 kHz, its body reference is 1--5 kHz, and its lower
+sibilance reference is 0.3--5 kHz. It omits the original 12--20-kHz air ratio.
+\item A full-band sensitivity analysis retains the original 16 S statistics only
+for recordings with native sample rate at least 40 kHz.
+\item A historical-reference analysis retains S16 across all rates. Its results
+are explicitly bandwidth-uncontrolled and cannot select the primary pipeline.
+\end{enumerate}
+
+S8 is not a low-pass-before-Demucs control: the separator still processes the
+original standardized waveform. Generator, codec, mastering, and separator
+interactions may remain below 7.5 kHz. The native-rate gate likewise establishes
+Nyquist eligibility, not proof of real musical energy throughout the band.
+
+\subsection{Frozen estimator and classifier details}
+
+All neural inference runs on RTX 5090 hardware. All-In-One 3.1.0 with the
+\texttt{harmonix-all} checkpoint supplies structure estimates and retained
+\texttt{htdemucs} bass, drums, other, and vocal stems. Beat This! uses the
+\texttt{final0} checkpoint, half precision, and no DBN post-processing.
+Previously computed features are reused only for matching input views and
+estimator definitions; input and output hashes make this reuse auditable.
+The established Demucs call uses 0.25 overlap, float32 separation, and one
+unseeded random temporal shift. Its configured general seed is not applied by the
+inference entry point. This recipe is not changed midway through the experiment.
+Exact realized stems are preserved by hashes; feature and classifier reproduction
+from them is deterministic, whereas bitwise regeneration of the separator output
+is not claimed. The group-block bootstrap intervals exclude separator-run variability.
+Source-disjoint and locked evaluation refer to fitting the detector in this study;
+they do not prove exclusion from the pretraining data of the separator, beat
+tracker, or structure model. That separate training-data overlap has not been
+exhaustively audited.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{12mm}>{\raggedright\arraybackslash}p{68mm}>{\raggedright\arraybackslash}p{69mm}}
+\caption{Expanded experiment: feature definitions and observability rules.}
+\label{tab:expanded-feature-rules}\\
+\toprule Family & Computation & Parameters and interpretation \\
+\midrule
+\endfirsthead
+\toprule Family & Computation & Parameters and interpretation \\
+\midrule
+\endhead
+S & Correct vocal STFT power with the frozen frequency-response estimate;
+summarize slopes, band ratios, flatness, entropy, crest, fine spectral peaks,
+frame variation, modulation, and sibilance bursts.
+& Hann window, FFT 4,096, hop 1,024 at 44.1 kHz. Select raw-vocal RMS frames above
+the larger of percentile 30 and peak minus 35 dB, with a minimum of 16 frames.
+Power is multiplied by $10^{-b(f)/10}$. \\
+D & Sum non-vocal stems; detect positive log-spectral-flux attacks and estimate
+post-attack levels. Output P90--P10, P75--P25, and median adjacent absolute
+level change.
+& FFT 4,096, hop 512, 30 Hz--8 kHz. Attack threshold median plus MAD; minimum
+80-ms spacing; post-attack window 20--120 ms; strongest 16 local spectral peaks;
+at least eight events. These are waveform attack proxies, not recovered MIDI
+velocities. \\
+R & Summarize inter-beat intervals by IQR/median, adjacent local-BPM change
+normalized by median BPM, and normalized BPM-histogram entropy.
+& At least 16 beats and 15 valid intervals; BPM range 30--300; 5-BPM bins;
+at least 14 valid BPM values for the latter two metrics. Despite legacy
+\texttt{cv} names, dispersion is IQR/median rather than standard deviation/mean. \\
+P & Use estimated section durations directly; snap boundaries to nearest
+downbeats only for bar-span measurements.
+Output duration median, IQR/median and entropy, plus bar-span median,
+IQR/median and fraction differing from the modal span.
+& Boundaries at least one second apart; at least three sections. Duration bins
+are two seconds. Bar summaries additionally require at least four downbeats
+and three positive snapped spans. Section labels are not ground-truth phrases. \\
+\bottomrule
+\end{longtable}
+
+The vocal-activity gate is diagnostic only: vocal-to-mixture RMS at least
+$-18$ dB, vocal RMS at least $-60$ dBFS, and at least 16 selected frames. It does
+not remove instrumental Human recordings from the main cohort and is not supplied
+as a classifier feature. Natural unobservability produces missing feature values,
+not zero variation; processing failures have separate statuses.
+
+Each classifier is a source/group-weighted ridge least-squares score with penalty
+10 and an unpenalized intercept. Training-only medians impute missing values;
+missingness indicators are appended, and weighted training means and scales
+standardize the resulting columns. Total Human and AI weight is equal; sources
+are equal within each class, groups equal within each source, and rows equal
+within each group. Weights are rescaled to sum to the training-row count
+$N_{\mathrm{train}}$, so the objective is
+$\sum_i w_i(y_i-\beta_0-\mathbf{z}_i^\top\boldsymbol{\beta})^2
++10\lVert\boldsymbol{\beta}\rVert_2^2$.
+The decision threshold is fixed at 0.5. The unconstrained score is not a
+calibrated posterior probability.
+
+The quantity curves characterize this frozen training recipe. Because the loss
+is summed with total weight $N_{\mathrm{train}}$, the relative strength of the
+fixed penalty changes with training size. Expanding the reference catalogues also
+changes the source-balanced training distribution. These comparisons measure the
+operational effect of the expanded recipe; they do not isolate a causal effect
+of diversity alone at constant sample count and effective regularization.
+
+\subsection{Quantity, combination, and transfer ablations}
+
+All 15 nonempty combinations of S/D/R/P are evaluated at 25, 50, 100, 200, and all
+available independent training groups per source. Each cap uses the smaller of
+the target and the available source-group count; small catalogues are retained.
+Shared AIME/Muse conditions are ordered using a source-independent group hash,
+so eligible quantity subsets align across related sources. Actual training rows
+and group counts accompany the nominal cap. Prior-only and
+expanded training use identical expanded evaluation folds, allowing paired
+assessment of the new Human catalogue contribution.
+
+Ordinary five-fold group-disjoint development results are descriptive. Model
+selection uses separate leave-one-Human-source-out and leave-one-generator-out
+evaluations, each combined with five group-disjoint test folds. A held source is
+entirely absent from training, and all members of each evaluated group are absent
+as well. For a shared AIME condition, this prevents cross-generator condition
+leakage without incorrectly discarding every other AIME training condition.
+Metrics are averaged across opposite-source pairs and then across held sources.
+The named source/model variant is the primary generator unit. An additional
+all-data diagnostic holds out related MusicGen sizes, AudioLDM2 variants, and
+Stable Audio versions jointly, comparing the frozen leader with S-only without
+changing selection. Variant-heldout accuracy is not presented as evidence of
+unseen architecture-family transfer.
+
+The primary exploratory leader is selected at the all-data amount by
+\[
+J=\tfrac{1}{2}\operatorname{macroAUC}_{\text{held-out Human source}}
+ +\tfrac{1}{2}\operatorname{macroAUC}_{\text{held-out AI generator}}.
+\]
+Scores within $10^{-12}$ are treated as tied; ties favor fewer feature families,
+then the combination name fixes any remaining tie. A wholly unavailable family remains in the
+reported ablation but cannot qualify a combination as the selected leader.
+All candidates use the same metadata-qualified recordings, avoiding artificially
+easy complete-case cohorts for combinations with poor observability.
+Missingness-only and median-only/no-indicator checks for the selected leader and
+S-only are prespecified diagnostics, not additional selection criteria.
+
+Candidate definitions and fitted models are durably frozen before scoring the
+new locked catalogues. New Human specificity is reported separately from pairing
+those catalogues with the previously used legacy AI test set. DiffRhythm results
+remain a ten-condition exploratory pilot. AudioX receives score distributions,
+not accuracy or sensitivity claims based on unverified labels. Paired uncertainty
+uses 2,000 group-block bootstrap replicates; repeated file variants are resampled
+together, and shared cross-class groups are sampled jointly.
+These intervals condition on the frozen fitted models and observed catalogues;
+they do not include training or selection variability, nor uncertainty about
+unrepresented future sources.
+
+\subsection{Completed corpus assembly and statistical units}
+
+All 2,641 selected expansion items produced retained native files, exact
+10-second standardized inputs, and unpadded inputs of up to 60 seconds. These
+three representations total 7,923 files: 74,350,492,316 native bytes,
+1,693,939,732 ten-second-view bytes, and 7,166,153,137 long-view bytes. Source
+archives, parquet caches, separator outputs, and the older corpus are additional
+storage objects and are not included in this byte subtotal.
+An independent format/anchor audit verified all 5,282 standardized views as
+44.1-kHz stereo 16-bit FLAC, found no padded ten-second inputs, and confirmed the
+long views contain their frozen short anchors. It found no missing files or
+format, duration, byte-count, or crop-invariant failures. This audit is preserved
+as \filepath{audit/materialization_format_audit.json}; it is separate from the
+full SHA-256 rehash gate.
+The subsequent strict full-content rehash passed all 2,641 items and their
+three retained representations, with zero errors, zero exclusions and zero
+unexplained failures. Its positive audit is
+\filepath{audit/materialization_validation.json}, SHA-256
+\hashvalue{d7b016a5cddf52718ba3e16d2bf83a7223b299e85a1a29b321425b714dca3b27}.
+This completed physical gate preceded formal classifier evaluation.
+
+The final broad cohort contains 10,141 recording identities and 10,140 distinct
+retained-native byte hashes. Two MoisesDB catalogue identities resolve to the
+same native bytes. Both selected records are preserved but assigned to one split
+group and share its training weight; they cannot cross a train/test boundary.
+The full cohort has 3,979 global identity/condition groups, while development
+contains 8,361 rows in 2,339 groups. The remaining broad-cohort roles are 1,030
+locked, 200 stress, 500 provisional, and 50 pilot records.
+
+The true-duration-qualified long cohort has 4,497 records: 3,317 development,
+1,022 locked, 108 stress, and 50 pilot. AudioX and MagnaTagATune contribute no
+30-second-eligible inputs. MedleyDB contributes 168, GTZAN 99, and the selected
+Hindustani collection nine. Among the approved non-pilot AI sources, the long experiment
+retains only Suno, HeartMuLa, ACE-Step and Udio; the other selected AIME native
+clips are too short. This substantial source-composition change is an additional
+reason not to attribute a difference between duration-level scores to window
+length alone.
+
+\input{\ExpandedRoot/results/inventory/corpus_inventory.tex}
+
+\subsection{Feature completion and measurement availability}
+
+The final feature unions contain exactly 10,141 and 4,497 recording IDs,
+respectively, with no unexplained missing rows. S8 and D are computable for all
+these inputs. For R, 6,103 ten-second and 4,361 thirty-second inputs meet the
+measurement gates. Among the remaining rows, natural R unobservability accounts
+for 3,982 and 132, while 56 and four have an explicitly mapped Beat This
+serialization failure. The raw unavailable totals, 4,038 and 136, must not all
+be reported as natural missingness.
+
+No ten-second input meets the P section-count gate. At thirty seconds, 753
+inputs have eligible section-duration measurements, while 3,744 remain naturally
+unobservable. All three bar-span measurements are also available for 414 of the
+753 duration-eligible rows; the remaining 339 have duration measurements only.
+A coincident beat-serialization failure
+does not automatically invalidate structure-derived duration measurements: its
+dependency marker is retained separately. Thus a classifier contribution from
+missingness is not evidence that phrase variety was accurately measured.
+
+Reuse checks on the 7,100-row historical S16 table found a maximum absolute
+difference of $1.20\times10^{-12}$ and no changed missing-value pattern.
+Stratified twenty-item checks for each duration reproduced the frozen D/R/P
+definitions exactly. These checks verify implementation consistency, not musical
+construct validity. In particular, the failed external R/P measurement gates
+remain failed after data expansion.
+
+\subsection{Completed primary selection results}
+
+The formal orchestration completed all eighteen commands successfully. Both
+duration-specific CV selections were frozen and their input hashes rechecked
+before any locked scoring. An independent audit confirmed all 150 primary
+quantity/combination cells, both AUC and balanced-accuracy matrices, the selection
+rules, fixed classifier parameters and the unverified-label boundary.
+
+At ten seconds, S+D is the frozen leader, with Human-source AUC 0.5981,
+generator-source AUC 0.6687 and $J=0.6334$. S is the strongest individual family
+($J=0.6191$), followed by D (0.5487); R is below chance on the aggregate criterion
+(0.4791). P produces a constant, wholly unavailable representation and is not a
+qualified candidate. Adding R to S+D reduces the observed $J$ to 0.6272; adding
+the unavailable P changes nothing. The corresponding mean fixed-threshold
+balanced accuracy of the leader is 0.5971, not 0.6334.
+
+At thirty seconds, S+D+R is selected: Human-source AUC 0.7666,
+generator-source AUC 0.7616, $J=0.7641$, and mean balanced accuracy 0.6986.
+Individual-family $J$ values are S 0.7186, D 0.6698, R 0.6566 and P 0.5030.
+The all-four-family combination attains $J=0.7601$, slightly below the selected three-family
+combination. These observed differences do not establish statistical significance:
+CV confidence intervals and training/selection uncertainty were not estimated.
+The larger long-window score is not a controlled duration comparison, because
+the source composition and eligible recordings changed.
+
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Ten-second all-data selection and individual-family results.}
+\input{\ExpandedRoot/latex/results_10s_selection.tex}
+\end{table}
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Thirty-second all-data selection and individual-family results.}
+\input{\ExpandedRoot/latex/results_30s_selection.tex}
+\end{table}
+
+\subsection{Quantity curves and all fifteen combinations}
+
+The same leader ranks first at every prespecified quantity within each duration:
+S+D for ten seconds and S+D+R for thirty seconds. Increasing the cap from 25
+groups to all groups changes the former's $J$ from 0.6198 to 0.6334 and the
+latter's from 0.7516 to 0.7641. The long-window curve gains most between 25 and
+50 groups and then flattens. Balanced accuracy is not strictly monotonic; these
+operational learning curves do not justify a claim that every additional file
+necessarily improves transfer. The quantity-specific winners remain descriptive;
+they do not replace the prespecified all-data selected model.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Actual training-row ranges across primary source-transfer folds. The
+nominal cap counts groups per training source, not individual audio files.}
+\begin{tabular}{lrrr}
+\toprule Cap & Ten-second rows & Thirty-second rows & Groups per source \\
+\midrule
+25 & 516--707 & 238--431 & 25--25 \\
+50 & 1,037--1,319 & 476--749 & 32--50 \\
+100 & 1,964--2,235 & 855--1,111 & 32--100 \\
+200 & 3,550--4,032 & 1,538--1,806 & 32--200 \\
+All & 6,175--6,844 & 2,198--2,667 & 32--414 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[p]
+\centering\small
+\caption{Ten-second source-transfer $J$: all fifteen combinations by five
+training quantities. Combinations containing P are reported but ineligible.}
+\input{\ExpandedRoot/latex/results_10s_j_matrix.tex}
+\bigskip
+\caption{Thirty-second source-transfer $J$: the corresponding full grid.}
+\input{\ExpandedRoot/latex/results_30s_j_matrix.tex}
+\end{table}
+\begin{table}[p]
+\centering\small
+\caption{Ten-second mean source-transfer balanced accuracy at threshold 0.5.}
+\input{\ExpandedRoot/latex/results_10s_ba_matrix.tex}
+\bigskip
+\caption{Thirty-second mean source-transfer balanced accuracy at threshold 0.5.}
+\input{\ExpandedRoot/latex/results_30s_ba_matrix.tex}
+\end{table}
+\clearpage
+
+\subsection{What the expanded Human reference data changed}
+
+Matched held-out recordings support a much narrower conclusion than a blanket
+claim that expansion improves detection. At ten seconds, S+D improves
+generator-heldout AUC by 0.0580 but reduces Human-source-heldout AUC by 0.0512;
+the net $\Delta J$ is only about 0.0034. S alone has a similarly mixed pattern.
+At thirty seconds, the S+D+R changes are positive in both directions
+($+0.0310$ Human, $+0.1285$ generator, $\Delta J=+0.0798$). The largest long-window
+gain occurs for S alone ($\Delta J=+0.1670$), while combinations without S show
+little improvement or small declines. This pattern is consistent with an
+overly narrow prior Human reference distribution for spectral measurements.
+It is not a causal estimate of diversity alone: training size, source weighting,
+and effective regularization also changed.
+
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Ten-second expanded-minus-prior comparison on matched held-out inputs.}
+\input{\ExpandedRoot/latex/results_10s_prior_delta.tex}
+\bigskip
+\caption{Thirty-second expanded-minus-prior comparison on matched held-out inputs.}
+\input{\ExpandedRoot/latex/results_30s_prior_delta.tex}
+\end{table}
+
+The prespecified missingness checks do not explain the selected leaders through
+missing-value indicators. Ten-second S and D are available for every input:
+missingness-only AUC is 0.5, and removing indicators leaves the score unchanged.
+For thirty-second S+D+R, missingness-only Human/generator AUCs are 0.4203/0.4768;
+using numeric values without indicators instead gives 0.7717/0.7666, slightly
+above the primary 0.7666/0.7616. This diagnosis applies to the tested S and leader
+combinations, not to every R/P combination or every possible processing artifact.
+
+\subsection{Bandwidth sensitivity and source heterogeneity}
+
+Table~\ref{tab:expanded-bandwidth-results} retains the wider-band alternatives
+without selecting them. The ten-second native-rate restriction removes 3,500
+development recordings and therefore changes the cohort substantially. At thirty
+seconds, all 3,317 development recordings already satisfy the native-rate gate,
+so the two S16 sensitivities coincide. Their higher scores cannot by themselves
+distinguish genuine generative artifacts from codec, mastering or separator
+fingerprints. The generic cohort-change note in the preserved machine-generated
+S16 export should therefore be read conditionally; the thirty-second cohort is
+unchanged in this realized experiment.
+
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Spectral representation sensitivity. Only S8 could select the leader.}
+\label{tab:expanded-bandwidth-results}
+\begin{tabular}{llrrr}
+\toprule Duration & Representation & Development $N$ & S-only $J$ & Frozen leader $J$ \\
+\midrule
+10 s & S8 common band & 8,361 & 0.619 & 0.633 \\
+10 s & S16, native $\geq40$ kHz & 4,861 & 0.780 & 0.785 \\
+10 s & S16, all rates & 8,361 & 0.661 & 0.686 \\
+30 s & S8 common band & 3,317 & 0.719 & 0.764 \\
+30 s & S16, native $\geq40$ kHz & 3,317 & 0.781 & 0.803 \\
+30 s & S16, all rates & 3,317 & 0.781 & 0.803 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Ordinary group-CV AUC is more optimistic than source transfer: 0.7099 for
+ten-second S+D and 0.8213 for thirty-second S+D+R. The architecture-family
+diagnostic remains heterogeneous. Ten-second S+D ranges from approximately
+0.559 on Udio to 0.717 on Stable Audio; its Riffusion result drops relative to S
+alone. At thirty seconds, S+D+R gives AUCs of 0.8548 for ACE-Step, 0.9417 for
+HeartMuLa, 0.7022 for Suno and only 0.5479 for Udio. At the fixed threshold,
+Udio sensitivity is just 0.1586 and Suno sensitivity 0.4468. An apparently
+respectable macro-average thus hides consequential generator failures.
+
+\subsection{Locked Human specificity and secondary AI comparisons}
+
+The 630 new locked Human recordings are the principal check against false AI
+accusations. Ten-second S+D correctly labels 86.36\% of MusicNet and 56.33\%
+of DEAM recordings as Human. Thirty-second S+D+R reaches 95.15\% on MusicNet
+but only 52.33\% on DEAM. The latter corresponds to a 47.67\% false-positive
+rate on that catalogue: this is incompatible with a general-purpose reliable
+Human/AI attribution claim, regardless of the strong MusicNet result.
+
+The following tables preserve every source-pair bootstrap condition. The Human
+specificity point estimate is repeated because the same frozen Human predictions
+are paired with different AI sources; these are not independent Human replications.
+At ten seconds, paired specificity increments over S-only are small and their
+intervals include zero. At thirty seconds they are 0.0800 for DEAM and 0.0667
+for MusicNet, with positive conditional bootstrap intervals. Importantly,
+MusicNet and DEAM each use recording-ID groups (330 and 300), not a
+composer- or artist-level resampling scheme. Unmodelled creator/composition
+dependence can make these intervals too optimistic for those broader targets.
+
+\subsubsection{Ten-second locked specificity}
+\begingroup\fontsize{9.5}{11.5}\selectfont\setlength{\tabcolsep}{4pt}
+\input{\ExpandedRoot/latex/presentation_results_10s_locked_specificity.tex}
+\endgroup
+\clearpage
+\subsubsection{Thirty-second locked specificity}
+\begingroup\fontsize{9.5}{11.5}\selectfont\setlength{\tabcolsep}{4pt}
+\input{\ExpandedRoot/latex/presentation_results_30s_locked_specificity.tex}
+\endgroup
+
+Pairing the new Human catalogues with the previously used legacy AI holdout
+gives source-pair macro AUC/BA of 0.7802/0.7201 for ten-second S+D and
+0.8732/0.7949 for thirty-second S+D+R. These are mixed-provenance diagnostic
+tests, not wholly new two-class external accuracy estimates. GTZAN stress-test
+specificity is 0.6000 at ten seconds and 0.4242 at thirty seconds; the eligible
+Hindustani stress subsets have specificity 0.7800 and 0.5556, but the latter has
+only nine recordings and is not a paired duration comparison.
+
+DiffRhythm remains a fifty-file, ten-condition exploratory pilot. AudioX remains
+unverified: its ten-second S+D score has median 0.696 and 5th/95th percentiles
+0.276/1.360, but no accuracy is assigned. A score above one is possible because
+this is unconstrained ridge regression, not an AI probability. Neither slice
+was used to reselect a model, threshold, feature family or training quantity.
+
+\subsection{Source-level observability audit}
+
+The compact tables report natural-unobservable/processing-failure percentages
+for every source and role. P eligibility refers first to section durations;
+the separate per-feature CSVs retain the more restrictive bar-span availability.
+Processing failures remain explicit even when another family is naturally
+unobservable for the same recording.
+\subsubsection{Ten-second source and role coverage}
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\input{\ExpandedRoot/latex/results_10s_family_availability_compact.tex}
+\endgroup
+\subsubsection{Thirty-second source and role coverage}
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\input{\ExpandedRoot/latex/results_30s_family_availability_compact.tex}
+\endgroup
+
+\input{\ExpandedRoot/latex/thesis_expanded_reproduction_en}

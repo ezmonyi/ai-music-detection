@@ -1,0 +1,137 @@
+\section{Data provenance and analysis populations}
+\label{sec:final-data}
+
+The project uses a dated recording registry, several overlapping analysis
+cohorts, and separate measurement-validation corpora. Their counts answer
+different questions. They must not be summed into a single number of independent
+songs, and external phenomenon-validation recordings are not automatically
+members of the AI/Human classification population.
+
+\subsection{Frozen expanded registry}
+
+The September 5 registry contains 10,141 selected recording identities:
+3,091 Human and 7,050 AI-labelled. It has 10,140 distinct retained-native byte
+hashes and 3,979 global split groups. The duplicate MoisesDB pair shares a
+group and training weight. Exact-ten-second views cover the registry; 4,497
+recordings satisfy the actual-duration condition for thirty-second analysis.
+Eligible development populations contain 8,361 and 3,317 rows, respectively.
+Locked, stress, provisional, and pilot roles are not silently admitted to
+development fitting.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Human sources in the September 5 registry. Thirty-second eligibility
+does not imply admission to the development set. Roles describe that dated
+registry, not every subsequent experiment.}
+\label{tab:human-registry}
+\begin{tabular}{lrrl}
+\toprule
+Source & Identities & Eligible 30s & Role\\
+\midrule
+FMA & 500 & 500 & 400 development, 100 locked\\
+MTG-Jamendo & 500 & 500 & Development\\
+DEAM & 300 & 300 & Locked\\
+GTZAN & 100 & 99 & Stress\\
+Hindustani HF & 100 & 9 & Stress\\
+MAESTRO v3 & 300 & 300 & Development\\
+MagnaTagATune & 500 & 0 & Development\\
+MedleyDB & 178 & 168 & Development\\
+MoisesDB & 239 & 239 & Development\\
+MusicNet & 330 & 330 & Locked\\
+URMP & 44 & 44 & Development\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The AI-labelled registry contains 500 entries each for ACE-Step, AudioLDM 2
+Large, AudioLDM 2 Music, HeartMuLa, MusicGen Large, MusicGen Medium, MusicGen
+Small, Mustango, Riffusion, Stable Audio v1, Stable Audio v2, Suno, Udio, and
+provisional AudioX. DiffRhythm contributes 50 files but only ten conditioning
+groups. AudioX is not verified AI ground truth and receives no accuracy claim.
+Model-size or version variants are not assumed to be independent generator
+families. Short excerpts from some sources cannot support the long-window
+analyses merely because 500 files are available.
+
+All 2,641 selected items in the materialization expansion were retained on
+disk and passed full-content SHA-256 validation. Their native, exact-ten-second,
+and unpadded up-to-sixty-second representations comprise 7,923 files and
+83,210,585,185 bytes. This is a batch-specific storage total: archives, caches,
+stems, older data, model weights and subsequent acquisitions are additional.
+It is not a claim that the entire project occupies that amount of storage.
+
+\subsection{Matched duration cohorts}
+
+Equal60 v6 contains 2,174 exact-sixty-second recordings with native-stereo
+provenance: 1,278 Human and 896 AI. Its Human sources are MTG-Jamendo (481),
+MAESTRO (300), MedleyDB (156), MoisesDB (238), and Saraga (103). Its AI
+sources are Suno (396) and Mureka (500). The cohort excludes the 33 native-mono
+URMP recordings from the preceding v5 population. Mureka and Saraga had
+already entered exploratory development; their use here is not a fresh
+untouched confirmation.
+
+Native30 contains 3,830 recordings, with 1,664 Human and 2,166 AI observations
+from eleven sources (Table~\ref{tab:native30-roster}). It expands generator
+coverage relative to Equal60, but remains restricted by duration and provenance
+eligibility. The cohorts overlap, and their sizes are not added to the older
+registry to manufacture an updated global census.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Frozen Native30 cohort. All input views have exactly 1,323,000
+frames at 44.1 kHz, two channels, and WAV FLOAT storage.}
+\label{tab:native30-roster}
+\begin{tabular}{lrlr}
+\toprule
+Human source & N & AI source & N\\
+\midrule
+FMA & 354 & ACE-Step & 400\\
+MTG-Jamendo & 500 & HeartMuLa & 366\\
+MAESTRO & 300 & Suno & 400\\
+MedleyDB & 168 & Udio & 500\\
+MoisesDB & 239 & Mureka v9 & 500\\
+Saraga & 103 & & \\
+\midrule
+Total Human & 1,664 & Total AI & 2,166\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Native30 uses unpadded fixed excerpts and an explicit origin plan. A standardized
+44.1-kHz file does not establish that the original recording possessed that
+bandwidth: native sample-rate eligibility remains joined to original provenance.
+Likewise, stereo measurements require meaningful native-stereo eligibility,
+not duplicated mono channels. Internal mono 16-kHz analysis views used by some
+measurements do not replace the stereo source needed by SC.
+
+\subsection{Measurement availability is not cohort membership}
+
+The committed Native30 FHSC measurement package retains all 3,830 rows.
+Complete selected scalars are available on 3,819 rows for F, 3,789 for H,
+and 3,829 for SC. F has 3,829 rows with status \texttt{ok}, but that status
+does not imply that every one of its fifteen selected scalars is observed.
+M is short-duration unavailable throughout Native30 and is not a primary
+predictor there. Thus Equal60's eight families include M, whereas Native30's
+seven-family base excludes M and its planned eighth family is BC.
+
+The FHSC integrity audit verified 7,663 committed products, including 3,830
+receipts and 3,830 SC frame archives. It established declared byte, schema,
+lineage and missingness properties, not independent waveform re-extraction of
+all features. Scientific missingness is retained rather than used to select
+a more favorable cohort.
+
+\subsection{Data and audit references}
+
+\begingroup\raggedright
+The dated registry and physical materialization evidence are retained under
+\path{artifacts/source_diversity_expansion_20260905/}, specifically
+\path{results/inventory/corpus_inventory.md} and
+\path{audit/materialization_validation.json}.
+Native30's committed cohort is identified by its contract hash
+\path{730b9bb25d18715c5ed0191ec9eb7a921d473b9534c9e5bc9196c25f5ce44510}.
+Its source plan and selected-scalar availability audit are retained under
+\path{artifacts/audio_phenomena_expansion_20260907/audit/} as
+\path{native30_origin_plan_v2.json} and
+\path{native30_fhsc_committed_independent_audit_v1/REPORT_EN.md}.
+The final reproducibility appendix records full local and NFS locations;
+the local artifact file count is not substituted for a music-corpus count.
+\par\endgroup

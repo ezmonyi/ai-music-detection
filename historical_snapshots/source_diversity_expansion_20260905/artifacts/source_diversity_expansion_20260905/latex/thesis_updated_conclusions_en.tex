@@ -1,0 +1,43 @@
+\section{Updated Conclusions from the Expanded Evaluation}
+\label{sec:expanded-final-conclusions}
+
+This completed expansion changes the interpretation from a small-cohort
+separation exercise to a source-transfer test with explicit failure cases.
+All selected recordings are retained on disk, all four feature families have
+item-level completion or observability accounting, and the complete fifteen-by-five
+ablation is reproducible from frozen outputs. Spectral evidence was not restricted
+to the initial 1,500 AI recordings: the preceding development table already used
+7,100 inputs, and the current broad union contains 10,141 recording identities.
+
+The most defensible candidates are S+D for ten-second inputs and S+D+R for the
+duration-qualified thirty-second cohort. Their mean source-transfer AUCs are
+0.6334 and 0.7641, respectively, with fixed-threshold balanced accuracies of
+0.5971 and 0.6986. These are development selection summaries, not the accuracy
+of a universal detector. The duration comparison is confounded by a substantial
+change in sources and recordings.
+
+The high-frequency hypothesis has measurable value, particularly when the Human
+reference distribution is expanded. Nevertheless, greater diversity does not
+uniformly improve every transfer direction: the ten-second leader gains on
+generator holdout but loses on Human-source holdout. Higher unrestricted-band
+scores remain compatible with encoding and separator artifacts. D adds useful
+classification information without establishing MIDI velocity recovery. R adds
+information in the long cohort but its earlier external rhythm-change validation
+still failed. P is unobservable in the short cohort and nearly chance alone in
+the long cohort; these measurements cannot support a phrase-creativity claim.
+
+The most consequential negative result is the remaining false-positive burden.
+Thirty-second Human specificity is 0.9515 on MusicNet but 0.5233 on DEAM, while
+unseen-source Udio classification remains near chance. The pipeline should
+therefore be described as an exploratory, interpretable source-sensitive score,
+not a conclusive authorship test. A single high score must not be presented as
+proof that a recording or artist used generative AI.
+
+Further work should validate rhythm and phrase measurements on longer,
+independently annotated music before interpreting those constructs; collect
+stronger creator/composition identities for grouping; and reserve new,
+genre- and production-diverse Human recordings plus provenance-verified AI
+sources for the next frozen evaluation. Any threshold or calibration revision
+must use separate validation data, not the locked catalogues just examined.
+These are prospective requirements, not additional experiments claimed as
+completed in this thesis archive.

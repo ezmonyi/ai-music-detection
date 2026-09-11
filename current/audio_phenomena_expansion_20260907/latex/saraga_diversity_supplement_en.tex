@@ -1,0 +1,314 @@
+\subsection{Prospective natural-annotation and Human-diversity extension}
+The Saraga collections provide a possible external source of Indian art-music
+performances with manually annotated rhythmic cycles, tempi, sections and
+melodic phrases (Srinivasamurthy et al., 2021,
+\url{https://doi.org/10.18061/emr.v16i1.7641}). This checkpoint is a metadata
+audit, not a completed audio acquisition or detector experiment. A pinned
+repository snapshot contains251 Carnatic and108 Hindustani recording metadata
+entries, with249 and108 mixed-audio checksums respectively. There are54
+lead-vocal multitrack checksum entries in this snapshot; the authors' format
+webpage lists168, an unresolved source-version discrepancy rather than proof
+of either number of physically available isolated vocals. Three
+Hindustani titles explicitly indicate introductory speech and require exclusion
+or review before any music-only sampling contract.
+
+Potential uses include validation of natural rhythmic/section changes and
+melodic recurrence, plus a separate Human-source transfer test. Tala cycle
+annotations cannot be silently equated with Western bars, and chroma-path
+variation is not automatically chord-progression diversity. Assay and detector
+test groups must remain performer/concert-disjoint. All currently failed vocal
+measurement gates remain unchanged.
+
+All2949 repository blobs were matched to the pinned Git tree, but no physical
+audio duration or classifier performance is established. The repository and
+Zenodo record retain different noncommercial CC license labels; neither was
+silently replaced. Evidence and the complete limitations are in
+\path{artifacts/audio_phenomena_expansion_20260907/SARAGA_DIVERSITY_REVIEW_EN.md},
+\path{artifacts/audio_phenomena_expansion_20260907/audit/saraga_catalog_v1.json},
+and \path{artifacts/audio_phenomena_expansion_20260907/code/audit_saraga_catalog.py}.
+
+\paragraph{Subsequent archive-integrity checkpoint.}
+The Hindustani archive was subsequently acquired on the research server:
+4,109,172,493 bytes, matching the publisher's MD5. All1,723 regular ZIP members
+passed complete EOF/CRC and per-member digest checks, followed by a second
+whole-file hash. The216 MP3-suffixed entries comprise108 audio payload candidates
+and108 macOS resource-fork sidecars; the latter must not inflate recording
+counts. No files have yet been extracted, physically decoded, assigned to an
+assay/test cohort or scored. Consequently this changes acquisition evidence,
+not the experiment denominators or detector conclusions. The complete receipt
+is \path{artifacts/audio_phenomena_expansion_20260907/audit/saraga_hindustani_archive_v1.json}.
+
+\paragraph{Natural tempo-annotation feasibility, not measured accuracy.}
+A separate read-only parser examined all67 Hindustani BPM-interval files.
+All67 passed structural parsing;52 recordings contain65 boundaries between
+contiguous intervals with different known BPM labels. Each has at least30s of
+annotated context on either side. These67 BPM files differ from the75 manual
+tempo files counted in the initial catalog. Unknown tempo remains missing.
+The annotation ratios range from0.973262 to22.3, requiring review of musical
+beat units, tala and section transitions; a BPM change is not itself a complete
+label for rhythmic-pattern diversity. Neither audio alignment nor model detection
+accuracy has been established. Code and row-level evidence are
+\path{code/audit_saraga_bpm_annotations_v1.py} and
+\path{audit/saraga_bpm_annotation_content_v1.json} under the expansion root.
+
+Grouping is also consequential: connecting all credited people across performer
+and album-artist roles and shared release/concert IDs produces only5 components
+of sizes77,14,10,5,2 across108 catalog records; two records lack performer
+credits. An apparent108-track sample is therefore not108 independent groups.
+No assay/test partition has yet been selected, and no grouping constraint was
+weakened to obtain a larger effective sample size.
+
+\paragraph{Exact checksum identity reconciliation.}
+The subsequent v2 check matched all108 recording identities one-to-one with108
+unique published MP3 checksums and actual archive payloads. Sixteen filename
+aliases were resolved by exact checksum equality, not fuzzy name substitution;
+all annotation/metadata presence inventories also reconciled. The initial failed
+path-only result remains preserved. This establishes byte-level source identity,
+not decoded-audio validity or independent sample count. The complete evidence is
+\path{audit/saraga_hindustani_reconciliation_v2.json}, produced by
+\path{code/reconcile_saraga_hindustani_v2.py}; no detector scores were used.
+
+\paragraph{Limits of the natural phrase labels.}
+The complete53-file Hindustani phrase inventory has3,100 nonblank lines:
+3,091 parse, while9 lines across3 files have fractional flags or a missing note
+label and remain explicit errors. The parsed flags are0 for2,462 rows,1 for551,
+and2 for78;52 files give differing flags to the same case-sensitive note string.
+Only3 same-label pairs in structurally valid files satisfy both documented1/2
+flags, both durations at least4s and onset lag8--56s. This is a scale screen,
+not3 independent validated motif trials. Unknown flags and unannotated regions
+cannot supply reliable negative labels. See
+\path{audit/saraga_phrase_annotation_content_v1.json} and
+\path{code/audit_saraga_phrase_annotations_v1.py}.
+
+Pearson's methodological commentary (2021,
+\url{https://doi.org/10.18061/emr.v16i1.7974}) discusses annotation interpretation
+and completeness. The authors' format documentation additionally specifies
+Hindustani tempo in matras per minute
+(\url{https://mtg.github.io/saraga/organization.html}); mapping these units to a
+Western beat/downbeat output requires validation. No natural-motif accuracy or
+new AI/human discrimination is established by these annotation inventories.
+
+\paragraph{Physical-acquisition launch.}
+After19 remote CPU tests passed, the checksum-bound108-payload materializer
+was launched with two workers. It extracts original MP3 bytes and reads decoded
+samples sequentially to actual EOF, retaining header/frame discrepancies,
+finite-sample checks and explicit speech/provenance limitations. No resampling,
+gain adjustment, crop selection, neural inference or classifier admission is
+performed. Individual physical receipts were being produced at the checkpoint;
+final108-item acceptance was still pending. Code and test evidence are
+\path{code/materialize_saraga_hindustani_v1.py} and
+\path{audit/saraga_physical_launch_parent_review_v1.json}. This acquisition step
+does not resolve incomplete phrase labels or establish108 independent trials.
+
+\paragraph{Coarse versus detailed tempo boundaries.}
+All67 three-column BPM inventories were compared with their six-column tempo
+counterparts. Sixty-three files match tempo values and start times within1ms;
+four retain overlapping/out-of-order intervals for manual review. The matched
+files contain60 coarse contiguous tempo changes, but only one is also contiguous
+in the detailed annotations. The intervening detailed gaps range from0 to15.176s.
+All60 offer separate30s context within each adjacent detailed interval, which
+suggests a paired stable-context contrast assay rather than precise boundary
+localization. No windows were selected or analyzed by this inventory. Six
+synthetic tests and an independent check of all matched raw endpoints passed.
+See \path{SARAGA_TEMPO_CONCORDANCE_EN.md},
+\path{code/audit_saraga_tempo_concordance_v1.py}, and
+\path{audit/saraga_tempo_concordance_v1.json}. The earlier65-change coarse
+inventory remains preserved and is not a claim of65 validated change instants.
+
+\paragraph{Completed physical inventory.}
+The materializer subsequently completed108 original MP3s and108 decode receipts:
+3,956,076,186 raw bytes and43.414662 decoded hours. All are stereo and exceed60s;
+101 decode at44.1kHz and seven at48kHz, despite the documentation's uniform
+44.1kHz description. Eleven header counts differ from actual EOF; all decoded
+samples are finite. The three speech-title flags and two missing-performer-credit
+records are disjoint, leaving103 unflagged candidates, not103 admitted music
+trials. Independent final raw-file rehash remains a separate acceptance step.
+See \path{SARAGA_PHYSICAL_RESULTS_EN.md} and
+\path{manifests/saraga_hindustani_physical_v1/summary.json}. No original audio
+bytes, current classifier cohort or released thesis PDF were replaced.
+
+A separate physical-duration arithmetic join found that all60 paired-context
+candidates, across48 recordings, fit inside decoded duration. None has a
+speech-title flag; two pairs in two recordings lack performer credits. The
+remaining58 pairs across46 recordings are still candidates, not selected or
+independent trials. Four tests passed. Bounds alone do not verify perceptual
+alignment. The reproducible join is
+\path{code/audit_saraga_tempo_bounds_v1.py}, with output
+\path{audit/saraga_tempo_physical_bounds_v1.json}.
+
+\paragraph{Independent artifact acceptance.}
+At00:31:58UTC, the separately implemented auditor passed all108 raw files and
+108 receipts. It independently recomputed MD5 and SHA256 twice for every raw
+payload and checked all canonical record seals, identities, finite-sample
+accounting and summary aggregates. This supersedes the pending artifact-audit
+status above, not the pending music/admission or annotation-alignment decisions.
+The auditor does not perform a second decode or another source-archive hash.
+Code is \path{code/audit_saraga_physical_v1.py}; its16 tests passed in both local
+and remote runtimes. Full evidence is
+\path{audit/saraga_physical_independent_v1.json}, with SHA256
+\path{ffd9158dc2095c918f8bc379c52cc6f1c12eab253de80c261332e9ff120fd03d}.
+
+\paragraph{Prospective external-Human selection.}
+The actual 103-recording metadata draft passed independent checks of six output
+hashes, 120 bound inputs, all 108 physical receipts and every native center
+interval. Coordinates use actual EOF, not header duration. Eligible recordings
+comprise 96 at 44.1 kHz and seven at 48 kHz; all eleven header discrepancies
+remain. The parent froze selection only, preserving the draft, in
+\path{preregistration/saraga_external103_selection_frozen_v1.json}.
+No real crop, inference or classifier score is accepted by that receipt.
+See \path{code/prepare_saraga_external_cohort_v1.py},
+\path{results/saraga_external103_selection_draft_v1/} and
+\path{audit/saraga_external103_draft_review_v1.json}.
+
+Role-agnostic artist identities and release identities connect the recordings
+into components of sizes 72, 14, 10, 5 and 2; 103 files are not 103 independent
+sources. Recorded raw hashes do not intersect the 1,604 development sources,
+but this does not exclude shared performances, excerpts or transcoding.
+Historical 10-second inputs contained 100 HF Hindustani recordings; nine
+described only long-cohort exclusions. Thus Saraga is external to the frozen
+model cohort, not proven untouched by the research history or pretrained models.
+
+The verifier \path{code/saraga_interval_audio_v1.py} passed 27 remote synthetic
+tests, including real DOUBLE-WAV decoding at both rates. It requires fresh
+full-EOF float64 PCM agreement, independent seek equality and repeated raw
+hashes. Synthetic passes do not establish real Saraga crop acceptance.
+Protocol: \path{SARAGA_INTERVAL_AUDIO_V1_EN.md}. Preserve noncommercial internal
+handling and the recorded repository CC BY-NC versus Zenodo CC BY-NC-SA
+discrepancy; no redistribution or agreement acceptance occurred. Future
+Human-only endpoints are specificity and false-positive rate, not standalone
+balanced accuracy or ROC AUC.
+
+\paragraph{Separately frozen interval measurement.}
+The batch wrapper \path{code/materialize_saraga_external103_v1.py} subsequently
+passed all 18 synthetic tests on the actual NFS, including two-rate real
+synthetic WAVs, no-replace hard-link commit markers, resume, orphan rejection
+and a source changed before final acceptance. The actual metadata-only
+measurement draft bound 128 inputs, three implementations, the existing CPU
+runtime and every unchanged native coordinate. Following independent review,
+the parent froze \path{preregistration/saraga_external103_measurement_frozen_v1.json}
+and launched the 103-item single-worker CPU run. It requires full EOF/PCM and
+fresh-seek agreement, exact FLOAT readback, and a final source/output recheck.
+All identities remain fixed; failed items cannot be replaced. Evidence is
+\path{audit/saraga_external103_measurement_draft_review_v1.json}; protocol is
+\path{SARAGA_EXTERNAL103_MATERIALIZATION_EN.md}. This is an actual interval-run
+launch, not complete cohort acceptance, F/H/M extraction, neural inference or
+classification. Atomic commit visibility is not a blanket guarantee of NFS
+server crash durability.
+
+\paragraph{Accepted interval materialization and F/H/M launch.}
+The actual interval run subsequently completed all 103 recordings with zero
+failures and a passed final source/output recheck. A separate parent check
+rehashed all 103 original files and standardized WAVs and fully decoded every
+output WAV. Each contained 2,646,000 finite stereo frames at 44.1 kHz, with
+complete float32 PCM hashes agreeing with the interval proofs. Original files
+total 3,846,884,871 bytes and standardized WAVs total 2,180,313,064 bytes; audio
+is retained on NFS and compact provenance is also mirrored locally. This
+acceptance does not establish any classifier result. Evidence:
+\path{audit/external_transfer_storage_acceptance_v1.json}.
+
+The separately reviewed F/H/M wrapper passed all 14 tests in the historical
+remote runtime, including exact two-rate synthetic float64 crop and 16 kHz
+analysis parity. Its actual draft binds 427 input/code files, all 103 selected
+identities, four CPU workers and unchanged historical numerical/runtime
+configuration. The parent froze
+\path{preregistration/saraga103_fhm_measurement_frozen_v1.json} and launched
+native-interval measurement only. F/H/M consumes the original MP3 crop, with
+2,646,000 native frames at 44.1 kHz or 2,880,000 at 48 kHz, then the unchanged
+16 kHz frontend. The standardized 44.1 kHz files are reserved for the original
+four-family inference chain. No family-dependent exclusions or classifier
+adaptation are allowed. Code: \path{code/run_saraga103_fhm_v1.py}; tests:
+\path{code/test_run_saraga103_fhm_v1.py}; review:
+\path{audit/saraga103_fhm_draft_parent_review_v1.json}; protocol:
+\path{SARAGA103_FHM_MEASUREMENT_EN.md}. This paragraph records a launch, not
+completed F/H/M feature acceptance or Human specificity.
+
+\paragraph{Prospective Human transfer endpoints.}
+Before observing any Saraga classifier score, the proposed report scope is
+all 127 nonempty family subsets, five training caps and five original saved
+fold models. Each model would score the same 103 recordings with the unchanged
+threshold 0.5 and stored preprocessing. Primary endpoints are FP/103 and
+TN/103. A separate equal-component average and per-component counts expose
+the dominant 72-recording group. Five model ranges are not confidence
+intervals, and five performer/release components are not five dataset sources.
+No standalone Human-only ROC AUC, balanced accuracy, or pooled two-class
+estimate follows from these endpoints. This proposed scoring design is not
+yet an execution freeze: \path{SARAGA103_FROZEN_TRANSFER_DESIGN_EN.md}.
+
+\paragraph{Accepted F/H/M outputs and GPU execution guard.}
+The native F/H/M run completed all 103 recordings with all 27 descriptors
+finite on every recording. Parent verification independently rehashed 107
+feature artifacts plus launch/log and reconciled 2,781 scalar CSV/item values.
+Evidence is \path{audit/saraga103_fhm_parent_acceptance_v1.json}, with raw
+measurement output in \path{results/measurements_saraga103_fhm_v1/}. This is
+observability and artifact consistency, not Human classification performance.
+
+The new old-four-family adapter passed 25 synthetic tests on the actual NFS
+and its full-data draft passed input/runtime validation. However, an independent
+prelaunch review found that the pinned Beat This CLI could select CPU if Torch
+CUDA were unavailable despite the GPU argument. No Saraga neural launch had
+occurred. The first draft remains unfrozen while a separate same-process CUDA
+guard is added, without modifying numerical/model code. See
+\path{audit/saraga103_old4_draft_v1_gpu_guard_review.json}. This is an execution
+guarantee gap, not evidence that a previous run actually used CPU.
+
+The guard gap was subsequently resolved before launch. A separately hashed
+same-process guard verifies available CUDA, one visible RTX 5090, initialization,
+allocation and synchronization before the original console entrypoint, and
+rechecks the device afterward. It preserves original arguments and model code
+without monkeypatching Torch. All 40 synthetic orchestration/guard tests passed
+on NFS; the CUDA cases used fake Torch, not actual model inference. Independent
+review accepted the fix. A new full-data draft was reviewed and frozen as
+\path{preregistration/saraga103_old4_measurement_frozen_v1.json}; actual execution
+started at 01:50:08 UTC with GPU 6 assigned to All-In-One and GPU 7 to Beat This;
+initial input/runtime validation precedes every neural launch. The earlier draft remains preserved and
+unfrozen. No completed neural or classification result is claimed by this launch.
+Guard: \path{code/saraga103_cuda_guard_v1.py}; adapter:
+\path{code/run_saraga103_inference_v1.py}; strict verifier:
+\path{code/verify_extract_saraga103_v1.py}; review:
+\path{audit/saraga103_old4_guarded_draft_parent_review_v1.json}.
+
+\paragraph{Score implementation and independent numerical audit.}
+The score-only adapter and the independent numerical auditor passed 23 and
+18 parent-rerun synthetic tests, respectively, using the historical CPU
+runtime and actual NFS. The auditor reconstructs each frozen affine term
+without calling the scorer's replay function or matrix multiplication; it
+requires agreement within $10^{-12}+10^{-12}|s|$ for scores and exact threshold
+decisions. It checks all 3,175 model summaries, 15,875 component summaries and
+635 subset/quantity cells for the real-size contract. These are implementation
+tests, not observed Saraga specificity. Real classification remains gated on
+complete old-four-family measurement acceptance and a separately reviewed
+score-only freeze. Code: \path{code/score_saraga103_frozen_v4.py} and
+\path{code/audit_saraga103_transfer_v1.py}; review:
+\path{audit/saraga103_transfer_implementation_parent_review_v1.json}.
+
+\paragraph{Accepted seven-family Saraga measurements.}
+All ten neural stage receipts passed on the assigned RTX 5090 devices, and
+the full inference process exited successfully. The strict measurement auditor
+decoded all 103 standardized inputs and all four stems per input. The unchanged
+old-four-family extractor completed all 103 recordings, followed by a successful
+source, product and runtime hash recheck. Parent review verified the compact
+local mirror and independently reconciled 2,781 old-family CSV/JSONL values.
+Evidence: \path{audit/saraga103_neural_completion_parent_review_v1.json},
+\path{audit/saraga103_old4_parent_acceptance_v1.json}, and
+\path{manifests/saraga103_old4_measurements_v1/}.
+
+All descriptors are observed on 103 recordings for S, D, F, H and M; on 98 for
+R; and on 77 for P. The IBI-CV descriptor is missing on two recordings and each
+tempo-path descriptor on five. P duration descriptors are missing on 23, while
+bar-count descriptors are missing on 26. P eligibility is true on 80 recordings
+but does not imply complete six-descriptor observability. All 103 recordings
+remain in scope, including missing features. No replacement, zero filling or
+new-cohort imputation fit is permitted. These are measurement-coverage findings,
+not classifier accuracy. A separate score-only draft was launched after this
+acceptance; no real Saraga prediction is implied by this checkpoint.
+
+\paragraph{Observed missingness mechanisms.}
+All 23 P-ineligible excerpts contain only two detected sections, below the
+frozen three-section requirement. Two R-incomplete excerpts contain only nine
+and one detected beats. Three others retain IBI dispersion but have only
+11, eight and eight instantaneous tempo values within the frozen 30--300 BPM
+range, below the required 14. The diagnostic concerns detected events, not
+annotated ground-truth tempi or form: sparse content, tracker error and tempo
+level ambiguity remain unresolved alternatives. No gate is changed after
+this observation. Detailed counts and estimator references are recorded in
+\path{SARAGA103_MEASUREMENT_COVERAGE_EN.md}.

@@ -1,0 +1,178 @@
+\section{Controlled-Change Validation and Detector Extension}
+\label{sec:change-extension}
+
+\subsection{Why a Second External Test Was Required}
+
+The annotation-fidelity benchmark in the preceding section asks whether an
+audio estimator reproduces independently annotated dynamics, tempo variation,
+or section-length statistics.  The subsequent experimental request poses a
+related but different operational question: can the complete waveform
+workflow detect a deliberately introduced change on external music, and does
+the identically defined output then add information to the existing AI/Human
+classifier?  The controlled-change protocol in \outref{O18} was frozen before
+audio transformation or detector-cohort extraction.  The original fidelity
+results remain unchanged; the present test appends rather than replaces them.
+
+Three paired interventions were created by \coderef{C26}.  Fifty MAESTRO test
+recordings contributed an original 30 s piano excerpt, a constant $-6$ dB
+negative control, and a smoothly varying $\pm6$ dB version.  Forty-four SALAMI
+recordings contributed an original excerpt, a constant 0.8x-speed negative
+control, and a version alternating 0.8x and 1.25x speed every four source
+seconds.  The same SALAMI recordings also contributed two four-excerpt
+mosaics: one with four equal 7.5 s units and one with 3, 5, 8, and 14 s units.
+All variants were stereo, 44.1 kHz, and exactly 30 s.  Source recordings were
+not modified.
+
+The waveform dynamics extractor measures the robust span, interquartile
+range, and adjacent change of onset-centered harmonic attack strength.  Beat
+This! \texttt{final0} supplies beat times for IBI CV, normalized local-tempo
+total variation, and tempo entropy.  All-In-One \texttt{harmonix-all} supplies
+section boundaries, while Beat This! downbeats convert section duration into
+bar-count variety.  The family statistic is the equal-weight average of
+robustly scaled paired feature differences.  The frozen sensitivity gate
+requires probability of superiority at least 0.75 and a 10,000-replicate
+paired-bootstrap 95\% lower bound greater than 0.60.  Code and raw outputs are
+indexed as \coderef{C27}--\coderef{C31} and \analysisref{A14}.
+
+\subsection{External Controlled-Change Results}
+
+\begin{table}[H]
+\centering
+\caption{External controlled-change sensitivity.  PASS/FAIL uses the frozen
+family-level gate; individual feature results do not override it.}
+\label{tab:controlled-change}
+\begin{tabular}{lrrrrl}
+\toprule
+Family & Pairs & Median composite change & $P(\Delta>0)$ & 95\% CI & Gate \\
+\midrule
+Dynamics & 50 & 0.619 & 0.880 & [0.780, 0.960] & PASS \\
+Rhythm change & 44 & 1.226 & 0.705 & [0.580, 0.818] & FAIL \\
+Section/bar variety & 44 & 0.000 & 0.523 & [0.466, 0.591] & FAIL \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Dynamics is therefore the only externally sensitivity-qualified family.  Its
+span and IQR features had superiority probabilities 0.960 and 0.880,
+respectively, whereas the constant-gain composite shifted in the opposite
+direction ($P=0.340$).  The rhythm composite did not pass, although tempo
+entropy alone was strongly responsive ($P=0.917$, 95\% CI
+[0.806, 1.000]); this is a candidate for a new confirmatory corpus, not a
+post-hoc admission in the present experiment.  The constant-speed rhythm
+composite was materially smaller and negative ($P=0.318$).
+
+The structure failure was primarily an observability failure.  Only one of 44
+paired mosaics yielded a complete paired set of detector-facing section/bar
+statistics.  All-In-One commonly represented a 30 s mosaic with one long
+same-label segment plus edge fragments, so the four intended lengths were not
+available to the summary.  Missing pair contributions were neutral in the
+predeclared composite; they did not create a favorable result.  The failed
+threshold and low coverage are retained explicitly rather than repaired using
+AI/Human labels.
+
+\subsection{Application to the Frozen 2,000-Track Cohort}
+
+The exact workflows were next applied to 500 Human FMA, 500 Suno, 500
+HeartMuLa, and 500 ACE-Step tracks with the existing 400/100
+development/locked split.  Beat This! produced 1,998 files; two Human tracks
+had no output and 14 further Human files were empty.  All-In-One produced
+2,000 JSON files.  Every learned inference process ran on RTX 5090 GPUs;
+deterministic aggregation ran on CPU.  A symlink-only cohort manifest avoided
+rewriting any standardized audio.
+
+The dynamics signal needs one important alignment with the motivating
+MIDI-controlled-instrument hypothesis.  The external MAESTRO signal contains
+no vocal.  Before inspecting any detector result, the detector-side signal was
+therefore frozen as the sample-wise sum of Demucs \texttt{bass},
+\texttt{drums}, and \texttt{other}, excluding \texttt{vocals}.  All 2,000
+tracks had complete non-vocal stems and dynamics measurements.  This prevents
+the earlier vocal high-frequency cues from simply being counted again as an
+instrument-dynamics result, although Demucs domain response remains a possible
+confound.
+
+A fixed ridge linear classifier ($\alpha=10$) used development-only medians,
+standardization, and missingness indicators.  The same locked examples were
+used for every paired AUC comparison.  The directly recomputed 24-feature
+bias-corrected vocal spectral representation is the baseline.  The only
+sensitivity-qualified extension is \texttt{spectral+dynamics}; rhythm,
+structure, and \texttt{all-new} results are reported as exploratory because
+their external family gates failed.  Evaluation code, per-track scores, and
+bootstrap tables are \coderef{C32} and \analysisref{A15}.
+
+\begin{table}[H]
+\centering
+\footnotesize
+\caption{Locked ROC-AUC of the externally qualified dynamics extension and
+the exploratory all-new representation.  Delta and CI compare
+\texttt{spectral+dynamics} with the spectral baseline on identical tracks.}
+\label{tab:change-detector-extension}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Scenario & Dynamics only & Spectral & Spectral+dyn. & Paired $\Delta$ [95\% CI] & Spectral+all-new \\
+\midrule
+Within Suno & 0.701 & 0.787 & 0.807 & $+0.020$ [0.005, 0.036] & 0.857 \\
+Within HeartMuLa & 0.917 & 0.999 & 1.000 & $+0.000$ [$-0.001$, 0.002] & 0.999 \\
+Within ACE-Step & 0.850 & 0.950 & 0.954 & $+0.003$ [$-0.004$, 0.011] & 0.970 \\
+Pooled all & 0.816 & 0.875 & 0.892 & $+0.017$ [0.006, 0.027] & 0.914 \\
+Leave out Suno & 0.672 & 0.659 & 0.707 & $+0.047$ [0.023, 0.076] & 0.747 \\
+Leave out HeartMuLa & 0.899 & 0.944 & 0.962 & $+0.018$ [0.005, 0.034] & 0.981 \\
+Leave out ACE-Step & 0.853 & 0.657 & 0.721 & $+0.064$ [0.043, 0.087] & 0.741 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+The qualified result is positive but modest in the pooled evaluation:
+spectral+dynamics increases AUC from 0.8754 to 0.8919, a paired difference of
+0.0165 (95\% CI [0.0059, 0.0272]).  More importantly, the increment is positive
+in every generator-held-out transfer: 0.0472 for Suno, 0.0179 for HeartMuLa,
+and 0.0641 for ACE-Step, with all three intervals above zero.  This pattern is
+consistent with additional cross-generator information rather than only a
+single-generator fingerprint.  Dynamics alone is also informative, reaching
+pooled AUC 0.8156 and held-out AUC 0.8528 for ACE-Step.  Within HeartMuLa and
+ACE-Step increments are small because the spectral baselines are already near
+their within-domain ceilings.
+
+The exploratory union reaches pooled AUC 0.9139 and improves every held-out
+scenario, but it is not an admitted detector layer: rhythm and structure failed
+the external family gate.  Structure alone is weak (pooled AUC 0.5663), and its
+pooled spectral increment is 0.0049 with a 95\% interval crossing zero.  Its
+complete four-feature coverage is also source-dependent: only 7\% of locked
+Human, 12\% of locked Suno, 7\% of locked HeartMuLa, and 4\% of locked ACE-Step
+tracks.  The classifier can therefore learn availability artifacts through
+the missingness indicators.  Rhythm coverage is much higher (90\%--100\% on
+locked domains), and its exploratory pooled spectral increment is 0.0175, but
+the failed external family gate prevents a confirmatory authorship claim.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../../dynamics_rhythm_change_detector_extension_20260903/figures/change_detector_extension_dashboard.png}
+\caption{Two-stage detector extension.  Panel A shows the external
+controlled-change family gates; panel B shows pooled locked AUC; panel C shows
+the exploratory all-new AUC increment.  Only dynamics is externally
+sensitivity-qualified.  Data references: \texttt{A14--A16}.}
+\label{fig:change-detector-extension}
+\end{figure}
+
+\subsection{Interpretation for the Applied Filter}
+
+The deployment recommendation changes in one narrow way.  Non-vocal dynamics
+may be enabled as a separately reported, low-weight extension to the vocal
+spectral layer because it passes an external change-sensitivity gate and adds
+locked cross-generator information.  The system should expose its three
+contributing measurements and a valid-stem flag, not present them as direct
+evidence of MIDI authorship.  Rhythm entropy is promising but remains a
+candidate feature pending a new independently frozen rhythm benchmark.
+Section/bar-length variety remains disabled for decision making on 30 s
+windows because the estimator did not observe the controlled changes reliably
+and its coverage is strongly domain-dependent.
+
+These results still do not establish a universal AI-music detector.  The
+external controlled transformations validate sensitivity to the specified
+interventions, not construct specificity; a compressor, human quantization,
+genre, arrangement, mastering, or separator behavior can produce similar
+values.  The existing independent AI/Human external test was not reopened for
+feature selection.  The new extension should therefore be frozen and tested
+there, or preferably on a new generator-disjoint and production-matched test,
+only after this thesis-stage analysis is finalized.

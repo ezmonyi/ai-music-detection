@@ -1,0 +1,106 @@
+\section{Frozen External Test Set: 500 Tracks per Non-Development Generator}
+\label{sec:external-generator-500}
+
+To test whether the applied filter transfers beyond Suno, HeartMuLa, and
+ACE-Step, a new evaluation-only set was frozen from AIME
+\citep{aime2025,aimehf2026}. AIME was selected because it provides Human and
+generated music under the same 500 three-tag prompt conditions and exposes
+exactly 500 outputs for every included generator. The source was pinned to main
+revision
+\hashvalue{b84d4be5eda830b6eb714998569dba73530f2601} and parquet revision
+\hashvalue{1bdacac93127439e361bdd19d575d8b596bca4e3}. Neither detector scores nor
+audio-derived features were used to choose membership.
+
+\subsection{Generator and Leakage Boundaries}
+
+The resulting manifest contains 5,000 AI tracks from ten generators, exactly
+500 per generator, and 500 shared MTG-Jamendo Human controls. Suno v3, Suno
+v3.5, generic Suno labels, HeartMuLa, and ACE-Step are hard exclusions. The
+primary cohort comprises six generator families absent from the earlier
+100-track AIME diagnostic; the secondary cohort expands four families that
+appeared in that diagnostic. The exact 50 AI and 50 Human tracks previously
+used are marked row by row and are not treated as pristine holdout examples.
+
+\begin{table}[H]
+\centering
+\small
+\caption{Frozen external AI cohorts. Every listed model contributes exactly 500 tracks.}
+\label{tab:external-generator-cohorts}
+\begin{tabularx}{\linewidth}{lXrr}
+\toprule
+Cohort & Generators & Models & AI tracks \\
+\midrule
+Primary pristine generator-disjoint & MusicGen Small, MusicGen Medium, MusicGen Large, AudioLDM 2 Large, AudioLDM 2 Music, Mustango & 6 & 3,000 \\
+Secondary family-seen expansion & Udio, Riffusion, Stable Audio v1, Stable Audio v2 & 4 & 2,000 \\
+Shared external Human control & MTG-Jamendo & 1 & 500 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+All 500 prompt conditions were assigned with seed \texttt{20260904} to five
+disjoint groups of 100. For every generator, a dedicated view contains its 500
+AI tracks and the same 500 Human tracks; each of its five group manifests
+contains 100 AI and 100 Human tracks with identical condition-ID sets. This
+supports per-generator reporting and prompt-condition-paired bootstrap
+intervals without selecting favorable random mixtures after evaluation.
+
+\subsection{Standardisation and Native-Band Guard}
+
+Every selected recording was converted to a deterministic 10.000 s crop at
+44.1 kHz, stereo, signed 16-bit FLAC by \coderef{C33}. No zero-padding,
+looping, loudness normalization, peak normalization, equalization, denoising,
+or source separation was applied. Ten seconds is the longest no-padding
+duration shared by all selected AIME systems; consequently, this set is
+appropriate for frame-level spectral tests but not for long-horizon structural
+claims.
+
+Resampling does not create valid high-frequency evidence. The manifest therefore
+records original sample rate, native Nyquist frequency, and per-band eligibility
+for every track. The detector must mask features above the original Nyquist
+limit rather than interpreting upsampled silence as an AI cue.
+
+\begin{table}[H]
+\centering
+\caption{Native bandwidth of the 5,500-track external set before standardisation.}
+\label{tab:external-native-bandwidth}
+\begin{tabular}{lrr}
+\toprule
+Quantity & Tracks & Fraction \\
+\midrule
+Original sample rate 16 kHz & 1,500 & 27.3\% \\
+Original sample rate 32 kHz & 1,500 & 27.3\% \\
+Original sample rate 44.1 kHz & 500 & 9.1\% \\
+Original sample rate 48 kHz & 2,000 & 36.4\% \\
+Eligible through 8 kHz & 5,500 & 100.0\% \\
+Eligible through 10 kHz & 4,000 & 72.7\% \\
+Eligible through 20 kHz & 2,500 & 45.5\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Integrity and Confirmatory Evaluation Policy}
+
+The builder froze membership before materialisation. The frozen-selection and
+final-manifest SHA-256 digests are, respectively,
+\begin{center}
+\small
+\hashvalue{5f25ed368276784b0eb5cc8d56c97e381e4c6c3875eec71f6f29cd6cc9b5363d}\\
+\hashvalue{49dbe01b8be98857361b3a437db44ee937698e014bf70ccc7d443c24ad342fb4}.
+\end{center}
+
+All 5,500 standardised files passed exhaustive decoding, duration, format,
+path, and SHA-256 verification; there were 5,500 unique IDs, 5,500 unique output
+hashes, no duplicate raw-audio hash groups, and zero verification errors. The
+source audit \coderef{C34} covered 202 retained parquet shards totaling
+53,386,356,734 bytes. Although retained boundary shards contained 500 Suno v3
+and 260 Suno v3.5 rows, the allowlist rejected every one of them. The complete
+protocol, source audit, manifests, checksum ledger, and execution logs are
+indexed by \outref{O21}--\outref{O23}.
+
+No detector score has yet been computed on this collection. The already frozen
+detector and thresholds must first be evaluated on the six-model primary cohort,
+with per-generator and pooled metrics reported. The four family-seen models must
+then be reported separately, both including and excluding exact prior-diagnostic
+overlaps. Any representation or threshold changed after seeing these results is
+a new hypothesis and requires another untouched test set.
+

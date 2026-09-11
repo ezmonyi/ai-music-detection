@@ -1,0 +1,673 @@
+\documentclass[UTF8,11pt,a4paper,fontset=none]{ctexart}
+
+\usepackage[a4paper,margin=24mm,headheight=15pt]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,longtable,tabularx,array,multirow}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{seqsplit}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{fancyhdr}
+
+\setCJKmainfont{Songti SC}
+\setCJKsansfont{Heiti SC}
+\setCJKmonofont{STFangsong}
+
+\definecolor{linkblue}{RGB}{25,74,133}
+\definecolor{codegray}{RGB}{246,247,249}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=linkblue,
+  citecolor=linkblue,
+  urlcolor=linkblue,
+  pdftitle={AI 与人类音乐的人声频域判别实验：完整过程、结果与可复现引用},
+  pdfauthor={Experiment archive}
+}
+\urlstyle{tt}
+\captionsetup{font=small,labelfont=bf}
+\setlist{nosep,leftmargin=2em}
+\sisetup{detect-all,group-separator={,},group-minimum-digits=4}
+\setlength{\emergencystretch}{3em}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\renewcommand{\arraystretch}{1.18}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{AI 音乐人声频域判别实验}
+\fancyhead[R]{冻结版本：2026-09-01}
+\fancyfoot[C]{\thepage}
+
+\crefname{figure}{图}{图}
+\crefname{table}{表}{表}
+\crefname{section}{节}{节}
+\crefname{equation}{式}{式}
+
+\newcommand{\coderef}[1]{\hyperlink{code:#1}{\texttt{#1}}}
+\newcommand{\outref}[1]{\hyperlink{output:#1}{\texttt{#1}}}
+\newcommand{\analysisref}[1]{\hyperlink{analysis:#1}{\texttt{#1}}}
+\newcommand{\codeanchor}[1]{\hypertarget{code:#1}{\texttt{#1}}}
+\newcommand{\outanchor}[1]{\hypertarget{output:#1}{\texttt{#1}}}
+\newcommand{\analysisanchor}[1]{\hypertarget{analysis:#1}{\texttt{#1}}}
+\newcommand{\filepath}[1]{\path{#1}}
+\newcommand{\hashvalue}[1]{{\ttfamily\seqsplit{#1}}}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  backgroundcolor=\color{codegray},
+  frame=single,
+  rulecolor=\color{black!15},
+  breaklines=true,
+  columns=fullflexible,
+  keepspaces=true,
+  showstringspaces=false,
+  upquote=true
+}
+
+\title{AI 与人类音乐的人声频域判别实验\\
+\large 完整操作过程、实验结果、分析结论与可复现工件引用}
+\author{毕业论文实验归档}
+\date{实验冻结：2026年9月1日\\文档生成：2026年9月2日}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+本报告将既有 Human 与 Suno 的频域实验扩展到 HeartMuLa 和 ACE-Step 1.5，记录从模型与 prompt 数据调研、500 条条件清单冻结、RTX 5090 推理、统一音频标准、Demucs 人声分离、冻结频响偏差校正，到域内、跨生成器、逐 prompt 配对和时长敏感性分析的完整过程。新增长音频为 HeartMuLa 500 条和 ACE-Step 500 条，两者逐条共享同一 Muse style、lyrics、语言、数据划分与整数 seed；分析输入统一为 30 秒、44.1 kHz、双声道 PCM-16 FLAC。主要观察是：三个 AI 生成器的人声均在 10--16 kHz 相对 Human 明显偏离，但 16--20 kHz 的方向依生成器而异。HeartMuLa 在约 16.5 kHz 之后出现陡峭截止，ACE-Step 则保持超高频过量，因此“高频异常”是有用的 heuristic，但不能简化为“高频越多越像 AI”。域内 locked-test ROC-AUC 最高分别为 Suno 0.922、HeartMuLa 1.000、ACE-Step 0.988；然而跨生成器矩阵存在显著不对称和方向反转，表明结果同时包含可迁移线索与生成器指纹。本文在正文和附录中为每项方法、日志、输出、CSV/JSON 与图表提供稳定的内部工件编号和路径。
+\end{abstract}
+
+\noindent\fcolorbox{black!25}{codegray}{%
+\parbox{0.96\linewidth}{\textbf{结论边界。}本文证明的是冻结数据域中的可区分频谱证据，而不是通用 AI 音乐检测器。Human FMA 对照与 Muse 条件生成歌曲没有逐曲匹配，曲风、人声比例、语言、母带与来源差异仍可能贡献分类性能。}}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+\section{研究问题与实验范围}
+\label{sec:scope}
+
+本研究的出发点是一个主观但可操作的听觉观察：人声、镲片、齿音及其他高频瞬态常使 AI 音乐呈现不同于人类录音的“空气感”“砂砾感”“带宽边缘”或过度平滑。研究问题被拆成四层：
+
+\begin{enumerate}
+  \item 这种听感能否由可解释的频谱倾斜、频带能量比、谱纹理、调制和音高周期性指标捕捉？
+  \item 去除整曲编配影响、只分析 Demucs 分离的人声后，Human 与 AI 的差异是否仍存在？
+  \item 使用外部冻结的 Demucs 平均频响偏差进行校正后，差异是否消失？
+  \item 在 Suno、HeartMuLa 与 ACE-Step 之间迁移时，指标反映的是通用 AI 线索，还是单一生成器/codec 指纹？
+\end{enumerate}
+
+HeartMuLa 是包含 HeartCodec 与自回归歌曲生成模型的开放音乐基础模型家族\citep{heartmula2026,heartlib2026}；ACE-Step 1.5 采用语言模型规划与扩散生成结合的开放架构\citep{acestep2026,acestepcode2026}。本轮各生成 500 条，连同既有 Suno 500 与 Human 500 共同进入比较。实验协议和研究记录分别由 \outref{O10}、\outref{O11} 冻结。
+
+\section{实验设计}
+\label{sec:design}
+
+\subsection{数据域与冻结划分}
+
+Human 对照来自 FMA 数据域\citep{fma2017}；AI 侧包含 Suno、HeartMuLa 与 ACE-Step。HeartMuLa 和 ACE-Step 使用 Muse 开放数据集的文本 metadata\citep{muse2026,musedataset2026}，但\textbf{没有下载、解码或分析 Muse 配套的 Suno V5 音频}，因此不存在 Muse 波形进入本实验的泄漏。
+
+冻结 prompt manifest 由 \coderef{C01} 构建，其 SHA-256 为：
+
+\begin{center}
+\small\hashvalue{bb0941b91d41d10a978cb9e4b077399e89fea92526ee469e0e6743b09efb917b}
+\end{center}
+
+选择策略为：中文与英文各 250 条；\texttt{style\_sim} 不低于 0.4；来源 metadata 至少覆盖 30 秒；只保留前 30 秒时间窗内的歌词 section；ACE caption 不超过 512 字符且 lyrics 不超过 4096 字符。合格记录使用 salted SHA-256 排序，从而不依赖源 JSONL 顺序。每种语言 200 条进入 development、50 条进入 locked test，总计 400/100；每个来源 id 再映射为唯一整数 seed。manifest、来源行与 metadata 对应 \outref{O01}。
+
+\begin{table}[H]
+\centering
+\caption{冻结 cohort 与用途。Human 数量在每个 Human-vs-generator 比较中均为 500，而 pooled locked evaluation 只保留一份 Human。}
+\label{tab:cohort}
+\begin{tabular}{lrrrrl}
+\toprule
+域 & 总数 & development & locked test & 语言控制 & 主要用途 \\
+\midrule
+Human FMA & 500 & 400 & 100 & 未匹配 & 对照域 \\
+Suno & 500 & 400 & 100 & 既有冻结集 & 历史基线 \\
+HeartMuLa & 500 & 400 & 100 & 中250/英250 & 新增生成域 \\
+ACE-Step & 500 & 400 & 100 & 中250/英250 & 新增生成域 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{模型与版本固定}
+
+为避免模型与数据的 floating revision 导致不可复现，代码 commit、权重 revision、依赖 freeze 和逐文件 hash 均在推理前冻结，见 \outref{O06}、\outref{O07} 与 \outref{O12}。
+
+\begin{table}[H]
+\centering
+\small
+\caption{生成器、代码与权重版本。}
+\label{tab:model-versions}
+\begin{tabularx}{\linewidth}{lX}
+\toprule
+组件 & 冻结版本 \\
+\midrule
+HeartMuLa code & \filepath{HeartMuLa/heartlib@3783bdb8441f2c298b1e64c8651173aac200361c} \\
+HeartMuLa 3B weights & revision \filepath{41f6fc68490e11dc43fdabaa6b5767946408c903} \\
+HeartCodec & revision \filepath{f889dab0532cfa4bf459f2a3367eb6d346b8eeda} \\
+Heart tokenizer/config & revision \filepath{9906b2bcd4598772a32cad4aec0760170fe0d177} \\
+ACE-Step code & \filepath{ace-step/ACE-Step-1.5@ca1e85fe9430179831e6bc6be790c332190a3866} \\
+ACE-Step weights & revision \filepath{19671f406d603126926c1b7e2adc169acbcade22} \\
+Muse metadata & revision \filepath{b1bf3bf906daab3a896e14f6dea58cc295848452} \\
+Demucs correction & \filepath{demucs_frequency_bias.npz}, SHA-256 \hashvalue{bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\subsection{推理参数与计算约束}
+
+模型推理和 Demucs 均仅在主机 \texttt{5090-4} 的 RTX 5090 上执行，本地 UVR 没有运行。运行前分别检查 5090-2、5090-4 与 5090-5 的 GPU memory、utilization、compute process、host load 和磁盘；5090-4 的 8 张 GPU 当时均约 2 MiB、0\% utilization，故选为隔离实验主机。环境与选择证据保存在 \outref{O06}。
+
+HeartMuLa 由 \coderef{C03} 调用，使用 30,000 ms、top-k 50、temperature 1.0、CFG 1.5，MuLa 为 bf16、HeartCodec 为 fp32，并使模型与 codec 分卡常驻。ACE-Step 由 \coderef{C02} 调用，使用 \texttt{acestep-v15-turbo}、30 秒、8 diffusion steps、固定 seed；关闭 thinking/CoT 重写和内建 peak normalization，保留发布版本的 DCW \texttt{double/0.05/0.02/Haar} 行为。
+
+\subsection{统一音频协议}
+
+两种生成器的原始输出先通过 \coderef{C05} 标准化为：
+
+\begin{itemize}
+  \item 时长精确 30 秒；
+  \item 采样率 44.1 kHz；
+  \item 双声道；
+  \item 每声道 1,323,000 frames；
+  \item PCM-16 FLAC；
+  \item 不做响度归一化、EQ 或整曲 peak normalization。
+\end{itemize}
+
+标准化只执行 SoundFile 解码、SciPy \texttt{resample\_poly} 多相重采样、声道统一、截断/补零及 PCM 编码。重采样后的极少数超界 sample 逐样本 clip 并计数。\coderef{C06} 负责验证采样率、时长、声道、finite 值和文件数量；若 atomic rename 成功而 state append 因受控中断未完成，\coderef{C04} 只重建缺失状态，不改写音频。
+
+\subsection{Demucs 人声分离}
+
+分离使用 Hybrid Transformer Demucs\citep{demucs2021} 的 \texttt{htdemucs}，该模型属于 waveform 与 spectrogram 混合的 source-separation 路线，MUSDB18 是相关基准数据\citep{musdb18}。批处理包装器为 \coderef{C07}，固定命令参数：
+
+\begin{lstlisting}[language=bash,caption={冻结的 Demucs vocal-only 参数。}]
+htdemucs --two-stems vocals --float32 \
+  --shifts 0 --overlap 0.25 --segment 7 --jobs 1
+\end{lstlisting}
+
+Demucs 运行时为 4.0.1，PyTorch/Torchaudio 2.7.1+cu128；环境只读复用，完整 freeze 见 \outref{O06}。smoke 后正式分轨只使用 GPU 3，输出每条包含 \texttt{vocals.wav} 与 \texttt{no\_vocals.wav}，均为 44.1 kHz、双声道、30 秒、float32 WAV。
+
+\section{频域指标与统计方法}
+\label{sec:method}
+
+\subsection{STFT 与频谱形状}
+
+所有 metric 以单声道人声 stem 计算；双声道先取均值并去 DC。令 $x[m]$ 为波形，Hann 窗长 $N=4096$，hop $H=1024$，则
+\begin{equation}
+X(n,k)=\sum_{m=0}^{N-1}x[nH+m]w[m]\exp\!\left(-j\frac{2\pi km}{N}\right),
+\label{eq:stft}
+\end{equation}
+功率为 $P(n,k)=|X(n,k)|^2+\epsilon$。30 秒音频的时间帧率约为 $44100/1024\approx43.1$ Hz。平均差异热图使用 300 Hz--20 kHz 的 128 个对数频带，由 \coderef{C12} 生成。
+
+绝对谱保留整体电平；frame-normalized shape 对每个时间帧减去 300 Hz--20 kHz 的频带平均：
+\begin{equation}
+S_{\mathrm{shape}}(n,b)=S(n,b)-\frac{1}{|\mathcal{B}|}\sum_{b'\in\mathcal{B}}S(n,b').
+\label{eq:shape}
+\end{equation}
+该操作弱化整体响度，强调能量在频率轴上的相对分配。AI 与 Human 的 population-average 差异定义为
+\begin{equation}
+\Delta(n,b)=\frac{1}{N_{\mathrm{AI}}}\sum_i S_i^{\mathrm{AI}}(n,b)
+-\frac{1}{N_{\mathrm{H}}}\sum_j S_j^{\mathrm{H}}(n,b).
+\label{eq:average-diff}
+\end{equation}
+歌曲并未做 waveform 对齐，因此时间轴表示共同的 30 秒结构位置，不能解释为逐采样抵消。
+
+\subsection{冻结 Demucs 频响校正}
+
+外部 MUSDB oracle vocal 上估计的 Demucs average frequency bias 记为 $b(k)$ dB。它在看到本轮 AI/Human 标签前冻结，并对所有 vocal stem 使用相同校正：
+\begin{equation}
+X_{\mathrm{corr}}(n,k)=X(n,k)10^{-b(k)/20}.
+\label{eq:bias-correction}
+\end{equation}
+相位保持不变，ISTFT overlap-add 后再去 DC。实现 \coderef{C11} 会先以零偏差执行 STFT/ISTFT identity check，relative error 必须不高于 $10^{-8}$。该校正只消除共享的平均分离器响应，不能消除 class-dependent separation error。
+
+\subsection{可解释 scalar metrics}
+
+指标实现集中在 \coderef{C09}，按 active frame 计算。active 阈值是每首人声帧 RMS 的第 30 百分位与该曲最大 RMS 减 35 dB 两者的较大值；不足 16 帧时强制保留 RMS 最大的 16 帧。指标分成四组：
+
+\begin{table}[H]
+\centering
+\small
+\caption{主要人声频谱特征与听觉对应关系。}
+\label{tab:metrics}
+\begin{tabularx}{\linewidth}{p{34mm}p{49mm}X}
+\toprule
+组别 & 代表指标 & 听觉/信号含义 \\
+\midrule
+亮度与倾斜 & \texttt{hf\_tilt\_5\_16k}, \texttt{hf\_ratio\_5\_16}, \texttt{air\_ratio\_12\_20}, \texttt{sibilance\_ratio} & 高频斜率、相对 body 能量、空气频带与 5--10 kHz 齿音比例 \\
+高频纹理 & \texttt{hf\_flatness}, \texttt{hf\_entropy}, \texttt{hf\_crest}, \texttt{fakeprint\_periodicity} & 谱平坦度、熵、峰均比、固定频率纹理/梳状结构 \\
+高频动态 & \texttt{hf\_flux}, \texttt{hf\_mod\_4\_12}, \texttt{sibilance\_burst\_rate} & 相邻帧变化、4--12 Hz 高频包络调制、齿音 burst 密度 \\
+周期性与音高 & \texttt{CPP}, \texttt{HNR}, \texttt{pitch confidence}, \texttt{vibrato depth} & 声门周期性、谐噪比、音高稳定性与 4--8 Hz vibrato 结构 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+高频能量比使用 $10\log_{10}(E_{5-16\mathrm{k}}/E_{1-5\mathrm{k}})$，air ratio 使用 $12$--$20$ kHz 对 $1$--$5$ kHz；spectral tilt 是频带平均 dB 对 $\log_2 f$ 的线性斜率。sibilance burst 阈值为该曲 sibilance ratio 的 median 加 $1.5$ 倍 median absolute deviation，burst rate 再除以 active duration。
+
+\subsection{频带向量与分类}
+
+除 22 维 scalar metrics 外，\coderef{C10} 对各频率表示建立向量。每个范围被划分为 48 个几何等间隔频带，每带记录 active-frame dB 的 mean 与 standard deviation，再对所有 mean 分量去中心。消融表示为：full 0.3--20 kHz、only 5--10 kHz、without 5--10 kHz、only 5--16 kHz、low-mid 0.3--5 kHz。
+
+分类器为标准化后的 ridge linear score，正则系数 $\alpha=10$：
+\begin{equation}
+\hat{\mathbf{w}}=(\mathbf{Z}^{\mathsf T}\mathbf{Z}+\alpha\mathbf{I})^{-1}
+\mathbf{Z}^{\mathsf T}(\mathbf{y}'-\bar{y}'),\qquad y'=2y-1.
+\label{eq:ridge}
+\end{equation}
+development 仅用于拟合，locked test 只用于最终评估。报告 ROC-AUC、threshold 0 的 balanced accuracy 与 class-stratified bootstrap 95\% CI。域内分析默认 2,000 次 bootstrap；跨生成器与时长 sensitivity 为 1,000 次。univariate 比较使用 Mann-Whitney U，prompt-paired 比较使用 Wilcoxon signed-rank，并执行 Benjamini-Hochberg 多重检验校正。
+
+\section{完整运行过程与异常保留}
+\label{sec:operations}
+
+\begin{longtable}{p{20mm}p{38mm}p{86mm}}
+\caption{从设计冻结到归档的实际操作过程。每项均可由代码、state、日志或结果工件追溯。}
+\label{tab:timeline}\\
+\toprule
+阶段 & 入口/reference & 操作与验证 \\
+\midrule
+\endfirsthead
+\toprule
+阶段 & 入口/reference & 操作与验证 \\
+\midrule
+\endhead
+设计冻结 & \outref{O10}, \outref{O11} & 复用 Human/Suno 500+500 及 400/100 split，冻结同一 Demucs bias；定义 500+500 扩展、30 秒标准和结论边界。 \\
+数据调研 & \outref{O11}, \coderef{C01} & 比较 HeartMuLa-Benchmark、MusicCaps/MusicBench 与 Muse；因本研究聚焦 vocal-only，最终选择同时包含 style 与分段歌词的 Muse metadata。 \\
+prompt 构建 & \coderef{C01}, \outref{O01} & 流式筛选中英文来源，按 salted SHA-256 确定性选取 500 条；独立重建 manifest hash 一致。 \\
+主机选择 & \outref{O06} & 独立检查多台 5090；选择当时 8 卡空闲、load 约 0.07 的 5090-4。 \\
+版本冻结 & \outref{O07}, \outref{O12} & 固定 Git commit、HF revision、pip freeze 与权重 hash。ACE handler 初始化后重算 87 个 checkpoint 文件 hash。 \\
+ACE smoke & \coderef{C02}, \outref{O06} & GPU 2；cold init 约 32 秒，首条约 6.3 秒；输出 30 秒、48 kHz、双声道 PCM-16 FLAC。 \\
+Heart smoke & \coderef{C03}, \outref{O06} & GPU 0/1；初始化 29.52 秒、生成 29.43 秒；原始输出 30.08 秒、48 kHz、双声道 float WAV。 \\
+Demucs smoke & \coderef{C07}, \outref{O05} & GPU 3；对一条 ACE 标准化样本得到两条精确 30 秒 float32 stems。 \\
+ACE 正式生成 & \coderef{C02}, \outref{O02} & 500 manifest、500 generated events、500 ok、0 error；正式批次稳态约 0.95--1.0 秒/条。 \\
+ACE 标准化故障 & \outref{O04}, \outref{O06} & 首次 Torchaudio 标准化因 TorchCodec/FFmpeg shared-library 不匹配导致 500/500 失败；失败 state/log 原样保留，不覆盖成功记录。 \\
+ACE 标准化修复 & \coderef{C05}, \outref{O04} & 切换 SoundFile + \texttt{resample\_poly} 后 500/500 成功；259 首出现少量重采样超界，共 349 samples，逐样本 clip。 \\
+ACE Demucs & \coderef{C07}, \outref{O05} & 25 batches \(\times\) 20 tracks；500 tracks、1,000 stems；总耗时 1,075.19 秒。 \\
+Heart 初始调度 & \coderef{C03}, \outref{O03} & 三个双卡 worker 运行互斥索引区间；发现边界竞争风险后，在目标样本写出前主动中断并按 limit 重启。 \\
+Heart 重平衡 & \coderef{C03}, \outref{O03} & 完成 158 条后，停止旧进程，按真实缺失清单重排为四路双卡 worker；合法文件 resume skip，partial 删除后用相同 seed 重试。 \\
+Heart 最终状态 & \coderef{C04}, \outref{O03} & 500 文件、500 最终 ok id、0 partial、0 最终 error；504 个历史 generated events 中 4 个 BrokenPipe 来自受控中断，均恢复。reconciliation 实际补写 0 条。 \\
+Heart 原始验证 & \coderef{C06}, \outref{O04} & 严格 \(\geq30\) 秒检查因 42 条原生提前结束而失败；失败 JSON 保留。放宽到 5--30.2 秒的完整性验证随后通过。 \\
+Heart 标准化 & \coderef{C05}, \outref{O04} & 42 条尾部补零，总计 11,501,280 frames；457 条截断最多约 80 ms；164 首共 5,085 个重采样超界 samples 被 clip。 \\
+Heart Demucs & \coderef{C07}, \outref{O05} & 500 tracks、1,000 stems；总耗时 594.36 秒。 \\
+分析 layout & \coderef{C08} & 将 Human baseline、标准化生成音频和 stems 组织成每个 generator 的只读比较 layout，并记录 manifest hash。 \\
+主分析 & \coderef{C09}--\coderef{C12}, \analysisref{A01}--\analysisref{A04} & 计算 raw/corrected scalar metrics、频率向量、频带 ablation、univariate effects 与 all/development/locked 四联热图。 \\
+配对分析 & \coderef{C13}, \analysisref{A07} & 对共享 prompt 的 HeartMuLa/ACE-Step 做逐条 metric difference、Wilcoxon/BH 和平均频谱差异。 \\
+泛化分析 & \coderef{C15}, \analysisref{A05}, \analysisref{A06} & 运行 single-generator train/test matrix、leave-one-generator-out、pooled-all，并对全量及 raw-frozen vocal-active subset 各计算一次。 \\
+时长敏感性 & \coderef{C16}, \analysisref{A08} & 排除 42 条 Heart 短输出；在 split 内确定性等量抽样 Human 后重新拟合。 \\
+归档与验收 & \coderef{C17}, \outref{O08}, \outref{O09} & 检查主 CSV 无 NaN/Inf、远端文件数、metadata hash、核心图版面与 196 个轻量关键文件 hash。 \\
+\bottomrule
+\end{longtable}
+
+\section{运行结果与质量控制}
+\label{sec:qc}
+
+\subsection{生成与标准化统计}
+
+\begin{table}[H]
+\centering
+\small
+\caption{HeartMuLa 与 ACE-Step 生成、标准化和分离结果。}
+\label{tab:generation-qc}
+\begin{tabularx}{\linewidth}{lXX}
+\toprule
+项目 & HeartMuLa & ACE-Step \\
+\midrule
+最终生成 & 500/500，最终有效 error 0 & 500/500，error 0 \\
+正式生成耗时 & 约 69 分 50 秒；单条中位 23.34 秒 & 约 8 分 9 秒；稳态约 0.95--1.0 秒/条 \\
+原始格式 & 48 kHz stereo float WAV & 48 kHz stereo PCM-16 FLAC \\
+原始时长 & 中位 30.08 秒；42 条低于 30 秒，最短 15.12 秒 & 全部精确 30 秒 \\
+标准化 & 500/500，精确 30 秒、44.1 kHz stereo PCM-16 FLAC & 500/500，同一标准 \\
+padding/truncation & 42 条 padding；457 条最多截断约 80 ms & 无时长异常 \\
+重采样 clip & 164 首，5,085 samples & 259 首，349 samples \\
+Demucs & 500 tracks/1,000 stems，594.36 秒 & 500 tracks/1,000 stems，1,075.19 秒 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+所有关键计数和格式验证都写入 \outref{O02}--\outref{O05}；完整远端 raw、standardized、stems、state 和 logs 位于 \outref{O09}。本地轻量归档不复制全部音频，但保存代码快照、manifest、报告、CSV、PNG、JSON、少量试听样本和 hash 清单。
+
+\subsection{vocal-active 子集}
+
+raw vocal-to-mix RMS 不低于 $-18$ dB 的规则在校正前冻结，避免 correction 改变 cohort membership。development/locked 中通过数为：Human 249/63，Suno 268/69，HeartMuLa 400/100，ACE-Step 233/55。HeartMuLa 全部样本通过本身就是一个很强的 domain cue，可能同时反映生成器编配、人声比例及 Demucs 对该域音色的响应，故不能把它直接解释成生成机制差异。
+
+\section{主要频域结果}
+\label{sec:results}
+
+\subsection{平均谱形差异}
+
+\cref{fig:profiles} 汇总 locked-test、bias-corrected、frame-normalized vocal spectral shape 的 AI-minus-Human 曲线。三个生成器在 10--16 kHz 均为正，但 16--20 kHz 的方向显著分叉。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/comparison/locked_corrected_spectral_shape_profiles.png}
+\caption{三种 AI 生成器相对 Human 的 locked-test 人声平均谱形。正值表示 AI 在该频率具有更高的帧归一化相对能量。数据 reference：\texttt{A04}。}
+\label{fig:profiles}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{locked-test bias-corrected frame-normalized vocal shape 的 AI-minus-Human 频带均值。}
+\label{tab:band-diff}
+\begin{tabular}{lrrrr}
+\toprule
+生成器 & 0.3--5 kHz & 5--10 kHz & 10--16 kHz & 16--20 kHz \\
+\midrule
+Suno & $-1.158$ & $+1.812$ & $+4.322$ & $+0.146$ \\
+HeartMuLa & $-1.469$ & $+1.917$ & $+14.104$ & $-15.912$ \\
+ACE-Step & $-2.866$ & $+2.588$ & $+8.465$ & $+10.519$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+HeartMuLa 在约 16.5 kHz 形成很陡的带宽边缘，在 10--16 kHz 比 Human 高约 14.1 dB，而 16--20 kHz 低约 15.9 dB；该现象更接近 codec/bandwidth cutoff。ACE-Step 在 10--16 kHz 和 16--20 kHz 均过量，更接近持续的超高频 excess。Suno 的偏离方向相同但幅度较小。因此，同样的主观“高频不自然”可能来自相反的物理谱形。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/human_vs_heartmula/average_difference_spectrogram_locked_test.png}
+\caption{Human 与 HeartMuLa 的 locked-test 平均差异 spectrogram。四个 panel 为 raw/corrected 与 absolute/frame-normalized shape。数据 reference：\texttt{A02}。}
+\label{fig:heart-heatmap}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/human_vs_acestep/average_difference_spectrogram_locked_test.png}
+\caption{Human 与 ACE-Step 的 locked-test 平均差异 spectrogram。ACE-Step 的超高频过量与图中的 HeartMuLa 截止方向相反。数据 reference：\texttt{A03}。}
+\label{fig:ace-heatmap}
+\end{figure}
+
+\subsection{单生成器域内分类}
+
+\begin{table}[H]
+\centering
+\caption{单生成器 locked-test 最佳 bias-corrected frequency representation。每个测试集含 100 Human 与 100 AI。}
+\label{tab:single-domain}
+\begin{tabular}{llrrr}
+\toprule
+生成器 & 最佳表示 & ROC-AUC & 95\% CI & Balanced accuracy \\
+\midrule
+Suno & without 5--10 kHz & 0.922 & 0.882--0.957 & 0.855 \\
+HeartMuLa & full 0.3--20 kHz & 1.000 & 1.000--1.000 & 1.000 \\
+ACE-Step & without 5--10 kHz & 0.988 & 0.971--0.999 & 0.970 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\linewidth]{../analysis/comparison/locked_auc_by_generator.png}
+\caption{各生成器的 locked-test 频带消融 ROC-AUC。only 5--10 kHz 已有较高区分度，但最佳结果通常还需要更宽谱形。数据 reference：\texttt{A04}。}
+\label{fig:domain-auc}
+\end{figure}
+
+HeartMuLa 的 only 5--10 kHz、only 5--16 kHz AUC 分别为 0.9999 与 0.9998；ACE-Step 为 0.9713 与 0.9841；Suno 为 0.8776 与 0.8992。高频确实携带信息，但三个域的最佳表示都不只是 5--10 kHz，说明中低频相对能量、10--20 kHz 谱形和时序统计仍提供增益。完整表见 \analysisref{A04}。
+
+\subsection{Demucs correction 的影响}
+
+full-band raw/corrected AUC 分别为 Suno 0.879/0.876、HeartMuLa 1.000/1.000、ACE-Step 0.9785/0.9792。locked average map 的最大 raw-to-corrected 改变量约为 Suno 0.260 dB、HeartMuLa 0.274 dB、ACE-Step 0.285 dB。由此可见，共享的 Demucs average frequency response 不是区分度的主要来源；这一结果\textbf{不能}排除 Demucs 对 Human 与不同生成器产生不同误差的可能。
+
+\subsection{HeartMuLa 短输出 sensitivity}
+
+42/500 HeartMuLa 原始生成不足 30 秒，标准化的尾部补零可能成为捷径。\coderef{C16} 排除这些样本，并在 development 与 locked split 内用 salted SHA-256 确定性下采样同量 Human，得到 development 366+366、locked 92+92。full-band corrected AUC 仍为 1.000、balanced accuracy 仍为 1.000，说明 trailing silence 不足以解释饱和结果；它仍不能消除曲风、母带或 separator-domain confound。详细 CSV/metadata 见 \analysisref{A08}。
+
+\section{跨生成器泛化与生成器指纹}
+\label{sec:cross}
+
+\subsection{single-source train/test matrix}
+
+若一个表示学到通用 AI 机制，则在不同生成器之间应保持方向与排序。实际结果并非如此。例如 corrected without 5--10 kHz 在全量 cohort 中：Suno$\rightarrow$HeartMuLa 为 0.905，但 HeartMuLa$\rightarrow$Suno 为 0.379；HeartMuLa$\rightarrow$ACE-Step 为 0.326，ACE-Step$\rightarrow$HeartMuLa 为 0.593。低于 0.5 的 AUC 表示 domain shift 后 score 方向发生反转，而不是单纯性能下降。
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/cross_generator_vocal_active/cross_generator_auc_heatmaps.png}
+\caption{raw-frozen vocal-active subset 上的跨生成器 Human-vs-AI ROC-AUC。对角线接近 1 而若干非对角线显著下降或接近反向，证明高域内 AUC 混入 generator-specific fingerprint。数据 reference：\texttt{A06}。}
+\label{fig:cross-heatmaps}
+\end{figure}
+
+\subsection{leave-one-generator-out 与 pooled 训练}
+
+\begin{table}[H]
+\centering
+\caption{leave-one-generator-out 的最佳 corrected locked-test AUC。训练不包含目标生成器。}
+\label{tab:logo}
+\begin{tabular}{lrrl}
+\toprule
+目标生成器 & 全量 tracks & vocal-active & vocal-active 95\% CI \\
+\midrule
+Suno & 0.698 & 0.702 & 0.612--0.785 \\
+HeartMuLa & 0.949 & 0.942 & 0.891--0.978 \\
+ACE-Step & 0.834 & 0.935 & 0.882--0.980 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+pooled-all 训练在 locked Human 只出现一次的前提下，全量 pooled AUC 为 0.943（0.920--0.963），vocal-active pooled AUC 为 0.969（0.950--0.987）。vocal-active pooled 模型分别在 Suno、HeartMuLa、ACE-Step 达到 0.940、0.998 与 0.988。结果支持存在可迁移的宽带/高频 heuristic，但对未见 Suno 的 leave-one-out 泛化明显弱于另外两个模型，当前系统不应命名为 universal detector。
+
+\section{HeartMuLa 与 ACE-Step 的逐 prompt 配对分析}
+\label{sec:paired}
+
+两模型共享同一 500 条 style、lyrics、语言、split 和整数 seed，因而其直接差异比各自对 Human 的比较更能控制文本条件。随机过程并不因此等价，且 Demucs 仍可能对不同生成音色产生不同响应。
+
+\begin{table}[H]
+\centering
+\caption{locked-test、bias-corrected 的 HeartMuLa 与 ACE-Step 配对特征差异。H-A 为每对样本的 HeartMuLa 减 ACE-Step 中位差。}
+\label{tab:paired}
+\begin{tabular}{lrrrr}
+\toprule
+指标 & HeartMuLa & ACE-Step & H-A & Separation AUC \\
+\midrule
+sibilance burst rate & 1.625 & 1.130 & $+0.527$ & 0.904 \\
+HF crest (dB) & 14.07 & 16.82 & $-2.826$ & 0.857 \\
+HF modulation share & 0.2465 & 0.1417 & $+0.0943$ & 0.770 \\
+fakeprint periodicity & 0.0327 & 0.0531 & $-0.0286$ & 0.757 \\
+HF tilt 5--16 kHz & $-6.13$ & $-8.06$ & $+3.083$ & 0.707 \\
+HF ratio 5--16 kHz & $-3.639$ & $-6.305$ & $+3.184$ & 0.695 \\
+air ratio 12--20 kHz & $-13.85$ & $-19.80$ & $+5.947$ & 0.686 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{../analysis/paired_generators/average_difference_spectrogram_locked_test.png}
+\caption{HeartMuLa-minus-ACE-Step 的 prompt-paired locked-test 平均人声差异。共享校正对两生成器直接 dB 对比大致相消，locked absolute map 最大变化仅约 0.271 dB。数据 reference：\texttt{A07}。}
+\label{fig:paired-map}
+\end{figure}
+
+最强配对差异来自 sibilance burst、HF crest 与高频包络调制，而不是单一静态能量。这支持将 applied filter 设计为频率分布与时间纹理的组合，而非固定 EQ 门限。
+
+\section{综合分析结论与 applied filter 设计}
+\label{sec:conclusion}
+
+\subsection{可支持的结论}
+
+\begin{enumerate}
+  \item \textbf{10--16 kHz 是当前三个生成域最一致的异常频带。}三者相对 Human 的 frame-normalized mean 均为正，但幅度不同。
+  \item \textbf{16--20 kHz 的异常必须双向检测。}HeartMuLa 表现为约 16.5 kHz 后急剧截止，ACE-Step 表现为超高频 excess；“高频越多越 AI”会漏掉 HeartMuLa。
+  \item \textbf{静态谱形与动态纹理应联合。}HF tilt、band ratios、crest、modulation、sibilance burst、HNR/pitch confidence 描述互补现象。
+  \item \textbf{冻结 Demucs average correction 不改变主要结论。}这削弱了“共享平均分离器频响造成结果”的解释，但不能排除 class-dependent error。
+  \item \textbf{域内 AUC 明显高估通用性。}跨生成器方向反转证明模型捕捉到 codec、带宽和生成链路指纹。
+\end{enumerate}
+
+\subsection{建议的两层 applied filter}
+
+基于现有 evidence，可把 thesis prototype 组织为两层，而不是直接把域内 ridge classifier 当成最终 detector：
+
+\begin{enumerate}
+  \item \textbf{跨模型层：}对 Demucs vocal stem 计算 0.3--20 kHz frame-normalized shape、5--16 kHz tilt/ratio、10--16 kHz excess、sibilance burst 和 HNR/pitch confidence；以多生成器 development 训练，locked 与未知生成器评估。
+  \item \textbf{指纹层：}显式检测带宽 cutoff、16--20 kHz excess、梳状 periodicity、HF crest/modulation 等 generator-specific 模式。该层输出“像哪种已知生成器”，而不直接等同于“是否 AI”。
+\end{enumerate}
+
+最终系统应同时输出连续分数、主要贡献频带、vocal activity 标记和 domain/OOD 警告；在没有匹配人类 cohort 与未知生成器验证前，不建议设定面向真实世界的硬判决阈值。
+
+\subsection{必须保留的偏差与下一步}
+
+Muse 500 prompts 强烈偏向 Pop（319）、Ballad（292）、Female Vocal（286）、Piano（263）、C-pop（233）；Human FMA 500 则以 Rock（163）、Electronic（115）、Experimental（45）、Hip-Hop（42）为主，Pop 仅 21。因此当前 AUC 可能同时包含真实生成器 fingerprint、genre/language/vocal-arrangement 差异、mastering 与 provenance。下一步优先级为：
+
+\begin{enumerate}
+  \item 构建 style、language、vocal activity 与 mastering 尽量匹配的 Human cohort；
+  \item 加入完全未参与训练和阈值选择的 unknown generator external test；
+  \item 在 MP3/AAC、重采样、EQ、响度标准化和母带链路下做 robustness；
+  \item 以 oracle vocal 或多个 separator 重复关键结果，量化 class-dependent separation error；
+  \item 将频谱指标与盲听标签对齐，验证指标是否真的解释人的高频听感。
+\end{enumerate}
+
+\section{复现与完整性}
+\label{sec:repro}
+
+精确命令见 \outref{O12}。完整远端实验根为
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/open_models_spectral_500_20260901}
+\end{center}
+既有 Human/Suno/Demucs-bias baseline 为
+\begin{center}
+\filepath{/mnt/nfs-code/users/yi/demucs_bias_corrected_1000_20260901}.
+\end{center}
+
+本地轻量归档根为
+\begin{center}
+\filepath{/Users/yi/Documents/code/music/artifacts/open_models_spectral_500_20260901}.
+\end{center}
+
+轻量清单 \outref{O08} 覆盖 196 个关键文件，其清单自身 SHA-256 为：
+\begin{center}
+\small\hashvalue{abe0b6b6705aec5f00cd8d516e207a4209428df9e833356d2f13ab2712b8c272}
+\end{center}
+
+\clearpage
+\appendix
+\setlength{\tabcolsep}{5pt}
+
+\section{代码 reference 索引}
+\label{app:code}
+
+下表路径均相对本地轻量归档根。正文通过 \coderef{C01} 形式跳转到这里。归档副本用于保证论文结果对应的代码不会随工作目录后续修改而漂移。
+
+\begin{longtable}{p{15mm}p{55mm}p{80mm}}
+\caption{代码工件索引。}\\
+\toprule
+编号 & 相对路径 & 作用 \\
+\midrule
+\endfirsthead
+\toprule
+编号 & 相对路径 & 作用 \\
+\midrule
+\endhead
+\codeanchor{C01} & \filepath{code/experiment/build_muse_manifest.py} & Muse metadata 过滤、前 30 秒歌词构造、确定性 500 条选择、split 与 seed。 \\
+\codeanchor{C02} & \filepath{code/experiment/run_acestep_batch.py} & ACE-Step 初始化、冻结参数推理、atomic output、resume 与逐条 state/hash。 \\
+\codeanchor{C03} & \filepath{code/experiment/run_heartmula_batch.py} & HeartMuLa/HeartCodec 分卡推理、区间 worker、resume、state/hash。 \\
+\codeanchor{C04} & \filepath{code/experiment/reconcile_generated_state.py} & 受控中断后只读核验现有音频，并补充缺失状态；不改音频。 \\
+\codeanchor{C05} & \filepath{code/experiment/standardize_generated_audio.py} & SoundFile + polyphase resampling、双声道/30 秒/PCM-16 FLAC 统一及 clip/pad/truncate 计数。 \\
+\codeanchor{C06} & \filepath{code/experiment/validate_generated_batch.py} & manifest/state/audio 完整性、采样率、声道、时长与 finite 验证。 \\
+\codeanchor{C07} & \filepath{code/experiment/run_demucs_generated.py} & 5090 Demucs batch wrapper、固定 htdemucs 参数、stem metadata 验证与状态日志。 \\
+\codeanchor{C08} & \filepath{code/experiment/prepare_analysis_layout.py} & Human baseline 与各生成器音频/stems 的分析 layout 和 manifest。 \\
+\codeanchor{C09} & \filepath{code/analysis_lib/stem_spectral_ablation.py} & STFT、22 个可解释 scalar metrics、active-frame 规则、统计量与 ridge 实现。 \\
+\codeanchor{C10} & \filepath{code/analysis_lib/analyze_demucs_artifacts.py} & Demucs artifact metrics、频带向量、频带消融、bootstrap 与 locked evaluation。 \\
+\codeanchor{C11} & \filepath{code/analysis_lib/analyze_bias_corrected_vocals.py} & 冻结 Demucs bias filter、raw/corrected metrics、univariate 与分类比较。 \\
+\codeanchor{C12} & \filepath{code/experiment/analyze_average_class_spectrogram.py} & 128-band population-average difference spectrogram 与四联热图。 \\
+\codeanchor{C13} & \filepath{code/experiment/analyze_paired_generators.py} & HeartMuLa/ACE prompt-paired metrics、Wilcoxon/BH 与差异热图。 \\
+\codeanchor{C14} & \filepath{code/experiment/compare_generators.py} & Suno/HeartMuLa/ACE 汇总表、AUC 图、metric effects 与谱形 profile。 \\
+\codeanchor{C15} & \filepath{code/experiment/cross_generator_generalization.py} & single-source matrix、leave-one-generator-out、pooled-all 与 active-only。 \\
+\codeanchor{C16} & \filepath{code/experiment/heartmula_duration_robust_ablation.py} & 排除 HeartMuLa 短输出并确定性等量抽样 Human 的 sensitivity。 \\
+\codeanchor{C17} & \filepath{code/experiment/collect_run_metadata.py} & 收集 host、git、环境与关键文件 hash 到运行 metadata。 \\
+\bottomrule
+\end{longtable}
+
+\section{输出与过程 reference 索引}
+\label{app:outputs}
+
+除 \outref{O09} 外，下表路径均相对本地轻量归档根。
+
+\begin{longtable}{p{15mm}p{58mm}p{77mm}}
+\caption{生成、标准化、分离和审计输出索引。}\\
+\toprule
+编号 & 路径 & 内容 \\
+\midrule
+\endfirsthead
+\toprule
+编号 & 路径 & 内容 \\
+\midrule
+\endhead
+\outanchor{O01} & \filepath{prompts/prompt_manifest.jsonl}; \filepath{prompts/prompt_manifest_metadata.json}; \filepath{prompts/selected_source_rows.jsonl} & 冻结 500 条 prompt、split、language、seed、来源字段与 hash。 \\
+\outanchor{O02} & \filepath{state/acestep_generation.jsonl}; \filepath{logs/acestep_generation.log} & ACE-Step 逐条生成状态、耗时、格式、字节数、SHA-256 与主日志。 \\
+\outanchor{O03} & \filepath{state/heartmula_generation*.jsonl}; \filepath{logs/heartmula_generation*.log} & HeartMuLa 多阶段 worker、受控中断、resume/rebalance 与最终状态证据。 \\
+\outanchor{O04} & \filepath{reports/acestep_standardization_summary.json}; \filepath{reports/heartmula_standardization_summary.json}; \filepath{reports/*generation_validation*.json}; \filepath{state/acestep_standardization_failed_torchcodec.jsonl} & 标准化计数、raw 验证、Heart 短输出和 ACE TorchCodec 失败记录。 \\
+\outanchor{O05} & \filepath{state/demucs_acestep.jsonl}; \filepath{state/demucs_heartmula.jsonl}; \filepath{logs/demucs_*.log} & Demucs batch、耗时、累计验证数与 smoke/formal 日志。 \\
+\outanchor{O06} & \filepath{RUN_LOG.md}; \filepath{logs/*pip_freeze.txt}; \filepath{logs/*smoke.log} & 主机选择、环境、smoke、调度、失败、性能和最终状态。 \\
+\outanchor{O07} & \filepath{logs/heartmula_weight_sha256.txt}; \filepath{logs/acestep_weight_sha256_final.txt} & 固定权重与 ACE handler 后最终 checkpoint 的逐文件 hash。 \\
+\outanchor{O08} & \filepath{reports/LIGHTWEIGHT_SHA256.txt}; \filepath{reports/RUN_METADATA.json} & 196 个轻量关键工件的 SHA-256 及运行元数据。 \\
+\outanchor{O09} & \filepath{/mnt/nfs-code/users/yi/open_models_spectral_500_20260901} & 远端完整 raw/standardized audio、2,000 stems、state、logs、models 和 analysis。 \\
+\outanchor{O10} & \filepath{EXPERIMENT_PROTOCOL.md} & 预先冻结的研究问题、参数、运行原则和结论边界。 \\
+\outanchor{O11} & \filepath{MODEL_DATASET_RESEARCH.md}; \filepath{THESIS_RESULTS_CN.md} & 模型/数据选择依据及中文阶段结论。 \\
+\outanchor{O12} & \filepath{REPRODUCE_COMMANDS.md} & 生成、标准化、验证、Demucs、Human-vs-AI、paired 和 cross-generator 精确命令。 \\
+\outanchor{O13} & \filepath{samples/README.md}; \filepath{samples/*} & 两个 locked prompt 的 HeartMuLa/ACE mixes 与 vocal stems，供听感复核。 \\
+\bottomrule
+\end{longtable}
+
+\section{数据分析结果 reference 索引}
+\label{app:analysis}
+
+下表路径均相对本地轻量归档根。每个目录的 \texttt{REPORT.md} 提供人类可读摘要，CSV/JSON/NPZ 是数值来源，PNG 是可视化派生物。
+
+\begin{longtable}{p{15mm}p{60mm}p{75mm}}
+\caption{数据分析工件索引。}\\
+\toprule
+编号 & 路径 & 对应结论/数据 \\
+\midrule
+\endfirsthead
+\toprule
+编号 & 路径 & 对应结论/数据 \\
+\midrule
+\endhead
+\analysisanchor{A01} & \filepath{analysis/human_vs_suno_average/} & Human-vs-Suno all/development/locked average difference maps 与 metadata。 \\
+\analysisanchor{A02} & \filepath{analysis/human_vs_heartmula/} & HeartMuLa raw/corrected metrics、频带分类、univariate effects、vocal activity、average maps。 \\
+\analysisanchor{A03} & \filepath{analysis/human_vs_acestep/} & ACE-Step 对应的完整 raw/corrected 结果。 \\
+\analysisanchor{A04} & \filepath{analysis/comparison/} & 三生成器 classification comparison、band summary、metric effects、AUC 与谱形 profile。 \\
+\analysisanchor{A05} & \filepath{analysis/cross_generator/} & 全量 cohort 的 single-source matrix、leave-one-out、pooled-all CSV/报告/热图。 \\
+\analysisanchor{A06} & \filepath{analysis/cross_generator_vocal_active/} & raw-frozen vocal-active sensitivity cohort 的跨生成器结果。 \\
+\analysisanchor{A07} & \filepath{analysis/paired_generators/} & HeartMuLa-vs-ACE 500 对 metrics、Wilcoxon/BH、四联 difference maps。 \\
+\analysisanchor{A08} & \filepath{analysis/heartmula_duration_robust/} & 排除 42 条短输出后的 366+366/92+92 时长 sensitivity。 \\
+\analysisanchor{A09} & \filepath{analysis/demucs_frequency_bias.npz} & 外部 MUSDB oracle 上预先冻结的 Demucs frequency bias。 \\
+\bottomrule
+\end{longtable}
+
+\section{报告数字到原始工件的映射}
+\label{app:claim-map}
+
+\begingroup
+\footnotesize
+\renewcommand{\arraystretch}{1.05}
+\begin{longtable}{p{57mm}p{35mm}p{58mm}}
+\caption{关键声明的直接数据来源。}\\
+\toprule
+声明 & Reference & 直接文件 \\
+\midrule
+\endfirsthead
+\toprule
+声明 & Reference & 直接文件 \\
+\midrule
+\endhead
+三生成器频带 AI-minus-Human dB & \analysisref{A04} & \filepath{analysis/comparison/average_spectrogram_band_summary.csv} \\
+单域 AUC/CI/BA & \analysisref{A04} & \filepath{analysis/comparison/generator_classification_comparison.csv} \\
+各模型最强 scalar cues & \analysisref{A02}, \analysisref{A03} & \filepath{univariate_effects.csv} 与 \filepath{REPORT.md} \\
+leave-one-out 与 pooled AUC & \analysisref{A05}, \analysisref{A06} & \filepath{cross_generator_evaluation.csv} \\
+HeartMuLa/ACE paired metrics & \analysisref{A07} & \filepath{paired_metric_summary.csv}; \filepath{paired_vocal_metrics.csv} \\
+HeartMuLa 42 条短输出敏感性 & \analysisref{A08}, \outref{O04} & \filepath{classification_ablation.csv}; \filepath{heartmula_standardization_summary.json} \\
+raw/corrected map 最大变化 & \analysisref{A01}--\analysisref{A03} & \filepath{average_difference_metadata.json} \\
+GPU、耗时、失败与恢复过程 & \outref{O02}--\outref{O06} & JSONL state、smoke/formal logs 与 \filepath{RUN_LOG.md} \\
+版本、权重与归档完整性 & \outref{O07}, \outref{O08} & weight hash、\filepath{LIGHTWEIGHT_SHA256.txt}、\filepath{RUN_METADATA.json} \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\clearpage
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

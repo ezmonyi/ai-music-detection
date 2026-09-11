@@ -1,0 +1,198 @@
+\section{MIDI-Grounded Validation of a Music-Understanding Model}
+\label{sec:music-flamingo-probe}
+
+\subsection{Motivation and Admission Criterion}
+
+The proposed applied filter includes two non-spectral hypotheses: AI-generated
+arrangements may exhibit reduced dynamics variation in MIDI-controlled
+instruments, and they may exhibit less varied rhythmic development. These
+hypotheses can be measured deterministically when aligned MIDI is available.
+For waveform-only deployment, a music-understanding model might appear to offer
+a convenient semantic measurement. This section therefore tests Music Flamingo
+\citep{musicflamingo2025} before allowing any model-derived judgment to enter
+the Human--AI detector.
+
+This is a capability-validation experiment, not an AI-versus-Human
+classification test. The model feature is admitted only if its lower 95\%
+Wilson bound exceeds 0.5, physical-excerpt selection is at least 0.75 consistent
+under A/B reversal, exact JSON parse rate is at least 0.95, performance remains
+above chance among low-nuisance pairs, and no direction reversal appears across
+major styles. Failure leaves the deterministic MIDI/MIR measurement in the
+heuristic set and excludes the language-model judgment.
+
+The official Music Flamingo evaluations cover broad captioning, music QA,
+instrument, lyric, and reasoning tasks, but do not report dedicated accuracy
+for MIDI velocity-variation or bar-to-bar rhythm-variation judgments
+\citep{musicflamingohf2026}. MF-Skills was not used for evaluation because its
+card describes synthetic/model-assisted annotations and it was used in Music
+Flamingo training \citep{mfskills2025}.
+
+\subsection{Open Dataset and Objective Targets}
+
+The open Groove MIDI Dataset (GMD) supplies human-performed drum MIDI, aligned
+synthesized audio, velocity and timing, tempo/meter metadata, and an official
+test split under CC BY 4.0 \citep{gmd2019}. Only 4/4 \texttt{beat}
+performances in the test split were eligible. The official MIDI-only archive
+defined every target. Audio was transported through a 16-kHz Hugging Face
+mirror at frozen revision
+\texttt{a505eb614310d60f6844042709c286b8a4d1988f}; mirror labels were not used
+\citep{gmdmirror2026}.
+
+For each pitch $p$ with at least four note onsets, dynamics variation combines
+two onset-weighted measurements:
+\begin{equation}
+  D_p^{(1)} = \frac{\sigma(v_p)}{\mu(v_p)}, \qquad
+  D_p^{(2)} = \frac{\operatorname{median}_i |v_{p,i}-v_{p,i-1}|}
+  {\operatorname{median}_i v_{p,i}}.
+\end{equation}
+The primary dynamics score is the equal-weight mean of the within-corpus robust
+$z$-scores of the two pitch-conditional summaries. Pitch conditioning prevents
+changes in the mixture of kick, snare, cymbal, and tom events from masquerading
+as expressive dynamics.
+
+For rhythm, onsets are quantized to a 16th-note grid and mapped to coarse drum
+classes. Each of four bars is represented by a binary class-by-grid vector
+$b_j$. The rhythm-variation score is the average pairwise Jaccard distance:
+\begin{equation}
+  R = \frac{1}{\binom{4}{2}}\sum_{i<j}
+  \left(1-\frac{|b_i\cap b_j|}{|b_i\cup b_j|}\right).
+\end{equation}
+
+The final pool contained 116 eligible four-bar windows from 36 official test
+performances. Strict within-performance matching yielded 22 dynamics pairs and
+10 rhythm pairs. Dynamics target gaps were 0.531--4.148 (median 0.990), with a
+median rhythm-nuisance gap of 0.044 and a median RMS gap of 0.282 dB. Rhythm
+target gaps were 0.085--0.255 (median 0.109), with a median dynamics-nuisance
+gap of 0.175 and a median RMS gap of 0.244 dB. The shortfall from the intended
+32 rhythm pairs was retained rather than weakening matching rules after data
+inspection.
+
+\subsection{Pairwise Protocol and 5090 Inference}
+
+Every pair came from the same source performance. Because the released chat
+template emits one \texttt{<sound>} placeholder per user turn, excerpt A and
+excerpt B were concatenated with one second of silence. Paired durations were
+14.913--25.000 s (median 19.824 s), below the 30-s processor window. Each pair
+was queried in both orders; the correct physical excerpt is unchanged while its
+letter flips.
+
+Only the seed-randomized first ordering of each pair enters primary accuracy and
+its Wilson interval, avoiding dependence between an item and its reversal.
+Reversed queries measure physical-choice order consistency and positional bias.
+\texttt{TIE}, invalid JSON, and runtime failures count as incorrect.
+
+Inference used \path{nvidia/music-flamingo-2601-hf} revision
+\MFHash{6b5be086d52f65a1e204cb0faf70bf54e2741ecd}
+\citep{musicflamingocheckpoint2026}, bfloat16, greedy decoding, and at most 64
+new tokens. It ran only on physical GPU 1 of host \texttt{5090-3}, an NVIDIA
+GeForce RTX 5090 exposed as process-local \texttt{cuda:0}. The runtime was
+PyTorch 2.11.0+cu128 and Transformers 5.16.1. The 16,534,531,504-byte weights
+used LFS SHA-256/OID
+\MFHash{4da26452d3978503fb064023a69f7867a1f235a2a5a89d3d9146ebf2e04eb15b}.
+Peak allocated memory was 15.62 GiB. The 64 primary queries required 17.53 s
+after load, with median generation latency 0.216 s.
+
+\subsection{Results}
+
+\begin{table}[H]
+\centering
+\caption{Preregistered Music Flamingo capability results. Accuracy uses one
+seed-randomized ordering per physical pair; response diagnostics use both
+orders. TIE is incorrect for accuracy.}
+\label{tab:mf-primary}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{lrrrrr}
+\toprule
+Task & Pairs & Accuracy (95\% Wilson CI) & TIE rate & JSON parse & Order consistency \\
+\midrule
+Dynamics & 22 & 0.000 (0.000--0.149) & 1.000 & 1.000 & 0.000 \\
+Rhythm   & 10 & 0.300 (0.108--0.603) & 0.500 & 1.000 & 0.000 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+
+All 44 dynamics queries returned \texttt{TIE}. Among 20 rhythm queries, ten
+returned \texttt{TIE} and ten returned A; none returned B. Accuracy in the
+smaller-nuisance half was 0.000 for dynamics and 0.400 for rhythm. Rhythm
+correctness did not increase with target separation ($\rho=-0.114$,
+$p=0.754$). Both features fail the complete admission rule. Order consistency
+is defined as selecting the same physical excerpt in both orders; a TIE/TIE
+pair is a stable abstention but not a valid ranking.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.97\linewidth]{\MFFigureRoot/analysis_comparison/primary_vs_forced_choice.png}
+  \caption{Primary and post-hoc forced-choice results. The left panel can be
+  misleading in isolation: the apparent forced-choice dynamics accuracy is
+  generated by a universal first-position response. The right panel exposes
+  the TIE collapse and the A-only positional shortcut.}
+  \label{fig:mf-primary-forced}
+\end{figure}
+
+\subsection{Post-hoc Forced-Choice Sensitivity}
+
+After the primary TIE collapse was observed, one explicitly post-hoc prompt
+removed TIE and required A or B; no audio, order, target, checkpoint, or decode
+setting changed. Music Flamingo selected A on all 64 queries. This produced an
+apparent dynamics accuracy of 15/22 = 0.682 (95\% CI 0.473--0.836) and rhythm
+accuracy of 3/10 = 0.300 (0.108--0.603). Both had a first-position selection
+rate of 1.000 and physical-choice order consistency of 0.000. The 0.682 value
+is therefore the proportion of randomized first orders whose correct excerpt
+happened to occupy position A, not evidence of dynamics perception. This
+post-hoc analysis cannot replace the preregistered result.
+
+\subsection{Decision for the Applied Filter}
+
+Music Flamingo is excluded from the current dynamics and rhythm feature set. It
+obeyed the JSON output format perfectly, but did not produce a usable,
+order-invariant perceptual ranking. The thesis retains the pitch-conditional
+velocity statistics and bar-pattern Jaccard distance as deterministic metrics
+when MIDI is available. For waveform-only deployment, the appropriate next
+features are onset-conditioned energy dispersion, adjacent-onset energy change,
+bar-synchronous pattern novelty, onset-density variation, tempogram change, and
+self-similarity novelty on percussion or accompaniment stems. These MIR proxies
+must be calibrated against aligned MIDI before entering the generator-disjoint
+Human--AI ablation.
+
+The result does not show that all music-understanding models are incapable of
+these judgments, nor does it measure AI-versus-Human accuracy. GMD is
+percussion-only and uses synthesized electronic-drum audio; only ten rhythm
+pairs passed strict matching. A future preregistered replication should use a
+new corpus, balance A/B labels exactly, freeze a forced-choice prompt in
+advance, add calibrated human judgments, and include aligned pitched-instrument
+audio/MIDI such as piano before generalizing to bass, guitar, voice, or
+orchestral parts.
+
+\subsection{Reproducible References}
+
+\begin{longtable}{p{42mm}p{104mm}}
+\caption{Music Flamingo probe artifact index. Paths are relative to the
+experiment's lightweight artifact root.}\\
+\toprule
+Artifact & Purpose \\
+\midrule
+\endfirsthead
+\toprule
+Artifact & Purpose \\
+\midrule
+\endhead
+\path{EXPERIMENT_PROTOCOL.md} & Frozen questions, metrics, pairing, admission rule, and two pre-output implementation repairs. \\
+\path{DATASET_MODEL_AUDIT.md} & Model/dataset coverage, leakage analysis, and source selection. \\
+\path{code/prepare_gmd_probe.py} & MIDI parsing, objective measurements, matching, and paired-audio materialization. \\
+\path{code/run_music_flamingo_probe.py} & Resume-safe 5090-only model inference and raw output capture. \\
+\path{code/analyze_probe.py} & Accuracy, Wilson intervals, order checks, style tables, and primary figure. \\
+\path{code/compare_conditions.py} & Primary-versus-forced comparison and response-distribution figure. \\
+\path{pairs.csv}; \path{prompt_manifest.jsonl} & Frozen physical pairs and 64 order-specific queries. \\
+\path{state/inference.jsonl} & All preregistered responses, labels, parse status, correctness, and timing. \\
+\path{state/inference_forced_choice.jsonl} & All post-hoc forced-choice responses. \\
+\path{analysis/}; \path{analysis_forced_choice/} & CSV/JSON summaries, style cells, and figures for both conditions. \\
+\path{analysis_comparison/condition_comparison.csv} & Direct numerical source for \cref{fig:mf-primary-forced}. \\
+\path{logs/} & Formal logs, package freeze, and GPU inventory. \\
+\bottomrule
+\end{longtable}
+
+The complete audio-bearing archive is retained at
+\path{/mnt/nfs-code/users/yi/music_flamingo_midi_rhythm_probe_20260903};
+the local thesis workspace contains the lightweight manifests, raw model
+responses, code, statistics, logs, and figures.

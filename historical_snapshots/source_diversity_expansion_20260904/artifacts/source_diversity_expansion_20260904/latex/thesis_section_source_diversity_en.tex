@@ -1,0 +1,92 @@
+\section{Catalogue-First Human Source-Diversity Expansion}
+\label{sec:human-source-diversity}
+
+\subsection{Rationale and Freeze Boundary}
+
+The four-family ablation showed that adding examples from an already represented
+generator changed transfer much less than adding generator families.  The same
+principle applies to Human music: 500 rows from one catalogue are not equivalent to
+500 independent recording domains.  The present extension therefore removes any
+requirement that every Human dataset contribute 500 tracks.  It instead retains
+small catalogues when they add a distinct performance, instrumentation, production,
+or cultural domain, and assigns equal total weight to each eligible source within
+the Human class.
+
+The v2 item list was selected from metadata before audio decoding, Demucs, feature
+extraction, detector scoring, or threshold adjustment.  The earlier v1 list was
+superseded at that point and is preserved only as an audit trail.  The v2 manifest,
+protocol, dataset audit, and selection code are indexed as \outref{O30},
+\outref{O31}, and \coderef{C43}.  Its SHA-256 digest is
+
+\begin{center}
+\small\hashvalue{d9695922b46bae77b8d9572f450e38e1e637827b9039239283dbbc19a3333d26}.
+\end{center}
+
+\subsection{Human Catalogues and Statistical Units}
+
+\begin{table}[H]
+\centering
+\small
+\caption{Catalogue-first Human expansion.  ``Locked'' sources may not influence any
+representation or hyperparameter; stress sources cannot support headline results.}
+\label{tab:human-catalogue-expansion}
+\begin{tabular}{p{35mm}rrp{31mm}p{42mm}}
+\toprule
+Source & Tracks & Groups & Role & Distinct contribution \\
+\midrule
+MagnaTagATune & 500 & 500 & Development & Independent-label music; 250 vocal and 250 non-vocal \\
+MAESTRO v3 & 300 & 300 & Development & Live acoustic piano performances and work identities \\
+MedleyDB mirror & 178 & 178 & Development & Royalty-free studio multitracks and mixtures \\
+MoisesDB mirror & 239 & 239 & Development & Contemporary multitrack productions across genres \\
+URMP & 44 & 44 & Development & Controlled real-player chamber ensembles with aligned scores \\
+MusicNet & 330 & 330 & Locked & Freely licensed chamber/classical recordings \\
+DEAM & 300 & 300 & Locked & Emotion-labelled mixed catalogue \\
+GTZAN & 100 & 100 & Stress only & Legacy ten-genre codec/catalogue shift \\
+Hindustani raag & 100 & 100 & Stress only & Fifty raags; one clip per source video \\
+\midrule
+Total & 2,091 & 2,091 & 1,261 development; 630 locked; 200 stress & Nine Human catalogue identities \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Multiple clips, captions, stems, or extensions from the same underlying work are one
+statistical group.  For the Hindustani stress set, exactly two source videos were
+selected for each of 50 raags and only one chunk from each video was retained.  For
+MagnaTagATune, only one excerpt from an underlying track was retained and artist
+counts were capped.  The 50 MAESTRO recordings used in the external dynamics
+benchmark were excluded.  MedleyDB is development-only because a separate single
+track had already informed the separator-bias study.  MusicNet and DEAM remain
+entirely locked.
+
+The already materialized AIME MTG-Jamendo controls remain useful project data, but a
+second MTG-Jamendo or Song Describer mirror is not counted as another independent
+Human source.  A 16 kHz MTG-Jamendo mirror was also rejected for the spectral family
+because its 8 kHz Nyquist limit removes the high-frequency region under study.
+Saraga is a strong future candidate---108 Hindustani and 249 Carnatic recordings,
+including rhythm and structure annotations---but it was not frozen because the
+official audio access is token-based and no equivalently documented HF audio mirror
+was found.
+
+\subsection{Materialized Pilot and Integrity Checks}
+
+The smallest two complementary sources were materialized first on the remote host:
+all 44 URMP ensemble mixes and 100 Hindustani source-video groups.  The process used
+only download, decoding, deterministic interior cropping, and conversion to 10 s,
+44.1 kHz, stereo PCM-16 FLAC; no Demucs, UVR, music-understanding model, or detector
+feature was run.  All 144 native files were 48 kHz and therefore genuinely eligible
+through 20 kHz before resampling.  The standardized files total 103,882,717 bytes.
+Every output SHA-256 was recomputed successfully, all 144 manifest IDs were present,
+and no temporary raw file remained.  The materializer and validators are indexed as
+\coderef{C44} and \coderef{C45}; the local metadata/result ledger is \analysisref{A22}
+and the complete remote location is \outref{O32}.
+
+\subsection{Consequence for Detector Evaluation}
+
+This extension is a data-design and input-integrity result, not a new detector-score
+result.  None of the new Human tracks has yet changed the reported S, D, R, or P
+accuracy.  The next development comparison must balance AI and Human class weight,
+give each Human catalogue equal total weight, and evaluate leave-one-Human-catalogue-
+out alongside leave-one-generator-out transfer.  MusicNet and DEAM must then be
+opened only once for the final frozen S/D/R/P pipeline.  Track-macro and source-macro
+metrics must both be reported: the former measures item performance, while the latter
+prevents a large catalogue from hiding failure on a small but distinct domain.

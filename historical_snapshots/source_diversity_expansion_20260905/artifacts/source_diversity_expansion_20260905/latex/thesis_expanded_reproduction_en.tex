@@ -1,0 +1,95 @@
+\subsection{Expanded-experiment reproduction and artifact references}
+\label{sec:expanded-references}
+
+The local archive root is
+\filepath{/Users/yi/Documents/code/music/artifacts/source_diversity_expansion_20260905/}.
+All relative references in Table~\ref{tab:expanded-artifact-references} resolve
+against this root. Large waveform, stem and spectrogram files remain under
+\filepath{/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/}; exact
+remote paths and hashes are recorded in the item-level manifests and inference
+audits. A file being named in the planned catalogue is not sufficient evidence
+of physical completion. The positive materialization and feature-union audits,
+and the completed formal orchestration audit, are the corresponding gates.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{27mm}>{\raggedright\arraybackslash}p{63mm}>{\raggedright\arraybackslash}p{59mm}}
+\caption{Code, output and numerical-analysis references for the expanded experiment.}
+\label{tab:expanded-artifact-references}\\
+\toprule Responsibility & Code / protocol reference & Output / evidence reference \\
+\midrule
+\endfirsthead
+\toprule Responsibility & Code / protocol reference & Output / evidence reference \\
+\midrule
+\endhead
+Frozen acquisition & \filepath{code/materialize_all_selected.py};
+\filepath{code/materialize_validate.py}; \filepath{EXPERIMENT_PROTOCOL.md}
+& \filepath{state/materialization_manifest.jsonl};
+\filepath{audit/materialization_validation.json} \\
+Legacy natives and AIME long views & \filepath{code/audit_legacy_native.py};
+\filepath{code/restore_aime_long_views.py}; \filepath{code/audit_aime_long_views.py};
+\filepath{code/audit_prior_retention.py}
+& \filepath{audit/legacy_native_1000.json};
+\filepath{state/aime_long_manifest.jsonl}; \filepath{audit/aime_long_audit.json};
+\filepath{audit/prior_retention_inventory.json} \\
+Recording roles and groups & \filepath{code/build_master_registry.py};
+\filepath{code/build_corpus_inventory.py}
+& \filepath{manifests/final/metadata_10s.csv}; \filepath{manifests/final/metadata_30s.csv};
+\filepath{results/inventory/corpus_inventory.json} \\
+Neural estimator outputs & \filepath{code/infer_expanded_prepare.py};
+\filepath{code/infer_expanded_allinone.sh}; \filepath{code/infer_expanded_beat_this.sh}
+& \filepath{results/inference_runtime_contract.json};
+\filepath{results/remote_inference_runtime_versions.json};
+\filepath{results/inference_checkpoint_manifest.json}; duration-specific
+remote beat, structure, four-stem and spectrogram audits \\
+Four-family extraction & \filepath{code/expanded_feature_definitions.py};
+\filepath{code/extract_expanded_four_family.py};
+\filepath{code/merge_expanded_feature_union.py}
+& \filepath{results/four_family_10s/expanded_features_10s.csv};
+\filepath{results/four_family_30s/expanded_features_30s.csv} \\
+Completion and independent checks & \filepath{code/verify_expanded_final_union.py};
+\filepath{code/summarize_feature_observability.py};
+\filepath{code/audit_formal_results.py}
+& \filepath{results/four_family_10s_verification.json};
+\filepath{results/four_family_30s_verification.json};
+\filepath{results/feature_observability_10s.json};
+\filepath{results/feature_observability_30s.json};
+\filepath{audit/formal_results_consistency.json} \\
+Fitting and locked evaluation & \filepath{code/evaluate_expanded.py};
+\filepath{code/evaluate_expanded_orchestrate.py};
+\filepath{code/evaluate_expanded_formal_COMMANDS.md}
+& \filepath{results/formal_evaluation/evaluate_expanded_formal_orchestration_audit.json};
+duration-specific \filepath{cv/}, \filepath{locked/} and \filepath{group_bootstrap/}
+subdirectories \\
+Numerical tables, plots and thesis & \filepath{code/evaluate_expanded_report.py};
+\filepath{code/evaluate_expanded_plot.py}; \filepath{code/evaluate_expanded_latex.py};
+\filepath{code/build_thesis_revision.py}
+& duration-specific \filepath{evaluate_expanded_report.md}, 15-by-5 figures,
+\filepath{latex/results_10s_*} and \filepath{latex/results_30s_*} \\
+Operational archive & \filepath{REPRODUCTION_GUIDE.md};
+\filepath{code/build_artifact_index.py}
+& \filepath{RUN_LOG.md}; \filepath{ARTIFACT_INDEX.md};
+\filepath{audit/artifact_index.json} \\
+\bottomrule
+\end{longtable}
+
+The formal evaluation directories retain raw source-pair metrics, all quantity
+and combination summaries, actual training counts, fold membership, frozen
+candidate/model files, and record-level locked scores. The full feature-status
+tables distinguish natural unobservability from processing failure. The raw
+Beat This exception probes are preserved in
+\filepath{results/beat_raw_probe_locked_audiox.json} and its paired NumPy archive.
+These records prevent an empty or failed estimator output from being silently
+reinterpreted as perfectly regular Human or AI music.
+The checkpoint manifest records the actual eight ordered Harmonix ensemble
+weights, the resolved Demucs signature, and Beat This checkpoint hashes, rather
+than relying only on model aliases. A separate input-duration retry incident,
+its quarantined output and guarded exact-thirty-second re-run are documented in
+\filepath{results/beat_retry_duration_incident_30s.json}. The wrong-duration
+output was excluded before feature-union completion and classifier fitting.
+
+Code and metadata are portable; absolute remote waveform paths require access
+to the retained storage. Lightweight CSVs and accounting manifests are mirrored
+locally and their positive union verifications regenerated for the local paths
+before CPU-only fitting. The archive index excludes transient PDF previews and
+synthetic runtime benchmarks from the scientific result index. The preceding
+thesis revision remains unchanged, preserving the chronology of hypotheses,
+external measurement failures, frozen tests and later development reuse.

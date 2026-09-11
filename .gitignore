@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.pem
+*.key
+*.wav
+*.flac
+*.mp3
+*.safetensors
+*.pt
+*.ckpt
