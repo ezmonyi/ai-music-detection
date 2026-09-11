@@ -1,0 +1,112 @@
+\section{Native30 seven-family results}
+
+\label{sec:native30-seven}
+
+This section reports the completed seven-family Native30 evaluation, not the subsequent BC or YuE2 extension. The cohort contains 3,830 recordings: 1,664 human and 2,166 AI, drawn from eleven sources. The committed evaluation contains 51,562 valid model instances (36,830 primary and 14,732 diagnostic), with zero recorded failed model instances. There are 127 nonempty feature subsets, five training caps, and separately defined source-held-out and grouped-descriptive protocols.
+
+\subsection{Endpoint and reporting convention}
+
+The primary mode combines descriptor values with missingness indicators. Training rows alone determine medians and weighted scaling. Ridge regularization is fixed at 10 and the decision threshold at 0.5. Scores are unbounded decision values, not calibrated probabilities. No held-source threshold tuning or post-hoc winner selection is performed.
+
+Tables report balanced accuracy (BA) in percent. Correctness is averaged within global groups, then equally across sources within each class, and finally equally across classes. Protocol summaries weight held-source experiments equally. The caps constrain unique global groups per remaining training source, not total recordings. Transitive source and test dependencies are excluded from training. The exhaustive 1,905 primary cells remain available; the tables below show the singleton families, the original four-family set, and the full seven-family set without claiming that these are optimal.
+
+S denotes common-band vocal spectral descriptors; D onset-conditioned dynamics; R rhythm; P phrase/section-length descriptors; F phase/group delay; H pitch-class/chroma organization; and SC stereo descriptors. H does not measure acoustic overtone shape.
+
+\subsection{Generator holdout}
+
+\begin{center}\small
+
+\begin{tabular}{lrrrrr}\toprule
+
+Features & 25 & 50 & 100 & 200 & All \\ \midrule
+
+S & 61.15 & 62.02 & 62.18 & 61.56 & 61.39 \\
+
+D & 58.36 & 58.86 & 59.04 & 58.60 & 59.02 \\
+
+R & 61.30 & 61.23 & 61.63 & 62.04 & 62.00 \\
+
+P & 53.28 & 52.27 & 51.70 & 52.92 & 52.84 \\
+
+F & 58.71 & 57.28 & 56.43 & 56.81 & 56.72 \\
+
+H & 52.77 & 51.13 & 50.84 & 50.05 & 50.42 \\
+
+SC & 52.19 & 53.12 & 52.96 & 52.22 & 52.20 \\
+
+S+D+R+P & 65.41 & 64.96 & 66.02 & 65.87 & 65.79 \\
+
+S+D+R+P+F+H+SC & 61.87 & 59.71 & 59.77 & 61.27 & 61.63 \\
+
+\bottomrule\end{tabular}\end{center}
+
+\subsection{Human source holdout}
+
+\begin{center}\small
+
+\begin{tabular}{lrrrrr}\toprule
+
+Features & 25 & 50 & 100 & 200 & All \\ \midrule
+
+S & 59.72 & 60.62 & 60.63 & 61.09 & 60.95 \\
+
+D & 62.20 & 62.14 & 62.21 & 62.40 & 62.40 \\
+
+R & 61.12 & 61.21 & 61.22 & 61.55 & 61.44 \\
+
+P & 54.38 & 54.64 & 54.57 & 54.55 & 54.48 \\
+
+F & 61.33 & 60.15 & 59.77 & 59.42 & 59.27 \\
+
+H & 56.91 & 58.11 & 57.20 & 57.59 & 57.51 \\
+
+SC & 58.04 & 60.35 & 60.94 & 60.39 & 60.28 \\
+
+S+D+R+P & 63.63 & 64.94 & 66.50 & 66.03 & 65.65 \\
+
+S+D+R+P+F+H+SC & 65.57 & 66.43 & 67.58 & 68.02 & 67.99 \\
+
+\bottomrule\end{tabular}\end{center}
+
+\clearpage
+\subsection{Ordinary group holdout descriptive}
+
+\begin{center}\small
+
+\begin{tabular}{lrrrrr}\toprule
+
+Features & 25 & 50 & 100 & 200 & All \\ \midrule
+
+S & 69.36 & 70.48 & 69.83 & 70.00 & 70.26 \\
+
+D & 63.34 & 63.19 & 63.17 & 62.91 & 63.04 \\
+
+R & 62.12 & 62.01 & 62.02 & 62.53 & 62.61 \\
+
+P & 54.40 & 54.83 & 54.88 & 54.94 & 54.90 \\
+
+F & 67.22 & 66.47 & 66.68 & 67.33 & 67.09 \\
+
+H & 60.31 & 60.41 & 59.95 & 58.77 & 58.86 \\
+
+SC & 62.10 & 62.77 & 63.13 & 62.63 & 63.01 \\
+
+S+D+R+P & 72.09 & 74.03 & 75.25 & 74.59 & 74.30 \\
+
+S+D+R+P+F+H+SC & 74.84 & 75.93 & 75.76 & 75.95 & 75.66 \\
+
+\bottomrule\end{tabular}\end{center}
+
+\subsection{Interpretation}
+
+At the all-data cap, the four-family model obtains 65.79\% BA under generator holdout, 65.65\% under human-source holdout, and 74.30\% under ordinary grouped descriptive testing. The full seven-family model obtains 61.63\%, 67.99\%, and 75.66\%, respectively. Thus the additional families improve the displayed human-source and grouped summaries while reducing the displayed held-generator endpoint. More interpretable descriptors are not automatically more transferable descriptors.
+
+The differences are descriptive comparisons within the recorded protocol, not causal effects of adding a phenomenon to music. No confidence interval is inferred from five fixed buckets. AUC is retained within each fitted fold; raw scores from different models are not pooled into one global AUC. Repeated opposite-class predictions across held-source experiments are dependent occurrences, not additional independent recordings.
+
+The training-cap curves are not monotonic. Selecting the largest observed cell after inspecting the full lattice would require separate untouched confirmation before an optimality claim. These results neither establish a universal AI fingerprint nor justify an accusation against an individual musician. Scientific validation of the intended dynamics, rhythm, and phrase measurements remains distinct from their classification usefulness.
+
+\subsection{Reproduction references and pending extensions}
+
+Code: \path{artifacts/audio_phenomena_expansion_20260907/code/evaluate_native30_v3.py} and \path{summarize_native30_evaluation_v3.py} in the same directory. Full report outputs: \path{artifacts/audio_phenomena_expansion_20260907/native30_evaluation_report_v3_20260911/}. The source \path{summary.json} and \path{COMMIT.json} bind the reported cells. The compact CSV is \path{deliverables/overnight_snapshot_20260912_v1/all_seven_family_primary_cells.csv}.
+
+The new public archive is \href{https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio}{the EZMONYI HF evaluation dataset}. Its first publication contains the intermediate report and tables, not the full audio archive. The eight-family BC comparison, YuE2 transfer, and expanded-cohort evaluations remain pending in this document version. Their metadata schedules are not treated as completed fits.
