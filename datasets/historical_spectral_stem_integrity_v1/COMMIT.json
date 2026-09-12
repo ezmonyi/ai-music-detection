@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/spectral_10s/expanded_spectral_10s.jsonl": "d9713045a996dc19214dd81fc176f044f54961cb990286accf2f37078fc838fb",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/spectral_10s/expanded_spectral_10s_metadata.json": "64aea6337e7f1c13cb92b96a515c4db9c891926cb7f2d89235070daf24de613f",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/legacy1958_spectral_30s/expanded_spectral_30s.jsonl": "3949150f1c95d763ca78c8be4b6750b7bb977be48d872ad4c0bf8e81bc2e7571",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/legacy1958_spectral_30s/expanded_spectral_30s_metadata.json": "d8fb1b548bb97a33be40d7a41fdf8f37ce0404b641d21f5d53cb61f396723ecb"
+  },
+  "memberships": 9458,
+  "unique_hashed_paths": 9458,
+  "statuses": {
+    "verified": 9458
+  },
+  "records_sha256": "6174d83a98e716cb7cc661e7900f8bacf4c55acb0e21354efffe727ab9024c96",
+  "scope": "Recorded four-stem or spectral-only vocal inputs in the explicitly selected runs only; not publication acceptance or whole-project coverage.",
+  "whole_project_complete": false
+}
