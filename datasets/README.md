@@ -52,9 +52,15 @@ human specificity, balanced accuracy or two-class ROC AUC.
   All 50 batch receipts, terminal COMMIT and exact public manifest were checked.
   This covers originals, not every derived view or stem.
 - AIME: all 5,000 selected generated source blobs passed byte-level audit
-  (8,281,783,640 bytes). Publication extraction is in progress; no upload
-  completion is claimed. These are existing historical IDs, not new test data.
+  (8,281,783,640 bytes). All originals were extracted; upload remains incomplete
+  (1,650 files in verified batches at the hourly-rate-limit checkpoint).
+  These are existing historical IDs, not new test data.
   The separately licensed MTG-labelled human subset is excluded.
+- ACE-Step/HeartMuLa: 1,000 originals and their 1,000 standardized views are
+  byte-audited and linked to historical IDs. Upload remains incomplete (620
+  files in verified batches at the hourly-rate-limit checkpoint). These are
+  1,000 recordings, not 2,000 independent songs. The detached resumptions for
+  both active publications honor the HF hourly commit limit.
 - Other song sources and derived views/stems: publication is not established by
   these catalogues. Missing links do not prove the source was never backed up.
 
