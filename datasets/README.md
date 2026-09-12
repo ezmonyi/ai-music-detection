@@ -38,6 +38,16 @@ human specificity, balanced accuracy or two-class ROC AUC.
 
 ## Audio publication status
 
+- [Six completed publication acceptances](completed_audio_acceptance_v1/README.md):
+  AIME 5,000; ACE-Step/HeartMuLa 2,000 original/view files; historical Suno 500;
+  MagnaTagATune 500; early FMA 162; early Suno 100. These supersede older
+  queued-upload checkpoints; the 8,262 file entries are not independent songs.
+- [Early humair](early_humair_publication_v2/README.md): 100 originals independently
+  accepted, with exact upstream attribution variants preserved.
+- YuE legacy Demucs: a separate 1,000-stem / 500-recording upload was launched
+  after verifying its roster against both the hashed derived inventory and the
+  published original manifest. This is not yet an independent acceptance.
+
 - [Mureka](mureka_publication_v1/README.md): all 500 original MP3 recordings
   independently verified at fixed revision, including exact manifest and source
   notice. These existing development identities are not a new untouched test set.
