@@ -29,7 +29,7 @@ def main(results, out):
             pins[str(meta_path)] = sha(meta_path)
             roots = [Path(p) for p in meta['run_payload']['demix_roots']]
             seen = set()
-            for line in state.open():
+            for line in state.read_text().splitlines():
                 row = json.loads(line)
                 item = row['item_id']
                 assert item not in seen
