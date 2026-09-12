@@ -1,0 +1,5102 @@
+[
+  {
+    "id": "human_deam_01367",
+    "source_song_id": "1367",
+    "original_sha256": "58f87b157e552d351d420f5c0c996417065db159cd5c98217b0e4820397ce075",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Bit Shifter",
+        "title": "Reformat The Planet",
+        "album": "BACKUP11 - Platine festival Compilation",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01861",
+    "source_song_id": "1861",
+    "original_sha256": "ae2a69afbd67eaf75e7ff8032775a690c3b3c52f22b0745821fe2d656701c4c3",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Ergo Phizmiz and the Midnight Florists",
+        "title": "Groove Is In The Heart",
+        "album": "Now That's What We Pump At The Party",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00459",
+    "source_song_id": "459",
+    "original_sha256": "01933b8e34cd938b0e5e510d5e31bd6c0cfbd2ff6449cde7111266800d6acec4",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Mutherpluckin' B",
+        "title": "Cryin in the Delta Wind",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00684",
+    "source_song_id": "684",
+    "original_sha256": "e5ea35340cbb5145d209fc1a76642f7f0990e1af1531ff4e5a92233808e81a41",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Rushus",
+        "title": "magic of fog",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01243",
+    "source_song_id": "1243",
+    "original_sha256": "3c5a3af1de2b450b971278b793e0041d93440350272e99a202087c8ffbd62734",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Crevulators",
+        "title": "Hung Over",
+        "album": "The Crevulators",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01690",
+    "source_song_id": "1690",
+    "original_sha256": "6692b035bf47d2702204685e33e6efa810240395ddf755c60af4d15b778555d7",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Hayvanlar Alemi",
+        "title": "Crossroad Metamorphosis",
+        "album": "Hayvanlar Alemi Tatilde",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00863",
+    "source_song_id": "863",
+    "original_sha256": "7955f54b2ca222ee455361835df16379dc2ae795d26c7094a4aef9e12d840724",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Computer Magic",
+        "title": "The End of Time",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00850",
+    "source_song_id": "850",
+    "original_sha256": "bd9e152396c5e2aef7e7d7e2c606215cfe4e6120446e30baad8d8a31010c95c0",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Ergo Phizmiz",
+        "title": "Strange Things",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00818",
+    "source_song_id": "818",
+    "original_sha256": "de49b90843f3b29a66101523a6460ab5e388ead23cf62ea484bbb5516d3534d0",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Miró Belle",
+        "title": "In Fielder",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00073",
+    "source_song_id": "73",
+    "original_sha256": "5f25a19177248bf703a56324fff599290561b014673e919634da263fd3121115",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Solo Dja Kabako",
+        "title": "Lalalala",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00055",
+    "source_song_id": "55",
+    "original_sha256": "696bfc752c9982e8af537845836a4ce253a1659751ce67b4899b21d2307b9c3e",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Big Bill Broonzy",
+        "title": "Baby Please Don't Go",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00498",
+    "source_song_id": "498",
+    "original_sha256": "3ceb4b3c662e8c245071cf8660c04eedce47585ce60dda2bf5b1c49d09f40f92",
+    "original_bytes": 7946506,
+    "attribution_variants": [
+      {
+        "artist": "Altered Carbon",
+        "title": "Drown",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01260",
+    "source_song_id": "1260",
+    "original_sha256": "794979f83a92bd873074b9b943ad9e35c7f56b1dcfa3ad72006f2f771aef491b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Crevulators",
+        "title": "Anything You Want",
+        "album": "The Crevulators",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00911",
+    "source_song_id": "911",
+    "original_sha256": "1e92f840e576a558634ed6e3a730cefa3ef2c53ea58d472683a007774e22a0f4",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Original Innocence",
+        "title": "Jungle Law",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00889",
+    "source_song_id": "889",
+    "original_sha256": "b4e7b8068f43e9f6e3b470ea44a245469c6645d6e758d58885670312be4f222f",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "The Freak Fandango Orchestra",
+        "title": "Requiem for a Fish",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00041",
+    "source_song_id": "41",
+    "original_sha256": "79467a4e11e522a32d55a578dca58d612404159a7bb787f3649d4e69374b6b0e",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "The New Mystikal Troubadours",
+        "title": "Like Nothing Else",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00977",
+    "source_song_id": "977",
+    "original_sha256": "11ea848a5e62b7c5223e8b0c46665503c06ef76ee6f42591fa0168cc6c9f3444",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Black Math",
+        "title": "Suck City",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00153",
+    "source_song_id": "153",
+    "original_sha256": "7b198896610621c8691dba7138cd2d17e68619afdc9b4e085bde6ce9c4fdd47d",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Evgeny Grinko",
+        "title": "Blizzard",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00161",
+    "source_song_id": "161",
+    "original_sha256": "d14c9dc019db025c7d715d47e9d583d275eec07a913ed6b569d1a898154e67b4",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "MIT Concert Choir",
+        "title": "O Fortuna",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00391",
+    "source_song_id": "391",
+    "original_sha256": "28aeb683dc79f14a0b62cab742489d30587e62d293b6d865b06360a7c837a4c8",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Morphamish",
+        "title": "Another Position (original mix)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01911",
+    "source_song_id": "1911",
+    "original_sha256": "d5e6c117db5d050aa2a48eee7a5947a43be78c701da5df01dc19da2e81f0035b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Inside the Mind",
+        "title": "You/Trip",
+        "album": "Wave",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00253",
+    "source_song_id": "253",
+    "original_sha256": "ea62592738079dd4e72863d5851322a670667a91cef6c54f6d2c64148a5e54a2",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "The Rope River Blues Band",
+        "title": "Dance!",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01337",
+    "source_song_id": "1337",
+    "original_sha256": "06ff59ea106c5a489192916a3a91e5319743619f97f14f0507077c9858e36207",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Je deviens dj en 3 jours",
+        "title": "Intro",
+        "album": "Microhorror Compilation Vol.2",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01831",
+    "source_song_id": "1831",
+    "original_sha256": "0f8bb1cb15f29bbf15925347962e1e8cf6e3dc3645961b4030faee414f39f37a",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Kyoto Connection",
+        "title": "Fly",
+        "album": "The First Voyage",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00021",
+    "source_song_id": "21",
+    "original_sha256": "5faf832b5a908f23995dcdc8e6c42db600d24c415e4df424b35bc3ac2b6bf1a3",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Cian Nugent",
+        "title": "My War Blues",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00169",
+    "source_song_id": "169",
+    "original_sha256": "64eddc41b074a8e57561bad34731bf23418c420b3dc1ca7ec751315850f0cf8f",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jody Pou",
+        "title": "Black Coffee",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01356",
+    "source_song_id": "1356",
+    "original_sha256": "cb959c9da3785ddc1b86c2e06217fa7e24b44a56bf2d8519361a9ec11f03202c",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Etiket Zerø feat. MC B.Wayne",
+        "title": "Afrika",
+        "album": "Circuits Imprimés vol. 02",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02016",
+    "source_song_id": "2016",
+    "original_sha256": "f6204d308c4289a56c3368bd3be73839237b8d4b21d8f52bdaf15247069280fb",
+    "original_bytes": 10017870,
+    "attribution_variants": [
+      {
+        "artist": "Music Delta",
+        "title": "Chinese Jiang Nan",
+        "album": "n/a",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01722",
+    "source_song_id": "1722",
+    "original_sha256": "0152213980a755510f14fd8cc12f6e34f5c20c77d30e9c599b43306289f0e439",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Martin Lowack",
+        "title": "Evening",
+        "album": "SlowDrive",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01895",
+    "source_song_id": "1895",
+    "original_sha256": "f2b873c0ce9fa1cc426fb486640017f89573abb9c166b1c60c7916cd4789084e",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Wheels on Fire",
+        "title": "Ambulance",
+        "album": "Live at WFMU on Three Chord Monte ' 7/16/10",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00869",
+    "source_song_id": "869",
+    "original_sha256": "0619d8f32b358b1e8c7d3c40828109e7bea8967eec7bdce8e3288dc1a10946fd",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Plurabelle",
+        "title": "cuts&bruises",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00102",
+    "source_song_id": "102",
+    "original_sha256": "265514fdce6d9c8b74d106e888467a4c371472929beb6c8380cd344591dfc7ff",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Marisa Anderson",
+        "title": "Electricity",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00117",
+    "source_song_id": "117",
+    "original_sha256": "4d8a2e2aeaea0945352de46400679e18f0a951c62d1735504dbf3536305fec91",
+    "original_bytes": 7946506,
+    "attribution_variants": [
+      {
+        "artist": "Delta Dreambox",
+        "title": "Queen of Loneliness",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01826",
+    "source_song_id": "1826",
+    "original_sha256": "354a720eba535748724d37e279d6a83d68c2039b1a88d7fe2f7a6c105446f4f9",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Womb",
+        "title": "The Crawl",
+        "album": "How To Deal With People Who Refuse To Leave A Burning Building",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01871",
+    "source_song_id": "1871",
+    "original_sha256": "3fbed5188ad59790d99416a940330e3d12af5d2d5540f89a33741de737dba2d7",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Kyoto Connection",
+        "title": "Take On Me",
+        "album": "Best Of Breitband Vol. 1",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00007",
+    "source_song_id": "7",
+    "original_sha256": "0535a6c246595bd038809d76633e78f042408aa6f6077dfc47d8d7d958b118b4",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "Hustle",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01569",
+    "source_song_id": "1569",
+    "original_sha256": "77ebede1b6a7e8c60689721e82a031ca531edf3319ad8fe36ba21f9956cf0e20",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Moa Pillar",
+        "title": "Water Lily",
+        "album": "Fly Russia",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02019",
+    "source_song_id": "2019",
+    "original_sha256": "2d45ed7f83408d123999236f9be1709cb1913868e1885ac240c67f858ff11636",
+    "original_bytes": 31841358,
+    "attribution_variants": [
+      {
+        "artist": "Phoenix",
+        "title": "The Broken Pledge - Chicago Reel",
+        "album": "n/a",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00179",
+    "source_song_id": "179",
+    "original_sha256": "3aaaa36f054d48d443957f124a4b502c08b1cac90908ef4e499b0b0af8a3c5f0",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Dexter Britain",
+        "title": "The Time To Run",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01030",
+    "source_song_id": "1030",
+    "original_sha256": "552ea6ef7d16d2bb4050733113c47ff81b270e9fcfec05d99d878798e19c4879",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Wildbirds and Peacedrums",
+        "title": "There Is No Light",
+        "album": "Live at WFMU on Trouble's Show on 6/19/2008",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00108",
+    "source_song_id": "108",
+    "original_sha256": "f16257031e0d11557b1856adba41f3a09bcc551d4c805e1f8acd9f8500983126",
+    "original_bytes": 7946506,
+    "attribution_variants": [
+      {
+        "artist": "Califone",
+        "title": "Giving Away The Bride (Live @ KEXP)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01386",
+    "source_song_id": "1386",
+    "original_sha256": "4204d24f7131e04c57fae58d3e008586a2cb0bb6e02f4d6d94c8df02b3e02c86",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Math and Physics Club",
+        "title": "Graduation Day",
+        "album": "Swingin' Singles",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00181",
+    "source_song_id": "181",
+    "original_sha256": "21a0a9ab8bc82e1da921f8edc24c6e97428a5ecf9918372b18f9493bef2abb7f",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Steven Arntson",
+        "title": "A Muddy Heart",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00361",
+    "source_song_id": "361",
+    "original_sha256": "4287d3059796d153e0bfac4b185baad3b7bc1605471307375fc1f6b236883724",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Jason Shaw",
+        "title": "AUTUMN SUNSET",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01389",
+    "source_song_id": "1389",
+    "original_sha256": "d9dddf9cd3423fe88840346cc34746b87e2151ad775beabdead930fcf02bfa35",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Guitar Wizards of the Future",
+        "title": "Indiana",
+        "album": "Cheese Wizards",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01973",
+    "source_song_id": "1973",
+    "original_sha256": "8e62efda7e97481ac7aff846a8c43e0475ec062f75c55dba0bf1e25f9726498b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Snails",
+        "title": "Lost at Sea",
+        "album": "The Snails on The Outside World",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01699",
+    "source_song_id": "1699",
+    "original_sha256": "edad0eeb241b30dab13876388d1d572629adc3e6439c440004ffb08d0171c72e",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Damscray",
+        "title": "Rural Metric Seven",
+        "album": "Your Rainbow Colour Changer",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00121",
+    "source_song_id": "121",
+    "original_sha256": "36374b497e50179941297c42f882535f092f9ae35bdb38adb36c1077e3507742",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Mr. & Mrs. Smith",
+        "title": "The not so flashy Exit",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00506",
+    "source_song_id": "506",
+    "original_sha256": "599cc5097287b50df8fc5595261cc1d52724783b332535780c6e623b67427698",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Keshco",
+        "title": "Like Home",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00390",
+    "source_song_id": "390",
+    "original_sha256": "f5244a76e82b123c877065a33ec56b5372d85c1fa06cf195805e942dcfcd04f4",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Beat Culture",
+        "title": "Midori",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00274",
+    "source_song_id": "274",
+    "original_sha256": "f62f84eed170af1022903ddaf038adfb076074efe6f29dbc128d785b70488840",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "LE CLUB DES CHATS",
+        "title": "Mochi",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01888",
+    "source_song_id": "1888",
+    "original_sha256": "624ef3308867ad1674a82faea44e74925ba7ec514f2155f6abdafd68ded77615",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Molloy And His Bike",
+        "title": "Flutter",
+        "album": "Rex Is For Records - 5 Years Compilation Vol.2",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00450",
+    "source_song_id": "450",
+    "original_sha256": "5d19b53b6fa707649b1037a8c7718c7e047507cd873f0b0c15d4cd3946d92ba6",
+    "original_bytes": 7946506,
+    "attribution_variants": [
+      {
+        "artist": "Ghosts",
+        "title": "Grief And Sleep",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00392",
+    "source_song_id": "392",
+    "original_sha256": "2ba3b870ee9aa626c397590d7d7ce492251cafd9d5fd7b81922edd24a254a1e3",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Ghostly Dust Machine",
+        "title": "Ode To A Baby Snowstorm",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01272",
+    "source_song_id": "1272",
+    "original_sha256": "3b566fcdda29909fef111528aebdedf02d80bbbc65c65ee007b4b8a4044902b1",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Waylon Thornton",
+        "title": "Six",
+        "album": "New River Vol. 1",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01155",
+    "source_song_id": "1155",
+    "original_sha256": "6dfd1631db05981883b3a024be74de262926ff462fe9a428abae548ee671ec04",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Andrew Christopher Smith",
+        "title": "for String Quartet",
+        "album": "Wallace",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01647",
+    "source_song_id": "1647",
+    "original_sha256": "86bf3d4b6a73414bd13c553df2a4201d6e58111b4787c43686c884ff2191ad53",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Freak Fandango Orchestra",
+        "title": "Hitmans Lovesong feat. Paola Graziano",
+        "album": "Tales Of A Dead Fish",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00610",
+    "source_song_id": "610",
+    "original_sha256": "046c382de6b4f8bb4fa114f7c022e18ff70b0e7e83c105145e94eb92ba825c17",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jahzzar",
+        "title": "Shine",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00119",
+    "source_song_id": "119",
+    "original_sha256": "679fc0cc88efc4b8425b3427d11a9d159cdf3f2d7c99763d6d39326c7a95ed07",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Amen Dunes",
+        "title": "Ethio Song",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00218",
+    "source_song_id": "218",
+    "original_sha256": "0244a9401b517f7ea8746c4512e8d6e55db4de3e936de3beeb69af1b2f282ebe",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Evgeny Grinko",
+        "title": "the piano of the old seaman",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00865",
+    "source_song_id": "865",
+    "original_sha256": "d14b3aa70935b1b84ea13e0a578e794b38141e709d6fc5ffed4f326830f49b0c",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "The Mythics",
+        "title": "Love Me Like You",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02054",
+    "source_song_id": "2054",
+    "original_sha256": "e8cacda20eeacf245c10f4ed1a6a92900a29b8049e5c48e88cbbede5372b5286",
+    "original_bytes": 16856142,
+    "attribution_variants": [
+      {
+        "artist": "Tom La Meche",
+        "title": "Interlude",
+        "album": "Blog",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01692",
+    "source_song_id": "1692",
+    "original_sha256": "8cf33f17f20c392c7124aeaee89bedc2e186e03462a349bf6d40572ec0ba2c66",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Azevedo Silva",
+        "title": "Abutres",
+        "album": "Ao Vivo na Sociedade",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00623",
+    "source_song_id": "623",
+    "original_sha256": "a4dabcb340fc7b6198e949a3f02def11189c5739c1d5a743d9fe3e74a9a29746",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Jahzzar",
+        "title": "Anniversary",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01036",
+    "source_song_id": "1036",
+    "original_sha256": "d3ce05b762ef4c0286b47fcfc0b2e7b74fe87e4550ef907ffea03ba00ad30282",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The KrestArians",
+        "title": "Merry Gentlemen",
+        "album": "God Rest Ye",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01774",
+    "source_song_id": "1774",
+    "original_sha256": "1f5a4fdfd11fecbf1c303616b90ed0385a52d80cce0a18af8daf8ab35f565dae",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Bacco Baccanels",
+        "title": "Mi fa",
+        "album": "Bollate centro",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00574",
+    "source_song_id": "574",
+    "original_sha256": "590a31cdbf64ba4bd2a7924422f814b490d744241b4072d6bba0afce2938bc65",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "Cattails",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01507",
+    "source_song_id": "1507",
+    "original_sha256": "1b3651260cd011fc7ceaef6776a74281eda81e134704ff6b3c16d172ab50bc35",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Broke n phono",
+        "title": "in",
+        "album": "brokenphonograph",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01054",
+    "source_song_id": "1054",
+    "original_sha256": "9667eb78310c653faa90ccf72c687a39c15b18e38fe3c4ac0879ff758b7d4416",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Break The Bans",
+        "title": "Lover",
+        "album": "We Don't Care If You Love Us Or Not",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01174",
+    "source_song_id": "1174",
+    "original_sha256": "0d17c536a7f7ea9673fb91e74099b24527ebb47eccc53a5643e2ca0c7df198bb",
+    "original_bytes": 7928118,
+    "attribution_variants": [
+      {
+        "artist": "No Regrets For Our Youth",
+        "title": "Thinking Different Doing Same vs. Doing Different Thinking Same",
+        "album": "No Regrets For Our Youth",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01241",
+    "source_song_id": "1241",
+    "original_sha256": "cace68e6a434b83b2c4fbffd0ed4d925f603c9eb900bcda2b91209a602d6c7a3",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Stray Dogg",
+        "title": "Break",
+        "album": "Almost",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00182",
+    "source_song_id": "182",
+    "original_sha256": "09059cc94b00b98929eb86906fbe776d90a29483d6e179654e301480109ef47c",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jessica Pavone",
+        "title": "Dedicated to Elizabeth Cotten (with Matt Bauder)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01949",
+    "source_song_id": "1949",
+    "original_sha256": "432f84401362f2a77ec1c5b379e23308b74d8f1d15659b92b2af3d64da7ad671",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Angels in America",
+        "title": "II",
+        "album": "E.M.S.",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00798",
+    "source_song_id": "798",
+    "original_sha256": "ce8758e2603f05ede5281705fb7df034a15c62dd5bf62aa1b2af18ab013b7a3c",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Casetofoane",
+        "title": "Waha",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01676",
+    "source_song_id": "1676",
+    "original_sha256": "760f719f4ae742c59c4b409617e15d0dfdca037f8c471ad49307b888329966c6",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Mastermind XS",
+        "title": "Memories Of A Machine",
+        "album": "Reset All Systems",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01379",
+    "source_song_id": "1379",
+    "original_sha256": "d628c978d729406b716946716b4b087cc3a43d76d7e1c9762f375519ff85ed28",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "krackatoa",
+        "title": "Look up to the Sky",
+        "album": "Monkies in the Temple",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01207",
+    "source_song_id": "1207",
+    "original_sha256": "9a5d4bfe5243f7c8c8c613f65b3ab99147a7ecf73bd57bd385053facbd0d20ff",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "LE CLUB DES CHATS",
+        "title": "The swimming pool",
+        "album": "Tasty as a little saussage",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01440",
+    "source_song_id": "1440",
+    "original_sha256": "d0f8406ab215ad7d047d5592a7ae971784455215f082cb8fae58a40c1adb91e8",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Rocketship Park",
+        "title": "Head",
+        "album": "Cakes and Cookies",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00300",
+    "source_song_id": "300",
+    "original_sha256": "dfdc0f1bbc5d40a125541634b56151305a56592d25299c32952514d75986ed12",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "The Brought Low",
+        "title": "What I Found",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01791",
+    "source_song_id": "1791",
+    "original_sha256": "2ce715e53cb0624fc6093804c146b95294735714b7a2d9b2653bf899f1102c6d",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Oprachina",
+        "title": "Porta D'Arce",
+        "album": "The Jazz Farm",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00504",
+    "source_song_id": "504",
+    "original_sha256": "204ec394765b12e6fc5d74cff82f2bdee312bd4f0d49b0d3ce5bfe45fff0e9f8",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Sam Shalabi",
+        "title": "Rebetikaud",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00400",
+    "source_song_id": "400",
+    "original_sha256": "8b04334a3e50cbcf347cf52f050e9007d42c7264378076d1d757f168d331171e",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Asthmatic Astronaut",
+        "title": "Run The Tape",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01813",
+    "source_song_id": "1813",
+    "original_sha256": "f821d554f5a05a5b0e165182babacf864bd22b2cf8d6ffc340ba9807409773dd",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Womb",
+        "title": "Sex Club",
+        "album": "Sex Tape",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01970",
+    "source_song_id": "1970",
+    "original_sha256": "fbae2ad6ce129cbdcb315ecbce1c91354501661b57022dd8276f3d0a61dd39ba",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Delusions of Grandeur",
+        "title": "Alanis Morissette",
+        "album": "Loved Like a Milkshake: A Tribute to Wesley Willis",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01484",
+    "source_song_id": "1484",
+    "original_sha256": "444db87da5dfbdd0ec802aaece95426f29c7ce22ba3743234129c0e26ce33646",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Dutchess And The Duke",
+        "title": "Hands",
+        "album": "Live at WFMU's Cherry Blossom Clinic 1/23/2010",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01078",
+    "source_song_id": "1078",
+    "original_sha256": "683f09a2f7129d0f500b8777c6d1f9d2637706c03d15795a85ccb3994d9bdae3",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Tracky Birthday",
+        "title": "Eöööhh! (with The Discoghosts)",
+        "album": "Animal Audition",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02008",
+    "source_song_id": "2008",
+    "original_sha256": "09091c0b93a9739354a3b703dc99dc6bda8895dc8772bb68a13770f9d6097b8d",
+    "original_bytes": 38066766,
+    "attribution_variants": [
+      {
+        "artist": "Invisible Familiars",
+        "title": "Disturbing Wildlife",
+        "album": "n/a",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01778",
+    "source_song_id": "1778",
+    "original_sha256": "8a0780f5c16493081e11ae7ae0e35191838de19a3b23d401e5c13818534c3fe0",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Jonah Dempcy",
+        "title": "Lumen Arcanum",
+        "album": "Syncretic Beliefs",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01334",
+    "source_song_id": "1334",
+    "original_sha256": "8e90d6b62e8ee54babe3647af5a26f6171e3c54fc9617e3928da04d29c575bbe",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "I Have Clones",
+        "title": "Eyes",
+        "album": "2008 Sampler",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02042",
+    "source_song_id": "2042",
+    "original_sha256": "ff9070d5652f9d233ecef74e865d0df7251e8c572cb66453532bdf256abf7cec",
+    "original_bytes": 46674510,
+    "attribution_variants": [
+      {
+        "artist": "Ogg Vorbis",
+        "title": "Classical Delay",
+        "album": "Underscore",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00725",
+    "source_song_id": "725",
+    "original_sha256": "de9764440ea3a096ef596750aa32b3b0853b3ec3faf38efee724f1d97e33522a",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Mystic Morrison Visions",
+        "title": "Octopus",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01297",
+    "source_song_id": "1297",
+    "original_sha256": "4cc46097a92baa363381bae72479061ed67624258789ee899e248fb48bf6c792",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Al Duvall",
+        "title": "Bury Me In Shellac",
+        "album": "The Timid Mischief",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02001",
+    "source_song_id": "2001",
+    "original_sha256": "f811ebdb38fba51f94f4a7d646ade665fd3da8aad02b776601ff5e82aa302f08",
+    "original_bytes": 53208654,
+    "attribution_variants": [
+      {
+        "artist": "Creepoid",
+        "title": "Old Tree",
+        "album": "n/a",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00902",
+    "source_song_id": "902",
+    "original_sha256": "dac2ccf3023a5785530d2c242b56fb14f9f651ea6985447e147851e1934298c1",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Arrogalla remixes Dadub",
+        "title": "Naramiddu poita (feat",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01621",
+    "source_song_id": "1621",
+    "original_sha256": "56c9c260fab5d3fcfab21dcadc39c23ae1960b0cfbd599f70fa79e0455a7e151",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Freak Fandango Orchestra",
+        "title": "death and a drunken monkey",
+        "album": "Love",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00415",
+    "source_song_id": "415",
+    "original_sha256": "fa51bcf23eedfa7c39c3e3b05bc577d7342768628615cdae60c983195edc3689",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Phoniandflore",
+        "title": "Dubsteady",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00560",
+    "source_song_id": "560",
+    "original_sha256": "57f0f2013bab1f81e66847e07aebd043ec3ebdbf5cb98745000a71e319dee073",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jahzzar",
+        "title": "Vanlig",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01494",
+    "source_song_id": "1494",
+    "original_sha256": "24fb98fcae0cd4397b770e2036cc16008a0875f0a5fca4ac9139fa2277ec6b16",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Cath and Phil Tyler",
+        "title": "Sunshine",
+        "album": "Live at WFMU on Dan Bodah's Show on 4/6/2008",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00378",
+    "source_song_id": "378",
+    "original_sha256": "339ba0deac701236115d61d3c8e41f77e90db67d2ad707b0bc00291478059f3e",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Graphiqs Groove",
+        "title": "Deep Sky Blue",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01019",
+    "source_song_id": "1019",
+    "original_sha256": "fe74e2290398c810b709396dce94b4afb233a36329ded502a8bc52b1dba5fdd8",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "James Beaudreau",
+        "title": "Plum",
+        "album": "Java St. Bagatelles (WBR 01)",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01279",
+    "source_song_id": "1279",
+    "original_sha256": "c5997bf4684e231795eb0b16ae0c1dc3ffcf9220ca838d64ef7d3ecc4a030e4d",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Moaners",
+        "title": "Monkey Tongue",
+        "album": "Live at WFMU on Joe Belock's Show on 3/25/2008",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00010",
+    "source_song_id": "10",
+    "original_sha256": "c91bcd97019e8b41f7912987e3d5b79d9b41e8fdce5aad4df8151772a414c664",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Arne Bang Huseby",
+        "title": "Stormy Blues",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01558",
+    "source_song_id": "1558",
+    "original_sha256": "c7f154a2d83243ffda6827006286ca71a96ad71fea1ea342f070fce408aa12a6",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Dälek",
+        "title": "Ever Somber",
+        "album": "Live at WFMU on Mike's Show on 9/25/2004",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00913",
+    "source_song_id": "913",
+    "original_sha256": "8fa0c100a4f172c49805a3366fb52743f0d62132c9ae5111986e16bd33f31e39",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Mountain Cult",
+        "title": "Untitled 06",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01105",
+    "source_song_id": "1105",
+    "original_sha256": "382e169d29f6c9d5519d71b0455b54a8fa825f87f0ab88d29bb9f2cf440f7add",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The New York Underground Orchestra (Conducted By Assif Tsahar)",
+        "title": "Second",
+        "album": "Fragments",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01925",
+    "source_song_id": "1925",
+    "original_sha256": "7034c83e6c46c89542fa159993326d2f75e7fd6889290919d05012f2ff313c26",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "You Me Tree",
+        "title": "Lights",
+        "album": "You Me Tree",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00598",
+    "source_song_id": "598",
+    "original_sha256": "1b58899339c1b5f50e329b1cc94ca21f1f5a4163a14ec050639b930abf3f87e8",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jahzzar",
+        "title": "Joke",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00477",
+    "source_song_id": "477",
+    "original_sha256": "34e52cfdb4df2bdd27e5c347ff14e8dc00058b1494e398c8629040de07fe27fa",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Decktonic",
+        "title": "Night Drive",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01591",
+    "source_song_id": "1591",
+    "original_sha256": "7924fb5c85071a3c1ce2a835a7ebe5a138b60662092d2a5d84a0b6367038f0ad",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "She Has A Cold",
+        "title": "NEW 9.0",
+        "album": "Cold Heart",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00522",
+    "source_song_id": "522",
+    "original_sha256": "8c6c5dfff81a4e3a347a36fe5a75e0e079472c841cdcf810dd6247a345e57590",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Mike Cooper & Viv Corringham",
+        "title": "New Rembetika   14",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00743",
+    "source_song_id": "743",
+    "original_sha256": "bc2e38c0d844144aa7836e1a508e13a8020627b79e5cdc82c61a3af14c277629",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Blue Swerver",
+        "title": "Tasky",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00379",
+    "source_song_id": "379",
+    "original_sha256": "8a1a5a49f7d31296150b547fd4e78de36cc9239d61786400d987ae0637cd5190",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "LJ Kruzer",
+        "title": "Chantiers Navals 412",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00405",
+    "source_song_id": "405",
+    "original_sha256": "c7e0fe58ce1c19bec87c53cab6cc32c5ed9ebe0d63e882b349d7a91e621b5fa9",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "Presenterator",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00148",
+    "source_song_id": "148",
+    "original_sha256": "1901698f79fa4a49a0a23ae6a52a59469d7d939536b60b7d599262ad37938d21",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "krackatoa",
+        "title": "Bending Light Infinity version",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00791",
+    "source_song_id": "791",
+    "original_sha256": "b8d639cba41d5877817db9b4a45b8175b39c98c3032ef40ca659e01eeb891eff",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Lezet",
+        "title": "West Bank",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01638",
+    "source_song_id": "1638",
+    "original_sha256": "00dd2f05ad6b2e4b0d59e9e3fe7bad7e4524b44b2d4c7602ebef82dda46e188b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Bo Marley + Disrupt + Volfoniq",
+        "title": "La Tapenade",
+        "album": "Jam'in Sauce [LCL08]",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00608",
+    "source_song_id": "608",
+    "original_sha256": "8388290ba766859280e1b3fbae29ff874b51e7bffe0bf2af1a8544299a28b295",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Daniel Padden",
+        "title": "Adinatisa O Kaymenos",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01040",
+    "source_song_id": "1040",
+    "original_sha256": "6d786d23a73abbcd309cb3bc0b5cac678691f5d6cbcc50647b043578c5fe1254",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Fit and the Conniptions",
+        "title": "Storm's Over",
+        "album": "Bless Your Heart",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01240",
+    "source_song_id": "1240",
+    "original_sha256": "a11a710ddfa27d98423bb8224e636458fa89d8876bafb03e5a5ee955e024f822",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Alejandro Escovedo",
+        "title": "Broken Bottle",
+        "album": "More Miles Than Money",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01504",
+    "source_song_id": "1504",
+    "original_sha256": "3e990f54635b031887a0b3b8cc0025db664e9cdb8412f32c2ed9f02aae5cb3ae",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Impossebulls",
+        "title": "Enemy",
+        "album": "Enemy Among Us",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00090",
+    "source_song_id": "90",
+    "original_sha256": "582d82a51ec0c3f35ce957b1102356f0ff601ba27674d628cb0d1fac5cc20f88",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Fit and the Conniptions",
+        "title": "Wood For The Trees",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01868",
+    "source_song_id": "1868",
+    "original_sha256": "a2f2a2a6b759cc2e3557c2e769ff9183a97f2b6552c0f6eaec4333a92e8930af",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Monk Turner",
+        "title": "With You",
+        "album": "Love Story",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01200",
+    "source_song_id": "1200",
+    "original_sha256": "de2fd0fd8020172fda6464d4b10f7bb6b0831718722fccddaac74253cfadd555",
+    "original_bytes": 7924954,
+    "attribution_variants": [
+      {
+        "artist": "James Kibbie",
+        "title": "BWV 590: Pastorale in F Major - 3. [Aria",
+        "album": "Bach Organ Works: Other Free Works",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00799",
+    "source_song_id": "799",
+    "original_sha256": "9e192be5a8b36adbb5f77d3e8158eb24fff3852066083bbcc98cfab2e9312cd4",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Ducktails",
+        "title": "Beach Point Pleasant",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00763",
+    "source_song_id": "763",
+    "original_sha256": "14eed2cc59c2744dd58589186df156a3a0920b9ff9086ce7816578a6ec3dcd39",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Jahzzar",
+        "title": "Siesta",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01902",
+    "source_song_id": "1902",
+    "original_sha256": "550ce9b175f37ad4f484b6a0c03df97f431d22b5f48a74eebaf9371d73ee3098",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Violins is not the answer",
+        "title": "dead.",
+        "album": "Classic",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00789",
+    "source_song_id": "789",
+    "original_sha256": "c3bb47be539d259aac9d27c28912e78c5a73b9c293c9499a4069495ea5449401",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Austin Leonard Jones",
+        "title": "No Slow Dancing",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01705",
+    "source_song_id": "1705",
+    "original_sha256": "4792fd6cda77256671893ee4d7df86e353594f202d7cc8f85b35150913975cbd",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Jason Ajemian & The Highlife",
+        "title": "Monsters",
+        "album": "Monsters & Animals",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00427",
+    "source_song_id": "427",
+    "original_sha256": "5f0a92a34b15f20a6be7efd97bdddc6209dbc48163b86b3e3ab3fb37a04f6439",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Tours",
+        "title": "Enthusiast",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01309",
+    "source_song_id": "1309",
+    "original_sha256": "96cfe86afb7369df8f68eca8be57603022e34563fae9bf0b004707e590e2c7cc",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Mizuki's Last Chance",
+        "title": "Yeah",
+        "album": "Tactical Assault",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00711",
+    "source_song_id": "711",
+    "original_sha256": "87db6fed1a4175407f23fcdcc21f08a40d3843fe840bcfefd2a2bf4935b29408",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "Dances and Dames",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01065",
+    "source_song_id": "1065",
+    "original_sha256": "28d8d16aeac617ae13b77f4404c7af2c71cc935e78ac9f10f204a20db84eab63",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Re-Stoned",
+        "title": "mountain giant",
+        "album": "Vermel",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01292",
+    "source_song_id": "1292",
+    "original_sha256": "bcf956232bc5dda5d62bd2f0607f7a7bc122dbf7779797ce07e99b678be7a6ce",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Trailer Bride",
+        "title": "Itchin' For You",
+        "album": "High Seas",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02034",
+    "source_song_id": "2034",
+    "original_sha256": "797c898b0cfaaf740e556257cf1f4f56d59daf6f0c3201115d55ec9e27f7944f",
+    "original_bytes": 19736142,
+    "attribution_variants": [
+      {
+        "artist": "Jacques COUTURIER",
+        "title": "Hey! beauty",
+        "album": "When the night falls",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00172",
+    "source_song_id": "172",
+    "original_sha256": "797b05b36f5c4469ec3132d16c5dbf8f993dcf739c5acfad3015c045df1a6600",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Chris Zabriskie",
+        "title": "The Temperature of the Air on the Bow of the Kaleetan",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00836",
+    "source_song_id": "836",
+    "original_sha256": "56147214ca37472168db45a2972882f912afa106adb461cd39df86c3d8fceb61",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "The Scallions",
+        "title": "Memories Are Made of This",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01133",
+    "source_song_id": "1133",
+    "original_sha256": "419bea8b6f17d3249537208419a09b52902d9a3e8728510fc0e34b6437fb703b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Fabrizio Paterlini",
+        "title": "Lontana",
+        "album": "Viandanze (EP)",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00209",
+    "source_song_id": "209",
+    "original_sha256": "94c497fb46f1dcb61a10e5cc314306250348759259f4a3b93403bea0824359ac",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "Amazing Grace 2011",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00742",
+    "source_song_id": "742",
+    "original_sha256": "84fafea9e55191ee34ba811413b663654e3c33d773401eef31d121bb77fcdd30",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "OPRACHINA-Oprachina",
+        "title": "Nitro",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00077",
+    "source_song_id": "77",
+    "original_sha256": "3fad8dae1efc0784477fda2f291dcb6d2e639eb5977cd4355b166000f32e0dca",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "The Rope River Blues Band",
+        "title": "Yr Blues Tripping",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01660",
+    "source_song_id": "1660",
+    "original_sha256": "2aea413110c6b68000d731f4d98a1dd2ef80bd4c4b167d4dbf36d9155200c063",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Caballo & the Mothafu Kings",
+        "title": "Persistance",
+        "album": "Sonidero (pr)evolucionario",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01575",
+    "source_song_id": "1575",
+    "original_sha256": "9c09ffab214df471f08f89178e605a2cac0ae25c2b40a60316159c27d0e75ad9",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Tab & Anitek",
+        "title": "Mirage",
+        "album": "Tab & Anitek - Sights & Sounds",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00887",
+    "source_song_id": "887",
+    "original_sha256": "b803ddd529e20f008b5498ab26a05b4208aeff4f1a3efd64a299ae653b7b3dce",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Kraus",
+        "title": "Happening for Lulu",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01264",
+    "source_song_id": "1264",
+    "original_sha256": "34ea91cb00e131f4a562da04d51bcd8aefbe3afe3631ddd99871fc6641e90963",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Al Duvall",
+        "title": "Where The Comet Falls",
+        "album": "Recluses Unite",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00079",
+    "source_song_id": "79",
+    "original_sha256": "ac85b0bbec8ed2d9ee491b6e5238ebcb500c0cd24ca2f093c4f9bcd3920ee983",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Digital Primitives",
+        "title": "No Holiday",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01136",
+    "source_song_id": "1136",
+    "original_sha256": "f963899b26a809fb452a96982bebfc6ac0543e6dc7991e5aaf7ce1a7d1ccac5a",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Marcel Pequel",
+        "title": "May",
+        "album": "12 Months",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00629",
+    "source_song_id": "629",
+    "original_sha256": "0994f65c0d94bd4b83d24d3711c1f9a7df7ed8d13f59abdfcab944cf60d17313",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Goto80 and the Uwe Schenk Band",
+        "title": "Volksing Ferretismico",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01016",
+    "source_song_id": "1016",
+    "original_sha256": "0d60f3dbe1fd15af3c167d978e60b5283592152d899cb9f834d52491eeedaa5b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Wildbirds and Peacedrums",
+        "title": "Lost Love",
+        "album": "Live at WFMU on Trouble's Show on 6/19/2008",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00688",
+    "source_song_id": "688",
+    "original_sha256": "be15b034a487dd864953511934fcbc12fd8990a0ac4774a9b2e6269ecc0ef6c5",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Lee Maddeford",
+        "title": "Irresistible Yvette (with Les Gauchers Quintet)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00284",
+    "source_song_id": "284",
+    "original_sha256": "6be315d733610e1ecdfdcd2c207cbec2631248ecfb88660d6140d11177d6a39f",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jahzzar",
+        "title": "Last Dance",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00348",
+    "source_song_id": "348",
+    "original_sha256": "d36c0a29963a7a17cf8012ad7ccc133131ca9f622eca83a31acafc23b855349a",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Austin Leonard Jones",
+        "title": "I Wish I Was A Headlight",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00227",
+    "source_song_id": "227",
+    "original_sha256": "e39dcae1ff0dd3f0732f1ef564633e1b311606d75f622e19490654999ae33585",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jared C. Balogh",
+        "title": "SELF REFLECT",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00956",
+    "source_song_id": "956",
+    "original_sha256": "29dfc6810de8d077acee9c5ae9b68705d7a7d58b78da86d084a6e36e2d1c6d32",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "end's not near",
+        "title": "Indian Summer",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01787",
+    "source_song_id": "1787",
+    "original_sha256": "47fbb6b8ce06bc9395c95c91cc6f60278dec81e5c838d53179e9dc0a04418154",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Gepel",
+        "title": "Ta vieja y ya no sale",
+        "album": "Moducué",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00338",
+    "source_song_id": "338",
+    "original_sha256": "143d3b11f88016bb254f12f5bff3ab7fd6a4265734893077ab8ec787029f20e5",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Bureaucratica",
+        "title": "Southern Gothic",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00042",
+    "source_song_id": "42",
+    "original_sha256": "4dead23e338b15e0aee8e0995ccd870c93c5afefd47a1290dd0d7c06021127d5",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "The New Mystikal Troubadours",
+        "title": "A Cinematic Influence",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01969",
+    "source_song_id": "1969",
+    "original_sha256": "22814b13a50b00de457c3dcb2f56a8cb46d8c32919d24d02f3ce764dc7b54d11",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Here Comes A Big Black Cloud!!",
+        "title": "Vietnam",
+        "album": "Here Comes A Big Black Cloud!!",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01154",
+    "source_song_id": "1154",
+    "original_sha256": "877e2e966107121574e5d2287c7d1a7e39a4084c142d6c99c486946f54835067",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Lee Maddeford",
+        "title": "Mome",
+        "album": "Eros et Psyche",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01544",
+    "source_song_id": "1544",
+    "original_sha256": "b9a915412842ab95f67fc9b8c6526789b5ab49b9efd3d8ddce566f8f8e314f71",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Luck & Ripps",
+        "title": "Rock On",
+        "album": "The Catastrophic Connection",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00318",
+    "source_song_id": "318",
+    "original_sha256": "59cb0123849db787546024c29a1f2b5f47ccceee9a8708820098a0a1243e41b4",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Dr. Frankenstein",
+        "title": "Emergency Exit",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01522",
+    "source_song_id": "1522",
+    "original_sha256": "0432b0b0e1814a5648debf23bd118fcbf7f1882fd96289a112388a52c28ef42e",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Honorable Sleaze",
+        "title": "Intro",
+        "album": "This Funk",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01821",
+    "source_song_id": "1821",
+    "original_sha256": "231944c8919a43c4f39cb31cea39ab15cdcfcdbd5b410bf3c90f5771ba10f39a",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "I Am Not Lefthanded",
+        "title": "Falling",
+        "album": "Yes Means No",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00535",
+    "source_song_id": "535",
+    "original_sha256": "244775811fcf9bafa1a1dbde21be4f248c148d1575b1b7b98164b9cacbaccba4",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Black Twig Pickers and Steve Gunn",
+        "title": "Sally in the Garden Sifting Sand",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01924",
+    "source_song_id": "1924",
+    "original_sha256": "aeb58975e08d7b07bd6c007b86c3aa03b89dff6fac3f7cffc5592d92ff501ca3",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Young Love",
+        "title": "Street",
+        "album": "Helmets & Flags",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00276",
+    "source_song_id": "276",
+    "original_sha256": "76a34a27710edbfaae49ff793928f576517cc1e0807402b9300283c6e3404328",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Secret Jane",
+        "title": "Blackberry Hedge",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01834",
+    "source_song_id": "1834",
+    "original_sha256": "922381c41613e91a3d1d0494498cf19dda6f63646aabcd34b4a27f8280141efc",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Moot",
+        "title": "Spaceman",
+        "album": "Party in Space",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01643",
+    "source_song_id": "1643",
+    "original_sha256": "eca275db1fbd8c7f7390ea21265316768f47092b004d4174a909d556126a1ae1",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "El bien",
+        "title": "El norte",
+        "album": "Los que se pelean se aman",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00451",
+    "source_song_id": "451",
+    "original_sha256": "1b4a15db6a68a659aa80f91d458bf3307cbc0e992c90e5d9af32967c92e6b2f6",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Thick Business",
+        "title": "Smoothest Runes",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00826",
+    "source_song_id": "826",
+    "original_sha256": "f1debb8e6099dc395b9feb0f2c66ba780fdd9c4e3cfcdadde77d89e6e2cc6ee2",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Dean & Britta",
+        "title": "I'll Keep It With Mine",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01119",
+    "source_song_id": "1119",
+    "original_sha256": "257e03bfd8cf2f0b7a2df558df3aafdbd04d181f48295148b9fe842c3fd9a5e1",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Peter Rudenko",
+        "title": "Waiting",
+        "album": "15 Etudes",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01771",
+    "source_song_id": "1771",
+    "original_sha256": "6583f7048b866152e400eaf637386d192ac6ea24191964433698eb38388c683c",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Plaistow",
+        "title": "Steve Reich",
+        "album": "Do You Feel Lucky?",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01461",
+    "source_song_id": "1461",
+    "original_sha256": "0d7bbfc971d21f5ebefd2408f9df2551f7706653b79268769fa89125299db45c",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Twin Atlas",
+        "title": "Roll On",
+        "album": "Sun Township",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01523",
+    "source_song_id": "1523",
+    "original_sha256": "1b64f9543f29c508954e2b8380ded98daade9b68429e9560861a390caacc6142",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Honorable Sleaze",
+        "title": "Lovin'",
+        "album": "Dance Track",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01519",
+    "source_song_id": "1519",
+    "original_sha256": "26f456f0af3807b6432e7ef878a3835a22ffe025ff38602a8a3ff358868cc8db",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Hate Noise",
+        "title": "Stereo",
+        "album": "Rap Trax Vol. 2",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00113",
+    "source_song_id": "113",
+    "original_sha256": "09cb4d532b840e73b921ab8dd0559da2d2096a5cf212e05d8d1407dd38b8cb83",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "The New Mystikal Troubadours",
+        "title": "(Shuffling Towards) Art's Holy Shrine",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01646",
+    "source_song_id": "1646",
+    "original_sha256": "b0b85240423824a8c9405dfc20518d650c513af9b8d8704ff700de6b15d2c88d",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Azevedo Silva",
+        "title": "Dó",
+        "album": "Tartaruga",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00297",
+    "source_song_id": "297",
+    "original_sha256": "56699c4d3503be817e294f77af18be7b44f4e2496d14418cd811ec6549bab27f",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Wooden Ambulance",
+        "title": "My Friend",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01472",
+    "source_song_id": "1472",
+    "original_sha256": "9f586d06ffc82c0082a8e5c6f5dbcf6e377273e71e6ac3fb1670c69d67c9b1e9",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Jonathan Coulton",
+        "title": "Re: Your Brains",
+        "album": "JoCo Looks Back",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00129",
+    "source_song_id": "129",
+    "original_sha256": "de35655fdfd9947efcadf1b6563d8af7ec00f84041f342e574f678c5bd1d3c2b",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Oskar Schuster",
+        "title": "Sneeuwland",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01147",
+    "source_song_id": "1147",
+    "original_sha256": "099717190e8c39a5be5250bfd08edb07c5823dd1d1598c1fb099f06de7d556c2",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Lanark",
+        "title": "Valentina",
+        "album": "My Russian Bride",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01606",
+    "source_song_id": "1606",
+    "original_sha256": "098d28d65d82e06eb72627df41231ec6af4b8b4d493b8f9898d36e459ba69905",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Salam",
+        "title": "Allhou",
+        "album": "Salam",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00088",
+    "source_song_id": "88",
+    "original_sha256": "0c6c4d4ef6a54e6e6e84cd2388e5697bbe81c5178bf2c29f631271a69a5472ed",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Lorenzo's Music",
+        "title": "We All Fall Down",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01769",
+    "source_song_id": "1769",
+    "original_sha256": "4d238ce4f82e37bd7c1f780e507dc17d40d61c96a1281ed5ffb5d0f8fea9afaa",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "M.A.G. Trio",
+        "title": "All the things",
+        "album": "M.A.G Trio plays Standards",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01104",
+    "source_song_id": "1104",
+    "original_sha256": "025b9580211e8dbd997072205b23d046cc92d89908e85608a7e33f2b73d6eace",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Jared C. Balogh",
+        "title": "FOR YOU",
+        "album": "A Compilation From Compilations Of Compositions",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01402",
+    "source_song_id": "1402",
+    "original_sha256": "d88561f5d39e1ced3e255f801aca69311bd983883d5cc5ba00041d92bcc32d90",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Harry the Cap",
+        "title": "The Little Drummer Boy",
+        "album": "A Very Badgerland Christmas (2011)",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00332",
+    "source_song_id": "332",
+    "original_sha256": "c379ebc0bc0dee0606510194faa007d60803f48810a64229916d384295460903",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jason Shaw",
+        "title": "FUNKY JUNKY",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01474",
+    "source_song_id": "1474",
+    "original_sha256": "ce334e01fb863839708a79559bf033c530c1ca80277050f478676eb7ac179d95",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Jonathan Coulton",
+        "title": "Code Monkey",
+        "album": "JoCo Looks Back",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00747",
+    "source_song_id": "747",
+    "original_sha256": "d6efdba2683617b124176601ffdce8adc8b9d22857457422850c7def87112511",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Stephan Siebert-auf",
+        "title": "bruch",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01694",
+    "source_song_id": "1694",
+    "original_sha256": "d1f6050d8905e1285927a521bf5779ba8cd310f499d05abc960108936b1c001e",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Vialka",
+        "title": "Only The Wrong Survive",
+        "album": "Curiosities Of Popular Customs",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00954",
+    "source_song_id": "954",
+    "original_sha256": "4dfaca064286d6edbca69cfd18d4b0e7714a702bf491d4b8e6be1cf820d2a90e",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Doron Deutsch",
+        "title": "Bruce Lee (acoustic Jam)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01579",
+    "source_song_id": "1579",
+    "original_sha256": "b201eafac253bb810ab5a8ffa1de02b4874c63c70ed099388618114e3fb5e333",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Alaclair Ensemble",
+        "title": "Qui",
+        "album": "Le roé c'est moé",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00225",
+    "source_song_id": "225",
+    "original_sha256": "286bb86a0a276a12bf233b0dfeb606f38be439bc1071b22f40aee6987232b9ed",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jared C. Balogh",
+        "title": "The Anticipation Of Spring",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00466",
+    "source_song_id": "466",
+    "original_sha256": "5d6d5352bbf0e2ddd04bafb72fd287402eda1c0823b1fa356ce6cc0dfe055dbc",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Fanas",
+        "title": "Forever falling up",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00671",
+    "source_song_id": "671",
+    "original_sha256": "3fb7c628a87061315d581f8bdd7b959e282ca08470569f5fcb51407a4e5ee3da",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Latché Swing",
+        "title": "Menilmontant",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00170",
+    "source_song_id": "170",
+    "original_sha256": "d476f8b59082a70f0358fd801ecf47718896423059bc9620b59d6f7541246416",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Circus Marcus-Aux puces nº6",
+        "title": "La Flor de Olmedo",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00013",
+    "source_song_id": "13",
+    "original_sha256": "5c24026f6e4774e3b4bdf17b88b9883dcb2623658636697cdf843d45b28f98fd",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "My Bubba & Mi",
+        "title": "Oh Kiss No",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00650",
+    "source_song_id": "650",
+    "original_sha256": "ae35807743baee0870739a81720e625941de4e821dafa9207e144efa05fd8f14",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Ido Bukelman",
+        "title": "City Tail",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00376",
+    "source_song_id": "376",
+    "original_sha256": "fda1118c31c19e7d932e72f72ca54287c538dc87529fcc6add88c428b803ead2",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Broke For Free",
+        "title": "Night Owl",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00025",
+    "source_song_id": "25",
+    "original_sha256": "a77a2affafc43320a1ce320108686e62a523e7d2968326459d1b761f1ac2c9b1",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "The Jon Spencer Blues Explosion",
+        "title": "RL Got Soul",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01021",
+    "source_song_id": "1021",
+    "original_sha256": "c55629aeeafd4feec8484bdd6dfc833992e43a1e233b1ec8693736eb237355d4",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Steve Gunn",
+        "title": "The Lurker",
+        "album": "Live at Café OTO (Tusk Weekend)",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00168",
+    "source_song_id": "168",
+    "original_sha256": "c50f44258d6a638ae384c30a17c3ac60ecfe30a9d2a5e047baa288fb137bc859",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "Funeral March for Brass",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01209",
+    "source_song_id": "1209",
+    "original_sha256": "3fb12c3102a38ad9635a4405118f53e36fbb1173956863734b78dc07da0180e7",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Matt Valentine & Erika Elder",
+        "title": "Cold Rain",
+        "album": "Phoning It In 09/14/06",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01666",
+    "source_song_id": "1666",
+    "original_sha256": "a9dae21103285d92253accccee4f5700ee3aecdc4cb252777bd586f4142c4dfa",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Alexandre Bateiras",
+        "title": "Porto Largo",
+        "album": "Canções da Lua Nova",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01102",
+    "source_song_id": "1102",
+    "original_sha256": "3ff05f5e8c7147a148786e1d17e02a0242a5449bc6d9b429ef07000ce363074e",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Kosta T",
+        "title": "Smile",
+        "album": "Art by Isterika",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01739",
+    "source_song_id": "1739",
+    "original_sha256": "c05b98b6072877c024189b8ad4a079b3da4e33de0511c146fbb872a5770d581c",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Zloty Dawai",
+        "title": "Squid in the mouth",
+        "album": "Teleopsis belzebuth",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01760",
+    "source_song_id": "1760",
+    "original_sha256": "cb5e52031f8fb714d3a0389e6e0ad2b12e8cfcfe471059fd02a35c429c0b6a71",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Mentz",
+        "title": "Shackles",
+        "album": "Re-Locate EP",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01089",
+    "source_song_id": "1089",
+    "original_sha256": "c0fa54fb53f222f7047e7934b185ec63259f82239bc5e4225ddd4d9eaff7104d",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Bomb Boy",
+        "title": "Ignition",
+        "album": "FM FUNK MADDNESS!!",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02036",
+    "source_song_id": "2036",
+    "original_sha256": "35ed9d600710dd82cfd6889c6d6b5507542f3a860c3f2d4d96bedf2e9f678cdd",
+    "original_bytes": 51628110,
+    "attribution_variants": [
+      {
+        "artist": "Feel-ipson",
+        "title": "Feel-ipson",
+        "album": "Out of the sand",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00345",
+    "source_song_id": "345",
+    "original_sha256": "acf6e6b9d50d064ca231d36244c47196d2afece96eccdbbea6aedbbf9ef77710",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Stompin' Riff Raffs",
+        "title": "You Shake Me",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01244",
+    "source_song_id": "1244",
+    "original_sha256": "ff00e68fadd596ebbedcda375fd32579a2ecd55662137275b982f2da80e12fd8",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Benji Hughes",
+        "title": "Country Love",
+        "album": "Sargent Singles: Volume 2",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00101",
+    "source_song_id": "101",
+    "original_sha256": "7d15d9cb4bee15e10f367acacdd8a775e51a6eeb153c5a08e4b8aa0ab13fc7f6",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Mr. & Mrs. Smith",
+        "title": "Least the Ocean is Wet",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01899",
+    "source_song_id": "1899",
+    "original_sha256": "87eb0a1a7fe32e6e6396dfd9ff1b7a1daf37ab41e7f61c849bdf78d0f7c28461",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Half-handed Cloud",
+        "title": "Bees Are Trying To Build Their Nest In You.",
+        "album": "Phoning It In 01/11/07",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00292",
+    "source_song_id": "292",
+    "original_sha256": "c98112778fccb5548334db7b7b636fe58ca2558c6d6c5d10a9283a9df5cb6ccd",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Stompin' Riff Raffs",
+        "title": "Horror Show",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00825",
+    "source_song_id": "825",
+    "original_sha256": "6f64f56624749f0b372f363e9bb1bdac402b3587d3e363f5c1af9c959a1ac100",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "FAVORS",
+        "title": "I Keep My Soul Alive with Different Kinds of Germs",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00190",
+    "source_song_id": "190",
+    "original_sha256": "d42bffc635b075cb1973967ee224592cf15c066f7d28b08d5b35eb022417c618",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "Virtutes Instrumenti",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01267",
+    "source_song_id": "1267",
+    "original_sha256": "ff1b8a6991fd872082837638cc776a4784232ba28d4eb33202a96df35b56449f",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Uke Stanza",
+        "title": "The Picket Line",
+        "album": "Pheasants Will Cross The Road/ The Very Thin Line",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00806",
+    "source_song_id": "806",
+    "original_sha256": "88f056cc9dedd1e76e3524c33eab3017173beab5236416f4ca846d66abd7c63e",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "coverclub.nl-Laura Vane & the Vipertones",
+        "title": "Christmas Day With Me",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01009",
+    "source_song_id": "1009",
+    "original_sha256": "f0a13fe436d2bbdab790bc0b666dd24709a715bf40f464dfc2b6fae2cd154cbe",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Big Bill Broonzy",
+        "title": "Please Don't Go",
+        "album": "Baby",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01308",
+    "source_song_id": "1308",
+    "original_sha256": "3c324fac2d1ffcec1f71d0d99168dd5791afd485baaadd516a781c9857f1d292",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Just Plain Ant",
+        "title": "Take Me Away",
+        "album": "All Becomes Dust",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00713",
+    "source_song_id": "713",
+    "original_sha256": "8c2587b848004e1d40dfcc1d710fdab2cb2040fa5637ebbf3275aa1ecf10b3d5",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "MarginalS",
+        "title": "parte 1 parte 4",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00224",
+    "source_song_id": "224",
+    "original_sha256": "792d7bbc6a30dd9e848a11a12d9aa33cbda2e6d714e137a8ce0aa2c5cdd458c5",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "LE CHEVALIER DE RINCHY",
+        "title": "jingles interludes et dimanche minuit",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01723",
+    "source_song_id": "1723",
+    "original_sha256": "a2e5264e631813f1e25138dbac9ad68f015bdfd9de59640f3695dac895985f7e",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Nheap",
+        "title": "Daily Improvisation",
+        "album": "Clouds Under the Table",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01859",
+    "source_song_id": "1859",
+    "original_sha256": "2a3a39a5f7322e0b23406191225009f7bd647b502b38bdcd8cdde76438a4f2f3",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Ariel Pink's Haunted Graffiti",
+        "title": "Want Me",
+        "album": "Homemade Hits Vol. 1",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01331",
+    "source_song_id": "1331",
+    "original_sha256": "40c2d9d5f5de256d4d0e6ac013beb14b6c58ba05de262695e0fe7d2075169737",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Dan Deacon",
+        "title": "Woof Woof",
+        "album": "Live at Primavera Sound 2009 on WFMU",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01633",
+    "source_song_id": "1633",
+    "original_sha256": "8ced5cdcb3038a15f9abdd9fd87f45d68c99d0928bcca362e3af0796b4414c48",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Vialka",
+        "title": "Bamako",
+        "album": "Split with Kruzenshtern I Parohod",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01697",
+    "source_song_id": "1697",
+    "original_sha256": "531efe80d100efc7a4ab4295e6c8a517739d131fd4c51c3dc6e8bc2546c5f999",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Inlets",
+        "title": "See Her",
+        "album": "Vestibule",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01965",
+    "source_song_id": "1965",
+    "original_sha256": "257364693ef4d039a393f3433bdc9cad6a8906580a5b43eb0ef0d885b7ebd9f3",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Wire Orchestra",
+        "title": "Track 12",
+        "album": "CordinRidin....",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01199",
+    "source_song_id": "1199",
+    "original_sha256": "022695acc12c08fefa483de455b7a070dc633af07911e80df0f6901005a93265",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Textile Audio",
+        "title": "Punishment",
+        "album": "The Pomegranate Cycle",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00675",
+    "source_song_id": "675",
+    "original_sha256": "554718829508992c2c7527245556e20a65df9498b5456ffabc4162d72bc55e50",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Merkel & Fritzemeier",
+        "title": "Meetin' & Movin'",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01124",
+    "source_song_id": "1124",
+    "original_sha256": "ebb4877f1e9ed42b01444a27d915f925f17bbb3dfaeed16be1461f6d36bd9a17",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "David Borden",
+        "title": "Part 1",
+        "album": "The Continuing Story of Counterpoint",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01401",
+    "source_song_id": "1401",
+    "original_sha256": "27b0bd67df7c02a245ac467356fa1eca91bcf340d5fb162f28a87862bd94ded8",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Mars Payne",
+        "title": "The End",
+        "album": "Village Stories EP",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00238",
+    "source_song_id": "238",
+    "original_sha256": "2ee8695cc1fe4cbf0c8ed8bf8c6a1f56d58770252c9804e8c999338763edade7",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod-J. S. Bach  Prelude in C",
+        "title": "BWV 846",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00243",
+    "source_song_id": "243",
+    "original_sha256": "649cc07cc76a093d2de3b149592e47a3b73de1007b7156aa7b9c6e0d9f96f75b",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "MIT Concert Choir",
+        "title": "Ave formosissima — O Fortuna (reprise)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00107",
+    "source_song_id": "107",
+    "original_sha256": "e3cd5f1413e4f181587df7d04150c2f6ba92c7f3f48b2f6f9e02ff6859a56804",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Tarred Brigade",
+        "title": "We Three Kings",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01617",
+    "source_song_id": "1617",
+    "original_sha256": "173e2d085a3b075fbc7844feeb4b065952f84d05dc362301eba207caa695300a",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Audiotoolz",
+        "title": "Advanced Japanese Folk",
+        "album": "Progressive Folk",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00544",
+    "source_song_id": "544",
+    "original_sha256": "e77aab46fc65db0f94477251ba83316f0d87c835a3e06b052198f5536b559c2c",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Rho",
+        "title": "Day Into Night",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01165",
+    "source_song_id": "1165",
+    "original_sha256": "efff0349d92b06dbf38f1854d476bf3a634e83f76902f6be5fe1ec2dc901f629",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Ventolyn & Becotyde",
+        "title": "posture",
+        "album": "Splitter",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01179",
+    "source_song_id": "1179",
+    "original_sha256": "62a7ddcc75fbf5f856c390094d122cd665672dfd366ad3502d00484aa04676fb",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Evgeny Grinko",
+        "title": "28359840921=42",
+        "album": "Cinematic Melodies EP",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01393",
+    "source_song_id": "1393",
+    "original_sha256": "852aade2738d412291db5860d1cdd26441520ff832767fa7ad896d6a0cf73c75",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Thievery Corporation",
+        "title": "DC 3000",
+        "album": "The WIRED CD: Rip. Sample. Mash. Share.",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01565",
+    "source_song_id": "1565",
+    "original_sha256": "95b8958d9c25073cd81fd6f3551e5bf834328a1341b75d01aef9b6a65d4677f2",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Professional Savage",
+        "title": "Life's A Beach",
+        "album": "RIP Syringe Stick Up Mama",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00049",
+    "source_song_id": "49",
+    "original_sha256": "9d90ed485751e907638d03a56190f9864989a825021bd4174323aa311a676a6a",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "The Agrarians",
+        "title": "Our Nights on the Turnpike",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00955",
+    "source_song_id": "955",
+    "original_sha256": "115e42de5aba531039fb1a3144ee1a9fe41bdd9877d115110fc48e92306e86e0",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Everlone",
+        "title": "Blind Eyes",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00220",
+    "source_song_id": "220",
+    "original_sha256": "0cfd39bbbaa2dee032ce54f53c6c0c87fdd9689f724e0a0ac4a5425c7d87dd77",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Silver Process",
+        "title": "Jazz Band With Jazz Hands",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00197",
+    "source_song_id": "197",
+    "original_sha256": "97ab51d7a83bbb5bdcd875329af2650e750581be3f609f7cb1fe89cd94c7b2e6",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Marcel Pequel",
+        "title": "Eight",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01741",
+    "source_song_id": "1741",
+    "original_sha256": "5c06acbc48df4833711758e19f04240aef1c35136486189c7bf5a06f9868d18b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Stefano Roncarolo & Sandro Marinoni",
+        "title": "Point of no return",
+        "album": "Mirage",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01226",
+    "source_song_id": "1226",
+    "original_sha256": "1691e00d2cdf46b08bb3aa58b3cf83b1832e5df2d0d60ff9b3d19d355639fbeb",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Matt Valentine & Erika Elder",
+        "title": "East Mountain Joint",
+        "album": "Phoning It In 09/14/06",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01029",
+    "source_song_id": "1029",
+    "original_sha256": "28fa2706123a3183edd46c7abcc8385a4b633f3da3f8539e16363283a12a2468",
+    "original_bytes": 7939806,
+    "attribution_variants": [
+      {
+        "artist": "Little Howlin' Wolf",
+        "title": "Big Ole Bear",
+        "album": "Brave Nu World",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01125",
+    "source_song_id": "1125",
+    "original_sha256": "15f37313ff95fb58aaef553b806d981290bf075d49f2e06a7c560118b1d8259f",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Jared C. Balogh",
+        "title": "MAY",
+        "album": "Revitalized Eyes",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01410",
+    "source_song_id": "1410",
+    "original_sha256": "ddfd0e4209b49e86c69591e595a8ca9726c1e761911e7836f5859b0d2c4bb647",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Suspicious for the Winter",
+        "title": "Empty Streets",
+        "album": "Between Two Waves - Vol. A",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00043",
+    "source_song_id": "43",
+    "original_sha256": "84f89af25b4b5bb4b99d210af4bbd13f1a238e778d5ec122e2f0c40841d59a84",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "The Agrarians",
+        "title": "PuritansToo",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01675",
+    "source_song_id": "1675",
+    "original_sha256": "c05b91f280b9361fcf2e0c71ad5c82fbe930535305efe35602e5a6bbd5e3544c",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Vialka",
+        "title": "Thessaloniki",
+        "album": "Tonight I Show You Fuck",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00561",
+    "source_song_id": "561",
+    "original_sha256": "9c839b8307871fd5a46c28a38cdcd7e954083c6a93b491d5c2954f1244adf240",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "La Minor",
+        "title": "La Minor Live at Pacific Parc Vol",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01222",
+    "source_song_id": "1222",
+    "original_sha256": "00133cdf4afedc2b42e18fbb092530f0136c68499b80d28ece34558d0c786a06",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Matt Valentine & Erika Elder",
+        "title": "The Burden",
+        "album": "Phoning It In 09/14/06",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01938",
+    "source_song_id": "1938",
+    "original_sha256": "6fcb037aecb669e6cb52f4b5e163ae54f26d2b1d3b9f78a1c3da6e3062c4081b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Whines",
+        "title": "Vacation",
+        "album": "Hell To Play",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01017",
+    "source_song_id": "1017",
+    "original_sha256": "9eb540ab7076189f478a90c0082c81d8d7431c5eeb869ea0406e3551ffccb411",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "James Beaudreau",
+        "title": "Hare",
+        "album": "Java St. Bagatelles (WBR 01)",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00349",
+    "source_song_id": "349",
+    "original_sha256": "3562a0a55c28a166a9e0e2f8450fdc969419d710cf530c74599b9d99ab58eac4",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Jim Long",
+        "title": "There Were Some Famous Artists",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00157",
+    "source_song_id": "157",
+    "original_sha256": "86c6bf93520e468a8ae42dabada579d879e23d0e8aaae33da7ca0ad395e2fdfb",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jamie Evans",
+        "title": "Opening Doors",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00195",
+    "source_song_id": "195",
+    "original_sha256": "ff064e1c93cef5885e46cad241ec96028dfd775b7501256be30a13c64bb48833",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Rebecca Foon",
+        "title": "Golden Alley Reprise",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00718",
+    "source_song_id": "718",
+    "original_sha256": "843d88f7316e61a0969f4b7760f1de69cda76855cb4e2cd1b8072a7e05f526cc",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "The Underscore Orkestra",
+        "title": "Cocek",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01541",
+    "source_song_id": "1541",
+    "original_sha256": "125eafacd5ae3f500c1b9c88f4687ff183fa0022c886f923cdb19551104a1ef5",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Broke For Free",
+        "title": "If",
+        "album": "Layers",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01403",
+    "source_song_id": "1403",
+    "original_sha256": "723296aebaef144c68903e6c416aa25d4b302a5c9607d2bdab48221dfd9c359f",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Josh Woodward",
+        "title": "Go",
+        "album": "The Simple Life (Part 1)",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00364",
+    "source_song_id": "364",
+    "original_sha256": "f7bc514642fe10474a9504abe887ba12f9e74e37b8bdebddef361b3a3b18495d",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jason Shaw",
+        "title": "MOUNTAIN SUN",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02040",
+    "source_song_id": "2040",
+    "original_sha256": "a9ff894e36913069388388745cffd272f5aed4c81dde321ffa7ac8ed64c92354",
+    "original_bytes": 38421582,
+    "attribution_variants": [
+      {
+        "artist": "Ralph Buckley",
+        "title": "FUCK THE WAR",
+        "album": "FUCK THE WAR!!!",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00518",
+    "source_song_id": "518",
+    "original_sha256": "722b162d15925327aa2ce3677c7a8de3b75bd427cdc42bad1c7268acdb29d32f",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Free Piece of Tape",
+        "title": "Burning School",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00040",
+    "source_song_id": "40",
+    "original_sha256": "45b140393e5e6c2af69a7381c1a23782c50c5a576fa88f20c1898a2a1d2a39d2",
+    "original_bytes": 7946506,
+    "attribution_variants": [
+      {
+        "artist": "Chuck Prophet",
+        "title": "You And Me Baby (Holding On) (Live @ KEXP)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01765",
+    "source_song_id": "1765",
+    "original_sha256": "12be4c115424fc712cc25e187c220fcb0050d8f6546e92f881664982d5da8d3b",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Taiga Blues",
+        "title": "Karussell",
+        "album": "Bad Panda #12",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01081",
+    "source_song_id": "1081",
+    "original_sha256": "034fc797e43e2d0fe8e9dfd162925d2e109fd492998fe74885db0b553e84f70d",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Karl Blau",
+        "title": "Kill The Messenger",
+        "album": "Dance Positive",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01392",
+    "source_song_id": "1392",
+    "original_sha256": "5958da7afd1010726dc71aff47a9da1c98022103c7ebcf7c142f4ead2a790548",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Anamanaguchi",
+        "title": "Airbase",
+        "album": "Power Supply",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00644",
+    "source_song_id": "644",
+    "original_sha256": "ec8ab1b193699a49204cb7e497759e06af340ad92be891cdd40b085c46a1443d",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Antony Raijekov",
+        "title": "By the Coast (2004)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01480",
+    "source_song_id": "1480",
+    "original_sha256": "7e47a384095d805c322045464e02963d99cc76b02dbc0e47c115128d35895534",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Shivers",
+        "title": "Kisses",
+        "album": "Charades",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00781",
+    "source_song_id": "781",
+    "original_sha256": "4eaff5363c02d8353dc80be9a70d383f7898be93b88f837489e142979c201c2d",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Delicate Steve",
+        "title": "Butterfly",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00056",
+    "source_song_id": "56",
+    "original_sha256": "16c0d135959d06e46d10f8a5a516766590e73267a3b90ac125fab13b8cc1855b",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Vieux Farka Touré",
+        "title": "Fafa",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00328",
+    "source_song_id": "328",
+    "original_sha256": "5390db5195cbde4263bedb7850c41da0c9c3ff5df5d6c2f9760d84aed709029d",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "U Can Unlearn Guitar",
+        "title": "Imna 'Merican",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00851",
+    "source_song_id": "851",
+    "original_sha256": "e044fca23c7b5a04677caa923f3462b4fdba1604afc996d4f5a34fc496cacaec",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "How How-Tetrolux",
+        "title": "Etam Etamski",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01990",
+    "source_song_id": "1990",
+    "original_sha256": "6f09083d784b7d8dd2503c330b12e218f8d104c8de6dba3add9d38c840cf7eaf",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Seventh Necronation",
+        "title": "The Hollow",
+        "album": "The Seventh Necronation",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01517",
+    "source_song_id": "1517",
+    "original_sha256": "ac6e4a763f04eacc68c440f8514a88a980b6f5abd856f02a501beeec3c56ce46",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Broke For Free",
+        "title": "A Year",
+        "album": "Layers",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01835",
+    "source_song_id": "1835",
+    "original_sha256": "bca17c81c7a2250743d07e35f6a5224d3bb13afd71e2b13374f0ce2c41e49fcc",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Keith Walsh Experience",
+        "title": "Infinity",
+        "album": "Heavy Meta",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00823",
+    "source_song_id": "823",
+    "original_sha256": "388edd5085f2eea32f34884c2d291e5a8171878ad8b0f4cc6b0cba3e6c28ad47",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Gringo Star",
+        "title": "You Want It",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01229",
+    "source_song_id": "1229",
+    "original_sha256": "3747637ce8d2f7eda5fdda6223375f3223e6cb49483585f53a366feea7f71218",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Meat Purveyors",
+        "title": "Circus Clown",
+        "album": "All Relationships are Doomed to Fail",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01431",
+    "source_song_id": "1431",
+    "original_sha256": "39e672b062d3476f2b9621c758283990d23699274bb17932763beebf4f90eb53",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Chapin Sisters",
+        "title": "Let Me Go",
+        "album": "Live on WFMU's Airborne Event with Dan Bodah: September 9 ' 2013",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00449",
+    "source_song_id": "449",
+    "original_sha256": "ac75c68897d1d76bbb44f7592b25ec3dc4c5d5aa43d0cfffef6b69a97a3f365e",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Orbique",
+        "title": "simple",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00741",
+    "source_song_id": "741",
+    "original_sha256": "d59eb41234a27e9397bf9eceafb6fdeaee43fa50c68e0f7e2eca063356288d3e",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "The Underscore Orkestra",
+        "title": "Broken String",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01161",
+    "source_song_id": "1161",
+    "original_sha256": "d7709096ca7995e1a05ad3031bb0051e9ab8a9d1d8ab96e58606a94c45f87751",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Kosta T",
+        "title": "Impression",
+        "album": "Informality",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00910",
+    "source_song_id": "910",
+    "original_sha256": "f2ef5adbc3e4843c1155057ac374178a40e93a17269d69cd7d60bde97eaafef2",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "YACHT",
+        "title": "Utopia (instrumental)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_02028",
+    "source_song_id": "2028",
+    "original_sha256": "c6e79cfabd3e6c0d3e3ea862cd50995b0acc2eb32be63ac40bd1eb9121cccdb5",
+    "original_bytes": 53545038,
+    "attribution_variants": [
+      {
+        "artist": "The Scarlet Brand",
+        "title": "Les Fleurs Du Mal",
+        "album": "n/a",
+        "source_member": "metadata/metadata_2015.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01996",
+    "source_song_id": "1996",
+    "original_sha256": "95a9e5191d252c6903221aabc241413fc10e598962c85042c30d6dc90cfb2648",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Matt Kurz One",
+        "title": "BEAT 'EM",
+        "album": "IF YOU CAN'T JOIN 'EM",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00478",
+    "source_song_id": "478",
+    "original_sha256": "704acc5fe36777743468621d428609c3c874dbc2d5a1337999f3e99f6f03f928",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Zero V",
+        "title": "Initiation",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00712",
+    "source_song_id": "712",
+    "original_sha256": "d7aad786f93c85df6b1f7986ff7e12ba69f07d61f615f96f56837eebaa645413",
+    "original_bytes": 7946506,
+    "attribution_variants": [
+      {
+        "artist": "Kevin MacLeod",
+        "title": "As I Figure",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01301",
+    "source_song_id": "1301",
+    "original_sha256": "3f84b3c300b8c9967c8b3ee65c3cde3c4998dda50a6efea478a26508ea994573",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Jupiter Makes Me Scream",
+        "title": "Blow",
+        "album": "Converge",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01934",
+    "source_song_id": "1934",
+    "original_sha256": "c55a6601e208bde9a9912bff8d94f455db5b1435360e393ea4617073ace98856",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Riding Alone For Thousands Of Miles",
+        "title": "satellite",
+        "album": "Brick City Ghosts",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01063",
+    "source_song_id": "1063",
+    "original_sha256": "259e0b8d2f030dd6d94f0f66082fa53319781773d67bedf606b8d5e32195fe46",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "The Re-Stoned",
+        "title": "sleeping world",
+        "album": "Vermel",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00035",
+    "source_song_id": "35",
+    "original_sha256": "5a39204f52f847e9a7cf49f27169b5889e8539055b129b76bae158a29e67039d",
+    "original_bytes": 7946506,
+    "attribution_variants": [
+      {
+        "artist": "Olima Anditi",
+        "title": "Apoli",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00046",
+    "source_song_id": "46",
+    "original_sha256": "dc5f350e5c4d258926b4f32ebdd0e5943915fae1e6ab525f39321beb3727aedb",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Little Howlin' Wolf",
+        "title": "Shes Too Fat",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00833",
+    "source_song_id": "833",
+    "original_sha256": "bf76223e4cadd4df10ac8a6cd169f3e60d4d5636d54ef08f6641a7e532539a01",
+    "original_bytes": 7944230,
+    "attribution_variants": [
+      {
+        "artist": "Casetofoane",
+        "title": "Rocky 5000",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01753",
+    "source_song_id": "1753",
+    "original_sha256": "5fb2f17cf76faed272a460f61b098d70271b8792f85fbdd43fcb364d821023cd",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Miro",
+        "title": "I",
+        "album": "Miro",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00135",
+    "source_song_id": "135",
+    "original_sha256": "0bdcd09fa757aded70ba30a5190da05aa0691aa18fff4af853ca397d9555d49f",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Jody Pou",
+        "title": "O Solitude (H",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01626",
+    "source_song_id": "1626",
+    "original_sha256": "4b0f1448c45d1a8bb2ccc93d0ab3ed6a74548725514317f125ac41c6c28c235c",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Freestep",
+        "title": "Aboriginal Soundsystem (Triad remix)",
+        "album": "Progressive Folk",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_00399",
+    "source_song_id": "399",
+    "original_sha256": "b4685af805f47d8be69d71cfe2f535bfd07631a2d9e86499f9d506788df7699d",
+    "original_bytes": 7948838,
+    "attribution_variants": [
+      {
+        "artist": "Dexter Britain",
+        "title": "Waking Up (Instrumental)",
+        "album": null,
+        "source_member": "metadata/metadata_2013.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01069",
+    "source_song_id": "1069",
+    "original_sha256": "25cd32069666409e8a1c9d5a74bf261c2e5577de83175012433009af64fe984e",
+    "original_bytes": 7938082,
+    "attribution_variants": [
+      {
+        "artist": "Glass Candy",
+        "title": "Hurt",
+        "album": "Demos 31 ' 37",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  },
+  {
+    "id": "human_deam_01428",
+    "source_song_id": "1428",
+    "original_sha256": "dd66680c5c219b7a1560dd60932e4e58ef3ac4e9b8c849d646ea98bfdd37c40a",
+    "original_bytes": 7996350,
+    "attribution_variants": [
+      {
+        "artist": "Entertainment for the Braindead",
+        "title": "A River",
+        "album": "Trivialities",
+        "source_member": "metadata/metadata_2014.csv"
+      }
+    ],
+    "metadata_found": true,
+    "per_recording_license_verified": false,
+    "audio_publication_verified": false
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "records": 300,
+  "matched": 300,
+  "missing_ids": [],
+  "multiple_metadata_rows": 0,
+  "empty_artist_or_title": 0,
+  "official_metadata_sha256": "3d1d5ab42e852803a770f2cfbd685c6b464e1ebe76f26b0e10954597902b90f8",
+  "source_catalogue_sha256": "fb104e7eb2713d6278df19190559d05be6749c5b4ef2c4ec3637efcb4c25d839",
+  "records_sha256": "ec2bc2647368ca958ae8866baabcef3f31dce66f32d107dac8265eb280c84640",
+  "source_url": "https://cvml.unige.ch/databases/DEAM/metadata.zip",
+  "audio_uploaded": false,
+  "whole_project_complete": false
+}
