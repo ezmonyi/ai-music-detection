@@ -38,6 +38,14 @@ human specificity, balanced accuracy or two-class ROC AUC.
 
 ## Audio publication status
 
+- [MusicNet Ishizaka](musicnet_ishizaka_publication_v1/README.md): 39 existing
+  human recordings independently accepted; the other 291 MusicNet selections
+  are not covered by this source-specific CC0 review.
+- [Early external MAESTRO](external_maestro_publication_v1/README.md): 50 WAV
+  and 50 paired MIDI files independently accepted, separate from the later
+  300-recording classifier source.
+- [DiffRhythm pilot](diffrhythm_pilot_publication_v1/README.md): 50 originals
+  independently accepted; ten conditioning groups, not 50 independent prompts.
 - [Six completed publication acceptances](completed_audio_acceptance_v1/README.md):
   AIME 5,000; ACE-Step/HeartMuLa 2,000 original/view files; historical Suno 500;
   MagnaTagATune 500; early FMA 162; early Suno 100. These supersede older

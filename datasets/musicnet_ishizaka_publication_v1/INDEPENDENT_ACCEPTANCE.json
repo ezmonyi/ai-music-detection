@@ -1,0 +1,10 @@
+{
+  "revision": "587537ec4bc1d60750f05b4fc6c7dccb71d5e70c",
+  "verified_audio_files": 39,
+  "checked_bytes": 862136022,
+  "manifest_sha256": "c5db937a1d1e308f533f2e8f2378febddf7db0a3d7197bc3f4e54eb3d649f7fe",
+  "source_records_bound": true,
+  "final_acceptance": true,
+  "verification": "Anonymous manifest/notice equality and every LFS hash/size; not full audio redownload",
+  "whole_project_complete": false
+}
