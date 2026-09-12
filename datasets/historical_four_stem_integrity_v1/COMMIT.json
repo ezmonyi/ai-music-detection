@@ -1,0 +1,18 @@
+{
+  "input_sha256": {
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/expansion_four_family_10s_final/expanded_features_10s.jsonl": "818ee694d84e17e1960e9c3ed9714803552e98d472578ab4d66d708e6b2aebe3",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/expansion_four_family_10s_final/expanded_features_10s_metadata.json": "c1af275c3f306fb04eaa5792aa115720b1ea639b9772c89e8cfd29101e341402",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/locked400_four_family_10s/expanded_features_10s.jsonl": "a1a3e17d949387c03026d1b507e50a1f152f79ba7847e7cd4db17e19cb76e300",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/locked400_four_family_10s/expanded_features_10s_metadata.json": "0baa5f70e0ca27c6e8836322977d1fcfc61ba451158a23b8d28232a5f0d8b531",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/new1738_four_family_30s/expanded_features_30s.jsonl": "4444ff22db36533bd7c25f6611bd6166e5cdf907e94288216d1db539b76225b8",
+    "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/new1738_four_family_30s/expanded_features_30s_metadata.json": "b02ea3c6b562f3e74d7bb56378dde8cf271ba846c9537046677792e98c57236d"
+  },
+  "memberships": 22320,
+  "unique_hashed_paths": 22320,
+  "statuses": {
+    "verified": 22320
+  },
+  "records_sha256": "7b311d0a2dfd3c8aab3079b04ee377612bf715619f2c5c08ed00b8091f5cedfc",
+  "scope": "Recorded four-stem inputs in the explicitly selected runs only; not publication acceptance or whole-project coverage.",
+  "whole_project_complete": false
+}

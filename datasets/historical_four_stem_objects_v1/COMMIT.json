@@ -1,0 +1,13 @@
+{
+  "audit_records_sha256": "7b311d0a2dfd3c8aab3079b04ee377612bf715619f2c5c08ed00b8091f5cedfc",
+  "public_records_sha256": "a6ba623c39ff36bb4796eef97317478b3fb2bab623e9c4f6a3ac8f9f936a3304",
+  "public_revision": "caed9220f68b258e9c2dcb89792ccb1fe4d1dc61",
+  "memberships": 22320,
+  "unique_objects": 22320,
+  "snapshot_matched_objects": 0,
+  "absent_at_snapshot_objects": 22320,
+  "absent_at_snapshot_bytes": 75203830080,
+  "whole_project_complete": false,
+  "scope": "Only verified stem inputs from selected historical runs. Snapshot absence is not current absence or permission to publish. No musical-content deduplication.",
+  "objects_sha256": "fd17c91421ae9693a8a15ba4eae5c3959dfcca3524a30861366ae864dc51a292"
+}
