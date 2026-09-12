@@ -1,0 +1,27 @@
+source_group,total,matched,absent,missing_recorded_hash
+ACE-Step,500,500,0,0
+AudioLDM 2 Large,500,500,0,0
+AudioLDM 2 Music,500,500,0,0
+FMA,500,392,108,0
+HeartMuLa,500,500,0,0
+MTG-Jamendo,500,0,500,0
+MusicGen Large,500,500,0,0
+MusicGen Medium,500,500,0,0
+MusicGen Small,500,500,0,0
+Mustango,500,500,0,0
+Riffusion,500,500,0,0
+Stable Audio v1,500,500,0,0
+Stable Audio v2,500,500,0,0
+Suno,500,500,0,0
+Udio,500,500,0,0
+ai_audiox_third_party,500,0,500,0
+ai_diffrhythm_pilot,50,50,0,0
+human_deam,300,0,300,0
+human_gtzan,100,0,100,0
+human_hindustani_raag_hf,100,0,100,0
+human_maestro_v3,300,300,0,0
+human_magnatagatune,500,500,0,0
+human_medleydb,178,0,178,0
+human_moisesdb,239,0,239,0
+human_musicnet,330,39,291,0
+human_urmp,44,0,44,0

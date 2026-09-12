@@ -1,0 +1,13 @@
+{
+  "historical_ids": 10141,
+  "matched": 7781,
+  "absent_at_snapshot": 2360,
+  "missing_recorded_hash": 0,
+  "public_revision": "caed9220f68b258e9c2dcb89792ccb1fe4d1dc61",
+  "public_inventory_sha256": "a6ba623c39ff36bb4796eef97317478b3fb2bab623e9c4f6a3ac8f9f936a3304",
+  "historical_metadata_sha256": "d3519aa072498ec7812bd73b8456c0a47caba7bbac9801b1e4049df32a477361",
+  "records_sha256": "db3ea47390b83d00d9ccf497ece2050ac6cbec252d8b6143ec830648ac063fbc",
+  "scope": "Historical 10141 recorded raw hashes only; excludes archive members and later-only identities",
+  "exact_test_view_coverage_proven": false,
+  "whole_project_complete": false
+}
