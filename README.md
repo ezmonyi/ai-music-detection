@@ -23,6 +23,12 @@ The working English thesis is under
 
 ### Completed experiment snapshot (12 September 2026)
 
+- Latest editorial revision: [English thesis v7 PDF](thesis_releases/v7/thesis_v7.pdf),
+  [self-contained sources](thesis_releases/v7/sources/), and
+  [differential layout acceptance](thesis_releases/v7/ACCEPTANCE_EN.md).
+  V7 corrects stale experiment-status wording without changing numerical results.
+  The v6 links below remain immutable historical releases.
+
 - [English thesis v6 PDF](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/resolve/eb0e35208bb9229e1a2ee1a389e181ce7ddee8d6/reports/completed_experiments_thesis_v6_20260912/thesis_v6.pdf)
 - [Self-contained thesis source bundle](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/resolve/eb0e35208bb9229e1a2ee1a389e181ce7ddee8d6/reports/completed_experiments_thesis_v6_20260912/thesis_v6_sources.tar.gz)
 - [Complete BC/YuE2 aggregate reports, Native60 predictions and features](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/tree/eb0e35208bb9229e1a2ee1a389e181ce7ddee8d6/reports/completed_experiments_thesis_v6_20260912)
