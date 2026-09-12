@@ -1,0 +1,24 @@
+{
+  "objects": 12000,
+  "counts": {
+    "other_source_rights_or_provenance_unresolved": 3900,
+    "dispatched_aime_not_accepted": 5500,
+    "dispatched_open_models_not_accepted": 800,
+    "dispatched_fma_not_accepted": 316,
+    "prepared_suno_not_dispatched": 900,
+    "hold_fma_nd": 390,
+    "hold_fma_unresolved": 194
+  },
+  "bytes_by_category": {
+    "other_source_rights_or_provenance_unresolved": 8007693296,
+    "dispatched_aime_not_accepted": 4755006036,
+    "dispatched_open_models_not_accepted": 708420857,
+    "dispatched_fma_not_accepted": 626204168,
+    "prepared_suno_not_dispatched": 1836067186,
+    "hold_fma_nd": 826047632,
+    "hold_fma_unresolved": 376737998
+  },
+  "records_sha256": "60ac1d410744ff9939f259a30f034727000298343127c521769f0e2ef554954d",
+  "note": "Dispatch means a publisher was started, not live transfer or completed publication; scope excludes unenumerated stems",
+  "whole_project_complete": false
+}
