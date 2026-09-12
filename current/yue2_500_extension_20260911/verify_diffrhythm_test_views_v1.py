@@ -1,0 +1,62 @@
+"""Anonymous fixed-revision acceptance of 100 DiffRhythm pilot test views."""
+import argparse
+import hashlib
+import json
+from pathlib import Path
+import urllib.request
+from huggingface_hub import HfApi
+from publish_diffrhythm_test_views_v1 import OUT, PREFIX, NOTICE, build, source
+from publish_external_maestro_v1 import verify
+
+REPO = 'EZMONYI/music-ai-human-test-audio'
+
+
+def run():
+    terminal = json.loads((OUT/'COMMIT.json').read_text())
+    assert terminal['status'] == '100_diffrhythm_test_views_uploaded_hash_verified'
+    assert terminal['objects'] == 100 and terminal['original_ids'] == 50
+    assert terminal['conditioning_groups'] == 10
+    rows, _ = build()
+    receipts = sorted(OUT.glob('batch_*.json'))
+    assert [p.name for p in receipts] == [f'batch_{i:03d}.json' for i in range(5)]
+    for i, path in enumerate(receipts):
+        r = json.loads(path.read_text())
+        assert r['sha256_verified'] is True
+        assert r['files'] == [x['path'] for x in rows[i*20:(i+1)*20]]
+    revision = json.loads(receipts[-1].read_text())['revision']
+    api = HfApi(token=False)
+    assert not api.dataset_info(REPO, revision=revision).private
+    def fetch(name):
+        url = f'https://huggingface.co/datasets/{REPO}/resolve/{revision}/{PREFIX}{name}'
+        with urllib.request.urlopen(url, timeout=60) as response:
+            return response.read()
+    manifest = fetch('manifest.json')
+    assert hashlib.sha256(manifest).hexdigest() == terminal['manifest_sha256']
+    assert json.loads(manifest) == rows
+    notice = fetch('README.md')
+    assert notice == NOTICE.encode()
+    for name in ['LICENSE.txt', 'SOURCE_CARD.md']:
+        content = fetch(name)
+        assert content == (source.SOURCES/name).read_bytes()
+        assert hashlib.sha256(content).hexdigest() == source.PINS[name]
+    for start in range(0, len(rows), 50):
+        verify(api, rows[start:start+50], revision)
+    return dict(revision=revision, verified_audio_objects=100, original_ids=50, conditioning_groups=10,
+        checked_bytes=sum(r['bytes'] for r in rows),
+        manifest_sha256=hashlib.sha256(manifest).hexdigest(),
+        notice_sha256=hashlib.sha256(notice).hexdigest(),
+        verification='Anonymous exact manifest/notice and all remote hashes/sizes; not full audio redownload',
+        final_acceptance=True, whole_project_complete=False)
+
+
+if __name__ == '__main__':
+    from bounded_hf_http_v1 import install
+    install()
+    p = argparse.ArgumentParser(description=__doc__)
+    p.add_argument('--receipt', type=Path, required=True)
+    a = p.parse_args()
+    assert not a.receipt.exists()
+    result = run()
+    with a.receipt.open('x') as stream:
+        json.dump(result, stream, indent=2)
+    print(json.dumps(result))
