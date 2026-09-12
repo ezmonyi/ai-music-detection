@@ -1,0 +1,18 @@
+{
+  "status": "persisted_predictions_verified_and_reported",
+  "source_commit_sha256": "34782ccfa467d5304ec2a4af1000d390eb467f004bb591ddce1474d06a068e64",
+  "prediction_rows_verified": 876300,
+  "per_model_summaries_verified": 9525,
+  "aggregate_cells": 1905,
+  "products": {
+    "native60_transfer_tables.tex": {
+      "bytes": 725,
+      "sha256": "31e152b47931e6970525e011d714d09a56735ba6145bc8ae479e076041526009"
+    },
+    "all_subsets_caps_populations.csv": {
+      "bytes": 174409,
+      "sha256": "fbf495559da43be2fa878576236e530f666e7647aabb406546dc935deec6ea23"
+    }
+  },
+  "classifier_fits": 0
+}

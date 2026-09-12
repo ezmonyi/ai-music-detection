@@ -1,0 +1,60 @@
+\section{Completed frozen-model transfer on YuE2 Native60}
+\label{sec:yue2-native60}
+Of the 500 original YuE2 outputs, 276 support an exact native center-60-second
+interval: 223 development and 53 locked recordings. The remaining 224 are
+excluded by duration, not padded. Every crop was checked against the original
+48-kHz stereo audio. Neural front ends use explicitly resampled 44.1-kHz views;
+F/H/M extraction uses the historical mono 16-kHz analysis loader. These are
+different documented views of the same interval, not interchangeable files.
+
+All 276 neural and SDRP outputs were completed and hash-verified. Repeating the
+original SDRP extractor produced exactly matching descriptor values on all
+records; F/H/M values were reconciled with their committed per-record outputs.
+This checks reproducibility and record consistency, not a separately implemented
+acoustic algorithm. F/H/M audio extraction was not repeated in that final audit.
+
+The historical equal60 model publication was independently re-audited; its
+1,604-recording development population has no ID or group overlap with these
+YuE2 records. The transfer applies 127 subsets at five original caps and five
+stored folds (3,175 model applications), without fitting or threshold changes.
+The historical families are S/D/R/P/F/H/M, not the newer SC/BC extension.
+The 63 non-M subsets are reported separately from 64 M-containing subsets,
+which remain secondary historical diagnostics. M is not thereby admitted as a
+validated general detector family.
+
+All 876,300 per-record predictions were checked against a second, scalar
+implementation of the saved imputation, missing indicators, scaling and linear
+coefficients. Maximum score discrepancy was $2.22\times10^{-15}$ and all
+threshold decisions agreed. Persisted predictions were then independently
+counted and matched to all 9,525 per-model/population summaries. Repetition
+across models does not create 876,300 independent audio samples.
+
+\input{native60_transfer_tables.tex}
+
+The locked-population all-cap mean sensitivity is 91.6981\% for S/D/R/P,
+97.3585\% for S/D/R/P/F/H and 92.4528\% for S/D/R/P/F/H/M. S alone reaches
+98.1132\%. These observations do not establish a superior binary classifier:
+human specificity, balanced accuracy and ROC AUC are not estimable from an
+AI-only population. The corresponding all-eligible sensitivities are 91.9565\%,
+96.0870\%, 94.2029\% and 97.3913\%. All caps and subsets, including low
+single-family sensitivities, remain available in the full table; no winner is
+selected from this transfer set.
+
+Length eligibility selects only 55.2\% of the generated corpus and can correlate
+with musical structure. The 53 locked records are a subset of the earlier
+100-recording locked population, not a newly acquired independent test set.
+Earlier Native30 and legacy analyses preceded this transfer. Differences from
+Native30 cannot be attributed solely to duration, because population selection,
+historical model training and feature definitions also differ.
+
+\paragraph{Preserved outputs.}
+\path{current_results/native60_transfer_scores_v1/} stores compressed individual
+predictions and complete model summaries. Its COMMIT SHA256 is:
+\begin{quote}\scriptsize\ttfamily
+34782ccfa467d5304ec2a4af1000d390eb467f004bb591ddce1474d06a068e64
+\end{quote}
+\path{current_results/native60_transfer_report_v1/} stores 1,905 aggregate cells
+(127 subsets, five caps, three populations). The scripts are
+\path{score_native60_transfer_v1.py}, \path{native60_score_kernel_v1.py} and
+\path{report_native60_transfer_v1.py}. Input preparation, neural extraction,
+measurement replay and model-audit scripts and receipts are retained separately.
