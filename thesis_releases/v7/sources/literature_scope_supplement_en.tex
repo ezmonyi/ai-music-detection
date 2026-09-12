@@ -1,0 +1,27 @@
+% Draft supplement for the next thesis build; not yet included in the released v2 PDF.
+\subsection{Scope of stereo and accompaniment evidence}
+Liu et al.'s M2S-ADD converts mono speech into synthesized stereo before
+classification, with detector experiments on ASVspoof2019 LA
+(\href{https://www.isca-archive.org/interspeech_2023/liu23v_interspeech.pdf}{Interspeech2023 primary paper},
+doi:10.21437/Interspeech.2023-2335).
+This result does not establish a native-stereo anomaly in generated music.
+Inter-channel coherence, mid/side energy and spatial-width dynamics therefore
+remain candidate production descriptors, not admitted authenticity cues.
+Any later investigation must control native channel count, duplicated mono,
+deliberate panning/widening, common gain, channel exchange and lossy encoding.
+
+The \href{https://arxiv.org/abs/2604.16254v2}{ArtifactNet preprint, version2}
+describes learned codec-residual extraction followed by harmonic/percussive
+decomposition and classification. Its author-reported benchmark results are
+not reproduced in this thesis. Residual extraction is treated as an alternative
+pipeline, not automatically as an independent perceptual phenomenon.
+
+Chen et al.'s \href{https://research.nvidia.com/labs/twn/publication/icassp_2026_singfakeinstrumental/}{ICASSP2026 author abstract}
+reports primarily an augmentation role for accompaniment in singing-voice
+deepfake detection rather than intrinsic rhythm or harmony evidence. This
+motivates explicit feature ablations, but cannot by itself establish the same
+conclusion for whole-song generation detection. The task definitions differ.
+Only the abstract and version record of the latter two works were inspected
+in this supplementary checkpoint; these notes are not complete methodological
+replications. Further source and admission notes are retained in
+\texttt{LITERATURE\_SCOPE\_CHECK\_20260907\_EN.md}.

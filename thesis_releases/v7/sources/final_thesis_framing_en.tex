@@ -1,0 +1,85 @@
+\section{Research objective and scope}
+\label{sec:final-research-objective}
+
+This thesis investigates the detection capability and generalization
+boundaries of interpretable audio phenomena in AI-generated and human music.
+Its objective is not to infer authorship from a single presumed acoustic
+signature. Instead, it asks whether explicitly defined measurements respond
+to their intended phenomena, provide incremental discrimination within a
+documented corpus, and retain that information when recording sources or
+generators are held out.
+
+The motivating observation is perceptual: high-frequency characteristics,
+particularly in vocals, can influence a listener's impression that music was
+generated. Turning this observation into a scientific claim requires more
+than a classifier trained on two collections. Frequency response, encoding,
+mastering, instrumentation, vocal activity and source separation can change
+the same measurements. A feature can be interpretable in its mathematical
+definition without uniquely identifying the physical process that produced
+an observed value.
+
+\subsection{Three distinct evidential questions}
+\label{sec:three-evidence-levels}
+
+The study separates three questions. First, \emph{measurement validity}:
+does a descriptor detect a controlled change in its intended phenomenon,
+and with what availability and nuisance sensitivity? Second,
+\emph{discriminative utility}: does adding the descriptor improve a fixed
+classification procedure on matched recordings and evaluation splits?
+Third, \emph{generalization}: does the resulting discrimination persist
+outside the recording sources and generators represented in training?
+These questions are related but not interchangeable. A passed external
+measurement gate does not establish classification utility; a high
+classification score does not retrospectively validate a failed measurement
+gate; and ordinary grouped evaluation does not establish unseen-generator
+attribution.
+
+\subsection{Operational meaning of the labels}
+
+Human and AI labels refer to the documented provenance of selected recordings.
+They do not label every musical decision or component in a production chain.
+Human-produced music may contain MIDI programming, synthesis, quantization,
+editing and compression. Consequently, regular dynamics or rhythm cannot
+alone establish AI generation. Conversely, a generated recording can exhibit
+variation in these quantities. The proposed measurements are statistical
+descriptors of audio, not necessary or sufficient conditions for either class.
+Provisional labels and small conditioning-group pilots are kept separate from
+validated accuracy claims.
+
+\subsection{Research questions}
+
+\begin{enumerate}
+\item Which listening-motivated spectral differences remain observable after
+      standardized audio preparation and an external separator-response
+      correction, and what confounds remain unresolved?
+\item Which additional phenomena can be measured reliably under the retained
+      external controlled tests, including explicit negative controls and
+      missingness accounting?
+\item How do individual feature families and their nonempty combinations
+      compare under fixed, source-aware splits and training-group caps?
+\item Where do source-held-out and generator-held-out results diverge from
+      ordinary grouped performance, and what does this imply for the scope
+      of the detector's claims?
+\end{enumerate}
+
+\subsection{Reporting commitments}
+
+All conclusions are tied to named cohorts, preprocessing versions and
+evaluation protocols. Recording identities, independent groups, audio views
+and stored files are different units and are reported separately. Comparisons
+across different duration cohorts are descriptive rather than causal estimates
+of duration effects. Missing measurements remain explicit; absence of a
+measurement is not silently interpreted as absence of the phenomenon.
+
+The thesis retains unsuccessful candidates and negative feature increments.
+Numerical audits establish only the properties that they explicitly check;
+byte-level integrity is distinguished from waveform replay, and both are
+distinguished from external scientific validity. Raw classifier scores are
+not presented as calibrated probabilities. Existing development sweeps are
+not relabelled as untouched validation after inspecting their rankings.
+
+The final experimental scope is restricted to the already collected material
+and the existing remaining analysis plan. New corpora, new phenomena and
+additional experimental branches are outside this thesis finalization run.
+Unresolved weaknesses are discussed as limitations and future work rather
+than addressed by unreported post-hoc experiments.

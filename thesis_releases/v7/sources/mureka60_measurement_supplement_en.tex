@@ -1,0 +1,236 @@
+% Draft supplement; not yet included in the released thesis PDF.
+\subsection{A separately reserved Mureka generator cohort}
+
+To address the single-generator limitation of the long-context development
+cohort, we acquired 500 Mureka v9 recordings from the uploader-labelled
+\texttt{homura23/MUSIC8K} repository at revision
+\texttt{05232438ba76a7bc55cbebfdc6d5f4011c980bba}.
+This is dataset provenance, not independently verified generation logs.
+After excluding 12 feasibility probes, we deterministically ranked the
+remaining 650 candidates by a frozen seeded SHA-256 rule and selected the
+first 500 without replacement based on model scores or audio quality.
+
+All 500 original MP3 files were downloaded and fully decoded with FFmpeg;
+all samples were finite. An independent acquisition auditor reconstructed the
+selection and rehashed all original files, totaling 2,411,879,065 bytes. All
+files were 44.1-kHz stereo, with decoded durations from 98.39 to 313.19 seconds,
+and all supported a genuine 60-second interval without padding. This auditor
+checked the full-decode receipts; it did not perform a second full decode.
+Metadata and literal/hash overlap screens found no matches under their stated
+rules, but do not establish perceptual or semantic independence.
+
+The measurement protocol fixes the native interval to
+\(s=\lfloor(N-2646000)/2\rfloor\), of length 2,646,000 frames. The four existing
+families use a stereo FLOAT WAV, without additional gain, limiting or DC
+removal. F/H/M use the same native interval through their unchanged
+native-to-16-kHz mono front end. Before preparation is frozen, remote-copy
+hash verification and the analysis decoder's frame/rate/channel agreement
+with the acquisition receipt are required for every file. Synthetic tests of
+the preparation software are not evidence that this real-data gate has passed.
+
+The new cohort is reserved for measurement and eventual transfer evaluation;
+it is not silently appended to the existing 1,604 development rows. Frozen
+and audited old-cohort models must be evaluated before adaptation to Mureka.
+An AI-only cohort directly estimates sensitivity and false-negative rate,
+not specificity, balanced accuracy or AUC. Comparisons against previously
+analyzed Human out-of-fold scores must be labelled as historical-reference
+comparisons, not untouched external two-class tests. No new-generator
+detector performance is reported in this measurement supplement.
+
+\paragraph{A decoder discrepancy caught before preparation.}
+The complete remote raw-file and receipt hash audit passed for all 500 items.
+The subsequent preparation freeze nevertheless failed safely on one MP3,
+item 97136; no measurement contract or crop was published. Its container
+reported approximately 217.27 seconds, whereas two full FFmpeg decodes yielded
+6,157,487 identical stereo frames (139.626 seconds). Sequential soundfile
+reads yielded 6,156,335 frames, while its block iterator returned additional
+nonzero repeated-buffer content. Such an iterator count is not proof of real
+audio duration and must not be interpreted as a musical recurrence phenomenon.
+The other 499 header comparisons matched their acquisition records; this is
+not a claim that all their sequential EOF lengths were independently checked.
+
+A diagnostic no-reencoding remux preserved the full FFmpeg-decoded sample
+hash and corrected the header, but did not resolve soundfile's remaining
+1,152-frame EOF deficit. It was therefore not admitted as a complete repair.
+For the original file, the acquisition-defined center interval beginning at
+frame 1,755,743 contains all 2,646,000 requested samples. Fresh and fully-scanned
+seeks match the sequential interval exactly. Three bounded cross-decoder
+windows show no best-alignment offset and maximum sample error below
+\(10^{-6}\); these windows do not establish bit-identical complete decodes.
+The original source, rejected freeze, diagnostic derivative and observations
+remain preserved. A separately reviewed interval-based v2 admission rule was
+then implemented without changing v1 or replacing any source.
+
+\paragraph{Uniform interval verification in v2.}
+The same rule is applied to all 500 recordings: sequential float64 reads
+continue until an empty return; actual EOF must contain the acquisition-defined
+center interval; and a fresh seek must return exactly the same 2,646,000 stereo
+samples as the sequential crop. Header, acquisition and sequential lengths
+are retained separately. Full-stream decoder equivalence is not claimed.
+Float64 and float32 crop hashes are frozen before materialization, then checked
+again when creating the stereo FLOAT view. There is no gain adjustment,
+short-input padding or diagnostic-remux substitution.
+
+The v2 preparation, neural/strict-audit adapter and F/H/M acceptance suites
+passed 17, 30 and 7 synthetic CPU tests, respectively. At this checkpoint the
+real 500-item sequential verification has passed and the interval contract is
+frozen. Exactly one item (97136) has both a header discrepancy and an actual
+EOF discrepancy; every other item agrees with its acquisition frame count.
+All 500 selected intervals passed the identical finite-sample and float64
+seek-versus-sequential equality rule. Materialization of the standardized WAV
+views is running; neither feature measurement nor evaluation is complete.
+No new-source classifier has been fitted or
+scored. The F/H/M acceptance procedure checks every scalar feature against
+its authoritative item record and preserves all unavailable values. The
+loader's reported total-frame field is interpreted as a header observation,
+not substituted for actual EOF evidence.
+
+References relative to \path{artifacts/audio_phenomena_expansion_20260907/}
+are \path{MUREKA60_STAGED_EVALUATION_DESIGN_EN.md},
+\path{MUREKA60_INPUT_PREPARATION_EN.md},
+\path{MUREKA60_FHM_MEASUREMENT_EN.md},
+\path{code/prepare_mureka60_inputs.py},
+\path{audit/music8k_mureka500_physical_v1.json}, and
+\path{audit/music8k_mureka500_metadata_overlap_v1.json}.
+Decoder evidence is in \path{audit/mureka500_decoder_frames_v1.json},
+\path{audit/mureka97136_decoder_diagnosis_v3.json}, and
+\path{audit/mureka97136_parent_remux_probe_v1.json}. The first survey's
+block-derived ``actual decoded frames'' field is superseded by the sequential
+EOF diagnosis, not used as an audio-admission fact.
+V2 references are \path{MUREKA60_INTERVAL_PREPARATION_V2_EN.md},
+\path{MUREKA60_MEASUREMENT_V2_EN.md},
+\path{code/prepare_mureka60_inputs_v2.py},
+\path{code/run_mureka60_inference_v2.py},
+\path{code/verify_extract_mureka60_v2.py}, and
+\path{code/run_mureka60_fhm_v2.py}. The real full-population interval proof is
+\path{manifests/mureka60_inputs_v2/materialization_contract.json}; its canonical
+contract digest is
+\path{c3c678248f4b4e42dca21b975e7fd9eb12742e02fe1bbe3d998cbac8ff62c564}.
+The independent parent checkpoint is
+\path{audit/mureka60_interval_freeze_v2_parent_review.json} and the complete
+freeze log is \path{logs/mureka60_freeze_v2.log}.
+
+\paragraph{Scoring and operational preparation, not new accuracy evidence.}
+A separate adapter replays all127 combinations, five training-size caps and five
+frozen fold models on the500 new AI items:1,587,500 prediction rows, with3,175
+per-model sensitivity summaries. Its primary endpoints are AI sensitivity and
+false-negative rate at the unchanged0.5 threshold; an AI-only corpus does not
+provide standalone specificity, balanced accuracy or AUC. No refitting or
+new-source threshold/model selection is permitted. The parent reran17 synthetic
+tests, including exact frozen matrix replay and adjacent-to-threshold CSV
+roundtrips, but no real scoring contract or result has been produced yet.
+See \path{code/score_mureka60_frozen_v4.py},
+\path{code/test_score_mureka60_frozen_v4.py}, and
+\path{MUREKA60_FROZEN_TRANSFER_V4_EN.md} under the expansion artifact root.
+
+An operational v3 inference adapter preserves v2 and allows reuse of previously
+reserved RTX5090 devices only after the original134 stage/shard receipts prove
+completion and its writer lock is exclusively held. Explicit GPU assignments,
+old-cohort pins and release evidence are retained; scientific commands and
+features do not change. Parent review corrected a real-versus-synthetic shard
+schema mismatch before launch. Reference code is
+\path{code/run_mureka60_inference_v3.py} and
+\path{code/verify_extract_mureka60_v3.py}, with protocol
+\path{MUREKA60_GPU_RELEASE_V3_EN.md}. Neither implementation tests nor a resource
+release receipt constitute detector-performance evidence.
+
+\paragraph{Original-cohort inference milestone.}
+At23:56UTC on6 September2026, the original1,604-item exact60 run completed
+all134 stage--shard receipts. Its unchanged supervisor then started the full
+physical output audit and old-family feature extraction. A separate read-only
+check of all original completion/receipt identities passed under the v3 adapter;
+that check neither acquired a GPU lock nor launched new inference. This is not
+yet a completed127-combination classification result. The mirrored completion
+is \path{audit/equal60_original_inference_completion_v1.json}, and the operational
+check is \path{audit/equal60_gpu_release_real_readonly_review_v1.json}.
+
+\paragraph{New-generator measurement launch, 7 September 2026.}
+All500 FLOAT-WAV views were materialized, totaling10,584,044,000 bytes in21
+shards. The independent compact-ledger review verifies selection order, native
+interval/hash correspondence and unscored roles; it is not a second full audio
+decode. See \path{audit/mureka60_materialization_v2_parent_review.json}.
+The unchanged v3 measurement runner was then launched on host5090-5, using
+All-In-One devices1,2,4,5,6 and Beat This device7. Occupied devices0 and3 were
+excluded. The original run was on5090-2: its completed-run proof and shared
+writer lock remain conservative gates, not a claim that these are the same
+physical GPUs. Explicit hostname and prelaunch UUID evidence is retained in
+\path{audit/mureka60_measurement_launch_v1.json}. The unchanged native F/H/M
+CPU wrapper was launched separately on5090-2. Both runners first validate all
+500 prepared inputs. At this checkpoint no new measurement acceptance or
+AI-only sensitivity result is yet available, and the original1,604-item cohort
+has not been expanded or refitted.
+
+\paragraph{Completed native F/H/M measurements.}
+At 00:41 UTC on 7 September 2026, the native F/H/M wrapper accepted all
+500 item records. Phase descriptors and pitch-class path descriptors were
+observable on all 500 items; the recurrence proxy was observable on 499.
+Item \texttt{music8k\_mureka\_v9\_51702} retained the explicit state
+\texttt{missing\_insufficient\_long\_range\_coverage}. It is neither removed
+from the cohort nor assigned zero recurrence. The wrapper reconciled every
+scalar descriptor and rehashed the original sources after extraction. Parent
+review separately rehashed 504 mirrored output files and checked all 27 scalar
+descriptors per item against their JSON records, with unchanged numerical,
+code and runtime settings relative to the original exact60 F/H/M contract.
+This parent review did not decode audio again or rehash the remote MP3 files.
+The acceptance receipt is
+\path{results/measurements_mureka60_fhm_v2/acceptance.json}, SHA-256
+\path{88580d6c8d2d02f58abc84c64e8df4fe09f54086e339e7e331b3090e810c59ec}.
+Parent reconciliation is
+\path{audit/mureka60_fhm_v2_parent_reconciliation.json}. All new items retain
+their reserved external-generator role; no Mureka detector score is reported.
+
+\paragraph{Matched exact60 development evaluation.}
+The original 1,604-item strict audit and four-family extraction subsequently
+completed. The new evaluation package combines 54 descriptors from S/D/R/P/F/H/M
+on the same native intervals and retains every development row, including
+unavailable values. After independent package and recovery-evidence review,
+the parent froze a new preregistration and launched all 127 nonempty family
+combinations at five training-size caps under five shared global-group folds.
+The 438 locked and 50 pilot rows remain outside fitting, as does Mureka500.
+Weighted ridge uses penalty 10 and decision threshold 0.5; preprocessing is
+training-only. Source-transfer J is undefined because Suno is the only
+development AI source. The operational review and exact command are in
+\path{audit/EQUAL60_V4_FREEZE_REVIEW_EN.md}; the receipt is
+\path{preregistration/equal60_v4_with_recovery_frozen_v1.json}.
+This paragraph records a real scoring launch, not completed or independently
+accepted performance. Numerical acceptance is required before presenting the
+combination table as an experimental result.
+
+\paragraph{Superseding acceptance and external transfer preparation.}
+The exact60 development results subsequently passed independent numerical
+audit; complete 127-by-five tables are in
+\path{EQUAL60_SEVEN_FAMILY_RESULTS_EN.md} and
+\path{latex/equal60_seven_family_results_en.tex}.
+Mureka inference v3 completed all 42 stage--shard receipts. Its separate strict
+supervisor decoded all 500 inputs and every stem, verified product/runtime
+bindings, ran the unchanged four-family extractor, and rechecked provenance
+after extraction. It exited successfully. The complete compact outputs are in
+\path{manifests/mureka60_measurements_v3/}; parent review is
+\path{audit/mureka60_measurements_parent_acceptance_v1.json}.
+S/D/R descriptors are present on all 500 recordings. Each of the six P
+descriptors is unavailable on 15 recordings; these rows remain in the cohort.
+The score-only adapter \path{code/score_mureka60_frozen_v4.py} was launched in
+its non-scoring draft stage with the explicit v3 measurement interface.
+It revalidates the old audit and binds new artifacts before a later independent
+freeze. Planned coverage is 127 subsets, five training caps and five stored fold
+models, totaling 3,175 model instances on the same 500 recordings. Threshold
+remains 0.5. This draft stage does not fit, calibrate, select models or report
+classification results. An AI-only cohort supports sensitivity and false-negative
+rate, not standalone balanced accuracy or ROC AUC.
+
+\paragraph{Reviewed score-only execution.}
+The first transfer draft passed validation but its final directory publication
+failed because the NFS mount did not support the required no-replace rename.
+The same code and inputs succeeded on tested local tmpfs; every draft byte was
+then verified in durable NFS and local mirrors. The parent checked all 500
+identities, the exact 3,175 original model instances and the 6,484 bound files
+before freezing \path{preregistration/mureka60_frozen_v4_transfer_frozen_v1.json}.
+The actual scoring stage was launched without refitting. Numerical acceptance
+remains separate: \path{code/audit_mureka60_transfer_v1.py} independently
+reconstructs every score column by column, with tolerance
+$2\times10^{-12}+2\times10^{-12}|\hat y|$, while requiring exact agreement
+on each side of the 0.5 threshold. Its 29 tests passed on parent rerun.
+The draft review is \path{audit/mureka60_transfer_draft_parent_review_v1.json};
+operational recovery is \path{audit/mureka60_transfer_publication_recovery_v1.json}.
+Neither a scoring launch nor a synthetic audit pass is a transfer-performance
+result.

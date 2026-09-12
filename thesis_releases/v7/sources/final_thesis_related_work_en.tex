@@ -1,0 +1,91 @@
+\section{Related work and the limits of transferring evidence}
+\label{sec:related-work}
+
+The relevant literature spans several different target labels: synthesized
+speech, converted voices, lyrical authorship, source-separation fidelity and
+whole-recording music generation. An interpretable descriptor may be
+motivated by one task without being validated for another. This thesis
+therefore distinguishes the origin of a hypothesis from the external assay
+that qualifies its measurement and the held-source experiment that tests
+its predictive transfer.
+
+\subsection{Reconstruction artifacts versus generator transfer}
+Afchar, Meseguer-Brocal and Hennequin compare original music with matched
+autoencoder reconstructions, reducing content and file-encoding confounds
+\cite{afchar2025}. Their controlled representation comparison reports
+99.8\% accuracy for amplitude and 99.6\% for phase input. These are learned
+detector results on that reconstruction task, not validation of the present
+hand-designed F statistics. Their subsequent discussion of audio manipulation
+and unseen decoders illustrates why near-perfect internal discrimination
+is insufficient for deployment. We use this distinction to motivate both
+the original spectral/separator controls and the separate source-heldout
+evaluation; we do not reproduce their classifier or infer that its scores
+are comparable to our macro AUC or balanced accuracy.
+
+\subsection{Musical organization as measurement and representation}
+Wu and Yang analyze generated jazz lead sheets using pitch-class, groove,
+chord-progression and structural statistics, alongside listening and
+continuation tasks \cite{wu2020}. This provides a precedent for examining
+musical organization quantitatively. Its symbolic jazz setting does not
+establish a universal direction for chroma entropy or repetition in modern
+waveform generators. Our H and M implementations are explicitly specified
+audio descriptors, not replicas of every measure in that study.
+
+Kim and Go's Segment Transformer uses beat-aware segmentation and learned
+inter-segment relationships for music-generation detection
+\cite{kim2025}. The work evaluates short and full-audio systems on
+FakeMusicCaps and SONICS. It supports considering longer-context information,
+but a learned model's improvement does not isolate a hand-designed recurrence
+scalar as its explanation. In our experiments, M's standalone and incremental
+effects are measured separately, with duration eligibility preserved. The
+published model is neither retrained nor added to the current comparison.
+
+\subsection{Breathing evidence is task-specific}
+Mostaani and Magimai Doss study embeddings from networks trained to estimate
+speech breathing patterns in logical-access presentation attack detection
+\cite{mostaani2022}. Their ASVspoof 2019 results distinguish natural from
+synthesized speech, but do not show the same distinction for voice conversion.
+This is relevant motivation for investigating respiration-related cues, not
+validation of event-level breath localization in singing mixtures. The
+present project's failed breath-event precision/F1 gate consequently remains
+informative even though earlier speech work reports successful discrimination.
+An embedding result and a breath-event counter have different measurement
+units and failure modes.
+
+\subsection{Synthesized stereo is not native-stereo music evidence}
+Liu et al.'s M2S-ADD first converts mono input to stereo using a pretrained
+synthesizer and then applies a dual-branch detector \cite{liu2023}. Their
+reported evaluation concerns ASVspoof2019. This does not establish that
+native stereo in generated songs has an intrinsic spatial inconsistency.
+Our SC family instead describes recorded channel relationships and must be
+interpreted alongside channel provenance, deliberately created width and
+the matched feature-ablation results. A classifier's use of two channels
+does not alone identify the physical reason for its prediction.
+
+\subsection{Lyrics authorship and waveform generation}
+Frohmann et al.'s \emph{Double Entendre} combines automatically transcribed
+sung lyrics with speech representations in a late-fusion system
+\cite{frohmann2025}. This provides a complementary approach using lyrical
+information, with robustness and generalization motivating its design.
+However, whether lyrics were generated and whether a recording was generated
+are not identical labels: human-written lyrics can condition synthesized
+audio, and generated lyrics can be performed by people. We do not treat
+lyrical evidence as ground truth for the present waveform-level labels or
+compare the paper's reported performance directly with our source-heldout
+scores. No lyrics model is added in this closeout.
+
+\subsection{Position of the present experiments}
+The contribution examined here is not an assertion that one additional
+artifact universally separates human and generated music. It is the
+operationalization and testing of a finite set of interpretable descriptors,
+including explicit failures, availability limits and conditional predictive
+increments. The same external scientific gate, scalar definition and
+source-aware evaluation must be maintained even when a different choice
+would improve a displayed score. Literature-derived motivations cannot
+override observed failures of those tests.
+
+The records above were rechecked against primary manuscripts or conference
+pages during editorial integration. They establish the stated task scopes;
+their experiments were not replicated here. The larger retained literature
+review and source-verification notes remain supporting provenance, not a
+claim that every proposed candidate entered this thesis's experiments.

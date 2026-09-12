@@ -1,0 +1,101 @@
+\section{Matched external AI and Human transfer}
+\label{sec:saraga-mureka-frozen-transfer}
+
+The same 3,175 previously saved development models were applied without
+adaptation to 500 source-labelled Mureka recordings and 103 source-labelled
+Saraga Hindustani Human recordings. The grid contains all 127 nonempty subsets
+of S/D/R/P/F/H/M, five training caps and five saved folds. Model identities,
+candidate identifiers, cap/fold assignments and training/test identity hashes
+match exactly across sources. All original transformations and the raw-score
+threshold 0.5 remain fixed. No fitting, threshold tuning or feature selection
+uses either external cohort.
+
+Table~\ref{tab:saraga-mureka-allcap} reports five-model means at the all cap,
+which uses all available training groups within each original fold, not one
+fit on the entire 1,604-row development cohort. Actual training sizes range
+from 1,250 to 1,328 rows. Repeated model applications to the same recordings
+are dependent; model ranges are descriptive, not confidence intervals.
+
+\begin{table}[htbp]
+\centering
+\small
+\begin{tabular}{lrrrr}
+\toprule
+Families & AI recall & Human spec. & Human FPR & Group-equal spec. \\
+\midrule
+S+D+R+P & 76.76 & 67.77 & 32.23 & 75.18 \\
+S+D+R+P+F & 63.76 & 85.05 & 14.95 & 87.06 \\
+S+D+R+P+H & 80.08 & 67.57 & 32.43 & 76.84 \\
+S+D+R+P+M & 83.28 & 59.61 & 40.39 & 65.56 \\
+All seven & 79.36 & 80.58 & 19.42 & 76.45 \\
+\bottomrule
+\end{tabular}
+\caption{Source-separated frozen transfer, all cap. Rates are percentages.
+AI recall concerns Mureka only; Human specificity/FPR concern Saraga only.
+Group-equal specificity averages five performer/release component rates.}
+\label{tab:saraga-mureka-allcap}
+\end{table}
+
+Adding F changes Mureka sensitivity by $-13.00$ percentage points and Saraga
+specificity by $+17.28$ points. Adding M changes these endpoints by $+6.52$ and
+$-8.16$ points. Both trade-off directions persist across all five cap means.
+Adding H changes the all-cap endpoints by $+3.32$ and $-0.19$ points; its
+directions depend on cap. All seven improve the all-cap means by $+2.60$ and
+$+12.82$ points, but do not improve both endpoints at every cap. These are
+matched feature-set model differences, not causal effects of an isolated
+audio intervention.
+
+Single-family all-cap Mureka sensitivity/Saraga specificity are S
+89.24/33.01, D 48.32/67.57, R 91.00/64.66, P 67.12/69.71, F 64.20/90.29,
+H 80.56/71.84 and M 82.12/17.28 percent. In particular, M alone falsely labels
+82.72 percent of these Human recordings as AI on average. The results caution
+against universal interpretation of recurrence or high-frequency signatures;
+source, genre and production effects are not isolated by this design.
+
+\paragraph{Component sensitivity.}
+Saraga has five connected performer/release components of sizes 72, 14, 10,
+5 and 2. All-seven versus S/D/R/P all-cap specificity changes are respectively
+$+16.39$, $+10.00$, $+8.00$, $-8.00$ and $-20.00$ percentage points. Hence the
+recording-weighted $+12.82$-point gain becomes only $+1.28$ points with equal
+component weights. The smallest groups have substantial sampling uncertainty.
+At caps 25, 50, 100 and 200, recording-weighted Human specificity improves
+while equal-component specificity declines. Neither aggregation should be
+silently substituted for the other, and five components are not five datasets.
+
+\paragraph{Coverage and limits.}
+All 103 Human recordings remain present. S/D/F/H/M are complete on 103,
+R on 98 and P on 77. Missing values use only stored training transformations.
+Coverage mechanisms are documented in
+\path{SARAGA103_MEASUREMENT_COVERAGE_EN.md}. Provenance labels do not provide
+forensic certainty; source and class are confounded in these external tests.
+Saraga is outside the frozen training cohort but has historical research
+exposure through earlier 10-second inputs. Exact file-hash nonoverlap does
+not prove work, performance or pretraining independence. No pooled accuracy,
+ROC AUC, calibrated probability, significance or universal winner is claimed.
+
+\paragraph{Reproducibility and next development boundary.}
+Independent numerical auditing verified all 327,025 Saraga scores, with maximum
+absolute error $1.7208456881689926\times10^{-15}$ and exact agreement of every
+threshold decision. The audit covers all model/component integer counts and
+635 aggregate cells. Parent checks additionally reconciled 63,190 presentation
+and source numerical values. All 11 Saraga result files (177,911,960 bytes)
+are hash-verified locally and on NFS.
+
+Code is \path{code/score_saraga103_frozen_v4.py},
+\path{code/audit_saraga103_transfer_v1.py} and
+\path{code/present_saraga_mureka_frozen_transfer_v1.py}. The score freeze is
+\path{preregistration/saraga103_frozen_v4_transfer_frozen_v1.json}.
+Predictions and per-model results are in
+\path{results/saraga103_frozen_v4_transfer_results_v1/}; all 635 matched cells,
+60 fixed overview rows, 100 paired differences and component tables are in
+\path{results/presentation_saraga_mureka_frozen_transfer_v1/}. Acceptance is
+\path{audit/saraga_mureka_transfer_parent_acceptance_v1.json}; the numerical
+audit is \path{audit/saraga103_frozen_v4_transfer_numerical_audit_v1.json}.
+The narrative is \path{SARAGA_MUREKA_FROZEN_TRANSFER_RESULTS_EN.md}.
+
+These external scores are now exposed. A later optimized development version
+must preserve this experiment and explicitly label any inclusion of these
+603 recordings as development reuse. Combined with the original cohort this
+would yield 2,207 observations, 1,311 Human and 896 AI; it would not create an
+untouched confirmation set. Broader source/generator-heldout testing is needed
+before claiming improved generalization.

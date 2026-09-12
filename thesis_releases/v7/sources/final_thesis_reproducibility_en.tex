@@ -1,0 +1,114 @@
+\appendix
+\section{Reproducibility and artifact navigation}
+\label{app:reproduction}
+\begingroup\raggedright
+
+The project retains executable definitions, experiment-specific manifests,
+raw responses or measurements, classifier outputs, audits and rendered
+reports. The canonical local workspace is
+\path{/Users/yi/Documents/code/music}. Paths beginning with
+\path{artifacts/} are relative to that root. Large audio and intermediate
+products can reside on the remote NFS data volume rather than the local
+report mirror. A local report's existence does not establish that its full
+remote audio dependency graph is locally available.
+
+\subsection{Data identities, views and storage}
+The September 5 registry summary is
+\path{artifacts/source_diversity_expansion_20260905/results/inventory/corpus_inventory.json},
+with readable companion \path{corpus_inventory.md} in the same directory.
+It records a particular frozen population; it is not a live total formed by
+adding later overlapping cohorts. The local inventory snapshot is
+\path{artifacts/audio_phenomena_expansion_20260907/audit/closeout_local_inventory_20260908_v1/files.jsonl}.
+It lists files, not independent songs or a complete remote mirror.
+
+Remote expansion code and logs use
+\path{/mnt/nfs-code/users/yi/audio_phenomena_expansion_20260907};
+its primary audio/measurement products use
+\path{/mnt/nfs-data/users/yi/audio_phenomena_expansion_20260907}.
+These paths are remote filesystem references, not links to local files.
+Reproduction requires access to each manifest-bound source and compliance
+with that source's access conditions; this thesis does not redistribute
+restricted recordings or turn file possession into redistribution permission.
+
+\subsection{Completed classification tables}
+The following entry points retain full lattices rather than only the
+selected comparisons displayed in the main text. Within
+\path{artifacts/audio_phenomena_expansion_20260907/}:
+\begin{description}
+\item[Exact10.] \path{results/presentation_sdrfh_10s_v2/all_31x5_numeric_results.csv}
+contains the 31-subset, five-cap numeric presentation.
+\path{results/presentation_sdrfh_10s_v2/RESULTS_SDRFH_10S_EN.md}
+provides the interpretation; \path{UNCERTAINTY_SDRFH_10S_RESULTS_EN.md}
+documents the separate conditional and source-composition uncertainty analyses.
+\item[Equal60.] \path{results/presentation_equal60_v6_v1/primary_macro_overview_255.csv}
+contains all 255 subsets. \path{primary_matched_sc_deltas.csv} in that
+directory retains matched SC increments, including negative values.
+\path{primary_source_endpoints_all_arms.csv} supplies source endpoints,
+and \path{training_row_group_ranges.csv} describes actual training support.
+Files prefixed \path{diagnostic_all_cap_} preserve the separately labelled
+diagnostic modes. The directory's \path{COMMIT.json} binds the presentation
+products; it does not replace the model-level numerical audit.
+\end{description}
+
+The earlier four-family figures are
+\path{artifacts/source_diversity_expansion_20260905/results/verified_presentation/10s_15x5_auc_ba.png}
+and the corresponding \path{30s_15x5_auc_ba.png}. Their different cohorts
+and feature/evaluation versions must be preserved in any cross-table comparison.
+
+\subsection{Measurement evidence and scope of audits}
+The external BC report is
+\path{artifacts/audio_phenomena_expansion_20260907/results/bc_reserved_verified_report_v2/REPORT_EN.md},
+with its retained \path{REPORT.tex} and rendered
+\path{output/pdf/bc_reserved_verified_closeout_en.pdf} under the expansion
+root. Producer completion, independent numerical reconstruction and the
+scientific admission decision are separate evidence objects. Earlier failed
+audit records remain part of the history; the corrected storage-layout
+replay does not erase the original failure or change scientific tolerances.
+
+The Native30 FHSC integrity report is
+\path{artifacts/audio_phenomena_expansion_20260907/audit/native30_fhsc_committed_independent_audit_v1/REPORT_EN.md}.
+Its file, schema, lineage and missingness checks must not be described as
+independent re-extraction of every waveform descriptor. Conversely, a unit
+test of a synthetic fixture is not evidence that the actual cohort completed.
+Each claim in the thesis uses the audit level applicable to that claim.
+
+\subsection{Execution and interpretation invariants}
+Reproduction follows the dependency graph, not directory modification times:
+verify source/view identities; verify frozen inference evidence; verify
+per-recording measurements; assemble matched feature rows; verify the
+fixed split/cap schedule; fit under a separate frozen evaluation contract;
+replay predictions and endpoint aggregation; then render tables. An
+experiment \path{COMMIT.json} denotes its immutable product manifest,
+not necessarily a Git commit. A metadata schedule does not authorize fitting
+and is not a count of completed models.
+
+The CPU numerical path retains its frozen runtime and code dependencies.
+Neural inference in this project was restricted to RTX 5090 hardware;
+deterministic extraction and linear classification do not require a neural
+GPU call. Failed attempts, scientific nulls and processing errors are kept
+distinct. Resumption verifies existing products and does not replace failed
+values by zero, silently change a split, or select a more favourable window.
+
+Only training rows determine imputation, scaling and fitted coefficients.
+Source/group weights, ridge penalty 10 and threshold 0.5 remain fixed.
+Reproduction must retain all modes and omissions, preserve transitive group
+purges, and avoid pooling raw scores from different fitted models into an
+unqualified global AUC. Ordinary-group results, held-Human-source results
+and held-generator results answer different questions.
+
+\subsection{Document build and incomplete final bindings}
+The working master is
+\path{artifacts/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_final_working_en.tex}.
+From its containing directory, the retained build command is
+\begin{verbatim}
+tectonic --keep-logs --outdir ../output/pdf \
+  interpretable_audio_thesis_final_working_en.tex
+\end{verbatim}
+Successful compilation is necessary but not sufficient: final acceptance
+also requires resolved citations, traceable tables and visual inspection of
+every page. This working appendix does not yet supply terminal Native30
+classification/BC-increment hashes because those results remain unfinished.
+Their actual verified bindings, runtime manifests and commands must be added
+before the document can be designated the final thesis. No placeholder hash
+or prospective fit count is substituted for completion evidence.\par
+\endgroup
