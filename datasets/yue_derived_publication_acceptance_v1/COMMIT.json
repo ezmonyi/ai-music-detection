@@ -1,0 +1,10 @@
+{
+  "status": "4900_additional_yue_objects_uploaded_hash_verified",
+  "audio_objects": 4900,
+  "manifest_sha256": "820c8ac6ea6c85fdf2acfa2fdd7cff93cc322df88e94ddcff05758313997a22c",
+  "plan_pins": {
+    "objects.json": "3008a5aeef5f1788585f185936e613357775596662ca1ae7637eea7e10f13815",
+    "memberships.json": "9de65e002bf978a40f34800f7a844d660cd0afab8797b0ba4b1fdf1691a74195"
+  },
+  "whole_project_complete": false
+}

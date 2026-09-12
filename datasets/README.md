@@ -58,8 +58,10 @@ human specificity, balanced accuracy or two-class ROC AUC.
 - [YuE legacy Demucs](yue2_demucs_publication_v1/README.md): all 1,000 stems
   from 500 recordings independently accepted; exact inventory and original-ID
   bindings, all 20 batch receipts and terminal acceptance are retained.
-- [Remaining YuE derived objects](yue_derived_publication_plan_v1/README.md):
-  4,900 additional byte objects are being uploaded; no terminal acceptance yet.
+- [YuE derived acceptance](yue_derived_publication_acceptance_v1/README.md):
+  all 4,900 additional objects uploaded; all 5,900 planned objects including
+  legacy Demucs independently accepted at one fixed revision. The immutable
+  [publication plan](yue_derived_publication_plan_v1/README.md) preserves memberships.
 - [DEAM attribution](deam_selected_attribution_v1/README.md): all 300 selected
   records matched official artist/title metadata; per-track licenses unresolved.
 

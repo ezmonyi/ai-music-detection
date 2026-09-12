@@ -1,0 +1,17 @@
+{
+  "revision": "caed9220f68b258e9c2dcb89792ccb1fe4d1dc61",
+  "verified_unique_audio_objects": 5900,
+  "additional_objects": 4900,
+  "legacy_demucs_objects": 1000,
+  "audio_path_memberships": 6922,
+  "checked_bytes": 56849461990,
+  "plan_pins": {
+    "objects.json": "3008a5aeef5f1788585f185936e613357775596662ca1ae7637eea7e10f13815",
+    "memberships.json": "9de65e002bf978a40f34800f7a844d660cd0afab8797b0ba4b1fdf1691a74195"
+  },
+  "manifest_sha256": "820c8ac6ea6c85fdf2acfa2fdd7cff93cc322df88e94ddcff05758313997a22c",
+  "final_acceptance": true,
+  "verification": "Anonymous pinned-revision exact manifests/notices and all 5900 LFS hashes/sizes; no full audio redownload",
+  "scope": "Seven inventoried YuE directories only; not all historical project audio",
+  "whole_project_complete": false
+}
