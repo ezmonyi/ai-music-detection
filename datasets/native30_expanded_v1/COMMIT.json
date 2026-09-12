@@ -1,0 +1,20 @@
+{
+  "source_verification": {
+    "status": "all_local_products_hash_verified",
+    "root": "/Users/yi/Documents/code/music/artifacts/yue2_500_extension_20260911/results/expanded_native30_features_v1",
+    "products": 6,
+    "commit_sha256": "353b170a41ac442f612460da5483e92fcf60a2ca0c140fd0eba29223fce212b5"
+  },
+  "rows": 4328,
+  "products": {
+    "cohort.csv": {
+      "bytes": 761605,
+      "sha256": "58c0315d169a4ee63bb24facf857617f36822dea01431a207837065493a9d0e5"
+    },
+    "README.md": {
+      "bytes": 2283,
+      "sha256": "1fe75472365c26a4ac6125dc5d9523444ab362d0e5914085dd8de248815abcf1"
+    }
+  },
+  "audio_complete": false
+}
