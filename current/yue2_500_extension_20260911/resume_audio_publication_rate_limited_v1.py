@@ -11,7 +11,7 @@ from huggingface_hub import HfApi
 
 def main():
     parser=argparse.ArgumentParser()
-    parser.add_argument('module',choices=['publish_aime_originals_v1','publish_open_model_audio_v1','publish_mureka_originals_v1','publish_suno_originals_v1','publish_mtt_clips_v1'])
+    parser.add_argument('module',choices=['publish_aime_originals_v1','publish_open_model_audio_v1','publish_mureka_originals_v1','publish_suno_originals_v1','publish_mtt_clips_v1','publish_early_fma_originals_v1'])
     args=parser.parse_args()
     module=importlib.import_module(args.module)
     token=json.load(sys.stdin)['token']
