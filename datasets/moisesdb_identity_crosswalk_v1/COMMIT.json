@@ -1,0 +1,18 @@
+{
+  "rows": 239,
+  "benchmark_matched": 235,
+  "source_sha256": "fc05efbf18daffd31a123f22146d8d20a4bfe2a9fe2cd134552e871cd5359ca9",
+  "benchmark_sha256": "5698390fd7d9566a291f5afffd6e5b2d65b072648bd04262c7e47284a0462f81",
+  "products": {
+    "crosswalk.csv": {
+      "bytes": 30677,
+      "sha256": "d2264490853cf653f8ec30d7243aa204aa5fbc8b4293170eb8c9e483b1dd9ba6"
+    },
+    "README.md": {
+      "bytes": 967,
+      "sha256": "1b3be6caa61978b8b8a6c706d1460211f63f0d3116f225ec1603b984e1a37ee3"
+    }
+  },
+  "artist_attribution_recovered": false,
+  "audio_uploaded": false
+}
