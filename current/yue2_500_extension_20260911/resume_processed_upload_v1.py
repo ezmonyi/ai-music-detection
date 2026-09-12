@@ -13,6 +13,16 @@ TARGETS = {'open_models': ('publish_open_model_test_views_v1', 3221467),
            'aime': ('publish_aime_test_views_v1', 3222621)}
 
 
+def retry_delay(error):
+    """Honor longer server delays and distinguish hourly commit quotas."""
+    response = getattr(error, 'response', None)
+    if getattr(response, 'status_code', None) != 429:
+        return None
+    retry = response.headers.get('Retry-After', '360')
+    floor = 3900 if 'commits' in str(error).lower() else 360
+    return max(floor, int(retry)) if retry.isdigit() else floor
+
+
 def main(target):
     name, prior_pid = TARGETS[target]
     assert not Path(f'/proc/{prior_pid}').exists(), 'Prior process still exists; inspect before resuming'
@@ -41,10 +51,8 @@ def main(target):
             response = getattr(error,'response',None)
             status = getattr(response,'status_code',None)
             print(json.dumps(dict(attempt=attempt+1,error_type=type(error).__name__,status=status)),flush=True)
-            if status != 429 or attempt == 3: os._exit(1)
-            retry = response.headers.get('Retry-After','360')
-            floor = 3900 if 'commits' in str(error).lower() else 360
-            delay = max(floor,int(retry)) if retry.isdigit() else floor
+            delay = retry_delay(error)
+            if delay is None or attempt == 3: os._exit(1)
             time.sleep(delay)
 
 
