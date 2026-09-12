@@ -1,0 +1,62 @@
+{
+  "objects": 14244,
+  "counts": {
+    "accepted_supplement": 1278,
+    "not_yet_accepted": 12000,
+    "matched_at_original_snapshot": 966
+  },
+  "bytes_by_status": {
+    "accepted_supplement": 1947050535,
+    "not_yet_accepted": 17136177173,
+    "matched_at_original_snapshot": 2621724771
+  },
+  "records_sha256": "7c6687764402f8539f77f55ece6996f86622246871256b9fcd89b48dd7fa06aa",
+  "accepted_bindings": {
+    "hf_diffrhythm_test_views_v1": {
+      "revision": "755bf1cc9b8d6ace73d99e2459e4c1750813ff5d",
+      "verified_audio_objects": 100,
+      "original_ids": 50,
+      "conditioning_groups": 10,
+      "checked_bytes": 410987527,
+      "manifest_sha256": "b7b5fe504cd54a54302eb58563a64900f11b4c413bd2d9e252b1d8d703677cff",
+      "notice_sha256": "6c1cd87702b79e79a2b7e5cc275335ce5c68c6a080874f210300ac297d68b4a6",
+      "verification": "Anonymous exact manifest/notice and all remote hashes/sizes; not full audio redownload",
+      "final_acceptance": true,
+      "whole_project_complete": false
+    },
+    "hf_ishizaka_test_views_v1": {
+      "revision": "52248d640d10353c401a07576067e2d6cd09aa42",
+      "verified_audio_objects": 78,
+      "original_ids": 39,
+      "checked_bytes": 57343890,
+      "manifest_sha256": "cd130ab102879479513a08c74be5c71e7c6e42dd0444081e54b717d5e7b1f6e2",
+      "final_acceptance": true,
+      "verification": "Anonymous exact manifest/notice and every LFS hash/size; no full audio redownload",
+      "whole_project_complete": false
+    },
+    "hf_maestro_historical_views_v1": {
+      "revision": "090981d42f5eecc3dbcaf6ff6d8ebbde37f9285e",
+      "verified_audio_objects": 600,
+      "original_ids": 300,
+      "checked_bytes": 1259759294,
+      "manifest_sha256": "f095d477de8f254e321348e39064ef44be3d826c8f51a2314d1110e2eb75a32e",
+      "notice_sha256": "71d3a38565202c4cf2f4e9fa600984656a8729d518a10191e864e97eb77ab2e3",
+      "verification": "Anonymous exact manifest/notice and all remote hashes/sizes; not full audio redownload",
+      "final_acceptance": true,
+      "whole_project_complete": false
+    },
+    "hf_mtt_test_views_v1": {
+      "revision": "1cfdbfac74fe7fcb56262fcd2f342faf1b348744",
+      "verified_audio_objects": 500,
+      "original_ids": 500,
+      "checked_bytes": 218959824,
+      "manifest_sha256": "a5834cb0ecd61dc3d5a31389412c517579313439b0cdfdac789596d7b74b6a38",
+      "notice_sha256": "ac232a1459ab6ab94e17902017a5319fb221196421db1d19a1f6d47a9d1d8378",
+      "verification": "Anonymous exact manifest/notice and all remote hashes/sizes; not full audio redownload",
+      "final_acceptance": true,
+      "whole_project_complete": false
+    }
+  },
+  "scope": "Frozen historical audio_path objects only; running uploads not counted as accepted",
+  "whole_project_complete": false
+}
