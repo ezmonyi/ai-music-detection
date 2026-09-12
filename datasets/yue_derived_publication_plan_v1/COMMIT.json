@@ -1,0 +1,37 @@
+{
+  "status": "bound_derived_publication_plan_not_upload_acceptance",
+  "source_inventory_sha256": "f1ce7251de8a3b08f6fe1c0cb629c494cf3cbd354495dafcb135438e709eed8c",
+  "original_manifest_sha256": "4981ad60bd2a658d33d07e79abfb1e4f17d4ff7886e0efabd3d741abc5ab3776",
+  "audio_memberships": 6922,
+  "unique_byte_objects": 5900,
+  "logical_bytes": 63797014940,
+  "unique_bytes": 56849461990,
+  "separately_queued_legacy_objects": 1000,
+  "remaining_objects": 4900,
+  "remaining_bytes": 46265373990,
+  "excluded_non_yue_audio_memberships": 1000,
+  "directory_memberships": {
+    "analysis_inputs_v1": 500,
+    "demucs_v1": 1000,
+    "native30_fhsc_v1": 498,
+    "native30_neural_v1": 1992,
+    "native60_inputs_v1": 276,
+    "native60_neural_v1": 1656,
+    "legacy_spectral_measurement_v1": 1000
+  },
+  "products": {
+    "memberships.json": {
+      "bytes": 2991239,
+      "sha256": "9de65e002bf978a40f34800f7a844d660cd0afab8797b0ba4b1fdf1691a74195"
+    },
+    "objects.json": {
+      "bytes": 3036509,
+      "sha256": "3008a5aeef5f1788585f185936e613357775596662ca1ae7637eea7e10f13815"
+    },
+    "excluded_non_yue_audio.json": {
+      "bytes": 319996,
+      "sha256": "01daee22231b559bf6159009aaca05c09b56cef1f2b10e095366d6eddda0ebf6"
+    }
+  },
+  "whole_project_complete": false
+}
