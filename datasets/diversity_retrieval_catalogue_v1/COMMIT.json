@@ -1,0 +1,35 @@
+{
+  "status": "audited_source_acquisition_and_historical_identity_join",
+  "rows": 2641,
+  "source_counts": {
+    "human_magnatagatune": 500,
+    "human_maestro_v3": 300,
+    "human_musicnet": 330,
+    "human_medleydb": 178,
+    "human_moisesdb": 239,
+    "human_urmp": 44,
+    "human_deam": 300,
+    "human_gtzan": 100,
+    "human_hindustani_raag_hf": 100,
+    "ai_audiox_third_party": 500,
+    "ai_diffrhythm_pilot": 50
+  },
+  "verified_source_bytes": 74350492316,
+  "inputs": {
+    "audit_commit_sha256": "811bb52731cd61286ce8fc408df50f92dae1251e58aa8cd0bc877ab0509cf3cc",
+    "acquisition_sha256": "d9695922b46bae77b8d9572f450e38e1e637827b9039239283dbbc19a3333d26",
+    "historical_sha256": "a03aec930130fcb942c40b35ba5fb49109ceee588894124010448f041d9d1ef4"
+  },
+  "products": {
+    "README.md": {
+      "bytes": 1636,
+      "sha256": "34f548e1b351252bf78d05893460cb63b90c723faab77b56cc7fd083293ef2d4"
+    },
+    "retrieval.csv": {
+      "bytes": 1469413,
+      "sha256": "fb104e7eb2713d6278df19190559d05be6749c5b4ef2c4ec3637efcb4c25d839"
+    }
+  },
+  "audio_publication_established_by_this_catalogue": false,
+  "whole_project_complete": false
+}

@@ -8,6 +8,7 @@ The release is still incomplete; repository visibility is not an audio license.
 |---|---|---|
 | [Cross-experiment identities](cross_experiment_catalogue_v1/README.md) | Exact-ID union with separate cohort memberships | 11,242 IDs, 29 sources; not content-deduplicated |
 | [Historical inputs](historical_input_inventory_v1/README.md) | Input roles and provenance | 10,141 IDs; 10s and 30s views overlap |
+| [Audited diversity retrieval index](diversity_retrieval_catalogue_v1/README.md) | Fixed source locators, source hashes, recorded terms and historical groups | 2,641 existing IDs; all source bytes freshly verified |
 | [Historical measurement status](historical_measurement_coverage_v1/README.md) | Successful/failed and per-family availability | 10,141 10s rows and 4,497 30s rows |
 | [Expanded Native30](native30_expanded_v1/README.md) | Completed feature cohort index | 4,228 development plus 100 locked YuE2 IDs |
 | [All YuE2 originals and duration eligibility](yue2_duration_catalogue_v1/README.md) | Preserve all generations, including short outputs | 500 IDs; 498 Native30 and 276 Native60 eligible |
