@@ -1,0 +1,26 @@
+{
+  "revision": "43171475443f3708a8f14a37775d0b237b7197d4",
+  "files": [
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_020962_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_020962_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021048_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021048_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021072_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021072_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021265_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021265_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021396_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021396_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021599_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021599_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021662_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021662_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021766_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021766_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021803_0.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021803_0.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_cn_suno_cn_021942_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_cn_suno_cn_021942_1.flac"
+  ],
+  "sha256_verified": true
+}

@@ -1,0 +1,15 @@
+{
+  "source": "mtt",
+  "repo": "EZMONYI/music-ai-human-test-audio",
+  "revision": "8cc2c8d6bf54735b5ada8126461c0b3031060fce",
+  "checked_files": 500,
+  "checked_bytes": 58615981,
+  "manifest_sha256": "90efec2510f56a2e224fb091670a41f7a7b0203f7767d51de2205b79a6632a5d",
+  "public_metadata_sha256": {
+    "manifest.json": "90efec2510f56a2e224fb091670a41f7a7b0203f7767d51de2205b79a6632a5d",
+    "README.md": "d42912e2fc52df096d352527762ce8619c1f8adfbcb29571e4fe08fda13cd3dc"
+  },
+  "remote_lfs_sha256_verified": true,
+  "final_acceptance": true,
+  "whole_project_complete": false
+}

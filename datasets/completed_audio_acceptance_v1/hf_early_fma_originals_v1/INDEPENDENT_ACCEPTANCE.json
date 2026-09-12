@@ -1,0 +1,10 @@
+{
+  "kind": "fma",
+  "revision": "1298fbbebdde70fff07e2ef8f2737d8b78351e0b",
+  "verified_audio_files": 162,
+  "excluded_files_absent": 38,
+  "public_manifest_sha256": "62219501b99b9069774501a2dbb7b2108e76ea34e807bed9d4b4b85ff7abc665",
+  "source_records_bound": true,
+  "final_acceptance": true,
+  "whole_project_complete": false
+}

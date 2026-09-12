@@ -1,0 +1,9 @@
+{
+  "status": "162_early_fma_originals_uploaded_hash_verified",
+  "revision": "1298fbbebdde70fff07e2ef8f2737d8b78351e0b",
+  "audio_files": 162,
+  "held_files": 38,
+  "source_plan_sha256": "b3a1b9f926873b1bcdc07a0ac3073e4fdadf73766625afa7c7b3e56a9008d01b",
+  "manifest_sha256": "62219501b99b9069774501a2dbb7b2108e76ea34e807bed9d4b4b85ff7abc665",
+  "whole_project_complete": false
+}

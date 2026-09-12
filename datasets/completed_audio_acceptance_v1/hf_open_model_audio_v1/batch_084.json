@@ -1,0 +1,26 @@
+{
+  "revision": "0fadd827394df11c324ff2e3cf41da6cbd8552ab",
+  "files": [
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013480_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013480_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013488_0.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013488_0.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013565_0.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013565_0.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013579_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013579_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013733_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013733_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013915_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013915_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013922_0.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013922_0.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_013933_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_013933_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_014015_1.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_014015_1.flac",
+    "audio/project_open_models_v1/heartmula/original/heartmula_muse_en_suno_en_014158_0.wav",
+    "audio/project_open_models_v1/heartmula/standardized30/ai_heartmula_muse_en_suno_en_014158_0.flac"
+  ],
+  "sha256_verified": true
+}

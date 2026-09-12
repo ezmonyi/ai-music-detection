@@ -1,0 +1,17 @@
+{
+  "source": "suno",
+  "repo": "EZMONYI/music-ai-human-test-audio",
+  "revision": "8cc2c8d6bf54735b5ada8126461c0b3031060fce",
+  "checked_files": 500,
+  "checked_bytes": 2282055145,
+  "manifest_sha256": "5ddf39584dea9a8e22e93b0ecf65ddff31b0ac9c554bae9ad35c30958a8ff23b",
+  "public_metadata_sha256": {
+    "manifest.json": "5ddf39584dea9a8e22e93b0ecf65ddff31b0ac9c554bae9ad35c30958a8ff23b",
+    "README.md": "7ab958cd058af017c9699b5fbfbc2fce4d37854ddb6322f15c598646b5686f89",
+    "SOURCE_CARD_HUMAIR.md": "d99dbe56e4c4ae59c9b156d966d03bfb811013f827fb97614d3ff97a91174d61",
+    "SOURCE_CARD_KUKEDLC.md": "d86399e69181ce5678520f6fa9cf2560d4fa969c57a3c8f85af2435192537d51"
+  },
+  "remote_lfs_sha256_verified": true,
+  "final_acceptance": true,
+  "whole_project_complete": false
+}

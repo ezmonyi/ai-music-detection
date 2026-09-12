@@ -1,0 +1,26 @@
+{
+  "revision": "09fce2d3c269b4c5782acf07ec696bd06e8efaba",
+  "files": [
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_000887_1.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_000887_1.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_000896_0.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_000896_0.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_000942_1.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_000942_1.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_000955_0.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_000955_0.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_001079_1.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_001079_1.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_001149_0.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_001149_0.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_001191_0.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_001191_0.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_001199_1.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_001199_1.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_001270_0.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_001270_0.flac",
+    "audio/project_open_models_v1/acestep/original/acestep_muse_cn_suno_cn_001353_1.flac",
+    "audio/project_open_models_v1/acestep/standardized30/ai_acestep_muse_cn_suno_cn_001353_1.flac"
+  ],
+  "sha256_verified": true
+}

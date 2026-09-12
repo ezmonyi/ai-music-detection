@@ -1,0 +1,12 @@
+{
+  "repo": "EZMONYI/music-ai-human-test-audio",
+  "revision": "8cc2c8d6bf54735b5ada8126461c0b3031060fce",
+  "checked_files": 2000,
+  "identities": 1000,
+  "checked_bytes": 9712617613,
+  "manifest_sha256": "7be5aaa118e77181aa489ef3462b254de6f37679e69cb99e690d069387e4f5f5",
+  "public_manifest_bytes_verified": true,
+  "source_audit_bound": true,
+  "final_acceptance": true,
+  "whole_project_complete": false
+}
