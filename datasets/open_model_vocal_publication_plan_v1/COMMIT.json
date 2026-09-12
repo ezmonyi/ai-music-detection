@@ -1,0 +1,10 @@
+{
+  "objects": 1958,
+  "original_ids": 1000,
+  "bytes": 6833822152,
+  "objects_sha256": "292d79a72c0345ed1ca5948c2011c1eec1a8d5d5f6e07c9a1acce4be3bb162ce",
+  "input_objects_sha256": "49ff713dc524189723b4adc6d9874d252d6437dbf6e97d25a0acff4ad760db01",
+  "original_manifest_sha256": "7be5aaa118e77181aa489ef3462b254de6f37679e69cb99e690d069387e4f5f5",
+  "status": "source_bound_plan_not_uploaded",
+  "whole_project_complete": false
+}
