@@ -1,0 +1,50 @@
+view,source_group,role,rows
+metadata_10s.csv,ACE-Step,development,400
+metadata_10s.csv,ACE-Step,locked,100
+metadata_10s.csv,AudioLDM 2 Large,development,500
+metadata_10s.csv,AudioLDM 2 Music,development,500
+metadata_10s.csv,FMA,development,400
+metadata_10s.csv,FMA,locked,100
+metadata_10s.csv,HeartMuLa,development,400
+metadata_10s.csv,HeartMuLa,locked,100
+metadata_10s.csv,MTG-Jamendo,development,500
+metadata_10s.csv,MusicGen Large,development,500
+metadata_10s.csv,MusicGen Medium,development,500
+metadata_10s.csv,MusicGen Small,development,500
+metadata_10s.csv,Mustango,development,500
+metadata_10s.csv,Riffusion,development,500
+metadata_10s.csv,Stable Audio v1,development,500
+metadata_10s.csv,Stable Audio v2,development,500
+metadata_10s.csv,Suno,development,400
+metadata_10s.csv,Suno,locked,100
+metadata_10s.csv,Udio,development,500
+metadata_10s.csv,ai_audiox_third_party,provisional,500
+metadata_10s.csv,ai_diffrhythm_pilot,pilot,50
+metadata_10s.csv,human_deam,locked,300
+metadata_10s.csv,human_gtzan,stress,100
+metadata_10s.csv,human_hindustani_raag_hf,stress,100
+metadata_10s.csv,human_maestro_v3,development,300
+metadata_10s.csv,human_magnatagatune,development,500
+metadata_10s.csv,human_medleydb,development,178
+metadata_10s.csv,human_moisesdb,development,239
+metadata_10s.csv,human_musicnet,locked,330
+metadata_10s.csv,human_urmp,development,44
+metadata_30s.csv,ACE-Step,development,400
+metadata_30s.csv,ACE-Step,locked,100
+metadata_30s.csv,FMA,development,400
+metadata_30s.csv,FMA,locked,100
+metadata_30s.csv,HeartMuLa,development,366
+metadata_30s.csv,HeartMuLa,locked,92
+metadata_30s.csv,MTG-Jamendo,development,500
+metadata_30s.csv,Suno,development,400
+metadata_30s.csv,Suno,locked,100
+metadata_30s.csv,Udio,development,500
+metadata_30s.csv,ai_diffrhythm_pilot,pilot,50
+metadata_30s.csv,human_deam,locked,300
+metadata_30s.csv,human_gtzan,stress,99
+metadata_30s.csv,human_hindustani_raag_hf,stress,9
+metadata_30s.csv,human_maestro_v3,development,300
+metadata_30s.csv,human_medleydb,development,168
+metadata_30s.csv,human_moisesdb,development,239
+metadata_30s.csv,human_musicnet,locked,330
+metadata_30s.csv,human_urmp,development,44

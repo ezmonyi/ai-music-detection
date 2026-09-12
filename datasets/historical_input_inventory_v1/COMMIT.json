@@ -1,0 +1,29 @@
+{
+  "status": "verified_projection_not_final_test_membership",
+  "source_sha256": {
+    "metadata_10s.csv": "a03aec930130fcb942c40b35ba5fb49109ceee588894124010448f041d9d1ef4",
+    "metadata_30s.csv": "eb313f97e2d69d743423efc170eecb24f1f00ee77ad789461772daecd058c242"
+  },
+  "products": {
+    "metadata_10s.csv": {
+      "bytes": 2405999,
+      "sha256": "d3519aa072498ec7812bd73b8456c0a47caba7bbac9801b1e4049df32a477361"
+    },
+    "metadata_30s.csv": {
+      "bytes": 1037424,
+      "sha256": "eb7b001fa3f0669eb2e086a948ae8921c617577a89ac91ca5dde8b1fcd33c460"
+    },
+    "README.md": {
+      "bytes": 1661,
+      "sha256": "15e83c7fed573fefe3dedce34f727824bd1058c828e7a9090a5e01619b69461e"
+    },
+    "counts_by_source_role.csv": {
+      "bytes": 2196,
+      "sha256": "922004ceffbd38c2114602b08f1c3020aebee082de0ba8729078f57cc71c9f7c"
+    }
+  },
+  "distinct_ids": 10141,
+  "view_rows": 14638,
+  "audio_rehashed": false,
+  "audio_uploaded": false
+}
