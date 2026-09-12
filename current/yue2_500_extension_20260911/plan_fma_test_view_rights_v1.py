@@ -7,6 +7,11 @@ from pathlib import Path
 import re
 
 
+def is_derivative_candidate_license(url):
+    return bool(re.fullmatch(r'https://creativecommons.org/licenses/(by|by-sa|by-nc|by-nc-sa)/(1\.0|2\.0|2\.5|3\.0|4\.0)/(us/)?', url)
+                or url == 'https://creativecommons.org/publicdomain/zero/1.0/')
+
+
 def load(p, pin):
     raw = p.read_bytes(); assert hashlib.sha256(raw).hexdigest() == pin
     return json.loads(raw)
@@ -27,8 +32,7 @@ def main(objects, sources, out):
         licenses = sorted({r.get('license_url', '') for r in originals})
         if all(r['status'] == 'explicit_version_original_candidate' for r in originals) and len(licenses) == 1:
             url = licenses[0]
-            if (re.fullmatch(r'https://creativecommons.org/licenses/(by|by-sa|by-nc|by-nc-sa)/(1\.0|2\.0|2\.5|3\.0|4\.0)/(us/)?', url)
-                    or url == 'https://creativecommons.org/publicdomain/zero/1.0/'):
+            if is_derivative_candidate_license(url):
                 status = 'derivative_license_candidate_requires_notice'
             elif '-nd/' in url:
                 status = 'hold_no_derivatives'
