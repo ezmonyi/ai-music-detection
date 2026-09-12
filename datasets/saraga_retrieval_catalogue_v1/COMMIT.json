@@ -1,0 +1,22 @@
+{
+  "status": "audited_original_retrieval_catalogue",
+  "records": 108,
+  "classifier_ids": 103,
+  "source_records_sha256": "5982e37c320db8287cb78f25bad22b49c33a7441f4c7a57fa2f09cd449ea8925",
+  "products": {
+    "README.md": {
+      "bytes": 1392,
+      "sha256": "245f9b549b3d4060c779840dc08b68aaebf367b8ca8fd35c087edb3aabc068f5"
+    },
+    "retrieval.csv": {
+      "bytes": 41370,
+      "sha256": "ad4f3721b1ce3507a05ba6ce0471b112f7f5fe01678fd2f78a39d020be9eed92"
+    },
+    "records.json": {
+      "bytes": 222882,
+      "sha256": "9a2744ac9f3db51981efa4607871f722722b1fdd04d49d4f9750cb0bf2e6ba75"
+    }
+  },
+  "audio_uploaded": false,
+  "whole_project_complete": false
+}
