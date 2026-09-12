@@ -1,0 +1,150 @@
+\documentclass[11pt]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs,url,hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
+\title{Research Artifact Preservation and Audio Publication Supplement}
+\author{AI--Human Music Detection Thesis Project}
+\date{13 September 2026: versioned delivery checkpoint}
+\begin{document}
+\maketitle
+
+\section{Scope and scientific status}
+This supplement records preservation work after the English thesis v7. It
+does not change feature definitions, model fits, thresholds, experimental
+memberships, or reported classification results. The BC extension, expanded
+YuE Native30 evaluations, locked scoring, legacy spectral comparison and
+Native60 transfer experiments are complete. Whole-project audio delivery is
+\emph{not} complete. Publication status must not be substituted for scientific
+validation, and file counts must not be interpreted as independent songs.
+
+Code and versioned catalogues are maintained in
+\href{https://github.com/ezmonyi/ai-music-detection}{the project GitHub repository}.
+Audio is published in
+\href{https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio}{the public HF dataset}.
+The local report root, including older results, is
+\nolinkurl{/Users/yi/Documents/report/music_ai_detection_20260912}.
+
+\section{Original-source and actual-input coverage are different}
+At the fixed HF revision
+\nolinkurl{caed9220f68b258e9c2dcb89792ccb1fe4d1dc61}, the public snapshot
+contained 16,795 direct audio/MIDI paths and 130,247,953,279 logical bytes.
+Archive members were not enumerated. Of 10,141 historical recorded raw hashes,
+7,781 matched public audio objects and 2,360 did not. These counts exclude
+later-only identities and do not prove processed-input coverage.
+
+A separate audit read the actual \texttt{audio\_path} files named in the
+historical 10-second and 30-second metadata. All 14,246 distinct filesystem
+paths were readable. Their 14,638 experimental memberships resolve to 14,244
+unique byte objects. Only 966 objects matched the pre-supplement public
+snapshot; 13,278 objects, totaling 19,083,227,708 bytes, did not. The larger
+13,480 unmatched count from the initial audit refers to memberships, not
+unique files. Runtime crop settings are retained; the audit does not claim
+that every runtime crop was rendered or every separated stem was enumerated.
+
+\section{Independently accepted processed-input supplements}
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Supplement & File objects & Bytes \\
+\midrule
+DiffRhythm pilot & 100 & 410,987,527 \\
+Ishizaka/MusicNet subset & 78 & 57,343,890 \\
+Historical MAESTRO & 600 & 1,259,759,294 \\
+MagnaTagATune & 500 & 218,959,824 \\
+\midrule
+Total & 1,278 & 1,947,050,535 \\
+\bottomrule
+\end{tabular}
+\end{center}
+Each acceptance checks an exact public manifest and notice at one fixed
+revision and every remote file hash/size. It is not a full waveform
+redownload. DiffRhythm retains 50 outputs and ten conditioning groups;
+Ishizaka retains 39 source-reviewed recordings; MAESTRO retains 300
+performances. These are processed versions of existing inputs.
+
+The acceptance records reside under \texttt{current\_results/} in folders
+\nolinkurl{hf_diffrhythm_test_views_v1},
+\nolinkurl{hf_ishizaka_test_views_v1},
+\nolinkurl{hf_maestro_historical_views_v1}, and
+\nolinkurl{hf_mtt_test_views_v1}. Each contains
+\nolinkurl{INDEPENDENT_ACCEPTANCE.json} and \nolinkurl{manifest.json}.
+The GitHub dataset catalogues preserve corresponding receipts and batch records.
+
+\section{Remaining processed-file backlog}
+After these acceptances, 12,000 objects (17,136,177,173 bytes) remain without
+final acceptance in the frozen audit scope. A dispatched publisher is not
+proof of a live transfer or completed release.
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Checkpoint category & Objects \\
+\midrule
+AIME: dispatched, not accepted & 5,500 \\
+ACE-Step/HeartMuLa: dispatched, not accepted & 800 \\
+FMA licensed candidates: dispatched, not accepted & 316 \\
+Suno: prepared, not dispatched & 900 \\
+FMA: no-derivatives restriction & 390 \\
+FMA: unresolved or mixed terms & 194 \\
+Other source rights/provenance unresolved & 3,900 \\
+\bottomrule
+\end{tabular}
+\end{center}
+The FMA screening retains exact license versions and jurisdiction where
+recorded; it does not relicense all files under a single modern CC license.
+Metadata declarations are not a warranty of every underlying recording right.
+ND processing restrictions are handled conservatively. Other source issues
+include individual recording rights, creator attribution and explicit
+redistribution-consent requests. Preserved bytes are not equivalent to
+permission to publish them.
+
+\section{Upload recovery and reproducibility safeguards}
+Two distinct HF limits were observed: short-window API limits and a response
+stating 128 repository commits per hour. The latter terminated the AIME
+publisher after 1,900 processed files. Earlier short-cooldown recovery attempts
+for open-model and FMA files also returned 429 responses. Verified process
+identities were used when replacing those outdated recovery workers; existing
+audio, batch receipts and logs were preserved. Replacement workers wait
+3,900 seconds before resuming and honor longer server retry delays. This
+checkpoint does not claim that the cooldown has ended or uploads have resumed.
+
+Authentication is passed through standard input, not committed to the
+repository. Recovery uses per-output process locks. Completed batches are
+rechecked against remote hashes before being skipped; new files are checked
+against their expected local hashes before upload. These checks are separate
+from the final anonymous acceptance.
+
+\section{Code and analysis references}
+Current scripts are under the GitHub directory
+\nolinkurl{current/yue2_500_extension_20260911/}. Relevant implementations are:
+\begin{itemize}
+\item \nolinkurl{audit_historical_test_views_v1.py} and\newline
+\nolinkurl{plan_historical_test_view_objects_v1.py}: actual-input hashing and deduplication.
+\item \nolinkurl{reconcile_processed_delivery_v1.py} and
+\nolinkurl{classify_processed_backlog_v1.py}: receipt-bound coverage and backlog partitioning.
+\item \nolinkurl{plan_fma_test_view_rights_v1.py}: conservative per-recording license screening.
+\item \nolinkurl{resume_processed_upload_v1.py}: locked, rate-aware recovery.
+\item Source-specific \texttt{publish\_*\_test\_views\_v1.py} and
+\texttt{verify\_*\_test\_views\_v1.py}: publication and acceptance.
+\end{itemize}
+Analysis products are preserved under local \texttt{datasets/}:
+\nolinkurl{historical_public_coverage_20260913_v2},
+\nolinkurl{historical_test_view_objects_v1},
+\nolinkurl{processed_delivery_reconciliation_v1},
+\nolinkurl{processed_backlog_v1}, and \nolinkurl{fma_test_view_rights_v2}.
+Their COMMIT records bind output hashes and exact audit scopes.
+
+Six upload-backoff tests and four license-screening tests passed locally.
+Byte comparisons found all 162 current YuE-extension Python scripts and all
+392 current audio-phenomena Python scripts matched GitHub staging. A separate
+1,223-file publication manifest records source hashes and zero matches for
+the checker's literal credential patterns. Neither check constitutes a full
+security audit, complete environment capture, or all-project source coverage.
+
+\section{Outstanding work}
+Finish and independently accept remaining permitted uploads, dispatch the
+prepared Suno publication when quota allows, reconcile unenumerated stems and
+earlier/external scopes, resolve remaining source permissions, and update
+the final delivery index and thesis references without overwriting this
+checkpoint. No experimental result is changed by this supplement.
+\end{document}
