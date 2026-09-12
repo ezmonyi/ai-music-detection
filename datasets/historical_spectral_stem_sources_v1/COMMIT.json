@@ -1,0 +1,89 @@
+{
+  "objects": 9458,
+  "input_objects_sha256": "a2b302b0c221e8a6c118c5b0593c81763d293a4a18818c5267ff6e0017f3d92b",
+  "metadata_sha256": {
+    "10": "a03aec930130fcb942c40b35ba5fb49109ceee588894124010448f041d9d1ef4",
+    "30": "eb313f97e2d69d743423efc170eecb24f1f00ee77ad789461772daecd058c242"
+  },
+  "objects_sha256": "49ff713dc524189723b4adc6d9874d252d6437dbf6e97d25a0acff4ad760db01",
+  "sources": [
+    {
+      "source_group": "ACE-Step",
+      "objects": 1000,
+      "bytes": 3528044000
+    },
+    {
+      "source_group": "AudioLDM 2 Large",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "AudioLDM 2 Music",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "FMA",
+      "objects": 1000,
+      "bytes": 3528044000
+    },
+    {
+      "source_group": "HeartMuLa",
+      "objects": 958,
+      "bytes": 3305778152
+    },
+    {
+      "source_group": "MTG-Jamendo",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "MusicGen Large",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "MusicGen Medium",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "MusicGen Small",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "Mustango",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "Riffusion",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "Stable Audio v1",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "Stable Audio v2",
+      "objects": 500,
+      "bytes": 882022000
+    },
+    {
+      "source_group": "Suno",
+      "objects": 1000,
+      "bytes": 3528044000
+    },
+    {
+      "source_group": "Udio",
+      "objects": 500,
+      "bytes": 882022000
+    }
+  ],
+  "scope": "Exact ID and duration joins only. Per-recording attribution and derivative rights still require source-release joins.",
+  "publication_authorized_by_this_mapping": false,
+  "whole_project_complete": false
+}
