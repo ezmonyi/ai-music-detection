@@ -1,0 +1,27 @@
+{
+  "rows": 250,
+  "recovered_model_counts": {
+    "chirp-fenix": 126,
+    "chirp-crow": 114,
+    "chirp-auk": 2,
+    "chirp-v3": 3,
+    "chirp-v4": 3,
+    "chirp-v2": 2
+  },
+  "inputs": {
+    "audit_sha256": "f824960dc09efab0dea932bf31d48c439637e7121412f6b9fb2fae75637663a5",
+    "metadata_sha256": "f93a375b10d471ebfba51f46ad0edf7a1f2782038c90bd57df59ad110bd48f75"
+  },
+  "products": {
+    "README.md": {
+      "bytes": 813,
+      "sha256": "924ae2bfdec53d6e475050ee218e1490393821183950611f36f1ddec71dbb30e"
+    },
+    "model_provenance.csv": {
+      "bytes": 69280,
+      "sha256": "09276f46d0c5ed15b955e057e2138deeb7bd55edba79036d7e7606cf7afb0b98"
+    }
+  },
+  "historical_experiments_changed": false,
+  "audio_uploaded": false
+}
