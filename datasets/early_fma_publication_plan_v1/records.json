@@ -1,0 +1,4462 @@
+[
+  {
+    "relative_source_path": "fma_medium/000/000767.mp3",
+    "bytes": 961930,
+    "sha256": "d4adb80a16769eb8a2576b700b4eaf04109aeec38b887b3ee1a9e1bd6fd31f1f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "06c6b0d8336ba120",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 767,
+    "artist": "Glass Candy",
+    "title": "Love On a Plate",
+    "artist_group_id": "147",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/001/001661.mp3",
+    "bytes": 961038,
+    "sha256": "88af1faf3cb1ae6f5eeb885e53b6906f4bd322431a858f1d776caa34b4a0f5e0",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e9a911decaabcef6",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 1661,
+    "artist": "So Cow",
+    "title": "Only Fools and Horses Theme",
+    "artist_group_id": "269",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/005/005159.mp3",
+    "bytes": 961975,
+    "sha256": "ef3cf02c0a6d03f925c4ca6d1541052cbf66017327ce2d6a1488bed2cdc78759",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "79a79e239f2ba754",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 5159,
+    "artist": "Peter Biedermann",
+    "title": "Christiania",
+    "artist_group_id": "1625",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/006/006363.mp3",
+    "bytes": 962087,
+    "sha256": "a95a19f28814f29019736becccb896ea96bf0137d3364bf845b9aefcc44e5a12",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9a3d4ab3b7e5f01a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 6363,
+    "artist": "Scott Wilson & Efendi",
+    "title": "track 02",
+    "artist_group_id": "1836",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/006/006784.mp3",
+    "bytes": 1201995,
+    "sha256": "2cd1e6c82744ebb9f66df2874dc9941e342b0e3c4fd1fb9c1ed44255bd9fb970",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "25344a17a17904b3",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 6784,
+    "artist": "Cath and Phil Tyler",
+    "title": "False True Love/Last Chance",
+    "artist_group_id": "1346",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/007/007865.mp3",
+    "bytes": 961893,
+    "sha256": "90dba04679de363e7c6c41552112399658ecd2c7eeb670996da09136d5eb79c1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "ae0e9b6f59c6c244",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 7865,
+    "artist": "Boss Hog",
+    "title": "Trouble",
+    "artist_group_id": "1710",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/008/008339.mp3",
+    "bytes": 961864,
+    "sha256": "dbc4fcdcdc79beeaf842d8ad64bd1accdd0d341fca5ca019eb030abef5d5855f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "95a9d295194550a6",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 8339,
+    "artist": "The Department of Homeland Absurdity",
+    "title": "News from Abroad",
+    "artist_group_id": "31",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/009/009307.mp3",
+    "bytes": 481088,
+    "sha256": "5cda9d0e9a11e45b73959b3401ddf6d2fc9859316646abb07c31c6f420d2b91f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a97c303b948ecf48",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 9307,
+    "artist": "Kitty Kadoogal",
+    "title": "Racing Past the Zenith",
+    "artist_group_id": "2214",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/010/010674.mp3",
+    "bytes": 649535,
+    "sha256": "5c3f22b98d2ccf377f14aac529c2b7880cf5d965d64b40193af0e2fd305b4ecb",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "50f2f42fa1e7d97d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 10674,
+    "artist": "Nine Inch Nails",
+    "title": "Lights in the Sky",
+    "artist_group_id": "2630",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/010/010806.mp3",
+    "bytes": 721658,
+    "sha256": "8637169f164b9827ea2a948eaa3e5aa261035d22671666496dfc20169214b50b",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "ea550718f49030bd",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 10806,
+    "artist": "Lesbian Afternoon",
+    "title": "Glowing Pavements",
+    "artist_group_id": "2735",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/010/010938.mp3",
+    "bytes": 961928,
+    "sha256": "2e0b62e76b8278be00af3dd24ec4fd7776cbc5ee1ec73adad47600b3923157db",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6bf563575ec123fd",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 10938,
+    "artist": "Farmer's Boulevard",
+    "title": "Pray The Money",
+    "artist_group_id": "2746",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives 2.0 Germany",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/010/010993.mp3",
+    "bytes": 1202311,
+    "sha256": "5447dea912b4aefc61b7690aa24971302100f7f88c2862f277f195f94fa5bca2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e9e32ea515a0a690",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 10993,
+    "artist": "Big Blood",
+    "title": "Oh Country (Skin &amp; Bones)",
+    "artist_group_id": "77",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/013/013646.mp3",
+    "bytes": 1202384,
+    "sha256": "2e7700bcfc390a92a9cdef53b22d4522fe22530097a6df99715a8144ad9b14a7",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "adffafb49aef104a",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "adffafb49aef104a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 13646,
+    "artist": "Calypso",
+    "title": "Copacabana Palace Hotel",
+    "artist_group_id": "3729",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/014/014154.mp3",
+    "bytes": 962041,
+    "sha256": "447640c445a85a9f7cd20147e22dd0a91218647e05ac824455819f4b03d69a56",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5f2f07f0e55df691",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 14154,
+    "artist": "Screen Vinyl Image",
+    "title": "Cathode Ray",
+    "artist_group_id": "3918",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/014/014361.mp3",
+    "bytes": 601444,
+    "sha256": "74f79eb5db22ac33cde35acf3f2ee6e670e25673f0cab132a2cea4c3c4ada5b1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e40e301e28856a40",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 14361,
+    "artist": "OUO",
+    "title": "It's Time",
+    "artist_group_id": "3965",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/014/014391.mp3",
+    "bytes": 601455,
+    "sha256": "2fa5fd993529efcc6970c9820cf971944f93bcfacee8e6f8470d67a15931bb60",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "18f42b053cdfacac",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 14391,
+    "artist": "Clan Destined",
+    "title": "Freeze",
+    "artist_group_id": "3985",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/015/015140.mp3",
+    "bytes": 962089,
+    "sha256": "fc50533f739bf440af07a8c7c4cc458029021986a3f4376205a010cf135bca40",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a4c9e3f4723d87de",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 15140,
+    "artist": "Glows in the Dark",
+    "title": "Through a Glass Darkly",
+    "artist_group_id": "4200",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/016/016050.mp3",
+    "bytes": 819352,
+    "sha256": "e1fbf046e680c42d5cc8e18a720288a1bd5ceb194c83bf54e4b5a8220d09aaa2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9d4f54ba49ed7601",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 16050,
+    "artist": "staRpauSe",
+    "title": "hairwaves, san diego",
+    "artist_group_id": "4421",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/016/016181.mp3",
+    "bytes": 962038,
+    "sha256": "c0ef3c33178fd439e906e0595f3837c3b80a196c835e151a5bd94fa4734822a1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "66e3c04289b7c693",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 16181,
+    "artist": "The Sediment Club",
+    "title": "Panic Berlin Fun",
+    "artist_group_id": "4456",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/016/016992.mp3",
+    "bytes": 481348,
+    "sha256": "42012171732006b2728f09bfd149e009727d50e39284d33876f6eaaba5dd98d5",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d5b99efcda483c17",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 16992,
+    "artist": "Samuil Feinberg",
+    "title": "Bach-Feinburg, Prelude in E",
+    "artist_group_id": "4671",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/018/018888.mp3",
+    "bytes": 1202871,
+    "sha256": "fe2db252290da87dd2dc966e68f4c3765e0d9b6f17d71b8a1fd06506032ab0cf",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "aae8b1c6ea915500",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 18888,
+    "artist": "Seek Six Sick",
+    "title": "Awas Neraka",
+    "artist_group_id": "5111",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/020/020051.mp3",
+    "bytes": 1201241,
+    "sha256": "3b3ed98ceb21a660f25b33377617c7b886df97750a9abd223a8c1e10ffca9b20",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "72b28004955d3c30",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 20051,
+    "artist": "50FOOTWAVE",
+    "title": "Lavender",
+    "artist_group_id": "1919",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/021/021542.mp3",
+    "bytes": 601505,
+    "sha256": "8bb9c17a33382cf5f6decf0fbc235146f6018f0d7dbff79e7f6a96363c127dc2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "fd86973e4b4dab47",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 21542,
+    "artist": "Andrew Christopher Smith",
+    "title": "Variations",
+    "artist_group_id": "5665",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/022/022370.mp3",
+    "bytes": 961761,
+    "sha256": "1715b03f14c7ebb873aa1385a1132a8303556b62fce4c7e154685fb106c21be9",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0e1d0e3ffe1eb75c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 22370,
+    "artist": "The Sights",
+    "title": "Muse",
+    "artist_group_id": "5905",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/023/023528.mp3",
+    "bytes": 721322,
+    "sha256": "d40ca994130a330403a777a4ba61919e2ddb4282cee60b867c8d561c576c32d4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4d28384d8328dca2",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 23528,
+    "artist": "Vernon Lenoir",
+    "title": "Mr. Pig & Mr. Chrome",
+    "artist_group_id": "3165",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 Germany",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/023/023857.mp3",
+    "bytes": 481199,
+    "sha256": "a8dbaf4cbf695b332e6c9c300db183100669c66ab59d314856e4d43412fcb09e",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "223404d84f7988b8",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 23857,
+    "artist": "Goto80",
+    "title": "Soft Commando",
+    "artist_group_id": "3766",
+    "license_as_recorded": "Attribution-Noncommercial-NoDerivatives 2.0 France",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/024/024144.mp3",
+    "bytes": 481364,
+    "sha256": "eeb6b6e3f6de818b133beca5a7ae20bff7131dae02a5f0c12959d8574d01beea",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "56a66fe4ec9f6286",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 24144,
+    "artist": "Chromix",
+    "title": "It's my Birthday Bitch",
+    "artist_group_id": "6049",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/024/024175.mp3",
+    "bytes": 962169,
+    "sha256": "adf2ab39da7de40fe4a4d8097bbe22ec49b700725761229b7ddf867e8862a7e3",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "3dc204f4efbec18a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 24175,
+    "artist": "Bit Shifter",
+    "title": "Reformat The Planet (Live)",
+    "artist_group_id": "6225",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/024/024514.mp3",
+    "bytes": 1201263,
+    "sha256": "5d0c095644cabcbe8cb60c1ab48219af5d438e4ae7300091cda1e023926f5cf5",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0b9139349dd8765d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 24514,
+    "artist": "Sebastien Lespinasse",
+    "title": "R",
+    "artist_group_id": "6302",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 2.0 UK: England ",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/026/026629.mp3",
+    "bytes": 1202249,
+    "sha256": "a7e3add9127879b9f3410db74ca11c5908d18658906a86fd5743925b9ccf8ac7",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0bf18bc095dddb76",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 26629,
+    "artist": "NOISE64",
+    "title": "Heroic Hexa Epic",
+    "artist_group_id": "6739",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/026/026854.mp3",
+    "bytes": 481308,
+    "sha256": "0dc18e0c7cd97e621c71b5cd026cf925ec9b8212661c6bd6aea311af934f4c5b",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "420656c6986a1ad8",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 26854,
+    "artist": "I, Cactus",
+    "title": "green cactus",
+    "artist_group_id": "6809",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/027/027155.mp3",
+    "bytes": 961923,
+    "sha256": "b513b7c6973b25087c22f5ca0edc8788b12f27174ee6533f0886266eddaedfa0",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5e768af42169b7f5",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 27155,
+    "artist": "Dino Felipe",
+    "title": "Drug Buddies",
+    "artist_group_id": "6887",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/027/027449.mp3",
+    "bytes": 1202304,
+    "sha256": "546dfb1f6f3097dd02352a1865633d642aa03765890167492a57cdb80eb4c5bf",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "53838b51a438a470",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 27449,
+    "artist": "1-Speed Bike",
+    "title": "Kandahar Porn Merchant Moustache Twitch",
+    "artist_group_id": "6929",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/028/028068.mp3",
+    "bytes": 961806,
+    "sha256": "d01523c1d0381af93c590211fc867e4f4cb8f1278c193ebae3c827297618444a",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "2caa626f9b0a8049",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 28068,
+    "artist": "Bare Wires",
+    "title": "Seeking Love",
+    "artist_group_id": "7073",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/030/030717.mp3",
+    "bytes": 1202312,
+    "sha256": "d985d6db912a8db0c630eadfe577be8cbad741952d2c0faa2989cd4a0f57f344",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "08d428dd9965fe9b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 30717,
+    "artist": "Silverhead",
+    "title": "K, aged",
+    "artist_group_id": "7611",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/032/032742.mp3",
+    "bytes": 748753,
+    "sha256": "64f503cff9254f6d7612341caf963c73471caa7e8951ca9b8020db695fd33049",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "75b2a51faba922c0",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 32742,
+    "artist": "Rabato",
+    "title": "pushups",
+    "artist_group_id": "8017",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/032/032815.mp3",
+    "bytes": 721598,
+    "sha256": "52ff7a8ecd159d0561126be5cccf6d114063a3f0e540c8f51a46e67ab044fc36",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "fd70ba4240bb27e3",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 32815,
+    "artist": "Bacalao",
+    "title": "Cheat Codes",
+    "artist_group_id": "5674",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/034/034457.mp3",
+    "bytes": 507184,
+    "sha256": "153297f64583c4b152b1e73e38976015524ba351799b1c8581ebfb324861de32",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6e9fc2818f33c5a2",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 34457,
+    "artist": "The Tudor Consort",
+    "title": "Palestrina - Sicut lilium inter spinas",
+    "artist_group_id": "8449",
+    "license_as_recorded": "Attribution 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/035/035532.mp3",
+    "bytes": 1202627,
+    "sha256": "6780d6f92cf5cfbae39df4808868e51881d0b7b010d531b8dafe3fb8949a21eb",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "91ed3765d059fc9a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 35532,
+    "artist": "Lorenzo's Music",
+    "title": "Fervor",
+    "artist_group_id": "5911",
+    "license_as_recorded": "Attribution-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/038/038352.mp3",
+    "bytes": 1202398,
+    "sha256": "ca2c418cfa756c67dda1a0e89f5a8e33d598b5b080cfc80281c00165d2f760c0",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7596211b71156786",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 38352,
+    "artist": "Mastermind XS",
+    "title": "Business of panic (instrumental)",
+    "artist_group_id": "9169",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/039/039896.mp3",
+    "bytes": 961997,
+    "sha256": "61ef52fcc48fac2820ab79e01d9ffa508780ce7d4205512ebc620edb4868f920",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "dcb788d2cf6563b2",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 39896,
+    "artist": "Uton",
+    "title": "Sweet High Joy And The Stone With Dots",
+    "artist_group_id": "9264",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/040/040598.mp3",
+    "bytes": 961996,
+    "sha256": "db7f1f396fc25ff13b5352aaf399ba80c8c9cc341ba5601c350d0180f2e62d2a",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9a5c3b94b9150299",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 40598,
+    "artist": "Honey Trappists",
+    "title": "How Interesting! How Bizarre!",
+    "artist_group_id": "9560",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/040/040631.mp3",
+    "bytes": 1202280,
+    "sha256": "ca4cc2ae9d7b1529916251f1c7a565390d8f735ebdef6499c6c498654200dc8f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "45d1a386314fb605",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 40631,
+    "artist": "Min-Y-Llan",
+    "title": "We Are 1",
+    "artist_group_id": "8546",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/040/040786.mp3",
+    "bytes": 1202037,
+    "sha256": "c34780a08997574b37c1773aacd7216931723b7b31b23ec04f2a25d28d238a56",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "50d58f702de9b6e7",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 40786,
+    "artist": "Kupa",
+    "title": "Slipwok",
+    "artist_group_id": "6811",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/040/040809.mp3",
+    "bytes": 1202228,
+    "sha256": "fb37c0660ec05c27f961d3b3396c109ea5ffa2004f53facea87b591710b2e704",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "8f74ee74a48f7829",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 40809,
+    "artist": "Kanji Kinetic",
+    "title": "EcchiSketch",
+    "artist_group_id": "9585",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/041/041093.mp3",
+    "bytes": 1202354,
+    "sha256": "0bf6f5a8cb3513c35915817dc0752ad40f03fdbc9a50c2e0a3056185a64d989a",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4c0111a53605e7d7",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 41093,
+    "artist": "Anakord",
+    "title": "City Lights",
+    "artist_group_id": "9649",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/042/042913.mp3",
+    "bytes": 481276,
+    "sha256": "cec7037ec96aba607745691121b0c4ffb0ec5606112aed4c1fda041d909b0c2f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "565e7e2acfc461bf",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 42913,
+    "artist": "Phemale",
+    "title": "LA MAIN ETRANGERE",
+    "artist_group_id": "9454",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/043/043029.mp3",
+    "bytes": 961835,
+    "sha256": "028f34abc6ba4a44cd2d62964797310cc34f4a072112400428587a500838c9b1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "826ad72430c62345",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "826ad72430c62345",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 43029,
+    "artist": "Huun Huur Tu",
+    "title": "[interview]",
+    "artist_group_id": "10060",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/044/044354.mp3",
+    "bytes": 1202419,
+    "sha256": "8f0a9fde7bab33dd5d224a9b5b5bcdcb44afa95172f997bbae74759a91e54472",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f9fffa293f88a861",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 44354,
+    "artist": "Graham Dunning",
+    "title": "British Steam",
+    "artist_group_id": "10312",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/044/044802.mp3",
+    "bytes": 1201049,
+    "sha256": "db935f3c547eab94f5131b73dc6a61b78b2c41bc5d3737a11b10aa9a312e07b6",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "54a232de317b7519",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 44802,
+    "artist": "8-Bit Ninjas",
+    "title": "Shiny Spaceship",
+    "artist_group_id": "10357",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/046/046054.mp3",
+    "bytes": 1202464,
+    "sha256": "8f16d06459bc52d99ddca0adc6cd65f8a3110139d7728acc50ca87dd2d358ae1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "2f88957149de036f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 46054,
+    "artist": "Matthew Sforcina",
+    "title": "The Five Golden Rules of Facebook",
+    "artist_group_id": "9419",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/046/046538.mp3",
+    "bytes": 721645,
+    "sha256": "80595576f4212394d968d71da4f97f7e64029c9af58a7b62e1ae283dcc6a4188",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a6d60c86c2a77926",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 46538,
+    "artist": "Dan Gleason",
+    "title": "Blowjob Stand",
+    "artist_group_id": "10634",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/047/047030.mp3",
+    "bytes": 722078,
+    "sha256": "774143faab72993a6db4eed98fd51526326eeb60c779f0e951114404a161628a",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a39b9fea2721be1c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 47030,
+    "artist": "Waylon Thornton and the Heavy Hands",
+    "title": "Redneck Skatepark Blues",
+    "artist_group_id": "10023",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/047/047037.mp3",
+    "bytes": 962025,
+    "sha256": "b37414f807417e6befa7829202fe1c0aef2fffb1c181d58649250060facc35d4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "ab96a9293beef3eb",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 47037,
+    "artist": "Albert Beger",
+    "title": "Point of No Return",
+    "artist_group_id": "8419",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/047/047501.mp3",
+    "bytes": 962059,
+    "sha256": "373db44c3b757cc133aec4e9b07ff7dd8f4e28a65b1471a09d0ae436296fa950",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "8db97eb2355b7c58",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 47501,
+    "artist": "Castevet",
+    "title": "Grey Matter",
+    "artist_group_id": "10277",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/047/047676.mp3",
+    "bytes": 1203574,
+    "sha256": "f23c2d81dea46fcec8b2b78d79f90c4782aaee02d98d1bc886d71675d586850f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6939068f044ab9ce",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 47676,
+    "artist": "Lifeguards",
+    "title": "Paradise Is Not So Bad",
+    "artist_group_id": "10906",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/047/047743.mp3",
+    "bytes": 481313,
+    "sha256": "192d239dc49cedb82e302ed90af39950e52012fa03b52bdf4007e5c43000b18e",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1af42ce17af2f0b3",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 47743,
+    "artist": "Mujeres",
+    "title": "Blood Meridian",
+    "artist_group_id": "10938",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/047/047915.mp3",
+    "bytes": 1202266,
+    "sha256": "ffdaa18705a8850cc2ad406ec9850535300713028393a8f3b414f0fd5a3389c4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a898a828d2b5befc",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 47915,
+    "artist": "Dumbo Gets Mad",
+    "title": "Limbo's Village",
+    "artist_group_id": "8706",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/048/048408.mp3",
+    "bytes": 721683,
+    "sha256": "77e06f1203f23491840ee0b76f25526a76b6e04be3d8fab801ad782ae6244a68",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0cffb6863cb8684d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 48408,
+    "artist": "MIT Concert Choir",
+    "title": "Tempus est iocundum",
+    "artist_group_id": "11083",
+    "license_as_recorded": "Attribution-Noncommercial 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/048/048457.mp3",
+    "bytes": 1202330,
+    "sha256": "aab1e92bab35100437e93d250bdd589b7ab01452ac5f2149846b190bdc18bdd2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "41cd808241f414c5",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 48457,
+    "artist": "AlexandreDavidGabriel",
+    "title": "poitrine \u00e9paules bassin",
+    "artist_group_id": "7337",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/050/050284.mp3",
+    "bytes": 721749,
+    "sha256": "a40a0482c4329c98916a81a081ba477637369d39fe31c43e6731062b245b2ade",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "54cc9ec66c8de439",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 50284,
+    "artist": "Umbra Summi Nobis",
+    "title": "Nebulosa",
+    "artist_group_id": "11354",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/053/053378.mp3",
+    "bytes": 721636,
+    "sha256": "6bc8b58652929a72275d6467fdebfa50f3659f982d5c941f2fecae9e0ee5eb35",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "86a666e68bd01f89",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 53378,
+    "artist": "The Hate Noise",
+    "title": "Hits from the Bong",
+    "artist_group_id": "8732",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/054/054627.mp3",
+    "bytes": 875741,
+    "sha256": "04f24372eb4614038d525ac6b21937b2a7389acae8c8433faf79a7cfcb3ac836",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "8306236ba4944aeb",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 54627,
+    "artist": "\u0422\u0438\u0430\u0437 \u0418\u0447",
+    "title": "Red Stars",
+    "artist_group_id": "12024",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/054/054700.mp3",
+    "bytes": 961949,
+    "sha256": "fdafcff76f6332f955447f473ef67bd980cace08d0e6bf5046984c25ff6280ba",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0b8ecf16ca625abf",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 54700,
+    "artist": "Bird of Youth",
+    "title": "When My Wings Hit The Shed",
+    "artist_group_id": "12030",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/054/054850.mp3",
+    "bytes": 962032,
+    "sha256": "f0ef00d154cd563ad908827df7963fa7dde21240ca6200bc0873bbadf05fb159",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f398ec65ebf9a17d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 54850,
+    "artist": "Agusti Fernandez",
+    "title": "Sea Of Lead Part I (w/Peter Kowald)",
+    "artist_group_id": "11906",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/054/054966.mp3",
+    "bytes": 962068,
+    "sha256": "70fe1bb6c7a193f878d90b9d3c13aebd39324106c1e3bcd4fcc7eb86c6893575",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d130395ad7cb079f",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "d130395ad7cb079f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 54966,
+    "artist": "Starscream",
+    "title": "Space",
+    "artist_group_id": "5688",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/055/055106.mp3",
+    "bytes": 1202250,
+    "sha256": "d4bdb8f6860b3c32729435d9bb45b12e0b108e4f26db4739727621865dc56dab",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "997b963c67b1cad7",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 55106,
+    "artist": "Alaclair Ensemble",
+    "title": "Hustle tard",
+    "artist_group_id": "12085",
+    "license_as_recorded": "Attribution-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/055/055759.mp3",
+    "bytes": 720676,
+    "sha256": "51f539ccc9bc37a9dfe2a39d1be9a6081043f7f78b01291764f36dac4430d6fd",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "beba999379e104a9",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 55759,
+    "artist": "Squareway(aka MHF)",
+    "title": "Fantomas watching you",
+    "artist_group_id": "12174",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/055/055761.mp3",
+    "bytes": 720636,
+    "sha256": "8544d58ea29af2eddb9ee8d296c2a03029f426cc493f385fa3aa48dd92a74730",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "50d9afc3801bfe93",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 55761,
+    "artist": "Anti-Cheat",
+    "title": "Zombie Town",
+    "artist_group_id": "12176",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/056/056640.mp3",
+    "bytes": 1202209,
+    "sha256": "df18b03a7c437bd987b6c56c47c2858ef0b0f20c63b16f836f959d3ff22066cb",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "21492cd7b2c18850",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 56640,
+    "artist": "BADLUCK",
+    "title": "Case Closed (Instrumental)",
+    "artist_group_id": "11216",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/057/057939.mp3",
+    "bytes": 1201192,
+    "sha256": "470671982d1a2711b5a9747b0aaaf0af1249d7a6f3de35cd7c6be519210b7abc",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7ba88cf795f4f8d9",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 57939,
+    "artist": "Ergo Phizmiz",
+    "title": "The Meaning of Christmas",
+    "artist_group_id": "129",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/058/058403.mp3",
+    "bytes": 601504,
+    "sha256": "fc6ec2dac79f2171d7993ddd25bde01a7631729ca5aebf7a7ba3e8d0b5ea2f39",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6a8083fe12f5933d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 58403,
+    "artist": "Let Me Crazy",
+    "title": "Bang Yr Head",
+    "artist_group_id": "12676",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/059/059377.mp3",
+    "bytes": 1202324,
+    "sha256": "a82b5f041a3f082db6bd1b078f4b8c2a74ddd04e34f58f3b4de5359b086eccde",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7e8e8f7fea260510",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 59377,
+    "artist": "Charles Gayle Trio",
+    "title": "Tribulations",
+    "artist_group_id": "12414",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/060/060595.mp3",
+    "bytes": 1201330,
+    "sha256": "b04bae4794bc432c18e02928f35d705ed1e48839fda6311d63aba5a308080488",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1b6e5839702c1acb",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 60595,
+    "artist": "The Feeling of Love",
+    "title": "The Feeling of Love Live at OCCII",
+    "artist_group_id": "738",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/062/062641.mp3",
+    "bytes": 1202172,
+    "sha256": "2e89d615204ee5c19766505374e8d9eba4017f7d86ad294d964d8156f2c423e2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9d1b7faeeab20051",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 62641,
+    "artist": "et_",
+    "title": "Suburbs",
+    "artist_group_id": "12166",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/063/063665.mp3",
+    "bytes": 691669,
+    "sha256": "1efb6d6814918721f95bf5285e21a772d1a4eac0758cd7419debcdd3e9cc970f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e8c902cbf0ff60e1",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 63665,
+    "artist": "Jahzzar",
+    "title": "Part V",
+    "artist_group_id": "13262",
+    "license_as_recorded": "Attribution-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/064/064690.mp3",
+    "bytes": 1202120,
+    "sha256": "336a6139a455f58a13d2fe822784226595a4ebd4f6b52736d54745b5426e00c2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "15457c34a9c2fc70",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 64690,
+    "artist": "Ljudske Potrebe",
+    "title": "Smrt glupog Avgusta",
+    "artist_group_id": "11423",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/064/064760.mp3",
+    "bytes": 1202285,
+    "sha256": "80e7aa018d60eebf6cc810c7690e4fabff74c6aaf48510b6410fccb25af513cf",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e3db2cf364e81a85",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 64760,
+    "artist": "Smersh",
+    "title": "A Touch Of Venus",
+    "artist_group_id": "6275",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/065/065629.mp3",
+    "bytes": 1201320,
+    "sha256": "143781c97c7db2560707c10960c037557fabdc766cda596f982e821e567e6309",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "606ca76bc7ac8d38",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 65629,
+    "artist": "Lola Montez",
+    "title": "Lola Montez at Vondelbunker",
+    "artist_group_id": "13678",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/065/065792.mp3",
+    "bytes": 650602,
+    "sha256": "98f0a052375a4f7599e122971ffaca04d7783b4189ffe6449530bb30a3413b36",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7ec68c26b935cfa2",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 65792,
+    "artist": "Peter Rudenko",
+    "title": "Snowing",
+    "artist_group_id": "13736",
+    "license_as_recorded": "Creative Commons Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/065/065877.mp3",
+    "bytes": 1202300,
+    "sha256": "f50c16ce540bce29cf845180f8465840fbd9ef4feb2b0d879218d030a01ab3c8",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "cfa12de3ec582b2a",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "cfa12de3ec582b2a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 65877,
+    "artist": "You Me Tree",
+    "title": "Run",
+    "artist_group_id": "13751",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/066/066535.mp3",
+    "bytes": 961831,
+    "sha256": "a7364bb5a88a4dac7afd1ba765cebbe9259de010f9dcd4bada10a37487f0bfa7",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "45b350c74b5ced9b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 66535,
+    "artist": "Waylon Thornton",
+    "title": "Baladora",
+    "artist_group_id": "10027",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/066/066914.mp3",
+    "bytes": 721658,
+    "sha256": "f2fe5b38a38396d1cb8c15948c7a2bf6a69dd8816d502c7e412ba7c46ff512d3",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5cce97e78182c365",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 66914,
+    "artist": "Tab & Anitek",
+    "title": "Air",
+    "artist_group_id": "5844",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/066/066963.mp3",
+    "bytes": 557086,
+    "sha256": "ac19245cfe23084c085cdfbcfce00b575572965daef97a518a9a1b9a6d6d3d1c",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c31bef87ffa18ae6",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 66963,
+    "artist": "Tab & Anitek",
+    "title": "Manipulated Living",
+    "artist_group_id": "5844",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/067/067752.mp3",
+    "bytes": 1202245,
+    "sha256": "8cd214ef0a138cdd226fb84039f4d21c16abeab0c1fab09ea6747d1b87859049",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "ac0a55ffe7b44979",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 67752,
+    "artist": "Terracid",
+    "title": "Mind Control",
+    "artist_group_id": "12112",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/068/068599.mp3",
+    "bytes": 720575,
+    "sha256": "6a6e53aa37f1c19ac9b39fec3446f2c0b12e15dea4962f063613ac8373194f5d",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1bf5873805040b27",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 68599,
+    "artist": "The Hate Noise",
+    "title": "Strictly Speaking",
+    "artist_group_id": "8732",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/068/068707.mp3",
+    "bytes": 962016,
+    "sha256": "5a59084df73f53302bf99459c30f3bef883229ab696592d61302825776fe8125",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d3b62aacf21ab68c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 68707,
+    "artist": "Potty Mouth",
+    "title": "Hazardville",
+    "artist_group_id": "14159",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/068/068893.mp3",
+    "bytes": 1202034,
+    "sha256": "fbbbc856b34477809f76a419394825b67bdbffcfe8ec933bf232f584b5f5cfd1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "88727adde584151c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 68893,
+    "artist": "Broke For Free",
+    "title": "Sidewalk Chalk",
+    "artist_group_id": "9067",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/069/069001.mp3",
+    "bytes": 721275,
+    "sha256": "87a5cbea4fcfb3de6d2488510a659dacefb8df9e4084d10b9bcf999651e214c6",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "dfbdaa7295be3555",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 69001,
+    "artist": "Scott Sherk",
+    "title": "Icelandic Surf",
+    "artist_group_id": "14186",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/070/070468.mp3",
+    "bytes": 962133,
+    "sha256": "e96b78ea77c87c318f967a5d0bcb508cdbc75ea64819082e1a6272826158677c",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "807fdaba62712b7f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 70468,
+    "artist": "Advent Chamber Orchestra",
+    "title": "Dvorak - Serenade for Strings Op22 in E Major larghetto",
+    "artist_group_id": "14420",
+    "license_as_recorded": "Attribution-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/070/070967.mp3",
+    "bytes": 1202316,
+    "sha256": "36d0074e226b66cc95510a9e596f9848c1f15b02cb7bbc85de7f51e572b2feee",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "2d587425d97abc08",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 70967,
+    "artist": "Jota_a_ene",
+    "title": "galaxias infinitas",
+    "artist_group_id": "14502",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/071/071243.mp3",
+    "bytes": 961976,
+    "sha256": "ae65b2e91228d78417a3344c4069ddf9c0ab7b1d1903cc1679d43254e6494c7d",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0dd14b5d0f0ea793",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 71243,
+    "artist": "Dengaz",
+    "title": "Encontrei (feat. Agir)",
+    "artist_group_id": "14544",
+    "license_as_recorded": "Attribution-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/072/072028.mp3",
+    "bytes": 1202337,
+    "sha256": "f0a7c0c861b6cf5000974431072c7d0f40e2475953ec8c4f497acb98d00ee36f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4babfe0c9e1ffb41",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 72028,
+    "artist": "Small Radio",
+    "title": "I Am Ricky Richardo",
+    "artist_group_id": "8715",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/072/072453.mp3",
+    "bytes": 962070,
+    "sha256": "3309ed88d1b8904422a7c706ff22bdc7c54bc632094f139c34b18f947df1755d",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "492c497289f0112e",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 72453,
+    "artist": "The Blind Shake",
+    "title": "Go Go 78",
+    "artist_group_id": "14727",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/074/074351.mp3",
+    "bytes": 1202343,
+    "sha256": "b882351f979ffeb5dce55b9aa9db03068746042c7c2d0dadb4d7162e11548888",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "645f8d790b5b32ac",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 74351,
+    "artist": "Marco Trovatello",
+    "title": "Wash Your Feet",
+    "artist_group_id": "15106",
+    "license_as_recorded": "Attribution-Noncommercial 3.0 Germany",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/074/074524.mp3",
+    "bytes": 962060,
+    "sha256": "a4a4536d2739c0daf7bddad0e2af8f023ba1f6043c3a46754fb148aa828c91d6",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "bdb78942c3915d5f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 74524,
+    "artist": "Screaming Mirror",
+    "title": "Control Me",
+    "artist_group_id": "15144",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/074/074982.mp3",
+    "bytes": 962075,
+    "sha256": "014f79084a14d087a5452663ee9c3d8ad6a1c332ae9ba8f35fb4dc02464deb20",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "371a57f29af39fef",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 74982,
+    "artist": "Megan Jean and the Klay Family Band",
+    "title": "Little Miss Fortune",
+    "artist_group_id": "15226",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/075/075224.mp3",
+    "bytes": 698151,
+    "sha256": "c6de8f4dbab0bb5b3d36bff6a293f84cc8ff473c24535d06f976516742ac2d30",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f85ed9f78eb1330f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 75224,
+    "artist": "Holy Pain",
+    "title": "No Regret",
+    "artist_group_id": "15248",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/075/075388.mp3",
+    "bytes": 601562,
+    "sha256": "0f5e68b10d4d7d9c5ad2b0a10a941bcc47e1b4cdd0f52d09e2b7d7044f7430b1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d0c52de63c3d6ef4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 75388,
+    "artist": "Kellee Maize",
+    "title": "Say Watcha Want",
+    "artist_group_id": "12271",
+    "license_as_recorded": "Creative Commons Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/075/075772.mp3",
+    "bytes": 721504,
+    "sha256": "65f5aff5f486bbfa831a26367e4410bc898064ef7686872f77e4ab0526050be8",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1f1039987b2482ed",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 75772,
+    "artist": "Onyx System",
+    "title": "Stalker",
+    "artist_group_id": "15304",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/076/076077.mp3",
+    "bytes": 962114,
+    "sha256": "4d53c88a8af884a4e86f7790ec60e19a63864932e8c027a70e8bf2acafd43244",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "905c2fe9f55d2f46",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 76077,
+    "artist": "Koliadnyky of Kryvorivnia",
+    "title": "Hutsulka (Dance Number)",
+    "artist_group_id": "15393",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/076/076208.mp3",
+    "bytes": 961922,
+    "sha256": "36d6b6d75db717b893687927917131cdcd25997bc7a7f23659c7e66466808431",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6e9a9baabf5248c3",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 76208,
+    "artist": "BLOODHUFF",
+    "title": "king crab",
+    "artist_group_id": "15406",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/079/079568.mp3",
+    "bytes": 962026,
+    "sha256": "600ce612da3d28819543701d5feefcd19e0ca58996c1b7e044466ae1ea97d739",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e82f23152d6b33f3",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "e82f23152d6b33f3",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 79568,
+    "artist": "Games",
+    "title": "Listen",
+    "artist_group_id": "15694",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/082/082243.mp3",
+    "bytes": 1202258,
+    "sha256": "81e3c0345d843234b06225d90ce11b2990b0ef1c31a4bb67f0794e4c69bbe88f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d4f2412d9d0d2a6f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 82243,
+    "artist": "Richard Jonas",
+    "title": "Analoog",
+    "artist_group_id": "9680",
+    "license_as_recorded": "Attribution-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/083/083635.mp3",
+    "bytes": 910959,
+    "sha256": "3be58c65e022bfc3003fdcc6d667a73abcbbca752bf8c894e91997060e995e48",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d9b0813d0846402d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 83635,
+    "artist": "Vlasta Popi\u0107",
+    "title": "Pripitomljeni \u0111avo",
+    "artist_group_id": "16191",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/087/087572.mp3",
+    "bytes": 814102,
+    "sha256": "146a164ef4ebd8ad01a8b6e3eacdd1cf58be0f3f9a180f73e3de30f1712f6992",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4a51544959d16e26",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 87572,
+    "artist": "Ghost Recon",
+    "title": "Sword",
+    "artist_group_id": "16765",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/090/090404.mp3",
+    "bytes": 1202595,
+    "sha256": "10278699500f9ee5b72c8684bac5a0e88814b7553ed61088ec1b5d9b96ca0641",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4da14c2a7ed35c03",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 90404,
+    "artist": "Wreck and Reference",
+    "title": "All the Ships Have Been Abandoned",
+    "artist_group_id": "16982",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/090/090637.mp3",
+    "bytes": 1034772,
+    "sha256": "eb7a65f489bb89ac0b6d280dda72ff33340823d2beffc5412ae3880cdb3168a9",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d08f22c3f2f85c0d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 90637,
+    "artist": "Noaidi",
+    "title": "carousel",
+    "artist_group_id": "16989",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/091/091311.mp3",
+    "bytes": 1202222,
+    "sha256": "92097fd8a7bbb7237dc24bb92672207a2403787149dcaa55509c4933dab285e0",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "717e158ed94b89dc",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 91311,
+    "artist": "Mported Flows",
+    "title": "That's How It Goes (FunkDubb)",
+    "artist_group_id": "17014",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/093/093437.mp3",
+    "bytes": 720413,
+    "sha256": "d808a2c5a35044ae5a0451a2391a94da98ffd0c288a6f92cdc993eba3bcf0529",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "880a70e4a6d8b584",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 93437,
+    "artist": "Camden Joy",
+    "title": "Don't Hafta",
+    "artist_group_id": "1497",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/094/094099.mp3",
+    "bytes": 1202941,
+    "sha256": "3781ecd506eace33dd0a70f48f1c1d3f1084095bbc5df02eaad0ff875c6d3a88",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b8b75b676f421c6d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 94099,
+    "artist": "Westy Reflector",
+    "title": "fire in the arcade (the reflectors)",
+    "artist_group_id": "17370",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/094/094412.mp3",
+    "bytes": 1202228,
+    "sha256": "4651a471f1ee9ba024ed00f8dd4d3329599063d1e4e07035cc235ce7ece7c6f1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e62a09ff02208032",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 94412,
+    "artist": "Kakurenbo",
+    "title": "Utsuroi",
+    "artist_group_id": "16743",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/094/094452.mp3",
+    "bytes": 1202327,
+    "sha256": "78ce28f8be5a2c5ef04de720b4a4a5190964504cc11e58e4c4de3119d61a189e",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e67c4a278e564bbe",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 94452,
+    "artist": "Tha Silent Partner",
+    "title": "Funk Bros",
+    "artist_group_id": "3593",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/095/095200.mp3",
+    "bytes": 1202209,
+    "sha256": "f47a6f6c70409625999f95b7e53ed4250536b5d67ba3908687a12361eae3a3f2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b7dbb468c7e187a7",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 95200,
+    "artist": "Madek",
+    "title": "chasing trains",
+    "artist_group_id": "17494",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/095/095517.mp3",
+    "bytes": 481420,
+    "sha256": "55ce7681229cfeadd8af04a0d6992036f03eea935578c61ead3c785544cd8b39",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "030c003d361126bd",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 95517,
+    "artist": "The Audacity",
+    "title": "Punk Confusion",
+    "artist_group_id": "17552",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/096/096099.mp3",
+    "bytes": 988171,
+    "sha256": "377c86b9528bc34df46286a43fb16b6ebc6d49f985211fe58a003e2011ffe837",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c3d817bae78771d4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 96099,
+    "artist": "Wurlitztraction",
+    "title": "Wrapped In Caustic",
+    "artist_group_id": "11575",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/097/097399.mp3",
+    "bytes": 961984,
+    "sha256": "c75d645e8048b97149c31bb0acbe5df069ff100d5f2ceaf932ab1025b9072496",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f983637c619027cd",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 97399,
+    "artist": "Frame",
+    "title": "Death Inside The Walls",
+    "artist_group_id": "11574",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/097/097534.mp3",
+    "bytes": 867713,
+    "sha256": "9f720ea8c62834958165efa13c83b5e697d0c252f646a0ea82bb2713ea303dac",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5348d062c8fd77da",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 97534,
+    "artist": "Amitron_7",
+    "title": "Isolation Tank",
+    "artist_group_id": "11569",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/097/097535.mp3",
+    "bytes": 822022,
+    "sha256": "e46b3cc8e1e644cdcda03e569dcf2fa9e669261b58bbcc712f9bd2ecf0870198",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d0b4f63ac14ffe2a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 97535,
+    "artist": "Amitron_7",
+    "title": "The Girl on the Operating Table",
+    "artist_group_id": "11569",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/098/098078.mp3",
+    "bytes": 1069961,
+    "sha256": "34154ba4505551f7a4e1fa6bf2e6c134f5b1c01c363a2c4aae37bef81cc4618a",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f341687394b4b8e4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 98078,
+    "artist": "Infecticide",
+    "title": "Comme une gomme",
+    "artist_group_id": "17901",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/098/098206.mp3",
+    "bytes": 721585,
+    "sha256": "764b084927a993a09d15e5440ba8fd154fc2e1d31e636b72e2357fece0c4aef6",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "92022edc69d774db",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 98206,
+    "artist": "Ezylohm_tek",
+    "title": "Oceanids",
+    "artist_group_id": "17907",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/098/098572.mp3",
+    "bytes": 1202176,
+    "sha256": "3ff55952be7b35666f2111f3c4ee25932c75801da63fb474079b1f3090647d80",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d5e11aef5e99a5ac",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "d5e11aef5e99a5ac",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 98572,
+    "artist": "Hi-Rez",
+    "title": "Zombie feat. Emilio Rojas (Prod. B.love)",
+    "artist_group_id": "15196",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/105/105117.mp3",
+    "bytes": 720581,
+    "sha256": "f4a3209fd3847092b66f83c88a0d9bacbe9dd8b1b1b9c93053efe47867b02605",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "ae0dcc88221e83e4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 105117,
+    "artist": "Sonic Avenues",
+    "title": "Hiding",
+    "artist_group_id": "18485",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/105/105722.mp3",
+    "bytes": 1202321,
+    "sha256": "f4df3b6ac6cad1c66fc4938d86a60796483b0e4f58e0ee0f588ff54ea0b41521",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b2d29ed38fff818f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 105722,
+    "artist": "Gatherer",
+    "title": "Speed Thievery",
+    "artist_group_id": "18574",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/106/106342.mp3",
+    "bytes": 720574,
+    "sha256": "159cab917b3b435b7cca7f44da2facdaeebb62bb8c75886cd9a40df274561fb4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "60f7eaacf3b29286",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 106342,
+    "artist": "Julie Byrne",
+    "title": "Holiday",
+    "artist_group_id": "18649",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/107/107386.mp3",
+    "bytes": 928125,
+    "sha256": "2ca47531f3724f7f5b801d81e120b236159e2492d5e6d7c18846fb4fac0bada0",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "81a5f7c1852332ef",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 107386,
+    "artist": "Aussit\u00f4t Mort / MORT MORT MORT",
+    "title": "Huit (Part 1)",
+    "artist_group_id": "18754",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/108/108788.mp3",
+    "bytes": 1202237,
+    "sha256": "305a2e928824fa4744c1f1e8d0d8b7e6d8bed3f74250205b8b7d5f4abd19f9fb",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "232406ca966e8aa0",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 108788,
+    "artist": "D3Zs",
+    "title": "Remove Your Brain (Bonus Track)",
+    "artist_group_id": "18921",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/108/108863.mp3",
+    "bytes": 720440,
+    "sha256": "07ab5086d953ebc8ad0909e48b38c53d239064d6f9b0f3970762f877992c0efc",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7a693edecf6c9014",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 108863,
+    "artist": "Black Sea Hotel",
+    "title": "Trendafilcheto, Karamfilcheto",
+    "artist_group_id": "3936",
+    "license_as_recorded": "Attribution-Noncommercial-No Derivative Works 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/110/110418.mp3",
+    "bytes": 720668,
+    "sha256": "e224e6329df8482b59a2f5384babaee8a8940fca79f9cfb7b25c072876fd32f8",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "766965c73ac2cf6b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 110418,
+    "artist": "The Money Shot",
+    "title": "I Dismember You",
+    "artist_group_id": "19069",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/110/110652.mp3",
+    "bytes": 961011,
+    "sha256": "b680b48603bb7038fc85c6c68fcddd37d0e54d7e20f25def396bc943e7bc4c48",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6f08fcb46b6d72a2",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 110652,
+    "artist": "Il Sogno Del Marinaio",
+    "title": "Verse IX",
+    "artist_group_id": "19096",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/111/111582.mp3",
+    "bytes": 1202074,
+    "sha256": "c7f3fe8d940c81127e89602a33e69394cf29da6bc653f4b94f4a46ae4e468a1f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b44eee78ba41387f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 111582,
+    "artist": "Jarby Mc Coy",
+    "title": "for my love (au canada)",
+    "artist_group_id": "19064",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/112/112382.mp3",
+    "bytes": 601401,
+    "sha256": "88fdf4005bfa141f906987b37711a5403b1f6ce6d3590b4e154299775be16d71",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c6af549ada3de4fc",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 112382,
+    "artist": "statusq",
+    "title": "Connect the Dots",
+    "artist_group_id": "19273",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/113/113271.mp3",
+    "bytes": 703506,
+    "sha256": "e4cf953f79ae73500d47702eff4616c27002641270bbec679326c52682f19b46",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "fe4b4599b40e70ef",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 113271,
+    "artist": "CC Asia Band",
+    "title": "Takeru Ishikawa & Anji Bee - Favor Tweet",
+    "artist_group_id": "19369",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/113/113598.mp3",
+    "bytes": 1202305,
+    "sha256": "80aae75691d0694d8114f14be24fa54be38c6c2e674b964c3c65dff1511d7259",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "20b1822897f2414b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 113598,
+    "artist": "Megatone",
+    "title": "Black and White 05",
+    "artist_group_id": "17128",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/114/114395.mp3",
+    "bytes": 961972,
+    "sha256": "f6eafddcc64040d6180a9ed474d6f34ad1d012c7d64de1eebc7067fd297e6491",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5d55db5bbc4250a4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 114395,
+    "artist": "Scott Holmes",
+    "title": "Reflections Across The Sky",
+    "artist_group_id": "19498",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/114/114401.mp3",
+    "bytes": 961938,
+    "sha256": "c15a85d796f38ce0884505c227e58b97dfb706aec6b01d5765b5a48b8d1ad214",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4e38841bda8d8bd8",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 114401,
+    "artist": "Scott Holmes",
+    "title": "Wash Away",
+    "artist_group_id": "19498",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/114/114559.mp3",
+    "bytes": 1201610,
+    "sha256": "1a9e6fcbb290731b475b9ae9af4529a19df10009d137f17f8de4d3f6cc42764b",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "ae3a835976031c3d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 114559,
+    "artist": "epsilon not",
+    "title": "space funk systems 199X",
+    "artist_group_id": "6550",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/116/116447.mp3",
+    "bytes": 987456,
+    "sha256": "84743ac21dedbcabdb08e2241c48684ddb14ccb106c007e8b9f9b5bdd222937b",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6936e49992b6b12c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 116447,
+    "artist": "Montana Skies",
+    "title": "Malaguena (live)",
+    "artist_group_id": "19810",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/116/116449.mp3",
+    "bytes": 991102,
+    "sha256": "414ed52c708a3be0471f7efb3b670f5600b5c60efd985ca67d65f4c2f5fb378c",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0d5c9259d13ee7cd",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 116449,
+    "artist": "Montana Skies",
+    "title": "Lift (with six string electric cello)",
+    "artist_group_id": "19810",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/119/119574.mp3",
+    "bytes": 721668,
+    "sha256": "4dce317ecb76ec01ce5740918de57377afa4ed0e2e37ce9887da9faf5ad13536",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "aa967420adde5e4c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 119574,
+    "artist": "Iron Metal",
+    "title": "Rock on the Hole - Side 4",
+    "artist_group_id": "1824",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/119/119900.mp3",
+    "bytes": 1201624,
+    "sha256": "a9708ba6e7a2e9d914f45779e0dbcb6b2199d6a30e8ceec4a7d1dfa2bdd3c7e2",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "464f0b0efe5d5a1f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 119900,
+    "artist": "Blue Dot Sessions",
+    "title": "Ballast",
+    "artist_group_id": "19461",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/120/120147.mp3",
+    "bytes": 721734,
+    "sha256": "ce016f7aef421c18296ca19b2ba47cffd6be5f2969a05ad3cd01bf05e7c2c784",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "2561564735cdbf3f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 120147,
+    "artist": "Scotch And Soda (Featuring Pastor McPurvis)",
+    "title": "Auld Lang Syne",
+    "artist_group_id": "20185",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/121/121474.mp3",
+    "bytes": 721219,
+    "sha256": "5f5d62b8e41771840746ac7c94f1cd9cf6dbce3641274a7daae23edea88d6c7f",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b1fee1aa64ddcb2c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 121474,
+    "artist": "Satellite Ensemble",
+    "title": "Three Pianos",
+    "artist_group_id": "20315",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/122/122079.mp3",
+    "bytes": 1201577,
+    "sha256": "61d9143b4235df4ae0f7f2c845a6485bf9a7851dc3116e75b5dccc0ec4a187ac",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7b29f27e00e1bddb",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 122079,
+    "artist": "Jahzzar",
+    "title": "Black Jar",
+    "artist_group_id": "13262",
+    "license_as_recorded": "Attribution-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/122/122107.mp3",
+    "bytes": 1202332,
+    "sha256": "ebe74d87f168700c9865568617275155e370c82e7362cbfc3a26492c7b16ab30",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a2917f5df9ecbf3a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 122107,
+    "artist": "Electroblurgen",
+    "title": "A Cheetah Grimly Grooms",
+    "artist_group_id": "20418",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/122/122533.mp3",
+    "bytes": 1024937,
+    "sha256": "7d9562d52ec7284ad4f422b16357784e4bbdcf798e14ed6de631c2becb128c20",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "90119a58dd8a2a86",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 122533,
+    "artist": "Di Bos",
+    "title": "\"Lucy's headphones\"",
+    "artist_group_id": "8065",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/123/123611.mp3",
+    "bytes": 1202280,
+    "sha256": "aa462065d5f405f8add5af6564ed466e0c15d1a4f6f3dc9b6f97174669f6ac80",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "43ad3aae654c808a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 123611,
+    "artist": "Cassette Tape Bandits",
+    "title": "Spot Rockers (Cuervo Gold Instrumental)",
+    "artist_group_id": "20156",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/123/123633.mp3",
+    "bytes": 1202258,
+    "sha256": "93124ea7da72457b26547bfba55e6e658ef958f7871b6e65e40d9ed91e6a4a65",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "bf3cbeb4250e37ac",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 123633,
+    "artist": "Pimpstrut Local #13",
+    "title": "Stellar Musack",
+    "artist_group_id": "20665",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/123/123646.mp3",
+    "bytes": 1202262,
+    "sha256": "2a217640bf95fb69f73c32e21d702ca032a1816f15193470088e076ce586eab4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a43f7d808cef8f1c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 123646,
+    "artist": "C-Doc",
+    "title": "Side A: CanEye / Like It 2 / blocSonic (Oh Isht!)",
+    "artist_group_id": "14456",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/123/123828.mp3",
+    "bytes": 951264,
+    "sha256": "e60e7dafa92217d5bbd3f12cbb5e3f906633e7c56dc8f0a7d69b8c1033cde4c4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "10dc274db50fa0c7",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 123828,
+    "artist": "Mesmerists",
+    "title": "Trail Goes Cold",
+    "artist_group_id": "20691",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/124/124185.mp3",
+    "bytes": 1202369,
+    "sha256": "60807582fc6a267ea235958576d29eb96d79084a631cf5c3bd80ac1e74d12f16",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a154db7658dca55a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 124185,
+    "artist": "Bloodgod",
+    "title": "Wrecking Ball Surprise",
+    "artist_group_id": "20733",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/124/124390.mp3",
+    "bytes": 721576,
+    "sha256": "5136aa3d67cfea55b7767f0ba86f28d7d438456fdb9ce9d49e92691603e62e4c",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "76f729a95c546c67",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 124390,
+    "artist": "Radius System",
+    "title": "Mental Guides",
+    "artist_group_id": "20763",
+    "license_as_recorded": "Attribution-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/124/124566.mp3",
+    "bytes": 1202274,
+    "sha256": "020a5537de0f2d8f60cd194a87d4a75d3933bd8b803f3f05fd1cbac82515f074",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "59e0cebb4014ff7e",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 124566,
+    "artist": "Doppelskangers",
+    "title": "Cheeseburgers",
+    "artist_group_id": "20791",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/124/124980.mp3",
+    "bytes": 1202276,
+    "sha256": "4418e74cf223fa024d845c41be1a79fed64494b842a117b18f096742b67558ac",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "837d9acd8caf7c0d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 124980,
+    "artist": "Macamoto",
+    "title": "Torn",
+    "artist_group_id": "20831",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/126/126104.mp3",
+    "bytes": 1202201,
+    "sha256": "5d4128edf80aab2d0bce59970d3b66e9f17c2cefd1907b0d9c1c675b1c75af97",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6be952839910b433",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 126104,
+    "artist": "No Lala",
+    "title": "Just Fine",
+    "artist_group_id": "20968",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/126/126242.mp3",
+    "bytes": 721667,
+    "sha256": "4978b1ea34a86e47b6ff11acb1f373ddfc536b029726000cbf6f66372c434daf",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "14e91c7e09ad2f56",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 126242,
+    "artist": "Squire Tuck",
+    "title": "What Happened to the Way We Were?",
+    "artist_group_id": "19472",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/127/127037.mp3",
+    "bytes": 968751,
+    "sha256": "a4d318551197c1423cf5bfe6a3f6a35a2ef3d54a68607f71016a1c631e522928",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4dcfc4717bc4bafd",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 127037,
+    "artist": "Cousin Silas / Black Hill",
+    "title": "Bonus track: Cousin Silas & Black Hill - Sand of the South",
+    "artist_group_id": "21060",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/127/127153.mp3",
+    "bytes": 1202181,
+    "sha256": "ce9e1b02386b68c714bdeae0eba05bb3dfa2540cc5dbd8b73673c50f01ea9d25",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e407b5c5c4e9f0cc",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 127153,
+    "artist": "SHOMOMOSE",
+    "title": "Fly Blackbird Fly",
+    "artist_group_id": "13517",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/128/128825.mp3",
+    "bytes": 1202356,
+    "sha256": "92b7616a00d8206408c1ddcca8921e0d149d759af341b23990b92fa823f60e71",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a91a8bb1b6dbcad8",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 128825,
+    "artist": "Lezet",
+    "title": "Nephew Playing Happy Wheels",
+    "artist_group_id": "5994",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/129/129090.mp3",
+    "bytes": 1202272,
+    "sha256": "df7a7ed6fc7d6f11a7614fd7432337b1d42162ada8ff864f754d1e0dd87e1561",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "003907d4700f14af",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 129090,
+    "artist": "The Vivisectors",
+    "title": "Happy Halloween",
+    "artist_group_id": "1860",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/129/129228.mp3",
+    "bytes": 1088392,
+    "sha256": "9c08d711dbdb1dfef53f9812aa245ddbf09904e1f3b9480bb6c50cb6e2656d64",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "05bc5b8385a11f38",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 129228,
+    "artist": "The Carbon Manual",
+    "title": "I Call It Love - Live in Bristol",
+    "artist_group_id": "21281",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/129/129263.mp3",
+    "bytes": 1202777,
+    "sha256": "8c54b2f3be51b0cb05c3268e28e92129c46082fce1c2c357828f5deec44cbdf4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "3bb1c4ba628bd9a9",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 129263,
+    "artist": "The IMG",
+    "title": "Don't Leave Me",
+    "artist_group_id": "21287",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/129/129702.mp3",
+    "bytes": 1201235,
+    "sha256": "04cd61d941ac40830d824638bfcf88a24d6676cd8ffcabb9ea0a829196984185",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d2f53f0df45c8520",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 129702,
+    "artist": "Ghost By Nature",
+    "title": "The Dust Settles (GTA Remix)",
+    "artist_group_id": "18885",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/129/129724.mp3",
+    "bytes": 1202292,
+    "sha256": "4d06799c88d2485334e3486f053b8c5c70070982b2fc1bb8b11844e2bafb1c4e",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5267f5634e5f8619",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 129724,
+    "artist": "Song Machine",
+    "title": "Voodoo Queen",
+    "artist_group_id": "21391",
+    "license_as_recorded": "Attribution-NoDerivatives 4.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/129/129923.mp3",
+    "bytes": 1201838,
+    "sha256": "00656a31cb1d00f409d50406edcc154c6831af6659bb07aba62d50aaed14ab47",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "978adcb10f69f1bd",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 129923,
+    "artist": "Radio Jarocho and Zenen Zeferino Huervo",
+    "title": "Guacamaya",
+    "artist_group_id": "21423",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/130/130078.mp3",
+    "bytes": 1201678,
+    "sha256": "bfae0259b0e6b069524dbc68b5bf21bdf3d5558c9e1d0e23d1f05de46cc0da5b",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "098942e5dd135ee8",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "098942e5dd135ee8",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 130078,
+    "artist": "Terry & Louie",
+    "title": "Looking For A Heart",
+    "artist_group_id": "21447",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/130/130880.mp3",
+    "bytes": 1202271,
+    "sha256": "eb1ad7f8534819a797bc56d7aabecf817d38dd24ba3264492fa4ab172906384d",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "91dffa5f38802c4a",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 130880,
+    "artist": "mathgrant",
+    "title": "OSayCanUC?",
+    "artist_group_id": "21535",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/130/130901.mp3",
+    "bytes": 1202344,
+    "sha256": "c55b5739b3ec4b6624aa13028b30c379fca8d6fa382980beec69fbc5053da71e",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "2f085e842f7e67fc",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 130901,
+    "artist": "mathgrant",
+    "title": "Ranqom's Eye",
+    "artist_group_id": "21535",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/131/131531.mp3",
+    "bytes": 1202287,
+    "sha256": "290cec7f1074c689d25f13f3e5c01ed9223f8d14e77d27c2c7a1b1f0c3a7b611",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "fa7d3110b764f64b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 131531,
+    "artist": "Arbee",
+    "title": "Bouteille",
+    "artist_group_id": "21577",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/131/131773.mp3",
+    "bytes": 1202298,
+    "sha256": "06d9d4534159aa8f79916b172723f821c25c37c4a7c8538740f84b192d20f3a4",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "79d28eed36454342",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 131773,
+    "artist": "Microscopes",
+    "title": "Those Summer Days",
+    "artist_group_id": "21598",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/131/131938.mp3",
+    "bytes": 1201665,
+    "sha256": "0f0e0c8a3646d5897325cf04dfeceef2319113ed2646241bbcdce1a84ed05208",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "57bcdcdd56e668a6",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 131938,
+    "artist": "Choban Elektrik",
+    "title": "Revisk Oro",
+    "artist_group_id": "21620",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/132/132044.mp3",
+    "bytes": 841307,
+    "sha256": "c822ef14113a2c44486ff166a2bbd1a36650a6fb5c240d5ee740ba7b788cb64e",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "05478d9e09dfdf6b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 132044,
+    "artist": "Eddi Front",
+    "title": "Goldie",
+    "artist_group_id": "21634",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/132/132193.mp3",
+    "bytes": 1202754,
+    "sha256": "ce6b0d2c12698612fe7f2c088a333a3f2167d3d7dba21d01a55dc3dff2a60e52",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4cd1a72e2fac26e4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 132193,
+    "artist": "The Cheese Mites",
+    "title": "Vomit Your Senses",
+    "artist_group_id": "21659",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/132/132547.mp3",
+    "bytes": 1202472,
+    "sha256": "6f07e7713f62c27e84b75c4139bdfdd10f2d9cf7a7912377801ad9ac5a70dd81",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7bdb5fa054cf8dcb",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 132547,
+    "artist": "The Holy Innocents",
+    "title": "Down, Down, Down (Theme to Upsidedown Cross) - Holy Inoccents",
+    "artist_group_id": "21712",
+    "license_as_recorded": "Attribution-NonCommercial-NoDerivatives (aka Music Sharing) 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/132/132800.mp3",
+    "bytes": 1201358,
+    "sha256": "dd3e509a290979b2aca055ed3ac674ebbc6ae934ea4987d7a7f52c67c2d547b3",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "14dbe027cc79e53f",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 132800,
+    "artist": "The Deafening Colors",
+    "title": "City By The Sea",
+    "artist_group_id": "21747",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/133/133551.mp3",
+    "bytes": 1202260,
+    "sha256": "da72a3259d6c1ccf6763d2dab704f60ca821dd24b9b23bbf6eb5e79487f3599e",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "14b212870af9ac35",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 133551,
+    "artist": "David Szesztay",
+    "title": "In Action",
+    "artist_group_id": "21616",
+    "license_as_recorded": "Attribution-NonCommercial 3.0 International",
+    "license_url": "https://creativecommons.org/licenses/by-nc/3.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/134/134054.mp3",
+    "bytes": 961571,
+    "sha256": "2b90cf33aa6ce32c9e9cc5d54478b025f10801412ba2a126a2185ae564823418",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "dafbe6be53928f9e",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 134054,
+    "artist": "Jahzzar",
+    "title": "Pills & Mantra (Skills Pills & Mantra Mixed & Remixed)",
+    "artist_group_id": "13262",
+    "license_as_recorded": "Attribution-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/136/136320.mp3",
+    "bytes": 870908,
+    "sha256": "ff3d0165a67cfb74021cc799ebed190edec532b8f0fd9389d07f364b8cde10f5",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "62d1e559043000eb",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 136320,
+    "artist": "D SMILEZ",
+    "title": "Beach House Gateway",
+    "artist_group_id": "22007",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/137/137176.mp3",
+    "bytes": 1202244,
+    "sha256": "5104a33e7017e78bbaa8e76dc817e8a7024efd54d793a2b2f85bf67f673125a0",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f873cdae7c46b864",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 137176,
+    "artist": "Ars Sonor",
+    "title": "Remember (We Are Divine, We Are Immortal)",
+    "artist_group_id": "17524",
+    "license_as_recorded": "Attribution-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/137/137417.mp3",
+    "bytes": 816671,
+    "sha256": "8ffa8cf97f35729246fa40451b00683286646d2a30227c255a1e10dc7ae4eccf",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c9f8e59751a2f534",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "c9f8e59751a2f534",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 137417,
+    "artist": "Monkey Mind",
+    "title": "In the Morning",
+    "artist_group_id": "22156",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/138/138484.mp3",
+    "bytes": 743871,
+    "sha256": "21e39cfaea51d3615fb239e67ce331dfd5504295754d628139d1df4e22a7d8cb",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f5a265563de4033e",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "f5a265563de4033e",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 138484,
+    "artist": "Arce",
+    "title": "El Colgado",
+    "artist_group_id": "21605",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/139/139235.mp3",
+    "bytes": 1201716,
+    "sha256": "a6467fb584f0da93326cae3c563b478da9ffa47ec9568df8e45ea408eec070f9",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "2df40cc0c4470d39",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 139235,
+    "artist": "David Nance",
+    "title": "When I Saw You Last Night",
+    "artist_group_id": "22327",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/139/139875.mp3",
+    "bytes": 1202372,
+    "sha256": "d12a1417aa10706bf3ebac42506691bb578ac68cd3c62d7fa4c8a6deee3ff841",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0b393e3553efa2cb",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 139875,
+    "artist": "Miquel Parera & Computer",
+    "title": "nxI2016-07-08_05_04_18-A-2016-07-08_05_19_36",
+    "artist_group_id": "22381",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/140/140873.mp3",
+    "bytes": 1201634,
+    "sha256": "f7e951f1b39cc806f84763792b4fba2f408ebfff0ba39311b148dd416ad61b5b",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9e591e1dc97e1f01",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 140873,
+    "artist": "Sylvie Simmons",
+    "title": "Nothing",
+    "artist_group_id": "22523",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/142/142400.mp3",
+    "bytes": 872830,
+    "sha256": "b0910869b4d95874872969c8f8871ea4c16362f4ab847c7f6877ec41511968b7",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6398b70c1d6f5c56",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 142400,
+    "artist": "Sioum",
+    "title": "Fields (Ocean of Silence)",
+    "artist_group_id": "22668",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/143/143098.mp3",
+    "bytes": 1201114,
+    "sha256": "c68cb37861712c48bb8806627eb97fe7d0feaf4b5429c3a1953d69fa5d9b6542",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "19c97f3ab61cced4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 143098,
+    "artist": "Twin Guns",
+    "title": "Now I Understand",
+    "artist_group_id": "12802",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/144/144173.mp3",
+    "bytes": 1202325,
+    "sha256": "b74b8b9adfc674fac4d86dab50842e040c06b4e0978fc9af9ad5aac5ae057be6",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "dc05787ab2b4f28b",
+        "label": "0",
+        "source": "fma_medium"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "dc05787ab2b4f28b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 144173,
+    "artist": "J-K",
+    "title": "Sorriso (Parvo)",
+    "artist_group_id": "14543",
+    "license_as_recorded": "Attribution-NonCommercial",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/144/144243.mp3",
+    "bytes": 1157807,
+    "sha256": "0e7e929557d6a958f2dec99be7b58d85716e4d56eb430b60f2060c005aa6cedb",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "538560500fe01be8",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 144243,
+    "artist": "Chuzausen",
+    "title": "Forever Aloners",
+    "artist_group_id": "16856",
+    "license_as_recorded": "Attribution-NonCommercial-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/145/145066.mp3",
+    "bytes": 1203036,
+    "sha256": "be79cbf59b8325d73fe81d1de24b8b752c4ef6e776a38623153550d771e901f7",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d57ca373e76391c4",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 145066,
+    "artist": "TxSxBx",
+    "title": "Ruagne",
+    "artist_group_id": "23115",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/145/145208.mp3",
+    "bytes": 481408,
+    "sha256": "13d5fe9e50d141f9a44dd3950f067d461258e25a566b61ca7de7fbc8438b76ab",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "aacb441fc9bf6619",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 145208,
+    "artist": "Philadelphia String Quartet",
+    "title": "3 - Allegro",
+    "artist_group_id": "23146",
+    "license_as_recorded": "Attribution-ShareAlike",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/145/145607.mp3",
+    "bytes": 1202331,
+    "sha256": "8266eb6ed735f717d5323ec04171fa564d380de40f194d4c6b82131d7caf14f7",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "46f3a524c6cf7984",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 145607,
+    "artist": "The One They Fear",
+    "title": "The Dawn",
+    "artist_group_id": "23198",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/147/147182.mp3",
+    "bytes": 888915,
+    "sha256": "02684ac3dea1c510ea841817408253f2861a3a189f5328dd3a12de1c4e7093b1",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a8e8e72907b88145",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 147182,
+    "artist": "Pocketmaster",
+    "title": "Verchromte Menschen",
+    "artist_group_id": "6933",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/147/147921.mp3",
+    "bytes": 1202307,
+    "sha256": "2bab205454219236c37b191f2d9a731a6a5c2052ee3f4a41e66757003e39a8e8",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "45c2c31c8c168f4d",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 147921,
+    "artist": "V~Nessy",
+    "title": "Happy Galaxy",
+    "artist_group_id": "21549",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/148/148780.mp3",
+    "bytes": 962013,
+    "sha256": "7d64c5d3850cc108712cbc01f4552fce60958cba9dfa8baf57ca122b305237b9",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9e0e47960d057546",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 148780,
+    "artist": "Mystery Mammal",
+    "title": "Archives",
+    "artist_group_id": "22774",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/148/148882.mp3",
+    "bytes": 1201291,
+    "sha256": "616f5d093de9a8eb7840985f3b708fd244e39b7d9317e71983bbad04b2da1ceb",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1a55f28b81470caf",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 148882,
+    "artist": "The Chills",
+    "title": "Pink Frost",
+    "artist_group_id": "23634",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/148/148896.mp3",
+    "bytes": 1201671,
+    "sha256": "5fbcf6d7bc7f8d95e7055c546c2602e63dab3f281756220bb355bfb891c69041",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6187bafb0af4ce09",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 148896,
+    "artist": "Glenn Morrow's Cry For Help",
+    "title": "Let The Kid Come Out",
+    "artist_group_id": "23637",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/150/150312.mp3",
+    "bytes": 1202295,
+    "sha256": "978df4098a41736a5d95b3d356cc52f1f45edb7f3c7e8a9467edc8cd50eb7ab6",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "8a626ea6224bd38b",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 150312,
+    "artist": "The Birth and Death of Silence",
+    "title": "Hello Friend...",
+    "artist_group_id": "23769",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/152/152467.mp3",
+    "bytes": 721766,
+    "sha256": "a542e97777beb844278e6f83e84033aebc65e06fd0d7fcf362b31d31131ac542",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "15df5096853ff148",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 152467,
+    "artist": "Kuniya",
+    "title": "Akae Elementary School Song",
+    "artist_group_id": "24080",
+    "license_as_recorded": "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/152/152568.mp3",
+    "bytes": 1202280,
+    "sha256": "ff4a1e48ebb5799fa196849c92649aa6a9bd7b7b77c505560ed6872abc1edfd9",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "3711da161563ce47",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 152568,
+    "artist": "Siddhartha",
+    "title": "Everything Dances",
+    "artist_group_id": "24088",
+    "license_as_recorded": "Attribution",
+    "license_url": null,
+    "status": "hold_ambiguous_license",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  },
+  {
+    "relative_source_path": "fma_medium/154/154514.mp3",
+    "bytes": 806212,
+    "sha256": "8faa45b3e57f181b1ae32679f1f640cb4faf595503f908799f7a0a9507109166",
+    "memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "acfbcf585db8dd9c",
+        "label": "0",
+        "source": "fma_medium"
+      }
+    ],
+    "fma_track_id": 154514,
+    "artist": "The Polish Ambassador",
+    "title": "CAN'T GALLOP WITHOUT YOU",
+    "artist_group_id": "17999",
+    "license_as_recorded": "Attribution-Noncommercial-Share Alike 3.0 United States",
+    "license_url": "https://creativecommons.org/licenses/by-nc-sa/3.0/us/",
+    "status": "explicit_license_unchanged_original_candidate",
+    "transformation": "none; preserved FMA medium MP3",
+    "derivative_publication_authorized": false
+  }
+]

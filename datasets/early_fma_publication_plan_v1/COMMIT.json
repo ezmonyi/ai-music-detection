@@ -1,0 +1,12 @@
+{
+  "status": "200_source_files_attributed_not_uploaded",
+  "files": 200,
+  "counts": {
+    "explicit_license_unchanged_original_candidate": 162,
+    "hold_ambiguous_license": 38
+  },
+  "records_sha256": "b3a1b9f926873b1bcdc07a0ac3073e4fdadf73766625afa7c7b3e56a9008d01b",
+  "tracks_sha256": "f73260fd112b8cd42bcd4f7c8918fc66b19d9d4c7b97f4faedce524b59e95d6b",
+  "source_audit_commit_sha256": "6a1160700a0c7a2b70e6e184d6b51ecf20635d7b9033381f9bc9095313a4f8df",
+  "audio_uploaded": false
+}
