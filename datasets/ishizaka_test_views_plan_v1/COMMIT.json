@@ -1,0 +1,10 @@
+{
+  "objects": 78,
+  "original_ids": 39,
+  "bytes": 57343890,
+  "objects_sha256": "ec366c7ca823fc8addec461886eabae7b29e7bb061bab10212f662478455eb89",
+  "source_manifest_sha256": "c5db937a1d1e308f533f2e8f2378febddf7db0a3d7197bc3f4e54eb3d649f7fe",
+  "source_specific_derivative_candidate": true,
+  "publication_verified": false,
+  "whole_project_complete": false
+}

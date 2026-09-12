@@ -1,0 +1,3044 @@
+[
+  {
+    "sha256": "039a254aab66b023773a259e8c78462967107bc58f4c9189e01320ce18869cc9",
+    "bytes": 219951,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2224.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2224",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "43.835095",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2224",
+        "musicnet_id": "2224",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2224.wav",
+        "bytes": 19192378,
+        "sha256": "f44f80af27870073a8c7061b45c0cea047e599182aaabbe432c2c1289631e01d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2224.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 7: Prelude and Fugue in E-flat major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV852",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "09dc80a3906793b7cfd1b1ffd22f9e877d0e2034a37114d60f71d9d5d4bf0925",
+    "bytes": 1165847,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2208.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2208",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "33.598435",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2208",
+        "musicnet_id": "2208",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2208.wav",
+        "bytes": 21307450,
+        "sha256": "96d0ea1acf901a8bcf1752e1d65e8d4c0165c128e14af14b834113fda5d7fa65",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2208.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 10: Prelude and Fugue in E minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV855",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "0aadb579b2beba313b86a8fb6d9fcbfc0d5aa793c1ee8b52f8180a6421d91873",
+    "bytes": 202585,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2213.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2213",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "11.207065",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2213",
+        "musicnet_id": "2213",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2213.wav",
+        "bytes": 20459578,
+        "sha256": "ad484fc5577b86eb1b80a1986f7d3f1bdb44a28203f93c49352f2793dd1734c2",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2213.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 2: Prelude and Fugue in C minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV847",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "12da57e894d274d99dd56884b6c7169b0985060b18fb79bc0e6f3eb239646c7c",
+    "bytes": 1268164,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2232.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2232",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "36.497941",
+        "audio_offset_s": "17.921613999999998",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2232",
+        "musicnet_id": "2232",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2232.wav",
+        "bytes": 13860922,
+        "sha256": "3361345b338ced29daa9985910f4722a3df119df4214aec3ce34e3810361c9d1",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2232.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 21: Prelude and Fugue in B-flat major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV866",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "1fa38f98b86c9b5f3f2a32cadbc1c6fd6027f03c38575a4998b8af13332baec7",
+    "bytes": 1187616,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2225.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2225",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "24.236384",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2225",
+        "musicnet_id": "2225",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2225.wav",
+        "bytes": 37693498,
+        "sha256": "087919226e64d3dd5f5f8fb99ae5ecf6b7cc44970b4f03b3d583ab74c9188fa0",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2225.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 7: Prelude and Fugue in E-flat major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV852",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "20b50804a5aaa6e36cebf13a566bc475f09f54df665cf7cf4c5b246490f65765",
+    "bytes": 227514,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2240.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2240",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "74.050883",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2240",
+        "musicnet_id": "2240",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2240.wav",
+        "bytes": 16330810,
+        "sha256": "1f17264d4c198e2f27bcdef3e4c4e799378a89ebc78e9e5423fefbf0cebd70a4",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2240.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 17: Prelude and Fugue in A-flat major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV862",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "2b75687c62b7e333e19e7791c453448837de9af29ae30f5069217fc35c5a404e",
+    "bytes": 1212737,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2215.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2215",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "79.184493",
+        "audio_offset_s": "22.756738000000006",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2215",
+        "musicnet_id": "2215",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2215.wav",
+        "bytes": 20537914,
+        "sha256": "51a7c82438cc8ba1f7935c751b9189376612a783ded0929df6e2860e77d98112",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2215.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 1: Prelude and Fugue in C major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV846",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "2c5fbc189b103a5f24eb881678511600b9808005554e4d623de1473a3970f7c9",
+    "bytes": 1305747,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2303.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2303",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "37.810935",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2303",
+        "musicnet_id": "2303",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2303.wav",
+        "bytes": 16344634,
+        "sha256": "6c233b3641a84a1755c683a6205e720805a609beec0d70c9b5e33c5c823fda10",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/test/2303.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 5: Prelude and Fugue in D major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV850",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "3123f1eba27a18d54f7c29373dd842e51d4a4602ddffeb51b3089c4c4b06f85f",
+    "bytes": 177900,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2212.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2212",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "86.896308",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2212",
+        "musicnet_id": "2212",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2212.wav",
+        "bytes": 30523450,
+        "sha256": "a5466fd2f9ac7a808f303d476c9a0879b864bfd00efc5363a648ede17e0b0586",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2212.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 12: Prelude and Fugue in F minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV857",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "33f1376123d6343d57dc29ed41bcf0e01fc38f1f979b2fe2113075163059f0ba",
+    "bytes": 189764,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2308.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2308",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "74.134319",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2308",
+        "musicnet_id": "2308",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2308.wav",
+        "bytes": 21491770,
+        "sha256": "7a2286c50d1e8d11c4bbd74c8c3ffb2d1c8a617ab87822bfefe526eac64bcf3a",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2308.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 18: Prelude and Fugue in G-sharp minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV863",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "37961666f6523bcb4f3a9da1ef9a19cd6d8a83cc469dd1f967dd77ac33f0df97",
+    "bytes": 229435,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2207.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2207",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "9.801942",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2207",
+        "musicnet_id": "2207",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2207.wav",
+        "bytes": 15810106,
+        "sha256": "fd2311b0d28ae11c5f307824754f72e6d65f03b1be40e76be7187c8f45d9c6fb",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2207.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 10: Prelude and Fugue in E minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV855",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "398bc02ff221f91961561d6db7e9ea67d75ab1c3434bfe835d3be89d468ce9bf",
+    "bytes": 207608,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2194.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2194",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "36.791277",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2194",
+        "musicnet_id": "2194",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2194.wav",
+        "bytes": 17657914,
+        "sha256": "138171e364ef1b182f1ff1cef855ae2b9b5550ad103beff3140d95a31b449f3f",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2194.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 13: Prelude and Fugue in F-sharp major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV858",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "3a893586bccc63dc63c91d7782c102e8c763c468af65a0f0ba319960896bac02",
+    "bytes": 1250798,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2209.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2209",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "23.968784999999997",
+        "audio_offset_s": "14.999999999999996",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2209",
+        "musicnet_id": "2209",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2209.wav",
+        "bytes": 28362298,
+        "sha256": "5e6c980cb57665f5d1430bd89fcf58749fab17c26d0d0ea0af94c1a19cef6ac1",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2209.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 4: Prelude and Fugue in C-sharp minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV849",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "3b312c5083a1882c2ab5836f8c19ee0eb197f838d6d2b1856de2afabcf8d6c4a",
+    "bytes": 1362778,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2247.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2247",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "17.731017",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2247",
+        "musicnet_id": "2247",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2247.wav",
+        "bytes": 14330938,
+        "sha256": "b92bde617a9590e7010f9f949326e8da6152b033074bedac8a3c3a48cd28b093",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2247.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 9: Prelude and Fugue in E major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV854",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "3ba31594591705805fd2eec15f842956ed8480643f720cad63c5e562c7ccea19",
+    "bytes": 209023,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2292.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2292",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "34.303078",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2292",
+        "musicnet_id": "2292",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2292.wav",
+        "bytes": 16109626,
+        "sha256": "1f5bd58d4a21692c3058aaad2e0163c7d82fe6a20f6fd6090471a3e381ad7498",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2292.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 19: Prelude and Fugue in A major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV864",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "3d332f2d59038939253c576a9292f4e7ee62014ddb2b64ed5b471b5f0e2fdd37",
+    "bytes": 1095539,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2198.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2198",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "158.663621",
+        "audio_offset_s": "20.733824999999996",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2198",
+        "musicnet_id": "2198",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2198.wav",
+        "bytes": 34914874,
+        "sha256": "26a1b1d5f66c9c2de8180997ac4a7d4d6e5dc8e78b90b7c51974efb85ddf5bd5",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2198.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 22: Prelude and Fugue in B-flat minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV867",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "3edb5ff8458b6f5eb71d3e29746e5eb8c2e3f165bc176d0888a9b566a186f1e0",
+    "bytes": 1305856,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2231.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2231",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "65.934291",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2231",
+        "musicnet_id": "2231",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2231.wav",
+        "bytes": 20399674,
+        "sha256": "3d697c631fd1312e35d723241047013e3e241783e29e314cab63832e2875a704",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2231.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 21: Prelude and Fugue in B-flat major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV866",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "45e111833eed803fc84b7971d312c4301c4f53bc6bebf4622a0dd5d19ec36819",
+    "bytes": 208417,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2225.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2225",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "34.236384",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2225",
+        "musicnet_id": "2225",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2225.wav",
+        "bytes": 37693498,
+        "sha256": "087919226e64d3dd5f5f8fb99ae5ecf6b7cc44970b4f03b3d583ab74c9188fa0",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2225.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 7: Prelude and Fugue in E-flat major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV852",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "46b2c740bad9db6019601aee1e4cf46fc7570430a1cb6d62be886872e886c058",
+    "bytes": 213048,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2302.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2302",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "30.691383",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2302",
+        "musicnet_id": "2302",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2302.wav",
+        "bytes": 19109434,
+        "sha256": "5b1a065a945002ee13b0f7694dc2625ff4d86644e3f6fd7f4cc53346442c4a8f",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2302.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 5: Prelude and Fugue in D major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV850",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "46c71b127084d1694908369a4cfafa34e5a0a5ca1f7bc9587695092ae4244537",
+    "bytes": 1049141,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2300.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2300",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "39.443936",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2300",
+        "musicnet_id": "2300",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2300.wav",
+        "bytes": 42015802,
+        "sha256": "4797b25eeb1fc71f4bdb984fcdd306338c0c70557dd9ae4bdc46e1ed71eeafbe",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2300.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 8: Prelude and Fugue in E-flat minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV853",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "4c4741174710bf4b28baea3c8cdfa8dedb80c5ec55aa2f532c4c9211adc23484",
+    "bytes": 206765,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2227.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2227",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "85.746222",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2227",
+        "musicnet_id": "2227",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2227.wav",
+        "bytes": 22832698,
+        "sha256": "43ceae7f19667f845e053bfeafbf985a5edbd8ee591a7522de29ff1c5599473d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2227.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 6: Prelude and Fugue in D minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV851",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "4fbc060cd1f2309bef5c6050f0cbd69d2c6a38fedd0c9b12ec0e950cdaf53de8",
+    "bytes": 217094,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2231.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2231",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "75.934291",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2231",
+        "musicnet_id": "2231",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2231.wav",
+        "bytes": 20399674,
+        "sha256": "3d697c631fd1312e35d723241047013e3e241783e29e314cab63832e2875a704",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2231.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 21: Prelude and Fugue in B-flat major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV866",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "4fc6af9a29339dee54e3e25643d1fb165affc1857ef52ceeac595a2adab3bf0f",
+    "bytes": 1154002,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2194.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2194",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "26.791277",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2194",
+        "musicnet_id": "2194",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2194.wav",
+        "bytes": 17657914,
+        "sha256": "138171e364ef1b182f1ff1cef855ae2b9b5550ad103beff3140d95a31b449f3f",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2194.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 13: Prelude and Fugue in F-sharp major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV858",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "5003c9a089ded9a7c4a8f549ade6ec7f4545fc898e52de3e60240e2e66e01949",
+    "bytes": 1268109,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2302.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2302",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "20.691383000000002",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2302",
+        "musicnet_id": "2302",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2302.wav",
+        "bytes": 19109434,
+        "sha256": "5b1a065a945002ee13b0f7694dc2625ff4d86644e3f6fd7f4cc53346442c4a8f",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2302.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 5: Prelude and Fugue in D major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV850",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "50c79acc4ef32ac1f2b828be1c8a06224a6565a34b2eaf91f6fc753e03c85b6b",
+    "bytes": 1280222,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2310.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2310",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "25.248980000000003",
+        "audio_offset_s": "25.248980000000003",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2310",
+        "musicnet_id": "2310",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2310.wav",
+        "bytes": 9745978,
+        "sha256": "b3c2dddf16afbce395b7cc66c047161bc6b3c07456f3fd8c90c1ee4aaa48e05e",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2310.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 15: Prelude and Fugue in G major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV860",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "529fc17fffaf8e482008084f2b5098e9e1bb11590df4f5af27ec5c979ab7defe",
+    "bytes": 225513,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2229.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2229",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "38.240866",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2229",
+        "musicnet_id": "2229",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2229.wav",
+        "bytes": 43144762,
+        "sha256": "6eaf0035ff975d2429d4e87fba099168b9c379a83c6d9762f2957477f1aabb15",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2229.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 20: Prelude and Fugue in A minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV865",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "5462e9f324e31508c62d0d3429892f6fb0d521eede9d4335fdb6e9817a8d139e",
+    "bytes": 1115966,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2212.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2212",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "76.896308",
+        "audio_offset_s": "15.000000000000007",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2212",
+        "musicnet_id": "2212",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2212.wav",
+        "bytes": 30523450,
+        "sha256": "a5466fd2f9ac7a808f303d476c9a0879b864bfd00efc5363a648ede17e0b0586",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2212.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 12: Prelude and Fugue in F minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV857",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "59112566a8f5f87b1afa67f6e718ae4d338762c83567882d855140651d26024d",
+    "bytes": 197156,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2201.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2201",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "40.573772",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2201",
+        "musicnet_id": "2201",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2201.wav",
+        "bytes": 23685178,
+        "sha256": "a7319dd95dd61962c909998eae220da417c171c5d8846fb73d5f79e2abdc3023",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2201.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 16: Prelude and Fugue in G minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV861",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "612bb11bfa6611a6a4bbdcaa7b2bcb870ad6241a0cfcd8488b36ee698768484c",
+    "bytes": 241471,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2214.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2214",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "45.483215",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2214",
+        "musicnet_id": "2214",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2214.wav",
+        "bytes": 18934330,
+        "sha256": "27827a5abb6ad7e7249f03c1b7db575d57c838b1465c0bf7927c7a4e63804366",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2214.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 2: Prelude and Fugue in C minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV847",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "65e2d2500ddea725296415519891f4d96743eeb2c3691460c0a82bf24a5779ec",
+    "bytes": 227176,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2239.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2239",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "39.452933",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2239",
+        "musicnet_id": "2239",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2239.wav",
+        "bytes": 21173818,
+        "sha256": "0278c64b7efc34b76ede28fe38cf69bb1329549fd18ee43f855aa36eba364d83",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2239.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 17: Prelude and Fugue in A-flat major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV862",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "6c186b773d51caeb360a1abe4c6af1a474340116ab29f07ee915ceb761745785",
+    "bytes": 1340769,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2239.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2239",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "29.452933",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2239",
+        "musicnet_id": "2239",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2239.wav",
+        "bytes": 21173818,
+        "sha256": "0278c64b7efc34b76ede28fe38cf69bb1329549fd18ee43f855aa36eba364d83",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2239.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 17: Prelude and Fugue in A-flat major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV862",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "6d32c43d2eac234b4c4e0010c084a3e00088b392912417da9308f2999506ce99",
+    "bytes": 212481,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2200.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2200",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "24.551983",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2200",
+        "musicnet_id": "2200",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2200.wav",
+        "bytes": 20026426,
+        "sha256": "ef0d47ce96265058d4650eadb9ed3a8ffe5642e331bfde3559a54d948b82ea0f",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2200.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 16: Prelude and Fugue in G minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV861",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "6ea45839f6ea184b87f9d60e4b06a8ad4284808c06c8361486624c38809b653a",
+    "bytes": 1156947,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2201.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2201",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "30.573771999999998",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2201",
+        "musicnet_id": "2201",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2201.wav",
+        "bytes": 23685178,
+        "sha256": "a7319dd95dd61962c909998eae220da417c171c5d8846fb73d5f79e2abdc3023",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2201.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 16: Prelude and Fugue in G minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV861",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "7757aa7a66ea79b86bd18b5787c94baebba3548affaae5b35fe7cf61fcc90fcb",
+    "bytes": 1152412,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2248.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2248",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "29.096555000000002",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2248",
+        "musicnet_id": "2248",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2248.wav",
+        "bytes": 18459706,
+        "sha256": "269457cfb4574d7c16c9ae7e5d0f495f1e8abaa685bbb67996b1e8940a714c4d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2248.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 9: Prelude and Fugue in E major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV854",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "77ad38346aef8918eb0fd43a596544d500f250cd0784347f0cbd41b9194dc64b",
+    "bytes": 210791,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2209.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2209",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "33.968785",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2209",
+        "musicnet_id": "2209",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2209.wav",
+        "bytes": 28362298,
+        "sha256": "5e6c980cb57665f5d1430bd89fcf58749fab17c26d0d0ea0af94c1a19cef6ac1",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2209.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 4: Prelude and Fugue in C-sharp minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV849",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "78aaa4730e7f58ce8a946b0803ca969310596cecf030b302bd860f01c2620c53",
+    "bytes": 205350,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2215.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2215",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "89.184493",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2215",
+        "musicnet_id": "2215",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2215.wav",
+        "bytes": 20537914,
+        "sha256": "51a7c82438cc8ba1f7935c751b9189376612a783ded0929df6e2860e77d98112",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2215.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 1: Prelude and Fugue in C major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV846",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "78be170a8cced0ce4c40e0f1e92aa4b0ee2f4b304ee64bfac2420d5edd8fc5be",
+    "bytes": 202333,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2232.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2232",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "46.497941",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2232",
+        "musicnet_id": "2232",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2232.wav",
+        "bytes": 13860922,
+        "sha256": "3361345b338ced29daa9985910f4722a3df119df4214aec3ce34e3810361c9d1",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2232.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 21: Prelude and Fugue in B-flat major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV866",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "7932a8cc2a79c3a1ac79d66994b72761ceb0d27b795cf84fda906ea0263235de",
+    "bytes": 1156933,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2304.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2304",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "40.534896",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2304",
+        "musicnet_id": "2304",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2304.wav",
+        "bytes": 34638394,
+        "sha256": "359b444080e067e8840e3b9b7abe1102e6e6af16835c29cc05440fc770b3dd7a",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2304.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 14: Prelude and Fugue in F-sharp minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV859",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "86342f47075b15e83d37439fbc8d4a0d3ff52ff9665cbc5aebf7ccb541ab7e86",
+    "bytes": 1355139,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2224.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2224",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "33.835095",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2224",
+        "musicnet_id": "2224",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2224.wav",
+        "bytes": 19192378,
+        "sha256": "f44f80af27870073a8c7061b45c0cea047e599182aaabbe432c2c1289631e01d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2224.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 7: Prelude and Fugue in E-flat major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV852",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "8704561e2c0e29706435c7e99a416ed13e654cb8cdfc90ec4732f34caf91e08a",
+    "bytes": 231600,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2198.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2198",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "168.663621",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2198",
+        "musicnet_id": "2198",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2198.wav",
+        "bytes": 34914874,
+        "sha256": "26a1b1d5f66c9c2de8180997ac4a7d4d6e5dc8e78b90b7c51974efb85ddf5bd5",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2198.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 22: Prelude and Fugue in B-flat minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV867",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "8781cf430df4506d2b528b899d798c0e114b08cef5cd3ea4d9802e9a2e03a6c4",
+    "bytes": 1400949,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2305.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2305",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "1.7609150000000007",
+        "audio_offset_s": "1.7609150000000007",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2305",
+        "musicnet_id": "2305",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2305.wav",
+        "bytes": 11492410,
+        "sha256": "395bf9b55fd5312dc4ce52a7fea15557058ed61f555108245beb8e8782e73650",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2305.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 14: Prelude and Fugue in F-sharp minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV859",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "895d0e805fbc4c7b6630bea05fa32ccb2bbfcb29322929b658ad0af6bcd4ad45",
+    "bytes": 1283269,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2196.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2196",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "30.556696000000002",
+        "audio_offset_s": "15.088941000000002",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2196",
+        "musicnet_id": "2196",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2196.wav",
+        "bytes": 13312570,
+        "sha256": "2e9215e5449d2fe4cfe90c623a324636080a6b84ef956b5264a36f0b53bfef38",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2196.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 3: Prelude and Fugue in C-sharp major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV848",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "8c1708b28de3ddc23754cba45fb0caf2da96434b503eaa2b50efd37d290a527f",
+    "bytes": 1363041,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2229.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2229",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "28.240865999999997",
+        "audio_offset_s": "14.999999999999996",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2229",
+        "musicnet_id": "2229",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2229.wav",
+        "bytes": 43144762,
+        "sha256": "6eaf0035ff975d2429d4e87fba099168b9c379a83c6d9762f2957477f1aabb15",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2229.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 20: Prelude and Fugue in A minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV865",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "8dab85432d32be0b8da5dfb7b199831b944802f690a008fd1640f6d139415f77",
+    "bytes": 1237607,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2240.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2240",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "62.577959",
+        "audio_offset_s": "30.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2240",
+        "musicnet_id": "2240",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2240.wav",
+        "bytes": 16330810,
+        "sha256": "1f17264d4c198e2f27bcdef3e4c4e799378a89ebc78e9e5423fefbf0cebd70a4",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2240.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 17: Prelude and Fugue in A-flat major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV862",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "91768c41d669e2e569ca0013599db01afa154d600658fe058b5a770e5f0cc066",
+    "bytes": 1340339,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2207.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2207",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "0.0",
+        "audio_offset_s": "0.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2207",
+        "musicnet_id": "2207",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2207.wav",
+        "bytes": 15810106,
+        "sha256": "fd2311b0d28ae11c5f307824754f72e6d65f03b1be40e76be7187c8f45d9c6fb",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2207.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 10: Prelude and Fugue in E minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV855",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "9257e31750bf2bbb1367e8a25c0beb0be186b4181059fbdc91c675f2d425a076",
+    "bytes": 1192046,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2238.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2238",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "22.014944999999997",
+        "audio_offset_s": "22.01168",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2238",
+        "musicnet_id": "2238",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2238.wav",
+        "bytes": 10584634,
+        "sha256": "7fa12a73f6bf2bd49823558b476b22f1c69cbc5217a11c20e68deabcc99a2b7b",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2238.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 23: Prelude and Fugue in B major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV868",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "92c406f9552249c27849c5fd5aeaddbb46484ba0572bf177ae85d98bb902e56c",
+    "bytes": 1236305,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2200.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2200",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "14.551983",
+        "audio_offset_s": "14.551983",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2200",
+        "musicnet_id": "2200",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2200.wav",
+        "bytes": 20026426,
+        "sha256": "ef0d47ce96265058d4650eadb9ed3a8ffe5642e331bfde3559a54d948b82ea0f",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2200.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 16: Prelude and Fugue in G minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV861",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "94bc6b47eacdbc0ff3f96cb269eb9dab73decc740bf939900c016c3e59a520c0",
+    "bytes": 1346334,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2195.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2195",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "94.138959",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2195",
+        "musicnet_id": "2195",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2195.wav",
+        "bytes": 27362362,
+        "sha256": "4a1ea30909b248ebcabaac1717c63f3dd2f790ed8b7307f84a11bcf1813201f3",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2195.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 3: Prelude and Fugue in C-sharp major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV848",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "95839e8db993da643fb36a9f8d263016e7d31b0eaa09305a4a02d0b7f8ee5bc0",
+    "bytes": 1328379,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2228.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2228",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "40.629139",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2228",
+        "musicnet_id": "2228",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2228.wav",
+        "bytes": 17303098,
+        "sha256": "1c17e1362673ac4c9aeebe93e16f0f1b00c0cf8d9c00bf4a059e2f995c06902d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2228.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 6: Prelude and Fugue in D minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV851",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "9b6134412229a86f917eb9e8b91014fc6099be087f8f28273a162cf55ae70895",
+    "bytes": 1284076,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2227.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2227",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "75.746222",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2227",
+        "musicnet_id": "2227",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2227.wav",
+        "bytes": 22832698,
+        "sha256": "43ceae7f19667f845e053bfeafbf985a5edbd8ee591a7522de29ff1c5599473d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2227.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 6: Prelude and Fugue in D minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV851",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "9b627df2b3873e02dd5dd073820559b23fb250bc2e0c3ed03c11c873f1c39452",
+    "bytes": 203939,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2208.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2208",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "43.598435",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2208",
+        "musicnet_id": "2208",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2208.wav",
+        "bytes": 21307450,
+        "sha256": "96d0ea1acf901a8bcf1752e1d65e8d4c0165c128e14af14b834113fda5d7fa65",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2208.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 10: Prelude and Fugue in E minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV855",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "9d0fb9a837e058425d8eee0541d97f19ef8d302b6f2e07cf62d7a6cec34a7029",
+    "bytes": 213631,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2237.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2237",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "10.238865",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2237",
+        "musicnet_id": "2237",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2237.wav",
+        "bytes": 19261498,
+        "sha256": "0b0d2df7c3dee264a8dce741183aad1df45afe272b4126f1fe7358baa72e3e5e",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2237.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 23: Prelude and Fugue in B major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV868",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "9fff8469003ee3d67dd14b1830758be8605d9fbdc2d1261fadd89138a95a3f3f",
+    "bytes": 242912,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2195.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2195",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "104.138959",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2195",
+        "musicnet_id": "2195",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2195.wav",
+        "bytes": 27362362,
+        "sha256": "4a1ea30909b248ebcabaac1717c63f3dd2f790ed8b7307f84a11bcf1813201f3",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2195.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 3: Prelude and Fugue in C-sharp major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV848",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "a15592196c64030df70446cd55c44ccdc547fac140465845bee0bf6703f15387",
+    "bytes": 1285436,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2307.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2307",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "33.882944",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2307",
+        "musicnet_id": "2307",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2307.wav",
+        "bytes": 24201274,
+        "sha256": "70f9c2adac76cd132672d4eb02f94c2408ce11898850a5760f02fbb2fccfc622",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2307.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 18: Prelude and Fugue in G-sharp minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV863",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "a2b1f8765a281ea29909f20b4ef745503e481117083361d5f6f79def7963eaf8",
+    "bytes": 1237047,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2292.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2292",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "24.303078",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2292",
+        "musicnet_id": "2292",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2292.wav",
+        "bytes": 16109626,
+        "sha256": "1f5bd58d4a21692c3058aaad2e0163c7d82fe6a20f6fd6090471a3e381ad7498",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2292.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 19: Prelude and Fugue in A major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV864",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "a527dd02105f0b0e7ebf72c214c29b29f3ace5045317675a8d9ffac2db7f37d8",
+    "bytes": 1198425,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2308.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2308",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "64.134319",
+        "audio_offset_s": "15.000000000000007",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2308",
+        "musicnet_id": "2308",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2308.wav",
+        "bytes": 21491770,
+        "sha256": "7a2286c50d1e8d11c4bbd74c8c3ffb2d1c8a617ab87822bfefe526eac64bcf3a",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2308.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 18: Prelude and Fugue in G-sharp minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV863",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "a63a120e1515b45550072a4aab58324af3b3df74960b8b5e74e83c41e38e090f",
+    "bytes": 218741,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2238.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2238",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "32.014945",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2238",
+        "musicnet_id": "2238",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2238.wav",
+        "bytes": 10584634,
+        "sha256": "7fa12a73f6bf2bd49823558b476b22f1c69cbc5217a11c20e68deabcc99a2b7b",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2238.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 23: Prelude and Fugue in B major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV868",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "a80c1513457c05e0c1cc6fbf4dcb2ecea904dd3a3ae7f3c546dfdbbf03e533d4",
+    "bytes": 214100,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2230.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2230",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "29.200005",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2230",
+        "musicnet_id": "2230",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2230.wav",
+        "bytes": 14920762,
+        "sha256": "23c7bddf456779c1deef351264ee239e9ba0067567aa391bd8d419217de4ac66",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2230.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 20: Prelude and Fugue in A minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV865",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "ada64b1bf223a458814494f4423de0a91c7911f7a01cb745b35a0146fdb4ea13",
+    "bytes": 199134,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2304.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2304",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "50.534896",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2304",
+        "musicnet_id": "2304",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2304.wav",
+        "bytes": 34638394,
+        "sha256": "359b444080e067e8840e3b9b7abe1102e6e6af16835c29cc05440fc770b3dd7a",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2304.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 14: Prelude and Fugue in F-sharp minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV859",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "b4a4722cfd27b887456b105dc4f40dd047e7acf920986ecf78db3a687a062333",
+    "bytes": 1440038,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2234.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2234",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "9.656414999999999",
+        "audio_offset_s": "9.656414999999999",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2234",
+        "musicnet_id": "2234",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2234.wav",
+        "bytes": 11298874,
+        "sha256": "356eb7b74a9cdb43e429ba0b0b38f6e6eb79ecb8955d70aea2bcf34c0d5a9197",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2234.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 11: Prelude and Fugue in F major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV856",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "b540ba18303e30942cbdefc8a3562fa0d5df1362b061c72437643857ab3c5292",
+    "bytes": 179607,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2300.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2300",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "49.443936",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2300",
+        "musicnet_id": "2300",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2300.wav",
+        "bytes": 42015802,
+        "sha256": "4797b25eeb1fc71f4bdb984fcdd306338c0c70557dd9ae4bdc46e1ed71eeafbe",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2300.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 8: Prelude and Fugue in E-flat minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV853",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "b6f2a13f660e3ddffac3fa50e5697b19d1baeaa748f5c6212ef7b008bd12a7cf",
+    "bytes": 264045,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2310.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2310",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "36.827538",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2310",
+        "musicnet_id": "2310",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2310.wav",
+        "bytes": 9745978,
+        "sha256": "b3c2dddf16afbce395b7cc66c047161bc6b3c07456f3fd8c90c1ee4aaa48e05e",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2310.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 15: Prelude and Fugue in G major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV860",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "baec343b3958e7414c18355d60a60834640af296cfc51fcd214d37958dfb0246",
+    "bytes": 1432092,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2214.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2214",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "35.483215",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2214",
+        "musicnet_id": "2214",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2214.wav",
+        "bytes": 18934330,
+        "sha256": "27827a5abb6ad7e7249f03c1b7db575d57c838b1465c0bf7927c7a4e63804366",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2214.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 2: Prelude and Fugue in C minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV847",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "c1bda1cab4a04a72e4c624b2c002654534de733eb58bec9357a99d43be458030",
+    "bytes": 195485,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2211.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2211",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "61.264117",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2211",
+        "musicnet_id": "2211",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2211.wav",
+        "bytes": 41845306,
+        "sha256": "b9894163b9d7c685fafdb1cdf64cda499649af524d23038ed3f1a1af4f8dfa39",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2211.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 12: Prelude and Fugue in F minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV857",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "c27f54815ce947b1171b18278170d6d6ed0c64705ac5e4dba46ab8c0854f3689",
+    "bytes": 1208481,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2210.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2210",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "115.569103",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2210",
+        "musicnet_id": "2210",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2210.wav",
+        "bytes": 31458874,
+        "sha256": "ba0a43dbff29bd82451f6306fe0eb821b584919e170bc661eb1eaf9b6fda8280",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2210.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 4: Prelude and Fugue in C-sharp minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV849",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "c311c38e32dc4e01cf52da095abe81f9e9fc986e69c7938eb1d577aa664a16ac",
+    "bytes": 1174921,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2211.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2211",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "51.264117",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2211",
+        "musicnet_id": "2211",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2211.wav",
+        "bytes": 41845306,
+        "sha256": "b9894163b9d7c685fafdb1cdf64cda499649af524d23038ed3f1a1af4f8dfa39",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2211.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 12: Prelude and Fugue in F minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV857",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "c573229415879245b3f4d17bd990737019ff12744c84980612616fc550eb3a54",
+    "bytes": 1199890,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2213.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2213",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "1.207065",
+        "audio_offset_s": "1.207065",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2213",
+        "musicnet_id": "2213",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2213.wav",
+        "bytes": 20459578,
+        "sha256": "ad484fc5577b86eb1b80a1986f7d3f1bdb44a28203f93c49352f2793dd1734c2",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2213.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 2: Prelude and Fugue in C minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV847",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "d3edab2d0dff2619a66f9ee1806402604160cfa1388a23010f7e60e006887cae",
+    "bytes": 198216,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2248.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2248",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "39.096555",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2248",
+        "musicnet_id": "2248",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2248.wav",
+        "bytes": 18459706,
+        "sha256": "269457cfb4574d7c16c9ae7e5d0f495f1e8abaa685bbb67996b1e8940a714c4d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2248.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 9: Prelude and Fugue in E major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV854",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "d70dfbc2421acee64ff4a14973aa87e9c55068cd6e7fbd7e0ceb764e611e6508",
+    "bytes": 257134,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2234.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2234",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "19.656415",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2234",
+        "musicnet_id": "2234",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2234.wav",
+        "bytes": 11298874,
+        "sha256": "356eb7b74a9cdb43e429ba0b0b38f6e6eb79ecb8955d70aea2bcf34c0d5a9197",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2234.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 11: Prelude and Fugue in F major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV856",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "e3e3b85bde787fea26b4dee60ec080ce17230cacae71f8a08c5ec47ee85505af",
+    "bytes": 214983,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2307.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2307",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "43.882944",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2307",
+        "musicnet_id": "2307",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2307.wav",
+        "bytes": 24201274,
+        "sha256": "70f9c2adac76cd132672d4eb02f94c2408ce11898850a5760f02fbb2fccfc622",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2307.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 18: Prelude and Fugue in G-sharp minor",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV863",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "e7695240adc18ec95bd427db29a84ae384051371a9584dd0fa5ba66f9b4eb8ba",
+    "bytes": 1292713,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2230.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2230",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "19.200005",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2230",
+        "musicnet_id": "2230",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2230.wav",
+        "bytes": 14920762,
+        "sha256": "23c7bddf456779c1deef351264ee239e9ba0067567aa391bd8d419217de4ac66",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2230.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 20: Prelude and Fugue in A minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV865",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "e9d9d7e8a961ced02ff1c06d8abee05844e37af49934c5a726b9b5884acfa518",
+    "bytes": 229484,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2228.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2228",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "50.629139",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2228",
+        "musicnet_id": "2228",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2228.wav",
+        "bytes": 17303098,
+        "sha256": "1c17e1362673ac4c9aeebe93e16f0f1b00c0cf8d9c00bf4a059e2f995c06902d",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2228.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 6: Prelude and Fugue in D minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV851",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "e9e2746a8b439f4be074e2979c750ecb2a646c1c3d5bc1263fffa53889bc8bab",
+    "bytes": 211430,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2196.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2196",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "40.556696",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2196",
+        "musicnet_id": "2196",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2196.wav",
+        "bytes": 13312570,
+        "sha256": "2e9215e5449d2fe4cfe90c623a324636080a6b84ef956b5264a36f0b53bfef38",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2196.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 3: Prelude and Fugue in C-sharp major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV848",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "f865249e638a9804a7d2c597199b30e96f23ddd7710ccf8f9b4477fffcdd4230",
+    "bytes": 221684,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2210.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2210",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "125.569103",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2210",
+        "musicnet_id": "2210",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2210.wav",
+        "bytes": 31458874,
+        "sha256": "ba0a43dbff29bd82451f6306fe0eb821b584919e170bc661eb1eaf9b6fda8280",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2210.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 4: Prelude and Fugue in C-sharp minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV849",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "f9a4bad11d0e8bc38efb3b95d0a60a411310fa9fabfebe330d0ca61979bf8ddc",
+    "bytes": 261275,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2305.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2305",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "11.760915",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2305",
+        "musicnet_id": "2305",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2305.wav",
+        "bytes": 11492410,
+        "sha256": "395bf9b55fd5312dc4ce52a7fea15557058ed61f555108245beb8e8782e73650",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2305.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 14: Prelude and Fugue in F-sharp minor",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV859",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "f9cef882d64ab6d4c802ec86883bbe2ceaa2a4f03e1012dead613134a030387a",
+    "bytes": 215099,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2303.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2303",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "47.810935",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2303",
+        "musicnet_id": "2303",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2303.wav",
+        "bytes": 16344634,
+        "sha256": "6c233b3641a84a1755c683a6205e720805a609beec0d70c9b5e33c5c823fda10",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/test/2303.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 5: Prelude and Fugue in D major",
+        "movement": "1. Prelude",
+        "catalog_name": "BWV850",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "fcb116bf63b3bc366a9322c00cfc953aebef53b75aa459e55e4ab658d810548b",
+    "bytes": 233991,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_10s/human_musicnet/human_musicnet_2247.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2247",
+        "source_group": "human_musicnet",
+        "view": "10s",
+        "crop_start_s": "27.731017",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2247",
+        "musicnet_id": "2247",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2247.wav",
+        "bytes": 14330938,
+        "sha256": "b92bde617a9590e7010f9f949326e8da6152b033074bedac8a3c3a48cd28b093",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2247.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 9: Prelude and Fugue in E major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV854",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  },
+  {
+    "sha256": "fe17f891eb2d35e0934ac43c721ad5c1b7eddb0ee792c01ec173646c2ae0d756",
+    "bytes": 1239915,
+    "source_paths": [
+      "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/views_max60s/human_musicnet/human_musicnet_2237.flac"
+    ],
+    "memberships": [
+      {
+        "id": "human_musicnet_2237",
+        "source_group": "human_musicnet",
+        "view": "30s",
+        "crop_start_s": "0.23886500000000055",
+        "audio_offset_s": "0.23886500000000055",
+        "requires_crop": "1"
+      }
+    ],
+    "public_paths": [],
+    "publication_authorized": false,
+    "original_records": [
+      {
+        "id": "human_musicnet_2237",
+        "musicnet_id": "2237",
+        "path": "audio/musicnet_ishizaka_cc0_v1/2237.wav",
+        "bytes": 19261498,
+        "sha256": "0b0d2df7c3dee264a8dce741183aad1df45afe272b4126f1fe7358baa72e3e5e",
+        "source_url": "https://huggingface.co/datasets/DreamyWanderer/MusicNet/resolve/15078b3037afe83bdcacb9cea14232e4debffd2b/data/train/2237.wav",
+        "performer": "Kimiko Ishizaka",
+        "composer": "Bach",
+        "composition": "WTK I, No. 23: Prelude and Fugue in B major",
+        "movement": "2. Fugue",
+        "catalog_name": "BWV868",
+        "recording_license": "CC0-1.0",
+        "license_source": "https://kimikoishizaka.bandcamp.com/album/bach-well-tempered-clavier-book-1",
+        "modification": "None to preserved MusicNet WAV bytes"
+      }
+    ],
+    "recording_license": "CC0-1.0",
+    "modification": "Historical cropped/standardized audio_path input; original recording is separately published"
+  }
+]
