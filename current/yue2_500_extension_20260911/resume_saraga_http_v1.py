@@ -8,9 +8,11 @@ import sys
 import time
 from huggingface_hub.utils._runtime import is_xet_available
 import publish_saraga_originals_v1 as publication
+from bounded_hf_http_v1 import install
 
 
 def main():
+    install()
     assert not is_xet_available()
     assert not (publication.OUT/'COMMIT.json').exists()
     # Refuse to duplicate the diagnosed original worker.

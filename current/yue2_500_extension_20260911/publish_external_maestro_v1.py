@@ -96,4 +96,6 @@ def worker(token):
 
 
 if __name__=='__main__':
+    from bounded_hf_http_v1 import install
+    install()
     transport.OUT=OUT;transport.worker=worker;transport.main()
