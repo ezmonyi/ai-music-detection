@@ -29,9 +29,19 @@ The working English thesis is under
 - Compact tables: `results/native30_aggregate_tables_20260912/` and
   `results/native60_transfer_report_v1/`.
 - Dataset indexes: `datasets/native30_expanded_v1/`,
-  `datasets/historical_input_inventory_v1/`, `datasets/EXTERNAL_CONTROLS.md`
+  `datasets/historical_input_inventory_v1/`,
+  `datasets/historical_measurement_coverage_v1/`, `datasets/EXTERNAL_CONTROLS.md`
   and `datasets/FMA_PUBLICATION.md`. Historical inputs are not all confirmed
   classifier test members; preserve the recorded roles and limitations.
+
+The historical measurement index joins 10,141 unique input IDs across 26 sources
+to 10s/30s feature status and verified original-audio publication receipts.
+The 10s view has 10,085 complete rows and 56 recorded serialization failures;
+the 30s view has 4,493 complete rows and four recorded serialization failures.
+Per-family unavailability is retained even for complete rows. Original-audio
+links are established for 692 IDs (392 FMA excerpts and 300 MAESTRO recordings),
+not for every measured view or stem. Later sources and external controls are
+indexed separately; these counts are not the complete project's song count.
 
 The seven files in the completed-result HF snapshot were verified against
 remote hashes and sizes. Its bundle COMMIT is

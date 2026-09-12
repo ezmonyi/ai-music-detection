@@ -1,0 +1,52 @@
+view,source_group,feature_status,has_published_original,view_rows
+10s,ACE-Step,complete,False,500
+10s,AudioLDM 2 Large,complete,False,500
+10s,AudioLDM 2 Music,complete,False,500
+10s,FMA,accounted_serialization_failure,True,1
+10s,FMA,complete,False,108
+10s,FMA,complete,True,391
+10s,HeartMuLa,complete,False,500
+10s,MTG-Jamendo,complete,False,500
+10s,MusicGen Large,complete,False,500
+10s,MusicGen Medium,complete,False,500
+10s,MusicGen Small,complete,False,500
+10s,Mustango,complete,False,500
+10s,Riffusion,complete,False,500
+10s,Stable Audio v1,complete,False,500
+10s,Stable Audio v2,complete,False,500
+10s,Suno,complete,False,500
+10s,Udio,complete,False,500
+10s,ai_audiox_third_party,accounted_serialization_failure,False,50
+10s,ai_audiox_third_party,complete,False,450
+10s,ai_diffrhythm_pilot,complete,False,50
+10s,human_deam,accounted_serialization_failure,False,2
+10s,human_deam,complete,False,298
+10s,human_gtzan,complete,False,100
+10s,human_hindustani_raag_hf,accounted_serialization_failure,False,1
+10s,human_hindustani_raag_hf,complete,False,99
+10s,human_maestro_v3,complete,True,300
+10s,human_magnatagatune,accounted_serialization_failure,False,1
+10s,human_magnatagatune,complete,False,499
+10s,human_medleydb,complete,False,178
+10s,human_moisesdb,complete,False,239
+10s,human_musicnet,accounted_serialization_failure,False,1
+10s,human_musicnet,complete,False,329
+10s,human_urmp,complete,False,44
+30s,ACE-Step,complete,False,500
+30s,FMA,complete,False,108
+30s,FMA,complete,True,392
+30s,HeartMuLa,complete,False,458
+30s,MTG-Jamendo,accounted_serialization_failure,False,2
+30s,MTG-Jamendo,complete,False,498
+30s,Suno,complete,False,500
+30s,Udio,complete,False,500
+30s,ai_diffrhythm_pilot,complete,False,50
+30s,human_deam,accounted_serialization_failure,False,2
+30s,human_deam,complete,False,298
+30s,human_gtzan,complete,False,99
+30s,human_hindustani_raag_hf,complete,False,9
+30s,human_maestro_v3,complete,True,300
+30s,human_medleydb,complete,False,168
+30s,human_moisesdb,complete,False,239
+30s,human_musicnet,complete,False,330
+30s,human_urmp,complete,False,44
