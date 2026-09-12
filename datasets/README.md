@@ -38,6 +38,9 @@ human specificity, balanced accuracy or two-class ROC AUC.
 
 ## Audio publication status
 
+- [Mureka](mureka_publication_v1/README.md): all 500 original MP3 recordings
+  independently verified at fixed revision, including exact manifest and source
+  notice. These existing development identities are not a new untouched test set.
 - MAESTRO: 300 verified originals and 300 Native30 views, representing the same
   300 recordings, not 600 independent works. Individual receipts bind revisions.
 - [FMA](FMA_PUBLICATION.md): 392 unchanged FMA medium excerpts published; 108
