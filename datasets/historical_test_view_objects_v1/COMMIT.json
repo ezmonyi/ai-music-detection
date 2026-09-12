@@ -1,0 +1,169 @@
+{
+  "input_records_sha256": "e240a30b082dfc44912f4f72325ffd923feafba180129cfabf5a2e64ab550f08",
+  "public_revision": "caed9220f68b258e9c2dcb89792ccb1fe4d1dc61",
+  "unique_objects": 14244,
+  "unpublished_objects": 13278,
+  "unpublished_bytes": 19083227708,
+  "memberships": 14638,
+  "whole_project_complete": false,
+  "scope": "Audited audio_path files only; does not enumerate separated stems or render runtime crops",
+  "source_counts": [
+    {
+      "source_group": "ACE-Step",
+      "unique_objects": 900,
+      "unpublished_objects": 400,
+      "unpublished_bytes": 326553755
+    },
+    {
+      "source_group": "AudioLDM 2 Large",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 236158216
+    },
+    {
+      "source_group": "AudioLDM 2 Music",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 244688938
+    },
+    {
+      "source_group": "FMA",
+      "unique_objects": 900,
+      "unpublished_objects": 900,
+      "unpublished_bytes": 1828989798
+    },
+    {
+      "source_group": "HeartMuLa",
+      "unique_objects": 866,
+      "unpublished_objects": 400,
+      "unpublished_bytes": 381867102
+    },
+    {
+      "source_group": "MTG-Jamendo",
+      "unique_objects": 1000,
+      "unpublished_objects": 1000,
+      "unpublished_bytes": 2209732936
+    },
+    {
+      "source_group": "MusicGen Large",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 248219271
+    },
+    {
+      "source_group": "MusicGen Medium",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 257639895
+    },
+    {
+      "source_group": "MusicGen Small",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 235505177
+    },
+    {
+      "source_group": "Mustango",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 217091763
+    },
+    {
+      "source_group": "Riffusion",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 199905972
+    },
+    {
+      "source_group": "Stable Audio v1",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 501949958
+    },
+    {
+      "source_group": "Stable Audio v2",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 468511826
+    },
+    {
+      "source_group": "Suno",
+      "unique_objects": 900,
+      "unpublished_objects": 900,
+      "unpublished_bytes": 1836067186
+    },
+    {
+      "source_group": "Udio",
+      "unique_objects": 1000,
+      "unpublished_objects": 1000,
+      "unpublished_bytes": 2145335020
+    },
+    {
+      "source_group": "ai_audiox_third_party",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 300676235
+    },
+    {
+      "source_group": "ai_diffrhythm_pilot",
+      "unique_objects": 100,
+      "unpublished_objects": 100,
+      "unpublished_bytes": 410987527
+    },
+    {
+      "source_group": "human_deam",
+      "unique_objects": 600,
+      "unpublished_objects": 600,
+      "unpublished_bytes": 903186009
+    },
+    {
+      "source_group": "human_gtzan",
+      "unique_objects": 199,
+      "unpublished_objects": 199,
+      "unpublished_bytes": 139819194
+    },
+    {
+      "source_group": "human_hindustani_raag_hf",
+      "unique_objects": 109,
+      "unpublished_objects": 109,
+      "unpublished_bytes": 146699564
+    },
+    {
+      "source_group": "human_maestro_v3",
+      "unique_objects": 600,
+      "unpublished_objects": 600,
+      "unpublished_bytes": 1259759294
+    },
+    {
+      "source_group": "human_magnatagatune",
+      "unique_objects": 500,
+      "unpublished_objects": 500,
+      "unpublished_bytes": 218959824
+    },
+    {
+      "source_group": "human_medleydb",
+      "unique_objects": 346,
+      "unpublished_objects": 346,
+      "unpublished_bytes": 1374017241
+    },
+    {
+      "source_group": "human_moisesdb",
+      "unique_objects": 476,
+      "unpublished_objects": 476,
+      "unpublished_bytes": 2211483892
+    },
+    {
+      "source_group": "human_musicnet",
+      "unique_objects": 660,
+      "unpublished_objects": 660,
+      "unpublished_bytes": 675904529
+    },
+    {
+      "source_group": "human_urmp",
+      "unique_objects": 88,
+      "unpublished_objects": 88,
+      "unpublished_bytes": 103517586
+    }
+  ],
+  "objects_sha256": "a56c71a3ddce44a71563c8023f4a64906043f09d81132f7aa6dcc235a9a96a92"
+}
