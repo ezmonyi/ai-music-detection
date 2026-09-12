@@ -1,0 +1,16 @@
+{
+  "status": "verified_report_projection_no_selection",
+  "source_commit_sha256": "b7934f2c649e5d0fbada832c335d36839a1aacb3bd7d6a674db83af5372bc911",
+  "rows": 3825,
+  "products": {
+    "all_255_subsets_five_caps_three_protocols.csv": {
+      "bytes": 655936,
+      "sha256": "fb3136cfb15ccfc7f248a1e6d9a2d8cddeb3e729c2fbb86e1a1dd79936199bff"
+    },
+    "yue2_expanded_tables_generated.tex": {
+      "bytes": 1362,
+      "sha256": "35e565feeda7d71039004e318b50d1f7fe2d0e2f6fd1f922c8d79641b7cfe473"
+    }
+  },
+  "classifier_fits": 0
+}

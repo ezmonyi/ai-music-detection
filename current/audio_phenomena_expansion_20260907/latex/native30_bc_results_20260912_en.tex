@@ -1,0 +1,64 @@
+\section{Completed Native30 bicoherence extension}
+\label{sec:native30-bc-completed}
+The completed extension evaluates all 255 nonempty subsets of eight families
+(S, D, R, P, F, H, SC and BC), with 55 descriptors on the original 3,830-recording
+Native30 cohort. BC is the fixed center-eight-second median squared
+bicoherence statistic at the predeclared 500/750/1,250-Hz coupling coordinates;
+it is not a scan selecting the most discriminative frequency triplet.
+All five training-group caps and the three distinct grouped evaluation
+protocols are retained. There are 103,530 completed model evaluations:
+73,950 primary and 29,580 diagnostic cells. The 3,570 structurally ineligible
+cells are recorded as omissions, not silently treated as completed trials.
+
+Each fitted fold uses training-derived imputation and scaling, ridge parameter
+10, a fixed threshold of 0.5 and uncalibrated linear scores. Primary balanced
+accuracy averages correctness within groups, then equally across sources within
+each class, then across the two classes; held-source experiments are equally
+weighted. AUC is calculated within individual fitted folds, never by pooling
+scores from different models. Repeated opposite-class test occurrences do not
+constitute additional independent recordings.
+
+\input{bc_tables_generated.tex}
+
+Adding BC to the seven-family configuration changes generator-held-out balanced
+accuracy from 61.6251\% to 61.3984\% ($-0.2267$ percentage points), and
+human-source-held-out balanced accuracy from 67.9920\% to 67.6457\%
+($-0.3462$ points). Ordinary grouped descriptive performance changes from
+75.6649\% to 75.8033\% ($+0.1384$ points). BC alone reaches 44.6224\%,
+45.9584\% and 49.6200\%, respectively. These are descriptive outcomes at the
+fixed operating point, not significance tests. Below-chance performance is
+reported as observed; labels and score signs are not reversed after testing.
+The small grouped-descriptive increase does not establish better transfer.
+
+The report preserves every subset and cap rather than naming a best classifier.
+The completed matrix provides no evidence that BC consistently improves
+cross-source discrimination. External phase-coupling sensitivity and robust
+AI/human attribution remain different claims. In particular, a measurable
+coupling statistic need not identify generative provenance.
+
+\paragraph{Admission terminology and evidence limits.}
+The legacy reporting schema retains the flag
+\texttt{BC\_classifier\_admitted=false}. This must not be read as saying BC was
+never supplied to an exploratory fitted model: BC-containing subsets were
+explicitly evaluated. It means that the experiment does not establish BC as a
+validated general-purpose detector. Report generation performed no fitting,
+model selection or threshold tuning. Product hashes and all evaluation receipts
+were checked, but the report does not claim a separately implemented numerical
+audit of every aggregate metric or confidence intervals over fixed buckets.
+
+\paragraph{Reproducibility.}
+The full report is retained locally under
+\path{current_results/native30_bc_evaluation_report_v3_20260912/}; its COMMIT
+SHA256 is:
+\begin{quote}\scriptsize\ttfamily
+ad5223a5f1f0fb667fe38a1e0c214b28ab8a8d0b57f01f912521885aa1c0213b
+\end{quote}
+The underlying evaluation COMMIT is:
+\begin{quote}\scriptsize\ttfamily
+6d6acecbb11b6fcee72f7ba8730b1a2a26f2797c38d659ca69151074dd3dba06
+\end{quote}
+The compact CSV in \path{current_results/bc_thesis_tables_v1/} retains all
+3,825 primary protocol/subset/cap cells, including denominators and omissions.
+The exporter is \path{export_bc_thesis_tables_v1.py}; the source reporter is
+\path{summarize_native30_evaluation_bc_v3.py}. Earlier failed report adapters and
+earlier thesis versions remain preserved rather than overwritten.
