@@ -23,5 +23,24 @@ attribution/license README was downloaded and checked. The source acquisition
 receipt identifies the official archive and prior complete decoding. These
 4,096 notes must not be added to the count of independent human or AI songs.
 
+## GuitarSet v1.1.0
+
+- Official source: https://doi.org/10.5281/zenodo.3371780
+- Attribution: Qingyang Xi, Rachel M. Bittner, Johan Pauwels, Xuzhou Ye,
+  and Juan P. Bello; *GuitarSet: A Dataset for Guitar Transcription* (2018).
+- License: https://creativecommons.org/licenses/by/4.0/
+- Content: unmodified mono microphone archive (360 recordings) and corrected
+  annotation archive. Other pickup variants are not included.
+- Publication: https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/tree/4b649de5ebc78328b3b1e1df5ea1196c2646e143/external_controls/guitarset_source_v1
+- Audio SHA256: `237cdc58353d25c3c9683f4565a0f1cf2db30a9051abca545a919f8f1296dc28`
+- Annotation SHA256: `8daa02e6417ccca1685feb44b135e95928ad7037e5032ecb326b5791856fda99`
+
+The current official API license, archive sizes and MD5 checksums were checked
+before publication; local SHA256 hashes match the frozen acquisition values.
+All four published files (two archives, README, provenance) were checked against
+remote content hashes and sizes at the fixed revision above. These source
+recordings support external bicoherence controls; they do not add 360 songs to
+the classifier cohort or change development/reserved/unused partitions.
+
 Other external controls and remaining song-source uploads are still being
 reconciled. This index does not claim complete dataset delivery.
