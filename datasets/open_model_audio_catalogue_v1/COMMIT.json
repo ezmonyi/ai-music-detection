@@ -1,0 +1,18 @@
+{
+  "status": "1000_original_view_pairs_audited_and_historical_ids_joined",
+  "rows": 1000,
+  "audit_commit_sha256": "bb360a9975b526a2e110d0d867dc00c5cb92bf6cd6229dedc772c39db49c2162",
+  "historical_manifest_sha256": "a03aec930130fcb942c40b35ba5fb49109ceee588894124010448f041d9d1ef4",
+  "products": {
+    "README.md": {
+      "bytes": 1177,
+      "sha256": "392f87dff4b181a9e26bdc16d2ed68f41f15452d082e5fa0c206b2b02e109a35"
+    },
+    "original_view_pairs.csv": {
+      "bytes": 368830,
+      "sha256": "e4804037de728e2782d1f36fa5ae5b3bcea3e0655c42daa4f788f296f3bd6a0d"
+    }
+  },
+  "audio_uploaded": false,
+  "whole_project_complete": false
+}
