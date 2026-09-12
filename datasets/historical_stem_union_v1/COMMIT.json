@@ -1,0 +1,14 @@
+{
+  "input_objects_sha256": {
+    "historical_four_stem_objects_v1": "fd17c91421ae9693a8a15ba4eae5c3959dfcca3524a30861366ae864dc51a292",
+    "historical_spectral_stem_objects_v1": "a2b302b0c221e8a6c118c5b0593c81763d293a4a18818c5267ff6e0017f3d92b"
+  },
+  "input_object_entries": 31778,
+  "unique_objects": 31378,
+  "duplicate_object_entries": 400,
+  "unique_bytes": 98090364632,
+  "unique_memberships": 31778,
+  "objects_sha256": "c139675d81142fdc596d7e315c24ce3e32a223c533b8322bf3e0f92252eee975",
+  "scope": "Union of two accepted historical stem inventories only; byte identity, not song identity. No upload or rights acceptance.",
+  "whole_project_complete": false
+}
