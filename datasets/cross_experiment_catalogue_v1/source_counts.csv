@@ -1,0 +1,30 @@
+label,source_group,distinct_ids
+0,FMA,500
+0,MTG-Jamendo,500
+0,human_deam,300
+0,human_gtzan,100
+0,human_hindustani_raag_hf,100
+0,human_maestro_v3,300
+0,human_magnatagatune,500
+0,human_medleydb,178
+0,human_moisesdb,239
+0,human_musicnet,330
+0,human_saraga_hindustani_v1,103
+0,human_urmp,44
+1,ACE-Step,500
+1,AudioLDM 2 Large,500
+1,AudioLDM 2 Music,500
+1,HeartMuLa,500
+1,Mureka_v9,500
+1,MusicGen Large,500
+1,MusicGen Medium,500
+1,MusicGen Small,500
+1,Mustango,500
+1,Riffusion,500
+1,Stable Audio v1,500
+1,Stable Audio v2,500
+1,Suno,500
+1,Udio,500
+1,YuE2,498
+1,ai_audiox_third_party,500
+1,ai_diffrhythm_pilot,50

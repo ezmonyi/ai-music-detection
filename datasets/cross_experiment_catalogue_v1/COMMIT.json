@@ -1,0 +1,29 @@
+{
+  "distinct_ids": 11242,
+  "membership_rows": 18966,
+  "source_count": 29,
+  "source_bindings": {
+    "historical_input_inventory_v1/metadata_10s.csv": "d3519aa072498ec7812bd73b8456c0a47caba7bbac9801b1e4049df32a477361",
+    "historical_input_inventory_v1/metadata_30s.csv": "eb7b001fa3f0669eb2e086a948ae8921c617577a89ac91ca5dde8b1fcd33c460",
+    "native30_expanded_v1/cohort.csv": "58c0315d169a4ee63bb24facf857617f36822dea01431a207837065493a9d0e5"
+  },
+  "products": {
+    "source_counts.csv": {
+      "bytes": 635,
+      "sha256": "7c62ca41828fbba3746e4bc9159fc47a5294a46b97d0ced27bba4d4918b4cfac"
+    },
+    "README.md": {
+      "bytes": 1363,
+      "sha256": "61b363dfcc692efeb9a1857c7de2756f4ac98cbcbb6432072c47f75ef751e277"
+    },
+    "identities.csv": {
+      "bytes": 479197,
+      "sha256": "d998eca8b9eaf2ebd4d8542f63dadb81f33008b3e98775eb45f51ee18fcdb31b"
+    },
+    "memberships.csv": {
+      "bytes": 2476414,
+      "sha256": "f73c73a9e1bbfde5ce67090097e021123c219c1a7a5a65c386d84fa99582db18"
+    }
+  },
+  "whole_corpus_complete": false
+}
