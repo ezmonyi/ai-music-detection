@@ -1,0 +1,11 @@
+{
+  "status": "400_preserved_paths_freshly_hashed",
+  "files": 400,
+  "memberships": 420,
+  "bytes": 1114016270,
+  "manifest_sha256": "1c53a918b42f4429f5040fa1d5c7d2ce02097d0b98c73bae3cfa19b1b6ecfcad",
+  "input_sha256": "4407ad767493413fde9d19ede77d9beb7c08d9d51752601a0270c95123bf3b34",
+  "historical_expected_raw_hash_available": false,
+  "audio_uploaded": false,
+  "whole_project_complete": false
+}
