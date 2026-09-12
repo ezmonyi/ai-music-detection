@@ -68,6 +68,25 @@ class StemAuditTests(unittest.TestCase):
                 main([run], base / 'audit')
             self.assertFalse((base / 'audit/COMMIT.json').exists())
 
+    def test_spectral_only_uses_single_vocal_and_metadata_duration(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            base = Path(tmp)
+            run = base / 'spectral'
+            run.mkdir()
+            root = base / 'stems'
+            vocal = root / 'htdemucs/track/vocals.wav'
+            vocal.parent.mkdir(parents=True)
+            vocal.write_bytes(b'vocal')
+            (run / 'expanded_spectral_30s.jsonl').write_text(json.dumps(dict(
+                item_id='track', run_fingerprint='frozen', vocal_stem_sha256=sha(vocal))) + '\n')
+            (run / 'expanded_spectral_30s_metadata.json').write_text(json.dumps(dict(
+                run_fingerprint='frozen', run_payload=dict(demix_roots=[str(root)], duration=30))))
+            main([run], base / 'audit')
+            rows = (base / 'audit/records.jsonl').read_text().splitlines()
+            self.assertEqual(len(rows), 1)
+            row = json.loads(rows[0])
+            self.assertEqual((row['stem'], row['duration_sec'], row['status']), ('vocals', 30, 'verified'))
+
 
 if __name__ == '__main__':
     unittest.main()
