@@ -1,0 +1,53 @@
+{
+  "experiments": [
+    {
+      "experiment": "frequency_ablation_20260813",
+      "rows": 400,
+      "exact_paths_in_direct_band": 0,
+      "source_counts": {
+        "fma_medium": 200,
+        "humair_suno": 100,
+        "suno_unknown": 100
+      }
+    },
+    {
+      "experiment": "direct_band_500x500_20260815",
+      "rows": 1000,
+      "exact_paths_in_direct_band": 1000,
+      "source_counts": {
+        "fma_medium": 500,
+        "humair_suno": 250,
+        "suno_unknown": 250
+      }
+    },
+    {
+      "experiment": "stem_spectral_pilot_20260813",
+      "rows": 20,
+      "exact_paths_in_direct_band": 0,
+      "source_counts": {
+        "fma_medium": 10,
+        "humair_suno": 5,
+        "suno_unknown": 5
+      }
+    }
+  ],
+  "source_bindings": {
+    "frequency_ablation_20260813": {
+      "archive": "frequency_ablation_20260813.tar.gz",
+      "member": "artifacts/frequency_ablation_20260813/manifest.jsonl",
+      "member_sha256": "9b23c3818714eafa03ca2d28129c591cf9a7b3e87883ad00daa52cb7e7126e00"
+    },
+    "direct_band_500x500_20260815": {
+      "archive": "direct_band_500x500_20260815.tar.gz",
+      "member": "artifacts/direct_band_500x500_20260815/manifest.jsonl",
+      "member_sha256": "0174e0a6781e5cdccb798de9a22bd12583b97cea4f6ca2c19e4cecac8012995d"
+    },
+    "stem_spectral_pilot_20260813": {
+      "archive": "stem_spectral_pilot_20260813.tar.gz",
+      "member": "artifacts/stem_spectral_pilot_20260813/selected_manifest.jsonl",
+      "member_sha256": "7bfddd33bf8611b86b9a4cc7a78f8c04939361137cb07d56d271f4602ecb142b"
+    }
+  },
+  "limitation": "Relative path and legacy ID comparison is not content deduplication or raw-byte verification.",
+  "whole_project_complete": false
+}

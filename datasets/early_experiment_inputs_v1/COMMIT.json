@@ -1,0 +1,14 @@
+{
+  "rows": 1420,
+  "products": {
+    "SUMMARY.json": {
+      "bytes": 1712,
+      "sha256": "97c51e5d894829c39922140854ea0d743da932839cb752802732f42b3a8c456c"
+    },
+    "inputs.csv": {
+      "bytes": 220949,
+      "sha256": "4407ad767493413fde9d19ede77d9beb7c08d9d51752601a0270c95123bf3b34"
+    }
+  },
+  "status": "early_input_membership_preserved_not_audio_verified"
+}
