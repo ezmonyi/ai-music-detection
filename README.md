@@ -21,6 +21,25 @@ The working English thesis is under
 
 ## Data and reports
 
+### Completed experiment snapshot (12 September 2026)
+
+- [English thesis v6 PDF](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/resolve/eb0e35208bb9229e1a2ee1a389e181ce7ddee8d6/reports/completed_experiments_thesis_v6_20260912/thesis_v6.pdf)
+- [Self-contained thesis source bundle](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/resolve/eb0e35208bb9229e1a2ee1a389e181ce7ddee8d6/reports/completed_experiments_thesis_v6_20260912/thesis_v6_sources.tar.gz)
+- [Complete BC/YuE2 aggregate reports, Native60 predictions and features](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/tree/eb0e35208bb9229e1a2ee1a389e181ce7ddee8d6/reports/completed_experiments_thesis_v6_20260912)
+- Compact tables: `results/native30_aggregate_tables_20260912/` and
+  `results/native60_transfer_report_v1/`.
+- Dataset indexes: `datasets/native30_expanded_v1/`,
+  `datasets/historical_input_inventory_v1/`, `datasets/EXTERNAL_CONTROLS.md`
+  and `datasets/FMA_PUBLICATION.md`. Historical inputs are not all confirmed
+  classifier test members; preserve the recorded roles and limitations.
+
+The seven files in the completed-result HF snapshot were verified against
+remote hashes and sizes. Its bundle COMMIT is
+`d392cff45fc86beac373faca19fe55aa2349e47fdbf93a5b8111976b37bfd152`.
+Thesis v6 includes completed BC, expanded YuE2 and Native60 transfer results;
+its self-contained source rebuild passed. Full-corpus audio publication is
+still incomplete, so this is not a claim of whole-project delivery completion.
+
 Public data/report archive:
 https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio
 
