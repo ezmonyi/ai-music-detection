@@ -14,7 +14,7 @@ The release is still incomplete; repository visibility is not an audio license.
 | [All YuE2 originals and duration eligibility](yue2_duration_catalogue_v1/README.md) | Preserve all generations, including short outputs | 500 IDs; 498 Native30 and 276 Native60 eligible |
 | [Selected AIME generated originals](aime_generated_catalogue_v1/README.md) | Raw-source hashes linked to historical views | 5,000 existing historical IDs; ten generator labels, 500 each |
 | [Saraga original retrieval and attribution](saraga_retrieval_catalogue_v1/README.md) | Audited source hashes, ZIP member paths and performers | 108 preserved originals; 103 exact classifier IDs, five other records; no project audio-upload claim |
-| [ACE-Step/HeartMuLa original-view pairs](open_model_audio_catalogue_v1/README.md) | Fresh byte audit linked to historical IDs | 1,000 existing identities, 2,000 original/view files; not yet uploaded |
+| [ACE-Step/HeartMuLa original-view pairs](open_model_audio_catalogue_v1/README.md) | Fresh byte audit linked to historical IDs | 1,000 existing identities, 2,000 original/view files; independently accepted in completed_audio_acceptance_v1 |
 | [External controls](EXTERNAL_CONTROLS.md) | Acoustic-phenomenon validation sources | Separate from song-classifier populations |
 
 Do not add these row counts. The cross-experiment union includes 498 YuE2 IDs;
@@ -44,9 +44,13 @@ human specificity, balanced accuracy or two-class ROC AUC.
   queued-upload checkpoints; the 8,262 file entries are not independent songs.
 - [Early humair](early_humair_publication_v2/README.md): 100 originals independently
   accepted, with exact upstream attribution variants preserved.
-- YuE legacy Demucs: a separate 1,000-stem / 500-recording upload was launched
-  after verifying its roster against both the hashed derived inventory and the
-  published original manifest. This is not yet an independent acceptance.
+- [YuE legacy Demucs](yue2_demucs_publication_v1/README.md): all 1,000 stems
+  from 500 recordings independently accepted; exact inventory and original-ID
+  bindings, all 20 batch receipts and terminal acceptance are retained.
+- [Remaining YuE derived objects](yue_derived_publication_plan_v1/README.md):
+  4,900 additional byte objects are being uploaded; no terminal acceptance yet.
+- [DEAM attribution](deam_selected_attribution_v1/README.md): all 300 selected
+  records matched official artist/title metadata; per-track licenses unresolved.
 
 - [Mureka](mureka_publication_v1/README.md): all 500 original MP3 recordings
   independently verified at fixed revision, including exact manifest and source
