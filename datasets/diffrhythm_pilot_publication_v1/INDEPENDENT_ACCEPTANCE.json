@@ -1,0 +1,16 @@
+{
+  "revision": "53d5996808b0652063c6c58f706e8167ff2673ab",
+  "verified_audio_files": 50,
+  "conditions": 10,
+  "checked_bytes": 838863000,
+  "manifest_sha256": "0f68b18de8d73ea99d406bd70f25df758a5b4fdcd3fa5f5d5a039743603ad1a7",
+  "metadata_sha256": {
+    "README.md": "4344e658d1727fa033a02a6426d578f927764382e6649b9123447c7b74b301c3",
+    "SOURCE_CARD.md": "3b4adc71e55af27df5e611e4d29df75d2cabc965c5e36f532894ffbfc8dfc45b",
+    "LICENSE.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+  },
+  "source_records_bound": true,
+  "final_acceptance": true,
+  "verification": "Anonymous manifest/notices equality and all LFS hashes/sizes; not a full audio redownload",
+  "whole_project_complete": false
+}
