@@ -23,7 +23,7 @@ def retry_delay(error):
     return max(floor, int(retry)) if retry.isdigit() else floor
 
 
-def main(target):
+def main(target, cooldown_override=None):
     name, prior_pid = TARGETS[target]
     assert not Path(f'/proc/{prior_pid}').exists(), 'Prior process still exists; inspect before resuming'
     module = importlib.import_module(name)
@@ -31,7 +31,8 @@ def main(target):
     lock = (module.OUT/'resume.lock').open('a')
     fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
     token = json.load(sys.stdin)['token']
-    cooldown = 3900 if target == 'aime' else 360
+    cooldown = cooldown_override if cooldown_override is not None else (3900 if target == 'aime' else 360)
+    assert cooldown >= 360
     pid = os.fork()
     if pid:
         print(json.dumps(dict(background_pid=pid,target=target,initial_cooldown_s=cooldown)),flush=True)
@@ -59,4 +60,6 @@ def main(target):
 if __name__ == '__main__':
     p=argparse.ArgumentParser(description=__doc__)
     p.add_argument('target',choices=TARGETS)
-    main(p.parse_args().target)
+    p.add_argument('--cooldown-seconds', type=int)
+    args=p.parse_args()
+    main(args.target, args.cooldown_seconds)
