@@ -42,5 +42,23 @@ remote content hashes and sizes at the fixed revision above. These source
 recordings support external bicoherence controls; they do not add 360 songs to
 the classifier cohort or change development/reserved/unused partitions.
 
+## VocalSet selected original recordings
+
+- Source: https://zenodo.org/records/1193957
+- Attribution: Julia Wilkins, Prem Seetharaman, Alison Wahl and Bryan Pardo;
+  *VocalSet: A Singing Voice Dataset* (2018).
+- License: https://creativecommons.org/licenses/by/4.0/ (official record API checked).
+- Content: 244 unchanged original WAV files selected for external breath/vibrato
+  controls, 351,599,240 bytes. This is the acquired source subset, not a claim
+  that all 244 were evaluated in each assay. No breath annotations are included.
+- [Verified publication](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/tree/65087d237b50f598000d2cf3a5353317bdf5f866/external_controls/vocalset_selected_originals_v1).
+- Manifest SHA256: `2915154deae2cf787ca2f3fd2187004cc5d0789c66c0bd901e51ea245486aac3`.
+
+All 244 remote audio hashes/sizes and both metadata files were independently
+checked at the revision above after the upload worker completed. Source filenames
+and archive members preserve historical acquisition choices; retain the separate
+ambiguity exclusions in the breath/vibrato experiments. The earlier acquisition
+README says planned: terminal receipts establish the later completed upload.
+
 Other external controls and remaining song-source uploads are still being
 reconciled. This index does not claim complete dataset delivery.
