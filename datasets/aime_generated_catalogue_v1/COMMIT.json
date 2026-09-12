@@ -1,0 +1,30 @@
+{
+  "status": "selected_provenance_join_not_audio_upload",
+  "rows": 5000,
+  "model_counts": {
+    "AudioLDM 2 Large": 500,
+    "AudioLDM 2 Music": 500,
+    "MusicGen Large": 500,
+    "MusicGen Medium": 500,
+    "MusicGen Small": 500,
+    "Mustango": 500,
+    "Riffusion": 500,
+    "Stable Audio v1": 500,
+    "Stable Audio v2": 500,
+    "Udio": 500
+  },
+  "source_manifest_sha256": "49dbe01b8be98857361b3a437db44ee937698e014bf70ccc7d443c24ad342fb4",
+  "historical_metadata_sha256": "a03aec930130fcb942c40b35ba5fb49109ceee588894124010448f041d9d1ef4",
+  "products": {
+    "selected_generated.csv": {
+      "bytes": 1996607,
+      "sha256": "8ce595a28346b7b0b25ce2e5721ec881ba4471018a736d52a3b43b43afa1ba96"
+    },
+    "README.md": {
+      "bytes": 1465,
+      "sha256": "3f667c6c8d2f3174dcf296643bef2d3e9861e53ee1609ef123ef5b813cad0daf"
+    }
+  },
+  "original_bytes_freshly_verified": false,
+  "audio_uploaded": false
+}
