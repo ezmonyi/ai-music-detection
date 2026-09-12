@@ -1,0 +1,80 @@
+\section{YuE2: prediction-only transfer to locked recordings}
+\label{sec:yue2locked}
+
+The extension generated 500 recordings from the shared frozen Muse prompts.
+Of these, 498 supported a native 30-second view: 398 development recordings
+and 100 locked recordings. Two shorter recordings were excluded from this
+Native30 analysis, not padded into eligibility. The experiment reported here
+uses the 100 locked AI recordings only and does not use the expanded models.
+
+\subsection{Fixed model catalogue and protocol deviation}
+All 255 nonempty subsets of the eight pre-existing descriptor families were
+evaluated with five previously fitted ordinary-group-holdout models per subset.
+These models use the original cohort, the all-quantity setting, values plus
+missingness, and a fixed decision threshold of 0.5. Training medians, scaling
+and coefficients were reused, with zero new fits. The preflight checked
+disjoint item, group and component identities between training and the locked
+recordings. Each prediction was replayed deterministically. The result has
+1,275 models and 127,500 prediction occurrences, but only 100 test recordings.
+
+The originally proposed order was to score the held-out generator before
+expanded development. Actual locked scoring occurred afterwards. This is a
+protocol-order deviation, and the present report does not retrospectively
+claim prospective preregistration. The exhaustive scoring catalogue was fixed
+before this scoring run; no subset was chosen as a winner from these outcomes.
+
+\subsection{Sensitivity, not two-class accuracy}
+For a fixed model, sensitivity is the fraction of these 100 AI recordings
+predicted as AI. There are no human test recordings in this experiment, so
+specificity, balanced accuracy and ROC AUC are not estimable. A trivial
+always-AI predictor would also achieve perfect sensitivity.
+Table~\ref{tab:yue2locked} reports the single families and two pre-existing
+combinations; the exhaustive 255-subset table is retained separately.
+
+\begin{table}[htbp]
+\centering
+\caption{Locked YuE2 sensitivity (percent). Means and ranges are descriptive
+across five old models evaluated on the same recordings, not confidence
+intervals or independent test-set repetitions.}
+\label{tab:yue2locked}
+\begin{tabular}{lrr}
+\toprule
+Family/subset & Mean & Range \\
+\midrule
+S & 94.8 & 93--97 \\
+D & 62.6 & 62--65 \\
+R & 84.8 & 84--85 \\
+P & 28.0 & 28--28 \\
+F & 87.8 & 85--90 \\
+H & 87.0 & 85--90 \\
+SC & 90.2 & 88--91 \\
+BC & 66.8 & 29--100 \\
+S+D+R+P & 96.0 & 95--97 \\
+S+D+R+P+F+H+SC+BC & 96.2 & 95--97 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The four-family and eight-family combinations have similar descriptive
+sensitivity, but this does not establish equal overall performance or an
+incremental benefit from the additional families. BC alone varies strongly
+across the old models. It must be assessed jointly with human false-positive
+rates before interpreting utility. The results do not identify the acoustic
+cause of the label association and cannot establish an intrinsic AI signature.
+
+\subsection{Reproduction and retained evidence}
+The code repository is
+\url{https://github.com/ezmonyi/ai-music-detection}.
+The versioned scripts are
+\path{current/yue2_500_extension_20260911/preflight_locked_yue2_v1.py},
+\path{score_locked_yue2_v1.py}, and \path{report_locked_yue2_v1.py} in that
+same directory. The scoring protocol and freeze are retained alongside them.
+The source scoring COMMIT SHA256 is
+\path{b43744c0775c14d040579537316b40d1c6a3479649afc285faa176e76abf87f5}.
+All 1,276 committed products were verified after local recovery.
+
+Under \path{/Users/yi/Documents/report/music_ai_detection_20260912/},
+\path{current_results/locked_yue2_scoring_v1/} contains individual predictions
+and \path{current_results/locked_yue2_report_v1/all_255_combinations.csv}
+contains the complete descriptive comparison. These paths identify preserved
+results, not a claim that all remaining experiment arms are finished.
