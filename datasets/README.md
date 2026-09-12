@@ -1,0 +1,59 @@
+# Dataset navigation and release boundaries
+
+This is the metadata/code-facing dataset release. Audio and large numerical
+reports live in [the HF archive](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio).
+The release is still incomplete; repository visibility is not an audio license.
+
+| Catalogue | Purpose | Scope |
+|---|---|---|
+| [Cross-experiment identities](cross_experiment_catalogue_v1/README.md) | Exact-ID union with separate cohort memberships | 11,242 IDs, 29 sources; not content-deduplicated |
+| [Historical inputs](historical_input_inventory_v1/README.md) | Input roles and provenance | 10,141 IDs; 10s and 30s views overlap |
+| [Historical measurement status](historical_measurement_coverage_v1/README.md) | Successful/failed and per-family availability | 10,141 10s rows and 4,497 30s rows |
+| [Expanded Native30](native30_expanded_v1/README.md) | Completed feature cohort index | 4,228 development plus 100 locked YuE2 IDs |
+| [All YuE2 originals and duration eligibility](yue2_duration_catalogue_v1/README.md) | Preserve all generations, including short outputs | 500 IDs; 498 Native30 and 276 Native60 eligible |
+| [External controls](EXTERNAL_CONTROLS.md) | Acoustic-phenomenon validation sources | Separate from song-classifier populations |
+
+Do not add these row counts. The cross-experiment union includes 498 YuE2 IDs;
+the generation catalogue adds two short IDs, not another 500 songs. Even that
+union is not the full historical corpus: external controls and earlier-only
+samples still require reconciliation. Different IDs can share content or prompts.
+
+## How to reproduce membership
+
+Use `memberships.csv` in the cross-experiment catalogue to identify the original
+cohort and role. Follow its source_index to the bound catalogue and preserve
+group_id/component_id. A role labelled development is not a universal training
+partition: each source-holdout protocol has its own frozen model schedule.
+Provisional, pilot and stress-only roles are not silently admitted to primary
+classification. Feature completeness does not imply every family was observable.
+
+Original-file hashes, normalized-view hashes and stem hashes identify different
+objects. Retain native sample rate, duration and exact crop definitions. The
+Native60 YuE2 population is duration-selected and AI-only; it cannot estimate
+human specificity, balanced accuracy or two-class ROC AUC.
+
+## Audio publication status
+
+- MAESTRO: 300 verified originals and 300 Native30 views, representing the same
+  300 recordings, not 600 independent works. Individual receipts bind revisions.
+- [FMA](FMA_PUBLICATION.md): 392 unchanged FMA medium excerpts published; 108
+  selected originals remain outside this release pending license reconciliation.
+- NSynth and GuitarSet: official source archives published as described in the
+  external-controls index; not all archive members were tested.
+- YuE2: 500 original FLAC files are being uploaded under `audio/yue2/originals_v1/`.
+  The manifest is the planned roster, not proof that all files arrived. Completion
+  requires all 50 ten-file batch receipts and a terminal COMMIT.
+- Other song sources and derived views/stems: publication is not established by
+  these catalogues. Missing links do not prove the source was never backed up.
+
+No blanket redistribution right is inferred from an upstream dataset/model tag.
+Keep source-specific attribution and conditions. Restricted or unresolved audio
+must have explicit retrieval/provenance records rather than a false upload claim.
+
+## Validation and versioning
+
+Each catalogue's COMMIT binds its products by size and SHA-256. These commitments
+are scoped evidence, not a declaration that all project requirements are complete.
+The construction scripts are under `../current/yue2_500_extension_20260911/`.
+Old catalogue versions and failed experiment evidence are retained, not silently
+rewritten to fit the latest population or a more favorable outcome.
