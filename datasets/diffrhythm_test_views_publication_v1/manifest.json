@@ -1,0 +1,3202 @@
+[
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/000128c014cb0f3e7a7add65cfd213296e5ce0c31ddb7d8e18f1d6f70a00fda5.flac",
+    "sha256": "000128c014cb0f3e7a7add65cfd213296e5ce0c31ddb7d8e18f1d6f70a00fda5",
+    "bytes": 905838,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_008",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "26.470495",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_008",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_008.wav",
+        "sha256": "452d58228facd788579dc624a9d0152a2d0605ef4c3946ddf48b2c2145694098",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_3.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/002e771ddaae39f8930baa00fd8355964b3642191b3b293c2bb6c1b771c1db45.flac",
+    "sha256": "002e771ddaae39f8930baa00fd8355964b3642191b3b293c2bb6c1b771c1db45",
+    "bytes": 1036123,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_016",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "66.951541",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_016",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_016.wav",
+        "sha256": "53d941c12dbe42a5d86d2fe5c67516bc7719e2065e1f8fd14c83c47ed3020c9a",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_1.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/07b3d5282d7167111052cfea6f852163b3208e776fea3adc1772cbe42b334758.flac",
+    "sha256": "07b3d5282d7167111052cfea6f852163b3208e776fea3adc1772cbe42b334758",
+    "bytes": 1221079,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_026",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "75.013299",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_026",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_026.wav",
+        "sha256": "df646dcb5ccc9dbcba90f1cf75949d60f586d6404941be4a45acba54657acb50",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_1.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/0a26b5191c183d13cd181e80f6af574e63a1dfccdec65aee6f16849fd9a72010.flac",
+    "sha256": "0a26b5191c183d13cd181e80f6af574e63a1dfccdec65aee6f16849fd9a72010",
+    "bytes": 7908123,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_040",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "2.8832710000000006",
+        "audio_offset_s": "2.8832710000000006",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_040",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_040.wav",
+        "sha256": "99db8053d6f063c38a43ac3f90bed2ea041cd7d2955dd099e49e7f7e0fe3adfe",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_5.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/0ada7b63ed3ce67d17fbdc520f79a9211e1606ea6854b6e317a2b0af43f8f96b.flac",
+    "sha256": "0ada7b63ed3ce67d17fbdc520f79a9211e1606ea6854b6e317a2b0af43f8f96b",
+    "bytes": 8344812,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_034",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "15.236245",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_034",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_034.wav",
+        "sha256": "100b9f85e02158964d0fabaa077c0b0d58db64159e00a31b21fc7d9be1093458",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_4.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/0b6f7b8c3ed27c922c722fc52d17476b4c6cc4258e4d79b03b619bd9593b3ed8.flac",
+    "sha256": "0b6f7b8c3ed27c922c722fc52d17476b4c6cc4258e4d79b03b619bd9593b3ed8",
+    "bytes": 7886517,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_039",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "8.791407",
+        "audio_offset_s": "8.791407",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_039",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_039.wav",
+        "sha256": "fa8157809ee41bce8f815a109af4f930ff319b6c6243d67b20ce7e545c598b8f",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_4.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/0ba4039b5cab4254956113aa31e9aa38c7364c0fa0cd31d852dd0ad6b76b08ab.flac",
+    "sha256": "0ba4039b5cab4254956113aa31e9aa38c7364c0fa0cd31d852dd0ad6b76b08ab",
+    "bytes": 6391981,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_049",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "52.607476",
+        "audio_offset_s": "17.498542",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_049",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_049.wav",
+        "sha256": "1584416db4d52f3177c1ae90c2ff84fdc0e93b48ba98a4055a652271d78da702",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_4.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/0db4ff9a65a1a6106d10871f97972bfb56e20fc17ce06c9cb2ade9d91e382f29.flac",
+    "sha256": "0db4ff9a65a1a6106d10871f97972bfb56e20fc17ce06c9cb2ade9d91e382f29",
+    "bytes": 1085483,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_023",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "13.877409",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_023",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_023.wav",
+        "sha256": "360ddc399257d57c570afe0bd4a03349ac0e42f9d3920e97eac38dce69a48372",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_3.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/10140b4197c4119982f64d22b3becb8bc303859ef47f5e0e6e5196b928b96b9d.flac",
+    "sha256": "10140b4197c4119982f64d22b3becb8bc303859ef47f5e0e6e5196b928b96b9d",
+    "bytes": 8084331,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_027",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "6.421627000000001",
+        "audio_offset_s": "6.421627000000001",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_027",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_027.wav",
+        "sha256": "00e63bfa60c30baf445011810ad4d9ff431dea61479891d4a48b9e01b2204c55",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_2.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/11ce59e6540c5c4610a9b0fa974146f2356eb05c0a2d0187e2237b4e101b18a0.flac",
+    "sha256": "11ce59e6540c5c4610a9b0fa974146f2356eb05c0a2d0187e2237b4e101b18a0",
+    "bytes": 8361267,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_004",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "14.159585",
+        "audio_offset_s": "14.159585",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_004",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_004.wav",
+        "sha256": "3219aae9657507ac8dda0854ab11c06efe4d750ba985b6799f61e8a9ecdeaa3c",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_4.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/1299457393f71bb07cc861776709b2866b57f58e051ae28963a89dbf803994e1.flac",
+    "sha256": "1299457393f71bb07cc861776709b2866b57f58e051ae28963a89dbf803994e1",
+    "bytes": 1213707,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_019",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "44.027091",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_019",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_019.wav",
+        "sha256": "8931e7cb5b6903088c1a2e68a4010641c679e42a2689f40985fcd285e9e1ba61",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_4.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/1312513d25e5993fe9b00a1ddb8c15004c44ce2fd57b6282a6b96096cda52d56.flac",
+    "sha256": "1312513d25e5993fe9b00a1ddb8c15004c44ce2fd57b6282a6b96096cda52d56",
+    "bytes": 1367341,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_037",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "10.200478",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_037",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_037.wav",
+        "sha256": "6e7e0386683984a5b2ede2ac2a82b34f79283ba3c1a90e4401678308591d89aa",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_2.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/1450abc4939a181cb33c5dae44d87dc054f91d4b9c16e237e81d6515dd40567b.flac",
+    "sha256": "1450abc4939a181cb33c5dae44d87dc054f91d4b9c16e237e81d6515dd40567b",
+    "bytes": 5501874,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_024",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "13.242251",
+        "audio_offset_s": "13.242251",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_024",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_024.wav",
+        "sha256": "0fe86107b28a5afab4e307a893468ca29b9cc6bce0c38dfcdc9dc0f109bc9022",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_4.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/15096994dc39eb86e4bbc3fc56ed5740f8a5c2aabb3dcdda034101eb994b7b52.flac",
+    "sha256": "15096994dc39eb86e4bbc3fc56ed5740f8a5c2aabb3dcdda034101eb994b7b52",
+    "bytes": 1440621,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_045",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "49.533216",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_045",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_045.wav",
+        "sha256": "10a9f482892ebc76da5f4617e17b8f68a33ca5eca104c0447731af417de2caa8",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_5.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/160bad937c4ae056a1ac29be33897ce1634de4b8ac1a0fc40cb913d9650e19c5.flac",
+    "sha256": "160bad937c4ae056a1ac29be33897ce1634de4b8ac1a0fc40cb913d9650e19c5",
+    "bytes": 7652331,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_005",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "58.449331",
+        "audio_offset_s": "23.340397000000003",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_005",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_005.wav",
+        "sha256": "b51a8e9587122addde204bd043dd61a5d84b60c0c03c780109a9d4b1c82d1b68",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_5.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/171e92a92c9ee45d0dea19abc0d5b02c497666878f27c789c80401013560f52d.flac",
+    "sha256": "171e92a92c9ee45d0dea19abc0d5b02c497666878f27c789c80401013560f52d",
+    "bytes": 1025508,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_009",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "44.855434",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_009",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_009.wav",
+        "sha256": "a57ffc41862bf12a25f19d13d3b2f67c8eac9416f0e0dd11f91667e93a0c6c26",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_4.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/18039e9f67b2540c9231dac3b1cc09489a7031668d7cece15c7b92505d80e784.flac",
+    "sha256": "18039e9f67b2540c9231dac3b1cc09489a7031668d7cece15c7b92505d80e784",
+    "bytes": 1321582,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_029",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "75.679326",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_029",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_029.wav",
+        "sha256": "d7b9dc321560fd35263e72c0fcb1b6ed14497a5752be3a630d48b72828d24fd9",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_4.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/1abef355177ed2f9b578e3e470d0a107e4752553e2b22b8ac53b285e52231f01.flac",
+    "sha256": "1abef355177ed2f9b578e3e470d0a107e4752553e2b22b8ac53b285e52231f01",
+    "bytes": 5375138,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_006",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "17.272976",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_006",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_006.wav",
+        "sha256": "32594be75cd4200b9862d018e990e9922076470f4cfde03a562161d9c8d7d0a3",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_1.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/2939db9ba0c796d04a1e1c9d9ef6ade7318a7b705822e079f21b0a30d73b4f23.flac",
+    "sha256": "2939db9ba0c796d04a1e1c9d9ef6ade7318a7b705822e079f21b0a30d73b4f23",
+    "bytes": 1466004,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_035",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "22.812494",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_035",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_035.wav",
+        "sha256": "1e68fb9c546dd0d721e10a4bb2f0df735cf064c5872e653ee9ef963a7c476017",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_5.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/2cedb68dca840eb118898f1d22b2a851fe7be59be24c66515f529f286705b79d.flac",
+    "sha256": "2cedb68dca840eb118898f1d22b2a851fe7be59be24c66515f529f286705b79d",
+    "bytes": 1220351,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_049",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "62.607476",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_049",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_049.wav",
+        "sha256": "1584416db4d52f3177c1ae90c2ff84fdc0e93b48ba98a4055a652271d78da702",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_4.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/2fdceafdf12fed91f9c659458b0abf86fc69d4f88f31527bc9b5bcf9a6bd3b4f.flac",
+    "sha256": "2fdceafdf12fed91f9c659458b0abf86fc69d4f88f31527bc9b5bcf9a6bd3b4f",
+    "bytes": 1352305,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_034",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "25.236245",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_034",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_034.wav",
+        "sha256": "100b9f85e02158964d0fabaa077c0b0d58db64159e00a31b21fc7d9be1093458",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_4.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/3128f24d6f8986260050f8de6a498fb58d152db4f0b458bdcfcfd50b739d407e.flac",
+    "sha256": "3128f24d6f8986260050f8de6a498fb58d152db4f0b458bdcfcfd50b739d407e",
+    "bytes": 1496367,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_044",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "44.587539",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_044",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_044.wav",
+        "sha256": "8aaa8dd94f4b181ba86b43cad9e5334df9770eec527816dc7190253f3e0d3cdf",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_4.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/33ff8d29b34817ddeab6194c5fff370258e3e0639fd524389a4de73fa472ecba.flac",
+    "sha256": "33ff8d29b34817ddeab6194c5fff370258e3e0639fd524389a4de73fa472ecba",
+    "bytes": 1343661,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_013",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "23.663093",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_013",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_013.wav",
+        "sha256": "8c27992474d739305bb6ce64046fd5f3322a2f48a0babfd79f9adf6d4020f6d0",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_3.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/360c1cb49108fb3786ea0e9af468bcd97dd3c05b176fb4a4a90bd8fa99da4295.flac",
+    "sha256": "360c1cb49108fb3786ea0e9af468bcd97dd3c05b176fb4a4a90bd8fa99da4295",
+    "bytes": 1243835,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_015",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "27.78592",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_015",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_015.wav",
+        "sha256": "a0df627bdd4efbab54fcc9e08a30bc8d26014672e09bc2fc1bac92e8b8326e52",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_5.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/36af8d15f03700588b73cb069da55a87f68ba24b87b0c141a3821fd4eda2514f.flac",
+    "sha256": "36af8d15f03700588b73cb069da55a87f68ba24b87b0c141a3821fd4eda2514f",
+    "bytes": 8071740,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_013",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "13.663093",
+        "audio_offset_s": "13.663093",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_013",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_013.wav",
+        "sha256": "8c27992474d739305bb6ce64046fd5f3322a2f48a0babfd79f9adf6d4020f6d0",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_3.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/407dd41468313dc77d59dd49a901a2378b363a0e1348c7c393339daf7b3b6c7d.flac",
+    "sha256": "407dd41468313dc77d59dd49a901a2378b363a0e1348c7c393339daf7b3b6c7d",
+    "bytes": 849100,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_010",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "22.313401",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_010",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_010.wav",
+        "sha256": "16ce248657010ea023c3ad6c0b3daaae62ff1d25ae75416e46e76ef1968bcba4",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_5.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/41f6e7d48dd9fe36d3115a819b20ba16002b62ac0435df1af316d20f5ca6d0b7.flac",
+    "sha256": "41f6e7d48dd9fe36d3115a819b20ba16002b62ac0435df1af316d20f5ca6d0b7",
+    "bytes": 6089451,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_021",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "61.728144",
+        "audio_offset_s": "26.619210000000002",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_021",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_021.wav",
+        "sha256": "b7c050877dcb2271c843b81b1a89a56f0bd1db75b941343b68679773fbd3a681",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_1.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/423441ee4d036eba3f297c04fb66ed9e3395c78e301a8534112641653250e6fb.flac",
+    "sha256": "423441ee4d036eba3f297c04fb66ed9e3395c78e301a8534112641653250e6fb",
+    "bytes": 7596986,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_015",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "17.78592",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_015",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_015.wav",
+        "sha256": "a0df627bdd4efbab54fcc9e08a30bc8d26014672e09bc2fc1bac92e8b8326e52",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_5.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/44e222499d9ac4e83465be9999473a8597e94e078b28f8e4b1a1cc557f3a25df.flac",
+    "sha256": "44e222499d9ac4e83465be9999473a8597e94e078b28f8e4b1a1cc557f3a25df",
+    "bytes": 6176933,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_029",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "65.108934",
+        "audio_offset_s": "30.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_029",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_029.wav",
+        "sha256": "d7b9dc321560fd35263e72c0fcb1b6ed14497a5752be3a630d48b72828d24fd9",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_4.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/482067eb2c9a2eb47212043842bd88bd2b8b20646e80876b4506d566b07f6f09.flac",
+    "sha256": "482067eb2c9a2eb47212043842bd88bd2b8b20646e80876b4506d566b07f6f09",
+    "bytes": 7665477,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_026",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "65.013299",
+        "audio_offset_s": "29.904365000000006",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_026",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_026.wav",
+        "sha256": "df646dcb5ccc9dbcba90f1cf75949d60f586d6404941be4a45acba54657acb50",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_1.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/4aeb8940795c13d6be869d698451c6a741b79841b19fc4b6e843587f51044d03.flac",
+    "sha256": "4aeb8940795c13d6be869d698451c6a741b79841b19fc4b6e843587f51044d03",
+    "bytes": 1251196,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_050",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "40.950026",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_050",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_050.wav",
+        "sha256": "052832c1e856804739ac545eb5c8a98488d04f3b0c3e83d96f4f495fe642ccb8",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_5.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/4e12eeb324c56302342b2d46fec0f8ae9b5b9769e6bbed09382beb18cb208285.flac",
+    "sha256": "4e12eeb324c56302342b2d46fec0f8ae9b5b9769e6bbed09382beb18cb208285",
+    "bytes": 1343065,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_028",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "33.773482",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_028",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_028.wav",
+        "sha256": "e099b3900e6e4699ba0f67bb90dd1dc9a24a17a934c375a73f10e5ed3bfcab88",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_3.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/4efa2a60eb8a80f008aded51a7a5cd9532c0a139c2f9c8351e5c3e5349c372a1.flac",
+    "sha256": "4efa2a60eb8a80f008aded51a7a5cd9532c0a139c2f9c8351e5c3e5349c372a1",
+    "bytes": 1363445,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_012",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "51.029283",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_012",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_012.wav",
+        "sha256": "8c019aaac540f37e841a5fbed65cbb06ffd559f524a3fc1a8056c6ad575e4018",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_2.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/4fda3cafcc4330a77297d06cc165641d471424abb0b2040fe65b6062c862f87f.flac",
+    "sha256": "4fda3cafcc4330a77297d06cc165641d471424abb0b2040fe65b6062c862f87f",
+    "bytes": 1416205,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_004",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "24.159585",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_004",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_004.wav",
+        "sha256": "3219aae9657507ac8dda0854ab11c06efe4d750ba985b6799f61e8a9ecdeaa3c",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_4.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/5009789706d182e3f28614fb905b8e7a04b39572cb73947c0db126b7835bfbd7.flac",
+    "sha256": "5009789706d182e3f28614fb905b8e7a04b39572cb73947c0db126b7835bfbd7",
+    "bytes": 1147398,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_020",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "47.389774",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_020",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_020.wav",
+        "sha256": "31a9c97471a97c1402721b12fc5dba17b30a42e29600c29aaff20e539b8a101c",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_5.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/52e114766a44d2c89bb17f094ed57876bd88533ae3281a1c12ac0f9bde1f2432.flac",
+    "sha256": "52e114766a44d2c89bb17f094ed57876bd88533ae3281a1c12ac0f9bde1f2432",
+    "bytes": 6810016,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_050",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "30.950026",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_050",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_050.wav",
+        "sha256": "052832c1e856804739ac545eb5c8a98488d04f3b0c3e83d96f4f495fe642ccb8",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_5.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/58700ce55a2ba8dc2d966a786350e18998b4d5c38b35a14aace9d96f04e5b9e2.flac",
+    "sha256": "58700ce55a2ba8dc2d966a786350e18998b4d5c38b35a14aace9d96f04e5b9e2",
+    "bytes": 1274987,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_030",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "74.141109",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_030",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_030.wav",
+        "sha256": "39a9db95f61cdc794c07ca0fcb01f3cc6d42ec11aa40ff89f8d37df07d5afa4a",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_5.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/59719bb9b4941e2e3232287dcfdcc396e15703e6c906c4eb4fa1654c5aabb6f7.flac",
+    "sha256": "59719bb9b4941e2e3232287dcfdcc396e15703e6c906c4eb4fa1654c5aabb6f7",
+    "bytes": 1430110,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_033",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "64.503333",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_033",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_033.wav",
+        "sha256": "309913e59d45201149b608e0427ef4e8b18cc1fd83abba43e4aaebd772538ed7",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_3.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/59b968dcc2ee7dd021aa216a9af27cb4bc5d2742e8d735ffe0b7631d85d18a7e.flac",
+    "sha256": "59b968dcc2ee7dd021aa216a9af27cb4bc5d2742e8d735ffe0b7631d85d18a7e",
+    "bytes": 8041002,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_036",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "57.956931999999995",
+        "audio_offset_s": "22.847997999999997",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_036",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_036.wav",
+        "sha256": "5613baa79b1ca62c24735371439fea2c33712cec4ced0a3c1320f5b877d07c73",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_1.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/5ad6c9e9557db4839e9611819e365f226ac30423a5e65b233e221002353db712.flac",
+    "sha256": "5ad6c9e9557db4839e9611819e365f226ac30423a5e65b233e221002353db712",
+    "bytes": 1294875,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_031",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "54.374897",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_031",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_031.wav",
+        "sha256": "850a37dd73d719b2e13968dd1c19059452758ebcaa600a8cb7317a73e3e99ec0",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_1.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/5b088176be010edbde8a7c5be0034c9267340a33d123679cb1787b833c7f8a80.flac",
+    "sha256": "5b088176be010edbde8a7c5be0034c9267340a33d123679cb1787b833c7f8a80",
+    "bytes": 1433993,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_011",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "38.790958",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_011",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_011.wav",
+        "sha256": "e502958e0de6b2746a574ebfc1df41b6986de55f38c147a46dc5ebd36e662f18",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_1.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/5e11af88842b95e3dca05453e9069a9e3b2ee63b6769cca63f89523fae37cfc8.flac",
+    "sha256": "5e11af88842b95e3dca05453e9069a9e3b2ee63b6769cca63f89523fae37cfc8",
+    "bytes": 7612507,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_048",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "31.949461999999997",
+        "audio_offset_s": "14.999999999999996",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_048",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_048.wav",
+        "sha256": "e9b69f4461c2073dc98a1040aeb114f0b734155ce37202a10a4acae077069668",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_3.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/5f4e23d35a02f8579e6d8689578742a1498c2f93af7d88700f423126c1ab422a.flac",
+    "sha256": "5f4e23d35a02f8579e6d8689578742a1498c2f93af7d88700f423126c1ab422a",
+    "bytes": 5247974,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_022",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "21.024155",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_022",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_022.wav",
+        "sha256": "e4673560f3ff456e2ab1db545e3d04dcf1d25f348ae24094e74eecbd0411f995",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_2.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/6693f93d37861fc29b8d5718c9a1047265d079bf1a2717a5d2c7cfdd917ffe4a.flac",
+    "sha256": "6693f93d37861fc29b8d5718c9a1047265d079bf1a2717a5d2c7cfdd917ffe4a",
+    "bytes": 1015890,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_025",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "69.505803",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_025",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_025.wav",
+        "sha256": "e2155e64c355580f94b261b355cadb2d5372df1f713cdfb1a452ed75e5f855e9",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_5.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/69d05b9f7a2edf4c74f691f9d3b357c03bd05127350029666965dc8f1290442c.flac",
+    "sha256": "69d05b9f7a2edf4c74f691f9d3b357c03bd05127350029666965dc8f1290442c",
+    "bytes": 1413270,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_005",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "68.449331",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_005",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_005.wav",
+        "sha256": "b51a8e9587122addde204bd043dd61a5d84b60c0c03c780109a9d4b1c82d1b68",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_5.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/6c13c019d9616838e8bf61f1b3a25d0c8850d96cee7278fcfc4b12cf0d78b363.flac",
+    "sha256": "6c13c019d9616838e8bf61f1b3a25d0c8850d96cee7278fcfc4b12cf0d78b363",
+    "bytes": 5555484,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_030",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "64.141109",
+        "audio_offset_s": "29.032175000000002",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_030",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_030.wav",
+        "sha256": "39a9db95f61cdc794c07ca0fcb01f3cc6d42ec11aa40ff89f8d37df07d5afa4a",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_5.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/6ddf5d7d15e155f94a5d9b923427c2afc9558881d56cc41a4e4124f6f112ecdb.flac",
+    "sha256": "6ddf5d7d15e155f94a5d9b923427c2afc9558881d56cc41a4e4124f6f112ecdb",
+    "bytes": 1046874,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_017",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "73.62322",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_017",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_017.wav",
+        "sha256": "55a9be1c61df946faa01428939acf06f896052c63a1cb97b84ad2aa48f98183e",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_2.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/7615eba1763a92a6e9923a50a2a32dd7ce1ce6c952f696b998e07c0e61747e3e.flac",
+    "sha256": "7615eba1763a92a6e9923a50a2a32dd7ce1ce6c952f696b998e07c0e61747e3e",
+    "bytes": 6169324,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_041",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "64.270901",
+        "audio_offset_s": "29.161966999999997",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_041",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_041.wav",
+        "sha256": "7b3879c61b866a0ba0a6cce86132cfa2494b4abfd8664f510df6a9230b4b24dd",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_1.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/7818f55b90bbf6263a07889d8109e7e1dd4f7a58233de1bdd2c1e86af70115d7.flac",
+    "sha256": "7818f55b90bbf6263a07889d8109e7e1dd4f7a58233de1bdd2c1e86af70115d7",
+    "bytes": 1326403,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_027",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "16.421627",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_027",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_027.wav",
+        "sha256": "00e63bfa60c30baf445011810ad4d9ff431dea61479891d4a48b9e01b2204c55",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_2.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/80498a965d71a7f6d2fc7afee8bc1653fa35488f7afa378b2049f4edca24647e.flac",
+    "sha256": "80498a965d71a7f6d2fc7afee8bc1653fa35488f7afa378b2049f4edca24647e",
+    "bytes": 5283383,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_001",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "57.691134000000005",
+        "audio_offset_s": "22.582200000000007",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_001",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_001.wav",
+        "sha256": "3d230879c19a1be4badb55736deceb846f4e11a144e02967816decbee8096c34",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_1.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/80a51d55ac05d7d3cc33a86bbc09bb16c1d056c68496871ff2c64283b19afe8c.flac",
+    "sha256": "80a51d55ac05d7d3cc33a86bbc09bb16c1d056c68496871ff2c64283b19afe8c",
+    "bytes": 8377767,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_003",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "5.187701000000001",
+        "audio_offset_s": "5.187701000000001",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_003",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_003.wav",
+        "sha256": "9cd37aef82ea1291ce80bd4d0204f8401e85b739f360ffa9b47fb35d9c528981",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_3.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/817689ede23a59e9c62db522ef52e7d84e3baa7bbe27451a75947cb3e8a5e926.flac",
+    "sha256": "817689ede23a59e9c62db522ef52e7d84e3baa7bbe27451a75947cb3e8a5e926",
+    "bytes": 6416987,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_020",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "37.389774",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_020",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_020.wav",
+        "sha256": "31a9c97471a97c1402721b12fc5dba17b30a42e29600c29aaff20e539b8a101c",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_5.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/866a2bd0003530645d481b76e8064c9ba5c52d7c00b48f560f08a6357157f0b1.flac",
+    "sha256": "866a2bd0003530645d481b76e8064c9ba5c52d7c00b48f560f08a6357157f0b1",
+    "bytes": 8151839,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_028",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "23.773482",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_028",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_028.wav",
+        "sha256": "e099b3900e6e4699ba0f67bb90dd1dc9a24a17a934c375a73f10e5ed3bfcab88",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/awake10_megaWall_3.wav",
+        "group_id": "ai_diffrhythm_pilot:awake10_megaWall",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/879b1d25b3db29d1943ebfc9453622c94fe5bc4b40c749779f014a05ca939be5.flac",
+    "sha256": "879b1d25b3db29d1943ebfc9453622c94fe5bc4b40c749779f014a05ca939be5",
+    "bytes": 5400132,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_025",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "59.505803",
+        "audio_offset_s": "24.396869000000002",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_025",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_025.wav",
+        "sha256": "e2155e64c355580f94b261b355cadb2d5372df1f713cdfb1a452ed75e5f855e9",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_5.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/88d9f4f361e5bd000a008895cd1967de385b73548bfec807180391e998a45d8f.flac",
+    "sha256": "88d9f4f361e5bd000a008895cd1967de385b73548bfec807180391e998a45d8f",
+    "bytes": 7224284,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_046",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "56.113941999999994",
+        "audio_offset_s": "21.005007999999997",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_046",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_046.wav",
+        "sha256": "50abc16e3d13a109bbcf46bb49a50c0ca68d7003e8154f5d619226970879c05d",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_1.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/8cedef5148f3c483f57cbe604994c6baf18560dcb81e8583ccd050ac7469c70f.flac",
+    "sha256": "8cedef5148f3c483f57cbe604994c6baf18560dcb81e8583ccd050ac7469c70f",
+    "bytes": 947287,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_002",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "73.118365",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_002",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_002.wav",
+        "sha256": "d2fe8d90a68c304521ad36959449084c56631ab207d248936b4a6dd819b34c66",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_2.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/8d53ad2299602721d2d1c5a9a8e685106750c43cce93dc7e27e1fd829dcc7a80.flac",
+    "sha256": "8d53ad2299602721d2d1c5a9a8e685106750c43cce93dc7e27e1fd829dcc7a80",
+    "bytes": 7906283,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_031",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "44.374897",
+        "audio_offset_s": "14.999999999999996",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_031",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_031.wav",
+        "sha256": "850a37dd73d719b2e13968dd1c19059452758ebcaa600a8cb7317a73e3e99ec0",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_1.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/8d5fe458e7b053ff9c2ad6a831264908a65a74e4d4f0923322da62c1f0670745.flac",
+    "sha256": "8d5fe458e7b053ff9c2ad6a831264908a65a74e4d4f0923322da62c1f0670745",
+    "bytes": 6011764,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_002",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "63.118365",
+        "audio_offset_s": "28.009431",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_002",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_002.wav",
+        "sha256": "d2fe8d90a68c304521ad36959449084c56631ab207d248936b4a6dd819b34c66",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_2.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/9389f7efc13cefbf56514ce061413998c1c58a68fd38d7245bfb9c6327e677ca.flac",
+    "sha256": "9389f7efc13cefbf56514ce061413998c1c58a68fd38d7245bfb9c6327e677ca",
+    "bytes": 5436991,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_018",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "40.115844",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_018",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_018.wav",
+        "sha256": "532f9726c47ab13c60ae2ce67d61f235723f5a460d13a7ddc31206e48b1be1f2",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_3.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/95af4ba78407f6709df14029f0f7fdc95fae23c5185ae489fd14a940f3f0d706.flac",
+    "sha256": "95af4ba78407f6709df14029f0f7fdc95fae23c5185ae489fd14a940f3f0d706",
+    "bytes": 6276711,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_017",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "63.62322",
+        "audio_offset_s": "28.514286000000006",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_017",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_017.wav",
+        "sha256": "55a9be1c61df946faa01428939acf06f896052c63a1cb97b84ad2aa48f98183e",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_2.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/96de57d6897abf146e153553794ba14e4669525a5bd1140caaee59e638c7c632.flac",
+    "sha256": "96de57d6897abf146e153553794ba14e4669525a5bd1140caaee59e638c7c632",
+    "bytes": 625217,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_001",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "67.691134",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_001",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_001.wav",
+        "sha256": "3d230879c19a1be4badb55736deceb846f4e11a144e02967816decbee8096c34",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_1.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/9906f8a412068c8a6a857f24b24810c8e797b6f015937e6123dea7b8c34b76d3.flac",
+    "sha256": "9906f8a412068c8a6a857f24b24810c8e797b6f015937e6123dea7b8c34b76d3",
+    "bytes": 8510920,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_014",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "26.344516",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_014",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_014.wav",
+        "sha256": "d584206dbbc809b582399ab3fa388c1903f0e0d1700cf8aa04e628c2cd146366",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_4.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/a2d3d460a0b5d97a6de65926312089e2c64f22cff74f92c21ef812b0983c3bd1.flac",
+    "sha256": "a2d3d460a0b5d97a6de65926312089e2c64f22cff74f92c21ef812b0983c3bd1",
+    "bytes": 7056035,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_033",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "54.503333",
+        "audio_offset_s": "19.394399",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_033",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_033.wav",
+        "sha256": "309913e59d45201149b608e0427ef4e8b18cc1fd83abba43e4aaebd772538ed7",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_3.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/a318d716e66c88ce47ecfec1dc70c803085dece77e8954a275bb23c96f349583.flac",
+    "sha256": "a318d716e66c88ce47ecfec1dc70c803085dece77e8954a275bb23c96f349583",
+    "bytes": 965796,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_007",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "61.309365",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_007",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_007.wav",
+        "sha256": "4977b78f57462ae72fa61ad8c90b75c7263d618eab3a9a2ec1d20826dd444089",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_2.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/a673e0deeca840eb835f49a3559fec96fcf2a9d24b6ae18e5bd2679f530338e3.flac",
+    "sha256": "a673e0deeca840eb835f49a3559fec96fcf2a9d24b6ae18e5bd2679f530338e3",
+    "bytes": 6360560,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_032",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "50.608355",
+        "audio_offset_s": "15.499421000000005",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_032",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_032.wav",
+        "sha256": "df465b8a290c6feba49fe336bd80e6f7cc0030d4c8ce703b0206f2d9d03f7198",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_2.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/a892498abb25e4c4ee210464c8882273e2cc88c969337e63a61e22e08a978a62.flac",
+    "sha256": "a892498abb25e4c4ee210464c8882273e2cc88c969337e63a61e22e08a978a62",
+    "bytes": 1342937,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_039",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "18.791407",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_039",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_039.wav",
+        "sha256": "fa8157809ee41bce8f815a109af4f930ff319b6c6243d67b20ce7e545c598b8f",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_4.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/ab1ce8f17be0cdc5221d198105772860947e1e8543081ed37145e972b454ed38.flac",
+    "sha256": "ab1ce8f17be0cdc5221d198105772860947e1e8543081ed37145e972b454ed38",
+    "bytes": 659820,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_041",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "74.270901",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_041",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_041.wav",
+        "sha256": "7b3879c61b866a0ba0a6cce86132cfa2494b4abfd8664f510df6a9230b4b24dd",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_1.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/ad079b33ebf72affb4e6650b7dce8b8eb026585b826b36f6318704297b5a282a.flac",
+    "sha256": "ad079b33ebf72affb4e6650b7dce8b8eb026585b826b36f6318704297b5a282a",
+    "bytes": 8411299,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_044",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "34.587539",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_044",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_044.wav",
+        "sha256": "8aaa8dd94f4b181ba86b43cad9e5334df9770eec527816dc7190253f3e0d3cdf",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_4.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/ae06890b246f5e29ee00bb5fce61595529ac7156984962338a910e345ddc7b1e.flac",
+    "sha256": "ae06890b246f5e29ee00bb5fce61595529ac7156984962338a910e345ddc7b1e",
+    "bytes": 1405915,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_038",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "68.854917",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_038",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_038.wav",
+        "sha256": "ad76f2db3c223504b73e6d3db1f2066acf115e195474449821b0a44d821edd4c",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_3.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/ae3255faf1750d8c9d51e416c059619d7e97ae5d2f1bbc90f0af631d34321e1f.flac",
+    "sha256": "ae3255faf1750d8c9d51e416c059619d7e97ae5d2f1bbc90f0af631d34321e1f",
+    "bytes": 1286191,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_048",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "41.949462",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_048",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_048.wav",
+        "sha256": "e9b69f4461c2073dc98a1040aeb114f0b734155ce37202a10a4acae077069668",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_3.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/b192180d2c8477e5cdc7bf2d4a085f36a37c8dbce9d6c08528788a633beb73ba.flac",
+    "sha256": "b192180d2c8477e5cdc7bf2d4a085f36a37c8dbce9d6c08528788a633beb73ba",
+    "bytes": 1194185,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_046",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "66.113942",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_046",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_046.wav",
+        "sha256": "50abc16e3d13a109bbcf46bb49a50c0ca68d7003e8154f5d619226970879c05d",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_1.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/b658b590df9643dad42bec409711e7187e4ea9a5b1fc7d99e6ed1966d771b1b1.flac",
+    "sha256": "b658b590df9643dad42bec409711e7187e4ea9a5b1fc7d99e6ed1966d771b1b1",
+    "bytes": 862484,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_022",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "31.024155",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_022",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_022.wav",
+        "sha256": "e4673560f3ff456e2ab1db545e3d04dcf1d25f348ae24094e74eecbd0411f995",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_2.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/b94ded099361d166b5ed345dda889d0bff6a2f02d193da1754c170a55504627e.flac",
+    "sha256": "b94ded099361d166b5ed345dda889d0bff6a2f02d193da1754c170a55504627e",
+    "bytes": 8567477,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_035",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "12.812494000000001",
+        "audio_offset_s": "12.812494000000001",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_035",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_035.wav",
+        "sha256": "1e68fb9c546dd0d721e10a4bb2f0df735cf064c5872e653ee9ef963a7c476017",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_5.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/bb4daf6d786e3ce0ec81ae4fc5bfb85e406435a25fecc1b731eb22b3803b0b2f.flac",
+    "sha256": "bb4daf6d786e3ce0ec81ae4fc5bfb85e406435a25fecc1b731eb22b3803b0b2f",
+    "bytes": 8198705,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_042",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "59.39577800000001",
+        "audio_offset_s": "24.28684400000001",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_042",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_042.wav",
+        "sha256": "47131212a44242992db506eee7ff49d96463d4d5c15518910394226b8a578ac1",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_2.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/beb7c9b4b331091092b8be0870be390d57ad9a9970c176b01e955a06e5c7b3d4.flac",
+    "sha256": "beb7c9b4b331091092b8be0870be390d57ad9a9970c176b01e955a06e5c7b3d4",
+    "bytes": 5686912,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_008",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "16.470495",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_008",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_008.wav",
+        "sha256": "452d58228facd788579dc624a9d0152a2d0605ef4c3946ddf48b2c2145694098",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_3.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/c1087f97440e077dfbfcb233e7bb148397d7554d069b6c5b0fefb284d08600e2.flac",
+    "sha256": "c1087f97440e077dfbfcb233e7bb148397d7554d069b6c5b0fefb284d08600e2",
+    "bytes": 1403983,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_036",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "67.956932",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_036",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_036.wav",
+        "sha256": "5613baa79b1ca62c24735371439fea2c33712cec4ced0a3c1320f5b877d07c73",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_1.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/c24e44e58fa7d047169eaa8829651328ed0d18d370aed3f47fd2d679b86faecf.flac",
+    "sha256": "c24e44e58fa7d047169eaa8829651328ed0d18d370aed3f47fd2d679b86faecf",
+    "bytes": 7929233,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_037",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "0.20047800000000038",
+        "audio_offset_s": "0.20047800000000038",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_037",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_037.wav",
+        "sha256": "6e7e0386683984a5b2ede2ac2a82b34f79283ba3c1a90e4401678308591d89aa",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_2.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/c7a41c4638096d4168aa9067ec0d595a7d97ae04dc23f2f07150118eed846ef4.flac",
+    "sha256": "c7a41c4638096d4168aa9067ec0d595a7d97ae04dc23f2f07150118eed846ef4",
+    "bytes": 7903643,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_038",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "58.854917",
+        "audio_offset_s": "23.745983000000003",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_038",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_038.wav",
+        "sha256": "ad76f2db3c223504b73e6d3db1f2066acf115e195474449821b0a44d821edd4c",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_3.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/c8f0eeb5eebd3c879d686df922f441b00c5513ebb49ac3851ed41b18a39a8025.flac",
+    "sha256": "c8f0eeb5eebd3c879d686df922f441b00c5513ebb49ac3851ed41b18a39a8025",
+    "bytes": 8903319,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_043",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "37.862981",
+        "audio_offset_s": "14.999999999999996",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_043",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_043.wav",
+        "sha256": "516fb2f2789b40c1cf71d0f39fa525b1eb3d3511cc1e59a2770ec4a437436035",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_3.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/cadd29b8db9ead72792041881149522b915e79c5fc5eb51a780f7944f901e499.flac",
+    "sha256": "cadd29b8db9ead72792041881149522b915e79c5fc5eb51a780f7944f901e499",
+    "bytes": 7819079,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_012",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "41.029283",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_012",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_012.wav",
+        "sha256": "8c019aaac540f37e841a5fbed65cbb06ffd559f524a3fc1a8056c6ad575e4018",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_2.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/cc9da9c3a072639672b622dddcc043498cf5dd390041a7c741c8c0e577a6e6c4.flac",
+    "sha256": "cc9da9c3a072639672b622dddcc043498cf5dd390041a7c741c8c0e577a6e6c4",
+    "bytes": 1381736,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_003",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "15.187701",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_003",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_003.wav",
+        "sha256": "9cd37aef82ea1291ce80bd4d0204f8401e85b739f360ffa9b47fb35d9c528981",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/2012_november_fakeAwake04%20back%20to%20A%20minor_3.wav",
+        "group_id": "ai_diffrhythm_pilot:2012_november_fakeAwake04 back to A minor",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/ccdb05e39b5934a7247fe50a65a1f715fe3e9745cbbce2da18ee026a8b46b017.flac",
+    "sha256": "ccdb05e39b5934a7247fe50a65a1f715fe3e9745cbbce2da18ee026a8b46b017",
+    "bytes": 1353035,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_032",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "60.608355",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_032",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_032.wav",
+        "sha256": "df465b8a290c6feba49fe336bd80e6f7cc0030d4c8ce703b0206f2d9d03f7198",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/endrit_tone_2.wav",
+        "group_id": "ai_diffrhythm_pilot:endrit_tone",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/d4ac02b6c7e7d47f285a4b01eec2adbb031be81705e711ecf6ffc877c0088486.flac",
+    "sha256": "d4ac02b6c7e7d47f285a4b01eec2adbb031be81705e711ecf6ffc877c0088486",
+    "bytes": 906386,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_024",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "23.242251",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_024",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_024.wav",
+        "sha256": "0fe86107b28a5afab4e307a893468ca29b9cc6bce0c38dfcdc9dc0f109bc9022",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_4.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/d5cd51f29525671efd98a6868cb176245e485a9be768439a74c4c6700a020511.flac",
+    "sha256": "d5cd51f29525671efd98a6868cb176245e485a9be768439a74c4c6700a020511",
+    "bytes": 1255248,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_047",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "35.135461",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_047",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_047.wav",
+        "sha256": "4fe9a11567d3a3c612e1c8b45889e13dee916627e36cd26c8c6657e11e320a2f",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_2.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/d93c98385347bc20437edc29e5a1d6fb39f747bb13073fed0819a5af074810d2.flac",
+    "sha256": "d93c98385347bc20437edc29e5a1d6fb39f747bb13073fed0819a5af074810d2",
+    "bytes": 5852458,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_016",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "56.951541000000006",
+        "audio_offset_s": "21.842607000000008",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_016",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_016.wav",
+        "sha256": "53d941c12dbe42a5d86d2fe5c67516bc7719e2065e1f8fd14c83c47ed3020c9a",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_1.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/da4437aef5f27fba0b88e2fffed83faa83c03c83a1db7f94de389796e40cdc60.flac",
+    "sha256": "da4437aef5f27fba0b88e2fffed83faa83c03c83a1db7f94de389796e40cdc60",
+    "bytes": 908085,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_006",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "27.272976",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_006",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_006.wav",
+        "sha256": "32594be75cd4200b9862d018e990e9922076470f4cfde03a562161d9c8d7d0a3",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_1.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/db597a0c922de7488ecc51bcc00befdaa5d4ae7d712527ef8775d09a7782ad26.flac",
+    "sha256": "db597a0c922de7488ecc51bcc00befdaa5d4ae7d712527ef8775d09a7782ad26",
+    "bytes": 8530944,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_011",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "28.790958000000003",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_011",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_011.wav",
+        "sha256": "e502958e0de6b2746a574ebfc1df41b6986de55f38c147a46dc5ebd36e662f18",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_1.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/dd75e9578c552116fa2bd84610144f3186cf88d67edbcd4f973fd6b37a8e5536.flac",
+    "sha256": "dd75e9578c552116fa2bd84610144f3186cf88d67edbcd4f973fd6b37a8e5536",
+    "bytes": 4717181,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_007",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "51.309365",
+        "audio_offset_s": "16.200431000000002",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_007",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_007.wav",
+        "sha256": "4977b78f57462ae72fa61ad8c90b75c7263d618eab3a9a2ec1d20826dd444089",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_2.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/dda4b98df62c11a631d842570572eb12a5f05ec14d0ef528a24f647c92b18682.flac",
+    "sha256": "dda4b98df62c11a631d842570572eb12a5f05ec14d0ef528a24f647c92b18682",
+    "bytes": 6186557,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_023",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "3.877409",
+        "audio_offset_s": "3.877409",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_023",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_023.wav",
+        "sha256": "360ddc399257d57c570afe0bd4a03349ac0e42f9d3920e97eac38dce69a48372",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_3.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/deb42cb680c00e385d35f6f39e08d66aa60056c93b272f66061a28221e5eea0f.flac",
+    "sha256": "deb42cb680c00e385d35f6f39e08d66aa60056c93b272f66061a28221e5eea0f",
+    "bytes": 1417119,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_042",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "69.395778",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_042",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_042.wav",
+        "sha256": "47131212a44242992db506eee7ff49d96463d4d5c15518910394226b8a578ac1",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_2.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/e357bf0b2a61284a8a6fb8b72bfdbbc128b5980e043a10eef8321830d7e5d26a.flac",
+    "sha256": "e357bf0b2a61284a8a6fb8b72bfdbbc128b5980e043a10eef8321830d7e5d26a",
+    "bytes": 8671062,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_045",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "39.533216",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_045",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_045.wav",
+        "sha256": "10a9f482892ebc76da5f4617e17b8f68a33ca5eca104c0447731af417de2caa8",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_5.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/e7aabadcca8bacc76ecd281b243fe541d66fc3820beca84df7c2fd8fc339e9bb.flac",
+    "sha256": "e7aabadcca8bacc76ecd281b243fe541d66fc3820beca84df7c2fd8fc339e9bb",
+    "bytes": 1482543,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_043",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "47.862981",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_043",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_043.wav",
+        "sha256": "516fb2f2789b40c1cf71d0f39fa525b1eb3d3511cc1e59a2770ec4a437436035",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/fight_3.wav",
+        "group_id": "ai_diffrhythm_pilot:fight",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/e9d3b733fbb8701f4546c93a289e01e99589affea33ef97ce7b1f7e9a251bca1.flac",
+    "sha256": "e9d3b733fbb8701f4546c93a289e01e99589affea33ef97ce7b1f7e9a251bca1",
+    "bytes": 1081047,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_021",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "71.728144",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_021",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_021.wav",
+        "sha256": "b7c050877dcb2271c843b81b1a89a56f0bd1db75b941343b68679773fbd3a681",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/action%20game%20theme_1.wav",
+        "group_id": "ai_diffrhythm_pilot:action game theme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/e9ee7433dbe7d010695d49e22bd6ccea5f597980fbe94dbf8d1b7cf7545ee49a.flac",
+    "sha256": "e9ee7433dbe7d010695d49e22bd6ccea5f597980fbe94dbf8d1b7cf7545ee49a",
+    "bytes": 1497269,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_014",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "36.344516",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_014",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_014.wav",
+        "sha256": "d584206dbbc809b582399ab3fa388c1903f0e0d1700cf8aa04e628c2cd146366",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/Christmas%20synths_4.wav",
+        "group_id": "ai_diffrhythm_pilot:Christmas synths",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/ee5b59e97fe9a99d90bc0a967cc334f129742d0bd2021758c31a3bc9dbe1cf0f.flac",
+    "sha256": "ee5b59e97fe9a99d90bc0a967cc334f129742d0bd2021758c31a3bc9dbe1cf0f",
+    "bytes": 7113914,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_047",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "25.135461",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_047",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_047.wav",
+        "sha256": "4fe9a11567d3a3c612e1c8b45889e13dee916627e36cd26c8c6657e11e320a2f",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/funkydiscobeatstoboogieslashwoogieto_2.wav",
+        "group_id": "ai_diffrhythm_pilot:funkydiscobeatstoboogieslashwoogieto",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/f23783135e6b5b634c03570a57068f4ba35026739d6244cea10f70068872e0de.flac",
+    "sha256": "f23783135e6b5b634c03570a57068f4ba35026739d6244cea10f70068872e0de",
+    "bytes": 1027502,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_018",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "50.115844",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_018",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_018.wav",
+        "sha256": "532f9726c47ab13c60ae2ce67d61f235723f5a460d13a7ddc31206e48b1be1f2",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_3.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/f678bf1ab013e92f9c388526d8071be9459f4a9ce7882a226ebc261a64f47851.flac",
+    "sha256": "f678bf1ab013e92f9c388526d8071be9459f4a9ce7882a226ebc261a64f47851",
+    "bytes": 6437616,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_019",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "34.027091",
+        "audio_offset_s": "15.0",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_019",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_019.wav",
+        "sha256": "8931e7cb5b6903088c1a2e68a4010641c679e42a2689f40985fcd285e9e1ba61",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/TownTheme_4.wav",
+        "group_id": "ai_diffrhythm_pilot:TownTheme",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/f7f9c68db7be001bb42da838a834a7279a690ff10e2df6a2a3c16b6365439315.flac",
+    "sha256": "f7f9c68db7be001bb42da838a834a7279a690ff10e2df6a2a3c16b6365439315",
+    "bytes": 4714115,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_010",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "12.313400999999999",
+        "audio_offset_s": "12.313400999999999",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_010",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_010.wav",
+        "sha256": "16ce248657010ea023c3ad6c0b3daaae62ff1d25ae75416e46e76ef1968bcba4",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_5.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/f803289184a6eae778c8503aabb8607723b07198e2a3682685feb60f83a6e93d.flac",
+    "sha256": "f803289184a6eae778c8503aabb8607723b07198e2a3682685feb60f83a6e93d",
+    "bytes": 5698877,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_009",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "30s",
+        "crop_start_s": "34.855434",
+        "audio_offset_s": "15.000000000000004",
+        "requires_crop": "1"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_009",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_009.wav",
+        "sha256": "a57ffc41862bf12a25f19d13d3b2f67c8eac9416f0e0dd11f91667e93a0c6c26",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ChoirChordsBassMaster_4.wav",
+        "group_id": "ai_diffrhythm_pilot:ChoirChordsBassMaster",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  },
+  {
+    "path": "audio/diffrhythm_pilot/historical_test_views_v1/fcb0442080cc700ae5b2d9392029e22e5adf043942ad9fa60267003c59161a3d.flac",
+    "sha256": "fcb0442080cc700ae5b2d9392029e22e5adf043942ad9fa60267003c59161a3d",
+    "bytes": 1337811,
+    "memberships": [
+      {
+        "id": "ai_diffrhythm_pilot_040",
+        "source_group": "ai_diffrhythm_pilot",
+        "view": "10s",
+        "crop_start_s": "12.883271",
+        "audio_offset_s": "0.0",
+        "requires_crop": "0"
+      }
+    ],
+    "original_records": [
+      {
+        "id": "ai_diffrhythm_pilot_040",
+        "path": "audio/diffrhythm_pilot/originals_v1/ai_diffrhythm_pilot_040.wav",
+        "sha256": "99db8053d6f063c38a43ac3f90bed2ea041cd7d2955dd099e49e7f7e0fe3adfe",
+        "bytes": 16777260,
+        "source_url": "https://huggingface.co/datasets/Akjava/diffrhythm-instrument-cc0-oepngamearg-10x5-generated/resolve/2be7bd4fb18d317111c0fece3c077c3587bf6f23/generated/ente_evil_5.wav",
+        "group_id": "ai_diffrhythm_pilot:ente_evil",
+        "role": "pilot",
+        "acquisition_role": "locked_pilot_only",
+        "source_group": "ai_diffrhythm_pilot",
+        "license": "Apache-2.0 (source publisher audio declaration)",
+        "modification": "None"
+      }
+    ],
+    "license": "Apache-2.0",
+    "modification": "Historical cropped/standardized test input"
+  }
+]
