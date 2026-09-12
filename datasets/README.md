@@ -38,6 +38,9 @@ human specificity, balanced accuracy or two-class ROC AUC.
 
 ## Audio publication status
 
+- [Saraga originals](saraga_originals_publication_v1/README.md): all 108
+  originals independently accepted; 103 classifier identities and five other
+  records. This supersedes the retrieval catalogue's earlier upload checkpoint.
 - [MusicNet Ishizaka](musicnet_ishizaka_publication_v1/README.md): 39 existing
   human recordings independently accepted; the other 291 MusicNet selections
   are not covered by this source-specific CC0 review.

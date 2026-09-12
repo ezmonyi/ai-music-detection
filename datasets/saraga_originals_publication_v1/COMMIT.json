@@ -1,0 +1,8 @@
+{
+  "status": "108_saraga_originals_uploaded_hash_verified",
+  "audio_files": 108,
+  "classifier_ids": 103,
+  "manifest_sha256": "eb4b5b2cc8375e0a15e1151b5eadccd38235d2514ca61fe9a2c04fce73ce811b",
+  "source_audit_sha256": "5982e37c320db8287cb78f25bad22b49c33a7441f4c7a57fa2f09cd449ea8925",
+  "whole_project_complete": false
+}
