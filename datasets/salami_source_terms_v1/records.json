@@ -1,0 +1,1517 @@
+[
+  {
+    "id": "1277",
+    "original_sha256": "cd22b6bee64838b6dfc0b87022f1d7cee000f053b67ccac746428cc4dca3d032",
+    "source_url": "https://archive.org/download/ON2010-03-26/OctopusNebula2010-03-26d1t03.mp3",
+    "archive_identifier": "ON2010-03-26",
+    "filename": "OctopusNebula2010-03-26d1t03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "ON2010-03-26",
+      "creator": "Octopus Nebula",
+      "title": "Octopus Nebula Live at Cervantes' Masterpiece Ballroom on 2010-03-26",
+      "date": "2010-03-26",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "OctopusNebula",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "16bae7e2f9a9afd3c2a802703396d24b03d90234accee3cf81cbf49777a29e2c",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "OctopusNebula2010-03-26d1t03.mp3",
+        "size": "13209183",
+        "md5": "2a24826cdd244e85ef17f83d266a53ee",
+        "sha1": "954ceacf1a2ea1321497a00961ff816755f7396c",
+        "source": "derivative",
+        "original": "OctopusNebula2010-03-26d1t03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1259",
+    "original_sha256": "2ddc77a7321e326a03dbc9baf2e7715d281ab3027c6e787e9f6addc0ebcbd9dd",
+    "source_url": "https://archive.org/download/mp2010-04-10/mp2010-04-10t11-Dont_Do_It.mp3",
+    "archive_identifier": "mp2010-04-10",
+    "filename": "mp2010-04-10t11-Dont_Do_It.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "mp2010-04-10",
+      "creator": "Motion Pictures",
+      "title": "Motion Pictures Live at The Pour House Music Hall on 2010-04-10",
+      "date": "2010-04-10",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "MotionPictures",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "16ea5a65c5e02ee22731fd2b3f756151dee2227b87b71369034e484b9c727c8d",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "mp2010-04-10t11-Dont_Do_It.mp3",
+        "size": "8472999",
+        "md5": "97f9decb0ed6b76e9824abda8ca19999",
+        "sha1": "e12139f71399eed9e03cf6032f0f969602d9a481",
+        "source": "derivative",
+        "original": "mp2010-04-10t11-Dont_Do_It.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1006",
+    "original_sha256": "ed4ac200e2ccee83bf7fadb98cdfa4f10891ac35e238524d29a51803824b1391",
+    "source_url": "https://archive.org/download/btalent2007-01-25.aud.flac16/BillyTalent2007-01-25t06.mp3",
+    "archive_identifier": "btalent2007-01-25.aud.flac16",
+    "filename": "BillyTalent2007-01-25t06.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "btalent2007-01-25.aud.flac16",
+      "creator": "Billy Talent",
+      "title": "Billy Talent Live at Rexall Place on 2007-01-25",
+      "date": "2007-01-25",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "BillyTalent",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "28215d00d7a85c66c912d1e1edcbcf044a7f9162dcc7c731e90100718a97583e",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "BillyTalent2007-01-25t06.mp3",
+        "size": "7574118",
+        "md5": "084d94b014b7d95c0f9929b969cfe777",
+        "sha1": "b9e7265cfcf6edc0081c04fcf8c8a51d60d4793c",
+        "source": "derivative",
+        "original": "BillyTalent2007-01-25t06.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "971",
+    "original_sha256": "69cc0a7711106405ad734069cf52edc9aeb6c3f7fc7d976bce85fd936ef0b4d1",
+    "source_url": "https://archive.org/download/AllenStone2010-06-29.H4n/AllenStone2010-06-29T03.mp3",
+    "archive_identifier": "AllenStone2010-06-29.H4n",
+    "filename": "AllenStone2010-06-29T03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "AllenStone2010-06-29.H4n",
+      "creator": "Allen Stone",
+      "title": "Allen Stone Live at Tractor Tavern on 2010-06-29",
+      "date": "2010-06-29",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "AllenStone",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "b25a68823980c334e7f0e39a3223cd6dde58e947a41d61fb94a1b0552bb96edf",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "AllenStone2010-06-29T03.mp3",
+        "size": "6346428",
+        "md5": "b8d805d9b6bc7672253b339b80765bee",
+        "sha1": "09448aadabf8bb08fc0a647c94d207a6b7388934",
+        "source": "derivative",
+        "original": "AllenStone2010-06-29T03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "957",
+    "original_sha256": "f511bee99e21fd0aaa4353c03f34268ed1f96134d35c03afe034a307c27b5d63",
+    "source_url": "https://archive.org/download/40rl2010-05-01/40rl2010-05-01t16.mp3",
+    "archive_identifier": "40rl2010-05-01",
+    "filename": "40rl2010-05-01t16.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "40rl2010-05-01",
+      "creator": "40 Rod Lightning",
+      "title": "40 Rod Lightning Live at Montezuma VFW on 2010-05-01",
+      "date": "2010-05-01",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "40RodLightning",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "93fdadad20094f90c72f91c000623a2d3cb2bd78c628a15834207612c5589d9f",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "40rl2010-05-01t16.mp3",
+        "size": "7286860",
+        "md5": "f5f56ea0a95d9fdc5d1e9c04fdf7da05",
+        "sha1": "ff241746878c328993aa3ce5e856e0264ad58fe5",
+        "source": "derivative",
+        "original": "40rl2010-05-01t16.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1498",
+    "original_sha256": "a8779b8bf35b1273e0105666a4bb448831768b1b182fe7811d678f7f4fe7955e",
+    "source_url": "https://archive.org/download/ysj2010-02-26.flac16/ysj2010-02-26t07.mp3",
+    "archive_identifier": "ysj2010-02-26.flac16",
+    "filename": "ysj2010-02-26t07.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "ysj2010-02-26.flac16",
+      "creator": "young sir Jim",
+      "title": "young sir Jim Live at Ottobar on 2010-02-26",
+      "date": "2010-02-26",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "youngsirJim",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "fb425874565cfb1fbe7920b394c6fc1b871ddc3653e21f0a488f0ab94cb94574",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "ysj2010-02-26t07.mp3",
+        "size": "5922789",
+        "md5": "760cf6cf676396f6daa8e07e3e2a7e74",
+        "sha1": "d51f935f6ca0045a19d7f9a08701e1797375e1d0",
+        "source": "derivative",
+        "original": "ysj2010-02-26t07.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1100",
+    "original_sha256": "e9fa6032c48354c58936c1dbce0976778da8c7b3024e06b241d6ea7e3c70008d",
+    "source_url": "https://archive.org/download/elmwood2010-06-04.akg483.flac16/elmwood2010-06-04t01.mp3",
+    "archive_identifier": "elmwood2010-06-04.akg483.flac16",
+    "filename": "elmwood2010-06-04t01.mp3",
+    "status": "fetch_failed",
+    "audio_publication_authorized": false,
+    "error_type": "URLError"
+  },
+  {
+    "id": "1215",
+    "original_sha256": "90aab28c303c2809c156af057540e076736a9091f4a2441d5b8efe428f37a5a8",
+    "source_url": "https://archive.org/download/LB2010-02-16/LB2010-02-16d1t02.mp3",
+    "archive_identifier": "LB2010-02-16",
+    "filename": "LB2010-02-16d1t02.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "LB2010-02-16",
+      "creator": "L-Block",
+      "title": "L-Block Live at Lovin Cup on 2010-02-16",
+      "date": "2010-02-16",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "L-Block",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "b2d8437f3573f8d451efad6a4c6eb6839c366351dbef25f07d4363f924c70f41",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "LB2010-02-16d1t02.mp3",
+        "size": "8081680",
+        "md5": "1089c2ed9eb6e890fb850993bff8af24",
+        "sha1": "dac16373e6934b4548491c5c83dcb146777b0d2f",
+        "source": "derivative",
+        "original": "LB2010-02-16d1t02.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "965",
+    "original_sha256": "28483a1ca9874f61653e0cad5e1ebe38f38c74e0e784de32f135a6b6be073d60",
+    "source_url": "https://archive.org/download/aom2009-09-27.flacf/aom2009-09-27tr03.mp3",
+    "archive_identifier": "aom2009-09-27.flacf",
+    "filename": "aom2009-09-27tr03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "aom2009-09-27.flacf",
+      "creator": "Agents of Mercy",
+      "title": "Agents of Mercy Live at Unknown on 2009-09-27",
+      "date": "2009-09-27",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "AgentsOfMercy",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "980abc4aa961110c82376259f013bdb52112149b66ef8e354b7e6fc749a79a3d",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "aom2009-09-27tr03.mp3",
+        "size": "15667877",
+        "md5": "44e782d8b5fe985461e7734f63c8464d",
+        "sha1": "74116b0e99a33a0e6f3c92e5c560b65899ebb35c",
+        "source": "derivative",
+        "original": "aom2009-09-27tr03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1378",
+    "original_sha256": "54f86547c12f091b7ce2405a7239b680aee1c2ca0c3935faa9a828cb720e14ff",
+    "source_url": "https://archive.org/download/sg2009-09-06.sb.nak.shivaho.flac16/sg2009-09-06d1t05.sb.nak.shivaho.flac16.mp3",
+    "archive_identifier": "sg2009-09-06.sb.nak.shivaho.flac16",
+    "filename": "sg2009-09-06d1t05.sb.nak.shivaho.flac16.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "sg2009-09-06.sb.nak.shivaho.flac16",
+      "creator": "Sunday Gravy",
+      "title": "Sunday Gravy Live at Skipper's Dock on 2009-09-06",
+      "date": "2009-09-06",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "SundayGravy",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "383fc339d0b9fedb60cced5e8693c82b27b2e2799eb49e81db21dc193124d823",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "sg2009-09-06d1t05.sb.nak.shivaho.flac16.mp3",
+        "size": "8366364",
+        "md5": "6469de72442a77a1539fbd44c54c897c",
+        "sha1": "c72c0fc80cc2ba9006205704386bf294660e026b",
+        "source": "derivative",
+        "original": "sg2009-09-06d1t05.sb.nak.shivaho.flac16.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "967",
+    "original_sha256": "03fb2f00f56ddbe556d035691d1ab65844ffc611fe0b8e0c5d870a92c7ee560d",
+    "source_url": "https://archive.org/download/akrasia2007-06-23/akrasia2007-06-23-12norwaymaple.mp3",
+    "archive_identifier": "akrasia2007-06-23",
+    "filename": "akrasia2007-06-23-12norwaymaple.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "akrasia2007-06-23",
+      "creator": "Akrasia",
+      "title": "Akrasia Live at Spice Cafe on 2007-06-23",
+      "date": "2007-06-23",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "Akrasia",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "2eeb26171cd4d23bf6d327d87ff94acc85676fd66102c4ad07202de0bd1dfd57",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "akrasia2007-06-23-12norwaymaple.mp3",
+        "size": "19933309",
+        "md5": "e3d9e73bca049c531b947c1272edbc75",
+        "sha1": "f239a8f6d99ebefd7c4b208f70b36dc97d781011",
+        "source": "original",
+        "original": null
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1050",
+    "original_sha256": "96ef97ac1341ebc77aca7c5d7c0b0316b946e89173f3561e4f1ac6b7cf37140d",
+    "source_url": "https://archive.org/download/ChicagoFarmer2010-05-30.latenight/ChicagoFarmer2010-05-31-t12.mp3",
+    "archive_identifier": "ChicagoFarmer2010-05-30.latenight",
+    "filename": "ChicagoFarmer2010-05-31-t12.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "ChicagoFarmer2010-05-30.latenight",
+      "creator": "Chicago Farmer",
+      "title": "Chicago Farmer Live at Three Sisters Park - Campfire Stage on 2010-05-30",
+      "date": "2010-05-30",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "ChicagoFarmer",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "19f4cd256fe7ba588bb7beb9470139313d4b388f497efa930fff2247e78d6741",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "ChicagoFarmer2010-05-31-t12.mp3",
+        "size": "6360059",
+        "md5": "0f1b846e4e00c78fd48798ca757e1398",
+        "sha1": "8da5ca40896a34eaeb333afd5682790748a44543",
+        "source": "derivative",
+        "original": "ChicagoFarmer2010-05-31-t12.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1428",
+    "original_sha256": "ab5350df4314f9afa3770417628982b756d6b8fdbd11ad0898def37c1ae9f2f1",
+    "source_url": "https://archive.org/download/pimps2010-05-22.flac16/pimps2010-05-22t03.mp3",
+    "archive_identifier": "pimps2010-05-22.flac16",
+    "filename": "pimps2010-05-22t03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "pimps2010-05-22.flac16",
+      "creator": "The Pimps of Joytime",
+      "title": "The Pimps of Joytime Live at Smilefest Reunion 2010 - Second Main Stage on 2010-05-22",
+      "date": "2010-05-22",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "ThePimpsofJoytime",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "e7141d67a4ace183934b0bca65013abe99c748b16c8b49c7eac1101c45163395",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "pimps2010-05-22t03.mp3",
+        "size": "10072614",
+        "md5": "82bcb88924a81737e1b25cda02ca3ec4",
+        "sha1": "d15a4f1a54778cd8907936f60d7dc5799a67e9b9",
+        "source": "derivative",
+        "original": "pimps2010-05-22t03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1312",
+    "original_sha256": "e938651a513337af93f1792f95442329ea7fd0546b553c58584bff3f6da58432",
+    "source_url": "https://archive.org/download/reggiewatson2009-10-17.sbd.schoeps.wklitz.flac16/reggiewatson2009-10-17t02.mp3",
+    "archive_identifier": "reggiewatson2009-10-17.sbd.schoeps.wklitz.flac16",
+    "filename": "reggiewatson2009-10-17t02.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "reggiewatson2009-10-17.sbd.schoeps.wklitz.flac16",
+      "creator": "Reggie Watson",
+      "title": "Reggie Watson Live at River Street Jazz Cafe on 2009-10-17",
+      "date": "2009-10-17",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "ReggieWatson",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "410b185a4f602544ded52c5f770f5893ce9cbaa06c18719ed1c069eba6e804f4",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "reggiewatson2009-10-17t02.mp3",
+        "size": "11151401",
+        "md5": "db3c46a0a89e8e965f04bb43fc84a75a",
+        "sha1": "18d6045e387ec7a1a1ec5bcd8670292a86d0bae2",
+        "source": "derivative",
+        "original": "reggiewatson2009-10-17t02.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1444",
+    "original_sha256": "9c639d205017b52999ae499a6edb57b29efdd6b352ceb57f38f01560ef99d956",
+    "source_url": "https://archive.org/download/pvt2004-05-11.akg/pvt2004-05-11d01t01.mp3",
+    "archive_identifier": "pvt2004-05-11.akg",
+    "filename": "pvt2004-05-11d01t01.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "pvt2004-05-11.akg",
+      "creator": "Periwinkle and the Vivid Tangerines",
+      "title": "Periwinkle and the Vivid Tangerines Live at Gumby's Pizza on 2004-05-11",
+      "date": "2004-05-11",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "PeriwinkleandtheVividTangerines",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "b13d9ea7189e4cd99ed5b3019bc6e96a0fc28698ff3284070151b9f87363b4f2",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "pvt2004-05-11d01t01.mp3",
+        "size": "2027731",
+        "md5": "7f03a9d1f7ae7a786ee626ca1ca6c447",
+        "sha1": "96d680a54ba0e2c274a0eb1bc4bcfa512b20798b",
+        "source": "derivative",
+        "original": "pvt2004-05-11d01t01.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1091",
+    "original_sha256": "bf98a05a9521d81caa0860b3ffa64c335d19450910940f92380ce897fb7271ed",
+    "source_url": "https://archive.org/download/djsb2010-03-06.Blue_Eagle_Music/djsb2010-03-06-tr04_Roadhouse_Rag_TAKE_1.mp3",
+    "archive_identifier": "djsb2010-03-06.Blue_Eagle_Music",
+    "filename": "djsb2010-03-06-tr04_Roadhouse_Rag_TAKE_1.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "djsb2010-03-06.Blue_Eagle_Music",
+      "creator": "Duke Junior and The Smokey Boots",
+      "title": "Duke Junior and The Smokey Boots Live at Blue Eagle Music on 2010-03-06",
+      "date": "2010-03-06",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "DukeJuniorAndTheSmokeyBootsBand",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "02fea8776e1671ab9879f02b5871702017bdfb23ebd096355281b39b168302ca",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "djsb2010-03-06-tr04_Roadhouse_Rag_TAKE_1.mp3",
+        "size": "6785112",
+        "md5": "c0bd8691258626e93009886e6af137f2",
+        "sha1": "bf2809be2c9b88f3ec4d09952fd80625fe0d795f",
+        "source": "derivative",
+        "original": "djsb2010-03-06-tr04_Roadhouse_Rag_TAKE_1.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1032",
+    "original_sha256": "53d33a809f4e891d18a768490fa2128fca60d1fbed979c50bcd591994b96f3fd",
+    "source_url": "https://archive.org/download/CBC1994-00-00.demo1/CbcDemo1d2T2YouGiveHate.mp3",
+    "archive_identifier": "CBC1994-00-00.demo1",
+    "filename": "CbcDemo1d2T2YouGiveHate.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "CBC1994-00-00.demo1",
+      "creator": "CBC",
+      "title": "CBC Live at chris' basement on 1994-00-00",
+      "date": "1994-00-00",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "CBC_Band",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "ed347f1422b05eae5bec5062d88e5d94a95fc7903dc91c604b7630782dedf793",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "CbcDemo1d2T2YouGiveHate.mp3",
+        "size": "4894618",
+        "md5": "45a2b090f84e6b10085b3c08884cc609",
+        "sha1": "1d67b8e07d59faf09ea6ef19102fbeeb0a0deb7e",
+        "source": "original",
+        "original": null
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1195",
+    "original_sha256": "42dce9315eadad443793d9402e29b008f18edc79877a09c69f4472865f18c00b",
+    "source_url": "https://archive.org/download/JohnScarpullaBrianShafer2009-12-04.LiveAtManleys/14CrazyRider.mp3",
+    "archive_identifier": "JohnScarpullaBrianShafer2009-12-04.LiveAtManleys",
+    "filename": "14CrazyRider.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "JohnScarpullaBrianShafer2009-12-04.LiveAtManleys",
+      "creator": "John Scarpulla and Brian Shafer",
+      "title": "John Scarpulla and Brian Shafer Live at Manley's  on 2009-12-04",
+      "date": "2009-12-04",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "JohnScarpullaAndBrianShafer",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "42efe01d456fe4cf2946d601bbbe5c0e69c96b11ccd5b6db8ea5c762a60370ce",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "14CrazyRider.mp3",
+        "size": "4351919",
+        "md5": "97e25fb7d07444fd0848e8a4d9292d74",
+        "sha1": "d5a40bf50d11ae7c718f3b57ebe751e470629f03",
+        "source": "original",
+        "original": null
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1476",
+    "original_sha256": "b3060ebd48bf540926caf8cf1883b018681d69f77685701fe98a9df9fddd8158",
+    "source_url": "https://archive.org/download/yld2008-06-25.aud.flac16/yld2008-06-25d1t04.mp3",
+    "archive_identifier": "yld2008-06-25.aud.flac16",
+    "filename": "yld2008-06-25d1t04.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "yld2008-06-25.aud.flac16",
+      "creator": "Year Long Disaster",
+      "title": "Year Long Disaster Live at Ace of Clubs on 2008-06-25",
+      "date": "2008-06-25",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "YearLongDisaster",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "a1fd79ce74ec5174e021e095f683f5c32ef62a3ee2dcf4d03a2c7b0f61784a98",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "yld2008-06-25d1t04.mp3",
+        "size": "8226440",
+        "md5": "0816396950fcacc871ecb20e558b71ff",
+        "sha1": "b8c674842eb032c0b0dbf0a473d397caf5284cd1",
+        "source": "derivative",
+        "original": "yld2008-06-25d1t04.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1418",
+    "original_sha256": "5f683b99d83f144b69873ec826173075143fb015432452b02651ec49e7568604",
+    "source_url": "https://archive.org/download/thekreptatkabarband2010-04-16/thekreptatkabarband2010-04-16d1t01.mp3",
+    "archive_identifier": "thekreptatkabarband2010-04-16",
+    "filename": "thekreptatkabarband2010-04-16d1t01.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "thekreptatkabarband2010-04-16",
+      "creator": "The Kreptatka Bar Band",
+      "title": "The Kreptatka Bar Band Live at The Donegal Saloon on 2010-04-16",
+      "date": "2010-04-16",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "TheKreptatkaBarBand",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "bdacf602511dfb83e641b5700b477a430f1f9e00077125f8fe1e9863c6655278",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "thekreptatkabarband2010-04-16d1t01.mp3",
+        "size": "5891346",
+        "md5": "f4af7ecf4f4f33f0694a0c1adc38f0be",
+        "sha1": "1205000be9fd97de3e08940fce6022fef7cb4327",
+        "source": "derivative",
+        "original": "thekreptatkabarband2010-04-16d1t01.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1212",
+    "original_sha256": "7705b02435c67492bab2ed8830a24877e243c98554575e9e8601bf5089533169",
+    "source_url": "https://archive.org/download/KungFu2010-05-06.AKG483/KungFu2010-05-06d1t07.mp3",
+    "archive_identifier": "KungFu2010-05-06.AKG483",
+    "filename": "KungFu2010-05-06d1t07.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "KungFu2010-05-06.AKG483",
+      "creator": "Kung FuBand",
+      "title": "Kung FuBand Live at Mexicali on 2010-05-06",
+      "date": "2010-05-06",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "KungFuband",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "6f782f87445abe8efeed98359711bd72239b467e964a27b8010ae9e7e42f7219",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "KungFu2010-05-06d1t07.mp3",
+        "size": "17242342",
+        "md5": "441b24418deb259c70aef955d348e09e",
+        "sha1": "ed89b2c819e509b6f3d45d69a73db8328fef8d46",
+        "source": "derivative",
+        "original": "KungFu2010-05-06d1t07.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1080",
+    "original_sha256": "b475cf24497f446430b660b7a9b1167aad376e995b9888e5d272f0eaee358152",
+    "source_url": "https://archive.org/download/deadstringbrothers2009-09-12/deadstringbros2009-09-12d1t08.mp3",
+    "archive_identifier": "deadstringbrothers2009-09-12",
+    "filename": "deadstringbros2009-09-12d1t08.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "deadstringbrothers2009-09-12",
+      "creator": "Deadstring Brothers",
+      "title": "Deadstring Brothers Live at Bloodshot Records Hideout Block Party on 2009-09-12",
+      "date": "2009-09-12",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "DeadstringBrothers",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "9157c80a77e79a443c369f6f0cd1d509c801baeb9319a05cfbf19a0b8c05c981",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "deadstringbros2009-09-12d1t08.mp3",
+        "size": "4640491",
+        "md5": "52bb3844f102ea46366962bc4fc39332",
+        "sha1": "ea3d2bafa7537c8e901b8be73e99918f2fb6accc",
+        "source": "derivative",
+        "original": "deadstringbros2009-09-12d1t08.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1388",
+    "original_sha256": "3c13f6cedefe07056d6935a4d337fc73194578eb934bcc9278e0a9822663c5a1",
+    "source_url": "https://archive.org/download/afromotive2009-04-03.at853.flac16/afromotive2009-04-03d1t03.mp3",
+    "archive_identifier": "afromotive2009-04-03.at853.flac16",
+    "filename": "afromotive2009-04-03d1t03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "afromotive2009-04-03.at853.flac16",
+      "creator": "The Afromotive",
+      "title": "The Afromotive Live at The Orange Peel on 2009-04-03",
+      "date": "2009-04-03",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "TheAfromotive",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "efd1a6c8586c46803aa7cbc27afdb2c6a9e520a4ac2ce0bed9260469bf242a6e",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "afromotive2009-04-03d1t03.mp3",
+        "size": "12697159",
+        "md5": "24a0006dc61e2420c11e21d1edbb8170",
+        "sha1": "f674370557590285c027e170cef1d0e1c381a5b0",
+        "source": "derivative",
+        "original": "afromotive2009-04-03d1t03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1244",
+    "original_sha256": "81a7f80cada32698ed92d5c7ac2172ae5da8ad56145159be3f01e9dd2864c63b",
+    "source_url": "https://archive.org/download/MSB2004-07-30.Matthew_Shadley_Band/5GypsyDream.mp3",
+    "archive_identifier": "MSB2004-07-30.Matthew_Shadley_Band",
+    "filename": "5GypsyDream.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "MSB2004-07-30.Matthew_Shadley_Band",
+      "creator": "Matthew Shadley Band",
+      "title": "Matthew Shadley Band Live at City Nights Television Studio on 2004-07-30",
+      "date": "2004-07-30",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "MatthewShadleyBand",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "2ed69b2c36d0c5754d74d4c9dbcbb58c4d9becc55702dc4f1015624bab4a22aa",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "5GypsyDream.mp3",
+        "size": "5349004",
+        "md5": "4a744dc1ecb9d68719f9a64333bbfc19",
+        "sha1": "4d56a0ca273fe31524f81a193b59f960de5930ac",
+        "source": "derivative",
+        "original": "5GypsyDream.wav"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1311",
+    "original_sha256": "724cf466c9bd5ec180b17934b6d235df20795e20ebb31d16c8094976e7d3d93b",
+    "source_url": "https://archive.org/download/Reflections2010-05-28.NAK.ADK.flac16/Reflections2010-05-28d1t02.mp3",
+    "archive_identifier": "Reflections2010-05-28.NAK.ADK.flac16",
+    "filename": "Reflections2010-05-28d1t02.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "Reflections2010-05-28.NAK.ADK.flac16",
+      "creator": "Reflections",
+      "title": "Reflections Live at Mighty High Mountain Festival on 2010-05-28",
+      "date": "2010-05-28",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "ReflectionsBand",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "04746bbf772445f1bc9deba60181d15608b8f849e299c6da04361ae2aa247de3",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "Reflections2010-05-28d1t02.mp3",
+        "size": "12139811",
+        "md5": "08e4852a9bd9a5f9e2f475c4b8263fcd",
+        "sha1": "695c391a9b8661962577307c596afa348497c309",
+        "source": "derivative",
+        "original": "Reflections2010-05-28d1t02.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1122",
+    "original_sha256": "284eb6283a327faf7443d261970b1d392cc821dd951f39980098cf01d3bcfe7e",
+    "source_url": "https://archive.org/download/frogholler2003-05-03.s1.sbd.flac16/frogholler2003-05-03s1t09.mp3",
+    "archive_identifier": "frogholler2003-05-03.s1.sbd.flac16",
+    "filename": "frogholler2003-05-03s1t09.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "frogholler2003-05-03.s1.sbd.flac16",
+      "creator": "Frog Holler",
+      "title": "Frog Holler Live at The Brass Lantern on 2003-05-03",
+      "date": "2003-05-03",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "FrogHoller",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "ea656d9b11748aa4ce37a7820158b726782ff8afd4434612bc4ac5eee0617864",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "frogholler2003-05-03s1t09.mp3",
+        "size": "4551708",
+        "md5": "29c4e8fb8b30324dc0c83d8e47819b96",
+        "sha1": "a97007199544581b13d1d50e0bde8311d174bbb4",
+        "source": "derivative",
+        "original": "frogholler2003-05-03s1t09.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1327",
+    "original_sha256": "2bc88f1fbdfeaea1283b6f108f5493ee0ae3154080cc36401a5fa3e8efe9fa18",
+    "source_url": "https://archive.org/download/rla2005-12-16.sbd.flac16/rla2005-12-16d1t06.ogg",
+    "archive_identifier": "rla2005-12-16.sbd.flac16",
+    "filename": "rla2005-12-16d1t06.ogg",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "rla2005-12-16.sbd.flac16",
+      "creator": "Ryan Angus",
+      "title": "Ryan Angus Live at Webster County High School Theater on 2005-12-16",
+      "date": "2005-12-16",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "RyanAngus",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "f0622b68f8da135bf624105a8dd74f8b08b79759c490fee57df028888946ea37",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "rla2005-12-16d1t06.ogg",
+        "size": "3090934",
+        "md5": "dac036649256008a136f1d8bdd543fc4",
+        "sha1": "187b45133ddc22092ac6cfdd5e6ef6e02e95c701",
+        "source": "derivative",
+        "original": "rla2005-12-16d1t06.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1224",
+    "original_sha256": "95d818cc6d4956012a6f7bf3602082bf7eb9519de95d8c5f65d416b0ddc128a5",
+    "source_url": "https://archive.org/download/lmb2010-06-20.4041.flac16/lmb2010-06-20.4041.t01.mp3",
+    "archive_identifier": "lmb2010-06-20.4041.flac16",
+    "filename": "lmb2010-06-20.4041.t01.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "lmb2010-06-20.4041.flac16",
+      "creator": "Little Mountain Band",
+      "title": "Little Mountain Band Live at JAM.BOREE, Irish Hill Road, on 2010-06-20",
+      "date": "2010-06-20",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "LittleMountainBand",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "b54ba1d9ba5a25fcbc22a083675c5954bb4918f0015e4a4f6ff1611d44b714f4",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "lmb2010-06-20.4041.t01.mp3",
+        "size": "6650902",
+        "md5": "cdafecd6574e79a01dd788a8df76e5f0",
+        "sha1": "5d60999b851793f5eeda2420f281a5acc6508372",
+        "source": "derivative",
+        "original": "lmb2010-06-20.4041.t01.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1013",
+    "original_sha256": "ea6eb58349db6c5445ab9b5f73b17b555f39a6de573503ee29b6f6a31e6388a0",
+    "source_url": "https://archive.org/download/bsr2010-04-16/bsr2010-04-16d2t14.mp3",
+    "archive_identifier": "bsr2010-04-16",
+    "filename": "bsr2010-04-16d2t14.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "bsr2010-04-16",
+      "creator": "Blue Sky Red",
+      "title": "Blue Sky Red Live at Noodle Bar on 2010-04-16",
+      "date": "2010-04-16",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "BlueSkyRed",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "446d9783584e80d98e236916be236c1409f1e73016502f769cc397165d562952",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "bsr2010-04-16d2t14.mp3",
+        "size": "7347246",
+        "md5": "73c29c2787c44acd410fbf2204bde73e",
+        "sha1": "97800b79361760563855e79b90a1b766aeeb5d5f",
+        "source": "derivative",
+        "original": "bsr2010-04-16d2t14.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1038",
+    "original_sha256": "49deee7e121c366b7c5cf136eaeb049dfdea0f6e6d3f3947edce898a9fd86b06",
+    "source_url": "https://archive.org/download/cot2010-05-30.akg482-marantz671-flac16/cot2010-05-30t01.mp3",
+    "archive_identifier": "cot2010-05-30.akg482-marantz671-flac16",
+    "filename": "cot2010-05-30t01.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "cot2010-05-30.akg482-marantz671-flac16",
+      "creator": "Caravan of Thieves",
+      "title": "Caravan of Thieves Live at StrangeCreek Campout, Camp Kee-Wanee on 2010-05-30",
+      "date": "2010-05-30",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "CaravanOfThieves",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "b4c8528c253cc5b61d510e26ea07aab0e14c1d38b7ab4989155db7d91b2434a5",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "cot2010-05-30t01.mp3",
+        "size": "8771124",
+        "md5": "a5b1565b25d10a9d9cdfd6c39f8a524a",
+        "sha1": "861d226245aa1ff208b6b3477d6d628c1ccabea5",
+        "source": "derivative",
+        "original": "cot2010-05-30t01.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1403",
+    "original_sha256": "92cae7946a4773bcc2fc9e32c5b8d9cc97c300a4a4cdef261d6e66975f872085",
+    "source_url": "https://archive.org/download/contribution2010-04-01.C4/contribution2010-04-01_d2t04.mp3",
+    "archive_identifier": "contribution2010-04-01.C4",
+    "filename": "contribution2010-04-01_d2t04.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "contribution2010-04-01.C4",
+      "creator": "The Contribution",
+      "title": "The Contribution Live at The Bluebird Theater on 2010-04-01",
+      "date": "2010-04-01",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "TheContribution",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "a11d8f06079d39ae0da36939295416e206d8c2667b02358421e4aa9613928600",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "contribution2010-04-01_d2t04.mp3",
+        "size": "7477491",
+        "md5": "a35d6c1f88ec78a6af5e15a40259b794",
+        "sha1": "962169e72a43d58aad3c0ec96a0feb04ce589a20",
+        "source": "derivative",
+        "original": "contribution2010-04-01_d2t04.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1048",
+    "original_sha256": "9f5944c18ee471da296b5fea9167aba2edeb8769bd22e572d8e4c133d731718b",
+    "source_url": "https://archive.org/download/chm2010-03-26.saint.flac/7Energy.mp3",
+    "archive_identifier": "chm2010-03-26.saint.flac",
+    "filename": "7Energy.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "chm2010-03-26.saint.flac",
+      "creator": "Chemtrail",
+      "title": "Chemtrail Live at The Saint on 2010-03-26",
+      "date": "2010-03-26",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "ChemtrailMusic",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "9e43bec8f4c23ae53fac0478e80e3f6a025066e760ecc5fa675a82672a15f332",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "7Energy.mp3",
+        "size": "6639973",
+        "md5": "49b20a5dc7e1917bc7493afaa1746c8d",
+        "sha1": "702ce910649701e6e884fad3f5989bceef526d6c",
+        "source": "derivative",
+        "original": "7Energy.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1077",
+    "original_sha256": "7cc3c0e9e29d350930ba7f0f582bf1531b28d3eccf678f0d82515a1f0031ba2f",
+    "source_url": "https://archive.org/download/deadfloyd2010-04-01.flac/deadfloyd2010-04-01d01t03.mp3",
+    "archive_identifier": "deadfloyd2010-04-01.flac",
+    "filename": "deadfloyd2010-04-01d01t03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "deadfloyd2010-04-01.flac",
+      "creator": "Dead Floyd",
+      "title": "Dead Floyd Live at Aggie Theatre on 2010-04-01",
+      "date": "2010-04-01",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "DeadFloyd",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "9b2d3671ff1dd3a74e6cf18600a85036c7a92ff9d5c924556ffd9fbfb457f3fa",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "deadfloyd2010-04-01d01t03.mp3",
+        "size": "8045079",
+        "md5": "2c9e953ba6e4469c6a6d95dd6e89c328",
+        "sha1": "338c1353bbbbbfe80d21562e3248d7ca73bc4687",
+        "source": "derivative",
+        "original": "deadfloyd2010-04-01d01t03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1239",
+    "original_sha256": "9fafb3df2a682717b14a3fd418655ca43a115ee3b64f410988fdd1c2c9aa1a11",
+    "source_url": "https://archive.org/download/mandolinorange2010-03-19/mandolinorange20100319d01t04.mp3",
+    "archive_identifier": "mandolinorange2010-03-19",
+    "filename": "mandolinorange20100319d01t04.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "mandolinorange2010-03-19",
+      "creator": "Watchhouse",
+      "title": "Mandolin Orange Live at The Berkeley Cafe on 2010-03-19",
+      "date": "2010-03-19",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "Watchhouse",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "9398105bb40fbabed9653da6661ff27e4f2bdfc6ceaac78c8b8ae19aad8a6c90",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "mandolinorange20100319d01t04.mp3",
+        "size": "4539857",
+        "md5": "62fc0253fc63674a1f63a47ddc86c65a",
+        "sha1": "49ce2c344faa0f12c1154927fe4fb2a13b918aac",
+        "source": "derivative",
+        "original": "mandolinorange20100319d01t04.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1319",
+    "original_sha256": "b0dca372f82eaaed81157e6b199e04d288150104c07634ae1aba8e9e70b45eb0",
+    "source_url": "https://archive.org/download/rockspring2010-04-03.akg483/rockspring2010-04-03set1t16.mp3",
+    "archive_identifier": "rockspring2010-04-03.akg483",
+    "filename": "rockspring2010-04-03set1t16.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "rockspring2010-04-03.akg483",
+      "creator": "Rockspring",
+      "title": "Rockspring Live at The Village Smokehouse on 2010-04-03",
+      "date": "2010-04-03",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "Rockspring",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "44de09ab48aaec783325e88bddc0d6cc8b0c7207f5d9dfe19af921c7d6d0d500",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "rockspring2010-04-03set1t16.mp3",
+        "size": "7135762",
+        "md5": "80b6b9a0ad8f8a1580f2aff02789960c",
+        "sha1": "45ba431d8448f82d750a817c0ebd5c09eb76ac0e",
+        "source": "derivative",
+        "original": "rockspring2010-04-03set1t16.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1216",
+    "original_sha256": "73a37391aaaebc94030c18ddb0883b9caebf3bb835e0e7d1cb157960b22e80ac",
+    "source_url": "https://archive.org/download/LSV2010-04-17.flac/04confusedMe.mp3",
+    "archive_identifier": "LSV2010-04-17.flac",
+    "filename": "04confusedMe.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "LSV2010-04-17.flac",
+      "creator": "Lake Shore Vibe",
+      "title": "Lake Shore Vibe Live at WIU Square on 2010-04-17",
+      "date": "2010-04-17",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "LakeShoreVibe",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "56bb4ea70067792d37630b47ae4ddc9c0f3f77564a545263aaa5fa10001956ab",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "04confusedMe.mp3",
+        "size": "3486594",
+        "md5": "c243c853441781a916eefb2da8a40fff",
+        "sha1": "c530b50a2ae074aa24b608ba411deaf1a6f75567",
+        "source": "derivative",
+        "original": "04confusedMe.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "973",
+    "original_sha256": "843ad8bef0547a427035b8d5c379b48c645e1716e87c13cc1bdef35442eb7227",
+    "source_url": "https://archive.org/download/am2010-02-26.LSD2.minime.flac16/am2010-02-26d1t09.mp3",
+    "archive_identifier": "am2010-02-26.LSD2.minime.flac16",
+    "filename": "am2010-02-26d1t09.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "am2010-02-26.LSD2.minime.flac16",
+      "creator": "Amelia's Mechanics",
+      "title": "Amelia's Mechanics Live at The Evening Muse on 2010-02-26",
+      "date": "2010-02-26",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "AmeliasMechanics",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "97fddb58413ca22af14482fe617b4923c4c0ca2f841766afb879b3054be9fc3a",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "am2010-02-26d1t09.mp3",
+        "size": "11467817",
+        "md5": "6b8b234f4c070b08703b649985a41e58",
+        "sha1": "3ef9d98c56b3e9dea2cdaa0ffdf1eb722d74f799",
+        "source": "derivative",
+        "original": "am2010-02-26d1t09.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "992",
+    "original_sha256": "94e9a740876d9ab550bd45d162953bd8563bf7b5b7f21433455ff90a006a22ac",
+    "source_url": "https://archive.org/download/BG2010-02-04.sbd/04MexicanRadio.mp3",
+    "archive_identifier": "BG2010-02-04.sbd",
+    "filename": "04MexicanRadio.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "BG2010-02-04.sbd",
+      "creator": "Basement Generals",
+      "title": "Basement Generals Live at The Saint on 2010-02-04",
+      "date": "2010-02-04",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "BasementGenerals",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "60d2798d45bdaf459133da40b63bcdc8bf75f1f5e4679fc9cffe06d11109e9d7",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "04MexicanRadio.mp3",
+        "size": "4182562",
+        "md5": "db801b67ba0973f23dbdaab19a4580e1",
+        "sha1": "960b1c0716bd3144f2fc55e8031afdbf1951444e",
+        "source": "original",
+        "original": null
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1046",
+    "original_sha256": "9c4f977005f5d126096d152ff20582c4d2abd9da48df63780b1cb366f8ed5c55",
+    "source_url": "https://archive.org/download/chasingedison2010-06-25/chasingedison2010-06-25d1t01.mp3",
+    "archive_identifier": "chasingedison2010-06-25",
+    "filename": "chasingedison2010-06-25d1t01.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "chasingedison2010-06-25",
+      "creator": "Chasing Edison",
+      "title": "Chasing Edison Live at The Neighborhood Theatre, Charlotte on 2010-06-25",
+      "date": "2010-06-25",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "ChasingEdison",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "d07330d6877238091a799fb45ebc2d1ae13a29c71af0db449d7b8d5bafd63e01",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "chasingedison2010-06-25d1t01.mp3",
+        "size": "9240590",
+        "md5": "293e0652b341c65e5da9cca547ea5b98",
+        "sha1": "9bc41bc97e27aa18de8d4829409e61139d974fa2",
+        "source": "derivative",
+        "original": "chasingedison2010-06-25d1t01.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1303",
+    "original_sha256": "b1a369f91c2fe1001967dce8155691b4efd88c2c76f2c11d3585f097262e3e30",
+    "source_url": "https://archive.org/download/racerboyII2009-11-26.flac16/racerboyII2009-11-26t12.mp3",
+    "archive_identifier": "racerboyII2009-11-26.flac16",
+    "filename": "racerboyII2009-11-26t12.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "racerboyII2009-11-26.flac16",
+      "creator": "Racer Boy 2",
+      "title": "Racer Boy 2 Live at Fort Mathom on 2009-11-26",
+      "date": "2009-11-26",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "RacerBoy2",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "a9bf6ba65abfcd9c3d65eafa7a152d647da1104bdbc6ed1d9ea222be1dda4e53",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "racerboyII2009-11-26t12.mp3",
+        "size": "5531073",
+        "md5": "296a6a841b7fd2e88068082db04dc8d8",
+        "sha1": "4d51431eab3d6ae9a48f31fe09ef89bb2aa16a1c",
+        "source": "derivative",
+        "original": "racerboyII2009-11-26t12.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1127",
+    "original_sha256": "b5a04ab423a6c93e63d88f0a08d357e3efd661a112e8e002298e4c49050b71a7",
+    "source_url": "https://archive.org/download/FunkuponyaAtThePourHouseMusicHall6-19-2010/20100619t05.mp3",
+    "archive_identifier": "FunkuponyaAtThePourHouseMusicHall6-19-2010",
+    "filename": "20100619t05.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "FunkuponyaAtThePourHouseMusicHall6-19-2010",
+      "creator": "Funkuponya",
+      "title": "Funkuponya Live at Pour House Music Hall on 2010-06-19",
+      "date": "2010-06-19",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "Funkuponya",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "330321ddbcb0c90964c8f9be2f5cff642c4b22f718d589c1cc6de1af4ce4d781",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "20100619t05.mp3",
+        "size": "15836288",
+        "md5": "fd6da0e34d816f3f8e8d0ec13d97286e",
+        "sha1": "8bcd65602252a72e7579f567a8a836a2089c2dfe",
+        "source": "derivative",
+        "original": "20100619t05.wav"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1309",
+    "original_sha256": "4e2e6736159a80dc6ed067e1af8055fb5c1c4135b42a5bcff90949af64b28827",
+    "source_url": "https://archive.org/download/rfl2001-04-06-flac16/rfl2001-04-06t03.mp3",
+    "archive_identifier": "rfl2001-04-06-flac16",
+    "filename": "rfl2001-04-06t03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "rfl2001-04-06-flac16",
+      "creator": "Reason For Leaving",
+      "title": "Reason For Leaving Live at WORT studios on 2001-04-06",
+      "date": "2001-04-06",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "ReasonForLeaving",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "4fd8c7515ec44186cfb881d2006ad050b5f45487283a46c0a7e0bd6fde2fa202",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "rfl2001-04-06t03.mp3",
+        "size": "16750499",
+        "md5": "90c9f1a32fd471e93cf82637b01793e8",
+        "sha1": "9dadfc1758e20eb7e17f9712b02e24d0abff0f1e",
+        "source": "derivative",
+        "original": "rfl2001-04-06t03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "959",
+    "original_sha256": "5477556c3d62649fbc15fcdee94d23fe3e0e70ad2ac0c8ca4bf1a0552de95ded",
+    "source_url": "https://archive.org/download/aakam2010-04152010-04-15/aakam2010-04-15_03.mp3",
+    "archive_identifier": "aakam2010-04152010-04-15",
+    "filename": "aakam2010-04-15_03.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "aakam2010-04152010-04-15",
+      "creator": "Aaron Kamm and the One Drops",
+      "title": "Aaron Kamm and the One Drops Live at Camp Zoe Concert/Festival Venue and Campgrounds Springjam6 on 2010-04-15",
+      "date": "2010-04-15",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "AaronKammAndTheOneDrops",
+        "etree"
+      ]
+    },
+    "metadata_response_sha256": "31fe891cc0023f970dc696bc04e3bc8692dde830fde74806a990d8877421a40b",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "aakam2010-04-15_03.mp3",
+        "size": "16055456",
+        "md5": "21197282367c218bd095a7c91aba7293",
+        "sha1": "ca57b7798db0da015ef8a2cb6d294fd4c8ccea91",
+        "source": "derivative",
+        "original": "aakam2010-04-15_03.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  },
+  {
+    "id": "1382",
+    "original_sha256": "ae3393cc1678e7713d5d10fce9682eb9888ece3067d48e94b7c83926789b3ae4",
+    "source_url": "https://archive.org/download/sm2010-05-23/sm2010-05-23d1t06-Suzanne_Michell_Trio-Sunday_In_The_Park_May_23_2010-06_Amazing_Grace.mp3",
+    "archive_identifier": "sm2010-05-23",
+    "filename": "sm2010-05-23d1t06-Suzanne_Michell_Trio-Sunday_In_The_Park_May_23_2010-06_Amazing_Grace.mp3",
+    "status": "retrieved",
+    "audio_publication_authorized": false,
+    "metadata": {
+      "identifier": "sm2010-05-23",
+      "creator": "Suzanne Michell Trio",
+      "title": "Suzanne Michell Trio Live at Craighead Forest Bandshell on 2010-05-23",
+      "date": "2010-05-23",
+      "licenseurl": null,
+      "rights": null,
+      "usage": null,
+      "collection": [
+        "somethingbluearchives",
+        "folksoundomy"
+      ]
+    },
+    "metadata_response_sha256": "f69a6fd81a4f7618b567b5b581031d38447203f0a568eb576a83ddf11bcc01a0",
+    "exact_filename_matches": 1,
+    "source_file_metadata": [
+      {
+        "name": "sm2010-05-23d1t06-Suzanne_Michell_Trio-Sunday_In_The_Park_May_23_2010-06_Amazing_Grace.mp3",
+        "size": "4065746",
+        "md5": "da64cc940246178ebc209f21afa1890d",
+        "sha1": "ab7610c534264bbcc7556bc94acab72a71a33592",
+        "source": "derivative",
+        "original": "sm2010-05-23d1t06-Suzanne_Michell_Trio-Sunday_In_The_Park_May_23_2010-06_Amazing_Grace.flac"
+      }
+    ],
+    "explicit_license_url_present": false
+  }
+]

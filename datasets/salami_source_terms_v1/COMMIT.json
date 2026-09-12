@@ -1,0 +1,11 @@
+{
+  "records": 44,
+  "distinct_archive_items": 44,
+  "retrieved": 43,
+  "explicit_license_url_records": 0,
+  "exact_file_matched_records": 43,
+  "source_audit_sha256": "e16d269194b5aec1958db9267c7e5c5647f9036fd0f39c4a4adc1812e3055058",
+  "records_sha256": "625147a49211f54661d6df95d4136e5330bdca6bae915ebdfc5a8a1d9e71fac3",
+  "audio_uploaded": false,
+  "whole_project_complete": false
+}
