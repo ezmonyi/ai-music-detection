@@ -9,6 +9,10 @@ from huggingface_hub import HfApi
 ROOT=Path('/mnt/nfs-data/users/yi/yue2_500_extension_20260911')
 REPO='EZMONYI/music-ai-human-test-audio'
 CONFIG={
+    'mtt':dict(plan='mtt_publication_plan_v1',output='hf_mtt_clips_v1',
+        prefix='audio/magnatagatune_selected_v1/',bytes=58615981,batch_size=500,
+        manifest_sha256='90efec2510f56a2e224fb091670a41f7a7b0203f7767d51de2205b79a6632a5d',
+        terminal='500_mtt_clips_uploaded_hash_verified',metadata=['manifest.json','README.md']),
     'mureka':dict(plan='mureka_original_publication_plan_v1',output='hf_mureka_originals_v1',
         prefix='audio/mureka_originals_v1/',bytes=2411879065,
         manifest_sha256='ad67de34459614d78c929ec1df973a4f0c8567502d5fb178b5056b37fc558852',
@@ -20,14 +24,14 @@ CONFIG={
         metadata=['manifest.json','README.md','SOURCE_CARD_HUMAIR.md','SOURCE_CARD_KUKEDLC.md'])}
 
 
-def check_receipts(output,rows):
+def check_receipts(output,rows,batch_size=100):
     receipts=sorted(output.glob('batch_*.json'))
-    assert len(receipts)==5
+    assert len(receipts)==(len(rows)+batch_size-1)//batch_size
     for i,path in enumerate(receipts):
         assert path.name==f'batch_{i:03d}.json'
         receipt=json.loads(path.read_text())
         assert receipt['sha256_verified'] is True
-        assert receipt['files']==[r['path'] for r in rows[i*100:(i+1)*100]]
+        assert receipt['files']==[r['path'] for r in rows[i*batch_size:(i+1)*batch_size]]
 
 
 def check(root,source):
@@ -38,7 +42,7 @@ def check(root,source):
     assert len(rows)==len({r['id'] for r in rows})==len({r['path'] for r in rows})==500
     assert sum(r['bytes'] for r in rows)==c['bytes']
     assert all(r['path'].startswith(c['prefix']) for r in rows)
-    check_receipts(output,rows)
+    check_receipts(output,rows,c.get('batch_size',100))
     terminal=json.loads((output/'COMMIT.json').read_text())
     assert terminal['status']==c['terminal'] and terminal['files']==500
     assert terminal['manifest_sha256']==c['manifest_sha256']
