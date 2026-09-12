@@ -60,5 +60,13 @@ and archive members preserve historical acquisition choices; retain the separate
 ambiguity exclusions in the breath/vibrato experiments. The earlier acquisition
 README says planned: terminal receipts establish the later completed upload.
 
+## Early MAESTRO dynamics benchmark
+
+[Independent publication acceptance](external_maestro_publication_v1/README.md)
+covers 50 original WAVs and 50 paired MIDI files at revision
+`bb08c8a67b2305fb653b98183a3ac691df64e11a`. This is a separate source-byte
+selection from the later 300-recording classifier release. Four analysis
+windows per performance do not become independent recordings.
+
 Other external controls and remaining song-source uploads are still being
 reconciled. This index does not claim complete dataset delivery.

@@ -1,0 +1,8 @@
+{
+  "status": "100_external_maestro_inputs_uploaded_hash_verified",
+  "audio_files": 50,
+  "midi_files": 50,
+  "manifest_sha256": "1f06ec07d3d86a8877183628b298804c58c65e9a0df88802ca3f325b4675dc61",
+  "source_audit_sha256": "e16d269194b5aec1958db9267c7e5c5647f9036fd0f39c4a4adc1812e3055058",
+  "whole_project_complete": false
+}
