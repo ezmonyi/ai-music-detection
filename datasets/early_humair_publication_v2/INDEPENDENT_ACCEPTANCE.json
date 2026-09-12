@@ -1,0 +1,14 @@
+{
+  "revision": "782d3291a031f64afaf8052643a9644732300826",
+  "verified_audio_files": 100,
+  "checked_bytes": 428744519,
+  "public_manifest_sha256": "4468cbddb98c084699e8708227a40b5c2197c62908c4cbf36814be1bd5295c6e",
+  "source_records_sha256": "d3cba828ae9ce21dba5dbd5bf6fe1d8773793d1197a8f7e5fd1e9829b81a4343",
+  "notice_sha256": "2870d9a11ac825a62ef30d54b94e36c999dfc79010cbb000a2c830686ffb3132",
+  "source_card_sha256": "d99dbe56e4c4ae59c9b156d966d03bfb811013f827fb97614d3ff97a91174d61",
+  "source_records_bound": true,
+  "attribution_variants_preserved": true,
+  "verification": "anonymous pinned-revision manifest equality and LFS size/SHA-256; not full audio redownload",
+  "final_acceptance": true,
+  "whole_project_complete": false
+}

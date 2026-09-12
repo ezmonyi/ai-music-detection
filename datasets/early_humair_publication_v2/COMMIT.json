@@ -1,0 +1,8 @@
+{
+  "status": "100_early_humair_originals_uploaded_hash_verified",
+  "revision": "782d3291a031f64afaf8052643a9644732300826",
+  "audio_files": 100,
+  "metadata_records_sha256": "d3cba828ae9ce21dba5dbd5bf6fe1d8773793d1197a8f7e5fd1e9829b81a4343",
+  "manifest_sha256": "4468cbddb98c084699e8708227a40b5c2197c62908c4cbf36814be1bd5295c6e",
+  "whole_project_complete": false
+}
