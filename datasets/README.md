@@ -40,9 +40,11 @@ human specificity, balanced accuracy or two-class ROC AUC.
   selected originals remain outside this release pending license reconciliation.
 - NSynth and GuitarSet: official source archives published as described in the
   external-controls index; not all archive members were tested.
-- YuE2: 500 original FLAC files are being uploaded under `audio/yue2/originals_v1/`.
-  The manifest is the planned roster, not proof that all files arrived. Completion
-  requires all 50 ten-file batch receipts and a terminal COMMIT.
+- YuE2: all 500 original FLAC files (6,233,703,879 bytes) were uploaded and
+  independently checked at revision `4389bbd7906137b9abbc340fcd743bca451ab092`.
+  [Verified originals](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/tree/4389bbd7906137b9abbc340fcd743bca451ab092/audio/yue2/originals_v1/).
+  All 50 batch receipts, terminal COMMIT and exact public manifest were checked.
+  This covers originals, not every derived view or stem.
 - Other song sources and derived views/stems: publication is not established by
   these catalogues. Missing links do not prove the source was never backed up.
 
