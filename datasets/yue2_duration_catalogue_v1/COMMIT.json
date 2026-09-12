@@ -1,0 +1,22 @@
+{
+  "rows": 500,
+  "native30_eligible": 498,
+  "native60_eligible": 276,
+  "input_commit_sha256": "cde960d1f4ddb29d9751ac8d3bbecf28b6806a5fc9dc05cf299618ec2d8b02ea",
+  "source_bindings": {
+    "metadata.json": "347f6826b6d5ef17f48f47c3ff410bebc7257703a4d5a9fec68cc1b1cb8d3c11",
+    "excluded.json": "0de9e4e8e43bdfa4500544a8fc9fae5a22e0a84af6614ac0c0ff87572f192b5c"
+  },
+  "native30_catalogue_sha256": "58c0315d169a4ee63bb24facf857617f36822dea01431a207837065493a9d0e5",
+  "products": {
+    "generated_recordings.csv": {
+      "bytes": 145971,
+      "sha256": "5badcf7563691dbc79e5cd6c065c2fe3a19aa8516b633d20d48ec1a8ee24ed32"
+    },
+    "README.md": {
+      "bytes": 1348,
+      "sha256": "948b7c74dfe0e649f9274256e2e9de2f2cf98b615fa3f336d6e5a606890152b2"
+    }
+  },
+  "audio_publication_verified": false
+}
