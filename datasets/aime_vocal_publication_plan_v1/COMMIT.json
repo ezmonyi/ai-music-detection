@@ -1,0 +1,22 @@
+{
+  "objects": 5000,
+  "original_ids": 5000,
+  "bytes": 8820220000,
+  "models": {
+    "AudioLDM 2 Large": 500,
+    "AudioLDM 2 Music": 500,
+    "MusicGen Large": 500,
+    "MusicGen Medium": 500,
+    "MusicGen Small": 500,
+    "Mustango": 500,
+    "Riffusion": 500,
+    "Stable Audio v1": 500,
+    "Stable Audio v2": 500,
+    "Udio": 500
+  },
+  "objects_sha256": "21126d3da7eeabf6d251e0b312bb5e5797a48a5ac305ee410c625e60ed7b948a",
+  "input_objects_sha256": "49ff713dc524189723b4adc6d9874d252d6437dbf6e97d25a0acff4ad760db01",
+  "original_manifest_sha256": "b8c0ac0e9cc21b431c1813bcc3594463786123510be422048758947ab1fe9f70",
+  "status": "source_bound_plan_not_uploaded",
+  "whole_project_complete": false
+}
