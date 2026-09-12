@@ -1,5 +1,6 @@
 """Publish only the verified selected generated AIME originals."""
 import json
+from collections import Counter
 from pathlib import Path
 from huggingface_hub import HfApi,CommitOperationAdd
 import publish_maestro_native30_v1 as transport
@@ -7,6 +8,20 @@ import publish_maestro_native30_v1 as transport
 PLAN=Path('/mnt/nfs-data/users/yi/yue2_500_extension_20260911/aime_originals_publication_v1')
 OUT=PLAN.with_name('hf_aime_originals_v1')
 PREFIX='audio/aime_generated_originals_v1/'
+
+
+def validate_manifest(rows):
+    expected={'AudioLDM 2 Large','AudioLDM 2 Music','MusicGen Large','MusicGen Medium',
+              'MusicGen Small','Mustango','Riffusion','Stable Audio v1','Stable Audio v2','Udio'}
+    assert len(rows)==len({r['id'] for r in rows})==5000
+    counts=Counter(r['model'] for r in rows)
+    assert set(counts)==expected and set(counts.values())=={500}
+    assert len({r['path'] for r in rows})==5000
+    for r in rows:
+        assert Path(r['filename']).name==r['filename']
+        assert r['path']==PREFIX+r['filename']
+        assert r['source_dataset']=='disco-eth/AIME'
+        assert r['source_parquet_revision']=='1bdacac93127439e361bdd19d575d8b596bca4e3'
 
 
 def worker(token):
@@ -17,7 +32,7 @@ def worker(token):
     assert commit['status']=='original_bytes_materialized_not_uploaded' and commit['files']==5000
     assert transport.digest(PLAN/'manifest.json')==commit['manifest_sha256']
     rows=json.loads((PLAN/'manifest.json').read_text())
-    assert len(rows)==len({r['id'] for r in rows})==5000
+    validate_manifest(rows)
     for i,start in enumerate(range(0,5000,50)):
         batch=rows[start:start+50];receipt=OUT/f'batch_{i:03d}.json'
         for r in batch:

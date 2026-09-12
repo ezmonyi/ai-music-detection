@@ -2,6 +2,7 @@
 import collections
 import hashlib
 import json
+import fcntl
 from pathlib import Path
 import pyarrow.parquet as pq
 
@@ -19,7 +20,9 @@ def main():
     rows=[json.loads(line) for line in raw.splitlines()]
     shards=collections.defaultdict(dict)
     for r in rows:shards[r['shard']][r['row']]=r
-    OUT.mkdir(exist_ok=False);(OUT/'audio').mkdir()
+    OUT.mkdir(exist_ok=True);(OUT/'audio').mkdir(exist_ok=True)
+    lock=(OUT/'materialize.lock').open('a')
+    fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
     manifest=[]
     for shard,selection in sorted(shards.items()):
         seen=set()
@@ -31,7 +34,15 @@ def main():
             extension='.wav' if data[:4]==b'RIFF' and data[8:12]==b'WAVE' else '.flac' if data[:4]==b'fLaC' else '.bin'
             filename=r['id']+extension
             assert Path(filename).name==filename
-            with (OUT/'audio'/filename).open('xb') as stream:stream.write(data)
+            destination=OUT/'audio'/filename
+            if destination.exists():
+                existing=destination.read_bytes()
+                assert len(existing)==r['bytes'] and hashlib.sha256(existing).hexdigest()==r['sha256'], f'Existing file mismatch: {filename}'
+            else:
+                # An interrupted write stays visibly temporary, never a completed audio file.
+                temporary=destination.with_suffix(destination.suffix+'.partial')
+                with temporary.open('wb') as stream:stream.write(data)
+                temporary.replace(destination)
             manifest.append(dict(r,filename=filename,path='audio/aime_generated_originals_v1/'+filename,
                 license='CC-BY-4.0',license_basis='AIME publisher generated-audio declaration; excludes MTG human subset',
                 source_dataset='disco-eth/AIME',source_parquet_revision='1bdacac93127439e361bdd19d575d8b596bca4e3',
@@ -40,6 +51,7 @@ def main():
         assert seen==set(selection)
         print(f'materialized {len(manifest)}/5000',flush=True)
     assert len(manifest)==5000
+    assert {p.name for p in (OUT/'audio').iterdir()}=={r['filename'] for r in manifest}
     (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2))
     (OUT/'README.md').write_text('''# AIME generated originals selected for this project
 
