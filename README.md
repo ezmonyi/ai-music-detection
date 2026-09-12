@@ -67,7 +67,10 @@ Do not infer a blanket audio license from the visibility of this repository.
 ## Reproduction constraints
 
 Many historical scripts contain absolute paths to the original Linux servers.
-They are preserved for provenance; a portable entry point is not yet complete.
+They are preserved for provenance; a whole-pipeline portable entry point is not
+yet complete. A [portable Native60 report replay](REPRODUCE_NATIVE60_REPORT.md)
+downloads two pinned public result bundles and reconstructs the completed
+1,905-cell report without the original server paths. It does not rerun inference.
 Frozen native30 runners additionally bind code, checkpoints, input hashes,
 runtime versions, and separate authorization contracts. Do not edit their
 scientific gates or silently substitute missing models/data to make a run pass.

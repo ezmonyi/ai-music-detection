@@ -1,5 +1,6 @@
 """Verify persisted predictions and export every fixed-model sensitivity cell."""
 import csv
+import argparse
 import gzip
 import hashlib
 import json
@@ -10,25 +11,32 @@ from collections import defaultdict
 ROOT=Path('/Users/yi/Documents/report/music_ai_detection_20260912/current_results')
 SOURCE=ROOT/'native60_transfer_scores_v1'
 PIN='34782ccfa467d5304ec2a4af1000d390eb467f004bb591ddce1474d06a068e64'
+METADATA_PIN='d1e219e9a91370b7e470bac5c0deaaa70759b15ed49316f08b3ef5a4055771f1'
 
 
 def sha(path):
     with path.open('rb') as stream:return hashlib.file_digest(stream,'sha256').hexdigest()
 
 
-def main():
-    assert sha(SOURCE/'COMMIT.json')==PIN
-    commit=json.loads((SOURCE/'COMMIT.json').read_text())
+def main(root=ROOT, output=None):
+    source=root/'native60_transfer_scores_v1'
+    out=output if output is not None else root/'native60_transfer_report_v1'
+    if out.exists():
+        raise FileExistsError(f'Refusing to overwrite report directory: {out}')
+    assert sha(source/'COMMIT.json')==PIN
+    commit=json.loads((source/'COMMIT.json').read_text())
     for name,entry in commit['products'].items():
-        assert sha(SOURCE/name)==entry['sha256'] and (SOURCE/name).stat().st_size==entry['bytes']
-    summaries=json.loads((SOURCE/'per_model_summary.json').read_text())
+        assert sha(source/name)==entry['sha256'] and (source/name).stat().st_size==entry['bytes']
+    summaries=json.loads((source/'per_model_summary.json').read_text())
     assert len(summaries)==9525
-    metadata=json.loads((ROOT/'native60_feature_package_v1/metadata.json').read_text())
+    metadata_path=root/'native60_feature_package_v1/metadata.json'
+    assert sha(metadata_path)==METADATA_PIN
+    metadata=json.loads(metadata_path.read_text())
     roles={r['id']:r['role'] for r in metadata};assert len(roles)==276
     expected={(r['combination'],r['quantity'],r['fold_index'],r['population']):r for r in summaries}
     assert len(expected)==9525
     counts=defaultdict(lambda:[0,0]);seen=defaultdict(set)
-    with gzip.open(SOURCE/'predictions.csv.gz','rt',newline='') as stream:
+    with gzip.open(source/'predictions.csv.gz','rt',newline='') as stream:
         for row in csv.DictReader(stream):
             key=(row['combination'],row['quantity'],row['fold_index']);uid=row['id']
             assert uid not in seen[key] and roles[uid]==row['role'];seen[key].add(uid)
@@ -52,7 +60,7 @@ def main():
             models=5,mean_sensitivity=statistics.mean(values),min_sensitivity=min(values),max_sensitivity=max(values),
             M_secondary_diagnostic='M' in combo.split('+')))
     assert len(cells)==1905
-    out=ROOT/'native60_transfer_report_v1';out.mkdir(exist_ok=False)
+    out.mkdir(exist_ok=False)
     with (out/'all_subsets_caps_populations.csv').open('x',newline='') as stream:
         writer=csv.DictWriter(stream,fieldnames=list(cells[0]));writer.writeheader();writer.writerows(cells)
     lookup={(r['combination'],r['quantity'],r['population']):r for r in cells}
@@ -72,4 +80,11 @@ def main():
     print('Verified 876300 predictions; exported all 1905 sensitivity cells')
 
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--input-root',type=Path,default=ROOT,
+        help='Directory containing native60_transfer_scores_v1 and native60_feature_package_v1')
+    parser.add_argument('--output',type=Path,
+        help='New report directory; existing directories are never overwritten')
+    args=parser.parse_args()
+    main(args.input_root,args.output)
