@@ -44,7 +44,10 @@ human specificity, balanced accuracy or two-class ROC AUC.
   78 historical input files anonymously verified, separate from the 39 originals.
 - [Historical processed-object gap](historical_test_view_objects_v1/README.md):
   the fixed pre-supplement snapshot found 13,278 unpublished byte objects,
-  19,083,227,708 bytes. The two acceptances above close 178 of those objects;
+  19,083,227,708 bytes. DiffRhythm, Ishizaka, the
+  [600 historical MAESTRO files](maestro_historical_views_publication_v1/README.md)
+  and [500 processed MTT files](mtt_test_views_publication_v1/README.md)
+  close 1,278 of those objects;
   pending uploads are not counted as accepted. This does not cover every stem.
 - [Saraga originals](saraga_originals_publication_v1/README.md): all 108
   originals independently accepted; 103 classifier identities and five other
