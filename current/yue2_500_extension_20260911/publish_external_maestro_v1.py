@@ -3,10 +3,13 @@ import os
 os.environ['HF_HUB_DISABLE_XET']='1'
 os.environ['HF_HUB_DISABLE_PROGRESS_BARS']='1'
 import json
+import hashlib
 from pathlib import Path
+import urllib.request
+from urllib.parse import quote
 from huggingface_hub import HfApi,CommitOperationAdd
 import publish_maestro_native30_v1 as transport
-from publish_yue2_originals_v1 import digest,save,verify
+from publish_yue2_originals_v1 import digest,save
 
 ROOT=Path('/mnt/nfs-data/users/yi/yue2_500_extension_20260911')
 OUT=ROOT/'hf_external_maestro_v1'
@@ -49,6 +52,20 @@ def build():
             source_url=r['source_url'],source_member=r['source_member'],title=r['title'],composer=r['composer'],
             license='CC-BY-NC-SA-4.0',modification='None; original bytes',role='external_measurement_benchmark'))
     return public,paths
+
+
+def verify(api,rows,revision):
+    expected={r['path']:r for r in rows}
+    entries=api.get_paths_info(transport.REPO,paths=list(expected),repo_type='dataset',revision=revision)
+    assert {e.path for e in entries}==set(expected)
+    for entry in entries:
+        row=expected[entry.path];assert entry.size==row['bytes']
+        if entry.lfs:
+            assert entry.lfs.sha256==row['sha256']
+        else:
+            url=f'https://huggingface.co/datasets/{transport.REPO}/resolve/{revision}/{quote(entry.path,safe="/")}'
+            with urllib.request.urlopen(url,timeout=60) as response:raw=response.read()
+            assert len(raw)==row['bytes'] and hashlib.sha256(raw).hexdigest()==row['sha256']
 
 
 def worker(token):
