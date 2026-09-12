@@ -11,6 +11,7 @@ The release is still incomplete; repository visibility is not an audio license.
 | [Historical measurement status](historical_measurement_coverage_v1/README.md) | Successful/failed and per-family availability | 10,141 10s rows and 4,497 30s rows |
 | [Expanded Native30](native30_expanded_v1/README.md) | Completed feature cohort index | 4,228 development plus 100 locked YuE2 IDs |
 | [All YuE2 originals and duration eligibility](yue2_duration_catalogue_v1/README.md) | Preserve all generations, including short outputs | 500 IDs; 498 Native30 and 276 Native60 eligible |
+| [Selected AIME generated originals](aime_generated_catalogue_v1/README.md) | Raw-source hashes linked to historical views | 5,000 existing historical IDs; ten generator labels, 500 each |
 | [External controls](EXTERNAL_CONTROLS.md) | Acoustic-phenomenon validation sources | Separate from song-classifier populations |
 
 Do not add these row counts. The cross-experiment union includes 498 YuE2 IDs;
@@ -40,11 +41,18 @@ human specificity, balanced accuracy or two-class ROC AUC.
   selected originals remain outside this release pending license reconciliation.
 - NSynth and GuitarSet: official source archives published as described in the
   external-controls index; not all archive members were tested.
+- VocalSet: 244 selected original external-control recordings and two metadata
+  files independently verified at revision `65087d237b50f598000d2cf3a5353317bdf5f866`;
+  see the external-controls index for acquisition versus analysis scope.
 - YuE2: all 500 original FLAC files (6,233,703,879 bytes) were uploaded and
   independently checked at revision `4389bbd7906137b9abbc340fcd743bca451ab092`.
   [Verified originals](https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio/tree/4389bbd7906137b9abbc340fcd743bca451ab092/audio/yue2/originals_v1/).
   All 50 batch receipts, terminal COMMIT and exact public manifest were checked.
   This covers originals, not every derived view or stem.
+- AIME: all 5,000 selected generated source blobs passed byte-level audit
+  (8,281,783,640 bytes). Publication extraction is in progress; no upload
+  completion is claimed. These are existing historical IDs, not new test data.
+  The separately licensed MTG-labelled human subset is excluded.
 - Other song sources and derived views/stems: publication is not established by
   these catalogues. Missing links do not prove the source was never backed up.
 
