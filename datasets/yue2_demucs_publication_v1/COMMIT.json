@@ -1,0 +1,8 @@
+{
+  "status": "1000_yue_demucs_stems_uploaded_hash_verified",
+  "audio_files": 1000,
+  "recordings": 500,
+  "manifest_sha256": "3561a4039446af9bfc0d4df8f8059e97c397c9a69d95ba339f7587cf98a140b9",
+  "source_inventory_sha256": "f1ce7251de8a3b08f6fe1c0cb629c494cf3cbd354495dafcb135438e709eed8c",
+  "whole_project_complete": false
+}

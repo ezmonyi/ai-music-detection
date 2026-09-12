@@ -1,0 +1,12 @@
+{
+  "revision": "5bf68b629dc1378b79e00d98b15a9b4402fe44ff",
+  "verified_audio_files": 1000,
+  "recordings": 500,
+  "checked_bytes": 10584088000,
+  "manifest_sha256": "3561a4039446af9bfc0d4df8f8059e97c397c9a69d95ba339f7587cf98a140b9",
+  "source_inventory_sha256": "f1ce7251de8a3b08f6fe1c0cb629c494cf3cbd354495dafcb135438e709eed8c",
+  "source_records_bound": true,
+  "final_acceptance": true,
+  "whole_project_complete": false,
+  "verification": "Anonymous pinned-revision manifest equality and all LFS hashes/sizes; no full audio redownload"
+}
