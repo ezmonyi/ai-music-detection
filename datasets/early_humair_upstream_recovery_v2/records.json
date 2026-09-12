@@ -1,0 +1,2652 @@
+[
+  {
+    "id": "000428a8-6a33-4e04-9141-3d669f4cc0a9",
+    "metadata_variants": [
+      {
+        "id": "000428a8-6a33-4e04-9141-3d669f4cc0a9",
+        "title": "Di Antara Kabut Kenangan",
+        "display_name": "Rock Pulse",
+        "handle": "rockpulse38",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T01:08:29.772Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "1631d29215f851e224d62a73b7a2e8d1d2d9e48ca9e466d65ad8cdd99985bf23",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/000428a8-6a33-4e04-9141-3d669f4cc0a9.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "89e6ce10554951d8",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00085d71-1a94-4490-9c96-1a1722f8b76c",
+    "metadata_variants": [
+      {
+        "id": "00085d71-1a94-4490-9c96-1a1722f8b76c",
+        "title": "Beautiful Woman - epic,   healing,   motivation,   antiaging,   uplifting,   dru",
+        "display_name": "FearlessDJs5291",
+        "handle": "fearlessdjs5291",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-10T18:00:57.988Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "707deb6d6ab109aa8d13305cf25894ab92365302247974ccd6b7b14321f55859",
+    "original_bytes": 4136877,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/00085d71-1a94-4490-9c96-1a1722f8b76c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "794c90082684199f",
+        "label": "1",
+        "source": "humair_suno"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "794c90082684199f",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "000a341f-efb0-4c06-bddd-e494eddf44a1",
+    "metadata_variants": [
+      {
+        "id": "000a341f-efb0-4c06-bddd-e494eddf44a1",
+        "title": "",
+        "display_name": "GalvanizingHarpists8950",
+        "handle": "galvanizingharpists8950",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-07T01:19:11.272Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "c7994339401dbf22291ab2b7d6a4e9c896da5838c23c27b4734f0ae300768ee9",
+    "original_bytes": 3327597,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/000a341f-efb0-4c06-bddd-e494eddf44a1.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "436be18c3491e419",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "000cc669-7916-4073-9dbf-2aef2efebb92",
+    "metadata_variants": [
+      {
+        "id": "000cc669-7916-4073-9dbf-2aef2efebb92",
+        "title": "Submarine Echoes",
+        "display_name": "SynthBird69",
+        "handle": "synthbird69",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T20:20:12.715Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "44693cbe79d2c93ffda8cae5ad12fbcfe50d2575ea42fb638efac20524fc4f2f",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/000cc669-7916-4073-9dbf-2aef2efebb92.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5f9caa0dbf2069c0",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0010a003-5519-4d44-8348-77bc3af5c23e",
+    "metadata_variants": [
+      {
+        "id": "0010a003-5519-4d44-8348-77bc3af5c23e",
+        "title": "Unbelievable Lalo Instrumental",
+        "display_name": "dougmeet",
+        "handle": "dougmeet",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T09:38:06.060Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "6be75950f10d9ee76365c0581ee0741c9245eeca29d7d881fe378b8621c86b94",
+    "original_bytes": 4133421,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/0010a003-5519-4d44-8348-77bc3af5c23e.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d404b12613f5a758",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0016e604-0334-434c-98f1-3f5f60f98ebb",
+    "metadata_variants": [
+      {
+        "id": "0016e604-0334-434c-98f1-3f5f60f98ebb",
+        "title": "Hexe",
+        "display_name": "Todlichkunst records",
+        "handle": "todlichkunst_records",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T19:40:18.642Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "8883457b90f4f06aaf72c16a5c1fb7bd9a2c94ded100b1f0dd6d7c5846d25d08",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/0016e604-0334-434c-98f1-3f5f60f98ebb.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "295442cd6fc259f7",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0021e244-0875-405c-b05e-4fcf5a539f88",
+    "metadata_variants": [
+      {
+        "id": "0021e244-0875-405c-b05e-4fcf5a539f88",
+        "title": "Electric Heart",
+        "display_name": "D'Bass",
+        "handle": "subliminaloperetta4552",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-07T11:40:08.479Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "664dc26933acd4ab4525b1e882d30579885e350e973dcfc90728a820717bee24",
+    "original_bytes": 3459501,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/0021e244-0875-405c-b05e-4fcf5a539f88.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "85b498be7cec3ca5",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00256210-7ced-4828-a1db-ed3068863288",
+    "metadata_variants": [
+      {
+        "id": "00256210-7ced-4828-a1db-ed3068863288",
+        "title": "Dreamwave Escape",
+        "display_name": "Who?",
+        "handle": "composedinterval854",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T05:19:04.713Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "c1923de328c609e92aef9bdf5fda6c8fbe98ac131bceeb4dc48a5d69211e0cc8",
+    "original_bytes": 4085037,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/00256210-7ced-4828-a1db-ed3068863288.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "33353ffbe1593b02",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "002f9fd1-678c-4077-8f87-c3efbabed40c",
+    "metadata_variants": [
+      {
+        "id": "002f9fd1-678c-4077-8f87-c3efbabed40c",
+        "title": "Heartquake",
+        "display_name": "Deepsoul22",
+        "handle": "deepsoul22",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T17:56:12.679Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "09348b1c43379da14b01f1b98de2d0d1d0d137684760560768922fa8128785c0",
+    "original_bytes": 3469869,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/002f9fd1-678c-4077-8f87-c3efbabed40c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "8ce2b2d026cba9fa",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00366ce6-b16f-4201-83e2-c0b2143ad7f9",
+    "metadata_variants": [
+      {
+        "id": "00366ce6-b16f-4201-83e2-c0b2143ad7f9",
+        "title": "Lethal",
+        "display_name": "FearlessSaturation6192",
+        "handle": "fearlesssaturation6192",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-13T11:31:59.599Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "9a1a8e2fc8ca26d3dc2afb3ecb1f9645db15f5b8155a13174e99ddcde5d12df8",
+    "original_bytes": 3816621,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/00366ce6-b16f-4201-83e2-c0b2143ad7f9.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "62ccdbc8bf55ee48",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00475494-6cea-4aed-a4c7-43765561a812",
+    "metadata_variants": [
+      {
+        "id": "00475494-6cea-4aed-a4c7-43765561a812",
+        "title": "Ngọc Anh Vi - Cạn Hết Nước Mắt [2025/Remixes] (2025v51) - Instrumental",
+        "display_name": "DTT Suno AI Music Remix",
+        "handle": "dttsunoaimusicremix1991",
+        "model_name": "",
+        "major_model_version": "",
+        "created_at": "2024-11-06T08:28:48.462Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "63975fbf213f24a17dfa00f8cbe2abeeb14bc2f3b6cf2f41585532e99f624989",
+    "original_bytes": 5588576,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/00475494-6cea-4aed-a4c7-43765561a812.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "2c7bf9c8700b5101",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "004962fc-6003-4339-a3fe-32015075b39b",
+    "metadata_variants": [
+      {
+        "id": "004962fc-6003-4339-a3fe-32015075b39b",
+        "title": "Silent Dec. Night_v17_ft.Nao",
+        "display_name": "cohkun",
+        "handle": "cohkun",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T02:20:28.123Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "d319f8479cda555a042d1a517862a3937f58c0be2243eaf48f730ab68984f388",
+    "original_bytes": 4832109,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/004962fc-6003-4339-a3fe-32015075b39b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9cfbe624efab0459",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "004cb777-5be0-48c0-b692-e1f8481626a4",
+    "metadata_variants": [
+      {
+        "id": "004cb777-5be0-48c0-b692-e1f8481626a4",
+        "title": "Mushroom Kingdom Adventures",
+        "display_name": "Ginyu Force",
+        "handle": "theginyuforce",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-10T09:30:48.153Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "0e9e0cc2369fcaf177526525abbcd6787477359d76e2b74eeeedeea93c17e072",
+    "original_bytes": 3413421,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/004cb777-5be0-48c0-b692-e1f8481626a4.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "cdcefeecfc8b1a9f",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0053ef8e-a78f-4a97-8005-9347c21e9287",
+    "metadata_variants": [
+      {
+        "id": "0053ef8e-a78f-4a97-8005-9347c21e9287",
+        "title": "Skibidi slicers?(2)",
+        "display_name": "Good songs by me myself and i",
+        "handle": "goodsongbymemyselfandi",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-22T18:24:34.449Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "3aaea965ef3544ed47dc2a78e5621011e5025845eccbd026f43ae1f174820751",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/0053ef8e-a78f-4a97-8005-9347c21e9287.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "fba5a56d36921792",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0057cbeb-d8fa-4405-a4ae-e644c3e236e4",
+    "metadata_variants": [
+      {
+        "id": "0057cbeb-d8fa-4405-a4ae-e644c3e236e4",
+        "title": "黑洞憂傷",
+        "display_name": "Snowgoose",
+        "handle": "snowgoose",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T15:28:19.170Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "8f43d448120f206e69ab5c0169e41b92e0204fc4fa1d4b33a8c8e958ea6ddabc",
+    "original_bytes": 4297581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/0057cbeb-d8fa-4405-a4ae-e644c3e236e4.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e65683c8958eef04",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00595ca8-2a24-4321-8cbd-2410b5a021a2",
+    "metadata_variants": [
+      {
+        "id": "00595ca8-2a24-4321-8cbd-2410b5a021a2",
+        "title": "Sobota w roboci",
+        "display_name": "ChillSeapunk4582",
+        "handle": "chillseapunk4582",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-27T11:45:09.632Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "3c8b02a419a56851174a0cbde17abd99c28f18f7011c3edbb4512b44cca4f92e",
+    "original_bytes": 3141549,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/00595ca8-2a24-4321-8cbd-2410b5a021a2.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b37b8d0bc4e16fbb",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "005bcbd5-de74-4f1d-bf87-d59c2c9720f7",
+    "metadata_variants": [
+      {
+        "id": "005bcbd5-de74-4f1d-bf87-d59c2c9720f7",
+        "title": "One Shot Nadia",
+        "display_name": "krinkn",
+        "handle": "krinkn",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-29T05:14:34.941Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "5ac88915e27466211ffb2234744b8b1b8e8338e22fecd4089e210ef823fd1f79",
+    "original_bytes": 4489389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_0/005bcbd5-de74-4f1d-bf87-d59c2c9720f7.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9e1d7e387547d799",
+        "label": "1",
+        "source": "humair_suno"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "9e1d7e387547d799",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "006b81ba-071f-4a6d-8a89-7ab82a595157",
+    "metadata_variants": [
+      {
+        "id": "006b81ba-071f-4a6d-8a89-7ab82a595157",
+        "title": "El Ensuciarropa",
+        "display_name": "UndulatingSongs0522",
+        "handle": "undulatingsongs0522",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T19:58:32.251Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "e6b74b49a2516a19192987ea38206603db7a3fda507b3340b141617077f37d7c",
+    "original_bytes": 5333229,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/006b81ba-071f-4a6d-8a89-7ab82a595157.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "188ef046960529c8",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "006ffa25-4ea1-42c4-8b66-2a8887163892",
+    "metadata_variants": [
+      {
+        "id": "006ffa25-4ea1-42c4-8b66-2a8887163892",
+        "title": "Valencia de Corazón",
+        "display_name": "Midnight_2001",
+        "handle": "instrumentalsounddesigner160",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T17:20:28.993Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "ef808c9ac7679239786e8d64554d121f1c3ead36e45decdd7d602f50de99ccff",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/006ffa25-4ea1-42c4-8b66-2a8887163892.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "989842c8fa1c18dc",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0070e0fe-e5fc-4d74-a9ab-e27173fdd7ee",
+    "metadata_variants": [
+      {
+        "id": "0070e0fe-e5fc-4d74-a9ab-e27173fdd7ee",
+        "title": "Full Circle",
+        "display_name": "MarikaeEWJones",
+        "handle": "marikaeewjones",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T15:26:45.696Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "db4f0f4d1bb56d9c3e44666bdd19e21d5b9846cc9f878ef70484b4d505f25b0c",
+    "original_bytes": 3694509,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/0070e0fe-e5fc-4d74-a9ab-e27173fdd7ee.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "deeeafdc1a2e4b4d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00786e43-bb14-49e2-8253-bfcc3573c2f0",
+    "metadata_variants": [
+      {
+        "id": "00786e43-bb14-49e2-8253-bfcc3573c2f0",
+        "title": "Can You Hear Them",
+        "display_name": "NabilNajem55",
+        "handle": "nabilnajem",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-29T13:30:00.257Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "303717eb264132d9b85cb5f4abe4488045c5e9c261e2320e6a4d31dfb444fd3b",
+    "original_bytes": 5185197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00786e43-bb14-49e2-8253-bfcc3573c2f0.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5a69db5098bb6b52",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00809d4e-f030-47c2-a050-aef8b4e8d8b5",
+    "metadata_variants": [
+      {
+        "id": "00809d4e-f030-47c2-a050-aef8b4e8d8b5",
+        "title": "Secrets",
+        "display_name": "MIKESTA_G",
+        "handle": "mikesta_g_2024",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T19:02:08.723Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "f16022826394b9f56d90fc37f8e65c65b9e3b33e733c68b6d1c383f108181b5e",
+    "original_bytes": 7201197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00809d4e-f030-47c2-a050-aef8b4e8d8b5.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7d304b0c8565cb74",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00850ea4-274c-4450-af9f-ae917bcbf155",
+    "metadata_variants": [
+      {
+        "id": "00850ea4-274c-4450-af9f-ae917bcbf155",
+        "title": "En La Sombra",
+        "display_name": "DisconcertedJazz9457",
+        "handle": "disconcertedjazz9457",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T00:52:38.233Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "27452e11b3f35039b23dc892d75958a455b094fc8ed75cc2f49619ec5c80750b",
+    "original_bytes": 4849389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00850ea4-274c-4450-af9f-ae917bcbf155.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4edcbb4061247490",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0085c23a-c6d5-4c3f-8f39-a947249f20cd",
+    "metadata_variants": [
+      {
+        "id": "0085c23a-c6d5-4c3f-8f39-a947249f20cd",
+        "title": "Overwhelmed ",
+        "display_name": "L.E.C.",
+        "handle": "lec",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T04:46:31.692Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "33142192890fb128c16873be08368eae9732208750d57fd1c8f1b0183fc552fa",
+    "original_bytes": 5733549,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/0085c23a-c6d5-4c3f-8f39-a947249f20cd.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c62fcddbf755da89",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0087bdc2-3898-42dd-a041-2b02407cea35",
+    "metadata_variants": [
+      {
+        "id": "0087bdc2-3898-42dd-a041-2b02407cea35",
+        "title": "Symphony for shadows and orchestra (2024 Alex Sikorsky lyrics) v.5.0",
+        "display_name": "Alex Sikorsky",
+        "handle": "alex_sikorsky",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-09T07:21:10.179Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "9947a4a1d45108b8738a925e31a2dcf1cb4ad92ba356de3551c869061e47ef46",
+    "original_bytes": 4893741,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/0087bdc2-3898-42dd-a041-2b02407cea35.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9b183b87e56925b6",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "008819e2-e25b-4a85-8561-0d660aca4c6f",
+    "metadata_variants": [
+      {
+        "id": "008819e2-e25b-4a85-8561-0d660aca4c6f",
+        "title": "Grocery Zone",
+        "display_name": "CunningWorldTour7486",
+        "handle": "cunningworldtour7486",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T16:50:00.821Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "b5bed6149ed1f2f1ef25b50ab2964951f301fee716b41083bb5cdea8b8c0a4b6",
+    "original_bytes": 3826989,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/008819e2-e25b-4a85-8561-0d660aca4c6f.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c61d14309ee11f39",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00918401-0ac5-4392-aefb-1715fc2fc119",
+    "metadata_variants": [
+      {
+        "id": "00918401-0ac5-4392-aefb-1715fc2fc119",
+        "title": "A vždycky",
+        "display_name": "Vojta777",
+        "handle": "vojta777",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-10T12:57:55.972Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "37867a8246249f0412b005552fdffa6542a4fa4418aa8d8d415603de8dc053d7",
+    "original_bytes": 4199661,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00918401-0ac5-4392-aefb-1715fc2fc119.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "44808da6ed3c1fe7",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0093dc0b-b2dc-4fee-9996-ca97f974598a",
+    "metadata_variants": [
+      {
+        "id": "0093dc0b-b2dc-4fee-9996-ca97f974598a",
+        "title": "Rádio Eli Moura - G.Stall",
+        "display_name": "SpaciousSurfRock321",
+        "handle": "spacioussurfrock321",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T21:52:42.290Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "f0a088fb4b606936d11e68de5bdd7c8561c36e6bfab7bb7859e34cf5268b79d8",
+    "original_bytes": 4009581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/0093dc0b-b2dc-4fee-9996-ca97f974598a.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "58e8f6a891c02ade",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0093f145-5bff-4bc8-8c82-70ec4ffeb0e8",
+    "metadata_variants": [
+      {
+        "id": "0093f145-5bff-4bc8-8c82-70ec4ffeb0e8",
+        "title": "Lutando todo dia, sem medo dessa viagem",
+        "display_name": "DjBearAiSonds",
+        "handle": "immovablescale3309",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-07T03:00:15.111Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "e49bc5ba984d3a232739eaa2131ca790a05c2ce12f0942174e67f6ad0ea28b56",
+    "original_bytes": 5101677,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/0093f145-5bff-4bc8-8c82-70ec4ffeb0e8.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6b9c154647e64858",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00a202a0-ab1d-4080-a1d1-654cefba940c",
+    "metadata_variants": [
+      {
+        "id": "00a202a0-ab1d-4080-a1d1-654cefba940c",
+        "title": "Together We Will Win",
+        "display_name": "DissonantSwing0790",
+        "handle": "dissonantswing0790",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T16:54:27.192Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "ce6be7da51599bbc008aaf03721453954ab3b9a8ae4139718cb592dbc2d141ca",
+    "original_bytes": 3452589,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00a202a0-ab1d-4080-a1d1-654cefba940c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9e4359c6bccba180",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00a70375-de01-4ca6-b9b6-553e56e821e7",
+    "metadata_variants": [
+      {
+        "id": "00a70375-de01-4ca6-b9b6-553e56e821e7",
+        "title": "Nyucu Sepanjang Hari - Rock",
+        "display_name": "Endik Koeswoyo",
+        "handle": "endikkoeswoyo",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T23:35:39.558Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "ead327a49900da3629d736654e797b9eb04bfe6778a1681364f972dd6d341642",
+    "original_bytes": 3813741,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00a70375-de01-4ca6-b9b6-553e56e821e7.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "fe064f35c32efc2f",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00b1f4e5-4477-4a90-ac5f-e13e3f7df05d",
+    "metadata_variants": [
+      {
+        "id": "00b1f4e5-4477-4a90-ac5f-e13e3f7df05d",
+        "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "display_name": "mahirohirayamasunoaiuser2011",
+        "handle": "hirayamacausaaaaaa",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T11:52:26.235Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "7673103fa3314b45aea88f3f697a17037546c1acc96fd5c4411afcaf0a712014",
+    "original_bytes": 1192941,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00b1f4e5-4477-4a90-ac5f-e13e3f7df05d.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9e1f5cb853a0a87f",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00b508d6-93ad-4432-ac14-57b2683327e9",
+    "metadata_variants": [
+      {
+        "id": "00b508d6-93ad-4432-ac14-57b2683327e9",
+        "title": "餓鬼歌",
+        "display_name": "CalypsoPlaylists2140",
+        "handle": "calypsoplaylists2140",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T01:54:34.124Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "ba18c3fc6cde7291a8a53de7752ea0961bc4190b96c8a4b8e9e98bdb5f675477",
+    "original_bytes": 2679597,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00b508d6-93ad-4432-ac14-57b2683327e9.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d06f7c0f730bdc94",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00b5cf17-c6ae-4690-8455-ebce82d0e613",
+    "metadata_variants": [
+      {
+        "id": "00b5cf17-c6ae-4690-8455-ebce82d0e613",
+        "title": "The path to the Father's House",
+        "display_name": "ChartToppingCrossover492",
+        "handle": "charttoppingcrossover492",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T00:01:35.798Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "3b01bda6365b15da99d7a93e133dbdce90698034f19519d553c7c2dc47d4dc6c",
+    "original_bytes": 5311341,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00b5cf17-c6ae-4690-8455-ebce82d0e613.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6e73998793435f98",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00b8c097-bbda-4e1a-a1ed-29bcf8d0a409",
+    "metadata_variants": [
+      {
+        "id": "00b8c097-bbda-4e1a-a1ed-29bcf8d0a409",
+        "title": "Tere husn ke rang mein",
+        "display_name": "CalypsoElectronica8057",
+        "handle": "calypsoelectronica8057",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T17:11:22.475Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "b4b720cac20eac38459ef69228cbb1edb30e7378fa6e9e1633704a00a6bcf8b4",
+    "original_bytes": 4996269,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00b8c097-bbda-4e1a-a1ed-29bcf8d0a409.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "be396a92397b1344",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "00bf8f80-4a2e-4853-9c0e-a7002ee30bb2",
+    "metadata_variants": [
+      {
+        "id": "00bf8f80-4a2e-4853-9c0e-a7002ee30bb2",
+        "title": "Blocky Dreams",
+        "display_name": "UnhurriedStylist4914",
+        "handle": "unhurriedstylist4914",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T01:42:27.878Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "5f904ecd642d9df2676c0f56f745381e5071023a1eee4487eaca1a498cc7e705",
+    "original_bytes": 3889197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_1/00bf8f80-4a2e-4853-9c0e-a7002ee30bb2.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d3045fdadbc5de3d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "03fdf1e5-8b35-4a12-a984-e214c9668159",
+    "metadata_variants": [
+      {
+        "id": "03fdf1e5-8b35-4a12-a984-e214c9668159",
+        "title": "\"Santa Lucia, fa' 'o miracolo\"",
+        "display_name": "Giovanni Privitera Official275",
+        "handle": "selfeffacinghallucinations275",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T11:52:21.153Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "ba918feddbd64555d46943c9107c03e0db768cba647f3813c2a99dc1adc676ca",
+    "original_bytes": 4311981,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/03fdf1e5-8b35-4a12-a984-e214c9668159.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "03dfaaec760ab15d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "03ff012f-d2fd-48cc-9383-f92ee5ec5664",
+    "metadata_variants": [
+      {
+        "id": "03ff012f-d2fd-48cc-9383-f92ee5ec5664",
+        "title": "Caos y Salsa",
+        "display_name": "CunningClub1090",
+        "handle": "cunningclub1090",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T15:27:10.312Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "1889c6c6a0249977b7b077892c45a871a6f811f6203318426b00815800221466",
+    "original_bytes": 4297581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/03ff012f-d2fd-48cc-9383-f92ee5ec5664.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a6546a52028cde00",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04184bdc-ea32-4d2b-a76a-6feb2ee8d767",
+    "metadata_variants": [
+      {
+        "id": "04184bdc-ea32-4d2b-a76a-6feb2ee8d767",
+        "title": "Robotic Conflict (Baymax)",
+        "display_name": "ChimicalReaction",
+        "handle": "chimicalreaction",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T11:49:53.463Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "fcf1258e89f9223d4a5316261cd01b00dda8fd1090ec8ae7c2d4963102cc5797",
+    "original_bytes": 3762477,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/04184bdc-ea32-4d2b-a76a-6feb2ee8d767.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1477fda4d178cce6",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04270a93-da36-4b73-8ad6-bc33b0a719b8",
+    "metadata_variants": [
+      {
+        "id": "04270a93-da36-4b73-8ad6-bc33b0a719b8",
+        "title": "夜明け前の秘密 (Secret Before Dawn)",
+        "display_name": "MesmerisingMultimedia1317",
+        "handle": "mesmerisingmultimedia1317",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-07T02:50:32.807Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "02f6d90f28924f5e6db31615246228481c1d506935391960332538fb490a0432",
+    "original_bytes": 4003821,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/04270a93-da36-4b73-8ad6-bc33b0a719b8.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "27dd4c719c0f5a10",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "042f39d7-a94f-4091-ad6f-9e16a822773b",
+    "metadata_variants": [
+      {
+        "id": "042f39d7-a94f-4091-ad6f-9e16a822773b",
+        "title": "bailando la saya",
+        "display_name": "Lewislimaflores45",
+        "handle": "persistentrecordplayers927",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T01:07:51.297Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "8edec1b7db9fc382a81aae45ff4e32ebd5db21b834fb92c0ec6fb07ed182d549",
+    "original_bytes": 4441581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/042f39d7-a94f-4091-ad6f-9e16a822773b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4f0d6234c02a453c",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "043e12bd-0248-440a-b4f7-fef721e20127",
+    "metadata_variants": [
+      {
+        "id": "043e12bd-0248-440a-b4f7-fef721e20127",
+        "title": "",
+        "display_name": "黒吏将",
+        "handle": "salsapedals5932",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-09T16:42:07.426Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "e6ff91ae43ec74455704f55278f975504ca4eb1c9932ce380bcc731a48098a52",
+    "original_bytes": 1646829,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/043e12bd-0248-440a-b4f7-fef721e20127.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c2018233f3b02a64",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0440dd93-eedc-453f-a9cf-35ccc39bf249",
+    "metadata_variants": [
+      {
+        "id": "0440dd93-eedc-453f-a9cf-35ccc39bf249",
+        "title": "El Niño Divino",
+        "display_name": "www.storiesforgrowth.com",
+        "handle": "shiveringdanceparty6189",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-07T15:38:36.195Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "e0ec19ed605eb7d5dffe0ee44c3741795ac390cd5c617ce3e3ef7831a7df42c3",
+    "original_bytes": 5065389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/0440dd93-eedc-453f-a9cf-35ccc39bf249.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "84d722aafb16db19",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04417133-7505-41e4-824f-c3a6dd291de2",
+    "metadata_variants": [
+      {
+        "id": "04417133-7505-41e4-824f-c3a6dd291de2",
+        "title": "Machine Synchronization",
+        "display_name": "DissonantChamber7048",
+        "handle": "dissonantchamber7048",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-27T03:19:58.751Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "fa32ef960f7b85f0d4054b26f4179b274ffc4ac41ff6439760d5dc686102b1f6",
+    "original_bytes": 4345389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_10/04417133-7505-41e4-824f-c3a6dd291de2.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b87255496fab1f7b",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04478450-5224-41ec-972d-a40fac4aa55b",
+    "metadata_variants": [
+      {
+        "id": "04478450-5224-41ec-972d-a40fac4aa55b",
+        "title": "Aurora Dreams",
+        "display_name": "Zoltar",
+        "handle": "zoltargrantsyourwish",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-16T09:12:56.842Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "751db8923f7de5f5c19771b00075d215f4fea9c58c9837ae1ba35cac4d6e0b2a",
+    "original_bytes": 4424877,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/04478450-5224-41ec-972d-a40fac4aa55b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "316d089c1de65d85",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "044c9e51-c2ea-4700-b927-f9780a486126",
+    "metadata_variants": [
+      {
+        "id": "044c9e51-c2ea-4700-b927-f9780a486126",
+        "title": "Abandoned Theme Park (Alternate Version)",
+        "display_name": "MrWhippy87",
+        "handle": "mrwhippy87",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-24T12:57:09.533Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "5f45cb2bec16aa63c06540e5a374b6d9e07b80591480b107468b86e34f245762",
+    "original_bytes": 4297581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/044c9e51-c2ea-4700-b927-f9780a486126.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "89bf9be8fa1d521b",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0452736e-f4df-4fa5-ad84-217f40ecb083",
+    "metadata_variants": [
+      {
+        "id": "0452736e-f4df-4fa5-ad84-217f40ecb083",
+        "title": "",
+        "display_name": "Nimai&Kirtida",
+        "handle": "nimaikirtida",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-23T16:04:08.429Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "27840cded67ccb70bddecdd85f85a89daa3176c2bbb9fcde151adff4ac0f7d2a",
+    "original_bytes": 3040749,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/0452736e-f4df-4fa5-ad84-217f40ecb083.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a5d0abc240f6293d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0459e3c6-e068-4b58-943b-bf7634ce5aed",
+    "metadata_variants": [
+      {
+        "id": "0459e3c6-e068-4b58-943b-bf7634ce5aed",
+        "title": "Stars above so bright at night",
+        "display_name": "visualGate",
+        "handle": "visualgate",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T17:18:35.089Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "cf4809e56b154abb2349800602dcf5c7f29c6deabc8f633aee8dae33c0f84be4",
+    "original_bytes": 2967021,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/0459e3c6-e068-4b58-943b-bf7634ce5aed.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "62506964be7b7933",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0478aa01-e781-4f1c-af0f-aaf74df9227b",
+    "metadata_variants": [
+      {
+        "id": "0478aa01-e781-4f1c-af0f-aaf74df9227b",
+        "title": "Nakhre na dikha ",
+        "display_name": "Rajib Gartia1",
+        "handle": "rajibgartia1",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T00:42:19.521Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "7f636359520e378b630aed18a8b1a6044609d1cf124b873bc520a92147b4311f",
+    "original_bytes": 3305709,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/0478aa01-e781-4f1c-af0f-aaf74df9227b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6ac20a029e97f173",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "047c52d6-b452-4581-86f4-e2a2d02ffc2f",
+    "metadata_variants": [
+      {
+        "id": "047c52d6-b452-4581-86f4-e2a2d02ffc2f",
+        "title": "Die Kriegsmarine",
+        "display_name": "Eiserne Kanzler",
+        "handle": "eisernekanzler",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T00:21:29.361Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "c9e1f6e690a36c62cee7100775853f2b8b789ca7f29480ede73b7ac18ccfa3b5",
+    "original_bytes": 3939309,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/047c52d6-b452-4581-86f4-e2a2d02ffc2f.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "fa5b1a966c782ffd",
+        "label": "1",
+        "source": "humair_suno"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "fa5b1a966c782ffd",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "048a3f6e-5417-47bd-b8f5-06a5844ef663",
+    "metadata_variants": [
+      {
+        "id": "048a3f6e-5417-47bd-b8f5-06a5844ef663",
+        "title": "Invictus Legionis",
+        "display_name": "BossaNovaSurfPunk621",
+        "handle": "bossanovasurfpunk621",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-17T13:25:30.888Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "39dd2976a062fd1be3e289423402fe05ead8c4a0a99c60396eb282bbe3811d3a",
+    "original_bytes": 4479597,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/048a3f6e-5417-47bd-b8f5-06a5844ef663.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "8f07b43ae5ceda8b",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04952f70-0fc6-4e23-a327-72de5ac20648",
+    "metadata_variants": [
+      {
+        "id": "04952f70-0fc6-4e23-a327-72de5ac20648",
+        "title": "Chasing by the cops",
+        "display_name": "NichoTXX",
+        "handle": "nichotxx",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T20:02:52.061Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "9ebf3970c4b75720fdb4b303ef3e33514b3ac4f68fb0a74147747eeaa9ec05a4",
+    "original_bytes": 3233709,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/04952f70-0fc6-4e23-a327-72de5ac20648.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6b6a6753cf874541",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04a16711-f003-4a36-9a1e-36fee081bcbc",
+    "metadata_variants": [
+      {
+        "id": "04a16711-f003-4a36-9a1e-36fee081bcbc",
+        "title": "The Bard's Trouble Starts instrumental",
+        "display_name": "ExhilarativeKazoos998",
+        "handle": "exhilarativekazoos998",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T11:15:52.486Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "a237a648fc1e2a9d9057c5d13d7d5f13e2bed618b3e563ee6b19cc6199802e98",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_11/04a16711-f003-4a36-9a1e-36fee081bcbc.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c51e081ba0ad82cd",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04a9b772-50b3-4cf0-a2c2-098f2f2ea026",
+    "metadata_variants": [
+      {
+        "id": "04a9b772-50b3-4cf0-a2c2-098f2f2ea026",
+        "title": "JUST SHIT",
+        "display_name": "TorMedNevan",
+        "handle": "complexsounds9315",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-12T19:15:10.053Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "679fd2ed2f2916a498df987bffc38f60e2177457a5e7e95b880994dde52c03e6",
+    "original_bytes": 1989549,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04a9b772-50b3-4cf0-a2c2-098f2f2ea026.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "90ae087e8dfd266e",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04b75161-cba8-4037-ba7c-b22a94cefc9c",
+    "metadata_variants": [
+      {
+        "id": "04b75161-cba8-4037-ba7c-b22a94cefc9c",
+        "title": "Anons We Rock",
+        "display_name": "JustMeArtFan",
+        "handle": "jmaf",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T19:43:41.673Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "2d61f5747f4beed8691ef6225ef1114086405eba99b4d8acf09e0bf0823e66d2",
+    "original_bytes": 4292397,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04b75161-cba8-4037-ba7c-b22a94cefc9c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "76b36a53535769a5",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04c90eb8-faf2-4e24-b23b-a85e4b207256",
+    "metadata_variants": [
+      {
+        "id": "04c90eb8-faf2-4e24-b23b-a85e4b207256",
+        "title": "Catching Stars",
+        "display_name": "Sisi E and bro",
+        "handle": "immovablestaff2211",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T16:51:06.812Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "392d5fe4f884fb4efcc9d51b7519f57d1100c7a6125314b2ebcb8c15fa6a8750",
+    "original_bytes": 3519981,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04c90eb8-faf2-4e24-b23b-a85e4b207256.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1ed376183ada0aa5",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04d73ec5-0211-4a7d-923b-2e077dbe596b",
+    "metadata_variants": [
+      {
+        "id": "04d73ec5-0211-4a7d-923b-2e077dbe596b",
+        "title": "Grandeza Eterna",
+        "display_name": "Camino de Fe y Alabanza",
+        "handle": "caminodefeyalabanza",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T14:07:11.579Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "14d17637f61003d9eac6284cbdd677d827b51158691b6cd072481c0412883afa",
+    "original_bytes": 4176621,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04d73ec5-0211-4a7d-923b-2e077dbe596b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7619a26482f746b2",
+        "label": "1",
+        "source": "humair_suno"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "7619a26482f746b2",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04e5b4a0-2075-4bdc-b108-77aba3dd5449",
+    "metadata_variants": [
+      {
+        "id": "04e5b4a0-2075-4bdc-b108-77aba3dd5449",
+        "title": "",
+        "display_name": "SubliminalVariation5321",
+        "handle": "subliminalvariation5321",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T13:02:25.902Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "f14e838657e74a7ccbb0270291e36be0800fffee4afe109366980239643601ef",
+    "original_bytes": 3332781,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04e5b4a0-2075-4bdc-b108-77aba3dd5449.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5231bfce85a26e7a",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04e9636b-a178-4d78-902f-9b57a7d90f09",
+    "metadata_variants": [
+      {
+        "id": "04e9636b-a178-4d78-902f-9b57a7d90f09",
+        "title": "Andre'-Baga Banii! (Cover)",
+        "display_name": "ComplexEthnomusicologist0858",
+        "handle": "complexethnomusicologist0858",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-09T12:42:31.642Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "52d61499b1d3c2ea0acc6c0342ceae1f7780fb2c13e7bcf787c90ea2cc948c8e",
+    "original_bytes": 3001581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04e9636b-a178-4d78-902f-9b57a7d90f09.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "3d2fbc7823f46a01",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04f6f3d5-e65d-49f9-9c2b-d3ff07b4c9cc",
+    "metadata_variants": [
+      {
+        "id": "04f6f3d5-e65d-49f9-9c2b-d3ff07b4c9cc",
+        "title": "Gran Muralla",
+        "display_name": "Eliseo Pausá Martí ",
+        "handle": "eliseopausamarti",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-09T08:42:13.728Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "cc222eaf09139769af58afe06115540796a30b6bb237197a928097a760888f78",
+    "original_bytes": 5634477,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04f6f3d5-e65d-49f9-9c2b-d3ff07b4c9cc.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9d701ec07c753de3",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04f8b0e6-f411-4756-a32a-98535dea8e9b",
+    "metadata_variants": [
+      {
+        "id": "04f8b0e6-f411-4756-a32a-98535dea8e9b",
+        "title": "game over",
+        "display_name": "ReservedMusicJournalist4617",
+        "handle": "reservedmusicjournalist4617",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-30T19:29:53.221Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "d5f5c07ca580a9747e84514e4b4e5a7a1c143e15ad583d254c0637b5b3a7325a",
+    "original_bytes": 3217581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04f8b0e6-f411-4756-a32a-98535dea8e9b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b8924d66cca2babd",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "04f99c4e-f010-4700-880b-277be30c5465",
+    "metadata_variants": [
+      {
+        "id": "04f99c4e-f010-4700-880b-277be30c5465",
+        "title": "“S.C.R.E.A.M.” (Parody of “C.R.E.A.M.” by Wu-Tang Clan)",
+        "display_name": "Silky",
+        "handle": "flatidol946",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-28T05:52:46.275Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "657a2a89347afa7ad112ab567478ae24ea2ad443f8f0449f25a8b44fe2a677cf",
+    "original_bytes": 6188589,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/04f99c4e-f010-4700-880b-277be30c5465.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "a308b06e21d9ca48",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0500fa0c-c333-40d5-98c5-d03e58eed4d6",
+    "metadata_variants": [
+      {
+        "id": "0500fa0c-c333-40d5-98c5-d03e58eed4d6",
+        "title": "Reaching (13) Part 3: \"Inner Dialogue\" ",
+        "display_name": "Apollo",
+        "handle": "thearthurnguyen",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T14:27:13.041Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "dc3fe37b292a6bd2aa454d3fbe20a2a15d4a9817801cad11ddd8c1752e1e2ad1",
+    "original_bytes": 3174381,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_12/0500fa0c-c333-40d5-98c5-d03e58eed4d6.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "80230b3d08dcaf5a",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "050814da-e9f9-4298-80b6-08b16e630cde",
+    "metadata_variants": [
+      {
+        "id": "050814da-e9f9-4298-80b6-08b16e630cde",
+        "title": "Rêve Astral",
+        "display_name": "FlamboyantXylophones382",
+        "handle": "flamboyantxylophones382",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T01:10:42.389Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "311f0b16121a18aaed0d2e04a0a4613a8bbee30fed754c067a4b36dd9b9d14a5",
+    "original_bytes": 4882797,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/050814da-e9f9-4298-80b6-08b16e630cde.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "bd6e8bbe2de2e76a",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "05177d49-438e-40a2-a734-1d7377aa37d2",
+    "metadata_variants": [
+      {
+        "id": "05177d49-438e-40a2-a734-1d7377aa37d2",
+        "title": "Cantarea Cantarilor",
+        "display_name": "UndulatingAudioCodecs0030",
+        "handle": "undulatingaudiocodecs0030",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-07T19:48:22.543Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "e7b14fd193a6542eec17c7980a072eb7d5ebe162507abec136a67c9cd31e1786",
+    "original_bytes": 4064301,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/05177d49-438e-40a2-a734-1d7377aa37d2.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "f1924c7cec22118e",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "05191a52-8dbd-457e-9417-cd9332d0f78f",
+    "metadata_variants": [
+      {
+        "id": "05191a52-8dbd-457e-9417-cd9332d0f78f",
+        "title": "Ghost in the Boxes",
+        "display_name": "Grumpy Old man",
+        "handle": "hemmo44",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T23:19:31.803Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "3e79a8a0502af122a1eb6128709f20924db5530ba94368e23e4f8d9906652de4",
+    "original_bytes": 4561389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/05191a52-8dbd-457e-9417-cd9332d0f78f.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1523b36b6e76e0b9",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "05207041-b701-445a-a1b9-49aacc5bf0bc",
+    "metadata_variants": [
+      {
+        "id": "05207041-b701-445a-a1b9-49aacc5bf0bc",
+        "title": "روح الفداء",
+        "display_name": "LoudReverb6681",
+        "handle": "loudreverb6681",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T15:22:41.639Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "47a04a97a0267f24b71f3da415833f885a116720ffb4ef4f7c087ec3749fd147",
+    "original_bytes": 4774509,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/05207041-b701-445a-a1b9-49aacc5bf0bc.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "6f04c28b709e6c02",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0522abe9-9d9d-4e91-bb63-3938a1913186",
+    "metadata_variants": [
+      {
+        "id": "0522abe9-9d9d-4e91-bb63-3938a1913186",
+        "title": "Cheeseburgers and Macaroni",
+        "display_name": "ResourcefulMixtape3439",
+        "handle": "resourcefulmixtape3439",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-01T14:34:19.647Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "b6ceb30d3c3f7f5cd83bc479c213e8c21b2ee89532713debacd70fdf9ab735a1",
+    "original_bytes": 3301677,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/0522abe9-9d9d-4e91-bb63-3938a1913186.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "3665933c2d11e426",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "05271401-c87a-4da4-829f-dd94f3dd816e",
+    "metadata_variants": [
+      {
+        "id": "05271401-c87a-4da4-829f-dd94f3dd816e",
+        "title": "Vai Dar Certo",
+        "display_name": "InfectiousDecoder0566",
+        "handle": "infectiousdecoder0566",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-30T14:28:00.505Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "85bb1ba22614a6e17acb7458336ee7558bd07e7a8f267e7def8df758f3a679c2",
+    "original_bytes": 4182957,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/05271401-c87a-4da4-829f-dd94f3dd816e.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "22b59532cb5e83a4",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "052a59bb-47f7-4b04-a5a9-378b0d19c240",
+    "metadata_variants": [
+      {
+        "id": "052a59bb-47f7-4b04-a5a9-378b0d19c240",
+        "title": "Electric haze",
+        "display_name": "Ai Bangers",
+        "handle": "aibangers14",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-11T18:55:02.371Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "7f265ac665714b11847332208e2aebfd9cef60b6c7a23315dc67ec240bd972d0",
+    "original_bytes": 4221549,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/052a59bb-47f7-4b04-a5a9-378b0d19c240.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "bf52c15c602e5f78",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "052f370e-f388-4a00-b95a-7bae1aeed437",
+    "metadata_variants": [
+      {
+        "id": "052f370e-f388-4a00-b95a-7bae1aeed437",
+        "title": "It's Spaks Tonight",
+        "display_name": "CunningHarpists3671",
+        "handle": "cunningharpists3671",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-04T22:05:18.477Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "f7491668fceda2b8ae4d2ba0d9b6d4f3379f30278c05e1a8574f1cf730f97a5f",
+    "original_bytes": 4047597,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/052f370e-f388-4a00-b95a-7bae1aeed437.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "1198ff72ab61fea1",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "053656d2-2610-40f2-85c6-49f565df708c",
+    "metadata_variants": [
+      {
+        "id": "053656d2-2610-40f2-85c6-49f565df708c",
+        "title": "Harmonica Royale [Uplifting Trance]",
+        "display_name": "Aurastream",
+        "handle": "aurastream",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-07T23:33:06.696Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "6af14e2b1cf1845ff1fda6f32cd5f5e3b4e71788811b03bc7b52e4949400053d",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/053656d2-2610-40f2-85c6-49f565df708c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "181521fc41473ec5",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "053785e8-f06b-496b-97db-f8dadfef5f15",
+    "metadata_variants": [
+      {
+        "id": "053785e8-f06b-496b-97db-f8dadfef5f15",
+        "title": "Orangutan no Aikido",
+        "display_name": "Psymont",
+        "handle": "psymont",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-30T00:52:41.942Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "673756cdce05c0e0d507ae3444c8d54c786b92a9b3e5fbdd0cf127a59c6328bc",
+    "original_bytes": 5453037,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/053785e8-f06b-496b-97db-f8dadfef5f15.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "5d46b5f9fbd48b24",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0548fca2-7a54-47c3-b131-3149580393f5",
+    "metadata_variants": [
+      {
+        "id": "0548fca2-7a54-47c3-b131-3149580393f5",
+        "title": "what's new? ",
+        "display_name": "ChillMastering5611",
+        "handle": "chillmastering5611",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-31T18:08:30.659Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "26b3290c6ee6fd3cdca68646af78769748cfc069b049b75ad24211e2487d9f11",
+    "original_bytes": 4186989,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/0548fca2-7a54-47c3-b131-3149580393f5.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7969457cd5b70f9d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "054abc30-b315-4bb4-840d-99dfa8eb312f",
+    "metadata_variants": [
+      {
+        "id": "054abc30-b315-4bb4-840d-99dfa8eb312f",
+        "title": "In Your Arms - DJQueenKY ",
+        "display_name": "DJQueenKY",
+        "handle": "djqueenky",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-10T04:44:26.880Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "02cd32c80b435b82f60a10d3977af518fb7bfdd135738abd9b3c9cdba7dff4c4",
+    "original_bytes": 4231341,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/054abc30-b315-4bb4-840d-99dfa8eb312f.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "475a9d0357fda507",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "054bdd24-8f65-4e72-98c1-27229310c9e1",
+    "metadata_variants": [
+      {
+        "id": "054bdd24-8f65-4e72-98c1-27229310c9e1",
+        "title": "Soy de Salto",
+        "display_name": "SalsaQuality3164",
+        "handle": "salsaquality3164",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T22:34:08.618Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "f409dbb38853aaff599dab93f877c6a217bf74dbc0b933f2440d00bf857a20d9",
+    "original_bytes": 3053421,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/054bdd24-8f65-4e72-98c1-27229310c9e1.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7c88e1d164470e34",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0551094c-6ebc-43ea-ad8b-bd0d0f026a07",
+    "metadata_variants": [
+      {
+        "id": "0551094c-6ebc-43ea-ad8b-bd0d0f026a07",
+        "title": "Novo Parque Aquático e Minifofos",
+        "display_name": "BrightDjembe811",
+        "handle": "brightdjembe811",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T17:24:54.428Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "22ecea0e53917c25ed60aefd7f47c9ee2867d7a855668b49d06a90da262d6876",
+    "original_bytes": 4846509,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/0551094c-6ebc-43ea-ad8b-bd0d0f026a07.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c4c57883322b1ae2",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "055810c5-fd37-450e-b305-ca7746bf9a07",
+    "metadata_variants": [
+      {
+        "id": "055810c5-fd37-450e-b305-ca7746bf9a07",
+        "title": "Sigma z Bydgoszczy",
+        "display_name": "SalsaPastiche4974",
+        "handle": "salsapastiche4974",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-10T13:07:45.108Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "93cf1dfb050c5e7f1aaae2c27acb8676fce743dbb3077e8b354e31a73e76d283",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/055810c5-fd37-450e-b305-ca7746bf9a07.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "8a8d30175ecef490",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "055aeb86-20c1-4140-8fd8-0a91e9b5c948",
+    "metadata_variants": [
+      {
+        "id": "055aeb86-20c1-4140-8fd8-0a91e9b5c948",
+        "title": "Rode Duivels Triomf",
+        "display_name": "UndulatingSongs0171",
+        "handle": "undulatingsongs0171",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T19:56:37.841Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "e6953e9afbad28da5f5de68fd959bc9fd7c03ef5114abdf02fec9340b5de0059",
+    "original_bytes": 5161581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/055aeb86-20c1-4140-8fd8-0a91e9b5c948.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "3f89f7b5ea125baa",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "055b5871-d972-4b4b-96ac-242e12422182",
+    "metadata_variants": [
+      {
+        "id": "055b5871-d972-4b4b-96ac-242e12422182",
+        "title": " Saxophone House",
+        "display_name": "CalypsoLightingTechnician9948",
+        "handle": "calypsolightingtechnician9948",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-23T02:09:29.017Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "7655929142cecb2b2f1e9749a78f382deca833f5a04e99ddfdf5b76171ccedfa",
+    "original_bytes": 3321261,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/055b5871-d972-4b4b-96ac-242e12422182.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "403667b562590c5d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "055c535f-5751-422e-9a21-920974081a1b",
+    "metadata_variants": [
+      {
+        "id": "055c535f-5751-422e-9a21-920974081a1b",
+        "title": "Hail to Mic the Commissary King",
+        "display_name": "DarkWonkyPop4896",
+        "handle": "darkwonkypop4896",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-26T19:35:26.140Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "2f4880d8d21114788a6eac495adc125ac98bd6b329c29778efea15da4f78c275",
+    "original_bytes": 3039021,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/055c535f-5751-422e-9a21-920974081a1b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "694e7ba067598805",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "055d5e38-d798-4209-95a0-0d15c5ca1905",
+    "metadata_variants": [
+      {
+        "id": "055d5e38-d798-4209-95a0-0d15c5ca1905",
+        "title": "Sunbro Mando's Adventure",
+        "display_name": "Sunbro_Mando",
+        "handle": "sunbro_mando",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-27T00:45:46.904Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "8dd6282460c0cb24be39658e5d5381ca38151c4151f15981ee5f35b49e81eb3d",
+    "original_bytes": 3841389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/055d5e38-d798-4209-95a0-0d15c5ca1905.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "efda35e380c345d1",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0562bf7b-3fa4-4066-a566-8362b381a409",
+    "metadata_variants": [
+      {
+        "id": "0562bf7b-3fa4-4066-a566-8362b381a409",
+        "title": "when did the stars fall?",
+        "display_name": "ExhilarativeCassettes802",
+        "handle": "exhilarativecassettes802",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-06T00:01:03.433Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "843aa30b7431119b7891916c17687f45fc8819eac6cff6ae3b0b92b4944ed93f",
+    "original_bytes": 5497389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_13/0562bf7b-3fa4-4066-a566-8362b381a409.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "3ec58298e629e66e",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "05739dea-2d3e-4a1b-a05d-5cbcc1021c16",
+    "metadata_variants": [
+      {
+        "id": "05739dea-2d3e-4a1b-a05d-5cbcc1021c16",
+        "title": "Istarska koza ",
+        "display_name": "SalsaSound8347",
+        "handle": "salsasound8347",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T17:50:58.492Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "886e44e3f4705ca34854f5cbb583cfdd5399471195ce71b0dad9ce431f89ea3b",
+    "original_bytes": 5449581,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_14/05739dea-2d3e-4a1b-a05d-5cbcc1021c16.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "0498f8666811d8c6",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "057674ee-8a57-4c78-9efc-0c342a0759b1",
+    "metadata_variants": [
+      {
+        "id": "057674ee-8a57-4c78-9efc-0c342a0759b1",
+        "title": "song1:thedead",
+        "display_name": "SubliminalAgent0028",
+        "handle": "subliminalagent0028",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T16:48:26.280Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "3856f45dcf73b64c8c67760ce1fd0f78e10600e30270bf9ee667236ab96babe9",
+    "original_bytes": 2293677,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_14/057674ee-8a57-4c78-9efc-0c342a0759b1.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d38c6c324a37cd50",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0578d20e-0623-41c0-9a30-1cae7530a32b",
+    "metadata_variants": [
+      {
+        "id": "0578d20e-0623-41c0-9a30-1cae7530a32b",
+        "title": "Random Moon Adventure",
+        "display_name": "Hasenchat Music",
+        "handle": "hasenchat",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T03:17:50.252Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "81cf1c1e41faf9f60cf679014df28d35089b52759898dad5328d5fe78e4ccce0",
+    "original_bytes": 5761197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_14/0578d20e-0623-41c0-9a30-1cae7530a32b.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "044531b5c6fccd78",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "057d4ec2-1072-4d90-b350-750dbfb831e8",
+    "metadata_variants": [
+      {
+        "id": "057d4ec2-1072-4d90-b350-750dbfb831e8",
+        "title": "Zweig -  Der dunkle Falter - sinkender Himmel IM v2b",
+        "display_name": "UStonedhouse621",
+        "handle": "ustonedhouse621",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-01T17:41:42.722Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "cf25ccaa5e6022cddfbbfc5499bb600c9fef5a4abb9b643e5cdb0d8977c4d13a",
+    "original_bytes": 6728301,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_14/057d4ec2-1072-4d90-b350-750dbfb831e8.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "475515032a9e75b3",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0585f682-aaa4-48e1-805e-c2f4ab6819a4",
+    "metadata_variants": [
+      {
+        "id": "0585f682-aaa4-48e1-805e-c2f4ab6819a4",
+        "title": "Double Exposure",
+        "display_name": "Lionhearts",
+        "handle": "lionhearts_band",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T16:37:20.926Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "c8d1b5c088ff4c44c3c9591013322d74510654ae11b7794798dcc3b36080ff92",
+    "original_bytes": 2765997,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_14/0585f682-aaa4-48e1-805e-c2f4ab6819a4.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b228c10bbed5edf9",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "058a53bb-2f78-4f4f-930c-2a5459b4914a",
+    "metadata_variants": [
+      {
+        "id": "058a53bb-2f78-4f4f-930c-2a5459b4914a",
+        "title": "24.05.28/13:51 Passi Nella Notte POLOPO",
+        "display_name": "ARKA SIMPLE",
+        "handle": "arka_simple",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T21:46:29.114Z",
+        "status": "complete"
+      },
+      {
+        "id": "058a53bb-2f78-4f4f-930c-2a5459b4914a",
+        "title": "24.05.28/13:51 Passi Nella Notte MOSFEL",
+        "display_name": "POLOPO",
+        "handle": "polopo_11",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T21:46:29.114Z",
+        "status": "complete"
+      },
+      {
+        "id": "058a53bb-2f78-4f4f-930c-2a5459b4914a",
+        "title": "24.05.28/13:51 Passi Nella Notte POLOPO",
+        "display_name": "POLOPO",
+        "handle": "polopo_11",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-02T21:46:29.114Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "bad877f56933cee81201590e422ef1b4307d71010f6536fd439a1e0c526c9ff5",
+    "original_bytes": 5929389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_14/058a53bb-2f78-4f4f-930c-2a5459b4914a.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "e659aec333ee8149",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0639accf-e4fc-4af4-9afa-26247ea17b7a",
+    "metadata_variants": [
+      {
+        "id": "0639accf-e4fc-4af4-9afa-26247ea17b7a",
+        "title": "Poštuj Zakon Hristov - Galatima 6",
+        "display_name": "Prophet Cipher",
+        "handle": "prophetcipher",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T09:55:03.775Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "08407e59e632a889fe5c48989b8c70ed48ba779082bbd5f3349914cb0c93ebe0",
+    "original_bytes": 4208877,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_16/0639accf-e4fc-4af4-9afa-26247ea17b7a.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "4bfd21f2d076ea4e",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "06431e10-448a-491c-b5e1-ee686e2dea70",
+    "metadata_variants": [
+      {
+        "id": "06431e10-448a-491c-b5e1-ee686e2dea70",
+        "title": "Drones in the Sky",
+        "display_name": "NerfZone",
+        "handle": "johnhendricks17",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-30T19:57:44.095Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "4beed50a831cc4edb3a12b907578155bc3c2fe86c66370418b582f4a503d0462",
+    "original_bytes": 2496429,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_16/06431e10-448a-491c-b5e1-ee686e2dea70.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "17f97fd64a2f799b",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "06682272-3d76-47e5-bff0-d6b1d8f05cdc",
+    "metadata_variants": [
+      {
+        "id": "06682272-3d76-47e5-bff0-d6b1d8f05cdc",
+        "title": "Dans la folies ",
+        "display_name": "max62500",
+        "handle": "max62500",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T09:19:29.097Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "a1e5ec3cd500f5490592ab33f9de1f1897de6d601ee7fcd5c29a813527943b21",
+    "original_bytes": 3344301,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_16/06682272-3d76-47e5-bff0-d6b1d8f05cdc.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7a4cf21249a3008b",
+        "label": "1",
+        "source": "humair_suno"
+      },
+      {
+        "experiment": "stem_spectral_pilot_20260813",
+        "legacy_id": "7a4cf21249a3008b",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "066a1919-9fe2-47aa-bf8f-35fee012a42c",
+    "metadata_variants": [
+      {
+        "id": "066a1919-9fe2-47aa-bf8f-35fee012a42c",
+        "title": "Glory to the brotherhood: March of The Soviets",
+        "display_name": "SensualMashupArtist336",
+        "handle": "sensualmashupartist336",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-31T18:47:23.295Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "dcacb888d87ed91d5d4a909503ad01dde2745e0b5bbae692b38217147cdbd581",
+    "original_bytes": 4321197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_16/066a1919-9fe2-47aa-bf8f-35fee012a42c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "d37180b97ddf2448",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "0677c428-bc1e-47ea-96b4-65271451a81d",
+    "metadata_variants": [
+      {
+        "id": "0677c428-bc1e-47ea-96b4-65271451a81d",
+        "title": "เหล้าหก666",
+        "display_name": "ChillingBass954",
+        "handle": "chillingbass954",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T03:02:29.481Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "93f27188c34cf15f9bcc3696abf1d2915bfec53a729a7ee56a92e001fc9d2176",
+    "original_bytes": 3893229,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_16/0677c428-bc1e-47ea-96b4-65271451a81d.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9941eec4b419b841",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "067ce983-2a8a-4d9b-807f-5ec4e040815c",
+    "metadata_variants": [
+      {
+        "id": "067ce983-2a8a-4d9b-807f-5ec4e040815c",
+        "title": "mei tumhe phir",
+        "display_name": "Namita bhaladhare",
+        "handle": "namita_bhaladhare",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T06:56:43.770Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "9666fe98d1aed11b7e93ccad12804628d7630641e6f1f1369567358644756d60",
+    "original_bytes": 4489389,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_16/067ce983-2a8a-4d9b-807f-5ec4e040815c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "9eef3689cdb28079",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "069d9954-312c-45c6-8633-ea7055807f10",
+    "metadata_variants": [
+      {
+        "id": "069d9954-312c-45c6-8633-ea7055807f10",
+        "title": "Chubby Fat Poopy Diarrhea Nugget Thingy...",
+        "display_name": "GothHighPassFilters073",
+        "handle": "gothhighpassfilters073",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-03T16:37:39.165Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "1760c68d06f280c93b62b9b533e2e7bc5cc78c47281d2a48a049c9a75f994519",
+    "original_bytes": 3458349,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_17/069d9954-312c-45c6-8633-ea7055807f10.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "b20b7afbfe87c85d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "06a6a05a-104e-455d-b50d-bff9ff44a4e8",
+    "metadata_variants": [
+      {
+        "id": "06a6a05a-104e-455d-b50d-bff9ff44a4e8",
+        "title": "Hetgeen en Ander",
+        "display_name": "Manuel (Maa-Nie) Huizinga",
+        "handle": "manuel_maa_nie_huizinga",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T15:48:58.322Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "2c2270d109743eff707fe47c27c4f545c5be46a2588d777e71c0a926e2619ccd",
+    "original_bytes": 4274541,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_17/06a6a05a-104e-455d-b50d-bff9ff44a4e8.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7bae95a15388717d",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "06a74eda-1d79-48d3-b08d-9fbccbfbba72",
+    "metadata_variants": [
+      {
+        "id": "06a74eda-1d79-48d3-b08d-9fbccbfbba72",
+        "title": "Centro de Formação de Associação de Escolas Gaia Nascente",
+        "display_name": "UndulatingPitch8807",
+        "handle": "undulatingpitch8807",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-05T23:40:54.431Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "4dd6d986c6393ae2d57681e82763e890571d5c38d843cbdf95407bd5a04454d9",
+    "original_bytes": 5058477,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_17/06a74eda-1d79-48d3-b08d-9fbccbfbba72.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "7d155551346f1692",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "06b84db1-07f5-4c96-bfee-2231984c1d0c",
+    "metadata_variants": [
+      {
+        "id": "06b84db1-07f5-4c96-bfee-2231984c1d0c",
+        "title": "",
+        "display_name": "AlarmingSlideWhistle743",
+        "handle": "alarmingslidewhistle743",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-10-31T15:03:44.067Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "77277c5d97b6896224446201e79f1dff6e677c83f41c8cb856d7a4d02000f45b",
+    "original_bytes": 4609197,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_17/06b84db1-07f5-4c96-bfee-2231984c1d0c.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "00b4d127f88148e5",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  },
+  {
+    "id": "06c6b840-70ab-45a9-ab1b-148fb6fea703",
+    "metadata_variants": [
+      {
+        "id": "06c6b840-70ab-45a9-ab1b-148fb6fea703",
+        "title": "My dream is life (jungle)",
+        "display_name": "NeoGeo",
+        "handle": "jocularnocturne311",
+        "model_name": "chirp-v3",
+        "major_model_version": "v3.5",
+        "created_at": "2024-11-08T15:49:03.623Z",
+        "status": "complete"
+      }
+    ],
+    "original_sha256": "2c45874c5ac343afdc3811e5aeec17ecd88f5535f5ea07cfb330116b70aaed05",
+    "original_bytes": 5256621,
+    "relative_source_path": "humair025-suno-audio-mp3/batch_17/06c6b840-70ab-45a9-ab1b-148fb6fea703.mp3",
+    "historical_memberships": [
+      {
+        "experiment": "frequency_ablation_20260813",
+        "legacy_id": "c9b0b406aa9d3926",
+        "label": "1",
+        "source": "humair_suno"
+      }
+    ]
+  }
+]

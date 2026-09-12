@@ -1,0 +1,16 @@
+{
+  "status": "upstream_uuid_attribution_recovered",
+  "selected": 100,
+  "recovered": 100,
+  "missing_ids": [],
+  "source_dataset": "nyuuzyou/suno",
+  "source_revision": "dd95495c415eea043c250f12da595de2ad4cad7f",
+  "source_parquet_sha256": "c544c5274e19cd89a69d8afd3ad850649a055ffa3ec8a1c1a98b923d8900807f",
+  "records_sha256": "d3cba828ae9ce21dba5dbd5bf6fe1d8773793d1197a8f7e5fd1e9829b81a4343",
+  "duplicate_source_rows": 32,
+  "multi_variant_ids": 1,
+  "empty_creator_count": 0,
+  "historical_metadata_equivalence_claimed": false,
+  "prompts_or_lyrics_exported": false,
+  "audio_uploaded": false
+}
