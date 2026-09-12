@@ -1,0 +1,12 @@
+{
+  "objects": 900,
+  "status_counts": {
+    "derivative_license_candidate_requires_notice": 316,
+    "hold_no_derivatives": 390,
+    "hold_unresolved_or_mixed_license": 194
+  },
+  "candidate_bytes": 626204168,
+  "records_sha256": "e308b3bf3e2a4b82f61e3734b23b1db7c8538129841bb90a1f9d502aa6c694fd",
+  "scope": "Recorded per-track license screening only; not completed derivative publication",
+  "whole_project_complete": false
+}
