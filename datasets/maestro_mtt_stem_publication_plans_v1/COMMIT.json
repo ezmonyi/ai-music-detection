@@ -1,0 +1,22 @@
+{
+  "sources": [
+    {
+      "source_group": "human_maestro_v3",
+      "objects": 2400,
+      "bytes": 8467305600,
+      "original_manifest_sha256": "4fda23164b186c023481424018d3be1018de931bf39b8bc33f4fa2fd79546602",
+      "license": "CC-BY-NC-SA-4.0",
+      "objects_sha256": "f468e5e625fd92f148929aef5af0055763bda6898e88b6dce5ff97e816d681d8"
+    },
+    {
+      "source_group": "human_magnatagatune",
+      "objects": 2000,
+      "bytes": 3528088000,
+      "original_manifest_sha256": "90efec2510f56a2e224fb091670a41f7a7b0203f7767d51de2205b79a6632a5d",
+      "license": "CC-BY-NC-SA-1.0",
+      "objects_sha256": "4460c6b0360c36aab0d84f9ab70c61827b4717ecb029cd40cd5f9917bf1ddaa2"
+    }
+  ],
+  "status": "source_bound_plans_not_uploaded",
+  "whole_project_complete": false
+}
