@@ -1,0 +1,299 @@
+{
+  "repo": "EZMONYI/music-ai-human-test-audio",
+  "revision": "ede1d705cf55c1726b51b9d2cc92d318dd6a6c69",
+  "files": [
+    {
+      "path": "reports/thesis_v8_20260913/ACCEPTANCE_EN.md",
+      "bytes": 1262,
+      "sha256": "0c8c47c4686daf7b5373d8e34c7b41e578e69540f6a22ff801e37e52b2b67670"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/interpretable_audio_thesis_working_v8_20260913_en.pdf",
+      "bytes": 1114617,
+      "sha256": "ccdb9bc9420e3044f82cff6d9f28729e6659e25267eddf20b324ea5ab2ae2350"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/ai_music_detection_v5_results_en_20260907_v1.tex",
+      "bytes": 1174,
+      "sha256": "3a775a7ffb9e6b6aa5fa54371258279cbb96bdbe82e52af91e1599b4a542b3b3"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/bc_reserved_verified_closeout_en.tex",
+      "bytes": 47597,
+      "sha256": "40588f32ee7f7f61c9eb2d1823a305f54562d82c258de17ad582e1c8782e908f"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/bc_tables_generated.tex",
+      "bytes": 1331,
+      "sha256": "a08d1af94ec4e27df5c62b61e7b1959ea62666d76f45acc856281dc11b397d9f"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/bicoherence_development_supplement_en_v1.tex",
+      "bytes": 4529,
+      "sha256": "60bae806a64cc126f6d26dba6e42d24e8bdbe4f396c19bf8d14f88b1bdce41f8"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/delivery_audit_20260913_en.tex",
+      "bytes": 4364,
+      "sha256": "4ebf494651509d561a73c7167d0879df052401ee6f83d49338da035155bb7125"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/equal60_exploratory_v5_methods_en.tex",
+      "bytes": 5994,
+      "sha256": "4724988e56dba73c6f86e704e64d84b801e3906e520c31a36aafb3ecfc4e3394"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/equal60_frontend_progress_en.tex",
+      "bytes": 2563,
+      "sha256": "d3ffe982adde9c50e6907812995fad0d4ed7a7221546ca8af6275a19e1abc3f6"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/equal60_seven_family_results_en.tex",
+      "bytes": 4767,
+      "sha256": "8bb077702b9bb0619dfa6886574c1b62c23ab1ef41baf2db1bfe4e4000ca2086"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/equal60_v5_results_en.tex",
+      "bytes": 14296,
+      "sha256": "c14eca8153bd5117be0fc3f8246c1e9e8dabeb5348b6ce685ac03f7b512d30f8"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/figures_yue2/average_difference_spectrogram_locked_test.png",
+      "bytes": 1205858,
+      "sha256": "5bb0463ee9ed71062e3f0b1fa1f45b8ab26a79da5328268c588805c577473dfe"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_additional_measurement_methods_en.tex",
+      "bytes": 8548,
+      "sha256": "f042cc43100bb2aea3eaea08892bfb0616ad3b3d8359cea59ca37b987833f564"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_completed_transfer_results_en.tex",
+      "bytes": 7923,
+      "sha256": "92c007bea943386c63fea5d4613440f891c225276dce39e90933abc2a1ac6cb5"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_data_en.tex",
+      "bytes": 7351,
+      "sha256": "93e5505dd45ccd9e900402edea6d95f6eece70fb8d8ed6a0a39d7f6f325fa190"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_discussion_en.tex",
+      "bytes": 4480,
+      "sha256": "136c672b05539f6d0a1995243abd8a71c352a1474e5cd9507f339487f721895b"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_evaluation_principles_en.tex",
+      "bytes": 6672,
+      "sha256": "7ac35ebddf6a3c9cd1e1cf7d45300c5a9892808eca3c049643c2d8231fedf32a"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_external_validation_en.tex",
+      "bytes": 11435,
+      "sha256": "ba5486ba46ca6df298a2f402c34a1a224dbd269ef38c98992f10b7dd1ac115de"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_framing_en.tex",
+      "bytes": 4717,
+      "sha256": "127f8f2765bfaf24f62f2ddac98c4a0443a3cd90f7d2c39177b5f6660d3aa81f"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_references.bib",
+      "bytes": 3388,
+      "sha256": "43b4a4a45d9af3673679441c092075075734a78bbb7df7e59f21f116a0179eb0"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_related_work_en.tex",
+      "bytes": 5702,
+      "sha256": "e01032566429a02448fad2b621ba4ec38f315d00405615e0c5877d0ddaf4fc6d"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_reproducibility_en.tex",
+      "bytes": 6655,
+      "sha256": "d293a3e1aa1764b67cb8e4d0b203ce9379e45c208da0705edcb9ac00330393d4"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_sdrp_methods_en.tex",
+      "bytes": 8469,
+      "sha256": "7a29852decf766fa54636e1d48ae596f2dbbd4dcbfbdcf2f7213c973b18db500"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/final_thesis_spectral_history_en.tex",
+      "bytes": 7767,
+      "sha256": "b3bee4f10ef3a58e0bf8dd941ae5ad425e6629872422563b53c67e9b584d4147"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_final_working_en.tex",
+      "bytes": 1748,
+      "sha256": "5c2ae2f0865662c907a79bb70ecd2c04bda1d10eec3d34f1ebd937fc6129287a"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_20260912_en.tex",
+      "bytes": 3032,
+      "sha256": "b1b3ef5f57b48e207cf40d1189add019194d710c5d70579610eb14d0c54730eb"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_v2_20260912_en.tex",
+      "bytes": 3154,
+      "sha256": "30813740372eb3e8a7f63e2fe46456207e48395974bf9087bdef35b1bf48f3ae"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_v3_20260912_en.tex",
+      "bytes": 3207,
+      "sha256": "40761340e8f303a503677c37e13b68f068eaa96ffc844c7078c12642601e4ced"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_v4_20260912_en.tex",
+      "bytes": 3283,
+      "sha256": "f9f19814ec1bd97f06d277d2dd2542baef55e69ae4cb9045a8688c72457975c2"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_v5_20260912_en.tex",
+      "bytes": 3346,
+      "sha256": "de5c0d86e33cfb085d0736ec34f73cc39cdac1779ab731a01fa837bea6ab2e55"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_v6_20260912_en.tex",
+      "bytes": 4509,
+      "sha256": "89eb598ef670e44e489cadf704d0663c9f43f6b24d626499c1162f0c31a22cb5"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_v7_20260912_en.tex",
+      "bytes": 4514,
+      "sha256": "3df06bd21f7c62b9f42259ada7ff9b7cdb12bd812f0796986e2698271e8bfb6c"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/interpretable_audio_thesis_working_v8_20260913_en.tex",
+      "bytes": 4553,
+      "sha256": "6106035fceb912433ca1d84962ca6ad99004744ed88d80021a7fd8a1f43b1e90"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/literature_scope_supplement_en.tex",
+      "bytes": 1891,
+      "sha256": "a6c529557c1966e306419042ece9571a9b2f64c9728257e795839f5631e42b4f"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/mureka60_measurement_supplement_en.tex",
+      "bytes": 15232,
+      "sha256": "2e56b439d771d0b2014e87e813f0c0faf0e8eb86af1732f9d123aa103b40c83b"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/mureka60_transfer_results_en.tex",
+      "bytes": 6106,
+      "sha256": "3dabb35f4dc1d4bd290b55468eb3cadbff807b1ee8cd19f5183e2be6c124ec5b"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/native30_bc_results_20260912_en.tex",
+      "bytes": 3783,
+      "sha256": "05f7dd0c2b400c5e9957898b32e5b75ad2bf960e86339fe2d5434f66ed65e855"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/native30_measurement_checkpoint_en.tex",
+      "bytes": 1217,
+      "sha256": "d9d9bfe62073abffe17ae4f3732861e1b861454cae07f3bcb8f41546fe329074"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/native30_seven_family_results_20260912_en.tex",
+      "bytes": 6049,
+      "sha256": "82af2c9cabf1af98a25bb29d78a82fb4a0ab344ca523f1fc932294b9a6fccccb"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/native60_transfer_results_20260912_en.tex",
+      "bytes": 3678,
+      "sha256": "8a930ff0bdc16bde36a56d6d234cb2076ddeea23ccf4bddab557a02b66579c74"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/native60_transfer_tables.tex",
+      "bytes": 725,
+      "sha256": "31e152b47931e6970525e011d714d09a56735ba6145bc8ae479e076041526009"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/optimization_supplement_en_20260907_v1.tex",
+      "bytes": 5943,
+      "sha256": "6a3b4cf8f0cd91ad2c7b7cd12e8b7eee398ff5cbc4ed8f443348e435ebc2d627"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/results_breath_en.tex",
+      "bytes": 1218,
+      "sha256": "c76618cca47544035236b7cd16ada5933c6daede485709bf08842f5310c107ee"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/results_fh_table_en.tex",
+      "bytes": 9223,
+      "sha256": "e64a8a0dc39956591e3ed7e8a3b80a4da05645ed48fe566b3a8cf0f3984321b3"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/results_fhm60_en.tex",
+      "bytes": 1986,
+      "sha256": "aaacbac5e7007d3908633ed56ade238857a93cf918a922fb46856023dc98a515"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/saraga_diversity_supplement_en.tex",
+      "bytes": 20689,
+      "sha256": "09c1c0aeb719d28babc09ce7dbbed0eda349e3b8066d36f01301538511e4d174"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/saraga_mureka_transfer_results_en.tex",
+      "bytes": 5690,
+      "sha256": "2346e753a6a546fde81450d0c46c43626a4306afeac221add4e702bd2ce2cf7a"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/stereo_candidate_scope_en.tex",
+      "bytes": 4780,
+      "sha256": "51e97e94498fd091b577447a06cbdc4f09859e5e7212fdfed98c4cee44940d7e"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/thesis_late_checkpoint_v2_en.tex",
+      "bytes": 6894,
+      "sha256": "5a7f2190a9eb1067bfa533d94cb94e496042ce80a6d92ec27588fc179c97bcde"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/thesis_reproducibility_20260912_en.tex",
+      "bytes": 6749,
+      "sha256": "fb3a6df7e0dbef5c694ddd5185ac50fa323da041330b4b0fa511a9a7b4b7a0e0"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/thesis_reproducibility_v6_20260912_en.tex",
+      "bytes": 7081,
+      "sha256": "4a9d90b30f18438fc50f91bc95c5f644945935c4f98d62dc86c664d3146b1493"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/thesis_section_phenomena_extension_en.tex",
+      "bytes": 21481,
+      "sha256": "fe73100a20dace8b334d59a3f1a4933056b3b5f57e05eb130860ccf9b94144fe"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/vocalset_presence_development_en.tex",
+      "bytes": 3188,
+      "sha256": "d9b7f9d2bc44d293f782968dc2d1a1fff71d258ab3e735a570e37c42c7a8201e"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/yue2_expanded_results_20260912_en.tex",
+      "bytes": 3609,
+      "sha256": "aa66516393b16822e85ea7947194bd5da46e8240d687bbd3a4a906e9f1cc323a"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/yue2_expanded_results_v6_20260912_en.tex",
+      "bytes": 3617,
+      "sha256": "daca5103e2444d2cecbeba25a77f338b595e6d466a8aea920b1b76cfd99f2cfd"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/yue2_expanded_tables_generated.tex",
+      "bytes": 1362,
+      "sha256": "35e565feeda7d71039004e318b50d1f7fe2d0e2f6fd1f922c8d79641b7cfe473"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/yue2_legacy_spectral_results_20260912_en.tex",
+      "bytes": 4537,
+      "sha256": "19b19f33e3385a7f71d6a683e7d841a0f4e34c0d0e2700e26db7158b2ec4dfee"
+    },
+    {
+      "path": "reports/thesis_v8_20260913/sources/yue2_locked_results_20260912_en.tex",
+      "bytes": 3965,
+      "sha256": "662f0c4660306bfaa603dde97d2489e523cbda272a67da95c2e280a12b0faa1b"
+    }
+  ],
+  "anonymous_full_bytes_verified": true,
+  "audio_uploaded": false,
+  "whole_project_complete": false
+}
