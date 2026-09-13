@@ -1,0 +1,11 @@
+{
+  "revision": "b8fce295480a91c959956ecd378785435316069c",
+  "verified_audio_objects": 900,
+  "original_ids": 500,
+  "checked_bytes": 1836067186,
+  "manifest_sha256": "a7aa3474338c327baabc53acd57f65097a38788c983f91b53ca1842ce344a010",
+  "notice_sha256": "7c2581da68fe7f44329631b007f40f22a0aff40e8c109a8ac06c0790ee4ffa4c",
+  "verification": "Anonymous exact manifest/notice and all remote hashes/sizes; not full audio redownload",
+  "final_acceptance": true,
+  "whole_project_complete": false
+}
