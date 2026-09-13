@@ -1,0 +1,11 @@
+{
+  "historical_hash_verified_objects": 31378,
+  "current_only_inventory_objects": 27174,
+  "overlap_objects": 2,
+  "unique_objects": 58550,
+  "unique_bytes": 166742912200,
+  "current_without_historical_hash_objects": 27172,
+  "excluded_unanchored_memberships": 126,
+  "scope": "Two selected stem inventory scopes; not all project audio. Current sibling path inference remains unproven historical provenance.",
+  "whole_project_complete": false
+}

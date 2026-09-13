@@ -1,0 +1,68 @@
+[
+  {
+    "sha256": "71b8fca55ece9e756c2aa29478b9e71986daad82097f679c20adb1773d26d2ce",
+    "historical": {
+      "sha256": "71b8fca55ece9e756c2aa29478b9e71986daad82097f679c20adb1773d26d2ce",
+      "bytes": 1764044,
+      "source_paths": [
+        "/mnt/nfs-code/users/yi/external_generator_500_heuristics_20260904/inference/demix/htdemucs/human_fma_medium_ca3cfe26bd53fff1/vocals.wav"
+      ],
+      "memberships": [
+        {
+          "run": "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/spectral_10s",
+          "item_id": "human_fma_medium_ca3cfe26bd53fff1",
+          "stem": "vocals",
+          "duration_sec": 10.0
+        }
+      ],
+      "input_inventories": [
+        "historical_spectral_stem_objects_v1"
+      ]
+    },
+    "current": {
+      "item_id": "human_fma_medium_ca3cfe26bd53fff1",
+      "duration_sec": 10,
+      "stem": "bass",
+      "path": "/mnt/nfs-code/users/yi/external_generator_500_heuristics_20260904/inference/demix/htdemucs/human_fma_medium_ca3cfe26bd53fff1/bass.wav",
+      "sha256": "71b8fca55ece9e756c2aa29478b9e71986daad82097f679c20adb1773d26d2ce",
+      "bytes": 1764044,
+      "status": "current_bytes_hashed",
+      "error": null,
+      "historical_hash_available": false,
+      "path_basis": "Sibling of verified historical vocal; historical dynamics directory argument not independently proven"
+    }
+  },
+  {
+    "sha256": "fefe425d4cffead707db0aa552e664ff5ff15315205c1297b6755d2ce1eae63e",
+    "historical": {
+      "sha256": "fefe425d4cffead707db0aa552e664ff5ff15315205c1297b6755d2ce1eae63e",
+      "bytes": 5292044,
+      "source_paths": [
+        "/mnt/nfs-code/users/yi/dynamics_rhythm_change_detector_extension_20260903/detector_inference/demix/htdemucs/human_fma_medium_ca3cfe26bd53fff1/vocals.wav"
+      ],
+      "memberships": [
+        {
+          "run": "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/legacy1958_spectral_30s",
+          "item_id": "human_fma_medium_ca3cfe26bd53fff1",
+          "stem": "vocals",
+          "duration_sec": 30.0
+        }
+      ],
+      "input_inventories": [
+        "historical_spectral_stem_objects_v1"
+      ]
+    },
+    "current": {
+      "item_id": "human_fma_medium_ca3cfe26bd53fff1",
+      "duration_sec": 30,
+      "stem": "bass",
+      "path": "/mnt/nfs-code/users/yi/dynamics_rhythm_change_detector_extension_20260903/detector_inference/demix/htdemucs/human_fma_medium_ca3cfe26bd53fff1/bass.wav",
+      "sha256": "fefe425d4cffead707db0aa552e664ff5ff15315205c1297b6755d2ce1eae63e",
+      "bytes": 5292044,
+      "status": "current_bytes_hashed",
+      "error": null,
+      "historical_hash_available": false,
+      "path_basis": "Sibling of verified historical vocal; historical dynamics directory argument not independently proven"
+    }
+  }
+]
