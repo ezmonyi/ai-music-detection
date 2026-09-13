@@ -1,0 +1,12 @@
+{
+  "records": 27300,
+  "statuses": {
+    "current_bytes_hashed": 27174,
+    "not_anchored_in_selected_vocal_audit": 126
+  },
+  "unique_attempted_paths": 27174,
+  "records_sha256": "34cfb5894eb3ce71828eea3b6d9c63ed88772f8606ca9fbecfb216298c50d9f2",
+  "historical_integrity_verified": false,
+  "whole_project_complete": false,
+  "scope": "Current reconstructed sibling files only; unanchored upstream rows retained."
+}
