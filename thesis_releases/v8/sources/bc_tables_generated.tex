@@ -1,0 +1,27 @@
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrr}\toprule
+Feature set & Generator holdout & Human-source holdout & Grouped descriptive\\\midrule
+S & 61.39 & 60.95 & 70.26\\
+D & 59.02 & 62.40 & 63.04\\
+R & 62.00 & 61.44 & 62.61\\
+P & 52.84 & 54.48 & 54.90\\
+F & 56.72 & 59.27 & 67.09\\
+H & 50.42 & 57.51 & 58.86\\
+SC & 52.20 & 60.28 & 63.01\\
+BC & 44.62 & 45.96 & 49.62\\
+S+D+R+P & 65.79 & 65.65 & 74.30\\
+S+D+R+P+BC & 65.05 & 65.19 & 74.20\\
+S+D+R+P+F+H+SC & 61.63 & 67.99 & 75.66\\
+S+D+R+P+F+H+SC+BC & 61.40 & 67.65 & 75.80\\
+\bottomrule\end{tabular}
+\caption{Native30 group/source-balanced accuracy (\%) at the all-cap configuration. Protocols have distinct estimands; no cross-column causal comparison is implied.}
+\label{tab:bc-allcap}\end{table}
+\begin{table}[htbp]\centering\small
+\begin{tabular}{lrrrrr}\toprule
+Protocol (all eight families) & 25 & 50 & 100 & 200 & All\\\midrule
+Generator holdout & 62.47 & 59.30 & 59.41 & 61.02 & 61.40\\
+Human-source holdout & 65.43 & 66.52 & 67.07 & 67.69 & 67.65\\
+Grouped descriptive & 74.77 & 76.43 & 75.95 & 75.78 & 75.80\\
+\bottomrule\end{tabular}
+\caption{All-eight-family training-group-cap ablation. Caps are per-source group budgets, not total training-song counts. The complete 3,825-cell table retains all 255 subsets at all five caps.}
+\label{tab:bc-caps}\end{table}

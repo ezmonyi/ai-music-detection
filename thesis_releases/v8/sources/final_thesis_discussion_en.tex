@@ -1,0 +1,73 @@
+\section{Interpretation and generalization boundaries}
+\label{sec:discussion}
+
+This discussion synthesizes completed experiments. The unfinished Native30
+seven-family and BC comparisons are not used to support any conclusion here;
+their audited outcomes must be incorporated before final submission.
+
+\subsection{Interpretability is a constraint on the claim}
+A descriptor can be interpretable because its computation and units are
+explicit without being a unique explanation of authorship. Spectral ratios
+may reflect a generator, a separator, a codec or a mastering decision.
+Onset-conditioned amplitude statistics may respond correctly to a controlled
+gain intervention yet also vary with instrumentation. The external tests
+therefore constrain what can be said about each measurement. They do not
+identify the cause of every observed between-class difference.
+
+This distinction explains why failed gates are not discarded when a
+classifier benefits from the corresponding exploratory feature. R and P
+may contain information associated with the labels without satisfying the
+stronger claim that the complete families reliably measure intended rhythm
+and phrase-length variation. Likewise, high breath recall cannot rescue
+an unusably low event precision. The thesis reports both levels of evidence
+instead of letting a favourable classification score override a measurement
+failure.
+
+\subsection{Additional information is conditional, not automatically useful}
+The Exact10 H increment is supported by record-group uncertainty conditional
+on the retained models and observations, while the source-composition
+sensitivity range crosses zero. The Equal60 SC comparison gives a different
+warning: an independently informative family can reduce the fixed baseline's
+held-generator balanced accuracy. Neither outcome is paradoxical. Additional
+features can encode source-specific relationships that the linear model
+uses successfully within some partitions but unsuccessfully after a shift.
+
+An increment is therefore defined relative to a particular baseline,
+population, split, training cap and missingness mode. It is not a permanent
+ranking of phenomena. Exhaustive subset tables expose these dependencies;
+selecting their maximum after inspection does not create an independently
+confirmed optimum. The present closeout does not add a nested-selection
+experiment to resolve that selection uncertainty.
+
+\subsection{Ranking, decisions and source-specific harm}
+The separation between AUC and balanced accuracy matters operationally.
+A model may rank the two classes in an unfamiliar source reasonably well
+while the fixed threshold fails. Here ridge scores are unbounded decision
+values, not calibrated probabilities, and the threshold is not retuned on
+held-source labels. An ordinary-group result is consequently insufficient
+evidence for applying the same decision rule to an unknown generator.
+
+False accusations and missed generated recordings also have different
+consequences. Human-source specificity and generator sensitivity must remain
+visible beside macro averages. The observed DEAM, Saraga and generator-specific
+failures rule out treating these experimental scores as sole evidence for
+penalizing a musician or certifying an individual recording. Human labels
+also permit MIDI programming, editing and synthesis within human production;
+the task is not an acoustic test for the absence of technology.
+
+\subsection{Remaining uncertainty without expanding this experiment}
+The retained data increase source diversity, but duration and native-channel
+eligibility select different populations. Short-window and long-window
+results do not form a clean causal test of listening duration. Five AI
+sources in Native30, and only two in Equal60, cannot represent every current
+or future generator. Dataset names are also incomplete proxies for genre,
+language, culture and production practice.
+
+External controls cover specific interventions and codecs rather than all
+possible nuisance transformations. Pretrained front ends introduce their
+own domain sensitivity, and some public-data overlap with their training
+cannot be excluded from provenance alone. File hashes, deterministic replay
+and model-equation audits improve reproducibility but do not remove these
+scientific limitations. Broader untouched-source confirmation, calibrated
+deployment decisions and independent measurement replication remain future
+work, not experiments silently added to the current thesis.

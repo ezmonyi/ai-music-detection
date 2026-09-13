@@ -1,0 +1,20 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Completed external B benchmark: leave-one-singer-out, 113 clips, 20 singers and 141 merged reference events. This is event measurement, not AI-music classification.}
+\label{tab:breath-external-failed}
+\begin{tabular}{lr}
+\toprule Metric & Value \\
+\midrule
+Event precision & 0.098278 \\
+Event recall & 0.971631 \\
+Event F1 & 0.178502 \\
+Frame balanced accuracy & 0.912017 \\
+Hard-negative frame false-positive fraction & 0.336281 \\
+TP / FP / FN events & 137 / 1,257 / 4 \\
+Zero-event clips with at least one false event & 38 / 38 \\
+False events in zero-event clips & 352 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The predeclared gate requires event precision and F1 both at least 0.70. It fails decisively despite high recall and frame BA. Every zero-event clip has a false alarm; 3,042 of 9,046 labeled hard-negative frames are positive. High frame-level discrimination is therefore not sufficient for reliable breath-event organization. No post-hoc threshold or event-duration rule is tuned on this benchmark, and B is not admitted to the AI/Human classifier. The audit verifies all 230 artifact hashes and event/model records; it does not validate event measurement.

@@ -1,0 +1,319 @@
+\section{Additional Interpretable Audio Phenomena: Prospective Extension}
+\label{sec:additional-phenomena}
+
+\noindent\textbf{Dated evidence boundary (September 7, 2026).}
+This section extends the magnitude-spectral (S), attack-amplitude dynamics (D),
+rhythm (R), and section-length (P) families with explicitly defined candidate
+phenomena. It is exploratory development work on previously assembled sources,
+not a new untouched external attribution test. Historical locked, stress and
+pilot labels do not enter fitting or feature selection. The September 5 report
+and source audio remain unchanged. Successful measurement of a phenomenon and
+successful Human/AI classification are different hypotheses.
+
+\subsection{Literature-to-measurement translation}
+
+The candidate registry comprises phase evolution/group delay (F), tonal/chroma
+paths (H), long-range content recurrence (M), pitch microstructure (V), audible
+breath organization (B), articulation/phone--note coordination (A), and
+source-conditioned timbral continuity (T). A new representation or a new name
+for spectral flux is not automatically an independent phenomenon.
+
+Direct music-detection evidence motivates F: Afchar et al.,
+\emph{AI-Generated Music Detection and its Challenges} (ICASSP 2025), demonstrate
+detectable information in a phase representation under controlled reconstruction.
+This does not validate a universal hand-designed phase statistic.
+\footnote{\url{https://arxiv.org/abs/2501.10111}}
+H and M are supported by symbolic evaluation and content-recurrence analysis,
+including Wu and Yang, \emph{The Jazz Transformer on the Front Line} (ISMIR 2020),
+and Kim and Go, \emph{Segment Transformer} (APSIPA ASC 2025). Their tasks and
+representations differ from this mixed-waveform experiment.
+\footnote{\url{https://archives.ismir.net/ismir2020/paper/000339.pdf};
+\url{https://www.apsipa.org/proceedings/2025/papers/APSIPA2025_P179.pdf}}
+Pitch trajectories, breath events and timbral consistency have measurement or
+perceptual motivation; this is not in itself evidence that contemporary AI
+music lacks them. Primary papers, proposed-versus-published metrics, counterexamples
+and publication status are retained in
+\filepath{../../interpretable_phenomena_literature_20260906/RESEARCH_NOTE_EN.md}.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{29mm}>{\raggedright\arraybackslash}p{61mm}>{\raggedright\arraybackslash}p{59mm}}
+\caption{Additional phenomena: measurement targets and the actual evidence level. Proposed metrics are hypotheses unless explicitly attributed to a published measure.}\\
+\toprule Phenomenon & Interpretable measurement target & Publication support and boundary \\
+\midrule\endfirsthead
+\toprule Phenomenon & Interpretable measurement target & Publication support and boundary \\
+\midrule\endhead
+F: phase evolution & Frame-to-frame circular phase residual, group-delay dispersion, attack--decay contrast & Afchar et al., ICASSP 2025: direct music reconstruction-detection representation evidence, not validation of these scalar statistics. \\
+V: pitch microstructure & Note-relative cents, vibrato rate/extent, approach overshoot, glide shape & Saitou et al., Speech Communication 2005; Abe\ss er et al., ISMIR 2015: perception and note-level performance measurement, not AI attribution. \\
+B: breath organization & Audible inhale-event rate and duration, intervals and alignment to vocal phrase boundaries & Layton et al., DTRAP 2025; Mostaani and Magimai-Doss, Interspeech 2022: fake-speech evidence requiring separate singing validation. \\
+A: articulation coordination & Phone durations conditioned on notes, vowel/consonant transitions and melisma & Wang et al., Interspeech 2023: learned duration/pronunciation features for fake speech; phone--note coordination is our extension hypothesis. \\
+H: tonal/harmonic paths & Pitch-class entropy, chord-trigram irregularity, local tonal-state transitions & Wu and Yang, ISMIR 2020: interpretable symbolic jazz-generation evaluation, not a universal harmony-error rule. \\
+M: motif recurrence & Off-diagonal self-similarity, recurrence lag and returning-content variation & Kim and Go, APSIPA ASC 2025: direct music-detection evidence using learned segment embeddings and self-similarity; hand-designed recurrence still needs validation. \\
+T: timbral identity & Register/intensity-conditioned similarity within a source or recurring note & Nercessian et al., ISMIR 2024: cross-note instrument sample-bank consistency, not whole-song source tracking or a validated AI detector. \\
+\bottomrule
+\end{longtable}
+
+The V publications explicitly support pitch-performance analysis rather than
+authorship detection. Saitou et al. studied overshoot, vibrato, preparation and
+fine fluctuation in singing synthesis; Abe\ss er et al. studied score-informed
+jazz intonation and pitch modulation.
+\footnote{\url{https://doi.org/10.1016/j.specom.2005.01.010};
+\url{https://archives.ismir.net/ismir2015/paper/000135.pdf}}
+The final breath article is \emph{Every Breath You Don't Take: Deepfake Speech
+Detection Using Breath}, Digital Threats: Research and Practice 6(3), article
+13 (2025), not a singing study. Mostaani and Magimai-Doss also distinguish
+the limitations of breath information for converted natural speech.
+\footnote{\url{https://doi.org/10.1145/3754456};
+\url{https://doi.org/10.21437/Interspeech.2022-10271}}
+Wang et al.'s pronunciation representation is learned; it does not validate
+consonant-release timing as a hand-designed singing detector.
+\footnote{\url{https://doi.org/10.21437/Interspeech.2023-1254}}
+Nercessian et al.'s timbral-consistency metric compares CLAP affinity structure
+across pitch/velocity sample sets. Moving from a sample bank to a temporal
+source-identity trajectory is a new hypothesis.
+\footnote{\url{https://ismir2024program.ismir.net/poster_22.html}}
+None of these papers establishes a universal direction such as ``more regular
+means AI.'' Human pitch correction, loop composition, de-breathing and source
+separation are important counterexamples. Fixed spectral grids overlap S and
+are not counted again as an independent phenomenon.
+
+\subsection{Exact audio inputs and independent measurement validation}
+
+F/H use the original mix, not the Demucs vocal. Inputs preserve the exact
+historical crop offset, use arithmetic channel averaging, remove DC and resample
+with a fixed polyphase Kaiser-5 filter to 16\,kHz. Native rate must be at least
+16\,kHz. Source SHA-256, analyzed-waveform SHA-256, crop frames, code/configuration
+hashes and runtime versions are retained per recording. No short input is padded.
+The previous magnitude-domain separator correction is not a phase or F0 correction.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Completed extraction accounting. Observable means an eligible signal
+measurement, not a successful classifier prediction.}
+\label{tab:phenomena-extraction}
+\begin{tabular}{lrrrr}
+\toprule Fixed view & Records & F observable & H observable & M observable \\
+\midrule
+10 seconds & 10,141 & 10,041 & 9,323 & 0 \\
+30 seconds & 4,497 & 4,496 & 4,425 & 0 \\
+60 seconds & 2,092 & 2,092 & 2,076 & 2,055 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All three extractions have complete per-item accounting and no processing failure.
+F non-observability consists of low energy or insufficient phase coverage; H
+requires informative pitch-class structure. These cases remain missing, not
+zero-valued evidence. M requires at least 45 seconds and is not evaluated on
+the short views. A separate exact-60-second cohort contains 2,092 physically
+verified crops (1,546 Human, 546 AI). Its only development AI source is Suno;
+the 50 DiffRhythm recordings remain pilot data. Therefore that cohort cannot
+support unseen-generator generalization of long recurrence. Longer context and
+changed source composition are not an isolated duration intervention.
+
+F contains 15 statistics of weighted circular phase residuals and robust group
+delay, summarized over all, attack, sustain and decay regions and selected
+decay-minus-sustain contrasts. At 16\,kHz the periodic-Hann STFT has 1,024 samples
+and a 256-sample hop. Energy masks exclude unreliable near-zero bins. With the
+forward-FFT convention, the residual is
+\begin{equation}
+ r_{k,t}=\operatorname{wrap}\left(\phi_{k,t+1}-\phi_{k,t}
+                 -2\pi kH/N\right),\qquad
+ v=1-\left|\frac{\sum w_{k,t}e^{\mathrm{i}r_{k,t}}}{\sum w_{k,t}}\right|.
+\end{equation}
+Phase/group-delay features share one family; they are not treated as 15
+independent biological hypotheses. Attack/decay regions are energy-direction
+proxies, not manually annotated musical articulations.
+
+External F controls use 144 independent MUSDB tracks and 1,632 matched pairs,
+including phase interventions, gain/polarity, time shifts, MP3 and reference
+versus separated vocals. Gain/polarity invariance is numerically strong, but
+shift, codec and separation changes are detectable. Preserving global Fourier
+magnitude in a phase intervention does not preserve every local STFT magnitude,
+transient or envelope. Consequently the result establishes sensitivity and
+confounding risks, not a pure causal generator signature.
+
+H contains six pitch-class entropy and chroma-path descriptors. A 4,096-point
+STFT with a 1,024-sample hop feeds one-second normalized chroma summaries;
+high-entropy/uninformative frames are excluded. M compares four-second patterns
+at specified lags, allowing global pitch-class transposition. It is a
+content-recurrence descriptor, not motif transcription or full-song form.
+External real-audio controls materialize 36 continuous 64-second stimuli in
+12 trials from 24 MUSDB recordings. Known repeated-block similarity exceeds
+matched shuffled-block similarity in 12/12 trials (median difference 0.1151);
+changing versus stationary H paths differ positively in 11/11 observable trials
+(one unavailable; median difference 0.2680). These controlled mosaics do not
+replace natural annotated chord or motif validation.
+
+\subsection{External isolated-vocal pitch tracking}
+
+An independently pinned MIR-1K subset provides 100 clips from 19 singers,
+824.99 seconds and 41,102 reference frames. All selected WAV and pitch-label
+files were hash-verified. A misleading mirror README describing a different
+corpus was retained but not used: MIR-1K reference timestamps start at 20\,ms
+and repeat every 20\,ms. The original right channel contains isolated singing.
+The first baseline uses pYIN at 16\,kHz, a 1,024-sample frame and a 160-sample
+hop, with fixed C2--C6 range. Reference-grid alignment never bridges unvoiced
+gaps. No AI/Human label is used for configuration or scoring.
+
+\begin{table}[htbp]
+\centering\small
+\caption{External pYIN benchmark; all 100 clips completed. These are F0-tracking
+metrics, not AI-music detection accuracy.}
+\label{tab:external-pyin-phenomena}
+\begin{tabular}{lrr}
+\toprule Metric & Value & Numerator / denominator \\
+\midrule
+Raw pitch accuracy, 50 cents & 0.966299 & 28,357 / 29,346 \\
+Raw chroma accuracy, 50 cents & 0.966810 & 28,372 / 29,346 \\
+Voicing precision & 0.881141 & 29,164 / 33,098 \\
+Voicing recall & 0.993798 & 29,164 / 29,346 \\
+Voicing F1 & 0.934085 & combined precision and recall \\
+Overall accuracy & 0.880225 & 36,179 / 41,102 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The predeclared limited gate (pitch accuracy $\geq0.70$, voicing F1 $\geq0.80$,
+complete verified clips) passes. This only supports coarse F0 trajectories on
+comparable isolated vocals. Vibrato rate/extent, onset overshoot, note segmentation
+and Demucs robustness still need separate validation. In particular, the
+false-positive voicing count matters for apparent small-scale pitch modulation.
+The mirrored audio's redistribution license remains unresolved; it is not
+included in a public dataset release.
+
+The next, separately frozen V assay fits 4--8\,Hz sinusoidal modulation plus
+a linear trajectory in contiguous one-second voiced windows. It rejects
+large pitch steps, weak modulation and poor sinusoidal fit. Eleven analytic
+test cases pass, but the real measurement gate fails: reference contours have
+only three observable windows in two clips; estimated contours have four
+windows in two clips; only one clip is paired. Observability precision and
+recall are both 0.50, below 0.70, and the minimum 25 paired clips is not met.
+The single paired error cannot establish reliability. V is therefore not
+admitted to the classifier, and no threshold is loosened after seeing this
+benchmark. Good coarse F0 accuracy does not validate small-scale performance
+features.
+
+\subsection{Matched classification design and additional information}
+
+The 30-second analysis evaluates all 63 nonempty S/D/R/P/F/H combinations at
+25, 50, 100, 200 and all global groups per training source. Only the 3,317
+development recordings enter fitting. Group identities are blocked globally,
+including shared prompts and groups crossing sources or classes. Source holdout
+and ordinary recording-group cross-validation are reported separately. A fixed
+ridge model, training-only imputation/scaling and a fixed 0.5 decision threshold
+are used throughout. The ridge score is not a calibrated probability.
+
+Define $J$ as the equal mean of Human-source-heldout and AI-generator-heldout
+macro AUC. Source-pair results are aggregated within held-out source before
+macro averaging. The table below uses identical realized rows, folds and group-cap
+policy for every matched increment; subtracting a September 5 result obtained
+under a different evaluation configuration would not be a valid increment.
+\input{../../audio_phenomena_expansion_20260907/latex/results_fh_table_en}
+
+Missingness-only and median-only diagnostics accompany the full models.
+Sparse P measurements never define a complete-case subset for every family.
+At ten seconds P is explicitly unavailable, so it cannot be counted as an
+observed structural phenomenon. A grouped bootstrap assesses the predefined
+S+D+R versus S+D+R+F, S+D+R+H and S+D+R+F+H comparisons; its intervals are
+conditional on the already trained models and observed source collection,
+not guarantees for future generators.
+
+\input{../../audio_phenomena_expansion_20260907/latex/results_fhm60_en}
+
+The separate 10-second S/D/R/F/H classification run is still in progress at
+this checkpoint. Its 10,141-item extraction is complete, but no partial score
+is promoted to a final result here. P has no eligible ten-second observation.
+
+\subsection{Measurement admission outcomes and artifact references}
+
+B uses a third-party VocalSet breath annotation layer, not assumed ground
+truth for physiology. Silent/uncertain labels are not positive inhalations.
+The singer-heldout measurement benchmark below is separate from detector use. A
+requires independently validated singing phone timing and meaningful note
+context; speech alignment confidence or word error rate is not a substitute.
+T requires genuine isolated sources and pitch/register controls; a Demucs
+\texttt{other} stem is not one instrument. These gates remain explicit and are
+not silently replaced by spectral noise or flux summaries.
+
+The B acquisition independently verifies 244 original VocalSet members and
+their annotation/PCM/CRC/SHA evidence, but not the full archive MD5. Only 114
+clips have a named reviewer and positive review time. A filename duplicated in
+the ZIP has two different waveforms; the duration-matching member conflicts
+with its singer directory and is conservatively excluded before fitting.
+The resulting prospective cohort has 113 clips, 20 singer groups, 141 merged
+high/medium-confidence events and 38 zero-event clips. Model-prefilled,
+single-reviewer annotations and only three songs limit independence. The
+provisional B admission gate is evaluated independently of AI/Human classification.
+\input{../../audio_phenomena_expansion_20260907/latex/results_breath_en}
+
+An A data-admission review distinguishes NUS-48E phone-boundary annotations
+from CSD note/syllable annotations. Neither inspected package alone validates
+the full phone--note coordination chain. No A measurement or attribution result
+is claimed, no access agreement was accepted on the user's behalf, and A is
+not included in the classification lattice.
+
+An initial T implementation was tested on 52 controlled pairs from 153 audited
+reference-source files, rendering 208 six-second stimuli with nonoverlapping
+three-second source chunks. At the known switch boundary, switched-source
+distance exceeds same-source distance for 44/52 pairs (median difference
+0.2423; descriptive pair-bootstrap 95\% interval [0.1877, 0.2981]); gain/polarity changes
+are zero. However, the whole-clip p90 trajectory difference is positive for
+only 32/52 pairs, with interval [0, 0.1225]. A known-boundary sensitivity result
+does not establish a reliable unlocalized clip detector. Vocal-track identity
+is not verified singer identity, and approximate register matching is not pitch
+invariance. T is consequently not promoted as a validated natural-identity
+feature in the F/H classifier lattice.
+The 52 pair rows reuse 25 of 78 source identities across roles (up to three
+appearances). Thus the pair-row interval is conditional/descriptive, not an
+independent-source confidence interval; future inference needs source-disjoint
+pairs or dependency-aware resampling.
+
+The local extension root is
+\filepath{/Users/yi/Documents/code/music/artifacts/audio_phenomena_expansion_20260907/}.
+Paths in the following table resolve against it. Full waveforms retain exact
+remote paths in the input/item manifests. Every numerical conclusion should be
+read with the cited coverage and status records.
+
+\begin{longtable}{>{\raggedright\arraybackslash}p{24mm}>{\raggedright\arraybackslash}p{61mm}>{\raggedright\arraybackslash}p{64mm}}
+\caption{Extension code, outputs and numerical-analysis references.}\\
+\toprule Responsibility & Code / protocol & Output / analysis \\
+\midrule\endfirsthead
+\toprule Responsibility & Code / protocol & Output / analysis \\
+\midrule\endhead
+Exact inputs & \filepath{code/audio_inputs.py}; \filepath{code/extract_features.py}
+& \filepath{results/features_10s_v1/}; \filepath{results/features_30s_v1/}; \filepath{audit/extraction_30s_v1.json} \\
+Phase & \filepath{code/phase_features.py}; \filepath{code/external_phase_validation.py}
+& \filepath{results/external_phase_validation/REPORT.md}; \filepath{pair_metrics.csv} within that directory \\
+Tonal path / recurrence & \filepath{code/musical_features.py}; \filepath{code/external_musical_validation.py}
+& \filepath{results/external_musical_validation_v1/}; \filepath{manifests/long_cohort/summary_60s.json} \\
+Pitch tracking & \filepath{code/benchmark_pitch_tracking.py}; \filepath{PITCH_TRACKING_BENCHMARK_EN.md}
+& \filepath{results/external_pitch_tracking/overall_metrics.json}; aligned contours, per-clip and per-singer metrics within that directory \\
+Pitch microstructure & \filepath{code/pitch_microstructure_features.py}; \filepath{V_MICROSTRUCTURE_EN.md}
+& \filepath{results/external_pitch_microstructure_v1/overall_metrics.json}; failed observability gate and all contour comparisons \\
+Timbral continuity & \filepath{code/timbre_features.py}; \filepath{code/external_timbre_validation.py}
+& \filepath{results/external_timbre_validation_v1/summary.json}; known-boundary sensitivity and weak whole-clip results \\
+All combinations & \filepath{code/evaluate_new_phenomena.py}; \filepath{preregistration/fh_30s_v2/}
+& \filepath{results/evaluation_fh_30s_v2/}; source-pair metrics, per-record predictions, folds and frozen models \\
+Result presentation & \filepath{code/summarize_fh_evaluation.py}
+& \filepath{results/presentation_fh_30s_v2/all_63x5_numeric_results.csv}; \filepath{RESULTS_FH_EN.md} within that directory \\
+Uncertainty & \filepath{code/bootstrap_matched_deltas.py}
+& \filepath{results/uncertainty_fh_30s_v2/}; conditional paired global-group bootstrap \\
+Source sensitivity & \filepath{code/source_resampling_sensitivity.py}
+& \filepath{results/source_sensitivity_fh_30s_v1/}; post-hoc crossed-source composition sensitivity, no refit \\
+Independent audit & \filepath{code/audit_fh_results.py}
+& \filepath{AUDIT_FH_RESULTS_EN.md}; \filepath{audit/fh_30s_v2_audit_report.json}; 16,984 checks, zero errors \\
+Breath admission & \filepath{code/benchmark_breath_events_v2.py}; \filepath{BREATH_BENCHMARK_PROTOCOL_EN.md}
+& \filepath{results/external_breath_events_v2/summary.json}; \filepath{BREATH_BENCHMARK_RESULTS_EN.md}; failed gate and independent 230-artifact audit \\
+Long recurrence & \filepath{code/evaluate_new_phenomena_v3.py}; \filepath{preregistration/fhm_60s_v3/}
+& \filepath{results/evaluation_fhm_60s_v3/}; \filepath{AUDIT_FHM_60S_RESULTS_EN.md}; seven-by-five descriptive grid, J undefined \\
+Articulation admission & \filepath{A_ADMISSION_REVIEW_EN.md}
+& Prospective annotation requirements and unverified phone--note chain; no classifier result \\
+Pending gates & \filepath{BREATH_BENCHMARK_PROTOCOL_EN.md}; \filepath{EXPERIMENT_PROTOCOL.md}
+& \filepath{CURRENT_STATE.md}; \filepath{RUN_LOG.md}; external validation and exclusion ledgers \\
+\bottomrule
+\end{longtable}
+
+The preregistration's generated filename retains the word \texttt{draft}, but
+the operative v2 receipt contains \texttt{status=frozen} and the reviewed
+contract hash. A stale remote-base mismatch was detected before scoring; its
+unfrozen v1 receipt is retained as invalid history. The corrected run imports
+the byte-identical archived authoritative evaluator, not the stale remote copy.

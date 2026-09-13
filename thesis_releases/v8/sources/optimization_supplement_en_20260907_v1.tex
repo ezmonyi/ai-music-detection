@@ -1,0 +1,117 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[a4paper,margin=20mm]{geometry}
+\usepackage{amsmath,booktabs,longtable,graphicx,xcolor}
+\usepackage{xurl}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{fancyhdr}
+\setlength{\emergencystretch}{4em}
+\setlength{\parskip}{0.4em}
+\setlength{\parindent}{0pt}
+\renewcommand{\arraystretch}{1.15}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{AI/Human Music Detection: Optimization Supplement}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{15pt}
+\title{Interpretable AI/Human Music Detection\\\large External Transfer and Source-Held-Out Optimization}
+\author{Thesis experiment archive}
+\date{7 September 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+This English thesis supplement separates accepted external-transfer findings
+from a subsequent, prospectively frozen development experiment. The completed
+transfer comparison shows that additional signal descriptors can improve one
+class endpoint while worsening the other, and that group weighting can reverse
+an apparent improvement. The expanded development experiment contains 2,207
+eligible excerpts and evaluates all 127 combinations of seven feature families
+at five training caps. Its real performance is not yet numerically accepted at
+this checkpoint. Synthetic implementation tests are not music-detection
+benchmarks. The previously released thesis PDF is preserved unchanged.
+\end{abstract}
+\textbf{Reading boundary.} Section 1 reports accepted measurements. Section 2
+documents the frozen experiment, not a new accuracy claim. Section 3 reports
+input coverage and interpretation risks. Paths in the supplement are relative
+to \path{artifacts/audio_phenomena_expansion_20260907/} unless stated otherwise.
+
+\textbf{Feature key.} S: separated-vocal high-frequency spectrum;
+D: non-vocal dynamics; R: detected rhythm variation;
+P: section-duration/bar-count variety; F: phase and group delay;
+H: pitch-class trajectories; M: long-range, transposition-aware recurrence.
+These are descriptive proxies, not direct measurements of authorship or intent.
+
+\input{saraga_mureka_transfer_results_en}
+\clearpage
+\input{equal60_exploratory_v5_methods_en}
+\clearpage
+\section{Input coverage and dependence diagnostics}
+\label{sec:v5-coverage-balance}
+
+Numerical completeness is assessed per family: every descriptor must be finite.
+Blank and NaN entries are missing, not zero. The input package contains exactly
+matching metadata and feature identities in the same order.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Source & Rows & S & D & R & P & F & H & M \\
+\midrule
+MTG-Jamendo & 481 & 481 & 481 & 475 & 388 & 479 & 478 & 471 \\
+Mureka v9 & 500 & 500 & 500 & 500 & 485 & 500 & 500 & 499 \\
+Suno & 396 & 396 & 396 & 395 & 354 & 396 & 396 & 395 \\
+MAESTRO v3 & 300 & 300 & 300 & 298 & 194 & 300 & 300 & 300 \\
+MedleyDB & 156 & 156 & 156 & 156 & 128 & 155 & 156 & 156 \\
+MoisesDB & 238 & 238 & 238 & 238 & 223 & 238 & 237 & 234 \\
+Saraga Hindustani & 103 & 103 & 103 & 98 & 77 & 103 & 103 & 103 \\
+URMP & 33 & 33 & 33 & 33 & 17 & 33 & 33 & 33 \\
+\bottomrule
+\end{tabular}
+\caption{Complete-family counts in the expanded 60-second package. Counts do
+not certify that an estimator measures its intended musical construct.}
+\end{table}
+
+P completeness is 97.0\% for Mureka, 64.7\% for MAESTRO and 51.5\% for URMP.
+A classifier may therefore exploit estimator availability instead of, or in
+addition to, section-length values. The frozen all-cap missingness-only and
+values-only diagnostic arms address this concern without dropping incomplete
+recordings. Partial-family counts are retained in
+\path{EXPLORATORY_V5_COVERAGE_AND_GROUP_BALANCE_EN.md}.
+
+S remains numerically complete even on instrumental datasets. Finite features
+from a separated vocal estimate do not establish the presence of a singer:
+instrument residuals can enter the estimate. A future vocal-presence or
+stem-reliability gate would require external validation and a new prospective
+comparison; it is not introduced into the running frozen experiment.
+
+The 1,779 recorded global groups are unevenly distributed: MTG 481, Mureka 500,
+Suno 396, MAESTRO 49, MedleyDB 78, MoisesDB 237, Saraga 5 and URMP 33.
+Singleton provenance keys do not prove independent artists or works. Saraga's
+largest component contains 72 of 103 recordings. Thus collecting more files
+from an already dominant component need not improve diversity, and both
+recording-weighted and equal-component endpoints remain necessary.
+
+\paragraph{Context constraints for a third generator.}
+The stored HeartMuLa and ACE-Step cohorts contain no eligible native 60-second
+examples. Short excerpts must not be padded to manufacture long-range
+recurrence evidence. The available long DiffRhythm examples remain protected
+pilot data. A separate short-context branch would also have to preserve shared
+conditioning groups: HeartMuLa/ACE share 500 prompt groups, while 481 Udio
+groups overlap current MTG Human groups. The inventory and eligibility limits
+are recorded in \path{THIRD_GENERATOR_CONTEXT_ELIGIBILITY_EN.md}. No additional
+generation or acquisition is reported here.
+
+\paragraph{Implementation acceptance, not detection performance.}
+Twenty-four auditor/presenter unit tests passed on the NFS CPU runtime.
+A separate full-grid synthetic publication passed independent checking of
+17,780 model instances and 56,896 predictions, including transforms, residuals,
+decisions and metrics. Maximum score error was
+$5.773159728050814\times10^{-15}$; decisions matched exactly.
+This is numerical interoperability evidence, not real-music performance.
+
+Evidence: \path{audit/equal60_v5_synthetic_numerical_audit_v1.json}.
+Code: \path{code/audit_equal60_v5_results.py} and
+\path{code/present_equal60_v5_results.py}.
+The synthetic directory \path{results/v5_synthetic_interop_l4ayhwmw/}
+must never enter thesis music-detection performance tables.
+\end{document}

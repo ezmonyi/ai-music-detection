@@ -1,0 +1,117 @@
+\section{Evaluation targets and limits of interpretation}
+\label{sec:final-evaluation-principles}
+
+This thesis separates three questions that are often conflated in audio
+authenticity research. First, does a measurement respond to its intended audio
+phenomenon under controlled conditions? Second, does it discriminate the labels
+in a specified collection? Third, does its utility survive a change in recording
+source or generator? A positive answer to one question does not establish the
+others. In particular, a classifier may exploit production or acquisition
+conditions without identifying a consequence of generative synthesis.
+
+\subsection{Labels and the unit of analysis}
+
+The Human label denotes supported recording provenance, not an absence of MIDI,
+sampling, quantization, pitch correction, compression, or editing. Conversely,
+an AI-labelled recording may depend on human prompts, musical conditioning, or
+post-production. Dynamics and timing statistics therefore cannot by themselves
+establish whether a performance used MIDI or whether its authorship was human.
+
+Recording identities, byte-identical audio objects, excerpts, derived stems,
+and split groups are distinct units. Multiple views of one recording do not
+provide independent evidence. Global groups preserve known dependencies across
+sources and, where applicable, across labels. Cohort totals from different
+duration experiments overlap and are not added to form a corpus size.
+Unverified labels and pilot conditions are reported separately from eligible
+classification populations.
+
+\subsection{Duration and measurement availability}
+
+Short recordings are not padded to create apparent evidence of long-term
+structure. An unavailable beat sequence or an insufficient section observation
+is not evidence of perfectly constant rhythm or zero structural variety.
+Natural unobservability, processing failure, and an observed numerical zero are
+retained as different states. A completed feature row is also not equivalent to
+complete observation of every scalar in that row.
+
+The exact-duration experiments control the physical analysis window within each
+cohort. They do not isolate a causal effect of duration when their eligible
+populations differ. Similarly, native-stereo eligibility narrows the population
+to which stereo findings apply; duplicating mono channels does not manufacture
+spatial information.
+
+\subsection{Preprocessing, fitting, and decision scores}
+
+Imputation and scaling are fitted on training observations only. The evaluation
+retains the specified class, source, group, and recording weights, rather than
+allowing large catalogues or duplicate views to dominate the objective. Training
+quantity caps refer to global groups per source, not a universal number of
+songs. Small sources are not duplicated to satisfy a nominal cap.
+
+The frozen tabular classifier uses a ridge penalty of 10, an unpenalized
+intercept, and a fixed decision threshold of 0.5. Its raw scores are unbounded
+and are not calibrated posterior probabilities. Consequently, a score of 0.8
+must not be described as an 80\% probability of AI generation. Missingness-only
+and related diagnostics test selected alternative explanations; they do not
+establish that every feature combination is free of processing artifacts.
+
+\subsection{Separate evaluation directions}
+
+Human-source-held-out evaluation examines transfer to an excluded Human source;
+generator-held-out evaluation examines transfer to an excluded AI source or
+declared generator family. Ordinary grouped evaluation is reported separately.
+The latter can be informative about interpolation among observed sources while
+remaining optimistic about an unseen generator. Results from these directions
+are not interchangeable estimates of one deployment accuracy.
+
+For studies using the composite criterion, let $A_H$ and $A_G$ denote the
+specified source-macro AUC in the two transfer directions. Then
+\[
+  J = \tfrac{1}{2}(A_H + A_G).
+\]
+This is a mean of ranking statistics, not classification accuracy. Balanced
+accuracy at the frozen threshold is reported separately, with the same declared
+aggregation order. Scores produced by different fitted models are not casually
+pooled into a cross-model AUC. Source-specific sensitivity and specificity remain
+necessary even when a macro summary is favorable.
+
+\subsection{Feature and training-quantity ablations}
+
+Nonempty feature subsets and the five declared training caps are retained,
+including negative increments. A useful standalone measurement can be redundant
+or harmful in a larger model. Matched add-on contrasts therefore hold the cohort,
+folds, quantity policy, preprocessing, weights, and threshold fixed wherever the
+protocol specifies such a comparison. A maximum observed over many development
+configurations is a descriptive result, not an independently validated winner.
+Changes in sample count, weighting, and effective regularization also prevent a
+training-cap contrast from being interpreted as a pure causal effect of data
+diversity.
+
+\subsection{Uncertainty and evidence scope}
+
+Conditional resampling of held-out recording groups describes uncertainty
+within fixed fitted models and observed recordings. It does not include
+retraining or model-selection variability. Separate resampling of observed source
+labels characterizes sensitivity to that source composition; it does not turn
+a purposively assembled collection into an independent sample of future music
+domains. Undefined cells and the declared aggregation policy are retained rather
+than replaced by zero or chance performance.
+
+Software tests, byte hashes, schema audits, independent numerical replay,
+controlled interventions, and external classification answer different questions.
+A hash confirms identity within its stated scope; it does not prove scientific
+validity. Numerical replay verifies selected arithmetic, not a causal account of
+authorship. A controlled phase-coupling response, for example, establishes a
+measurement capability under those conditions, not an AI/Human classification
+result. Failed admission gates and original failed audits are retained alongside
+any justified implementation corrections.
+
+\subsection{Reproducibility references}
+
+The authoritative implementations and result-specific protocols are indexed in
+the reproducibility appendix. Relevant preserved implementations include
+\path{extract_native30_sdrp_operational_v1.py},
+\path{evaluate_native30_v3.py}, and
+\path{bootstrap_sdrfh10_uncertainty.py}. Their existence is not asserted as
+proof that an associated production run completed; empirical chapters require
+the corresponding committed outputs and verification evidence.

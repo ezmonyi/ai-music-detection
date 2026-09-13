@@ -1,0 +1,22 @@
+\subsection{Exact-60-second recurrence association: descriptive only}
+The completed long-context analysis uses 1,604 development recordings (1,208 Human and 396 Suno), five globally blocked group folds and seven F/H/M combinations. The 438 historical locked and 50 pilot recordings are excluded from fitting. The only development AI source is Suno: generator holdout is ineligible, source-transfer $J$ remains undefined, and no cross-generator conclusion can be drawn.
+
+\begin{table}[htbp]
+\centering\footnotesize\setlength{\tabcolsep}{4pt}
+\caption{Exact60 descriptive group-CV results: each cell is source-pair-averaged AUC/BA, not source-held-out $J$. Training caps are global groups per source. These numbers must not be compared with 30s source-transfer AUC as a causal duration or recurrence gain.}
+\label{tab:fhm60-group-only}
+\begin{tabular}{lrrrrr}
+\toprule Combination & 25 & 50 & 100 & 200 & All \\
+\midrule
+F & 0.8676/0.7685 & 0.8675/0.7692 & 0.8685/0.7749 & 0.8748/0.7900 & 0.8741/0.7882 \\
+H & 0.6914/0.6475 & 0.7074/0.6767 & 0.7169/0.6808 & 0.7151/0.6812 & 0.7131/0.6646 \\
+M & 0.5966/0.5648 & 0.6239/0.5863 & 0.6323/0.6173 & 0.6327/0.6078 & 0.6319/0.6133 \\
+F+H & 0.8607/0.7836 & 0.8811/0.8070 & 0.8866/0.8252 & 0.8910/0.8191 & 0.8904/0.8180 \\
+F+M & 0.8736/0.7928 & 0.8875/0.8112 & 0.8887/0.8146 & 0.8938/0.8119 & 0.8925/0.8121 \\
+H+M & 0.7012/0.6580 & 0.7262/0.6707 & 0.7328/0.6933 & 0.7331/0.6881 & 0.7315/0.6782 \\
+F+H+M & 0.8630/0.7957 & 0.8930/0.8225 & 0.8986/0.8314 & 0.9014/0.8357 & 0.9014/0.8349 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These are within-observed-source associations. Recurrence may reflect repertoire, loops, instrumentation or production in addition to generation. Old S/D/R/P features were not recomputed over this exact60 cohort, so this run does not isolate an M increment over the old pipeline. Missing H/M observations are retained under training-fold imputation and missingness diagnostics, not removed through complete-case filtering.

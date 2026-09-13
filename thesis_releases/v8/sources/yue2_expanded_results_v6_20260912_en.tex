@@ -1,0 +1,62 @@
+\section{Expanded Native30 evaluation including YuE2}
+\label{sec:yue2-expanded}
+The completed expanded development cohort contains 4,228 recordings: the
+original 3,830 plus 398 eligible YuE2 development recordings. Another 100
+YuE2 recordings remain a separate locked population, evaluated in the
+prediction-only sensitivity analysis rather than inserted into this training
+matrix. Two short originals are excluded from Native30. Shared Muse source-song
+groups link generated recordings across models and are retained in the
+group/component split restrictions.
+
+All 255 subsets of S, D, R, P, F, H, SC and BC are evaluated under five
+training-group caps and the three protocols. The completed evaluation comprises
+112,455 model instances (80,325 primary; 32,130 diagnostic), with 3,570
+structurally ineligible scheduled cells explicitly omitted. The reporting
+projection contains 3,825 primary protocol/subset/cap cells. Training-only
+transforms, fixed ridge parameter 10, threshold 0.5, null-value handling and
+the group/source-balanced estimand follow the preceding Native30 protocol.
+
+\input{yue2_expanded_tables_generated.tex}
+
+At the all-cap configuration, S/D/R/P attains 69.7234\% balanced accuracy in
+generator holdout, compared with 66.1827\% for seven families and 66.2877\%
+for eight. In human-source holdout, the corresponding values are 68.6270\%,
+70.2078\% and 70.2487\%; ordinary grouped descriptive values are 76.3652\%,
+77.8734\% and 78.3713\%. Thus broader feature combinations have different
+effects under different generalization targets. The results do not justify a
+single universally superior configuration.
+
+BC adds only 0.1050 percentage points to the seven-family generator-holdout
+result and 0.0408 points to human-source holdout, versus 0.4980 points in the
+ordinary grouped protocol. These small descriptive differences are not
+significance evidence or proof that BC is a transferable authorship signature.
+BC alone remains below 50\% in all three protocols at the fixed operating point.
+
+\paragraph{Comparison with the pre-YuE2 cohort.}
+The generator-holdout S/D/R/P result changes from 65.7872\% to 69.7234\%.
+However, the expanded generator set changes both training composition and the
+equally weighted held-generator test population. This is not a fixed-test-set
+learning-curve estimate and cannot identify the causal benefit of adding
+398 recordings. Similarly, altered component structure and missingness affect
+eligible folds. The within-cohort cap tables and complete subset tables are
+retained; choosing the best observed cap would require a further independent
+selection/evaluation design.
+
+\paragraph{Artifacts and evidence limits.}
+The full report is retained under
+\path{current_results/expanded_native30_report_v1/}. Its COMMIT SHA256 is:
+\begin{quote}\scriptsize\ttfamily
+b7934f2c649e5d0fbada832c335d36839a1aacb3bd7d6a674db83af5372bc911
+\end{quote}
+All seven committed report products were verified after local transfer.
+The original model-evaluation COMMIT is:
+\begin{quote}\scriptsize\ttfamily
+11f074f867d0e3721c6a586e8c8f86116ff1b0198147ba14f6379b5d6f55570d
+\end{quote}
+\path{export_yue2_thesis_tables_v1.py} generates the complete 3,825-row
+CSV and the displayed tables from that committed report, without refitting or
+selection. The CSV resides in
+\path{current_results/yue2_expanded_thesis_tables_v1/}. Reporting is not a
+separately implemented audit of all aggregate numerical calculations, and no
+confidence intervals or pooled cross-model AUC are claimed. Native60 transfer
+is a separate duration-selected experiment, reported in Section~\ref{sec:yue2-native60}.

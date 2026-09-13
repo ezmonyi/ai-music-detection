@@ -1,0 +1,205 @@
+\section{External measurement validation and retained failures}
+\label{sec:final-external-validation}
+
+The following assays address whether a measurement detects its proposed
+phenomenon. They do not directly estimate AI/Human classification accuracy.
+Passing software or integrity checks and satisfying a scientific gate are
+reported separately. Failed gates remain failed even when a subset of metrics
+or a subsequent exploratory classifier appears promising.
+
+An early, small Music Flamingo pilot on MIDI-grounded drum comparisons
+failed the project's admission checks for dynamics and rhythm ranking.
+The model was therefore not included in the quantitative detector, and
+this limited trial does not support a broader assessment of its music
+understanding capabilities. Detailed results and logs remain in the
+standalone report\footnote{\path{artifacts/music_flamingo_midi_rhythm_probe_20260903/reports/FINAL_REPORT_EN.md}};
+the thesis focuses on the subsequent measurement workflows.
+
+\subsection{Dynamics, rhythm change, and section variety}
+
+The controlled-change experiment tested variable gain, variable tempo, and
+variable section lengths, retaining constant-gain and constant-tempo negative
+controls. Its frozen family gate required a probability-of-superiority point
+estimate of at least 0.75 and a bootstrap 95\% lower bound above 0.60.
+
+\begin{table}[htbp]
+\centering\small
+\caption{External controlled-change family results. Superiority concerns
+paired changes, not authorship classification.}
+\label{tab:external-drp}
+\begin{tabular}{lrrll}
+\toprule
+Family & Pairs & Superiority & 95\% interval & Gate\\
+\midrule
+Dynamics & 50 & 0.880 & [0.780, 0.960] & Pass\\
+Rhythm change & 44 & 0.705 & [0.580, 0.818] & Fail\\
+Section/bar variety & 44 & 0.523 & [0.466, 0.591] & Fail\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Dynamics therefore has evidence of sensitivity to amplitude variation, not
+recovery of original MIDI velocities from mastered mixtures. Within R, tempo
+entropy responded individually (superiority 0.917 on 36 observable pairs), but
+that does not override the failed family gate. P was severely limited by
+observability: some section endpoints were available on only one positive
+pair. Reporting perfect ordering on that one pair would be misleading.
+
+All three workflows were subsequently applied exploratorily to the existing
+2,000-recording Human/Suno/HeartMuLa/ACE-Step collection. Pooled AUC was 0.875
+for the spectral baseline, 0.892 with dynamics, and 0.914 with all three
+additions. These historical predictive results do not retrospectively qualify
+R or P as validated phenomenon measurements and are not Native30 results.
+
+\subsection{SC: low-band spatial response and codec controls}
+
+The low-band SC engineering gate used seven MedleyDB recordings held out
+from the earlier 24-recording spatial-control development set. The admitted
+candidate consists only of median absolute interchannel level difference
+and median side-energy fraction in three bands below 6 kHz. The analysis
+uses 44.1 kHz, a 4,096-sample periodic Hann window, hop 1,024, and no
+centring or padding. Higher-band, coherence, phase-increment and IQR
+diagnostics are not additional admitted predictors.
+
+All 196 primary arithmetic checks and 28 eligible codec comparisons passed.
+Across six descriptors and 28 codec/recording pairs, 166 of 168
+nuisance-to-target ratios were at most 0.10; the largest was 0.138683.
+Each descriptor met the frozen requirement that at least 90\% of its
+ratios were at most 0.10 and none exceeded one. Independent replay
+recomputed the checks and ratios, verified 435 raw and three gate products,
+and checked 56 target-waveform hashes without importing the producer.
+
+This threshold was selected after the development analysis, then frozen
+before these seven recordings. Development had shown substantial AAC128
+sensitivity in the 6--12 kHz side-energy descriptor: median codec-to-width
+target ratio 0.621720, with six of 24 comparisons above one. The subsequent
+low-band restriction is therefore prospective relative to the seven-record
+gate, not a completely development-free choice. The seven tracks are
+artist-proxy/track-disjoint from the preceding controls but reuse MedleyDB;
+they are not a new independent AI/Human attribution population.
+
+The result supports response to the specified spatial interventions relative
+to the tested codecs. It does not establish universal codec invariance,
+panning-motion understanding or authorship detection. The later Equal60
+matched SC increments provide the separate predictive test and retain
+negative transfer effects.
+\begingroup\raggedright
+Evidence under \path{artifacts/audio_phenomena_expansion_20260907/}:
+\path{STEREO_LOWBAND_GATE_V2_RESULTS_EN.md},
+\path{preregistration/stereo_lowband_gate_frozen_v2.json},
+\path{results/stereo_lowband_gate_v2/gate_result.json},
+\path{code/audit_stereo_lowband_gate_v2.py}, and
+\path{audit/stereo_lowband_gate_parent_replay_v2.json}.\par
+\endgroup
+
+\subsection{Breath events: recall without usable precision}
+
+The retained breath benchmark used 113 reviewed clips, twenty singer-prefix
+groups, 141 merged high/medium reference events, and 38 clips with no reference
+event. A known archive-identity conflict was excluded before this evaluation;
+the conflicting candidates and exclusion evidence were retained.
+
+Independent maximum-bipartite event matching required predicted duration at
+most two seconds, onset error at most 200 ms, and positive temporal overlap.
+It reproduced 137 true positives, 1,257 false positives, and four false
+negatives. Precision was 0.098278, recall 0.971631, and F1 0.178502. Both
+precision and F1 were below their required 0.70 threshold. All 38 no-event
+clips had at least one detection, contributing 352 false-positive events.
+
+Aggregate frame BA of 0.912017 was a diagnostic on a different unit and could
+not substitute for event precision or F1. The integrity/recomputation audit
+passed, but the measurement gate failed. B was not promoted to AI/Human
+classification on this evidence.
+
+\subsection{Vibrato: differential observability}
+
+The VocalSet development assay opened 43 pairs (86 isolated monophonic
+recordings from ten singers), while 47 evaluation pairs remained unopened.
+Pairing used singer and repertoire/exercise/vowel identity, not time-aligned
+or guaranteed equal-pitch performances. The subset had originally been selected
+for breath annotation and was not a random sample of all VocalSet.
+
+The frozen coarse pYIN workflow used 16-kHz audio, 1,024-sample frames,
+160-sample hops, and a C2--C6 range. It produced a descriptor for 42/43 straight
+recordings (97.67\%) but only 37/43 vibrato recordings (86.05\%). The 11.63
+percentage-point availability gap exceeded the predeclared ten-point limit.
+Among the 37 jointly observable pairs, differences were positive in 33, tied
+in three, and negative in one. This favorable conditional ordering could not
+bypass the observability failure. An independent reconciliation passed 883
+checks; it did not establish continuous-F0 ground-truth fidelity. V remained
+unadmitted, and the reserved pairs were not used to rescue the candidate.
+
+\subsection{Envelope modulation: a near-threshold result remains a failure}
+
+The reserved Q assay used 52 distinct-PCM notes from 26 instrument identities,
+eight fixed interventions, and three views: original, MP3 128 kbit/s, and
+AAC-LC requested at 64 kbit/s, yielding 1,248 measurements. These were reused
+NSynth sample-library notes, not an independent performed-song domain.
+
+The six descriptors measured fast modulation-power fraction and modulation
+entropy in three carrier bands: 250--1,000, 1,000--3,000, and 3,000--7,000 Hz.
+Carrier frequency and modulation frequency are different quantities. The
+entropy intervention compared chirped amplitude modulation with 48-Hz
+amplitude modulation at depth 0.6; the required note-level increase was 0.10,
+with at least 90\% instrument-balanced success.
+
+Of 146 prospective checks, 141 passed and five failed. High-carrier entropy
+success was 88.462\% in all three views, below 90\%. Two additional AAC
+nuisance checks failed for low- and high-carrier entropy. The maximum available
+nuisance ratios remained below one; the failures concerned the required
+fraction at or below 0.1, not catastrophic ratios above one. Passing the
+remaining rate, depth, gain, polarity, and eligibility checks did not qualify
+the full Q family. Selecting only successful descriptors after inspection
+would not inherit the original gate's validity.
+
+The consistency audit checked 6,659 products and recomputed all 146 decisions.
+A separate DSP replay reproduced 1,875,744 spectrum bins with zero numerical
+discrepancy using the same NumPy/SciPy libraries. This was not an
+independent-library replication. Requested codec bitrates were not assumed
+equal to observed stream rates, and the two recipes were not a bitrate-matched
+codec ranking.
+
+\subsection{Bicoherence: a passed controlled measurement gate}
+
+BC measures consistent spectral coupling at the fixed 500/750/1,250-Hz
+triplet. The reserved GuitarSet assay used 90 recordings and completed 1,440
+measurements without failed or skipped cases: 630 float64, 270 float32
+precision controls, and 540 codec-decoded measurements. All 72 scientific
+checks were satisfied after independent numerical/accountability replay.
+
+The closed-coupled minus independent-phase contrast was 0.863033 at $-6$ dB
+and 0.936507 at 0 dB; all ninety recording contrasts were positive. Baseline
+median absolute scalar errors were 0.000299 for MP3 128k and 0.000634 for
+Opus 96k, with respective 95th percentiles 0.001563 and 0.005402. Eligibility
+mask agreement was 1.0 under these baseline codec comparisons. These numbers
+are controlled measurement responses and errors, not classification AUC.
+
+An initial independent audit failed on a raw complex-sum mantissa comparison.
+The corrected auditor made normalized column storage explicitly F-order and
+asserted contiguity, preserving scientific tolerances, thresholds and producer
+products. The original failure, diagnosis, correction authority and successful
+replay were retained. Audit success and scientific gate satisfaction were not
+treated as automatic classifier admission: Native30 transfer required a
+separate fixed-view measurement protocol.
+
+The controlled guitar backgrounds do not establish universal validity on
+mastered mixtures. Arithmetic stereo downmix can cancel content, bicoherence
+is nonlinear, and phase-stable linear tones can produce a high statistic.
+The result supports a limited fixed-statistic measurement capability, not
+proof of a generative mechanism or established AI/Human utility.
+
+\subsection{References to retained experiments}
+
+\begingroup\raggedright
+The D/R/P protocol, paired measurements, and application results are in
+\path{artifacts/dynamics_rhythm_change_detector_extension_20260903/}, including
+\path{reports/REPORT_EN.md} and the retained controlled-change CSVs.
+The remaining reports are under
+\path{artifacts/audio_phenomena_expansion_20260907/}:
+\path{BREATH_BENCHMARK_RESULTS_EN.md},
+\path{VOCALSET_VIBRATO_DEVELOPMENT_RESULTS_EN.md},
+\path{results/modulation_nsynth_gate_report_v1/RESULTS_EN.md}, and
+\path{results/bc_reserved_verified_report_v2/REPORT_EN.md}.
+These summaries point to their frozen implementations, protocols, measurements
+and independent audits; they do not replace the underlying evidence.
+\par\endgroup

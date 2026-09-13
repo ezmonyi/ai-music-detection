@@ -1,0 +1,157 @@
+\section{Additional deterministic measurement definitions}
+\label{sec:additional-measurements}
+
+The additional families are operational descriptors, not interchangeable
+definitions of a generation artifact. Their scalar catalogues are fixed
+separately from quality fields and diagnostic arrays. A missing measurement
+is not a measured absence of the phenomenon. Native30 uses 15 F, six H and
+six SC descriptors in its 54-column seven-family representation; the BC
+extension appends exactly one scalar. Equal60 additionally uses six M
+descriptors. The following definitions describe retained implementations,
+not themselves evidence of classification performance; the completed Native30 results are reported separately below.
+
+\subsection{F: phase residuals and local group-delay dispersion}
+For STFT phase $\phi_{k,t}$, frequency $f_k$, sample rate $f_s$ and hop $h$,
+the phase residual is
+\begin{equation}
+ r_{k,t}=\operatorname{wrap}\left(\phi_{k,t+1}-\phi_{k,t}
+                 -2\pi f_kh/f_s\right).
+\end{equation}
+With valid-pair weights $w_{k,t}=\sqrt{|X_{k,t+1}||X_{k,t}|}$,
+the reported circular variance is
+\begin{equation}
+ V_r=1-\frac{\left|\sum_{(k,t)\in\mathcal V}
+                     w_{k,t}e^{\mathrm{i}r_{k,t}}\right|}
+                    {\sum_{(k,t)\in\mathcal V}w_{k,t}}.
+\end{equation}
+Aggregation is joint across valid time--frequency pairs, not a mean of
+independent per-bin circular variances. The expected rotation has the
+forward-FFT sign convention used by the implementation.
+
+At 16 kHz the window is 1,024 samples (64 ms), with a 256-sample hop,
+periodic Hann weighting, no STFT boundary extension and no tail padding.
+The module subtracts the waveform mean. Its absolute waveform RMS floor
+is $-100$ dBFS. Bin magnitude must exceed both the frame maximum minus
+40 dB and the excerpt maximum minus 70 dB; frequencies are restricted to
+50 Hz through 95\% of Nyquist. Active frames use a separate relative
+frame-power rule: the peak minus 50 dB when peak-to-20th-percentile spread
+is below 12 dB, otherwise the peak minus 45 dB.
+
+The implemented local delay proxy is
+\begin{equation}
+ \tau_{k,t}=-\frac{\operatorname{wrap}(\phi_{k+1,t}-\phi_{k,t})}
+                         {2\pi/N}\frac{1000}{f_s}\quad\text{ms}.
+\end{equation}
+It is a wrapped adjacent-bin phase-difference proxy, not an unwrapped
+physical propagation-delay estimator. Reliable adjacent bins are required.
+Within each frame, the median of within-band delay IQRs and the IQR of
+band-median delays are computed. The bands at 16 kHz are 50--500,
+500--2,000, 2,000--4,000 and 4,000--7,600 Hz. A band needs at least three
+valid delay values; cross-band dispersion needs two band centres.
+
+All-frame, attack, sustain and decay summaries are retained. Regions are
+assigned from the slope of a three-frame-smoothed log-energy sequence,
+using its active-frame median and a threshold of
+$\max(0.5,2.5\,\mathrm{MAD})$. These are energy-direction regions, not
+annotated instrument envelopes. The all-frame region requires eight active
+frames and other regions require six; circular variance additionally
+requires 16 valid pairs. Delay summaries need at least
+$\max(3,\lfloor n_{\mathrm{region}}/4\rfloor)$ valid frame values.
+Three decay-minus-sustain contrasts complete the 15 features.
+
+\subsection{H and M: chroma paths and bounded-lag recurrence}
+The chroma implementation uses a 4,096-point Hann STFT at 16 kHz, a
+1,024-sample hop, no centring, power input and fixed tuning zero. Frames
+are active above 1\% of the maximum spectral RMS. L1-normalized chroma
+must have normalized entropy at most 0.92 to be informative. One-second
+blocks average informative chroma frames and are then L2-normalized;
+each block needs at least two informative frames and at least 25\% of the
+rounded expected frame count.
+
+H requires at least eight seconds and the implementation's block/path
+coverage checks. Its six descriptors are normalized aggregate pitch-class
+entropy, dominant-token entropy, median and IQR of adjacent-block cosine
+distance, median circular dominant-token step, and the rate of large steps.
+For dominant pitch-class tokens $a,b\in\{0,\ldots,11\}$ the step is
+$\min(|a-b|,12-|a-b|)/6$; a large step is at least 0.5. Only adjacent
+eligible blocks are compared: a gap is not bridged to create a transition.
+These quantities do not constitute chord transcription or harmonic quality.
+
+M requires at least 45 seconds. Four-second chroma patterns are compared
+at integer lags from eight seconds through
+$\min(60,T-4)$, allowing all 12 pitch-class rotations. The implementation
+does not build a full self-similarity matrix. For each lag it retains the
+90th-percentile similarity and the fraction at or above 0.88. It selects
+an early sufficiently supported lag within 0.01 of the global peak, with
+the specified density safeguard. The six outputs describe peak similarity,
+density, lag contrast, selected lag, transposition and returning-pattern
+count. They are not independent motif events. Native30 cannot meet the
+45-second requirement, so M is not a Native30 primary family.
+
+\subsection{SC: retained stereo descriptors}
+The primary SC catalogue selects three bands, 80--500, 500--2,000 and
+2,000--6,000 Hz, with two descriptors per band: median absolute
+interchannel level difference and median side-energy fraction. For complex
+band coefficients $L$ and $R$, mid and side are $(L+R)/2$ and $(L-R)/2$;
+the latter descriptor is
+\begin{equation}
+ q_{\mathrm{side}}=
+ \frac{\sum_k |(L_k-R_k)/2|^2}
+ {\sum_k |(L_k+R_k)/2|^2+\sum_k |(L_k-R_k)/2|^2}.
+\end{equation}
+This fraction lies in $[0,1]$ on eligible frames. Silent bands are masked;
+interchannel level difference additionally requires sufficient energy in
+both channels. Full coherence, interchannel-phase and five-band arrays
+remain diagnostic evidence, not extra primary predictors. These measures
+may capture panning and mastering conventions; they are not intrinsic
+authorship signatures.
+
+\subsection{BC: fixed-triplet squared bicoherence}
+The fixed target is $(f_1,f_2,f_1+f_2)=(500,750,1250)$ Hz. Within one
+four-second pool, let $A_k=X_k(32)X_k(48)$ and $C_k=X_k(80)$. Then
+\begin{equation}
+ b^2=\frac{|\sum_k A_k\overline{C_k}|^2}
+                 {(\sum_k|A_k|^2)(\sum_k|C_k|^2)}.
+\end{equation}
+There are 247 STFT frames per pool: 1,024-point periodic Hann, hop 256,
+per-frame mean subtraction, and FFT normalization by the window sum.
+No frame crosses a pool boundary. Each target bin must have pooled energy
+at least $10^{-6}$ of the total non-DC coefficient energy. The recording
+scalar is the median of eligible pool values, or null if neither pool is
+eligible. Overlapping STFT frames are not independent observations.
+
+For the frozen Native30 transfer view, decoded stereo FLOAT samples are
+promoted to float64 and arithmetically averaged. The entire 30 seconds is
+resampled from 44,100 to 16,000 Hz using a 160/441 polyphase ratio,
+Kaiser parameter 5 and constant-zero padding. Only then is the centre
+eight seconds selected, samples $[176000,304000)$ of the 480,000-sample
+view, followed by fixed gain 0.25. The two pools therefore cover seconds
+$[11,15)$ and $[15,19)$ of the Native30 input. There is no global DC
+subtraction, channel selection, normalization or fallback for cancellation.
+This view intentionally differs from the F/H mono loader. Full 228-cell
+arrays support replay, but the fixed target is the sole added predictor.
+
+High bicoherence need not imply nonlinear generation: stable linear tones
+can also yield high values, and this statistic is amplitude-weighted rather
+than phase-only. A controlled external gate therefore motivates a fixed
+measurement transfer, not a claim about an AI generation mechanism.
+
+\subsection{Implementation references}
+\begingroup\raggedright
+All paths below are relative to
+\path{artifacts/audio_phenomena_expansion_20260907/} in the retained project.
+F: \path{code/phase_features.py}.
+H/M: \path{code/musical_features.py}.
+Stereo measurements: \path{code/stereo_candidate_v1.py}; the Native30
+catalogue and joins are bound by
+\path{code/prepare_native30_evaluation_inputs_v3.py}.
+BC: \path{code/bicoherence_audio_v1.py},
+\path{code/bicoherence_primitive_v2.py},
+\path{code/bicoherence_scalar_v1.py} and
+\path{code/run_native30_bc_v2.py}.
+The prospective transfer specification is
+\path{BC_NATIVE30_INTEGRATION_DRAFT_EN.md}; its historical conditional
+language is distinct from subsequent measurement authorization and results.
+Scientific thresholds and feature definitions are not changed by this
+editorial integration.\par
+\endgroup

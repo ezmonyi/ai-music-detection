@@ -1,0 +1,119 @@
+\section{Later September 7 checkpoint: exact-10-second results and uncertainty}
+\label{sec:later-phenomena-v2}
+
+This section supersedes the earlier checkpoint's pending-status statements
+about exact-10-second evaluation and the VocalSet development assay. Earlier
+experiments, negative results, protocols and frozen artifacts are preserved.
+It does not announce completion of the full exact-60-second seven-family study.
+
+\subsection{The complete exact-10-second candidate lattice}
+The evaluation uses 8,361 development recordings: 2,161 Human recordings from
+seven sources and 6,200 AI recordings from thirteen sources. It evaluates all
+31 nonempty subsets of S/D/R/F/H at five training-group caps. P and M are not
+made artificially observable by padding short clips. No historical locked or
+pilot records enter model fitting. The independent audit passed all 21,380
+checks, including 13,673,325 primary predictions and 211,575 metric cells;
+missingness diagnostics were audited separately. All five raw prediction and
+fold-registry files were copied locally, totaling 5,569,808,264 bytes, and their
+full-file hashes matched the remote originals.
+
+Here $J$ is the equal mean of the Human-held-out and AI-held-out
+source-macro AUCs; it is not accuracy. Mean BA is the corresponding equal mean
+of balanced accuracies at the frozen 0.5 threshold. Within this development
+grid S+D+H at the all cap has $J=0.660124$ and mean BA=0.616698, compared with
+S+D at 0.632004/0.596233. This descriptive maximum is not a validated final
+pipeline selection. Every candidate remains visible in the following table.
+
+\input{../../audio_phenomena_expansion_20260907/results/presentation_sdrfh_10s_v2/results_sdrfh10_en}
+
+\subsection{Conditional gain is not source-composition robustness}
+The uncertainty protocol was frozen after point estimates were available and
+before resampling. It therefore is a post-point-estimate uncertainty analysis,
+not a prospectively chosen discovery test. The previously established S+D
+baseline is compared with +F, +H and +F+H at the all cap, with fitted models,
+folds and thresholds unchanged. No multiplicity adjustment for the full
+candidate lattice is claimed.
+
+The 1,539 Human and 1,300 AI group sets overlap in 500 group identifiers,
+giving 2,339 global groups. A shared 1,000-draw global-group bootstrap preserves
+these cross-class/source dependencies. Separate 10,000-draw crossed-source
+resampling varies the weights of the seven observed Human and thirteen
+observed AI sources. It assesses observed-source composition sensitivity;
+its percentile ranges are not future-generator confidence guarantees.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Exact10 additions to S+D: conditional uncertainty and separate source sensitivity.}
+\label{tab:exact10-uncertainty-v2}
+\begin{tabular}{lrrr}
+\toprule
+Addition & Point $\Delta J$ & Group 95\% CI & Source 95\% range \\
+\midrule
+F & $-0.007614$ & [$-0.019946$, 0.003516] & [$-0.060936$, 0.033818] \\
+H & 0.028120 & [0.018631, 0.036721] & [$-0.006843$, 0.063114] \\
+F+H & 0.024647 & [0.010972, 0.038292] & [$-0.022888$, 0.069376] \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+H and F+H have positive conditional intervals, but every source-composition
+range crosses zero. Thus H supplies useful conditional information in this
+corpus without establishing robust transfer across source mixtures. Four of
+1,000 group draws contain undefined class-degenerate pair cells (104 recorded
+undefined pair-metric rows); these are retained in the accounting, not replaced
+with zeros. All 1,000 macro-delta draws remain finite. These intervals condition
+on fitted models and do not include training-refit variability.
+
+Independent reconstruction reproduced the saved point metrics to within
+$2.23\times10^{-16}$ and paired deltas exactly. A separate root reconciliation
+checked ten declared output hashes and 84 percentile/moment summaries with
+maximum absolute discrepancy below $3.5\times10^{-18}$. Opposite H increments
+between the 10- and 30-second studies do not identify a causal duration effect:
+the cohorts and source compositions differ.
+
+\input{../../audio_phenomena_expansion_20260907/latex/vocalset_presence_development_en}
+
+\subsection{Status of the matched native-60-second extension}
+All 1,604 development input views have been materialized: 1,208 Human and
+396 Suno recordings, partitioned into 67 inference shards. The 33,953,613,152
+output bytes represent exact 60-second, 44.1-kHz stereo FLOAT WAV views of
+the native intervals already used by F/H/M. Full-file materialization auditing
+is a prerequisite to the separate RTX~5090 inference batch runner. Six-source
+probe inference and unchanged old-family extraction have already passed strict
+audio-frame, content-hash, beat, structure and spectrogram checks.
+
+The planned seven-family evaluation retains all 1,604 rows for every one of
+127 nonempty S/D/R/P/F/H/M subsets at caps 25, 50, 100, 200 and all. It also
+reports 105 matched old-family-plus-new-family comparisons, including fifteen
+M-only additions. Only Suno is a development AI source at this duration; source
+holdout transfer and $J$ are therefore not reported for this study. Ordinary
+group-CV performance must not be substituted for unseen-generator evidence.
+No full seven-family numerical result is claimed at this checkpoint.
+
+\subsection{Reproducibility references for this checkpoint}
+All paths below are relative to
+\path{artifacts/audio_phenomena_expansion_20260907/}. The full exact10 table,
+figure, numerical CSV and presentation receipt are in
+\path{results/presentation_sdrfh_10s_v2/}; raw scores are in
+\path{results/evaluation_sdrfh_10s_v2/}, with audit
+\path{audit/sdrfh_10s_v2_audit_report.json} and local-copy verification
+\path{audit/local_10s_raw_sync_20260907.json}.
+
+Uncertainty code is \path{code/bootstrap_sdrfh10_uncertainty.py}, using
+the unchanged hash-pinned arithmetic in \path{code/bootstrap_matched_deltas.py}.
+The protocol is \path{UNCERTAINTY_SDRFH_10S_PROTOCOL_EN.md}; draws, group/source
+multiplicities, point reconstruction and result hashes are in
+\path{results/uncertainty_sdrfh10_v1/}. Independent summary reconciliation is
+\path{audit/uncertainty_sdrfh10_root_summary_audit.json}.
+
+Exact60 preparation and inference are implemented in
+\path{code/materialize_equal60_inputs_v2.py},
+\path{code/audit_equal60_materialization.py},
+\path{code/run_equal60_inference_batches.py} and
+\path{code/verify_extract_equal60.py}. The new development-only evaluation
+interface is \path{code/prepare_evaluation_inputs_v4.py} with
+\path{code/evaluate_new_phenomena_v4.py}. Its input audit graph and frozen
+authorization gate must pass before real scoring. Bulk inputs/stems remain on
+the documented task-specific NFS-data root; compact manifests and receipts
+are preserved locally. This storage distinction is explicit, not a claim that
+every bulk waveform is mirrored onto the laptop.

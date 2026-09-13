@@ -1,0 +1,55 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=25mm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,longtable,tabularx,array}
+\usepackage{graphicx,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,
+pdftitle={Detection Capability and Generalization Boundaries of Interpretable Audio Phenomena}}
+\setlength{\emergencystretch}{3em}
+\title{Detection Capability and Generalization Boundaries\\of Interpretable Audio Phenomena\\
+\large A Study of AI-Generated and Human Music}
+\author{}
+\date{Working update: 12 September 2026}
+\begin{document}
+\maketitle
+\noindent\textbf{Document status.} This preserved working version adds the completed
+Native30 seven-family results to the earlier empirical chapters. The BC and YuE2
+extensions, final abstract, final synthesis, and complete publication bindings
+remain unfinished. A schedule or running process is not reported as a completed
+experiment. Earlier working versions are preserved separately.
+\tableofcontents
+\clearpage
+\input{final_thesis_framing_en.tex}
+\input{final_thesis_related_work_en.tex}
+\input{final_thesis_data_en.tex}
+\input{final_thesis_evaluation_principles_en.tex}
+\input{final_thesis_spectral_history_en.tex}
+\input{final_thesis_sdrp_methods_en.tex}
+\input{final_thesis_additional_measurement_methods_en.tex}
+\input{final_thesis_external_validation_en.tex}
+\input{final_thesis_completed_transfer_results_en.tex}
+\input{native30_seven_family_results_20260912_en.tex}
+\section{Interim synthesis and remaining limitations}
+The completed experiments show that interpretable measurements can provide
+label-associated information without uniquely identifying authorship. The
+Native30 results reinforce a central generalization limit: increasing feature
+count or training quantity does not guarantee better held-generator decisions.
+External measurement validation, source-held-out classification, and faithful
+reproduction are separate requirements. No descriptor family should be accepted
+as a causal AI signature merely because it improves one fitted classifier.
+
+Native-channel and duration eligibility select particular populations. Source
+labels incompletely represent genre, language, culture, instrumentation, editing,
+codec, and mastering practice. Pretrained separators and music-understanding
+front ends add their own domain sensitivity. Human-produced music may use MIDI,
+synthesis, and extensive processing. These detectors should not be used as sole
+evidence to penalize a musician or certify a recording.
+
+The final synthesis must incorporate the pending BC and YuE2 evaluations rather
+than extrapolate from their intermediate measurements. The YuE2 extension has
+398 eligible development recordings and 100 separately retained locked-test
+recordings; two shorter originals are excluded from Native30 rather than padded.
+Shared prompt dependencies must remain excluded across training and evaluation.
+\bibliographystyle{plain}
+\bibliography{final_thesis_references}
+\input{thesis_reproducibility_20260912_en.tex}
+\end{document}

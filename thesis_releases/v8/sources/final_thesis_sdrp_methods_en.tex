@@ -1,0 +1,138 @@
+\section{Operational definitions of the original four families}
+\label{sec:sdrp-methods}
+
+The names S, D, R and P denote fixed measurement families, not four
+independently validated authorship mechanisms. The expanded extractor uses
+Demucs vocal estimates for S, the sum of bass/drums/other estimates for D,
+retained beat/downbeat estimates for R, and retained All-In-One segment
+boundaries combined with downbeats for P. Neural estimates are inputs to
+deterministic measurements; they are not ground-truth events.
+
+The retained neural front ends are Hybrid Transformer Demucs
+\cite{rouard2022}, Beat This! \cite{foscarin2024}, and All-In-One metrical
+and functional structure analysis \cite{kimnam2023}. The actual checkpoint
+manifest resolves \texttt{htdemucs} to signature \texttt{955717e8},
+Beat This! to \texttt{final0}, and \texttt{harmonix-all} to the ordered
+eight-model ensemble \texttt{harmonix-fold0} through \texttt{harmonix-fold7}.
+Thus the separator citation is for the Hybrid Transformer version, not
+merely its earlier hybrid predecessor; \texttt{htdemucs\_ft} is not silently
+substituted. The manifest at
+\path{artifacts/source_diversity_expansion_20260905/results/inference_checkpoint_manifest.json}
+retains the resolved file hashes. Native30 binds that manifest in its
+inference contract. Published front-end benchmark scores do not establish
+the accuracy of their event estimates on this project's generated music.
+
+\subsection{S: bandwidth-controlled vocal spectral statistics}
+The expanded implementation uses mono float64 vocal estimates with DC
+removal, 44,100 Hz, 4,096-sample frames and hop 1,024. Its explicit
+\texttt{numpy.hanning} window is symmetric; this differs from the periodic
+Hann used in several other modules and must not be silently interchanged
+when reproducing results. Power receives an epsilon of $10^{-14}$ before
+the frozen external frequency-response correction. Active frames exceed
+the larger of the 30th-percentile RMS level and the maximum minus 35 dB;
+if fewer than 16 qualify, the strongest available frames are selected up
+to 16. Consequently, frame selection alone does not certify audible vocals.
+A separately retained vocal-activity sensitivity requires vocal-to-mix RMS
+at least $-18$ dB, vocal RMS at least $-60$ dBFS and 16 active frames.
+
+S8 denotes a common-band representation, not eight descriptors: it has
+15 values and principally uses the 5--7.5 kHz interval, with lower-frequency
+reference bands. S16 has 16 values, including a 12--20 kHz air-energy ratio,
+and is a separate sensitivity representation. Original native sample-rate
+eligibility is at least 16 kHz for S8 and 40 kHz for S16; resampling cannot
+restore absent source bandwidth. The Native30 primary S family retains S8.
+
+For corrected frame power $P_{k,t}$, high-band flatness is geometric mean
+divided by arithmetic mean; normalized spectral entropy is
+$-\sum_k p_{k,t}\log p_{k,t}/\log K$; crest is
+the maximum-to-mean power ratio expressed in dB, with implementation
+epsilons retained. Energy ratios compare high-band power with 1--5 kHz
+body power and sibilance-band power with 0.3--5 kHz power. These frame
+statistics are summarized by medians. Spectral slopes fit mean log power
+against $\log_2(f)$ and therefore have units dB/octave.
+
+The remaining descriptors capture spectral-envelope residual peaks and
+periodicity, adjacent active-frame log-spectral cosine similarity and its
+complement, high-band power standard deviation, a nominal 4--12 Hz
+modulation share, sibilance contrast and burst rate. Residual peaks use
+height 0.35, prominence 0.08 and minimum two-bin spacing after the fixed
+lower-envelope normalization. Contrast is the 90th percentile minus median
+of the sibilance ratio. Bursts exceed median plus 1.5 MAD; their rising-edge
+count is divided by the selected-frame duration.
+
+An important implementation limitation is that active frames are selected
+\emph{before} adjacent-frame and modulation calculations. The latter use
+the nominal hop-derived frame rate on this compressed active-frame sequence.
+Thus, when activity contains gaps, adjacency need not mean neighbouring
+waveform frames, and nominal modulation Hz and burst rates are not exact
+continuous-time event measurements. These frozen descriptors are retained
+for reproducibility, not relabelled as validated physical modulation rates.
+The separate Q external assay must not be conflated with these S descriptors.
+
+\subsection{D: event-conditioned accompaniment amplitude dispersion}
+The accompaniment sum is converted to mono float32. A 4,096-point Hann
+STFT with hop 512 and no boundary/tail padding supplies 30--8,000 Hz power.
+Positive differences of $\log(1+10^6P)$, averaged across selected bins,
+form the onset-strength sequence. Peaks must exceed median plus one MAD
+and be at least approximately 80 ms apart.
+
+For each candidate, the median power profile over 20--120 ms after the
+STFT peak time is formed. Up to the 16 strongest local spectral maxima
+contribute summed energy, expressed as $10\log_{10}(E+10^{-12})$.
+With at least eight valid event amplitudes, D reports the 90th-minus-10th
+percentile span, IQR, and median absolute adjacent-event change, all on
+this logarithmic amplitude scale. Otherwise the values remain missing.
+This is pseudo-velocity dispersion of an estimated accompaniment mixture,
+not instrument-separated MIDI velocity or proof of MIDI control. Different
+instruments, overlapping attacks, compression and separation errors can
+alter the event distribution.
+
+\subsection{R: beat-interval and local-tempo variation}
+R requires at least 16 beat estimates and at least 15 positive finite
+inter-beat intervals (IBIs). Despite its historical name \texttt{ibi\_cv},
+the statistic is $\mathrm{IQR}(\mathrm{IBI})/\mathrm{median}(\mathrm{IBI})$,
+\emph{not} the conventional standard-deviation coefficient of variation.
+Instantaneous tempo is $60/\mathrm{IBI}$; values outside 30--300 BPM are
+removed. With at least 14 remaining values, \texttt{tempo\_tv} is median
+absolute adjacent tempo change divided by median tempo. Entropy uses
+five-BPM histogram bins from 30 to 300 and normalization by the logarithm
+of the full bin count, not only occupied bins.
+
+Removing invalid intervals/tempos can create adjacency across an excluded
+value; this retained statistic is a robust sequence descriptor rather than
+an exact time-integrated tempo derivative. Empty valid beat output and
+missing or malformed inference output have different provenance states.
+Neither may be interpreted as an observed perfectly constant rhythm.
+
+\subsection{P: segment-duration and downbeat-span proxies}
+All-In-One segment starts and the final segment end are clipped to the
+view, deduplicated and cleaned with a minimum one-second separation;
+view endpoints zero and duration are included. At least three positive
+segment durations are required for median duration, IQR/median and
+normalized two-second-bin duration entropy. Histogram support is at least
+32 seconds and expands for longer segments. The historical
+\texttt{section\_duration\_cv} name again denotes IQR/median.
+
+With at least four downbeats and four boundaries, boundaries are snapped
+to nearest downbeat indices and deduplicated. Three positive index spans
+are needed for median span, IQR/median and the fraction unequal to the
+modal span; ties select the smallest modal span. These are estimated
+downbeat spans, not annotated phrase lengths. Boundary snapping and
+endpoint truncation may change them substantially, especially in short
+views. The failed external P gate and missingness are reported separately.
+
+\subsection{Version and reproduction boundaries}
+\begingroup\raggedright
+The definitions above follow
+\path{artifacts/source_diversity_expansion_20260905/code/expanded_feature_definitions.py}
+and \path{code/extract_expanded_four_family.py} in that same directory.
+Native30 binds this backend through
+\path{artifacts/audio_phenomena_expansion_20260907/code/extract_native30_sdrp_operational_v1.py}
+and its frozen dependencies. The older decoder permits limited short-tail
+padding; this must not be described as a universal no-padding guarantee.
+Native30 separately verifies exact physical input and inference-output
+support before using the backend. Historical pilots, S16 sensitivities
+and earlier band-vector models are distinct representations, as indicated
+in their respective result tables. No definition or threshold was changed
+while writing this section.\par
+\endgroup

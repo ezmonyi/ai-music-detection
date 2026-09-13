@@ -1,0 +1,89 @@
+\clearpage
+\section{Audio preservation and public delivery audit}
+\label{sec:delivery-audit}
+This appendix updates delivery status without changing experimental populations,
+feature definitions, fitted models, thresholds or numerical findings. Earlier
+pending-status statements in preserved artifacts describe their own checkpoints.
+Publication, historical provenance and experimental validity are distinct claims.
+
+\subsection{Fixed public snapshot}
+The public archive is
+\href{https://huggingface.co/datasets/EZMONYI/music-ai-human-test-audio}{EZMONYI/music-ai-human-test-audio}.
+At the fixed revision
+\begin{center}\small\texttt{b5231d23713673e90c65e70767485ef5aaf70a56}\end{center}
+it contains
+42,011 direct audio/MIDI paths and 187,396,624,629 logical bytes. Archive members
+are excluded. These are file versions, not independent songs: originals,
+standardized excerpts and separated stems may represent the same recording.
+The subsequent dataset-card revision changes documentation, not audio.
+
+Ten historical stem supplements passed anonymous fixed-revision acceptance.
+The tests compare the exact public manifest and notice and every remote audio
+hash and size; they do not redownload every waveform. Source cards are checked
+where required by the source-specific verifier.
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Accepted supplement & Unique objects \\
+\midrule
+ACE-Step/HeartMuLa vocals & 1,958 \\
+AIME generated-music vocals & 5,000 \\
+MAESTRO stems & 2,400 \\
+MagnaTagATune stems & 2,000 \\
+DiffRhythm pilot stems & 400 \\
+Ishizaka stems & 312 \\
+Additional Suno stems & 1,300 \\
+Additional ACE-Step/HeartMuLa stems & 600 \\
+Additional Udio stems & 2,000 \\
+Per-recording-license-screened FMA stems & 452 \\
+\midrule
+Total & 16,422 \\
+\bottomrule
+\end{tabular}
+\end{center}
+The total is 47,275,922,568 bytes. Pilot publication does not promote pilot
+observations to primary evaluation data. FMA stems retain individual artist,
+title and exact license URL; there is no blanket archive license.
+
+\subsection{Coverage boundaries and local preservation}
+Of 31,378 historical-hash-verified stem objects, 16,422 match the public snapshot
+and 14,956 do not (50,814,442,064 unmatched bytes). A separate current-only
+inventory contains 27,174 objects: two match and 27,172 do not
+(68,652,547,568 unmatched bytes). These scopes overlap and must not be summed.
+Current file hashes cannot retroactively establish which bytes an earlier
+experiment read. There are also 126 unanchored historical references; these are
+not established missing-file findings. Snapshot matching does not inspect
+archive contents or private backups and does not grant redistribution rights.
+
+The frozen 14,244-object processed-input scope has preservation coverage through
+966 older public-snapshot matches, 8,794 accepted public supplement objects and
+4,484 locally archived rights-held objects. The local TAR is 9,217,576,960 bytes;
+all 4,484 audio members passed streaming SHA-256 verification. It is not publicly
+released. This closes that preservation scope only, not whole-project delivery.
+Other unresolved source licenses and historical input scopes remain open.
+
+\subsection{Code, output and audit references}
+\begingroup\raggedright
+The code repository is
+\href{https://github.com/ezmonyi/ai-music-detection}{ezmonyi/ai-music-detection}.
+Within its \texttt{datasets/} directory, the versioned evidence includes
+\path{public_audio_snapshot_20260913_v3},
+\path{accepted_historical_stem_coverage_v2},
+\path{stem_public_snapshot_match_v3}, and
+\path{processed_delivery_reconciliation_v2}.
+These retain manifest digests, publication revisions, exact object matches and
+limitations; source-specific publication directories retain acceptance receipts.
+The corresponding scripts are under
+\path{current/yue2_500_extension_20260911/}, including
+\path{snapshot_public_audio_inventory_v1.py},
+\path{reconcile_accepted_historical_stems_v2.py}, and
+\path{match_stems_public_snapshot_v3.py}.
+
+The local report root is
+\path{/Users/yi/Documents/report/music_ai_detection_20260912/}.
+It preserves report versions, receipts, intermediate analysis and the private
+archive; \texttt{START\_HERE\_EN.md} is its navigation entry point.
+Preserving an artifact is not proof that its scientific claim is valid. The
+evaluation limitations discussed in the main text remain unchanged.
+\par\endgroup

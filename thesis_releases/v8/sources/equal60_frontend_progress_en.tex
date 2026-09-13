@@ -1,0 +1,40 @@
+\subsection{Matched-context preparation for the old and new phenomena}
+
+The existing F/H/M60 result cannot isolate an increment over the old 30-second
+pipeline. A separate extension therefore fixes the same native 60-second
+interval for S/D/R/P and F/H/M. The cohort contains 1,604 development recordings
+(1,208 Human and 396 Suno); locked and pilot roles are excluded. Only one
+development AI source is long enough, so this experiment will remain a
+descriptive group-CV comparison, not an unseen-generator claim.
+
+The existing 30-second stems were not padded or reused as 60-second evidence.
+Six hash-ranked, one-per-source probe recordings were read from the frozen
+native start/end samples, checked against the F/H/M input-audit hashes, and
+resampled to 44.1-kHz stereo FLOAT WAV. There was no gain normalization, limiter
+or short-input padding. Mono channels were duplicated. The different feature
+families retain their defined front ends; the controlled quantity is exact
+native content, not identical representations.
+
+The existing ten checkpoints and three inference source files passed SHA-256
+verification. All-In-One/htdemucs and Beat This ran only on RTX~5090. A local
+scratch launch failed before inference because the remote user lacked write
+permission to \path{/data}; the unchanged direct-NFS launcher completed instead,
+without changing permissions, model parameters or source audio. All six probe
+inputs and 24 stems were strictly verified as 2,646,000-frame stereo files;
+the legacy feature readers' one-percent padding tolerance was not used as an
+admission rule. Structure input paths, full 60-second spans, spectrogram shapes,
+beat files and all hashes were checked before CPU feature extraction.
+
+S, D and R were observable on all six probes; P was observable on five. The
+remaining P value was retained as unavailable. No classifier was fitted on this
+smoke test. Forty-eight input/output media and analysis files, totaling
+427,695,860 bytes, were copied locally and verified against the remote audit.
+Full development-input materialization was still running at this checkpoint;
+no complete 127-combination-by-five-cap result is claimed.
+
+Code references are \path{code/materialize_equal60_inputs_v2.py} and
+\path{code/verify_extract_equal60.py}; the original probe materializer remains
+preserved. Output references are \path{results/equal60_probe_validation_v1/},
+\path{results/equal60_probe_artifacts_v1/}, and
+\path{audit/equal60_probe_local_copy.json}. These paths are relative to
+\path{artifacts/audio_phenomena_expansion_20260907/}.

@@ -1,0 +1,115 @@
+\section{Frozen-model transfer to Mureka500}
+\label{sec:mureka-frozen-transfer}
+
+The 500 source-labelled Mureka v9 recordings were evaluated using the
+previously stored Human/Suno development models, with no fitting, calibration,
+threshold adjustment or source-dependent preprocessing. The same 500 native
+center-60-second intervals were used for every candidate. All 127 nonempty
+S/D/R/P/F/H/M subsets, five training-group caps and five original fold models
+produced 3,175 model instances and 1,587,500 prediction rows. These rows are
+dependent applications to 500 songs, not independent audio trials.
+
+The independent numerical auditor reconstructed every score using the saved
+training medians, missing indicators, scales and coefficients. All decisions
+and all 3,175 sensitivity summaries agreed. Maximum score discrepancy was
+$1.9984\times10^{-15}$; the nearest independent score was
+$2.5442\times10^{-7}$ from the fixed threshold of 0.5. No missing-feature row
+was excluded: 15 recordings lack all six P descriptors and one lacks all six
+M descriptors. Their original training-derived missing-value treatment remains
+unchanged. Raw linear scores are not calibrated probabilities.
+
+\subsection{All-cap comparison}
+Here ``all'' means all available training groups within each original fold,
+not training a new model on all 1,604 development recordings. The five stored
+training folds contain 1,250--1,328 rows. Each model is applied to all 500 new
+recordings. Table~\ref{tab:mureka-main} reports mean sensitivity across the
+five stored models. Their ranges are descriptive, not confidence intervals.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lrrr}
+\hline
+Feature set & Sensitivity (\%) & FNR (\%) & Change (pp)\\
+\hline
+S/D/R/P & 76.76 & 23.24 & ---\\
+S/D/R/P + F & 63.76 & 36.24 & $-13.00$\\
+S/D/R/P + H & 80.08 & 19.92 & $+3.32$\\
+S/D/R/P + M & 83.28 & 16.72 & $+6.52$\\
+S/D/R/P/F/H/M & 79.36 & 20.64 & $+2.60$\\
+\hline
+\end{tabular}
+\caption{Frozen transfer to Mureka500 at the original all-cap operating point.
+Each percentage is the mean over five dependent model applications, each with
+denominator 500. Change is relative to S/D/R/P.}
+\label{tab:mureka-main}
+\end{table}
+
+The baseline fold sensitivities range from 66.20 to 86.40\%; the corresponding
+ranges are 48.00--74.20\% with F, 72.20--86.60\% with H, 73.40--90.20\%
+with M, and 71.20--87.40\% with all seven. F decreases sensitivity in every
+all-cap fold comparison, while M increases it in every such comparison.
+This is a descriptive paired result, not a significance test or selection of
+a universally superior candidate.
+
+\subsection{Training-size and single-family observations}
+All-cap single-family mean sensitivities are S 89.24\%, D 48.32\%, R 91.00\%,
+P 67.12\%, F 64.20\%, H 80.56\% and M 82.12\%. High AI sensitivity alone
+does not establish Human specificity. The fixed test denominator remains 500
+under every training cap; a cap is an original per-source training-group budget,
+not that number of test songs or necessarily that number of training songs.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabular}{lrrrrr}
+\hline
+Feature set & 25 & 50 & 100 & 200 & All\\
+\hline
+S/D/R/P & 82.56 & 90.48 & 75.04 & 84.76 & 76.76\\
+S/D/R/P + F & 56.76 & 83.24 & 59.12 & 78.00 & 63.76\\
+S/D/R/P + H & 79.16 & 89.56 & 77.20 & 86.56 & 80.08\\
+S/D/R/P + M & 83.32 & 90.80 & 78.56 & 88.84 & 83.28\\
+All seven & 60.76 & 89.40 & 74.76 & 87.04 & 79.36\\
+\hline
+\end{tabular}
+\caption{Mean Mureka sensitivity (\%) by original training-group cap. Repeated
+models share the same external songs; these values are not independent trials.}
+\label{tab:mureka-quantity}
+\end{table}
+
+Transfer sensitivity is not monotonic in training cap. F lowers the baseline
+cap-mean sensitivity at all five caps; M raises it at all five caps. Selecting
+a cap using these external results would consume this cohort for development
+and require new external confirmation. No such selection is made here.
+
+\subsection{Development gains are not generator-independent guarantees}
+On the original source-pair/fold development evaluation, adding F to S/D/R/P
+increased mean AUC from 0.906513 to 0.936725 and balanced accuracy from
+0.843986 to 0.870106. On Mureka, the corresponding mean sensitivity instead
+fell by 13.00 percentage points. The endpoints and populations differ; this
+is not an AUC-to-sensitivity numerical delta. Rather, it demonstrates that
+the development gain did not imply improved external-generator recall.
+
+These observations are consistent with generator/source dependence but do not
+identify its acoustic mechanism. Codec, separation, production style and genre
+remain plausible confounds. The conditional M gain merits further testing,
+but an AI-only cohort cannot supply Human false-positive rates. Therefore no
+standalone Mureka balanced accuracy, ROC AUC, specificity or overall detection
+accuracy is reported. Saraga103 preparation is ongoing; its external Human
+false-positive evaluation is not yet available. Joint two-class claims require
+a separately specified source-weighting protocol. Historical test consumption
+and possible performance, excerpt and pretraining overlap remain explicit.
+
+\subsection{Code and artifact references}
+The frozen transfer contract is
+\path{preregistration/mureka60_frozen_v4_transfer_frozen_v1.json}; parent
+pre-score review is \path{audit/mureka60_transfer_draft_parent_review_v1.json}.
+Code is \path{code/score_mureka60_frozen_v4.py} and the separately implemented
+\path{code/audit_mureka60_transfer_v1.py}. The passed audit is
+\path{audit/mureka60_frozen_v4_transfer_numerical_audit_v1.json}, SHA256
+\path{47b567d8e126cbcbefa51794b6f2b0af0b462091d719bce1a8fa1fc4ea45da97}.
+All per-model metrics and raw predictions are under
+\path{results/mureka60_frozen_v4_transfer_results_v1/}; its publication manifest
+SHA256 is \path{4c620b612c9ba79042a59799b3aa534bec3a2f993d6dd0e41b6b091181fa7274}.
+The complete narrative and predefined overview are
+\path{MUREKA60_FROZEN_TRANSFER_RESULTS_EN.md}. Measurement provenance and
+missingness are documented in \path{EXTERNAL_MEASUREMENT_CHECKPOINT_EN.md}.
