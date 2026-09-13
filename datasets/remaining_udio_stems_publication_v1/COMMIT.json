@@ -1,0 +1,9 @@
+{
+  "status": "uploaded_hash_verified",
+  "source": "udio",
+  "objects": 2000,
+  "original_ids": 500,
+  "manifest_sha256": "253d366bfb3f2301e44a0a4fc81cfa2684d433e7145239b80aed7744a6d43494",
+  "independent_acceptance_required": true,
+  "whole_project_complete": false
+}
