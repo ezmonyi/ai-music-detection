@@ -1,0 +1,20 @@
+{
+  "revision": "b5231d23713673e90c65e70767485ef5aaf70a56",
+  "scopes": {
+    "historical_hash_verified": {
+      "objects": 31378,
+      "matched": 16422,
+      "unmatched": 14956,
+      "unmatched_bytes": 50814442064
+    },
+    "current_only_inventory": {
+      "objects": 27174,
+      "matched": 2,
+      "unmatched": 27172,
+      "unmatched_bytes": 68652547568
+    }
+  },
+  "limitations": "Direct public files only; archive contents and private backups excluded. Scopes overlap; do not sum. Current-only matches do not establish historical provenance. No rights clearance implied.",
+  "whole_project_complete": false,
+  "matches_sha256": "7b0ee6dc7a62abeab6acd94809f7e9f314a4f890ea86d3e44a9d8c25eaa83fea"
+}

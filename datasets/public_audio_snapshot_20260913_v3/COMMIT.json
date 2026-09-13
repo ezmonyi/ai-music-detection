@@ -1,0 +1,11 @@
+{
+  "repo": "EZMONYI/music-ai-human-test-audio",
+  "revision": "b5231d23713673e90c65e70767485ef5aaf70a56",
+  "audio_file_paths": 42011,
+  "logical_bytes": 187396624629,
+  "lfs_sha256_available": 41968,
+  "records_sha256": "bca7457d23d1fbf105bad2b1178b9bf9957c1c9782d9f3418a9dbf65f11895e2",
+  "scope": "Direct audio/MIDI paths only; does not enumerate archive members",
+  "independent_source_coverage_proven": false,
+  "whole_project_complete": false
+}
