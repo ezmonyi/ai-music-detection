@@ -1,0 +1,99 @@
+{
+  "objects": 22320,
+  "input_objects_sha256": "fd17c91421ae9693a8a15ba4eae5c3959dfcca3524a30861366ae864dc51a292",
+  "metadata_sha256": {
+    "10": "a03aec930130fcb942c40b35ba5fb49109ceee588894124010448f041d9d1ef4",
+    "30": "eb313f97e2d69d743423efc170eecb24f1f00ee77ad789461772daecd058c242"
+  },
+  "objects_sha256": "56ff43a3e6a24ccb72990cac2326ea8062e84d20af50baf5193fd5d99565792d",
+  "sources": [
+    {
+      "source_group": "ACE-Step",
+      "objects": 400,
+      "bytes": 705617600
+    },
+    {
+      "source_group": "FMA",
+      "objects": 400,
+      "bytes": 705617600
+    },
+    {
+      "source_group": "HeartMuLa",
+      "objects": 400,
+      "bytes": 705617600
+    },
+    {
+      "source_group": "MTG-Jamendo",
+      "objects": 2000,
+      "bytes": 10584088000
+    },
+    {
+      "source_group": "Suno",
+      "objects": 400,
+      "bytes": 705617600
+    },
+    {
+      "source_group": "Udio",
+      "objects": 2000,
+      "bytes": 10584088000
+    },
+    {
+      "source_group": "ai_audiox_third_party",
+      "objects": 2000,
+      "bytes": 3528088000
+    },
+    {
+      "source_group": "ai_diffrhythm_pilot",
+      "objects": 400,
+      "bytes": 1411217600
+    },
+    {
+      "source_group": "human_deam",
+      "objects": 2400,
+      "bytes": 8467305600
+    },
+    {
+      "source_group": "human_gtzan",
+      "objects": 796,
+      "bytes": 2801267024
+    },
+    {
+      "source_group": "human_hindustani_raag_hf",
+      "objects": 436,
+      "bytes": 896131184
+    },
+    {
+      "source_group": "human_maestro_v3",
+      "objects": 2400,
+      "bytes": 8467305600
+    },
+    {
+      "source_group": "human_magnatagatune",
+      "objects": 2000,
+      "bytes": 3528088000
+    },
+    {
+      "source_group": "human_medleydb",
+      "objects": 1384,
+      "bytes": 4812252896
+    },
+    {
+      "source_group": "human_moisesdb",
+      "objects": 1912,
+      "bytes": 6745620128
+    },
+    {
+      "source_group": "human_musicnet",
+      "objects": 2640,
+      "bytes": 9314036160
+    },
+    {
+      "source_group": "human_urmp",
+      "objects": 352,
+      "bytes": 1241871488
+    }
+  ],
+  "scope": "Exact ID and duration joins only. Per-recording attribution and derivative rights still require source-release joins.",
+  "publication_authorized_by_this_mapping": false,
+  "whole_project_complete": false
+}
