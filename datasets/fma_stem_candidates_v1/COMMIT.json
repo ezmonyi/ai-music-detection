@@ -1,0 +1,8 @@
+{
+  "candidate_objects": 452,
+  "candidate_bytes": 1414747888,
+  "held_objects": 848,
+  "objects_sha256": "a7302dfbb1c4a07bd3828c89edd9ecee84b22264f93e2e5f51b454cafe4947a5",
+  "status": "source_bound_candidates_not_uploaded; publication requires retained per-track notices",
+  "whole_project_complete": false
+}
