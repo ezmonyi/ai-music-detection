@@ -1,0 +1,72 @@
+{
+  "scope": "Frozen 31,378 historical-hash-verified stems only; excludes current-only siblings and other scopes",
+  "inventory_objects": 31378,
+  "accepted_unique_objects": 16422,
+  "accepted_bytes": 47275922568,
+  "not_matched_to_these_releases_objects": 14956,
+  "not_matched_bytes": 50814442064,
+  "warning": "Unmatched does not independently establish unpublished status or grant redistribution rights.",
+  "releases": [
+    {
+      "release": "hf_open_model_vocals_v1",
+      "objects": 1958,
+      "revision": "434154fda1addf44799f69b397e021c2124a6d04",
+      "manifest_sha256": "f6e9f37c0b36ba3c3cd495a8728370f16d7c7d0f4982335717b99bdb84645a36"
+    },
+    {
+      "release": "hf_aime_vocals_v1",
+      "objects": 5000,
+      "revision": "c9cb4d4773a41f677fe9e990c744cf4647989491",
+      "manifest_sha256": "0debfbde9d1468b84ca37f4b4209e861b01608bee8f28cdfa8147799a97d5169"
+    },
+    {
+      "release": "hf_maestro_stems_v1",
+      "objects": 2400,
+      "revision": "365bdd0ef1cc6e116a4a4ad063c9230f30fada91",
+      "manifest_sha256": "fd9cd5c78328dcc5b70a30a8aa178090fc67ad77ab159ac9dcf234efc570ab49"
+    },
+    {
+      "release": "hf_mtt_stems_v1",
+      "objects": 2000,
+      "revision": "6785f05bf26ce7cb9ad02061d2ba87d3a98f8c5e",
+      "manifest_sha256": "74bbdd320b20d92f48da0b7ae9a52f41d7bc4a882f602b4a38325e6394c3d97b"
+    },
+    {
+      "release": "hf_diffrhythm_stems_v1",
+      "objects": 400,
+      "revision": "96edcf22c2e76d2e1ea318cb61f5da90e9b1652b",
+      "manifest_sha256": "8d874f63aaa74e7c65921719a29d9bab541ddc44a46c0bd391c1b5a351683821"
+    },
+    {
+      "release": "hf_ishizaka_stems_v1",
+      "objects": 312,
+      "revision": "6ea87b999ba024750daaaec5129a3cec72ef77c9",
+      "manifest_sha256": "e2a3b5e5341fdb8c15ec9649193e8a5601af3ea90b1ed230cf4f7582d146aab0"
+    },
+    {
+      "release": "hf_remaining_suno_stems_v1",
+      "objects": 1300,
+      "revision": "50c4923808d40fae232d1f3ce3161978e7dca813",
+      "manifest_sha256": "070b7f85a8f2f2b9b5866607be5dd28bd750e18857cb4ba13279b379f2c54128"
+    },
+    {
+      "release": "hf_remaining_open_models_stems_v1",
+      "objects": 600,
+      "revision": "670e79a76a316ffb6570de9e4fd088b6b4a0e2e5",
+      "manifest_sha256": "f348a96d71a365addf0ac1d372c8afcd4488974a9cf2e74556934433b1496908"
+    },
+    {
+      "release": "hf_remaining_udio_stems_v1",
+      "objects": 2000,
+      "revision": "b4ccfe804cc3055a50e61a1b479ecb5ace395454",
+      "manifest_sha256": "253d366bfb3f2301e44a0a4fc81cfa2684d433e7145239b80aed7744a6d43494"
+    },
+    {
+      "release": "hf_fma_stems_v1",
+      "objects": 452,
+      "revision": "b5231d23713673e90c65e70767485ef5aaf70a56",
+      "manifest_sha256": "1171557002f8d465a6f59e1e723c843b91ec8e5133313a9bdd7e521e3dfe5682"
+    }
+  ],
+  "whole_project_complete": false
+}
