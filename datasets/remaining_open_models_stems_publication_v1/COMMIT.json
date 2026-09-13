@@ -1,0 +1,9 @@
+{
+  "status": "uploaded_hash_verified",
+  "source": "open_models",
+  "objects": 600,
+  "original_ids": 200,
+  "manifest_sha256": "f348a96d71a365addf0ac1d372c8afcd4488974a9cf2e74556934433b1496908",
+  "independent_acceptance_required": true,
+  "whole_project_complete": false
+}

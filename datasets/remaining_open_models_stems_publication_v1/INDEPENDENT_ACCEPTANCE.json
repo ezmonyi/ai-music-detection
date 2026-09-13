@@ -1,0 +1,12 @@
+{
+  "source": "open_models",
+  "revision": "670e79a76a316ffb6570de9e4fd088b6b4a0e2e5",
+  "verified_audio_objects": 600,
+  "original_ids": 200,
+  "checked_bytes": 1058426400,
+  "manifest_sha256": "f348a96d71a365addf0ac1d372c8afcd4488974a9cf2e74556934433b1496908",
+  "notice_sha256": "4d7a876201b98a72e60cf5792cf5f6c34e7ec1e4572e3790111f51181888d2ef",
+  "verification": "Anonymous exact manifest/notice/source cards and all remote hashes/sizes; not full audio redownload",
+  "final_acceptance": true,
+  "whole_project_complete": false
+}
