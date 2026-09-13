@@ -1,0 +1,9 @@
+{
+  "status": "uploaded_hash_verified",
+  "source": "suno",
+  "objects": 1300,
+  "original_ids": 500,
+  "manifest_sha256": "070b7f85a8f2f2b9b5866607be5dd28bd750e18857cb4ba13279b379f2c54128",
+  "independent_acceptance_required": true,
+  "whole_project_complete": false
+}

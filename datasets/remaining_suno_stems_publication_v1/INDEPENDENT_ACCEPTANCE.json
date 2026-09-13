@@ -1,0 +1,12 @@
+{
+  "source": "suno",
+  "revision": "50c4923808d40fae232d1f3ce3161978e7dca813",
+  "verified_audio_objects": 1300,
+  "original_ids": 500,
+  "checked_bytes": 4057257200,
+  "manifest_sha256": "070b7f85a8f2f2b9b5866607be5dd28bd750e18857cb4ba13279b379f2c54128",
+  "notice_sha256": "c47f1bd3a90ad2aebc9b77555d5016db32d0bc3c5ea6e4ff5e6bfb6bd5a241fa",
+  "verification": "Anonymous exact manifest/notice/source cards and all remote hashes/sizes; not full audio redownload",
+  "final_acceptance": true,
+  "whole_project_complete": false
+}
