@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "name": "suno",
+      "objects": 1300,
+      "bytes": 4057257200,
+      "objects_sha256": "81354e11d8311b86976516e580e109b9990791bdc8394d52d3fcb10605217aca",
+      "original_manifest_sha256": "5ddf39584dea9a8e22e93b0ecf65ddff31b0ac9c554bae9ad35c30958a8ff23b"
+    },
+    {
+      "name": "open_models",
+      "objects": 600,
+      "bytes": 1058426400,
+      "objects_sha256": "80e994f1fa9a5fa1a5acd187eb1a6c192b059ed13ee371ea6d74da66c54f83b3",
+      "original_manifest_sha256": "7be5aaa118e77181aa489ef3462b254de6f37679e69cb99e690d069387e4f5f5"
+    },
+    {
+      "name": "udio",
+      "objects": 2000,
+      "bytes": 10584088000,
+      "objects_sha256": "b0aa829539c47675e402bdcd7391aa930bdfc6be94f49880b3bcdbc311298cd6",
+      "original_manifest_sha256": "b8c0ac0e9cc21b431c1813bcc3594463786123510be422048758947ab1fe9f70"
+    }
+  ],
+  "status": "source_bound_plans_not_uploaded",
+  "exclusion": "Accepted open-model vocals and queued AIME vocal plan; queued is not accepted",
+  "whole_project_complete": false
+}
