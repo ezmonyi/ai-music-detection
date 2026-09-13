@@ -1,0 +1,20 @@
+{
+  "sources": [
+    {
+      "name": "diffrhythm",
+      "objects": 400,
+      "bytes": 1411217600,
+      "original_manifest_sha256": "0f68b18de8d73ea99d406bd70f25df758a5b4fdcd3fa5f5d5a039743603ad1a7",
+      "objects_sha256": "d72a62b62ce2a86618b8fe52f539da2632b0032b6000ae23eae5ac8870ed9bfc"
+    },
+    {
+      "name": "ishizaka",
+      "objects": 312,
+      "bytes": 1100749728,
+      "original_manifest_sha256": "c5db937a1d1e308f533f2e8f2378febddf7db0a3d7197bc3f4e54eb3d649f7fe",
+      "objects_sha256": "c2c9c83cfc4e060febc5151106407497fda465d63dbf54e72b37dc4d3ac8c379"
+    }
+  ],
+  "status": "source_bound_plans_not_uploaded",
+  "whole_project_complete": false
+}
