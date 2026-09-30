@@ -1,0 +1,78 @@
+{
+  "device": "mps",
+  "demucs_success": true,
+  "fallback_enabled": false,
+  "stages": {
+    "beats": {
+      "success": true
+    },
+    "structure": {
+      "success": true
+    },
+    "features": {
+      "success": true
+    }
+  },
+  "measurements": {
+    "features": {
+      "s8__tilt_1_5k_db_oct": -0.3592871557471662,
+      "s8__hf_tilt_5_7p5k_db_oct": -7.439162705649126,
+      "s8__hf_ratio_5_7p5_db": -8.768968254385197,
+      "s8__sibilance_ratio_5_7p5_db": -15.37674489385033,
+      "s8__hf_flatness_5_7p5": 0.4357917657797138,
+      "s8__hf_entropy_5_7p5": 0.874285617123101,
+      "s8__hf_crest_5_7p5_db": 10.732754439201555,
+      "s8__fakeprint_peak_density_5_7p5_per_khz": 8.8,
+      "s8__fakeprint_periodicity_5_7p5": 0.1807171720445822,
+      "s8__hf_flux_5_7p5": 0.4946877006875964,
+      "s8__hf_frame_similarity_5_7p5": 0.5053122993124036,
+      "s8__hf_power_sd_5_7p5_db": 5.566332725070947,
+      "s8__hf_mod_4_12_share_5_7p5": 0.161235003943719,
+      "s8__sibilance_contrast_5_7p5_db": 8.973450357347081,
+      "s8__sibilance_burst_rate_5_7p5_hz": 1.0730832122093024,
+      "d__dynamics_span": 11.199307299280758,
+      "d__dynamics_iqr": 6.9043789988939785,
+      "d__dynamics_adjacent_change": 2.955762567868253,
+      "r__ibi_cv": 0.032051282051283596,
+      "r__tempo_tv": 0.026315789473684275,
+      "r__tempo_entropy": 0.23201804462904857,
+      "p__section_duration_cv": 1.8968531468531475,
+      "p__section_duration_entropy": 0.4056838710822128,
+      "p__section_bars_cv": null,
+      "p__section_bars_offmode_fraction": null,
+      "p__section_duration_median": 5.719999999999999,
+      "p__section_bars_median": null
+    },
+    "quality": {
+      "D": "eligible",
+      "S": "eligible",
+      "R": "eligible",
+      "P": "eligible"
+    },
+    "metadata": {
+      "vocal_activity": {
+        "vocal_to_mix_rms_db": -53.1257939989582,
+        "vocal_rms_dbfs": -72.75573625143406,
+        "vocal_active_frame_count": 602,
+        "vocal_active_frame_ratio": 0.4673913043478261,
+        "vocal_analysis_eligible": 0
+      },
+      "s8_native_eligible": true,
+      "vocal_activity_used_to_filter_primary_features": false,
+      "n_beats": 29,
+      "n_downbeats": 9,
+      "n_sections": 3
+    },
+    "product_sha256": {
+      "mix": "f0b691e3fca817609613294ed0e4ff3e1a906876be978570bf40868f33736016",
+      "bass": "a1eba874639addd63ad57c424d08ec3a6526475bfe4ff55bae67546617ccb225",
+      "drums": "ba5e1860a3c40023299852b0ef43e4fb8b66d466966dc173ca038bd191612de5",
+      "other": "4183b208abb15510a7c2559a76a1ac875cb0551055157cacd7b92df878ab9e39",
+      "vocals": "5556e41e2845de17e789c77bff1c16a7cd09a742aabc491f70dc1e85ac05b4b6",
+      "musdb_bias": "bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e",
+      "beats": "9853a5c49ae07ab702bd580788fefb8a1305bcbd5c230e8bf5732a039855d73f",
+      "structure": "7a47a3d24b7dfca322543802c164d0da1f272929d1a7d0ab44155b47080c9800"
+    },
+    "feature_source_sha256": "8b9745085c7518e84613b2ba499dbae775a57e4dcf95670c5e86a05ab524ff00"
+  }
+}

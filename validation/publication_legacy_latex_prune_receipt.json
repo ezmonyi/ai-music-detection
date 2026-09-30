@@ -1,0 +1,37 @@
+{
+  "schema_version": "legacy-latex-checkout-prune-receipt-v1",
+  "status": "completed_and_verified",
+  "completed_at_utc": "2026-09-30T09:28:38.940Z",
+  "manifest_sha256": "d0e8da272e51c1e605baefe56c47de7905b431e61e95b0e03d5e6a26d69bfb7e",
+  "files_deleted": 126,
+  "logical_bytes_removed": 1250912,
+  "unchanged_protected_files": 1175,
+  "unexpected_unstaged_deletions": 0,
+  "remote_main_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+  "baseline_is_ancestor": true,
+  "all_preexecution_hashes_match": true,
+  "plan": {
+    "path": "validation/publication_legacy_latex_prune.json",
+    "sha256": "d0e8da272e51c1e605baefe56c47de7905b431e61e95b0e03d5e6a26d69bfb7e"
+  },
+  "baseline_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+  "operation": "Unlinked each exact authorized .tex/.bib path after rechecking the entire list; no recursive directory deletion.",
+  "scope": "126 legacy files under current/**/latex/ and historical_snapshots/**/latex/. No .tex/.bib existed outside those directories in either tree.",
+  "protected_evidence": "SHA256 of all 1175 remaining nonignored files in current/, historical_snapshots/, results/ and validation/native60_replay/report/ was unchanged across this operation.",
+  "canonical_final_thesis_modified": false,
+  "scripts_modified": false,
+  "git_history_modified": false,
+  "commit_or_push_performed": false,
+  "verification": {
+    "tests_command": ".venv/bin/python -m pytest -q -p no:cacheprovider tests",
+    "tests_passed": 83,
+    "tests_failed": 0,
+    "existing_deprecation_warnings": 1,
+    "git_diff_check": "passed",
+    "git_diff_cached_check": "passed"
+  },
+  "dependency_boundary": "Current application, tests, refit dependencies and Native60 report replay do not read deleted manuscript inputs. A retained historical prepare_thesis_tables.py presentation helper requires restoring two old generated snippets before reusing that obsolete assembly step; see plan dependency_audit.",
+  "recovery": "All removed content remains byte-exact in baseline commit. Use git show BASELINE_COMMIT:PATH and verify files[].bytes/sha256/git_blob_sha1 in the plan. No Git objects or remote files were deleted.",
+  "logical_bytes_note": "1250912 checkout bytes removed; not a claim of physical space reclaimed from retained Git objects.",
+  "storage_audit_coordination": "The storage-consolidation agent was notified to replace references to these removed checkout subcopies with exact baseline Git recovery evidence."
+}

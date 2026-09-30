@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "Expanded Native30 development features and full dependency graph, not raw audio inference",
+  "drive_root_id": "1ow8f0RzHLYEpOaBaa1hH1bIoJ8dHDQcU",
+  "metadata_verified_date": "2026-09-30",
+  "objects": [
+    {"name": "features.json", "file_id": "1ZQZfWZDFCrnmQ-ztKsliVYphfQ2idu2l", "size": 11321581,
+     "sha256": "3bb24e2b91c6e92cff4700fed685a32b1b099cd8ada6a5cd1aaca961269bd75b", "md5_at_metadata_read": "bd4352446052c687152a287ea130acfc",
+     "drive_path": "实验结果/yue2_500_extension_20260911/results/expanded_native30_features_v1/features.json"},
+    {"name": "metadata.json", "file_id": "1WaGc9T0PxTOy_qWTkEmuH7ZFPcS_JnAM", "size": 1818368,
+     "sha256": "5fc27d86b8683419ffc894299f78f6a757f3794c9ff735ac34b300ee8f607982", "md5_at_metadata_read": "56c85b7e66788b97c861810b4a6f80a4",
+     "drive_path": "实验结果/yue2_500_extension_20260911/results/expanded_native30_features_v1/metadata.json"},
+    {"name": "screen.json", "file_id": "1Q2QRQ-wI2gU263dAtqvge1Y8xfp31mmT", "size": 6200542,
+     "sha256": "f01ed06b2896dd83e96828b564c1c894cfa57caf731c55a10eda03f1994ec970", "md5_at_metadata_read": "04249f41cdb43da0fd7cf9fc3a542215",
+     "drive_path": "实验结果/yue2_500_extension_20260911/results/expanded_native30_plan_v1/screen.json"}
+  ]
+}

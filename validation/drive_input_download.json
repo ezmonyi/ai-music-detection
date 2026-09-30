@@ -1,0 +1,40 @@
+{
+  "kind": "pinned_drive_object_download",
+  "audio_downloaded": false,
+  "manifest_sha256": "537e0da1c31e99b07f0dfeef23166876a76f52833ab8c8cee8d6247c2b107bf6",
+  "receipts": [
+    {
+      "drive_file_id": "1ZQZfWZDFCrnmQ-ztKsliVYphfQ2idu2l",
+      "archive_size": 11321581,
+      "member": {
+        "name": "features.json",
+        "offset": 0,
+        "size": 11321581
+      },
+      "sha256": "3bb24e2b91c6e92cff4700fed685a32b1b099cd8ada6a5cd1aaca961269bd75b",
+      "downloaded_bytes": 11321581
+    },
+    {
+      "drive_file_id": "1WaGc9T0PxTOy_qWTkEmuH7ZFPcS_JnAM",
+      "archive_size": 1818368,
+      "member": {
+        "name": "metadata.json",
+        "offset": 0,
+        "size": 1818368
+      },
+      "sha256": "5fc27d86b8683419ffc894299f78f6a757f3794c9ff735ac34b300ee8f607982",
+      "downloaded_bytes": 1818368
+    },
+    {
+      "drive_file_id": "1Q2QRQ-wI2gU263dAtqvge1Y8xfp31mmT",
+      "archive_size": 6200542,
+      "member": {
+        "name": "screen.json",
+        "offset": 0,
+        "size": 6200542
+      },
+      "sha256": "f01ed06b2896dd83e96828b564c1c894cfa57caf731c55a10eda03f1994ec970",
+      "downloaded_bytes": 6200542
+    }
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "allinone_source_commit": "3c93b4ae389328544dd5955af7497030cb1bca3a",
+  "allinone_source_url": "git+https://github.com/openmirlab/all-in-one-infer.git@3c93b4ae389328544dd5955af7497030cb1bca3a",
+  "assets": [
+    {
+      "bytes": 84141911,
+      "families": [
+        "S",
+        "D",
+        "P"
+      ],
+      "name": "955717e8-8726e21a.th",
+      "role": "demucs_htdemucs",
+      "sha256": "8726e21a993978c7ba086d3872e7608d7d5bfca646ca4aca459ffda844faa8b4",
+      "url": "https://dl.fbaipublicfiles.com/demucs/hybrid_transformer/955717e8-8726e21a.th"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold0-0vra4ys2.pth",
+      "role": "harmonix_fold0",
+      "sha256": "0db596dfb0995f41d62f6267d76a9d54c046f1649bd35e1dbeca0c5f9a7b8acd",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold0-0vra4ys2.pth"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold1-3ozjhtsj.pth",
+      "role": "harmonix_fold1",
+      "sha256": "607b4864eaabccd4f6951410d5ea6676666ad1cfa6ce2e18bc99f3824b77c3b7",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold1-3ozjhtsj.pth"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold2-gmgo0nsy.pth",
+      "role": "harmonix_fold2",
+      "sha256": "67c28ec7ca612d365e5fcb152f6530eb53e34c4303940afb30fd17a295c958a4",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold2-gmgo0nsy.pth"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold3-i92b7m8p.pth",
+      "role": "harmonix_fold3",
+      "sha256": "446d05672b2669cdb7d9b8bbbc228a4f3592484335a7995cca89a744e3950ddc",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold3-i92b7m8p.pth"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold4-1bql5qo0.pth",
+      "role": "harmonix_fold4",
+      "sha256": "96327222ab9b33c005388b788ba602f529aa03cc4dde1c859c011f1004490493",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold4-1bql5qo0.pth"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold5-x4z5zeef.pth",
+      "role": "harmonix_fold5",
+      "sha256": "c87f162a1090290bcbb863688746784919cf912c56744fb3d81a1a7dba3b114e",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold5-x4z5zeef.pth"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold6-x7t226rq.pth",
+      "role": "harmonix_fold6",
+      "sha256": "13e7e639bf30fcd3fa049ad863088773a4e57b06d7c68581385b3ef625c60688",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold6-x7t226rq.pth"
+    },
+    {
+      "bytes": 1400571,
+      "families": [
+        "P"
+      ],
+      "name": "harmonix-fold7-qwwskhg6.pth",
+      "role": "harmonix_fold7",
+      "sha256": "b888b7fba95efa3d5a37ca013fe7efe2741621ea9ca335e6b2723e4fd0fade57",
+      "url": "https://huggingface.co/taejunkim/allinone/resolve/379e5fd010b3fdd0ee8381ff8cbcfa51d70b5c19/harmonix-fold7-qwwskhg6.pth"
+    },
+    {
+      "bytes": 81058141,
+      "families": [
+        "R",
+        "P"
+      ],
+      "name": "beat_this-final0.ckpt",
+      "role": "beat_this_final0",
+      "sha256": "8c328b45f59d8dd3dff219253ff6a8d6482be57d0133a29140e2febbf8eb8331",
+      "url": "https://cloud.cp.jku.at/public.php/dav/files/7ik4RrBKTS273gp/final0.ckpt"
+    }
+  ],
+  "bias": {
+    "bytes": 1590225,
+    "drive_file_id": "1_4KJWP6BPzncYmtSg6WD9vO73OWUvvKT",
+    "name": "demucs_frequency_bias.npz",
+    "purpose": "Frozen MUSDB spectral correction, not classifier probability calibration",
+    "sha256": "bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e"
+  },
+  "feature_source_sha256": "8b9745085c7518e84613b2ba499dbae775a57e4dcf95670c5e86a05ab524ff00",
+  "historical_checkpoint_manifest_sha256": "ec65f4d774d21340b0cf40cd91ab526a92f9545bb5314c440a8db9d6ab618ad4",
+  "historical_runtime_contract_sha256": "c6581c737fdb584ff763cc88752dc98864d9ea583a3e4cf9dd552a42ce791268",
+  "licenses": {
+    "beat_this": "See CPJKU/beat_this LICENSE and checkpoint data attribution",
+    "demucs_code": "MIT",
+    "harmonix_weights": "CC-BY-NC-SA-4.0; research/noncommercial use"
+  },
+  "limitations": [
+    "Demucs shifts=1 was unseeded historically; new stems are not bitwise historical replay.",
+    "CPU float32 BeatThis differs from historical CUDA autocast float16; no probability calibration guarantee under hardware shift.",
+    "Historical transitive packages were not fully frozen; new runtime records and pins its own transitive numerical dependencies.",
+    "MPS is not validated here; upstream later removed MPS support by project policy. Use CPU on Apple Silicon."
+  ],
+  "protocol": {
+    "beat_this": {
+      "dbn": false,
+      "float16_on_cpu": false,
+      "float16_on_cuda": true,
+      "model": "final0"
+    },
+    "demucs": {
+      "fp16": false,
+      "model": "htdemucs",
+      "overlap": 0.25,
+      "saved_stems": "PCM16 stereo44100Hz30s, upstream rescale clip policy",
+      "shift_rng": "python_stdlib_random_unseeded_established_default",
+      "shifts": 1,
+      "signature": "955717e8"
+    },
+    "input": "Native30 stereo FLOAT WAV; 44100 Hz; 1323000 frames; no normalization/padding",
+    "missingness": "D<8events,R<16beats,P<3sections/downbeat spans: scientific null; processing/model errors abort",
+    "spectral": "S8 only; native sample rate >=16000; no vocal-activity-based filtering",
+    "structure": {
+      "compile_model": false,
+      "folds": 8,
+      "keep_byproducts": true,
+      "model": "harmonix-all"
+    }
+  },
+  "purpose": "Analysis only: not generation models",
+  "requirements": {
+    "all-in-one-infer": "3.1.0",
+    "beat-this": "1.1.0",
+    "demucs-infer": "4.2.2",
+    "einops": "0.8.2",
+    "julius": "0.2.8",
+    "librosa": "0.11.0",
+    "madmom-infer": "0.2.0",
+    "numpy": "1.26.4",
+    "rotary-embedding-torch": "0.9.1",
+    "scipy": "1.17.1",
+    "soundfile": "0.14.0",
+    "soxr": "1.1.0",
+    "torch": "2.8.0",
+    "torchaudio": "2.8.0"
+  },
+  "schema_version": "native30-neural-runtime-v1",
+  "source_files": {
+    "allin1_infer/__about__.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "09ec00c0e882c9e0d400518bd2cbff00084086955ad599749eb545400950cbc4"
+    },
+    "allin1_infer/__init__.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "a9132c089feb2b02ec0eb2da3c5ac06d886c2aa34cd0159d3edf858c039aaf02"
+    },
+    "allin1_infer/analyze.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "8f2d4271ee9464c987341e63f40c9eeeb0f5bd8183713f06f6998a8c3499df52"
+    },
+    "allin1_infer/cache.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "fbc2dc74c2ab7eab1962bde4f0da97610eb01229875421ec20401a135d5d25f1"
+    },
+    "allin1_infer/checkpoints.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "4c567e2db33a6cf8f8d48a432b25b6ebadbd3023bef788e1bbb098347e07b887"
+    },
+    "allin1_infer/cli.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "ddf8057674a7a132e24db84596cc8780d29ab351f4378a9c98a6e74838683031"
+    },
+    "allin1_infer/config.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "9c758a22a9ae3dfe7c4969a52b51aac917daa5325f3b1cdc3ad9bd94828d9b7e"
+    },
+    "allin1_infer/config/checkpoints.toml": {
+      "distribution": "all-in-one-infer",
+      "sha256": "5ea1427404e47ff691255fd902fc07f83bf9bf889bc1b1813d95ad00fb748f4a"
+    },
+    "allin1_infer/demix.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "80bb0f061802897727e61625c0ebcc1b037f6768233b3a14c674d8cd5840ee80"
+    },
+    "allin1_infer/helpers.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "d49cf4d2eeefe70596c0eda5891832c9c6a2035cf1f71ab7b89c06cf57460927"
+    },
+    "allin1_infer/models/__init__.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "1bce90822546b2453c4bd5a19905a1306f9a4fa906480720c819ddf2234e4f11"
+    },
+    "allin1_infer/models/allinone.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "79c8e364040ccfff9d9cf2a79dda45ca1cae7488b37b526872ddf32133a8f9a5"
+    },
+    "allin1_infer/models/dinat.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "3c6cedc5ce751ba006499bd0d8d9dd6b1a05131b282771b8fb87a21607e7211a"
+    },
+    "allin1_infer/models/ensemble.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "a7b30942732e22762298ee4990e962cc95f58253092a8f837670a987fb0ad4ac"
+    },
+    "allin1_infer/models/loaders.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "ddb2c76203b8da23386f97aad0766c7bf721d226a9fb5dfecefdc21ed11282d6"
+    },
+    "allin1_infer/models/neighborhood_attention.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "e56510c1043c532f5c7bb46865d1a96beecb8508f5bd11a2ed8fd750e905e3f6"
+    },
+    "allin1_infer/models/utils.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "558df475a04100d2f484208e871691037ac8d099874a96972c2aa69e5c5158c1"
+    },
+    "allin1_infer/postprocessing/__init__.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "a7570dffdc862e9d97dd6c61579242310355f324c049d3eb077a7770b44820bd"
+    },
+    "allin1_infer/postprocessing/functional.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "4a8a85a7bf36fc16afa02afb22e305eaa0bb6a6bd0ee28448a638d1eba26db63"
+    },
+    "allin1_infer/postprocessing/helpers.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "ad71bf51dd84f96db67145d9f31cfb3583ee046e336c7ed9c883a5e278917707"
+    },
+    "allin1_infer/postprocessing/metrical.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "416eb998440d4ccd80c808db37c4429caaf5766f896e5bf50030cc0624122837"
+    },
+    "allin1_infer/postprocessing/tempo.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "33d4a4ca8b70c3f173f1da582162de87ed4d31fd9e13041ed6742306347fde48"
+    },
+    "allin1_infer/session.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "8f3b4af47a69957d17ad57b447a7d3d2439609438f204397bfd82bd634810a8b"
+    },
+    "allin1_infer/sonify.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "ef032b0aceb48a0e6e6e4617b5c82eba2a58f03551233772f68a407068c56e81"
+    },
+    "allin1_infer/spectrogram.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "5c9683567867bee0a83e91b0e4c9fba0af74d67a76466a98487a0dccd310dbc7"
+    },
+    "allin1_infer/stems.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "4f67954462316167be1483cda70419426f736773b30e217e446439e1ae12f037"
+    },
+    "allin1_infer/stems_input.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "4f46ae14e5e888ff72bbab7991937c4da2d43cca715160ef8db649e96b3f381c"
+    },
+    "allin1_infer/typings.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "56a27d393b6ad4c53514e120b554b0bfd355ec60adb6e1f608052e60d8d60f2c"
+    },
+    "allin1_infer/utils.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "d16d22576a0966834ccb50a43d6f259b188cbf0ff98ef21247253ef938861ffa"
+    },
+    "allin1_infer/visualize.py": {
+      "distribution": "all-in-one-infer",
+      "sha256": "d2b5953ec51f89b8ad17d5faf06ae870e006ceb2c55df3b8228247476b0c4cad"
+    },
+    "beat_this/__init__.py": {
+      "distribution": "beat-this",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "beat_this/cli.py": {
+      "distribution": "beat-this",
+      "sha256": "3a3073057cafc809de01310f50dcf60f65ffe09db2f6d6e26b6f794bb0d056b4"
+    },
+    "beat_this/dataset/__init__.py": {
+      "distribution": "beat-this",
+      "sha256": "2e7b302c23bd1b02b493063db371a9b2acd3b0e653e6855f0f088e2838966590"
+    },
+    "beat_this/dataset/augment.py": {
+      "distribution": "beat-this",
+      "sha256": "2daa46ec5a6671c3d31271d417f1215112e0bac8abde2e78111452bcbc221031"
+    },
+    "beat_this/dataset/dataset.py": {
+      "distribution": "beat-this",
+      "sha256": "a62e9d18d6c5b996dae10ce7f9158bced355b52a7dcdc2b78844cfb893cbc87a"
+    },
+    "beat_this/dataset/mmnpz.py": {
+      "distribution": "beat-this",
+      "sha256": "3ce7dede3e637e375151d45e91b52a11c01f8fa90fe01dae1be4c1e84a6f5a80"
+    },
+    "beat_this/inference.py": {
+      "distribution": "beat-this",
+      "sha256": "ccccff4665399b931ebf181b73d264a6ad64fc1fe8acb4d3b950df825c47ce2d"
+    },
+    "beat_this/model/__init__.py": {
+      "distribution": "beat-this",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "beat_this/model/beat_tracker.py": {
+      "distribution": "beat-this",
+      "sha256": "bfa2fd212b4d6bf00b007eb0e606a6b11f1f7fc44c95bd1121ef5d2a934a923f"
+    },
+    "beat_this/model/loss.py": {
+      "distribution": "beat-this",
+      "sha256": "28ab2d045e61ab2fd1cfa0901650ba31c1cfb550240adc41bbf88fc03cc5ce71"
+    },
+    "beat_this/model/pl_module.py": {
+      "distribution": "beat-this",
+      "sha256": "db751cea6e2501e0a6f2ff5f9d443df07911bd5c879446ecd060b3e4deae41ec"
+    },
+    "beat_this/model/postprocessor.py": {
+      "distribution": "beat-this",
+      "sha256": "431d6aeef41a8e9e9e63ee2577e895a5e214e0dbbcd2d505458cdfec02a611ee"
+    },
+    "beat_this/model/roformer.py": {
+      "distribution": "beat-this",
+      "sha256": "c83fa0047fe726bbfdb33658f40a0f9e721c5796067bfda560092e5969d50722"
+    },
+    "beat_this/preprocessing.py": {
+      "distribution": "beat-this",
+      "sha256": "5aaeefa811c2fd1340c8a45233af4c2e814720b65c2124e59e78538fed03b3bc"
+    },
+    "beat_this/utils.py": {
+      "distribution": "beat-this",
+      "sha256": "779d6102ea28bdf94c8227157790191f5abbbb4564d0c36ce5ce0859e067cfab"
+    },
+    "demucs_infer/__about__.py": {
+      "distribution": "demucs-infer",
+      "sha256": "47064c70be0c3a19b11d67f475d7873951874b96f72daeeb75a730ad478f19e5"
+    },
+    "demucs_infer/__init__.py": {
+      "distribution": "demucs-infer",
+      "sha256": "4f179ab4c3765c75ba25f13103daf2567e7cf6305d0c99ab6cd18d8b57794e9d"
+    },
+    "demucs_infer/__main__.py": {
+      "distribution": "demucs-infer",
+      "sha256": "b2a12f496855d7ac8fbc1160e8b0d643495fc51e60235697ff9e34c01e0e7603"
+    },
+    "demucs_infer/api.py": {
+      "distribution": "demucs-infer",
+      "sha256": "072f6c8bb48f16c6425b05af863e9ed71efb1664e4225fc4b14ba00576fdbe64"
+    },
+    "demucs_infer/apply.py": {
+      "distribution": "demucs-infer",
+      "sha256": "1b9bb80541b4b06d27c85bbbd94d0e09bc7cb4cc16a1616c95a929f40afb93f6"
+    },
+    "demucs_infer/audio.py": {
+      "distribution": "demucs-infer",
+      "sha256": "353fc8c65c052a98f27bfb43d6a7058c7283d38823c897adfc9c6a70fd2cd149"
+    },
+    "demucs_infer/community.py": {
+      "distribution": "demucs-infer",
+      "sha256": "ffb1ff8621ebddbe072182dcb00a23ded29c5b5a47063261916c9ccdf056a96a"
+    },
+    "demucs_infer/compat.py": {
+      "distribution": "demucs-infer",
+      "sha256": "0ee2909d4bd3a2f73b273fc39834a36abfea2843e7dcbed2b556451a3164b0d8"
+    },
+    "demucs_infer/demucs.py": {
+      "distribution": "demucs-infer",
+      "sha256": "92bc44d5083f5afd69c9ebfcc188fe0351af70ec66baea198bc35f47b7cdb46b"
+    },
+    "demucs_infer/hdemucs.py": {
+      "distribution": "demucs-infer",
+      "sha256": "41a5ce29a49c3d21aac2f6d562a08f201f9e4f70f4d11f637704b06bb75181af"
+    },
+    "demucs_infer/htdemucs.py": {
+      "distribution": "demucs-infer",
+      "sha256": "9c50bbac02a72af0c4ff1b7a14ced06f4a8327505b2f70bac22efa18551227fe"
+    },
+    "demucs_infer/log.py": {
+      "distribution": "demucs-infer",
+      "sha256": "dad2402817fc83732822869bf6b38fe46a677f3d602b888e56224a7a9d369493"
+    },
+    "demucs_infer/model_info.py": {
+      "distribution": "demucs-infer",
+      "sha256": "3704a21e6d13599571cea119ab3ae4f1723b29b3d9854a3c3e320ec2515b6b11"
+    },
+    "demucs_infer/pretrained.py": {
+      "distribution": "demucs-infer",
+      "sha256": "8e0488acd2b41462facee84342e1745607e2164932183c58f18cdbf876ce5a98"
+    },
+    "demucs_infer/remote/files.txt": {
+      "distribution": "demucs-infer",
+      "sha256": "7258eee911e5963e6270983d7072832e90e1ed96b25bb26aadf12f9867109bf9"
+    },
+    "demucs_infer/remote/hdemucs_mmi.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "be8b1c6ef2ca406c620917f3d94c15a0d240718604ce89bfa6765bcc52631f05"
+    },
+    "demucs_infer/remote/htdemucs.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "239c445d0b14454d541ad8bd9bb271c9e536d267e8a4625208744cbb2e7bb66c"
+    },
+    "demucs_infer/remote/htdemucs_6s.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "207405151270af8fd81c2373c25d27950916682ac91dca7884a11ce13dad6f58"
+    },
+    "demucs_infer/remote/htdemucs_ft.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "69470b8c1bbd674437b51bc9fb491327a10ab0396b702c93389b9cf750016346"
+    },
+    "demucs_infer/remote/mdx.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "aa6c377673bfa31dffc9b1de314c1c5335f96be18be869e4cc91f172aae1f4a4"
+    },
+    "demucs_infer/remote/mdx_extra.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "5e079e0b6f9b5a6c737b5a5c95b590a292f0c7a683323c7d0cde3860a0828356"
+    },
+    "demucs_infer/remote/mdx_extra_q.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "579d5faab585e3b55fce1d32d696975cdb176436f0fea8403961b146c67a32d0"
+    },
+    "demucs_infer/remote/mdx_q.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "0b0b5877bda9c4c9917ad9301c50ceb8d3f7425880b2b81184540dcdf23ceafd"
+    },
+    "demucs_infer/remote/repro_mdx_a.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "28932e1c47d4750b183e73bbfa537b699693857f858403440075ae79a307e90a"
+    },
+    "demucs_infer/remote/repro_mdx_a_hybrid_only.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "25ebdda777fbce91881e723f1fdb98a0e746638ac7c46100b74259669c509cfc"
+    },
+    "demucs_infer/remote/repro_mdx_a_time_only.yaml": {
+      "distribution": "demucs-infer",
+      "sha256": "43a3fada0508ab5097405df94ca5121125c4c09ae6482598b8251304dbbe93de"
+    },
+    "demucs_infer/repo.py": {
+      "distribution": "demucs-infer",
+      "sha256": "a04b871cff21a6b042b2fc3717e827af95d6e2fc15ddecaa1348fe3a6f5369c6"
+    },
+    "demucs_infer/separate.py": {
+      "distribution": "demucs-infer",
+      "sha256": "d4498784b941609ec39fb1d79c47bee3493fd967654b8cb03322741a1d945c08"
+    },
+    "demucs_infer/spec.py": {
+      "distribution": "demucs-infer",
+      "sha256": "da4401938091eac9b6e34bd2439f9eca41a58e51bf2e9b75440abc91131533fe"
+    },
+    "demucs_infer/states.py": {
+      "distribution": "demucs-infer",
+      "sha256": "eb70a30c4b8c2959f4c84e8d4f408e94fe55525e22e72971ebde76d7fe268078"
+    },
+    "demucs_infer/transformer.py": {
+      "distribution": "demucs-infer",
+      "sha256": "819d4dc61d6d58ae782959a51c51c92208c004a39030961e7627b73782d3c85c"
+    },
+    "demucs_infer/utils.py": {
+      "distribution": "demucs-infer",
+      "sha256": "155040e0f779620f3bbb061eadce2ca577cc3c244b0cb1e2da1e884cdc88a7c3"
+    },
+    "demucs_infer/wdemucs.py": {
+      "distribution": "demucs-infer",
+      "sha256": "3aa5b083eb93e3ed312aadff2e05aff5110c855ba881e78d0dbf894296c4cee3"
+    },
+    "demucs_infer/wiener.py": {
+      "distribution": "demucs-infer",
+      "sha256": "659f6f9ff282d18b45ad46ebcc04ef0d8556c465951b1a97d189c69ee71ad36b"
+    }
+  }
+}

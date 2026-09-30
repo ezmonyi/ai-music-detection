@@ -1,0 +1,75 @@
+{
+  "schema_version": "public-checkout-prune-receipt-v1",
+  "status": "completed_and_verified",
+  "completed_at_utc": "2026-09-30T09:22:36.550Z",
+  "verification_completed_at_utc": "2026-09-30T09:23:38Z",
+  "plan": {
+    "path": "validation/publication_prune_manifest.json",
+    "sha256": "77938ce9056d8fe34184c4c6a0e3dcb78cb0f4eff09fcd139c3827ddf9097962",
+    "execution_version_sha256": "ef2623302f02686baeadf5f1ee3625f68f296ed1223b4833c119ea9b5ef344f0",
+    "formatting_note": "One extra blank line at EOF was removed after execution; parsed manifest and per-file identities are unchanged."
+  },
+  "repository": "https://github.com/ezmonyi/ai-music-detection",
+  "recovery_baseline_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+  "pre_execution_evidence": {
+    "head_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+    "origin_main_live_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+    "baseline_is_ancestor_of_head": true,
+    "all_1117_files_regular_and_not_symlinks": true,
+    "all_current_sizes_sha256_and_git_blobs_match_manifest": true,
+    "all_index_and_baseline_blobs_match_manifest": true
+  },
+  "operation": {
+    "method": "Per-file unlink of each exact manifest path, after validating the entire list.",
+    "files_deleted": 1117,
+    "logical_bytes_removed": 236808333,
+    "target_groups": [
+      "datasets/",
+      "thesis_releases/",
+      "20 superseded top-level documents and manifests enumerated by the plan"
+    ],
+    "directories_recursively_deleted": 0,
+    "unexpected_git_deletions": 0,
+    "manifest_targets_remaining": 0,
+    "protected_paths_unchanged": [
+      ".git/",
+      "current/",
+      "historical_snapshots/",
+      "results/"
+    ],
+    "git_history_rewritten": false,
+    "commit_or_push_performed": false,
+    "storage_note": "Logical checkout bytes only; retained Git objects remain recoverable and are not counted as reclaimed disk space."
+  },
+  "recovery": {
+    "source": "Existing public origin history, reachable baseline commit; no Drive byte-match claim is required for these exact tracked files.",
+    "method": "Read the desired file from baseline_commit:path with git show, then verify its size and SHA256 against the unchanged per-file plan.",
+    "example": "git show b12aad5e2d3ffe1e76b5add7a049e187105ab858:REPOSITORY_RELATIVE_PATH",
+    "expected_hashes": "validation/publication_prune_manifest.json files[].sha256 and files[].git_blob_sha1"
+  },
+  "verification": {
+    "tests_command": ".venv/bin/python -m pytest -q -p no:cacheprovider tests",
+    "tests_passed": 83,
+    "tests_failed": 0,
+    "warnings": 1,
+    "warning_scope": "Existing Starlette testclient AnyIO BlockingPortal deprecation warning.",
+    "git_diff_check": "passed"
+  },
+  "public_json_safety_scan": {
+    "candidate_selection": "Existing tracked plus untracked nonignored files beneath validation/ from git ls-files --cached --others --exclude-standard.",
+    "json_files_scanned_before_this_receipt": 31,
+    "scan_scope": "Credential/private-key patterns and sensitive owner/email/credential field names; targeted structure and email-pattern check of rights_archive_retention.json.",
+    "credential_or_private_key_pattern_hits": 0,
+    "owner_or_email_fields_in_rights_archive_retention": 0,
+    "email_pattern_hits_in_rights_archive_retention": 0,
+    "rights_archive_retention_note": "Permissions retain type/role only, not owner names, email addresses, or permission IDs. Private Drive object identifiers are references, not credentials or public-access grants.",
+    "redactions_performed": 0,
+    "original_private_audits_unchanged": true,
+    "excluded_local_audit_patterns": [
+      "validation/local_consolidation*",
+      "validation/private_*",
+      ".local-audit/"
+    ],
+    "boundary": "Bounded pattern and schema inspection, not a guarantee against every possible encoded secret or future modification."
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "checked_at_utc": "2026-09-30T08:52:01.714123+00:00",
+  "source": {
+    "id": "1rIkYezgWs5jvrtnyIaFnnooBmmQkyPvm",
+    "name": "predictions.csv",
+    "mimeType": "text/csv",
+    "trashed": false,
+    "parents": [
+      "1VsqRAaU8imh5CzYQSh0kc1g-ErPapPVW"
+    ],
+    "md5Checksum": "9b9c71787be0198b5b8ba805ed6552e0",
+    "sha256Checksum": "afc31519bdd15da38df142a3de4b18a7fae732250910adcb854e6bff221d3bd8",
+    "size": "126790798"
+  },
+  "csv_downloaded_bytes": 126790798,
+  "csv_sha256": "afc31519bdd15da38df142a3de4b18a7fae732250910adcb854e6bff221d3bd8",
+  "csv_saved_uncompressed": false,
+  "gzip": {
+    "bytes": 13431894,
+    "sha256": "ef8243b8aba510a5d9c44999a1820fbe7be0ad38caa65fbf855bcfddef6bd161"
+  },
+  "historical_gzip": {
+    "bytes": 13431894,
+    "sha256": "ef8243b8aba510a5d9c44999a1820fbe7be0ad38caa65fbf855bcfddef6bd161"
+  },
+  "gzip_exact_match": true,
+  "compression": {
+    "gzip_mtime": 0,
+    "gzip_filename": "predictions.csv",
+    "level": 9,
+    "zlib_runtime": "1.2.12"
+  },
+  "companions": [
+    {
+      "metadata": {
+        "id": "1JbwT2Kulgr3bbAswwUVE-sd1ZZmPkKMh",
+        "name": "COMMIT.json",
+        "mimeType": "application/json",
+        "trashed": false,
+        "parents": [
+          "1VsqRAaU8imh5CzYQSh0kc1g-ErPapPVW"
+        ],
+        "md5Checksum": "63099a8292504807d2c07b24c978f1b2",
+        "sha256Checksum": "34782ccfa467d5304ec2a4af1000d390eb467f004bb591ddce1474d06a068e64",
+        "size": "834"
+      },
+      "relative_path": "native60_transfer_scores_v1/COMMIT.json",
+      "bytes": 834,
+      "sha256": "34782ccfa467d5304ec2a4af1000d390eb467f004bb591ddce1474d06a068e64"
+    },
+    {
+      "metadata": {
+        "id": "1mxQy0HOk83dQD-7GMCeJLaPEIBEzOgVg",
+        "name": "per_model_summary.json",
+        "mimeType": "application/json",
+        "trashed": false,
+        "parents": [
+          "1VsqRAaU8imh5CzYQSh0kc1g-ErPapPVW"
+        ],
+        "md5Checksum": "b3dd0dac1aa0ae70044def6d0cf3746b",
+        "sha256Checksum": "19f331f15796520d7ed4fc49d83ce9b1ba47972f98dccd17e1a813b7e9e8f3b6",
+        "size": "7010049"
+      },
+      "relative_path": "native60_transfer_scores_v1/per_model_summary.json",
+      "bytes": 7010049,
+      "sha256": "19f331f15796520d7ed4fc49d83ce9b1ba47972f98dccd17e1a813b7e9e8f3b6"
+    },
+    {
+      "metadata": {
+        "id": "1kZaaZGC2iusBCCmC5w8M_ttlsy3zRIIK",
+        "name": "metadata.json",
+        "mimeType": "application/json",
+        "trashed": false,
+        "parents": [
+          "1e9XiQ3iGRVZYyw2TqAiEgggu9zQ7VJHR"
+        ],
+        "md5Checksum": "90b5c6fa42d5869254120d10f93bc454",
+        "sha256Checksum": "d1e219e9a91370b7e470bac5c0deaaa70759b15ed49316f08b3ef5a4055771f1",
+        "size": "45266"
+      },
+      "relative_path": "native60_feature_package_v1/metadata.json",
+      "bytes": 45266,
+      "sha256": "d1e219e9a91370b7e470bac5c0deaaa70759b15ed49316f08b3ef5a4055771f1"
+    }
+  ]
+}

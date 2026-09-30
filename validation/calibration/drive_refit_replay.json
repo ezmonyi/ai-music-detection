@@ -1,0 +1,907 @@
+{
+  "scope": "fresh_drive_feature_refit_not_neural_reinference",
+  "original_sha256": "05dbe17a012bfec5391dd7c0b203549929e26d1f4612874332000403f71aaf53",
+  "refit_sha256": "fb6087afd280d85eb0c9649a47aa1b0b4e24026a6d70ba151ba89170edc37bc1",
+  "byte_identical": false,
+  "protocol_sha256": "2567e86df60658dae99f97a3aca7d3d7f117ac0652286c3c935dbbb04cc520d3",
+  "feature_input_sha256": "3bb24e2b91c6e92cff4700fed685a32b1b099cd8ada6a5cd1aaca961269bd75b",
+  "comparisons": [
+    {
+      "combination": "D",
+      "test_rows": 840,
+      "max_raw_error": 0.0,
+      "max_probability_error": 0.0,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+F",
+      "test_rows": 840,
+      "max_raw_error": 1.0269562977782698e-14,
+      "max_probability_error": 5.856426454897701e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+F+H",
+      "test_rows": 840,
+      "max_raw_error": 1.1601830607332886e-14,
+      "max_probability_error": 9.575673587391975e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-15,
+      "max_probability_error": 7.105427357601002e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 8.104628079763643e-15,
+      "max_probability_error": 6.13398221105399e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+H",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 2.220446049250313e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.220446049250313e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 2.220446049250313e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P+F",
+      "test_rows": 840,
+      "max_raw_error": 3.4416913763379853e-15,
+      "max_probability_error": 2.0539125955565396e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 2.0539125955565396e-15,
+      "max_probability_error": 2.7755575615628914e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.886579864025407e-15,
+      "max_probability_error": 2.6645352591003757e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.7755575615628914e-15,
+      "max_probability_error": 9.992007221626409e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P+H",
+      "test_rows": 840,
+      "max_raw_error": 3.3306690738754696e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 7.771561172376096e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+P+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+F",
+      "test_rows": 840,
+      "max_raw_error": 2.3869795029440866e-15,
+      "max_probability_error": 3.164135620181696e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+F+H",
+      "test_rows": 840,
+      "max_raw_error": 1.4432899320127035e-15,
+      "max_probability_error": 1.3322676295501878e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 5.329070518200751e-15,
+      "max_probability_error": 7.438494264988549e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 1.7208456881689926e-15,
+      "max_probability_error": 2.3869795029440866e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+H",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.885780586188048e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 7.771561172376096e-16,
+      "max_probability_error": 4.996003610813204e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 2.7755575615628914e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P+F",
+      "test_rows": 840,
+      "max_raw_error": 2.4980018054066022e-15,
+      "max_probability_error": 3.219646771412954e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 4.773959005888173e-15,
+      "max_probability_error": 7.105427357601002e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 3.552713678800501e-15,
+      "max_probability_error": 5.218048215738236e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.3314683517128287e-15,
+      "max_probability_error": 1.942890293094024e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P+H",
+      "test_rows": 840,
+      "max_raw_error": 4.996003610813204e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.885780586188048e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+P+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+R+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "D+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.220446049250313e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "F",
+      "test_rows": 840,
+      "max_raw_error": 7.771561172376096e-16,
+      "max_probability_error": 1.1102230246251565e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "F+H",
+      "test_rows": 840,
+      "max_raw_error": 2.942091015256665e-15,
+      "max_probability_error": 3.941291737419306e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 1.1102230246251565e-15,
+      "max_probability_error": 1.7208456881689926e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "F+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.220446049250313e-15,
+      "max_probability_error": 2.7755575615628914e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "H",
+      "test_rows": 840,
+      "max_raw_error": 1.1102230246251565e-16,
+      "max_probability_error": 2.220446049250313e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "H+SC",
+      "test_rows": 840,
+      "max_raw_error": 1.6653345369377348e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P",
+      "test_rows": 840,
+      "max_raw_error": 1.6653345369377348e-16,
+      "max_probability_error": 2.220446049250313e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P+F",
+      "test_rows": 840,
+      "max_raw_error": 2.6645352591003757e-15,
+      "max_probability_error": 2.220446049250313e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 1.1823875212257917e-14,
+      "max_probability_error": 1.5265566588595902e-14,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.55351295663786e-15,
+      "max_probability_error": 1.942890293094024e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 5.551115123125783e-15,
+      "max_probability_error": 6.217248937900877e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P+H",
+      "test_rows": 840,
+      "max_raw_error": 3.885780586188048e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 3.3306690738754696e-16,
+      "max_probability_error": 3.885780586188048e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "P+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R",
+      "test_rows": 840,
+      "max_raw_error": 0.0,
+      "max_probability_error": 0.0,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+F",
+      "test_rows": 840,
+      "max_raw_error": 1.5543122344752192e-15,
+      "max_probability_error": 1.2212453270876722e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+F+H",
+      "test_rows": 840,
+      "max_raw_error": 1.7763568394002505e-15,
+      "max_probability_error": 2.4424906541753444e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 3.1086244689504383e-15,
+      "max_probability_error": 3.1086244689504383e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 9.992007221626409e-16,
+      "max_probability_error": 9.992007221626409e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+H",
+      "test_rows": 840,
+      "max_raw_error": 5.551115123125783e-16,
+      "max_probability_error": 2.7755575615628914e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P",
+      "test_rows": 840,
+      "max_raw_error": 3.885780586188048e-16,
+      "max_probability_error": 2.220446049250313e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P+F",
+      "test_rows": 840,
+      "max_raw_error": 4.551914400963142e-15,
+      "max_probability_error": 8.854028621385623e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 3.885780586188048e-15,
+      "max_probability_error": 4.6629367034256575e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.551914400963142e-15,
+      "max_probability_error": 4.884981308350689e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.6645352591003757e-15,
+      "max_probability_error": 3.552713678800501e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P+H",
+      "test_rows": 840,
+      "max_raw_error": 5.551115123125783e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+P+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "R+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 2.220446049250313e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S",
+      "test_rows": 840,
+      "max_raw_error": 3.3306690738754696e-16,
+      "max_probability_error": 1.0010723916487052e-09,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+F",
+      "test_rows": 840,
+      "max_raw_error": 4.551914400963142e-15,
+      "max_probability_error": 2.192690473634684e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+F+H",
+      "test_rows": 840,
+      "max_raw_error": 3.219646771412954e-15,
+      "max_probability_error": 1.5265566588595902e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 5.329070518200751e-15,
+      "max_probability_error": 4.191091917959966e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.0539125955565396e-15,
+      "max_probability_error": 1.0824674490095276e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+H",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 2.646429630992486e-09,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 6.106226635438361e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P+F",
+      "test_rows": 840,
+      "max_raw_error": 6.994405055138486e-15,
+      "max_probability_error": 3.969047313034935e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 4.6074255521944e-15,
+      "max_probability_error": 3.219646771412954e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 1.9984014443252818e-15,
+      "max_probability_error": 2.3869795029440866e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 3.608224830031759e-15,
+      "max_probability_error": 2.1094237467877974e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P+H",
+      "test_rows": 840,
+      "max_raw_error": 8.881784197001252e-16,
+      "max_probability_error": 7.216449660063518e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.885780586188048e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+P+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+F",
+      "test_rows": 840,
+      "max_raw_error": 2.942091015256665e-15,
+      "max_probability_error": 3.552713678800501e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+F+H",
+      "test_rows": 840,
+      "max_raw_error": 3.2751579226442118e-15,
+      "max_probability_error": 2.581268532253489e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.3314683517128287e-15,
+      "max_probability_error": 2.4424906541753444e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.4424906541753444e-15,
+      "max_probability_error": 2.886579864025407e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+H",
+      "test_rows": 840,
+      "max_raw_error": 7.771561172376096e-16,
+      "max_probability_error": 8.326672684688674e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 6.106226635438361e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 7.771561172376096e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P+F",
+      "test_rows": 840,
+      "max_raw_error": 2.1094237467877974e-15,
+      "max_probability_error": 1.9984014443252818e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 1.9984014443252818e-15,
+      "max_probability_error": 2.55351295663786e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 8.43769498715119e-15,
+      "max_probability_error": 1.1712852909795402e-14,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 2.1094237467877974e-15,
+      "max_probability_error": 2.55351295663786e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P+H",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 8.881784197001252e-16,
+      "max_probability_error": 9.992007221626409e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+P+SC",
+      "test_rows": 840,
+      "max_raw_error": 5.551115123125783e-16,
+      "max_probability_error": 6.661338147750939e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+R+SC",
+      "test_rows": 840,
+      "max_raw_error": 8.881784197001252e-16,
+      "max_probability_error": 6.661338147750939e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+D+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+F",
+      "test_rows": 840,
+      "max_raw_error": 3.3306690738754696e-15,
+      "max_probability_error": 2.9976021664879227e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+F+H",
+      "test_rows": 840,
+      "max_raw_error": 2.9976021664879227e-15,
+      "max_probability_error": 1.7763568394002505e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.938893903907228e-15,
+      "max_probability_error": 8.1601392309949e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 3.1086244689504383e-15,
+      "max_probability_error": 1.8041124150158794e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+H",
+      "test_rows": 840,
+      "max_raw_error": 5.551115123125783e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P+F",
+      "test_rows": 840,
+      "max_raw_error": 3.9968028886505635e-15,
+      "max_probability_error": 3.7192471324942744e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 5.495603971894525e-15,
+      "max_probability_error": 6.161737786669619e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.884981308350689e-15,
+      "max_probability_error": 3.552713678800501e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 3.3861802251067274e-15,
+      "max_probability_error": 3.3861802251067274e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P+H",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.885780586188048e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+P+SC",
+      "test_rows": 840,
+      "max_raw_error": 5.551115123125783e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R",
+      "test_rows": 840,
+      "max_raw_error": 3.3306690738754696e-16,
+      "max_probability_error": 3.3306690738754696e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+F",
+      "test_rows": 840,
+      "max_raw_error": 4.551914400963142e-15,
+      "max_probability_error": 5.995204332975845e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+F+H",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-15,
+      "max_probability_error": 5.662137425588298e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.6074255521944e-15,
+      "max_probability_error": 3.247402347028583e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.218847493575595e-15,
+      "max_probability_error": 5.662137425588298e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+H",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 5.551115123125783e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 6.661338147750939e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 3.885780586188048e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P+F",
+      "test_rows": 840,
+      "max_raw_error": 3.774758283725532e-15,
+      "max_probability_error": 5.10702591327572e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P+F+H",
+      "test_rows": 840,
+      "max_raw_error": 7.771561172376096e-15,
+      "max_probability_error": 1.0325074129013956e-14,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P+F+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 5.218048215738236e-15,
+      "max_probability_error": 6.772360450213455e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P+F+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.328271240363392e-15,
+      "max_probability_error": 8.659739592076221e-15,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P+H",
+      "test_rows": 840,
+      "max_raw_error": 5.551115123125783e-16,
+      "max_probability_error": 8.881784197001252e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P+H+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 6.106226635438361e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+P+SC",
+      "test_rows": 840,
+      "max_raw_error": 6.661338147750939e-16,
+      "max_probability_error": 7.771561172376096e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+R+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.996003610813204e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "S+SC",
+      "test_rows": 840,
+      "max_raw_error": 4.440892098500626e-16,
+      "max_probability_error": 4.440892098500626e-16,
+      "decisions_changed": 0
+    },
+    {
+      "combination": "SC",
+      "test_rows": 840,
+      "max_raw_error": 0.0,
+      "max_probability_error": 0.0,
+      "decisions_changed": 0
+    }
+  ],
+  "summary": {
+    "combinations": 127,
+    "decisions_compared": 106680,
+    "decisions_changed": 0,
+    "max_raw_error": 1.1823875212257917e-14,
+    "max_probability_error": 2.646429630992486e-09
+  },
+  "interpretation": "Numerical differences are quantified, not hidden by hash replacement. Identical decisions do not imply identical model bytes or external validity."
+}

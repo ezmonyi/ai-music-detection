@@ -1,0 +1,31 @@
+{
+  "scope": "Historical portable scoring replay, no fitting and no audio inference",
+  "comparison": "Recorded historical NumPy/BLAS scores versus independent scalar math.fsum replay",
+  "features_sha256": "3bb24e2b91c6e92cff4700fed685a32b1b099cd8ada6a5cd1aaca961269bd75b",
+  "fixture_file": "tests/fixtures/native30_replay.json",
+  "receipts": [
+    {
+      "file": "reference_model.json",
+      "rows": 828,
+      "max_abs_error": 3.3306690738754696e-16,
+      "decision_disagreements": 0,
+      "sha256": "d6271a6eb651b8bda56f3a9a83225214a49875b0f3da93de3e28b4ac69fccf4d",
+      "model_sha256": "3895dc180ea96377466058055d9075f095165158412d2a2251209b21ccd55a59",
+      "combination": "S+R+P+F+H+SC+BC",
+      "feature_mode": "missingness_only"
+    },
+    {
+      "file": "reference_primary_fhsc.json",
+      "rows": 828,
+      "max_abs_error": 8.881784197001252e-16,
+      "decision_disagreements": 0,
+      "sha256": "4c57d734a83ecd095933a256b6f640498869ea6af9ab8a846f1fc74d8b56dc30",
+      "model_sha256": "1d75d02df51dcd98da70507161ddc9cfcd24a9e677702bed1aa57cfb17fb867a",
+      "combination": "F+H+SC",
+      "feature_mode": "values_plus_missing"
+    }
+  ],
+  "calibrated_probabilities_produced": false,
+  "historical_model_selection": false,
+  "new_calibration_experiment_separate": "validation/calibration/internal_test_report.json"
+}

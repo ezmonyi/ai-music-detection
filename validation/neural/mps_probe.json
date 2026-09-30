@@ -1,0 +1,6 @@
+{
+  "device": "mps",
+  "success": true,
+  "output": "/Users/yi/Documents/code/music/work/consolidation_20260930/neural_validation/mps-probe-7b8_i9i1/demix/htdemucs/native30",
+  "note": "probe only; no calibration validation"
+}

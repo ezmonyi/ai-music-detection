@@ -1,0 +1,9 @@
+{
+  "BC_excluded": true,
+  "bundle_file_sha256": "fb6087afd280d85eb0c9649a47aa1b0b4e24026a6d70ba151ba89170edc37bc1",
+  "locked_labels_used": false,
+  "protocol_file_sha256": "ab14c7149cd5e21dd61e6221ac1eff92f58875129a2e2d6e7a1372747ff2b0f0",
+  "report_file_sha256": "4f273a79e90c55b45e0733521e1f29b00c0cb7da07da760ac7182b5db78260b4",
+  "scope": "new_retrospective_internal_development_experiment_not_external_validation",
+  "supported": 127
+}

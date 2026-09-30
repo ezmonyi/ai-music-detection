@@ -1,0 +1,1284 @@
+{
+  "schema_version": "legacy-latex-checkout-prune-plan-v1",
+  "status": "verified_exact_remote_baseline_candidates_not_deleted",
+  "checked_at_utc": "2026-09-30T09:27:54.903Z",
+  "repository": "https://github.com/ezmonyi/ai-music-detection",
+  "baseline_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+  "remote_main_observed_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+  "baseline_is_ancestor_of_head": true,
+  "scope": "Only legacy .tex/.bib beneath current/**/latex/ and historical_snapshots/**/latex/. No scripts, data, results/ snippets, validation replay outputs, or canonical final thesis.",
+  "total_files": 126,
+  "total_bytes": 1250912,
+  "other_standalone_thesis_tex_outside_latex": 0,
+  "dependency_audit": {
+    "active_package_tests_scripts_and_refit_dependencies": "No legacy .tex/.bib input references.",
+    "native60_report_driver": "Writes native60_transfer_tables.tex in requested output directory; no old manuscript input. Existing results/ and validation/native60_replay/report outputs retained.",
+    "historical_presentation_qualification": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/code/prepare_thesis_tables.py reads two generated legacy latex/results_*_locked_specificity.tex snippets. That obsolete presentation-only helper remains; restore its input snippets from this baseline to rerun it. No claim that all historical manuscript assembly remains runnable after this prune."
+  },
+  "recovery": {
+    "command": "git show b12aad5e2d3ffe1e76b5add7a049e187105ab858:REPOSITORY_RELATIVE_PATH",
+    "verification": "Verify recovered file size/SHA256 against files[]; no Git history rewrite."
+  },
+  "files": [
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/ai_music_detection_v5_results_en_20260907_v1.tex",
+      "bytes": 1174,
+      "sha256": "3a775a7ffb9e6b6aa5fa54371258279cbb96bdbe82e52af91e1599b4a542b3b3",
+      "git_blob_sha1": "b0129abfb1d174c6f01dfcc84fa8cfeab6e3a4cc",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/bc_reserved_verified_closeout_en.tex",
+      "bytes": 47597,
+      "sha256": "40588f32ee7f7f61c9eb2d1823a305f54562d82c258de17ad582e1c8782e908f",
+      "git_blob_sha1": "71627426cd8a615dc2655c4bfea22550db4711f6",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/bc_tables_generated.tex",
+      "bytes": 1331,
+      "sha256": "a08d1af94ec4e27df5c62b61e7b1959ea62666d76f45acc856281dc11b397d9f",
+      "git_blob_sha1": "11791198046e9f5e369cacd4c0ffc0249c4d7111",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/bicoherence_development_supplement_en_v1.tex",
+      "bytes": 4529,
+      "sha256": "60bae806a64cc126f6d26dba6e42d24e8bdbe4f396c19bf8d14f88b1bdce41f8",
+      "git_blob_sha1": "640448671f9cfc7cf42f5545e25c7320220603e7",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/equal60_exploratory_v5_methods_en.tex",
+      "bytes": 5994,
+      "sha256": "4724988e56dba73c6f86e704e64d84b801e3906e520c31a36aafb3ecfc4e3394",
+      "git_blob_sha1": "5631aeea64f3da2f76dc4ee2ac22210f905094ba",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/equal60_frontend_progress_en.tex",
+      "bytes": 2563,
+      "sha256": "d3ffe982adde9c50e6907812995fad0d4ed7a7221546ca8af6275a19e1abc3f6",
+      "git_blob_sha1": "b15397f7351dd4039f023be6d6afbc8b02d7ac6a",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/equal60_seven_family_results_en.tex",
+      "bytes": 4767,
+      "sha256": "8bb077702b9bb0619dfa6886574c1b62c23ab1ef41baf2db1bfe4e4000ca2086",
+      "git_blob_sha1": "c2844e926d5a7bed4c5665fc050473aac0d74ad2",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/equal60_v5_results_en.tex",
+      "bytes": 14296,
+      "sha256": "c14eca8153bd5117be0fc3f8246c1e9e8dabeb5348b6ce685ac03f7b512d30f8",
+      "git_blob_sha1": "c42e40e20a2bb104c09f0ca699ea1ffe347eddf6",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_additional_measurement_methods_en.tex",
+      "bytes": 8495,
+      "sha256": "b48793e41a7eab2ceca0a2738a9bcb16dc19131b56eddcdab4eb1d2b712d76ae",
+      "git_blob_sha1": "4db733ef7e79e88d70ff7d82e1f158c087af831f",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_completed_transfer_results_en.tex",
+      "bytes": 7884,
+      "sha256": "4ffb4cd8f25e949fa1bd4f22ce230e3fa72be4ffe17ebafa283201f05d163bec",
+      "git_blob_sha1": "2bbb383f54f2130a13a66b82c7318a2f91bbe426",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_data_en.tex",
+      "bytes": 7305,
+      "sha256": "6274a972da979c059db1b60b95fff7865c176ea067e1ba7c4fdcc543a0d17ce5",
+      "git_blob_sha1": "b2f0a8f88a17521b5cf4496366d2d5bd8898b792",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_discussion_en.tex",
+      "bytes": 4480,
+      "sha256": "136c672b05539f6d0a1995243abd8a71c352a1474e5cd9507f339487f721895b",
+      "git_blob_sha1": "cf2f1511c07112fce4f9419f6e5f5028fc0c8e79",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_evaluation_principles_en.tex",
+      "bytes": 6672,
+      "sha256": "7ac35ebddf6a3c9cd1e1cf7d45300c5a9892808eca3c049643c2d8231fedf32a",
+      "git_blob_sha1": "625d23422a4b15429a894eea6e74a290dafca69f",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_external_validation_en.tex",
+      "bytes": 11435,
+      "sha256": "ba5486ba46ca6df298a2f402c34a1a224dbd269ef38c98992f10b7dd1ac115de",
+      "git_blob_sha1": "15dd1b748b628b8f2b9ba01eeb4f98daeffd094b",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_framing_en.tex",
+      "bytes": 4717,
+      "sha256": "127f8f2765bfaf24f62f2ddac98c4a0443a3cd90f7d2c39177b5f6660d3aa81f",
+      "git_blob_sha1": "4c551b82625aa504f37e60c3c4612ec4f89a3e52",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_references.bib",
+      "bytes": 3388,
+      "sha256": "43b4a4a45d9af3673679441c092075075734a78bbb7df7e59f21f116a0179eb0",
+      "git_blob_sha1": "142f09d7a4c3cec40c7e38e735acb584aa7b01ea",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_related_work_en.tex",
+      "bytes": 5702,
+      "sha256": "e01032566429a02448fad2b621ba4ec38f315d00405615e0c5877d0ddaf4fc6d",
+      "git_blob_sha1": "10676daecc84cb5a77fa9ec7638499e0f11d5b7d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_reproducibility_en.tex",
+      "bytes": 6655,
+      "sha256": "d293a3e1aa1764b67cb8e4d0b203ce9379e45c208da0705edcb9ac00330393d4",
+      "git_blob_sha1": "7d6da9090d9ff7a9d43be7951a3ea6d1eb251c16",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_sdrp_methods_en.tex",
+      "bytes": 8469,
+      "sha256": "7a29852decf766fa54636e1d48ae596f2dbbd4dcbfbdcf2f7213c973b18db500",
+      "git_blob_sha1": "6aaf467f5321b0f51c29a7cdf6d606e970536949",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/final_thesis_spectral_history_en.tex",
+      "bytes": 7767,
+      "sha256": "b3bee4f10ef3a58e0bf8dd941ae5ad425e6629872422563b53c67e9b584d4147",
+      "git_blob_sha1": "c7ee561ee0309919f9a0b513e94f68d1f15285bb",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_final_working_en.tex",
+      "bytes": 1748,
+      "sha256": "5c2ae2f0865662c907a79bb70ecd2c04bda1d10eec3d34f1ebd937fc6129287a",
+      "git_blob_sha1": "b9a7f62aac27c5fe856bb8243c3711c7ed1ce882",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_working_20260912_en.tex",
+      "bytes": 3032,
+      "sha256": "b1b3ef5f57b48e207cf40d1189add019194d710c5d70579610eb14d0c54730eb",
+      "git_blob_sha1": "0fa93b644c0f64f7a15017f7a7445d60a1145474",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_working_v2_20260912_en.tex",
+      "bytes": 3154,
+      "sha256": "30813740372eb3e8a7f63e2fe46456207e48395974bf9087bdef35b1bf48f3ae",
+      "git_blob_sha1": "5457f7243721cb2d281b203727ff239d64c91583",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_working_v3_20260912_en.tex",
+      "bytes": 3207,
+      "sha256": "40761340e8f303a503677c37e13b68f068eaa96ffc844c7078c12642601e4ced",
+      "git_blob_sha1": "69934df3af4716f1120b4511a1a7a9c851736375",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_working_v4_20260912_en.tex",
+      "bytes": 3283,
+      "sha256": "f9f19814ec1bd97f06d277d2dd2542baef55e69ae4cb9045a8688c72457975c2",
+      "git_blob_sha1": "e0ac230b722798b1ed938618a1143ba179a3c861",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_working_v5_20260912_en.tex",
+      "bytes": 3346,
+      "sha256": "de5c0d86e33cfb085d0736ec34f73cc39cdac1779ab731a01fa837bea6ab2e55",
+      "git_blob_sha1": "3ac5f2f78f76ba998d78eb8751722550d44c6d25",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_working_v6_20260912_en.tex",
+      "bytes": 4509,
+      "sha256": "89eb598ef670e44e489cadf704d0663c9f43f6b24d626499c1162f0c31a22cb5",
+      "git_blob_sha1": "1acad7e056f77b56d585a88c7bfb4a9ee37a4e64",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/literature_scope_supplement_en.tex",
+      "bytes": 1891,
+      "sha256": "a6c529557c1966e306419042ece9571a9b2f64c9728257e795839f5631e42b4f",
+      "git_blob_sha1": "b20eec4a1ab6fd7cce09d6719d8902b66d9ceba1",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/mureka60_measurement_supplement_en.tex",
+      "bytes": 15232,
+      "sha256": "2e56b439d771d0b2014e87e813f0c0faf0e8eb86af1732f9d123aa103b40c83b",
+      "git_blob_sha1": "ce3038a624db239cb7471b85b914e09b1eb3560f",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/mureka60_transfer_results_en.tex",
+      "bytes": 6106,
+      "sha256": "3dabb35f4dc1d4bd290b55468eb3cadbff807b1ee8cd19f5183e2be6c124ec5b",
+      "git_blob_sha1": "a1d474cfe319a0abc1fa9797b267c30b1cd5e89a",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/native30_bc_results_20260912_en.tex",
+      "bytes": 3783,
+      "sha256": "05f7dd0c2b400c5e9957898b32e5b75ad2bf960e86339fe2d5434f66ed65e855",
+      "git_blob_sha1": "806c9c01101d3ff7659e353923bf6a3a517db7e8",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/native30_measurement_checkpoint_en.tex",
+      "bytes": 1217,
+      "sha256": "d9d9bfe62073abffe17ae4f3732861e1b861454cae07f3bcb8f41546fe329074",
+      "git_blob_sha1": "b7b64385faae3f2e2631973eb7eb501e4859254f",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/native30_seven_family_results_20260912_en.tex",
+      "bytes": 5971,
+      "sha256": "71204661bff283b058e526a55a7e65748c4cc34b15a54d87a98ec7c58d928107",
+      "git_blob_sha1": "00ecbef4a664a0916da5c08aa142795a1331a180",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/native60_transfer_results_20260912_en.tex",
+      "bytes": 3678,
+      "sha256": "8a930ff0bdc16bde36a56d6d234cb2076ddeea23ccf4bddab557a02b66579c74",
+      "git_blob_sha1": "12eec717fc3cf1c1adcea814e4bfc9058eed1b50",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/native60_transfer_tables.tex",
+      "bytes": 725,
+      "sha256": "31e152b47931e6970525e011d714d09a56735ba6145bc8ae479e076041526009",
+      "git_blob_sha1": "9bb7473c586ab97dd3111c7c1a89bae18742aa78",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/optimization_supplement_en_20260907_v1.tex",
+      "bytes": 5943,
+      "sha256": "6a3b4cf8f0cd91ad2c7b7cd12e8b7eee398ff5cbc4ed8f443348e435ebc2d627",
+      "git_blob_sha1": "731f67560a49fc84d7b1b161b8f3607b5e3b03c4",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/results_breath_en.tex",
+      "bytes": 1218,
+      "sha256": "c76618cca47544035236b7cd16ada5933c6daede485709bf08842f5310c107ee",
+      "git_blob_sha1": "0c2f8172f9455f33657302b2c277740222a6cf0c",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/results_fh_table_en.tex",
+      "bytes": 9223,
+      "sha256": "e64a8a0dc39956591e3ed7e8a3b80a4da05645ed48fe566b3a8cf0f3984321b3",
+      "git_blob_sha1": "ca6db658237cab9e48701200b8368ac079c64777",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/results_fhm60_en.tex",
+      "bytes": 1986,
+      "sha256": "aaacbac5e7007d3908633ed56ade238857a93cf918a922fb46856023dc98a515",
+      "git_blob_sha1": "e7c2123ad042862b027570cdc9a781611a475ba3",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/saraga_diversity_supplement_en.tex",
+      "bytes": 20689,
+      "sha256": "09c1c0aeb719d28babc09ce7dbbed0eda349e3b8066d36f01301538511e4d174",
+      "git_blob_sha1": "658269848472d8ff3f96a4f532b1c2b2c17284af",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/saraga_mureka_transfer_results_en.tex",
+      "bytes": 5690,
+      "sha256": "2346e753a6a546fde81450d0c46c43626a4306afeac221add4e702bd2ce2cf7a",
+      "git_blob_sha1": "e6ede54f111020ed84655c2bd0e2a6087dabfad4",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/stereo_candidate_scope_en.tex",
+      "bytes": 4780,
+      "sha256": "51e97e94498fd091b577447a06cbdc4f09859e5e7212fdfed98c4cee44940d7e",
+      "git_blob_sha1": "f5944221498e5839e3b90797361d2edcf2e66c4e",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/thesis_late_checkpoint_v2_en.tex",
+      "bytes": 6894,
+      "sha256": "5a7f2190a9eb1067bfa533d94cb94e496042ce80a6d92ec27588fc179c97bcde",
+      "git_blob_sha1": "4126e8ae5ef54e0db0ec52ce5607d45cb3974b6d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/thesis_reproducibility_20260912_en.tex",
+      "bytes": 6749,
+      "sha256": "fb3a6df7e0dbef5c694ddd5185ac50fa323da041330b4b0fa511a9a7b4b7a0e0",
+      "git_blob_sha1": "9a7167ca75c7dd460c23ebbfa54fcc657c441385",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/thesis_reproducibility_v6_20260912_en.tex",
+      "bytes": 7081,
+      "sha256": "642cbc0bf22450fbcbb7723458594840f82b6b177794ad08efb5afe7193888fc",
+      "git_blob_sha1": "1b2123e370894d60efab6cd0cd09575e95357da5",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/thesis_section_phenomena_extension_en.tex",
+      "bytes": 21481,
+      "sha256": "fe73100a20dace8b334d59a3f1a4933056b3b5f57e05eb130860ccf9b94144fe",
+      "git_blob_sha1": "30c8838b4b8cfc3e52eb69364dff10e3eae44b81",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/vocalset_presence_development_en.tex",
+      "bytes": 3188,
+      "sha256": "d9b7f9d2bc44d293f782968dc2d1a1fff71d258ab3e735a570e37c42c7a8201e",
+      "git_blob_sha1": "41bf0af2f8b9f8a44a260899fc5d28c1af3011d7",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/yue2_expanded_results_20260912_en.tex",
+      "bytes": 3609,
+      "sha256": "aa66516393b16822e85ea7947194bd5da46e8240d687bbd3a4a906e9f1cc323a",
+      "git_blob_sha1": "5cf177101f69336035cf21aceb0ed9c6af1ccef0",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/yue2_expanded_results_v6_20260912_en.tex",
+      "bytes": 3617,
+      "sha256": "daca5103e2444d2cecbeba25a77f338b595e6d466a8aea920b1b76cfd99f2cfd",
+      "git_blob_sha1": "135c44a3620610c3f81d716d1c96c1b1e195197d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/yue2_expanded_tables_generated.tex",
+      "bytes": 1362,
+      "sha256": "35e565feeda7d71039004e318b50d1f7fe2d0e2f6fd1f922c8d79641b7cfe473",
+      "git_blob_sha1": "c9fa49cf9633f3de717a06065573bc90ee360479",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/yue2_legacy_spectral_results_20260912_en.tex",
+      "bytes": 4537,
+      "sha256": "19b19f33e3385a7f71d6a683e7d841a0f4e34c0d0e2700e26db7158b2ec4dfee",
+      "git_blob_sha1": "ae68bca70a0f9929db6a8979553c6b135cf4b884",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "current/audio_phenomena_expansion_20260907/latex/yue2_locked_results_20260912_en.tex",
+      "bytes": 3965,
+      "sha256": "662f0c4660306bfaa603dde97d2489e523cbda272a67da95c2e280a12b0faa1b",
+      "git_blob_sha1": "4b52a0b2df7ddc283745c14ac28b62cde5b97c4e",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/ai_music_detection_v5_results_en_20260907_v1.tex",
+      "bytes": 1174,
+      "sha256": "3a775a7ffb9e6b6aa5fa54371258279cbb96bdbe82e52af91e1599b4a542b3b3",
+      "git_blob_sha1": "b0129abfb1d174c6f01dfcc84fa8cfeab6e3a4cc",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/bc_reserved_verified_closeout_en.tex",
+      "bytes": 47597,
+      "sha256": "40588f32ee7f7f61c9eb2d1823a305f54562d82c258de17ad582e1c8782e908f",
+      "git_blob_sha1": "71627426cd8a615dc2655c4bfea22550db4711f6",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/bicoherence_development_supplement_en_v1.tex",
+      "bytes": 4529,
+      "sha256": "60bae806a64cc126f6d26dba6e42d24e8bdbe4f396c19bf8d14f88b1bdce41f8",
+      "git_blob_sha1": "640448671f9cfc7cf42f5545e25c7320220603e7",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/equal60_exploratory_v5_methods_en.tex",
+      "bytes": 5994,
+      "sha256": "4724988e56dba73c6f86e704e64d84b801e3906e520c31a36aafb3ecfc4e3394",
+      "git_blob_sha1": "5631aeea64f3da2f76dc4ee2ac22210f905094ba",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/equal60_frontend_progress_en.tex",
+      "bytes": 2563,
+      "sha256": "d3ffe982adde9c50e6907812995fad0d4ed7a7221546ca8af6275a19e1abc3f6",
+      "git_blob_sha1": "b15397f7351dd4039f023be6d6afbc8b02d7ac6a",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/equal60_seven_family_results_en.tex",
+      "bytes": 4767,
+      "sha256": "8bb077702b9bb0619dfa6886574c1b62c23ab1ef41baf2db1bfe4e4000ca2086",
+      "git_blob_sha1": "c2844e926d5a7bed4c5665fc050473aac0d74ad2",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/equal60_v5_results_en.tex",
+      "bytes": 14296,
+      "sha256": "c14eca8153bd5117be0fc3f8246c1e9e8dabeb5348b6ce685ac03f7b512d30f8",
+      "git_blob_sha1": "c42e40e20a2bb104c09f0ca699ea1ffe347eddf6",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_additional_measurement_methods_en.tex",
+      "bytes": 8495,
+      "sha256": "b48793e41a7eab2ceca0a2738a9bcb16dc19131b56eddcdab4eb1d2b712d76ae",
+      "git_blob_sha1": "4db733ef7e79e88d70ff7d82e1f158c087af831f",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_completed_transfer_results_en.tex",
+      "bytes": 7884,
+      "sha256": "4ffb4cd8f25e949fa1bd4f22ce230e3fa72be4ffe17ebafa283201f05d163bec",
+      "git_blob_sha1": "2bbb383f54f2130a13a66b82c7318a2f91bbe426",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_data_en.tex",
+      "bytes": 6473,
+      "sha256": "f5fa2be4af813312884f411c13002149e2dd6f9a29cb5f65b8127eb2f33b2f6f",
+      "git_blob_sha1": "dd32135d57b1b07b4c39ba952a380dca3ff16128",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_discussion_en.tex",
+      "bytes": 4480,
+      "sha256": "136c672b05539f6d0a1995243abd8a71c352a1474e5cd9507f339487f721895b",
+      "git_blob_sha1": "cf2f1511c07112fce4f9419f6e5f5028fc0c8e79",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_evaluation_principles_en.tex",
+      "bytes": 6672,
+      "sha256": "7ac35ebddf6a3c9cd1e1cf7d45300c5a9892808eca3c049643c2d8231fedf32a",
+      "git_blob_sha1": "625d23422a4b15429a894eea6e74a290dafca69f",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_external_validation_en.tex",
+      "bytes": 11435,
+      "sha256": "ba5486ba46ca6df298a2f402c34a1a224dbd269ef38c98992f10b7dd1ac115de",
+      "git_blob_sha1": "15dd1b748b628b8f2b9ba01eeb4f98daeffd094b",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_framing_en.tex",
+      "bytes": 4717,
+      "sha256": "127f8f2765bfaf24f62f2ddac98c4a0443a3cd90f7d2c39177b5f6660d3aa81f",
+      "git_blob_sha1": "4c551b82625aa504f37e60c3c4612ec4f89a3e52",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_references.bib",
+      "bytes": 3388,
+      "sha256": "43b4a4a45d9af3673679441c092075075734a78bbb7df7e59f21f116a0179eb0",
+      "git_blob_sha1": "142f09d7a4c3cec40c7e38e735acb584aa7b01ea",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_related_work_en.tex",
+      "bytes": 5702,
+      "sha256": "e01032566429a02448fad2b621ba4ec38f315d00405615e0c5877d0ddaf4fc6d",
+      "git_blob_sha1": "10676daecc84cb5a77fa9ec7638499e0f11d5b7d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_reproducibility_en.tex",
+      "bytes": 6655,
+      "sha256": "d293a3e1aa1764b67cb8e4d0b203ce9379e45c208da0705edcb9ac00330393d4",
+      "git_blob_sha1": "7d6da9090d9ff7a9d43be7951a3ea6d1eb251c16",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_sdrp_methods_en.tex",
+      "bytes": 8469,
+      "sha256": "7a29852decf766fa54636e1d48ae596f2dbbd4dcbfbdcf2f7213c973b18db500",
+      "git_blob_sha1": "6aaf467f5321b0f51c29a7cdf6d606e970536949",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/final_thesis_spectral_history_en.tex",
+      "bytes": 7767,
+      "sha256": "b3bee4f10ef3a58e0bf8dd941ae5ad425e6629872422563b53c67e9b584d4147",
+      "git_blob_sha1": "c7ee561ee0309919f9a0b513e94f68d1f15285bb",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/interpretable_audio_thesis_final_working_en.tex",
+      "bytes": 1748,
+      "sha256": "5c2ae2f0865662c907a79bb70ecd2c04bda1d10eec3d34f1ebd937fc6129287a",
+      "git_blob_sha1": "b9a7f62aac27c5fe856bb8243c3711c7ed1ce882",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/literature_scope_supplement_en.tex",
+      "bytes": 1891,
+      "sha256": "a6c529557c1966e306419042ece9571a9b2f64c9728257e795839f5631e42b4f",
+      "git_blob_sha1": "b20eec4a1ab6fd7cce09d6719d8902b66d9ceba1",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/mureka60_measurement_supplement_en.tex",
+      "bytes": 15232,
+      "sha256": "2e56b439d771d0b2014e87e813f0c0faf0e8eb86af1732f9d123aa103b40c83b",
+      "git_blob_sha1": "ce3038a624db239cb7471b85b914e09b1eb3560f",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/mureka60_transfer_results_en.tex",
+      "bytes": 6106,
+      "sha256": "3dabb35f4dc1d4bd290b55468eb3cadbff807b1ee8cd19f5183e2be6c124ec5b",
+      "git_blob_sha1": "a1d474cfe319a0abc1fa9797b267c30b1cd5e89a",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/native30_measurement_checkpoint_en.tex",
+      "bytes": 1217,
+      "sha256": "d9d9bfe62073abffe17ae4f3732861e1b861454cae07f3bcb8f41546fe329074",
+      "git_blob_sha1": "b7b64385faae3f2e2631973eb7eb501e4859254f",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/optimization_supplement_en_20260907_v1.tex",
+      "bytes": 5943,
+      "sha256": "6a3b4cf8f0cd91ad2c7b7cd12e8b7eee398ff5cbc4ed8f443348e435ebc2d627",
+      "git_blob_sha1": "731f67560a49fc84d7b1b161b8f3607b5e3b03c4",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/results_breath_en.tex",
+      "bytes": 1218,
+      "sha256": "c76618cca47544035236b7cd16ada5933c6daede485709bf08842f5310c107ee",
+      "git_blob_sha1": "0c2f8172f9455f33657302b2c277740222a6cf0c",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/results_fh_table_en.tex",
+      "bytes": 9223,
+      "sha256": "e64a8a0dc39956591e3ed7e8a3b80a4da05645ed48fe566b3a8cf0f3984321b3",
+      "git_blob_sha1": "ca6db658237cab9e48701200b8368ac079c64777",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/results_fhm60_en.tex",
+      "bytes": 1986,
+      "sha256": "aaacbac5e7007d3908633ed56ade238857a93cf918a922fb46856023dc98a515",
+      "git_blob_sha1": "e7c2123ad042862b027570cdc9a781611a475ba3",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/saraga_diversity_supplement_en.tex",
+      "bytes": 20689,
+      "sha256": "09c1c0aeb719d28babc09ce7dbbed0eda349e3b8066d36f01301538511e4d174",
+      "git_blob_sha1": "658269848472d8ff3f96a4f532b1c2b2c17284af",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/saraga_mureka_transfer_results_en.tex",
+      "bytes": 5690,
+      "sha256": "2346e753a6a546fde81450d0c46c43626a4306afeac221add4e702bd2ce2cf7a",
+      "git_blob_sha1": "e6ede54f111020ed84655c2bd0e2a6087dabfad4",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/stereo_candidate_scope_en.tex",
+      "bytes": 4780,
+      "sha256": "51e97e94498fd091b577447a06cbdc4f09859e5e7212fdfed98c4cee44940d7e",
+      "git_blob_sha1": "f5944221498e5839e3b90797361d2edcf2e66c4e",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/thesis_late_checkpoint_v2_en.tex",
+      "bytes": 6894,
+      "sha256": "5a7f2190a9eb1067bfa533d94cb94e496042ce80a6d92ec27588fc179c97bcde",
+      "git_blob_sha1": "4126e8ae5ef54e0db0ec52ce5607d45cb3974b6d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/thesis_section_phenomena_extension_en.tex",
+      "bytes": 21481,
+      "sha256": "fe73100a20dace8b334d59a3f1a4933056b3b5f57e05eb130860ccf9b94144fe",
+      "git_blob_sha1": "30c8838b4b8cfc3e52eb69364dff10e3eae44b81",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/audio_phenomena_expansion_20260907/artifacts/audio_phenomena_expansion_20260907/latex/vocalset_presence_development_en.tex",
+      "bytes": 3188,
+      "sha256": "d9b7f9d2bc44d293f782968dc2d1a1fff71d258ab3e735a570e37c42c7a8201e",
+      "git_blob_sha1": "41bf0af2f8b9f8a44a260899fc5d28c1af3011d7",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/dynamics_rhythm_change_detector_extension_20260903/artifacts/dynamics_rhythm_change_detector_extension_20260903/latex/thesis_section_change_detector_extension_en.tex",
+      "bytes": 10008,
+      "sha256": "fac44a0369e433c3a9f1e2e37b8a2a9ae0b1c630360cb47b39423c01b9212d7b",
+      "git_blob_sha1": "43f94032153dc639cdf875f1c765090b9a6556e5",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/dynamics_rhythm_external_benchmark_20260903/artifacts/dynamics_rhythm_external_benchmark_20260903/latex/thesis_section_external_benchmark_en.tex",
+      "bytes": 9191,
+      "sha256": "50e0f708fccfc6f50a4fa3e4bb06ecd1450184e102c674beeb18b33c2a60fa0e",
+      "git_blob_sha1": "4ebfb1d8954f6cce999b27fcece7a27cf772238b",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/external_filter_test_20260902/artifacts/external_filter_test_20260902/latex/external_filter_test_report_en.tex",
+      "bytes": 14956,
+      "sha256": "13b7bf5958396b1105a85a161887c1f5e03cec07bd79f10ad7388483c0f406f7",
+      "git_blob_sha1": "ba136ec67ef5a90c31a6e10f39b458dde799c3f1",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/external_filter_test_20260902/artifacts/external_filter_test_20260902/latex/references.bib",
+      "bytes": 1538,
+      "sha256": "91edbf1def24d6cf4de77c68975552036e7fbd06a425634605c44155a8403ce5",
+      "git_blob_sha1": "e41b23895175aaeeffe16790b7a57464d70788a5",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/external_generator_500_heuristics_20260904/artifacts/external_generator_500_heuristics_20260904/latex/thesis_section_external_500_heuristics_en.tex",
+      "bytes": 8983,
+      "sha256": "e96513dffa726669a5774466427c7bae91818f933acc5e3625e07cdf12fabb4c",
+      "git_blob_sha1": "699ca1fdc607eb267bfe6b86b46bacae699f68b2",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/external_generator_500_testset_20260904/artifacts/external_generator_500_testset_20260904/latex/thesis_section_external_generator_500_en.tex",
+      "bytes": 5137,
+      "sha256": "b275a021486e7aae0b578dec84e05075baa920d8702b407d8a7ecfcd854a7ab3",
+      "git_blob_sha1": "a368bc86086475d24c47ad07ebd8c09d84e308ee",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/four_family_diversity_ablation_20260904/artifacts/four_family_diversity_ablation_20260904/latex/thesis_section_four_family_diversity_en.tex",
+      "bytes": 9632,
+      "sha256": "df9841d73a1a498d4607737f9b6eec2ab3eaccf9ba7323293d1786900f42022e",
+      "git_blob_sha1": "c404fcdd1db6f4da6a31bedf6d847491f4f6fbf4",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/music_flamingo_midi_rhythm_probe_20260903/artifacts/music_flamingo_midi_rhythm_probe_20260903/latex/music_flamingo_midi_rhythm_report_en.tex",
+      "bytes": 2534,
+      "sha256": "b61e77c0c904ca88112f0a87b3d2df980e9d5055e076d09a4ead77b95776586a",
+      "git_blob_sha1": "a6fe6e1e22e9cdd632028d7d001db15f67e8f853",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/music_flamingo_midi_rhythm_probe_20260903/artifacts/music_flamingo_midi_rhythm_probe_20260903/latex/references_music_flamingo.bib",
+      "bytes": 1921,
+      "sha256": "38629180e5ad49ebe8d0a42f72c6d6cfa76d5e119f352e3ad00366120b446e08",
+      "git_blob_sha1": "6ce89b1fb4a52972fbcb565b46bbf04ed09c7ac3",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/music_flamingo_midi_rhythm_probe_20260903/artifacts/music_flamingo_midi_rhythm_probe_20260903/latex/thesis_section_music_flamingo_probe_en.tex",
+      "bytes": 10515,
+      "sha256": "8608b501822e9f9a050dafb3c5dfb840ff24e3246988d8856dc96f283d1aa226",
+      "git_blob_sha1": "1bebad179cace2784b838fb32683c365a9c70aa5",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/ai_music_detection_thesis_en_20260903.tex",
+      "bytes": 64706,
+      "sha256": "ead2061a7a9774d8fa6179ad26bbc25c0ecc45e7da349edcaba7e83c5d39fefc",
+      "git_blob_sha1": "c4f8b34af519ce574f98bb4e69b92d0233b2198a",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/ai_music_detection_thesis_en_20260904.tex",
+      "bytes": 80007,
+      "sha256": "20e944e7cff5186bcdc85846967bbdfe4f26926b05ba62c681c7a2388632b353",
+      "git_blob_sha1": "d8bc9e9ad1589d0d2669faa85072a7c76dbb8b07",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/ai_music_detection_thesis_en_20260905.tex",
+      "bytes": 82023,
+      "sha256": "7870520fc8b7163de294d862d6245b1b689b1461d2d109b68dcb49e88720dbf0",
+      "git_blob_sha1": "4d774c6fcaa9efe35df48c79cd846be3c8ec6570",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/ai_music_detection_thesis_en_20260907.tex",
+      "bytes": 82523,
+      "sha256": "5898960ea6c35c0c45a42d1ec28991e2fdb383ead04986b794e02734aacd44eb",
+      "git_blob_sha1": "734b934a70d6d23888e576e509b950446e12dc64",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/ai_music_detection_thesis_en_20260907_v2.tex",
+      "bytes": 82618,
+      "sha256": "5e6955ba0c4596aa9349ce6c93563447b0a7d1f495644461089e8cc5fcf259dc",
+      "git_blob_sha1": "5473b963a011ca8a6f2b290c8520fbbac4db1f42",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/ai_music_spectral_experiment_report.tex",
+      "bytes": 42558,
+      "sha256": "dcb3db6dd5a7e5ec97eeae47d96a0d31cb3425d12be34c5025739d6341e7c115",
+      "git_blob_sha1": "ad6f7e60e14f3fd9ccdf558baff19686746e9b89",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/ai_music_spectral_experiment_report_en.tex",
+      "bytes": 48656,
+      "sha256": "89f65d6e077ca36edce8054b41b8a3692a27760e06f9f73bef581de1f50cdb27",
+      "git_blob_sha1": "e1b9cf8930bf1a99a67a1ba9ae79d2ee5ab36e1e",
+      "mode": "100644",
+      "standalone_document": true,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/open_models_spectral_500_20260901/artifacts/open_models_spectral_500_20260901/latex/references.bib",
+      "bytes": 7375,
+      "sha256": "4199946bfec015d3c1b53f6abdc8ffc359578c378d3541c161db4606c076ccef",
+      "git_blob_sha1": "30ebeffaeedda47b591d33ec7983db71c480cf28",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260904/artifacts/source_diversity_expansion_20260904/latex/thesis_section_source_diversity_en.tex",
+      "bytes": 5316,
+      "sha256": "3321b225abd5c226f6f7e805cb36ec500fa1053a3acf6683c6d248b115911398",
+      "git_blob_sha1": "5fb19d10a06cbfcde18bb521ace61cc07b796266",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/presentation_results_10s_locked_specificity.tex",
+      "bytes": 1625,
+      "sha256": "c84bdaa75af1654f75693d08477dc6d986cd03add7e7ee7ab4de508981a6163a",
+      "git_blob_sha1": "0439e90a1e7c1858a976361edb551334df7afdd2",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/presentation_results_30s_locked_specificity.tex",
+      "bytes": 1617,
+      "sha256": "987af77e28f403e5e5c3a4fc5a914e105dee19895e1f1d6d971bbebc28312745",
+      "git_blob_sha1": "bfc639f6e1fda58ac231ac7c238067163164ceb7",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_ba_matrix.tex",
+      "bytes": 1227,
+      "sha256": "39039b01a573e123eed0c8987e16296f58cbcac10e871f5bbb52a2ac1df87ad1",
+      "git_blob_sha1": "89d6787177ed22d5fd29bea1f375b971835fb829",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_family_availability_by_source.tex",
+      "bytes": 9872,
+      "sha256": "a6065ce6fb0ff7703d9b2299528f5cc1bf293b72e8434b8e40670157e0ccc896",
+      "git_blob_sha1": "22fb5867c36e201acc274890cc0f29770c0e3ae2",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_family_availability_compact.tex",
+      "bytes": 2985,
+      "sha256": "ded8305fe25a3b500307eb379d634fd89394dc8ef06a684bf1d73ba4c2b77d1d",
+      "git_blob_sha1": "35881f23a3bbbd694e73bc42567ce12ae912992d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_j_matrix.tex",
+      "bytes": 1196,
+      "sha256": "85c9fe5ce4f6d518cbb44113503c9048c4d48ab5ed9a265e5f83f2272d55686b",
+      "git_blob_sha1": "b61829ddc539db08d2016f068ed92f2625184eb0",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_locked_specificity.tex",
+      "bytes": 1445,
+      "sha256": "3b47c6fc388345d02471141871ef68832d31be86307596ed776fda50d70120e9",
+      "git_blob_sha1": "488aaeee5d8215a1e10211372f07fcdde2de4863",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_prior_delta.tex",
+      "bytes": 422,
+      "sha256": "0d18684850203d04a4d44bc35a43737a518004946da55ce255b24a67db54b41d",
+      "git_blob_sha1": "1ea5203649505b2253d95b75ce8a5c58bd9d22c0",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_selection.tex",
+      "bytes": 614,
+      "sha256": "fff913205b0390311750c6a30220c9f74071410d2c9b9d1fd2c8d2e40b6a0bff",
+      "git_blob_sha1": "c076ee7da85af5153eabfad4b020703a33a42d00",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_10s_spectral_sensitivity.tex",
+      "bytes": 732,
+      "sha256": "987d4aa49adfafd5ae0c321089ce1d3b2ab6c5003b4b747d8d964e2e30acf64c",
+      "git_blob_sha1": "76d645208179bc84db580d3d7478af432817180b",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_ba_matrix.tex",
+      "bytes": 1224,
+      "sha256": "a7f9a00873138157adcc1ae3230a35bb7593329648d8086d19ff2a3e122c258a",
+      "git_blob_sha1": "ea53cf2e0d6619bb6e0963ffc3d8bd231d5d8727",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_family_availability_by_source.tex",
+      "bytes": 6119,
+      "sha256": "9599f68b6c19599ae0003ef07d3f73d07b1de49644feccb9323291b083f4772c",
+      "git_blob_sha1": "32de1f9a1ef269f7afbf8e5a408d22743768fe82",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_family_availability_compact.tex",
+      "bytes": 1967,
+      "sha256": "57ad9f758037668847752e4a2f70e15030580d0b6305927d6a72986ef8aa44e0",
+      "git_blob_sha1": "27db43e1525911e3de5ba1a2993d0a723aecabb1",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_j_matrix.tex",
+      "bytes": 1193,
+      "sha256": "8336a2a6abfb4b7e698c7954b420b4ecb6088c31054680d48519e438fbb4723b",
+      "git_blob_sha1": "eb1031c13fd66f1076e44afc101a008e0cc9c7dc",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_locked_specificity.tex",
+      "bytes": 1437,
+      "sha256": "c648f97bd2b78bdb4fb4792b1d2b261d2d98e5e389d1b713423064819e00615b",
+      "git_blob_sha1": "a776631e93fd9df0a8621ed50048c1c8788f3672",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_prior_delta.tex",
+      "bytes": 422,
+      "sha256": "60813e50a9e78634bddf1514f33d4b7543f4c150d23ac26d7d931d71dd65a92c",
+      "git_blob_sha1": "42aa5c284d48bc080e145e5c3e8b26a1576a109c",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_selection.tex",
+      "bytes": 618,
+      "sha256": "79402dc2fa6ec8aa8315a0313a530d38879af9e6e5ed38ddbba4a2fb480bf1f8",
+      "git_blob_sha1": "76e89341f92552ee443af92b80ab2033769b2e3d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/results_30s_spectral_sensitivity.tex",
+      "bytes": 734,
+      "sha256": "975532179fa4b66df5c6a0747971dd44938b35f8f2f87a322bbbc58a58fa3947",
+      "git_blob_sha1": "dfc9c83e563db6b6040e0f7660bb85cff066700b",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/thesis_expanded_reproduction_en.tex",
+      "bytes": 5782,
+      "sha256": "20950f91a69b4d8fa805587214be46cf979c10eaa14392e0ab5cf655b4fdabe2",
+      "git_blob_sha1": "b15fc0b91c0372dd434c6e4cc3abba4a7080e875",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/thesis_section_expanded_materialized_en.tex",
+      "bytes": 28240,
+      "sha256": "d51271c00546cd9cc8948183820bc0793e9ee48bac7e61b58e91da6105ed73f7",
+      "git_blob_sha1": "6732c77022f73834927d271d2d87886f11f512b0",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    },
+    {
+      "path": "historical_snapshots/source_diversity_expansion_20260905/artifacts/source_diversity_expansion_20260905/latex/thesis_updated_conclusions_en.tex",
+      "bytes": 2787,
+      "sha256": "1cc95e57e74bcf1bab9556217596a1ce8bf58523814efee4b7d70359e296c3c1",
+      "git_blob_sha1": "04e65d211721021f340826bd082313f006b4285d",
+      "mode": "100644",
+      "standalone_document": false,
+      "baseline_bytes_exact": true,
+      "index_unchanged": true
+    }
+  ]
+}

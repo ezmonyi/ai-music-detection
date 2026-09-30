@@ -1,0 +1,252 @@
+{
+  "scope": "real_neural_cpu_smoke_test_not_historical_bitwise_replay_or_accuracy_benchmark",
+  "sample_id": "ai_acestep_muse_cn_suno_cn_000107_1",
+  "audio": {
+    "name": "ai_acestep_muse_cn_suno_cn_000107_1.flac",
+    "duration": 30.0,
+    "sample_rate": 48000,
+    "channels": 2,
+    "sha256": "dfb750eed17b160a8fe7b62a277a60767966a6b1765fbb733e4068dd385466ab",
+    "analysis_duration": 30,
+    "analysis_sample_rate": 44100,
+    "crop_start_seconds": 0.0
+  },
+  "audio_provenance": {
+    "status": "verified_DSP_only_not_cohort_admission",
+    "configuration": {
+      "version": "standardize_native30_v1",
+      "duration_s": 30,
+      "output_rate_hz": 44100,
+      "channels": 2,
+      "native_mono_policy": "reject",
+      "native_multichannel_policy": "reject",
+      "crop_rule": "floor_center_of_declared_region",
+      "default_region": "complete_sequential_native_decode",
+      "approved_region": "explicit_native_frames_and_float64_waveform_hash",
+      "resampler": "scipy.signal.resample_poly",
+      "window": [
+        "kaiser",
+        5.0
+      ],
+      "padtype": "constant",
+      "resampling_boundary_extension": "zero_filter_boundary_only",
+      "short_audio_padding": false,
+      "limiting": false,
+      "normalization": false,
+      "dc_removal": false,
+      "channel_mixing": false,
+      "spectral_correction": false,
+      "output_dtype": "little_endian_float32",
+      "intended_output_format": "WAV_FLOAT",
+      "decode": "float64_two_sequential_passes_to_empty_EOF"
+    },
+    "source_sha256_before": "dfb750eed17b160a8fe7b62a277a60767966a6b1765fbb733e4068dd385466ab",
+    "source_sha256_after": "dfb750eed17b160a8fe7b62a277a60767966a6b1765fbb733e4068dd385466ab",
+    "native_rate_hz": 48000,
+    "native_channels": 2,
+    "region_kind": "full_native_sequential_decode",
+    "approved_region_float64_sha256": null,
+    "coordinates": {
+      "region_start_frame": 0,
+      "region_frames": 1440000,
+      "crop_start_frame": 0,
+      "crop_frames": 1440000,
+      "crop_end_frame_exclusive": 1440000
+    },
+    "sequential_passes_identical": true,
+    "sequential_decode": {
+      "header": {
+        "frames": 1440000,
+        "sample_rate_hz": 48000,
+        "channels": 2,
+        "format": "FLAC",
+        "subtype": "PCM_16"
+      },
+      "actual_frames": 1440000,
+      "float64_pcm_sha256": "cdecf484269c54048ae949b69db84a929f544031aa75f6d54a3ab8f050b29a89",
+      "read_calls_including_empty_eof": 23,
+      "empty_eof_observed": true
+    },
+    "header_minus_actual_frames": 0,
+    "native_crop_float64_sha256": "cdecf484269c54048ae949b69db84a929f544031aa75f6d54a3ab8f050b29a89",
+    "output_waveform_float32_sha256": "54ce371d127ed1a5387e51eb98ce83dda54e5e4be33ea94492be735096252fe3",
+    "output_frames": 1323000,
+    "output_rate_hz": 44100,
+    "output_channels": 2,
+    "peak_absolute": 1.0008728504180908,
+    "samples_abs_above_one": 1,
+    "sample_count": 2646000,
+    "classifier_admitted": false,
+    "runtime": {
+      "python": "3.12.14",
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "soundfile": "0.14.0",
+      "libsndfile": "1.2.2"
+    },
+    "fh_waveform_float64_sha256": "adc025cd229265e9c2a33412ffe4873013e19c3deb9a5581f49001d3378485e3",
+    "upload_policy": "native stereo; floor-centred exact30; no peak normalization, limiting or padding"
+  },
+  "features": {
+    "s8__tilt_1_5k_db_oct": -2.110183475047969,
+    "s8__hf_tilt_5_7p5k_db_oct": -5.740149497842021,
+    "s8__hf_ratio_5_7p5_db": -7.667469927499647,
+    "s8__sibilance_ratio_5_7p5_db": -13.71770972510707,
+    "s8__hf_flatness_5_7p5": 0.46394155075100196,
+    "s8__hf_entropy_5_7p5": 0.8869617165712496,
+    "s8__hf_crest_5_7p5_db": 10.039088807511558,
+    "s8__fakeprint_peak_density_5_7p5_per_khz": 15.6,
+    "s8__fakeprint_periodicity_5_7p5": 0.21565608822398571,
+    "s8__hf_flux_5_7p5": 0.5193020623101047,
+    "s8__hf_frame_similarity_5_7p5": 0.4806979376898955,
+    "s8__hf_power_sd_5_7p5_db": 6.782050220095613,
+    "s8__hf_mod_4_12_share_5_7p5": 0.12734493293834903,
+    "s8__sibilance_contrast_5_7p5_db": 7.776624607756581,
+    "s8__sibilance_burst_rate_5_7p5_hz": 1.0037675152608212,
+    "d__dynamics_span": 11.209048164275881,
+    "d__dynamics_iqr": 6.876702837248079,
+    "d__dynamics_adjacent_change": 2.779940580360808,
+    "r__ibi_cv": 0.032051282051283596,
+    "r__tempo_tv": 0.026315789473684275,
+    "r__tempo_entropy": 0.23201804462904857,
+    "p__section_duration_cv": 1.7811980033277865,
+    "p__section_duration_entropy": 0.4056838710822128,
+    "p__section_bars_cv": null,
+    "p__section_bars_offmode_fraction": null,
+    "p__section_duration_median": 6.010000000000002,
+    "p__section_bars_median": null
+  },
+  "quality": {
+    "D": "eligible",
+    "S": "eligible",
+    "R": "eligible",
+    "P": "eligible"
+  },
+  "metadata": {
+    "vocal_activity": {
+      "vocal_to_mix_rms_db": -58.300750043327476,
+      "vocal_rms_dbfs": -77.93069229580333,
+      "vocal_active_frame_count": 901,
+      "vocal_active_frame_ratio": 0.6995341614906833,
+      "vocal_analysis_eligible": 0
+    },
+    "s8_native_eligible": true,
+    "vocal_activity_used_to_filter_primary_features": false,
+    "n_beats": 29,
+    "n_downbeats": 9,
+    "n_sections": 3
+  },
+  "product_sha256": {
+    "mix": "f0b691e3fca817609613294ed0e4ff3e1a906876be978570bf40868f33736016",
+    "bass": "84622a7747737b40177bd70b27fe967918c9e34b41f8595269548a55ab7317f7",
+    "drums": "efd7d5b553e897e3d04daec5034821284e2bcf43e69bc747f6af9cd676f28ec4",
+    "other": "da1926eb6680509355d4f8d9605f873728c755dcf74fef593c8ed3f2fd81e79c",
+    "vocals": "bba60bceff012f8bebc8a25489339954e713e7f9044b6f7b6fa60a59337b8dd9",
+    "musdb_bias": "bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e",
+    "beats": "9853a5c49ae07ab702bd580788fefb8a1305bcbd5c230e8bf5732a039855d73f",
+    "structure": "8ee32b6377e150809866e045c2c46c677316ed94ca065029a141e39d5448db56",
+    "spectrogram": "a4dcfc493290cfd30550af5c07a55af12618a5816fd1a6fd5786b6d843b837cb"
+  },
+  "feature_source_sha256": "8b9745085c7518e84613b2ba499dbae775a57e4dcf95670c5e86a05ab524ff00",
+  "provenance": {
+    "backend": "real_native30_sdrp_v1",
+    "device": "cpu",
+    "python": "3.12.14",
+    "platform": "macOS-26.3.1-arm64-arm-64bit",
+    "versions": {
+      "all-in-one-infer": "3.1.0",
+      "beat-this": "1.1.0",
+      "demucs-infer": "4.2.2",
+      "einops": "0.8.2",
+      "julius": "0.2.8",
+      "librosa": "0.11.0",
+      "madmom-infer": "0.2.0",
+      "numpy": "1.26.4",
+      "rotary-embedding-torch": "0.9.1",
+      "scipy": "1.17.1",
+      "soundfile": "0.14.0",
+      "soxr": "1.1.0",
+      "torch": "2.8.0",
+      "torchaudio": "2.8.0"
+    },
+    "manifest_sha256": "9ffcb47f043225f7678d9764ba8f52c5209866c7dd629f4a3633995c7b271536",
+    "feature_source_sha256": "8b9745085c7518e84613b2ba499dbae775a57e4dcf95670c5e86a05ab524ff00",
+    "product_sha256": {
+      "mix": "f0b691e3fca817609613294ed0e4ff3e1a906876be978570bf40868f33736016",
+      "bass": "84622a7747737b40177bd70b27fe967918c9e34b41f8595269548a55ab7317f7",
+      "drums": "efd7d5b553e897e3d04daec5034821284e2bcf43e69bc747f6af9cd676f28ec4",
+      "other": "da1926eb6680509355d4f8d9605f873728c755dcf74fef593c8ed3f2fd81e79c",
+      "vocals": "bba60bceff012f8bebc8a25489339954e713e7f9044b6f7b6fa60a59337b8dd9",
+      "musdb_bias": "bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e",
+      "beats": "9853a5c49ae07ab702bd580788fefb8a1305bcbd5c230e8bf5732a039855d73f",
+      "structure": "8ee32b6377e150809866e045c2c46c677316ed94ca065029a141e39d5448db56",
+      "spectrogram": "a4dcfc493290cfd30550af5c07a55af12618a5816fd1a6fd5786b6d843b837cb"
+    },
+    "checkpoint_sha256": {
+      "955717e8-8726e21a.th": "8726e21a993978c7ba086d3872e7608d7d5bfca646ca4aca459ffda844faa8b4",
+      "harmonix-fold0-0vra4ys2.pth": "0db596dfb0995f41d62f6267d76a9d54c046f1649bd35e1dbeca0c5f9a7b8acd",
+      "harmonix-fold1-3ozjhtsj.pth": "607b4864eaabccd4f6951410d5ea6676666ad1cfa6ce2e18bc99f3824b77c3b7",
+      "harmonix-fold2-gmgo0nsy.pth": "67c28ec7ca612d365e5fcb152f6530eb53e34c4303940afb30fd17a295c958a4",
+      "harmonix-fold3-i92b7m8p.pth": "446d05672b2669cdb7d9b8bbbc228a4f3592484335a7995cca89a744e3950ddc",
+      "harmonix-fold4-1bql5qo0.pth": "96327222ab9b33c005388b788ba602f529aa03cc4dde1c859c011f1004490493",
+      "harmonix-fold5-x4z5zeef.pth": "c87f162a1090290bcbb863688746784919cf912c56744fb3d81a1a7dba3b114e",
+      "harmonix-fold6-x7t226rq.pth": "13e7e639bf30fcd3fa049ad863088773a4e57b06d7c68581385b3ef625c60688",
+      "harmonix-fold7-qwwskhg6.pth": "b888b7fba95efa3d5a37ca013fe7efe2741621ea9ca335e6b2723e4fd0fade57",
+      "beat_this-final0.ckpt": "8c328b45f59d8dd3dff219253ff6a8d6482be57d0133a29140e2febbf8eb8331"
+    },
+    "metadata": {
+      "vocal_activity": {
+        "vocal_to_mix_rms_db": -58.300750043327476,
+        "vocal_rms_dbfs": -77.93069229580333,
+        "vocal_active_frame_count": 901,
+        "vocal_active_frame_ratio": 0.6995341614906833,
+        "vocal_analysis_eligible": 0
+      },
+      "s8_native_eligible": true,
+      "vocal_activity_used_to_filter_primary_features": false,
+      "n_beats": 29,
+      "n_downbeats": 9,
+      "n_sections": 3
+    },
+    "elapsed_seconds": 31.89302062499337,
+    "retained_product_directory": "/Users/yi/Documents/code/music/work/consolidation_20260930/neural_validation/native30-altr_qct",
+    "historical_bitwise_reproduction": false,
+    "limitations": [
+      "Demucs shifts=1 was unseeded historically; new stems are not bitwise historical replay.",
+      "CPU float32 BeatThis differs from historical CUDA autocast float16; no probability calibration guarantee under hardware shift.",
+      "Historical transitive packages were not fully frozen; new runtime records and pins its own transitive numerical dependencies.",
+      "MPS is not validated here; upstream later removed MPS support by project policy. Use CPU on Apple Silicon."
+    ],
+    "protocol": {
+      "beat_this": {
+        "dbn": false,
+        "float16_on_cpu": false,
+        "float16_on_cuda": true,
+        "model": "final0"
+      },
+      "demucs": {
+        "fp16": false,
+        "model": "htdemucs",
+        "overlap": 0.25,
+        "saved_stems": "PCM16 stereo44100Hz30s, upstream rescale clip policy",
+        "shift_rng": "python_stdlib_random_unseeded_established_default",
+        "shifts": 1,
+        "signature": "955717e8"
+      },
+      "input": "Native30 stereo FLOAT WAV; 44100 Hz; 1323000 frames; no normalization/padding",
+      "missingness": "D<8events,R<16beats,P<3sections/downbeat spans: scientific null; processing/model errors abort",
+      "spectral": "S8 only; native sample rate >=16000; no vocal-activity-based filtering",
+      "structure": {
+        "compile_model": false,
+        "folds": 8,
+        "keep_byproducts": true,
+        "model": "harmonix-all"
+      }
+    },
+    "licenses": {
+      "beat_this": "See CPJKU/beat_this LICENSE and checkpoint data attribution",
+      "demucs_code": "MIT",
+      "harmonix_weights": "CC-BY-NC-SA-4.0; research/noncommercial use"
+    }
+  }
+}

@@ -11,3 +11,13 @@ venv/
 *.safetensors
 *.pt
 *.ckpt
+.pytest_cache/
+*.egg-info/
+.neural-venv/
+.neural-cache/
+.reproduction/
+.DS_Store
+# Local-only storage audit includes private filenames from legacy folders.
+validation/local_consolidation*
+validation/private_*
+.local-audit/

@@ -1,0 +1,135 @@
+{
+  "schema_version": "post-hardening-neural-receipt-v1",
+  "recorded_at_utc": "2026-09-30T09:16:41.013891+00:00",
+  "status": "passed_real_cpu_offline",
+  "report": "validation/neural/post_hardening_human.json",
+  "report_sha256": "15d7d38598a299bfa44a78127c5edcc152241a82120439f6e00631bea6cf6a4d",
+  "source_sha256": "009e811a492879f8d29177ab7a255952d0cab1e768697423daaa954e662895a6",
+  "source_files_sha256": {
+    "src/music_detector/audio.py": "7739c67e3fef1afe9ec899601335f7fbf696e36d1437abf7029499c1afb2cd74",
+    "src/music_detector/neural.py": "370a234d1a569481521cb2128b66769d0a04ad9f3f8e1d57bb347138290d69b1",
+    "src/music_detector/neural_features.py": "60f2131d012b9da56303a22f9892c5f12dbbc5a6987b0b621c3564252dd9e7c0",
+    "src/music_detector/algorithms/expanded_feature_definitions.py": "8b9745085c7518e84613b2ba499dbae775a57e4dcf95670c5e86a05ab524ff00",
+    "src/music_detector/scoring.py": "d1382ff0d56978d01307d5483267d5e66e499e9b4d446ec3040331e4e55e2a9f",
+    "src/music_detector/calibration.py": "e96865300877a5394d9af35131c1148d0b4b430783cb63a32bfb6636aa806c18",
+    "src/music_detector/assets/deployment_models.json": "05dbe17a012bfec5391dd7c0b203549929e26d1f4612874332000403f71aaf53",
+    "src/music_detector/assets/neural_runtime.json": "9ffcb47f043225f7678d9764ba8f52c5209866c7dd629f4a3633995c7b271536",
+    "src/music_detector/assets/demucs_frequency_bias.npz": "bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e"
+  },
+  "runtime_status": {
+    "ready": true,
+    "families": [
+      "S",
+      "D",
+      "R",
+      "P"
+    ],
+    "errors": [],
+    "versions": {
+      "all-in-one-infer": "3.1.0",
+      "beat-this": "1.1.0",
+      "demucs-infer": "4.2.2",
+      "einops": "0.8.2",
+      "julius": "0.2.8",
+      "librosa": "0.11.0",
+      "madmom-infer": "0.2.0",
+      "numpy": "1.26.4",
+      "rotary-embedding-torch": "0.9.1",
+      "scipy": "1.17.1",
+      "soundfile": "0.14.0",
+      "soxr": "1.1.0",
+      "torch": "2.8.0",
+      "torchaudio": "2.8.0"
+    },
+    "source_files_verified": true,
+    "assets": [
+      {
+        "name": "955717e8-8726e21a.th",
+        "ready": true,
+        "bytes": 84141911
+      },
+      {
+        "name": "harmonix-fold0-0vra4ys2.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold1-3ozjhtsj.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold2-gmgo0nsy.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold3-i92b7m8p.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold4-1bql5qo0.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold5-x4z5zeef.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold6-x7t226rq.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold7-qwwskhg6.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "beat_this-final0.ckpt",
+        "ready": true,
+        "bytes": 81058141
+      }
+    ],
+    "manifest_sha256": "9ffcb47f043225f7678d9764ba8f52c5209866c7dd629f4a3633995c7b271536",
+    "supported_devices": [
+      "cpu",
+      "cuda"
+    ],
+    "limitations": [
+      "Demucs shifts=1 was unseeded historically; new stems are not bitwise historical replay.",
+      "CPU float32 BeatThis differs from historical CUDA autocast float16; no probability calibration guarantee under hardware shift.",
+      "Historical transitive packages were not fully frozen; new runtime records and pins its own transitive numerical dependencies.",
+      "MPS is not validated here; upstream later removed MPS support by project policy. Use CPU on Apple Silicon."
+    ]
+  },
+  "checkpoint_sha256": {
+    "955717e8-8726e21a.th": "8726e21a993978c7ba086d3872e7608d7d5bfca646ca4aca459ffda844faa8b4",
+    "harmonix-fold0-0vra4ys2.pth": "0db596dfb0995f41d62f6267d76a9d54c046f1649bd35e1dbeca0c5f9a7b8acd",
+    "harmonix-fold1-3ozjhtsj.pth": "607b4864eaabccd4f6951410d5ea6676666ad1cfa6ce2e18bc99f3824b77c3b7",
+    "harmonix-fold2-gmgo0nsy.pth": "67c28ec7ca612d365e5fcb152f6530eb53e34c4303940afb30fd17a295c958a4",
+    "harmonix-fold3-i92b7m8p.pth": "446d05672b2669cdb7d9b8bbbc228a4f3592484335a7995cca89a744e3950ddc",
+    "harmonix-fold4-1bql5qo0.pth": "96327222ab9b33c005388b788ba602f529aa03cc4dde1c859c011f1004490493",
+    "harmonix-fold5-x4z5zeef.pth": "c87f162a1090290bcbb863688746784919cf912c56744fb3d81a1a7dba3b114e",
+    "harmonix-fold6-x7t226rq.pth": "13e7e639bf30fcd3fa049ad863088773a4e57b06d7c68581385b3ef625c60688",
+    "harmonix-fold7-qwwskhg6.pth": "b888b7fba95efa3d5a37ca013fe7efe2741621ea9ca335e6b2723e4fd0fade57",
+    "beat_this-final0.ckpt": "8c328b45f59d8dd3dff219253ff6a8d6482be57d0133a29140e2febbf8eb8331"
+  },
+  "network_guard": {
+    "socket_connect": true,
+    "socket_connect_ex": true,
+    "socket_create_connection": true,
+    "urllib_urlopen": true,
+    "urllib_urlretrieve": true,
+    "torch_hub_load_state_dict_from_url": true,
+    "torch_hub_download_url_to_file": true,
+    "attempts": 0
+  },
+  "source_changed_during_run": false,
+  "historical_bitwise_reproduction": false,
+  "accuracy_benchmark": false,
+  "raw_audio_committed": false
+}

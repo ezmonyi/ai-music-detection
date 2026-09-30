@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "music-artifact-detector"
+version = "0.1.0"
+description = "Evidence-grounded, interpretable AI/music artifact analysis and reproducible thesis experiments"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "numpy==1.26.4",
+  "scipy==1.17.1",
+  "pandas==2.2.3",
+  "soundfile==0.14.0",
+  "librosa==0.11.0",
+  "numba==0.67.0",
+  "llvmlite==0.49.0",
+  "scikit-learn==1.5.2",
+  "fastapi==0.115.12",
+  "uvicorn==0.34.3",
+  "python-multipart==0.0.20",
+]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5", "httpx==0.28.1"]
+
+[project.scripts]
+music-detector = "music_detector.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+music_detector = ["static/*", "assets/*.json", "assets/*.npz"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

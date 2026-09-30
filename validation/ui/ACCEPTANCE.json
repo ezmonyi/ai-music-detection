@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-30",
+  "scope": "Real browser and loopback API integration, not detector accuracy estimation",
+  "browser": "Codex in-app browser",
+  "server": "127.0.0.1:53373",
+  "tested_families": ["S", "D", "R", "P", "F", "H", "SC", "BC"],
+  "real_filechooser_upload": true,
+  "polling_queued_running_complete": true,
+  "returned_measurement_count": 55,
+  "predictive_measurement_count": 54,
+  "bc_in_probability": false,
+  "final_hardened_server": {
+    "analysis_id": "798e289f7cdb499aa8c2ff563b9965df",
+    "result": "all_artifacts_final_upload_result.json",
+    "probability": 0.9390472537112335,
+    "raw_score": 0.9839954668263018,
+    "null_metric_count": 3,
+    "native_input_range_validation_present": true,
+    "dynamics_units_verified": "dB",
+    "all_eight_cards_rendered": true,
+    "download_clicked_and_saved": true,
+    "prior_all_eight_result_preserved": "all_artifacts_upload_result.json",
+    "repeat_output_drift_expected": "Historical Demucs shifts=1 is unseeded; do not claim deterministic neural replay."
+  },
+  "examples": [
+    {"sample": "ai_acestep_muse_cn_suno_cn_000107_1", "source_label": 1, "probability": 0.969919631910226, "decision": "likely_ai"},
+    {"sample": "human_maestro_0124", "source_label": 0, "probability": 0.7162271317341915, "decision": "likely_ai", "false_positive": true}
+  ],
+  "json_download": {"verified": true, "receipt": "human_upload_result.json", "delivery": "server Content-Disposition attachment"},
+  "explanations": "actual measurements, raw additive value contributions, separate missingness contributions and calibration limitations",
+  "screenshots": ["upload-analysis.png", "human-analysis-overview.png", "all-artifacts-overview.png", "final-overview.png"],
+  "limitations": ["Two examples cannot estimate accuracy; the human false positive is retained", "CPU precision and unseeded Demucs shifts differ from archived GPU inference; no new hardware external calibration is claimed", "MPS is not exposed and CUDA could not be tested on this Mac"]
+}

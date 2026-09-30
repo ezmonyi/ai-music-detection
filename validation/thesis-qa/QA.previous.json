@@ -1,0 +1,137 @@
+{
+  "schema_version": "thesis-pdf-visual-qa-v1",
+  "pdf": "code/.reproduction/thesis-build/thesis.pdf",
+  "pdf_sha256": "eaeb77cb0b2664f9391e635f4c39cd3f4d995ae089525aa2ac45de19c2e1a1d5",
+  "source_tex_sha256_observed": "9191653eff6126e4353fb1bfc31f8ed7f74d2f4ab6402c8cdc1ef43e5305d1b3",
+  "page_count": 42,
+  "read_only_review": true,
+  "tex_modified": false,
+  "new_inference_performed": false,
+  "tex_installation_performed": false,
+  "overall_status": "visual_pass_with_delivery_status_update_required",
+  "render_method": "System Poppler pdftoppm; 90 DPI every page; 160 DPI key pages; Pillow contact sheets",
+  "complete_contact_sheet_review": {
+    "pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ],
+    "sheets": [
+      "contact/contact-01.png",
+      "contact/contact-02.png",
+      "contact/contact-03.png",
+      "contact/contact-04.png",
+      "contact/contact-05.png",
+      "contact/contact-06.png",
+      "contact/contact-07.png"
+    ]
+  },
+  "high_resolution_pages": [
+    16,
+    22,
+    27,
+    29,
+    34,
+    35,
+    36,
+    39,
+    40,
+    41,
+    42
+  ],
+  "visual_checks": {
+    "clipping": "none observed",
+    "overlap": "none observed",
+    "broken_tables": "none observed",
+    "missing_or_unreadable_glyphs": "none observed",
+    "equations": "operators, fractions, subscripts and equation numbers legible",
+    "figure_1": "axes, tick labels, three legend entries and caption legible; no overlap",
+    "tables": "all visible tables stay inside page and retain column headings and values",
+    "pagination": "sequential 1 through 42; headers, footers and section transitions legible",
+    "text_words_outside_page_bounds": 0,
+    "latex_overfull_warnings": 0
+  },
+  "substantive_findings": [
+    {
+      "id": "QA-SCI-01",
+      "severity": "medium",
+      "pages": [
+        41,
+        42
+      ],
+      "section": "Appendix B.3; related framing in Appendix A.5",
+      "status": "requires_current_delivery_checkpoint_update",
+      "finding": "B.3 still states that completion of neural end-to-end validation and browser acceptance is not certified and will only be recorded later. The current code now has two real CPU SDRP inference receipts, including a network-download-guarded run, and root is maintaining browser acceptance evidence. The final delivery checkpoint should name whichever evidence has actually passed before publication.",
+      "evidence": [
+        "validation/neural/ACCEPTANCE.json",
+        "validation/neural/real_sample_ai_acestep.json",
+        "validation/neural/real_sample_human_maestro.json"
+      ],
+      "recommendation": "Update only the delivery status with verified receipt paths and precise scope. Preserve non-bitwise/hardware-shift, internal-calibration-only, CUDA-not-locally-run, and unresolved strict MP3 limitations. Do not turn smoke tests into external scientific validation."
+    }
+  ],
+  "nonblocking_layout_observations": [
+    {
+      "pages": [
+        4
+      ],
+      "note": "The final contents page holds only three Appendix B entries. This is sparse but not clipped or broken; optional TOC compaction would save a page."
+    },
+    {
+      "pages": [
+        39
+      ],
+      "note": "The narrow Purpose column is fully justified, producing large interword gaps in a few rows. Text remains readable and separated from the path column."
+    }
+  ],
+  "scientific_status_checks": [
+    "Section 16 correctly labels the new calibration as retrospective internal development, not new external or held-source validation.",
+    "Table 17 train/calibration/test row and closure counts agree with the frozen protocol: 2549/839/840 rows and 1511/506/507 closures.",
+    "Table 18 separates calibrated-probability threshold 0.5 from the historical raw-score threshold and explicitly avoids winner selection claims.",
+    "BC remains excluded from deployment probability while historical BC-containing comparisons remain visible.",
+    "Human MAESTRO0124 false-positive browser example is explicitly retained on page 36.",
+    "Eight raw-object hashes and four strict waveform/feature matches agree with validation/sample_replay.json; four MP3 strict failures remain open and are not hidden by their small probability impact.",
+    "Native60 AI-only results remain sensitivities rather than two-class balanced accuracy or specificity claims."
+  ],
+  "recheck_requirement": "If the PDF is regenerated, this receipt applies only to the SHA above. Re-render at least changed/reflowed pages and any shifted table/figure pages, then pin the new PDF SHA.",
+  "cleanup": "All 42 page renders, seven contact sheets, 11 enlarged pages and extracted text are under code/validation/thesis-qa. They are QA intermediates, not additional thesis deliverables."
+}

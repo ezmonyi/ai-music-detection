@@ -1,0 +1,4 @@
+# Preserve checksum-pinned research artifacts on every checkout platform.
+* -text
+# The exact historical report is CRLF; normalizing it would break its hash.
+validation/native60_replay/report/all_subsets_caps_populations.csv whitespace=cr-at-eol

@@ -1,0 +1,72 @@
+{
+  "status": "restored_private_remote_archive_verified",
+  "checked_at_utc": "2026-09-30T08:50:03Z",
+  "scope": "Preserve the exact historical rights-held archive and manifest. No local data deletion and no permission broadening.",
+  "destination": {
+    "name": "private_rights_hold_4484_v1",
+    "id": "1NF6O-gw866CbTXkMzOWPCEdx6eEMucWT",
+    "parents": ["1IPJn7F0r27p5aliE3JTX_IAExkX0GRwC"],
+    "url": "https://drive.google.com/drive/folders/1NF6O-gw866CbTXkMzOWPCEdx6eEMucWT",
+    "shared": false,
+    "permissions": [{"type": "user", "role": "owner"}],
+    "folder_listing_verified_two_files": true
+  },
+  "actions": [
+    "Created the absent private_rights_hold_4484_v1 folder under the existing live data folder.",
+    "Moved the two existing file IDs from verified old parent 1qWYtHXk-OCqeKmfjky31urlxk8P09ySc into the destination, retaining original content and IDs.",
+    "Set trashed=false on the two moved files after Drive preserved their previous trash status.",
+    "Verified current parents, size, MD5, trash flags, private owner-only permissions, and bounded TAR member hashes."
+  ],
+  "archive": {
+    "id": "1H1Di7U4bhN4WmhfD9yVTSUfU3KGahx-P",
+    "name": "rights_hold_4484_audio.tar",
+    "url": "https://drive.google.com/file/d/1H1Di7U4bhN4WmhfD9yVTSUfU3KGahx-P/view",
+    "bytes": 9217576960,
+    "md5_remote_and_local": "e38b4b488b85a8214f5d34c2983c051b",
+    "sha256_recomputed_local": "bb1f7efa0c4c12e1f9b51db5c6b58840d3834599496037e7f2bb858dfda6e1e6",
+    "trashed": false,
+    "explicitlyTrashed": false,
+    "parents": ["1NF6O-gw866CbTXkMzOWPCEdx6eEMucWT"],
+    "shared": false,
+    "permissions": [{"type": "user", "role": "owner"}]
+  },
+  "manifest": {
+    "id": "1p-nNRNKvRvU8PiTsEPZN00pMXwZOPFK-",
+    "name": "manifest.json",
+    "bytes": 3618795,
+    "md5_remote_and_local": "6c235b68df2618483ad2a24653a762d6",
+    "sha256_local_and_embedded_remote_member": "a237ee93b34994e1c7da7b9a85863166fdea3fdf77ec1fdc2be0db96f6bd4bb0",
+    "audio_member_count": 4484,
+    "unique_audio_sha256_count": 4484,
+    "trashed": false,
+    "explicitlyTrashed": false,
+    "parents": ["1NF6O-gw866CbTXkMzOWPCEdx6eEMucWT"],
+    "shared": false,
+    "permissions": [{"type": "user", "role": "owner"}]
+  },
+  "post_restore_bounded_archive_reads": {
+    "method": "Authenticated HTTP 206 with exact Content-Range checks; no full archive download",
+    "bytes_read": 6549073,
+    "members": [
+      {
+        "name": "manifest.json",
+        "offset": 512,
+        "bytes": 3618795,
+        "sha256": "a237ee93b34994e1c7da7b9a85863166fdea3fdf77ec1fdc2be0db96f6bd4bb0",
+        "matches_local": true
+      },
+      {
+        "name": "audio/000a573de21ea86deb63732c5f79ea3962d49beacdfc042068a267c0e98fface.flac",
+        "offset": 3620864,
+        "bytes": 2930278,
+        "sha256": "000a573de21ea86deb63732c5f79ea3962d49beacdfc042068a267c0e98fface",
+        "matches_manifest": true
+      }
+    ]
+  },
+  "verification_boundary": "Remote full-object size and Drive MD5 match the freshly hashed local archive; two bounded embedded members also match SHA256. The remote archive was not downloaded in full and all 4484 remote payloads were not individually rehashed.",
+  "access_note": "The two existing rclone clients use drive.file scope and see different previously authorized object sets. The archive was readable with the historical client. Connector lifecycle actions resolved cross-client parent visibility without changing sharing permissions.",
+  "rights_note": "Private retention only. Historical unresolved rights/provenance flags remain unchanged; this does not authorize publication or redistribution.",
+  "local_archive_deleted": false,
+  "remote_files_deleted": false
+}

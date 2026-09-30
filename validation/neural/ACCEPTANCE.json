@@ -1,0 +1,178 @@
+{
+  "schema_version": "real-neural-backend-acceptance-v1",
+  "status": "cpu_end_to_end_validated",
+  "files": {
+    "src/music_detector/neural.py": "370a234d1a569481521cb2128b66769d0a04ad9f3f8e1d57bb347138290d69b1",
+    "src/music_detector/neural_features.py": "60f2131d012b9da56303a22f9892c5f12dbbc5a6987b0b621c3564252dd9e7c0",
+    "src/music_detector/algorithms/expanded_feature_definitions.py": "8b9745085c7518e84613b2ba499dbae775a57e4dcf95670c5e86a05ab524ff00",
+    "src/music_detector/assets/demucs_frequency_bias.npz": "bcacfecac5ce69927dfed2a51ec21cc346f613a7874c519e419d22d35a97de5e",
+    "src/music_detector/assets/neural_runtime.json": "9ffcb47f043225f7678d9764ba8f52c5209866c7dd629f4a3633995c7b271536",
+    "manifests/neural_runtime.json": "9ffcb47f043225f7678d9764ba8f52c5209866c7dd629f4a3633995c7b271536",
+    "manifests/historical_inference_runtime_contract.json": "c6581c737fdb584ff763cc88752dc98864d9ea583a3e4cf9dd552a42ce791268",
+    "manifests/historical_inference_checkpoint_manifest.json": "ec65f4d774d21340b0cf40cd91ab526a92f9545bb5314c440a8db9d6ab618ad4",
+    "tests/test_neural.py": "e576216242ccc5b0776bfb17b5940b4858898b333da131355b7c5a6b3ef54932",
+    "validation/neural/real_sample_ai_acestep.json": "8776c88037f1f12a65d04a620735660bbcefb0b8178c81b1966599cd7f3d10f7",
+    "validation/neural/real_sample_human_maestro.json": "21ebc29021838c78112891a7ad9d3533641313901946d7123ae478e64f39c202",
+    "validation/neural/historical_comparison.json": "4f7372cccb68c9213aa775c5700764961969a60c9150befa609ee00e2edef4f5",
+    "validation/neural/mps_probe.json": "c7c3042a53872cf941e01fe6adc8956d70da7cf14bed2c0c7f0b900346760885",
+    "validation/neural/mps_full_probe.json": "76060f3f26d3f2f0569f4c3cbaec635557e81a1e4f67b71c6e79039d8646bc83"
+  },
+  "runtime_status": {
+    "ready": true,
+    "families": [
+      "S",
+      "D",
+      "R",
+      "P"
+    ],
+    "cache_dir": "/Users/yi/.cache/music-artifact-detector/neural-v1",
+    "errors": [],
+    "versions": {
+      "all-in-one-infer": "3.1.0",
+      "beat-this": "1.1.0",
+      "demucs-infer": "4.2.2",
+      "einops": "0.8.2",
+      "julius": "0.2.8",
+      "librosa": "0.11.0",
+      "madmom-infer": "0.2.0",
+      "numpy": "1.26.4",
+      "rotary-embedding-torch": "0.9.1",
+      "scipy": "1.17.1",
+      "soundfile": "0.14.0",
+      "soxr": "1.1.0",
+      "torch": "2.8.0",
+      "torchaudio": "2.8.0"
+    },
+    "source_files_verified": true,
+    "assets": [
+      {
+        "name": "955717e8-8726e21a.th",
+        "ready": true,
+        "bytes": 84141911
+      },
+      {
+        "name": "harmonix-fold0-0vra4ys2.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold1-3ozjhtsj.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold2-gmgo0nsy.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold3-i92b7m8p.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold4-1bql5qo0.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold5-x4z5zeef.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold6-x7t226rq.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "harmonix-fold7-qwwskhg6.pth",
+        "ready": true,
+        "bytes": 1400571
+      },
+      {
+        "name": "beat_this-final0.ckpt",
+        "ready": true,
+        "bytes": 81058141
+      }
+    ],
+    "manifest_sha256": "9ffcb47f043225f7678d9764ba8f52c5209866c7dd629f4a3633995c7b271536",
+    "setup_command": "python -m music_detector.neural setup --install-dependencies --download-weights",
+    "supported_devices": [
+      "cpu",
+      "cuda"
+    ],
+    "limitations": [
+      "Demucs shifts=1 was unseeded historically; new stems are not bitwise historical replay.",
+      "CPU float32 BeatThis differs from historical CUDA autocast float16; no probability calibration guarantee under hardware shift.",
+      "Historical transitive packages were not fully frozen; new runtime records and pins its own transitive numerical dependencies.",
+      "MPS is not validated here; upstream later removed MPS support by project policy. Use CPU on Apple Silicon."
+    ]
+  },
+  "tests": {
+    "command": "python -m pytest tests/test_neural.py tests/test_scoring.py tests/test_calibration.py -q",
+    "passed": 24,
+    "neural_tests": 9,
+    "pip_check": "No broken requirements found."
+  },
+  "post_inference_hardening": {
+    "date": "2026-09-30",
+    "change": "Reject nonfinite raw Beat This timestamps/beat numbers and All-In-One segment starts/ends before the frozen core filters or clips them.",
+    "prior_inference_adapter_sha256": "00d88bd8a4a015380c57c63a75db9dcdc60f323962038a7b1386408d6bfba78e",
+    "prior_neural_tests_sha256": "6afe62c3578ec5ce206200496d71544409adbfbf7ea6967f00e6dceeca655082",
+    "command_from_workspace": "code/.venv/bin/python -m pytest -q -p no:cacheprovider code/tests/test_neural.py code/tests/test_scoring.py code/tests/test_calibration.py",
+    "passed": 35,
+    "neural_tests": 20,
+    "new_nonfinite_product_cases": 11,
+    "real_audio_inference_rerun": false,
+    "frozen_core_scoring_calibration_changed": false,
+    "scope": "Offline adapter regression checks only. The two real-audio inference receipts above remain observations of the prior adapter; this patch does not claim a fresh recording inference or new scientific validation."
+  },
+  "cpu_real_samples": [
+    {
+      "sample_id": "ai_acestep_muse_cn_suno_cn_000107_1",
+      "features": 27,
+      "finite_features": 24,
+      "quality": {
+        "D": "eligible",
+        "S": "eligible",
+        "R": "eligible",
+        "P": "eligible"
+      },
+      "elapsed_seconds": 31.89302062499337,
+      "bitwise_historical_replay": false
+    },
+    {
+      "sample_id": "human_maestro_0124",
+      "features": 27,
+      "finite_features": 21,
+      "quality": {
+        "D": "eligible",
+        "S": "eligible",
+        "R": "eligible",
+        "P": "unavailable_fewer_than_3_sections_or_downbeat_spans"
+      },
+      "elapsed_seconds": 14.398288708063774,
+      "bitwise_historical_replay": false
+    }
+  ],
+  "cuda": {
+    "implementation": "same pinned chain and historical precision parameters",
+    "locally_executed": false,
+    "reason": "Apple Silicon host has no CUDA"
+  },
+  "mps": {
+    "full_real_probe_succeeded": true,
+    "implicit_fallback_disabled": true,
+    "production_supported": false,
+    "reason": "not sufficiently validated; not exposed as a production option"
+  },
+  "frozen_calibration_and_scoring_unchanged": true,
+  "no_generation_model_restored": true,
+  "weights_committed_to_git": false,
+  "remote_mutations_performed": false,
+  "offline_human_sample": "urllib.request.urlopen/urlretrieve and torch.hub.load_state_dict_from_url were prohibited throughout the full inference call",
+  "scope": "Implementation and pinned-asset validation on two development samples only; not new external validation, authorship proof, or a new calibration experiment.",
+  "reference_preservation": "Exact historical runtime and checkpoint JSON receipts are committed separately; both match their archived hashes. Original neural feature core is vendored byte-identically.",
+  "raw_waveform_products": "Retained outside git for local audit during consolidation; runtime does not depend on these old sample outputs."
+}

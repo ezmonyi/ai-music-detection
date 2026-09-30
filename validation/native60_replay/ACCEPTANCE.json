@@ -1,0 +1,68 @@
+{
+  "status": "exact_pinned_predictions_and_report_replay_pass",
+  "verification_date": "2026-09-30",
+  "input_origin": "Current private Google Drive files, grounded by live metadata before each download",
+  "csv": {
+    "drive_id": "1rIkYezgWs5jvrtnyIaFnnooBmmQkyPvm",
+    "bytes": 126790798,
+    "sha256": "afc31519bdd15da38df142a3de4b18a7fae732250910adcb854e6bff221d3bd8",
+    "saved_uncompressed": false,
+    "reconstructed_gzip_decodes_to_same_bytes_and_hash": true
+  },
+  "gzip": {
+    "bytes": 13431894,
+    "sha256": "ef8243b8aba510a5d9c44999a1820fbe7be0ad38caa65fbf855bcfddef6bd161",
+    "exact_original_pinned_bytes": true,
+    "method": "Stream current CSV into gzip level 9, filename predictions.csv, mtime 0, with the historical TextIOWrapper final sync-flush behavior",
+    "zlib_runtime_version": "1.2.12"
+  },
+  "report": {
+    "script": "current/yue2_500_extension_20260911/report_native60_transfer_v1.py",
+    "script_sha256": "ee6ff483cad8e941b643174d9621cdf0c409818daf86e869d5004b75f685215e",
+    "script_unmodified": true,
+    "command_from_workspace": "code/.venv/bin/python code/current/yue2_500_extension_20260911/report_native60_transfer_v1.py --input-root work/consolidation_20260930/native60_replay --output code/validation/native60_replay/report",
+    "source_commit_sha256": "34782ccfa467d5304ec2a4af1000d390eb467f004bb591ddce1474d06a068e64",
+    "exit_code": 0,
+    "stdout": "Verified 876300 predictions; exported all 1905 sensitivity cells",
+    "prediction_rows_verified": 876300,
+    "per_model_summaries_verified": 9525,
+    "models": 3175,
+    "recordings": 276,
+    "locked_test_recordings": 53,
+    "development_recordings": 223,
+    "aggregate_cells": 1905,
+    "classifier_fits": 0
+  },
+  "reference": "results/native60_transfer_report_v1/COMMIT.json",
+  "comparison_policy": "Exact file size and SHA256 for both generated report products; semantic JSON equality for report COMMIT. No numeric tolerance or relabeling.",
+  "comparison": {
+    "all_products_exact_match": true,
+    "commit_semantically_equal": true,
+    "products": {
+      "native60_transfer_tables.tex": {
+        "bytes": 725,
+        "sha256": "31e152b47931e6970525e011d714d09a56735ba6145bc8ae479e076041526009",
+        "exact_match": true
+      },
+      "all_subsets_caps_populations.csv": {
+        "bytes": 174409,
+        "sha256": "fbf495559da43be2fa878576236e530f666e7647aabb406546dc935deec6ea23",
+        "exact_match": true
+      }
+    }
+  },
+  "checks": [
+    "Pinned COMMIT, per-model summary, metadata, and gzip SHA256 and size checks",
+    "3175 complete unique recording-ID sets, each containing exactly the 276 eligible recordings",
+    "Recorded roles match pinned metadata",
+    "Every predicted_ai value matches the raw_score >= 0.5 decision",
+    "Model SHA256 values match per-model summaries",
+    "All population row counts, true-positive and false-negative counts, and sensitivities reconcile",
+    "All 1905 aggregate cells contain five distinct fold models",
+    "Single-class balanced accuracy, specificity and ROC-AUC remain unavailable"
+  ],
+  "scientific_boundary": "This is an exact replay of persisted predictions into AI-only Native60 sensitivity reports. It is not a new model fit, audio feature extraction, or independent regeneration of raw scores. It does not measure balanced accuracy or generalize the eight-audio sample validation.",
+  "instructions": "Run validation/native60_replay/run_replay.sh from the code repository with two new directories and MUSIC_DETECTOR_DRIVE_TOKEN in the environment. Temporary report inputs should remain outside version control.",
+  "no_models_or_ui_modified": true,
+  "local_data_deleted": false
+}

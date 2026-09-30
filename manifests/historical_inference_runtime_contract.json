@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "frozen_utc_date": "2026-09-05",
+  "host_class": "RTX_5090",
+  "inference_host": "5090-2",
+  "runtime_root": "/mnt/nfs-code/users/yi/dynamics_rhythm_external_benchmark_20260903",
+  "all_in_one": {
+    "model": "harmonix-all",
+    "device": "cuda",
+    "keep_byproducts": true,
+    "demucs_model": "htdemucs",
+    "demucs_overlap": 0.25,
+    "demucs_fp16": false,
+    "demucs_shifts": 1,
+    "demucs_shift_rng": "python_stdlib_random_unseeded_established_default",
+    "harmonix_checkpoint_roles": "ordered eight-fold ensemble harmonix-fold0 through harmonix-fold7",
+    "demucs_resolved_signature": "955717e8",
+    "allin1_cli_sha256": "ddf8057674a7a132e24db84596cc8780d29ab351f4378a9c98a6e74838683031",
+    "allin1_stems_sha256": "4f67954462316167be1483cda70419426f736773b30e217e446439e1ae12f037",
+    "demucs_apply_sha256": "1b9bb80541b4b06d27c85bbbd94d0e09bc7cb4cc16a1616c95a929f40afb93f6"
+  },
+  "checkpoint_manifest_path": "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/inference_checkpoint_manifest.json",
+  "checkpoint_manifest_sha256": "ec65f4d774d21340b0cf40cd91ab526a92f9545bb5314c440a8db9d6ab618ad4",
+  "beat_this": {
+    "checkpoint": "checkpoints/hub/checkpoints/beat_this-final0.ckpt",
+    "checkpoint_sha256": "8c328b45f59d8dd3dff219253ff6a8d6482be57d0133a29140e2febbf8eb8331",
+    "repository_commit": "b95c8ab0c58c2d9fcfd40508ae8dffbc05ac4f5c",
+    "dbn": false,
+    "float16": true,
+    "gpu_argument": 0
+  },
+  "torch_version": "2.8.0+cu128",
+  "reproducibility_boundary": "Exact reuse is from frozen stem, beat, spectrogram, and structure outputs plus hashes. Re-running Demucs is not claimed bitwise reproducible because the established shifts=1 path draws an unseeded Python random offset. No seed, overlap, precision, or model option is changed mid-run.",
+  "library_runtime_snapshot": {
+    "schema_version": 1,
+    "captured_at_utc": "2026-09-05T04:33:18.567173+00:00",
+    "python": "3.11.15",
+    "python_implementation": "CPython",
+    "python_executable_sha256": "c0b74b270ea823c760917e64fbde1945e67ba739d97fa716a48a5b69e6505d62",
+    "platform": "Linux-6.8.0-31-generic-x86_64-with-glibc2.39",
+    "packages": {
+      "numpy": "1.26.4",
+      "scipy": "1.17.1",
+      "librosa": "0.11.0",
+      "soundfile": "0.14.0",
+      "demucs": null,
+      "demucs-infer": "4.2.2",
+      "all-in-one-infer": "3.1.0",
+      "beat_this": "1.1.0",
+      "torch": "2.8.0+cu128",
+      "torchaudio": "2.8.0+cu128"
+    },
+    "collection_method": "importlib.metadata.version; no pip freeze or direct_url metadata",
+    "torch_runtime": {
+      "cuda_version": "12.8",
+      "cudnn_version": 91002,
+      "cuda_available": true,
+      "gpu_names": [
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090",
+        "NVIDIA GeForce RTX 5090"
+      ]
+    }
+  },
+  "library_runtime_snapshot_path": "/mnt/nfs-data/users/yi/source_diversity_expansion_20260905/results/remote_inference_runtime_versions.json",
+  "library_runtime_snapshot_sha256": "2e6dc36b80cd48c09aa6747edf135d5a7bb876e262849eaf0a8cde7e26bd8550"
+}

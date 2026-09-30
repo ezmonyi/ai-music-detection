@@ -1,0 +1,74 @@
+{
+  "schema_version": "sample-replay-post-hardening-comparison-v1",
+  "status": "unchanged_scientific_numbers",
+  "scope": "same_eight_fixed_development_samples_not_accuracy_benchmark",
+  "prior_report": "validation/sample_replay.json",
+  "prior_report_sha256": "60ab3261646afab3dab461ad7cad25f3fc44fb05451d98c76303f010d87d57fa",
+  "new_report": "validation/sample_replay_final.json",
+  "new_report_sha256": "369b91b53ec938a162ae5186d13719779fd2a7417d6125172cf6c3f2dd1b85e3",
+  "summary_unchanged": true,
+  "summary": {
+    "samples": 8,
+    "source_hash_matches": 8,
+    "waveform_matches": 4,
+    "strict_feature_passes": 4,
+    "combination_checks": 56,
+    "decision_changes": 0,
+    "maximum_raw_score_error": 3.0961225483960853e-06,
+    "maximum_probability_error": 2.8854751680795765e-06
+  },
+  "all_56_score_probability_decision_records_exactly_equal": true,
+  "sample_checks": [
+    {
+      "id": "human_fma_medium_0204c5ed58174dd4",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    },
+    {
+      "id": "human_fma_medium_042fd8cc5beeb6ae",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    },
+    {
+      "id": "human_maestro_0278",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    },
+    {
+      "id": "human_maestro_0124",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    },
+    {
+      "id": "ai_acestep_muse_cn_suno_cn_000107_1",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    },
+    {
+      "id": "ai_acestep_muse_cn_suno_cn_000134_1",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    },
+    {
+      "id": "ai_humair_suno_02db49220afe3195",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    },
+    {
+      "id": "ai_humair_suno_033dc40829db4b46",
+      "all_scientific_numbers_equal": true,
+      "changed_fields": []
+    }
+  ],
+  "source_files_sha256": {
+    "src/music_detector/audio.py": "7739c67e3fef1afe9ec899601335f7fbf696e36d1437abf7029499c1afb2cd74",
+    "src/music_detector/reproduce.py": "9fed00d4726758ffd2172a5c78d34fe1f938e989a2a8982dd3415bd97f9219f7",
+    "src/music_detector/scoring.py": "d1382ff0d56978d01307d5483267d5e66e499e9b4d446ec3040331e4e55e2a9f",
+    "src/music_detector/calibration.py": "e96865300877a5394d9af35131c1148d0b4b430783cb63a32bfb6636aa806c18",
+    "src/music_detector/assets/deployment_models.json": "05dbe17a012bfec5391dd7c0b203549929e26d1f4612874332000403f71aaf53"
+  },
+  "limitations": [
+    "Four MP3 sample strict waveform/feature mismatches remain unresolved and are not relabelled as passing.",
+    "No new cohort inference, calibration fitting, or source-heldout accuracy evaluation occurred."
+  ]
+}

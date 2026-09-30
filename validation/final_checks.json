@@ -1,0 +1,26 @@
+{
+  "date": "2026-09-30",
+  "scope": "Current application integration and regression acceptance, not external detector accuracy",
+  "python": "3.12.14",
+  "commands": {
+    ".venv/bin/python -m pytest -q": {"passed": 83, "failed": 0, "warning": "upstream anyio BlockingPortal deprecation"},
+    ".venv/bin/python -m pip check": "No broken requirements found.",
+    "node --check src/music_detector/static/app.js": "passed"
+  },
+  "browser_final_receipt": "ui/all_artifacts_final_upload_result.json",
+  "browser_acceptance": "ui/ACCEPTANCE.json",
+  "protected_invariants": [
+    "BC remains measurement-only and is excluded from probability estimation",
+    "Native stereo and exact Native30 contract; no short-file padding or mono duplication",
+    "Silent or constant DC input is rejected before scientific feature extraction",
+    "All selected predictive metrics missing leads to abstention, not a missingness-only authorship claim",
+    "Nonfinite raw beat and section timestamps are errors, not silently filtered scientific missingness",
+    "The observed human false positive and strict MP3 replay mismatches remain in the evidence"
+  ],
+  "frozen_scoring_and_calibration_source_modified_by_hardening": false,
+  "limitations": [
+    "CPU neural repeat measurements are not bitwise deterministic because the historical Demucs shift protocol is unseeded",
+    "No new external or unknown-generator accuracy estimate is inferred from implementation acceptance",
+    "CUDA implementation has not been executed on this Apple Silicon host; MPS is not offered"
+  ]
+}
