@@ -1,0 +1,274 @@
+# ACE-Step online artifact-reward RL: experimental training repository
+
+Status: implementation and CPU validation, **not a completed ACE-Step GPU training
+experiment**. No claim about improved perceived music, fit on a 5060, or LoRA/full
+parity follows from the synthetic tests. See [the research review](rl_lora_vs_full.md).
+
+## Scope and boundaries
+
+This extension uses the ACE-Step 1.5 **SFT 2B** flow/DiT decoder. VAE, text encoder,
+condition encoder, tokenizer/detokenizer and all non-decoder weights stay frozen.
+Both native PyTorch LoRA and full-decoder training use the same RL loop. This is
+not the 8-step Turbo configuration used in the earlier generated music corpus.
+The published ACE checkpoint is not advertised as an RL-ready DiT; this is a new
+research adapter, not an official ACE training recipe.
+
+The adapter targets the audited upstream revision
+`ca1e85fe9430179831e6bc6be790c332190a3866`. The source must be pinned and all weights
+must already exist locally. Training must not silently download weights or
+substitute a different model. GPU feasibility and real audio admission remain to
+be measured on the intended machine before starting a large run.
+
+## Files
+
+| Component | Location |
+|---|---|
+| Evidence and LoRA/full ablation rationale | `docs/rl_lora_vs_full.md` |
+| Text-only prompt preparation, exclusions, split provenance | `src/music_detector/rl/data.py` |
+| ACE local-checkpoint adapter and frozen reference | `src/music_detector/rl/acestep_backend.py` |
+| Stochastic flow transitions and policy objective | `src/music_detector/rl/flow.py` |
+| LoRA/full parameter selection and serialization | `src/music_detector/rl/policy.py` |
+| Frozen artifact reward and admission checks | `src/music_detector/rl/rewards.py` |
+| Online rollout, replay, checkpoint/resume, paired evaluation | `src/music_detector/rl/trainer.py` |
+| CLI | `src/music_detector/rl/cli.py` |
+| CPU fixture / actual-GPU templates | `configs/rl/` |
+
+## Environment
+
+Use a separate Python 3.11/3.12 GPU environment. Do not mutate the detector web
+service environment. For CPU-only tests, installing this repository with
+`pip install -e '.[rl,test]'` adds PyTorch; it does **not** install the complete ACE
+runtime or download checkpoints. The CPU tests were run with PyTorch 2.8.0.
+
+For the real adapter, first install dependencies from the pinned ACE checkout in
+that separate environment, then this repository. Upstream currently declares
+Linux x86-64 PyTorch 2.10.0+cu128, Transformers >=4.51,<4.58 and Diffusers >=0.37;
+use its pinned lockfile where available and record the resolved `pip freeze` and
+CUDA/driver versions. These are upstream requirements, not a GPU environment
+validated by this project. Do not treat the CPU environment as an ACE lockfile.
+
+Expected local layout:
+
+```text
+ACE-Step-1.5/                         # audited git revision
+  checkpoints/
+    acestep-v15-sft/                 # model/config/weights + silence_latent.pt
+    vae/                            # waveform VAE
+    Qwen3-Embedding-0.6B/            # frozen text encoder and tokenizer
+```
+
+Replace both `/REPLACE/...` paths in a copied config. Inspect local checkpoint
+provenance/license before use. All generated audio, local data and checkpoints go
+under ignored `.rl-runs/`, `.rl-data/`, or a separate experiment volume. Do not
+commit weights, credentials, raw music or licensed prompt text into the code repo.
+
+## 500 text prompts, not 500 supervised audio targets
+
+Online RL needs prompts, fresh model-generated trajectories and a scalar reward;
+it does not require human audio as paired training targets. The default data
+script makes **500 unique prompts total: 400 train / 50 validation / 50 test**.
+It groups identical normalized captions and source identifiers before selecting
+representatives. Splits are deterministic and independent of source row order.
+Manifest and sidecar hashes record selection, exclusions, revision and license.
+This removes exact/dependency overlap, not semantic near-duplicates or unknown
+pretraining overlap.
+
+Use existing, provenance-complete local metadata where possible:
+
+```bash
+python -m music_detector.rl.data \
+  --input /path/to/prompts.jsonl \
+  --exclude-manifest /path/to/historical_prompt_manifest.jsonl \
+  --exclude-manifest /path/to/detector_heldout_manifest.jsonl \
+  --output-dir .rl-data/music_prompts_500
+```
+
+Alternatively, explicitly fetch only the official MusicCaps caption CSV and
+metadata, never its YouTube audio:
+
+```bash
+python -m music_detector.rl.data --musiccaps-hf \
+  --exclude-manifest /path/to/historical_prompt_manifest.jsonl \
+  --output-dir .rl-data/musiccaps_500
+```
+
+MusicCaps is pinned to revision `0a51889b340037bb75a9a0858af2e4ece21f7f89` and its
+CC-BY-SA-4.0 metadata license is recorded. Source attribution and share-alike
+obligations remain applicable. A caption of a source excerpt is used as a
+generation prompt; `duration_s=30` is the requested output duration, not a claim
+that the original excerpt was 30 seconds. No lyrics are invented. Empty lyrics
+are allowed; this does **not** guarantee vocals. Supplied lyric line breaks and
+vocal language are retained; absent language is `unknown`, not inferred English.
+If rewarding the vocal-only S
+family, first curate eligible vocal prompts and audit admission rates.
+
+Historical/held-out exclusions are **required for a scientific run**, but the
+script cannot discover missing manifests for you. Without them, the outputs
+must not be described as external held-out data. This initial code delivery
+includes only authored toy prompts, not a newly cleared 500-prompt experiment.
+The repository preserves the old Muse manifest builder and its recorded frozen
+manifest hash `bb0941b91d41d10a978cb9e4b077399e89fea92526ee469e0e6743b09efb917b`,
+but not the manifest itself. Retrieve that manifest from the archived project
+before claiming historical prompt disjointness. Historical `source_song_id`,
+`source_track_id`, `acestep_caption`, `lyrics_30s`, and `source_license` aliases
+are supported by the preparation/exclusion path.
+
+## CPU end-to-end check
+
+Run from the repository root, using an installed package or `PYTHONPATH=src`:
+
+```bash
+python -m music_detector.rl.cli train \
+  --config configs/rl/toy_smoke.json --data configs/rl/toy_train.jsonl \
+  --output .rl-runs/toy
+
+python -m music_detector.rl.cli evaluate \
+  --config configs/rl/toy_smoke.json --data configs/rl/toy_validation.jsonl \
+  --checkpoint .rl-runs/toy/checkpoints/group_000003.pt \
+  --output .rl-runs/toy-eval
+```
+
+The tiny synthetic backend is deliberately labeled as non-music evidence.
+It exercises actual nonzero gradients and optimizer updates, not just imports.
+
+## Real-GPU pilot and resume
+
+```bash
+python -m music_detector.rl.cli validate --config /path/to/local_lora.json
+python -m music_detector.rl.cli train \
+  --config /path/to/local_lora.json --data .rl-data/music_prompts_500/train.jsonl \
+  --output .rl-runs/lora-pilot --max-updates 1
+```
+
+`validate` checks configuration only. A one-group pilot is the first real test of
+loading, conditioning, waveform decoding, admission, gradient flow and peak VRAM.
+It generates four candidate and four paired base clips (each 30 seconds, 50
+steps); it is not a memory-free preflight. The VAE and text encoder remain loaded.
+No rented machine is provisioned by this repository.
+
+Resume the same experiment config into a **new directory**, preserving all prior
+artifacts:
+
+```bash
+python -m music_detector.rl.cli train \
+  --config /path/to/local_lora.json --data .rl-data/music_prompts_500/train.jsonl \
+  --resume .rl-runs/lora-pilot/checkpoints/group_000001.pt \
+  --output .rl-runs/lora-continuation
+```
+
+Config, data, RL source hashes, backend provenance and runtime boundary must
+match. `--max-updates`
+limits the number of additional prompt groups without changing the experiment's
+full group budget. Checkpoints store trainable weights, optimizer, RNG, completed
+groups and update counts. Only load trusted checkpoints; loading uses PyTorch's
+restricted `weights_only=True`. Full-decoder checkpoints are large.
+
+## Sampling and objective
+
+For the ACE path `x_t = t noise + (1-t) data`, the decoder predicts
+`v_t = noise - data`; integration runs from t=1 to t=0. For negative `dt`, use
+
+```text
+sigma² = eta² t/(1-t)
+mu = x * (1 + sigma² dt/(2t)) + v * (1 + sigma²(1-t)/(2t)) * dt
+x_next ~ Normal(mu, sigma² * (-dt) I)
+```
+
+Only the interior window [0.2,0.8] is stochastic. The prefix/suffix and endpoint
+steps are Euler ODE steps and have no Gaussian policy likelihood. State and
+density arithmetic use float32. Each prompt produces four distinct seeded
+trajectories sequentially; four seeded stochastic timesteps per trajectory are
+retained on CPU for replay. Conditioning is computed once per prompt/group.
+
+The reward is `-tanh(frozen_raw_detector_score / score_scale)` after admission.
+Group-centered/std-normalized advantages drive the clipped policy surrogate;
+equal-variance Gaussian KL penalizes drift from the frozen original decoder.
+Sampled next states and old log densities are detached. The VAE and reward are
+not differentiated. Same-seed base audio is used for quality gates and diagnostic
+delta, **not** as the sole training reward: all paired deltas would be zero at
+initialization and prevent learning.
+
+The first implementation makes **one on-policy replay pass and one optimizer
+step per group**. Its pre-update ratios should be one; the PPO clipping term is
+present but does not provide multi-epoch PPO reuse. This is an intentionally
+small starting protocol, not a reproduction of every Flow-GRPO hyperparameter.
+`logprob_reduction=mean` is the official-style dimension-normalized surrogate,
+not a joint high-dimensional importance ratio. `sum` is supported but changes
+scaling and needs retuning. Never mix these in one comparison.
+
+CFG is fixed to 1. ACE's default APG guidance has inter-step momentum and cannot
+be substituted without storing/replaying that state. No Heun, velocity clipping,
+EMA, repaint, LM prompt rewriting or hidden sample postprocessing is enabled.
+
+## Reward admission and interpretation
+
+Default GPU templates use **F + SC** as a lower-cost pilot reward: phase residual
+and stereo statistics. **F is not the thesis's high-frequency vocal statistic**;
+that is S. To study that hypothesis, use a separate config with, for example,
+`"families": ["S", "F", "SC"]`, install the exact released Demucs/runtime assets,
+and use vocal-eligible prompts. S/D/R/P require their original frozen neural
+extractors; no cheaper DSP substitute is silently used. H is the chroma-path
+feature family. BC remains a research-only diagnostic and is rejected as a
+predictive reward family.
+
+All selected features must be complete, finite and eligible. Bundle, extractor
+and asset hashes pin the reward; changes require an explicit new experiment.
+Gates check native stereo, duration, finite samples, silence, clipping, bandwidth,
+stereo collapse and paired RMS/activity drift. Thresholds are **engineering
+starting values**, not validated judgments of artistic quality. Do not normalize,
+duplicate channels or low-pass audio to pass these checks. All-invalid groups
+stop with diagnostics; zero-advantage groups skip the update and are counted.
+
+These guards cannot prove prompt/lyric adherence or prevent every reward hack.
+Inspect paired saved audio and monitor non-reward feature families, independent
+quality/adherence metrics, output diversity, VAE reconstruction error and blinded
+listening. A lower AI-source detector score is not proof of a human origin or
+improved perceived music. Human reference recordings belong in evaluation, not
+automatically in the online prompt optimization set.
+
+## LoRA versus full comparison
+
+```bash
+python -m music_detector.rl.cli ablation-plan \
+  --config /path/to/local_lora.json --output .rl-runs/ablation-plan
+```
+
+This writes **45 planned configs, launches none**: all-linear LoRA ranks 8/32/128,
+attention-only rank 32, and full decoder; three LR candidates and three seeds each.
+All-linear includes the decoder's other linear projections as well as attention
+and MLP; exact module paths and parameter counts are saved. Alpha/r stays at 2.
+It does not adapt Conv1d/ConvTranspose1d or free scale/shift parameters. Full
+decoder trains those too: this is a coverage/capacity comparison, not a pure
+rank-only comparison. Those differences are deliberate and must be reported.
+
+Keep data, solver, groups, steps, stochastic seeds and reward fixed; tune each
+arm's LR on validation only. Test only after selection. Compare at matched
+candidate rollout/group budgets, and separately at measured GPU-hours. The
+100-group default is a pilot (400 candidates), not one pass over 500 prompts and
+not a convergence claim. Base-reference rollouts double generated clip count.
+
+`model.precision` specifies compute precision. Full mode uses fp32 trainable
+tensors/Adam states with autocast compute; LoRA has fp32 adapters and frozen
+base tensors. Actual trainable/frozen dtypes are recorded in the manifest.
+Full mode stores a frozen CPU reference and caches a matching-dtype reference
+copy on the GPU (roughly another 8 GB for a 2B fp32 decoder), in addition to the
+trainable model. Its memory cost differs from LoRA;
+do not infer a throughput multiplier from trainable parameter count alone.
+Profile before choosing rental hardware. Full decoder cannot eliminate a frozen
+VAE's intrinsic reconstruction ceiling.
+
+## Outputs and evidence to preserve
+
+Each training directory contains config/manifest hashes, exact parameter/module
+counts, per-sample reward diagnostics/seeds, group metrics, timing and peak-memory
+measurements, periodic paired FLOAT WAVs, checkpoints and summary/failure files.
+The failure log preserves the last completed group; resume only from a completed
+checkpoint. GPU memory figures are process peaks, not total board usage.
+
+Evaluation defaults to same-seed paired **ODE** generation on validation/test,
+with optional `--stochastic` to examine the training sampler. It rejects training
+caption/source overlap, retains paired audio, and reports valid counts and mean
+raw-score delta. This is a minimal evaluation harness: bootstrap confidence
+intervals, source-stratified analysis and blinded listening remain required for
+publication-grade conclusions. No experiment result is added to the thesis until
+those real runs are completed and reviewed.

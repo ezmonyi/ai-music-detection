@@ -1,4 +1,7 @@
 __pycache__/
+.rl-runs/
+.rl-data/
+.rl-cache/
 *.pyc
 .venv/
 venv/

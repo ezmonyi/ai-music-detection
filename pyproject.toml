@@ -23,9 +23,11 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest==8.3.5", "httpx==0.28.1"]
+rl = ["torch>=2.8,<3"]
 
 [project.scripts]
 music-detector = "music_detector.cli:main"
+music-rl = "music_detector.rl.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -197,3 +197,14 @@ redistribution license. The single final English manuscript is in the sibling
 Its source and PDF hashes are bound by `validation/thesis-qa/QA.json`.
 No audio is needed to start the service; reference audio is downloaded only
 when an explicit reproduction command requests it.
+
+## Experimental ACE-Step online RL
+
+An isolated training extension now supports frozen-VAE ACE-Step 1.5 SFT 2B
+FM/DiT LoRA **and full-decoder** policy modes, text-only prompt preparation,
+stochastic flow-policy replay, frozen artifact rewards, checkpoint/resume and
+paired held-out evaluation. This is research code, not evidence that RL has
+improved music quality or that it fits a particular GPU.
+
+See [the training runbook](docs/rl_training.md) and
+[the LoRA-versus-full research review](docs/rl_lora_vs_full.md).
