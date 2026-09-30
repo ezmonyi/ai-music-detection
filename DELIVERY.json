@@ -1,0 +1,58 @@
+{
+  "schema_version": "music-thesis-delivery-v1",
+  "date": "2026-09-30",
+  "scientific_and_application_status": "accepted_with_explicit_limitations",
+  "workspace": {"directories": ["code", "thesis"], "raw_audio_retained": false},
+  "thesis": {
+    "source": "../thesis/thesis.tex",
+    "source_sha256": "858a3f761ad51583b4a9ae99bbdadcbb5731f9cdc5be8c78964e22bd83da4731",
+    "pdf": "../thesis/thesis.pdf",
+    "pdf_sha256": "61cfdefd027d46bf6db2669ae9ead4b41b24e1f4e6979ca754998ab6cbb30564",
+    "language": "English",
+    "pages": 42,
+    "native_editor_compile": "success",
+    "visual_acceptance": "validation/thesis-qa/QA.json"
+  },
+  "code": {
+    "repository": "https://github.com/ezmonyi/ai-music-detection",
+    "branch": "main",
+    "application_release_commit": "6ec4553bd9200655d47a7003212cf68b682d8df7",
+    "publication_mode": "Ordinary fast-forward commits; no history rewrite",
+    "historical_recovery_commit": "b12aad5e2d3ffe1e76b5add7a049e187105ab858",
+    "fresh_github_checkout_tests": {"passed": 83, "failed": 0, "environment": "Existing verified Python 3.12 environment; package imported from the fresh checkout, not from the original workspace"},
+    "private_storage_receipts_excluded_from_public_git": true
+  },
+  "reproduction": {
+    "raw_drive_samples": "validation/sample_replay_final.json",
+    "post_hardening_equality": "validation/sample_replay_final_comparison.json",
+    "all_127_combinations_drive_refit": "validation/calibration/drive_refit_replay.json",
+    "historical_frozen_models": "validation/scoring_replay.json",
+    "native60_exact_report": "validation/native60_replay/ACCEPTANCE.json",
+    "real_offline_neural_analysis": "validation/neural/post_hardening_human_receipt.json",
+    "browser_upload_and_json_download": "validation/ui/ACCEPTANCE.json"
+  },
+  "application": {
+    "entrypoint": "music-detector serve",
+    "interface": "Loopback audio upload, artifact selection, probability, measurements, contribution explanations and JSON export",
+    "predictive_families": ["S", "D", "R", "P", "F", "H", "SC"],
+    "predictive_combinations": 127,
+    "bc": "Optional research measurement; never included in probability",
+    "silent_or_constant_dc": "rejected",
+    "all_predictive_features_missing": "abstain"
+  },
+  "retention": {
+    "private_drive_root": "1ow8f0RzHLYEpOaBaa1hH1bIoJ8dHDQcU",
+    "summary": "validation/storage_retention_summary.json",
+    "rights_held_archive": "validation/rights_archive_retention.json",
+    "retention_gaps": 0,
+    "runtime_policy": "Keep the application environment and explicit analysis-model cache needed by S/D/R/P; no music-generation models or raw audio in the public codebase"
+  },
+  "limitations": [
+    "Four MP3 source bytes match but strict decoded waveform/feature replay does not; all 56 sampled combination decisions were unchanged.",
+    "CPU/GPU precision and the historical unseeded Demucs shifts change fresh neural values; no bitwise neural replay or new-platform external calibration claim.",
+    "Probabilities are retrospective internal reference-mixture calibration, not universal authorship confidence or unknown-generator accuracy.",
+    "The observed human-labelled MAESTRO false positive is retained in the report and tests.",
+    "Native60 report reproduction aggregates frozen predictions; it does not rerun whole-corpus audio inference.",
+    "Research/source-specific licensing still applies; private retention does not grant redistribution rights."
+  ]
+}

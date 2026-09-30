@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "legacy_workspace_consolidated",
+  "completed_at_utc": "2026-09-30T09:30:33.211301+00:00",
+  "retained_root_directories": [
+    "code",
+    "thesis"
+  ],
+  "removed_legacy_regular_files": 10810,
+  "removed_logical_bytes": 13921932516,
+  "removed_symlinks_without_following": 55,
+  "removed_empty_directories": 666,
+  "proof_classes": {
+    "eligible_exact_live_drive_copy": {
+      "files": 6675,
+      "logical_bytes": 13362428345
+    },
+    "regenerable_runtime_cache": {
+      "files": 7,
+      "logical_bytes": 132643
+    },
+    "eligible_remote_git_baseline_blob": {
+      "files": 1938,
+      "logical_bytes": 423929787
+    },
+    "eligible_existing_handoff_receipt_archive_member": {
+      "files": 1986,
+      "logical_bytes": 792669
+    },
+    "redundant_with_retained_code_or_thesis": {
+      "files": 1,
+      "logical_bytes": 2903
+    },
+    "regenerable_exact_native60_gzip_from_live_csv": {
+      "files": 1,
+      "logical_bytes": 13431894
+    },
+    "regenerable_downloaded_sample_from_live_tar_member": {
+      "files": 8,
+      "logical_bytes": 22136078
+    },
+    "regenerable_rejected_downloaded_sample": {
+      "files": 1,
+      "logical_bytes": 679060
+    },
+    "regenerable_new_neural_intermediate_after_process_exit": {
+      "files": 22,
+      "logical_bytes": 96339156
+    },
+    "regenerable_finder_metadata": {
+      "files": 1,
+      "logical_bytes": 8196
+    },
+    "regenerable_authorized_clean_upstream_clone": {
+      "files": 170,
+      "logical_bytes": 2051785
+    }
+  },
+  "hash_verified_unpacked_private_drive_gap_uploads": {
+    "files": 78,
+    "bytes": 398438309
+  },
+  "retention_gaps": 0,
+  "local_file_sha256_rechecked_before_removal": true,
+  "canonical_git_history_preserved": true,
+  "external_runtime_weights_preserved": true,
+  "recovery_note": "Research originals remain on private Drive or verified remote Git; downloaded test inputs and generated caches/intermediates are reproducible. Detailed receipts are local-only."
+}
