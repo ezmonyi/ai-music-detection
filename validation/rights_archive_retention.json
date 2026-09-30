@@ -67,6 +67,21 @@
   "verification_boundary": "Remote full-object size and Drive MD5 match the freshly hashed local archive; two bounded embedded members also match SHA256. The remote archive was not downloaded in full and all 4484 remote payloads were not individually rehashed.",
   "access_note": "The two existing rclone clients use drive.file scope and see different previously authorized object sets. The archive was readable with the historical client. Connector lifecycle actions resolved cross-client parent visibility without changing sharing permissions.",
   "rights_note": "Private retention only. Historical unresolved rights/provenance flags remain unchanged; this does not authorize publication or redistribution.",
-  "local_archive_deleted": false,
+  "local_archive_deleted_during_restore": false,
+  "local_archive_deleted": true,
+  "subsequent_authorized_local_cleanup": {
+    "completed_at_utc": "2026-09-30T09:30:33.211301+00:00",
+    "retention_proof": "validation/storage_retention_summary.json",
+    "final_remote_metadata_readback": {
+      "trashed": false,
+      "shared": false,
+      "owner_only": true,
+      "size": 9217576960,
+      "md5": "e38b4b488b85a8214f5d34c2983c051b",
+      "sha256": "bb1f7efa0c4c12e1f9b51db5c6b58840d3834599496037e7f2bb858dfda6e1e6",
+      "full_object_sha256_matches_rechecked_local_bytes": true
+    },
+    "note": "Only the hash-verified local legacy copy was removed after current private Drive retention was rechecked; the Drive archive and manifest remain intact. Detailed exact-path deletion receipts are local-only."
+  },
   "remote_files_deleted": false
 }
