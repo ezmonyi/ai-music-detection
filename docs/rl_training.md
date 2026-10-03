@@ -1,9 +1,12 @@
 # ACE-Step online artifact-reward RL: experimental training repository
 
-Status: an actual RTX A6000 online pilot is in progress as of 2026-10-03;
-**it is not a completed GPU training experiment**. The original preparation
-plan is preserved separately. No claim about improved perceived music, fit on a 5060, or LoRA/full
-parity follows from the synthetic tests. See [the research review](rl_lora_vs_full.md).
+Status (2026-10-04): the A6000 v2 pilot completed 100 groups / 96 real updates,
+50 test pairs and a separate 50-group frozen-policy cache. The node was released;
+the test did not establish improvement. The original preparation plan below is
+preserved separately. Current priority: [RTX 5060 collection and cloud delivery](rtx5060_collection.md),
+with [bounded offline continuation](rl_offline_continuation.md) deferred until data
+is ready. Actual 5060 fit, offline ACE training and LoRA/full parity are unverified.
+See [the research review](rl_lora_vs_full.md) and [session handoff](SESSION_HANDOFF_OFFLINE_GRPO_20261004.md).
 
 ## Scope and boundaries
 

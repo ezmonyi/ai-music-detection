@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "checkpoint": "/REPLACE/music-rl/runs/a6000-srf-pilot-main-v2/checkpoints/group_000100.pt",
+  "checkpoint_sha256": "c28a4502247cb4736ec1f5b20322381192baef877d3a377188e7ee9a35b2ccd2",
+  "plan": "/REPLACE/music-rl/plan-5060-1000",
+  "runtime": "rtx5060_runtime.example.json",
+  "output": "/REPLACE/music-rl/rtx5060-g100-1000x4",
+  "state_dir": "/REPLACE/music-rl/collector-state",
+  "target_groups": 1000,
+  "batch_groups": 25,
+  "disk_reserve_gib": 4,
+  "upload": {
+    "remote_base": "",
+    "verification": "readback",
+    "rclone_config": null
+  }
+}

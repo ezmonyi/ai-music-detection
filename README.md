@@ -4,6 +4,11 @@ A local audio-upload application and reproducible research code for a thesis
 on source-labelled AI-generated versus human music. Acoustic evidence is an
 association with a research dataset, not proof of a musician's authorship.
 
+RTX 5060 collection handoff: [setup, probe, data collection and cloud upload](docs/rtx5060_collection.md).
+The [session handoff](docs/SESSION_HANDOFF_OFFLINE_GRPO_20261004.md) records the
+completed A6000 pilot and the deferred offline continuation. No 5060 GPU fit or
+offline music-quality improvement is claimed by the CPU tests.
+
 ## Start the application
 
 Use Python 3.12 (the verified host uses 3.12.14):
