@@ -371,3 +371,36 @@ or snapshot sizes. The controller validates closed-group identity, exact member
 coverage, sizes and SHA-256 after the worker exits successfully; all-invalid
 groups remain in the data. Final local backup and confirmed environment snapshot
 are still required before stopping the exact rented node.
+
+### Completed first shard and latest 50-group target (2026-10-03)
+
+The 24-group shard completed with 96 full FP32 trajectories, 192 WAVs,
+59 admitted and 37 retained invalid candidates. All 347 files (3,341,891,948
+bytes) passed size/SHA-256 verification and a second full read. The first two
+new groups recorded 32 replay checks with zero maximum log-probability error.
+First/last trajectory spot checks have shape `[51,1,750,64]`, 50 solver steps,
+and 31 masked-in stochastic likelihood steps. This is a frozen-policy cache,
+not offline optimizer training or evidence of improved perceptual quality.
+
+The user's latest instruction supersedes a proposed 100-group expansion:
+**50 cumulative prompt groups, without expanding storage**. Preserve the first
+24 groups and append 26 distinct groups from sorted train[126:152] in a separate
+directory. The main cache target is 200 trajectories/400 WAVs. Including the
+separate original two-group probe, retention will total 52 groups, 208
+trajectories and 416 WAVs; those totals are not completion claims.
+
+[`scripts/run_matpool_offline_extension.py`](../scripts/run_matpool_offline_extension.py)
+pins the original controller source hash, validates the measured serialization
+contract, never overwrites the first shard, and verifies both shards again
+before writing the cumulative 50-group receipt. The additional data budget is
+3,740,106,327 bytes: measured fixed-size audio/FP32 trajectories, 3 MB condition
+and 400 KB group-metadata allowances, a complete adapter copy and 64 MiB global
+metadata. This replaces the pre-probe blanket 20% data allowance; the separate
+26 GB snapshot estimate and 4 GiB overall safety reserve are unchanged. Actual
+closed test WAVs already occupying the disk are not counted a second time as
+future output. Snapshot size remains an estimate until the provider confirms it.
+
+Forty collection, backup, controller and extension tests passed locally and on
+the GPU host using CPU fixtures. The append worker started only after the live
+capacity gate passed. Completion still requires the cumulative verification,
+full exact-member local backup, snapshot confirmation and exact-node stop.
