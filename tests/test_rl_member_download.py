@@ -75,6 +75,39 @@ def test_manifest_receipt_corruption_is_rejected(tmp_path):
         module.copy_verified(local,"node",22,"socket",str(remote))
 
 
+def test_parallel_copy_needs_real_source_digest_and_does_not_fabricate_receipt(tmp_path):
+    local,remote,manifest=fixture(tmp_path)
+    (local/"ARCHIVE_SHA256.json").unlink()
+    digest=module.sha256(local/"MEMBERS_SHA256.json")
+    def runner(args,*,input,check):
+        assert "--delete" not in args and "--inplace" not in args
+        for name in input.decode().rstrip("\x00").split("\x00"):
+            target=local/name; target.parent.mkdir(parents=True,exist_ok=True); shutil.copy2(remote/name,target)
+    result=module.copy_verified(local,"node",22,"socket",str(remote),runner=runner,
+                                expected_manifest_sha256=digest)
+    assert result["status"]=="all_local_members_sha256_verified"
+    assert result["manifest_source_verification"]=="explicit_ssh_source_manifest_sha256"
+    assert result["archive_receipt_available_at_start"] is False
+    assert result["archive_downloaded_or_locally_verified"] is False
+    assert not (local/"ARCHIVE_SHA256.json").exists()
+
+
+def test_missing_or_wrong_source_digest_refuses_parallel_copy(tmp_path):
+    local,remote,_=fixture(tmp_path)
+    (local/"ARCHIVE_SHA256.json").unlink()
+    with pytest.raises(ValueError,match="Need an archive receipt"):
+        module.copy_verified(local,"node",22,"socket",str(remote))
+    with pytest.raises(ValueError,match="manifest SHA-256 mismatch"):
+        module.copy_verified(local,"node",22,"socket",str(remote),expected_manifest_sha256="0"*64)
+
+
+def test_local_capacity_safety_gate_precedes_transfer(tmp_path,monkeypatch):
+    local,remote,_=fixture(tmp_path)
+    monkeypatch.setattr(module.shutil,"disk_usage",lambda _p: type("Disk",(),{"free":4*1024**3})())
+    with pytest.raises(ValueError,match="Insufficient local capacity"):
+        module.copy_verified(local,"node",22,"socket",str(remote),runner=lambda *_a,**_k: pytest.fail("Do not transfer without headroom"))
+
+
 @pytest.mark.skipif(not shutil.which("rsync"),reason="rsync not installed")
 def test_actual_installed_rsync_supports_the_exact_copy_flags(tmp_path):
     local,remote,manifest=fixture(tmp_path)
