@@ -397,3 +397,53 @@ def test_evaluation_state_restores_rng_and_mixed_train_flags_on_failure():
     np.testing.assert_array_equal(restored[1], numpy_state[1])
     assert restored[2:] == numpy_state[2:]
     assert modes == [module.training for module in backend.decoder.modules()]
+
+
+@pytest.mark.parametrize("periodic", [True, False])
+def test_holdout_rejects_reused_training_prompt_id_with_changed_caption_and_source(tmp_path, periodic):
+    cfg = _config(evaluation_every=int(periodic))
+    data = _write_prompts(tmp_path / "train.jsonl", split="train", prefix="id-train")
+    heldout = _write_prompts(tmp_path / "validation.jsonl", split="validation", prefix="id-heldout", count=1)
+    row = json.loads(heldout.read_text())
+    row["prompt_id"] = "id-train-prompt-0"
+    heldout.write_text(json.dumps(row) + "\n")
+    if periodic:
+        with pytest.raises(ValueError, match="overlaps training prompt ID"):
+            train(cfg, data, tmp_path / "train-output", validation_data=heldout)
+    else:
+        checkpoint = _train_checkpoint(cfg, data, tmp_path / "train-output")
+        with pytest.raises(ValueError, match="overlaps training prompt ID"):
+            evaluate(cfg, heldout, checkpoint, tmp_path / "eval-output")
+
+
+def test_writer_construction_failure_is_recorded(tmp_path, monkeypatch):
+    cfg = _config()
+    data = _write_prompts(tmp_path / "train.jsonl", split="train", prefix="writer-init")
+
+    def fail_to_construct(*args, **kwargs):
+        raise OSError("writer initialization failed")
+
+    monkeypatch.setattr(trainer_module, "RunMonitor", fail_to_construct)
+    with pytest.raises(OSError, match="writer initialization failed"):
+        train(cfg, data, tmp_path / "run")
+    failure = json.loads((tmp_path / "run" / "failure.json").read_text())
+    assert failure["groups_completed"] == 0
+    assert failure["type"] == "OSError"
+
+
+def test_writer_close_failure_is_recorded_after_successful_optimizer_update(tmp_path, monkeypatch):
+    cfg = _config()
+    data = _write_prompts(tmp_path / "train.jsonl", split="train", prefix="writer-close")
+    original = trainer_module.RunMonitor
+
+    class BadCloseMonitor(original):
+        def close(self):
+            super().close()
+            raise OSError("writer close failed")
+
+    monkeypatch.setattr(trainer_module, "RunMonitor", BadCloseMonitor)
+    with pytest.raises(OSError, match="writer close failed"):
+        train(cfg, data, tmp_path / "run")
+    failure = json.loads((tmp_path / "run" / "failure.json").read_text())
+    assert failure["phase"] == "monitor_close"
+    assert failure["groups_completed"] == failure["optimizer_updates"] == 1

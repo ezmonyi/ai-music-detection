@@ -73,7 +73,7 @@ PYTHONPATH=src python -m music_detector.rl.cli train \
 
 The subset is selected by hashed prompt ID, independent of file order, and its
 IDs/full validation file SHA are pinned in the manifest and resume boundary.
-Caption/source overlap, wrong split, and duration mismatch fail before a GPU
+Prompt-ID/caption/source overlap, wrong split, and duration mismatch fail before a GPU
 backend loads. Evaluation reuses the existing policy/reference, changes no
 optimizer state, and restores decoder train flags and Torch CPU/all-CUDA,
 NumPy, and Python RNG states. It runs at the configured cadence and full group

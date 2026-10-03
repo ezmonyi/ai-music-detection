@@ -202,10 +202,10 @@ def _preflight_monitor(cfg: ExperimentConfig) -> None:
             raise RuntimeError("TensorBoard is enabled; install the optional rl extra before loading a model") from error
 
 
-def _reject_overlap(records: list[dict], hashes: set, sources: set) -> None:
-    if any(caption_hash(r["caption"]) in hashes or
+def _reject_overlap(records: list[dict], hashes: set, sources: set, prompt_ids: set) -> None:
+    if any(r["prompt_id"] in prompt_ids or caption_hash(r["caption"]) in hashes or
            (r["source_dataset"], r["source_id"]) in sources for r in records):
-        raise ValueError("Evaluation overlaps training caption/source")
+        raise ValueError("Evaluation overlaps training prompt ID/caption/source")
 
 
 @contextmanager
@@ -306,6 +306,7 @@ def _boundary(cfg: ExperimentConfig, data_path: Path, records: list[dict], backe
                 "configured_compute_precision": cfg.model.precision,
             },
             "training_caption_hashes": sorted(caption_hash(r["caption"]) for r in records),
+            "training_prompt_ids": sorted(r["prompt_id"] for r in records),
             "training_sources": sorted([r["source_dataset"], r["source_id"]] for r in records)}
 
 
@@ -335,7 +336,8 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
             raise ValueError("Periodic evaluation requires --validation-data (validation split only)")
         validation_records = read_prompts(validation_data, "validation")
         _reject_overlap(validation_records, {caption_hash(r["caption"]) for r in records},
-                        {(r["source_dataset"], r["source_id"]) for r in records})
+                        {(r["source_dataset"], r["source_id"]) for r in records},
+                        {r["prompt_id"] for r in records})
         if any(r["duration_s"] != cfg.sampling.duration_s for r in validation_records):
             raise ValueError("Validation duration differs from training contract")
         # Deterministic subset independent of file order, pinned in manifest/resume.
@@ -385,8 +387,9 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
         torch.cuda.reset_peak_memory_stats(backend.device)
     completed = start
     started = time.monotonic()
-    monitor = RunMonitor(output / "tensorboard", enabled=cfg.monitoring.tensorboard)
+    monitor = None
     try:
+        monitor = RunMonitor(output / "tensorboard", enabled=cfg.monitoring.tensorboard)
         monitor.add_text("run/config", json.dumps(cfg.to_dict(), indent=2), start)
         monitor.add_text("run/semantics", "train/loss = policy loss + weighted reference KL; "
                          "eval/loss = negative mean admitted validation reward, NOT policy loss. "
@@ -523,20 +526,24 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                    "groups_completed": completed, "optimizer_updates": optimizer_updates}
         try:
             failure["memory"] = _memory(backend.device)
-            monitor.add_text("run/failure", json.dumps(failure, indent=2), completed)
+            if monitor is not None:
+                monitor.add_text("run/failure", json.dumps(failure, indent=2), completed)
         except Exception as logging_error:
             failure["monitoring_error"] = str(logging_error)
         write_json(output / "failure.json", failure)
         raise
     finally:
         # A storage/writer failure must not hide the original model/OOM error.
-        if sys.exc_info()[0] is None:
-            monitor.close()
-        else:
+        if monitor is not None:
+            body_failed = sys.exc_info()[0] is not None
             try:
                 monitor.close()
-            except Exception:
-                pass
+            except Exception as error:
+                if not body_failed:
+                    write_json(output / "failure.json", {"type": type(error).__name__,
+                        "message": str(error), "phase": "monitor_close",
+                        "groups_completed": completed, "optimizer_updates": optimizer_updates})
+                    raise
 
 
 def evaluate(cfg: ExperimentConfig, data_path, checkpoint_path, output, *,
@@ -554,7 +561,8 @@ def evaluate(cfg: ExperimentConfig, data_path, checkpoint_path, output, *,
         if file_sha256(Path(__file__).parent / name) != expected:
             raise ValueError(f"Evaluation implementation differs from training: {name}")
     _reject_overlap(records, set(checkpoint["boundary"]["training_caption_hashes"]),
-                    {tuple(s) for s in checkpoint["boundary"]["training_sources"]})
+                    {tuple(s) for s in checkpoint["boundary"]["training_sources"]},
+                    set(checkpoint["boundary"]["training_prompt_ids"]))
     if any(r["duration_s"] != cfg.sampling.duration_s for r in records):
         raise ValueError("Evaluation duration differs from training contract")
     output = Path(output)
