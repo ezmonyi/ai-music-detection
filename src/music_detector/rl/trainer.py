@@ -29,6 +29,7 @@ from .flow import (clipped_policy_loss, gaussian_kl, gaussian_log_prob,
                    group_advantages, sample_transition, transition_mean)
 from .policy import configure_policy, export_adapter_state, load_adapter_state
 from .monitoring import RunMonitor
+from .admission import advance as advance_admission, initial_state, validate_state
 
 
 def write_json(path: Path, value: Any) -> None:
@@ -298,7 +299,7 @@ def _save_audio(path: Path, audio: DecodedAudio) -> None:
 
 def _boundary(cfg: ExperimentConfig, data_path: Path, records: list[dict], backend, reward=None) -> dict:
     source = Path(__file__).parent
-    modules = ["config.py", "data.py", "flow.py", "policy.py", "trainer.py", "backends.py", "rewards.py", "monitoring.py"]
+    modules = ["config.py", "data.py", "flow.py", "policy.py", "trainer.py", "backends.py", "rewards.py", "monitoring.py", "admission.py"]
     if cfg.model.backend == "acestep":
         modules.append("acestep_backend.py")
     if cfg.reward.analyzer_python is not None:
@@ -317,10 +318,11 @@ def _boundary(cfg: ExperimentConfig, data_path: Path, records: list[dict], backe
             "training_sources": sorted([r["source_dataset"], r["source_id"]] for r in records)}
 
 
-def save_checkpoint(path, cfg, boundary, backend, optimizer, groups, updates):
+def save_checkpoint(path, cfg, boundary, backend, optimizer, groups, updates, admission_state=None):
     payload = {"schema_version": 1, "config": cfg.to_dict(), "boundary": boundary,
                "policy": export_adapter_state(backend.decoder), "optimizer": optimizer.state_dict(),
                "groups_completed": groups, "optimizer_updates": updates,
+               "admission_state": dict(admission_state or initial_state()),
                "torch_rng": torch.get_rng_state(),
                "cuda_rng": torch.cuda.get_rng_state_all() if backend.device.type == "cuda" else []}
     temporary = path.with_suffix(".partial")
@@ -369,6 +371,7 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
             "prompt_ids": [r["prompt_id"] for r in validation_records],
             "solver": "ODE", "loss_definition": "negative_mean_admitted_reward_not_policy_loss"}
     start, optimizer_updates = 0, 0
+    admission_state = initial_state()
     if resume:
         checkpoint = torch.load(resume, map_location="cpu", weights_only=True)
         if checkpoint.get("schema_version") != 1 or checkpoint["boundary"] != boundary:
@@ -376,6 +379,11 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
         load_adapter_state(backend.decoder, checkpoint["policy"])
         optimizer.load_state_dict(checkpoint["optimizer"])
         start, optimizer_updates = checkpoint["groups_completed"], checkpoint["optimizer_updates"]
+        admission_state = checkpoint["admission_state"]
+        validate_state(admission_state)
+        if (admission_state["all_invalid_groups"] > cfg.training.max_all_invalid_groups or
+                admission_state["consecutive_all_invalid_groups"] > cfg.training.max_consecutive_all_invalid_groups):
+            raise ValueError("Resume admission counters exceed configured safety budgets")
         torch.set_rng_state(checkpoint["torch_rng"])
         if backend.device.type == "cuda":
             torch.cuda.set_rng_state_all(checkpoint["cuda_rng"])
@@ -401,6 +409,7 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
         monitor.add_text("run/semantics", "train/loss = policy loss + weighted reference KL; "
                          "eval/loss = negative mean admitted validation reward, NOT policy loss. "
                          "Gradient norm is pre-clipping; peaks cover this process since this run began. "
+                         "A skipped group has zero loss/gradient placeholders and NO optimizer update. "
                          "Toy runs are synthetic plumbing, not music evidence.", start)
         for group in range(start, stop):
             group_start = time.monotonic()
@@ -435,10 +444,11 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                     _save_audio(output / "audio" / f"{stem}_candidate.wav", audio)
                     _save_audio(output / "audio" / f"{stem}_base.wav", baseline)
             valid_count = sum(r["valid"] for r in diagnostics)
-            if valid_count == 0:
-                raise RuntimeError("All candidates failed reward admission; inspect rollouts.jsonl; no update performed")
-            advantage = group_advantages(torch.tensor(rewards, dtype=torch.float32),
-                                         clip=cfg.training.advantage_clip)
+            admission_state = advance_admission(valid_count, cfg.training, admission_state)
+            all_invalid = valid_count == 0
+            advantage = (torch.zeros(len(rewards), dtype=torch.float32) if all_invalid else
+                         group_advantages(torch.tensor(rewards, dtype=torch.float32),
+                                          clip=cfg.training.advantage_clip))
             optimizer.zero_grad(set_to_none=True)
             replay_start = time.monotonic()
             loss_total, policy_loss_total, kl_total, ratio_deviation = 0.0, 0.0, 0.0, 0.0
@@ -480,7 +490,7 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
             replay_seconds = time.monotonic()-replay_start
             if completed % cfg.training.checkpoint_every == 0 or completed == stop:
                 save_checkpoint(output / "checkpoints" / f"group_{completed:06d}.pt", cfg, boundary,
-                                backend, optimizer, completed, optimizer_updates)
+                                backend, optimizer, completed, optimizer_updates, admission_state)
             group_seconds = time.monotonic()-group_start
             evaluation_seconds = 0.0
             if validation_records and (completed % cfg.monitoring.evaluation_every == 0 or
@@ -506,6 +516,7 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                      "learning_rate": optimizer.param_groups[0]["lr"],
                      "reference_kl": kl_total, "old_new_logprob_abs_difference": ratio_deviation,
                      "gradient_norm": grad_norm, "skipped_zero_advantage": skipped,
+                     "skipped_all_invalid": all_invalid, **admission_state,
                      "rollout_seconds": rollout_seconds, "reward_seconds": reward_seconds,
                      "replay_seconds": replay_seconds, "evaluation_seconds": evaluation_seconds,
                      "group_seconds": group_seconds, "whole_group_seconds": wall_seconds,
@@ -516,6 +527,9 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                 "train/grad_norm": grad_norm, "train/learning_rate": entry["learning_rate"],
                 "train/reward_mean": entry["reward_mean"], "train/valid_fraction": entry["valid_fraction"],
                 "train/optimizer_updates": optimizer_updates, "train/skipped_zero_advantage": int(skipped),
+                "train/skipped_all_invalid": int(all_invalid),
+                "train/all_invalid_groups": admission_state["all_invalid_groups"],
+                "train/consecutive_all_invalid_groups": admission_state["consecutive_all_invalid_groups"],
                 "train/old_new_logprob_abs_difference": ratio_deviation,
                 "timing/rollout_seconds": rollout_seconds, "timing/reward_seconds": reward_seconds,
                 "timing/replay_seconds": replay_seconds, "timing/group_seconds": group_seconds,
@@ -524,13 +538,15 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                 **_memory_scalars(memory)}, completed)
         summary = {"status": "complete" if completed == cfg.training.updates else "budget_slice_complete",
                    "groups_completed": completed, "optimizer_updates": optimizer_updates,
+                   **admission_state,
                    "elapsed_seconds": time.monotonic()-started, "music_quality_validated": False,
                    **_memory(backend.device)}
         write_json(output / "summary.json", summary)
         return summary
     except Exception as error:
         failure = {"type": type(error).__name__, "message": str(error),
-                   "groups_completed": completed, "optimizer_updates": optimizer_updates}
+                   "groups_completed": completed, "optimizer_updates": optimizer_updates,
+                   **admission_state}
         try:
             failure["memory"] = _memory(backend.device)
             if monitor is not None:

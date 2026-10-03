@@ -57,3 +57,23 @@ def test_incomplete_test_and_modified_archive_fail(tmp_path):
         stream.write(b"corruption")
     with pytest.raises(ValueError, match="archive hash"):
         pack.verify(destination)
+
+
+def test_separate_corrected_pipeline_can_be_packaged_without_hiding_failed_run(tmp_path):
+    root, destination = tmp_path / "remote", tmp_path / "local"
+    fixture(root)
+    provision = root / "provisioning"
+    state = provision / "pipeline_state.json"
+    state.rename(provision / "pipeline_state_v2.json")
+    state.write_text(json.dumps({"phase": "failed"}))
+    (root / "runs/a6000-srf-final-test").rename(root / "runs/a6000-srf-final-test-v2")
+    failed = root / "runs/a6000-srf-pilot-main"
+    failed.mkdir()
+    (failed / "failure.json").write_text('{"optimizer_updates": 11}')
+    pack.package(root, destination, state_name="pipeline_state_v2.json",
+                 test_name="a6000-srf-final-test-v2")
+    pack.verify(destination)
+    assert json.loads((destination / "provisioning/pipeline_state.json").read_text())["phase"] == "failed"
+    assert (destination / "runs/a6000-srf-pilot-main/failure.json").exists()
+    with pytest.raises(ValueError, match="basenames"):
+        pack.package(root, tmp_path / "unsafe", state_name="../other.json")

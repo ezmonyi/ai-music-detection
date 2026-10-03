@@ -63,6 +63,32 @@ RL measurement setting, not bitwise historical unseeded Demucs replay.
 
 ## Completion and rented-node release gates
 
+### Declared control-flow correction (v2)
+
+The original fail-fast main run stopped at prompt group 12, after 11 actual
+optimizer updates (last saved checkpoint: group 10). All four candidates
+received the existing invalid penalty: three exceeded full scale (peaks
+1.0625, 1.078125 and 1.1875), and one had incomplete frozen S/R/F features.
+Re-analysis confirmed all three rhythm columns (`r__ibi_cv`, `r__tempo_tv`,
+`r__tempo_entropy`) were unavailable for that candidate; S and F were complete.
+The original logs, failure report, intermediate validation and audio remain
+preserved. This is not an OOM or missing model-weight failure.
+
+The corrected engineering run starts **from scratch in a separate directory**;
+no old checkpoint's implementation/config boundary is bypassed or migrated.
+Its 100 prompt groups, dataset, seeds, sampling, LoRA parameters, frozen reward,
+feature implementation and completion-level admission guards are unchanged.
+The only added opt-in setting is `all_invalid_policy=skip_bounded`: a wholly
+invalid group is explicitly recorded with zero replay/backprop/optimizer
+updates, not turned into a valid sample. At most 20 such groups in total and
+three consecutively are allowed; exceeding either budget aborts the run.
+These counters persist in checkpoints and appear in metrics and TensorBoard.
+The default API policy remains fail-fast. Report group count, actual optimizer
+updates, all-invalid skips and validity coverage separately; neither a skipped
+group's zero loss placeholder nor budget completion implies a successful update
+or better perceived music. No failed prompt is removed or moved out of the
+fixed training group budget, and no test prompt is used to make this correction.
+
 The user subsequently authorized autonomous completion while away:
 finish the RL pilot, evaluate the held-out test split, save the MatPool `.snap`,
 download test audio pairs and checkpoints locally, verify them, and only then

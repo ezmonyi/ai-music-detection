@@ -216,6 +216,61 @@ def test_zero_advantage_group_is_explicitly_skipped(tmp_path: Path):
     assert (tmp_path / "zero" / "checkpoints" / "group_000001.pt").exists()
 
 
+def test_bounded_all_invalid_skip_never_updates_and_resumes_counters(tmp_path: Path):
+    value = _config(updates=2).to_dict()
+    value["training"].update(all_invalid_policy="skip_bounded", max_all_invalid_groups=2,
+                             max_consecutive_all_invalid_groups=2)
+    cfg = config_from_dict(value)
+    data = _train_data(tmp_path)
+    first = tmp_path / "skip-first"
+    train(cfg, data, first, max_updates=1, reward=_InvalidReward())
+    checkpoint = first / "checkpoints/group_000001.pt"
+    saved = _load_checkpoint(checkpoint)
+    assert saved["optimizer_updates"] == 0
+    assert saved["optimizer"]["state"] == {}
+    assert saved["admission_state"]["all_invalid_groups"] == 1
+    resumed = tmp_path / "skip-resumed"
+    summary = train(cfg, data, resumed, resume=checkpoint, reward=_InvalidReward())
+    assert summary["groups_completed"] == 2 and summary["optimizer_updates"] == 0
+    assert summary["all_invalid_groups"] == 2
+    metric = json.loads((resumed / "metrics.jsonl").read_text())
+    assert metric["skipped_all_invalid"] and metric["gradient_norm"] == 0.0
+    final = _load_checkpoint(resumed / "checkpoints/group_000002.pt")
+    assert _nested_equal(saved["policy"], final["policy"])
+    assert _nested_equal(saved["optimizer"], final["optimizer"])
+
+
+def test_bounded_all_invalid_budget_exhaustion_fails(tmp_path: Path):
+    value = _config(updates=2).to_dict()
+    value["training"].update(all_invalid_policy="skip_bounded", max_all_invalid_groups=1)
+    cfg = config_from_dict(value)
+    output = tmp_path / "bounded-failure"
+    with pytest.raises(RuntimeError, match="safety budget"):
+        train(cfg, _train_data(tmp_path), output, reward=_InvalidReward())
+    failure = json.loads((output / "failure.json").read_text())
+    assert failure["groups_completed"] == 1 and failure["optimizer_updates"] == 0
+
+
+def test_valid_groups_continue_after_bounded_skip(tmp_path: Path):
+    from music_detector.rl.trainer import create_reward
+    value = _config(updates=2).to_dict()
+    value["training"]["all_invalid_policy"] = "skip_bounded"
+    cfg = config_from_dict(value)
+
+    class FirstGroupInvalid:
+        calls = 0
+        regular = create_reward(cfg)
+
+        def score(self, *args):
+            self.calls += 1
+            return (_InvalidReward().score(*args) if self.calls <= cfg.training.group_size else
+                    self.regular.score(*args))
+
+    summary = train(cfg, _train_data(tmp_path), tmp_path / "invalid-then-valid", reward=FirstGroupInvalid())
+    assert summary["groups_completed"] == 2 and summary["optimizer_updates"] == 1
+    assert summary["all_invalid_groups"] == 1 and summary["consecutive_all_invalid_groups"] == 0
+
+
 def test_cli_ablation_plan_writes_45_planned_runs(tmp_path: Path):
     output = tmp_path / "plan"
     command = [sys.executable, "-m", "music_detector.rl.cli", "ablation-plan",

@@ -18,15 +18,19 @@ def sha256(path):
     return digest.hexdigest()
 
 
-def package(root: Path, destination: Path) -> dict:
-    state = json.loads((root / "provisioning/pipeline_state.json").read_text())
+def package(root: Path, destination: Path, *, state_name="pipeline_state.json",
+            test_name="a6000-srf-final-test") -> dict:
+    for name in (state_name, test_name):
+        if not name or Path(name).name != name or name in {".", ".."}:
+            raise ValueError("Use explicit safe pipeline/test basenames")
+    state = json.loads((root / "provisioning" / state_name).read_text())
     if state["phase"] != "training_and_test_complete_pending_backup_and_snapshot":
         raise ValueError("Refuse to package an unfinished or failed pilot as complete")
     if state["summary"]["groups_completed"] != 100 or state["summary"]["optimizer_updates"] < 1:
         raise ValueError("Actual training updates are incomplete")
     if state["test_summary"]["count"] != 50 or state["test_summary"]["split"] != "test":
         raise ValueError("The fixed held-out final test is incomplete")
-    test = root / "runs/a6000-srf-final-test"
+    test = root / "runs" / test_name
     if len(list(test.glob("*_base.wav"))) != 50 or len(list(test.glob("*_candidate.wav"))) != 50:
         raise ValueError("Missing held-out audio pairs")
     paths = []
@@ -43,7 +47,10 @@ def package(root: Path, destination: Path) -> dict:
                 "analysis-preflight-receipt.json", "analysis-runtime-status.json",
                 "pipeline_state.json", "pytest-srf.log", "acestep_a6000_srf_resolved.json",
                 "pip-freeze.txt", "train_probe.log", "train_main.log", "test_final.log",
-                "pipeline.log", "run_a6000_pipeline.py", "RUNBOOK.json"]
+                "pipeline.log", "run_a6000_pipeline.py", "RUNBOOK.json",
+                "pipeline_state_v2.json", "pipeline_v2.log", "train_main_v2.log", "test_final_v2.log",
+                "acestep_a6000_srf_v2_resolved.json", "run_a6000_pipeline_v2.py", "pytest-srf-v2.log",
+                "invalid_group_protocol_v2.json", "failed_group12_analysis.json", "inspect_failed_analyzer.py"]
     paths.extend(p for name in receipts if (p := root / "provisioning" / name).is_file())
     paths = sorted(set(paths))
     destination.mkdir(parents=True, exist_ok=True)
@@ -55,6 +62,7 @@ def package(root: Path, destination: Path) -> dict:
                 "node_release_authorized_by_this_file_alone": False,
                 "snapshot_and_local_sha256_verification_still_required": True,
                 "source_root": str(root), "members": members,
+                "completion_state": state_name, "completed_test_run": test_name,
                 "total_uncompressed_bytes": sum(v["bytes"] for v in members.values())}
     manifest_path = destination / "MEMBERS_SHA256.json"
     manifest_path.write_text(json.dumps(manifest, indent=2)+"\n")
@@ -112,6 +120,9 @@ if __name__ == "__main__":
     parser.add_argument("action", choices=("package", "verify"))
     parser.add_argument("--root", type=Path, default=Path("/mnt/ai-music-rl-20261003"))
     parser.add_argument("--destination", type=Path, required=True)
+    parser.add_argument("--state", default="pipeline_state.json")
+    parser.add_argument("--test-run", default="a6000-srf-final-test")
     args = parser.parse_args()
-    result = package(args.root, args.destination) if args.action == "package" else verify(args.destination)
+    result = (package(args.root, args.destination, state_name=args.state, test_name=args.test_run)
+              if args.action == "package" else verify(args.destination))
     print(json.dumps(result, indent=2))

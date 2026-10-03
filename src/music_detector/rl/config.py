@@ -54,6 +54,9 @@ class TrainingConfig:
     max_grad_norm: float = 1.0
     checkpoint_every: int = 10
     save_audio_every: int = 10
+    all_invalid_policy: str = "abort"
+    max_all_invalid_groups: int = 20
+    max_consecutive_all_invalid_groups: int = 3
 
 
 @dataclass(frozen=True)
@@ -143,6 +146,8 @@ def validate_config(cfg: ExperimentConfig) -> None:
         raise ValueError("policy.mode must be lora or full (FM/DiT decoder only)")
     if cfg.policy.targets not in {"all_linear", "attention"}:
         raise ValueError("policy.targets must be all_linear or attention")
+    if not isinstance(cfg.training.all_invalid_policy, str) or cfg.training.all_invalid_policy not in {"abort", "skip_bounded"}:
+        raise ValueError("all_invalid_policy must be abort or skip_bounded")
     for name, number, minimum in (
         ("rank", cfg.policy.rank, 1), ("steps", cfg.sampling.steps, 3),
         ("train_timesteps", cfg.sampling.train_timesteps, 1),
@@ -150,6 +155,8 @@ def validate_config(cfg: ExperimentConfig) -> None:
         ("checkpoint_every", cfg.training.checkpoint_every, 1),
         ("save_audio_every", cfg.training.save_audio_every, 1),
         ("evaluation_prompts", cfg.monitoring.evaluation_prompts, 1),
+        ("max_all_invalid_groups", cfg.training.max_all_invalid_groups, 1),
+        ("max_consecutive_all_invalid_groups", cfg.training.max_consecutive_all_invalid_groups, 1),
     ):
         if type(number) is not int or number < minimum:
             raise ValueError(f"{name} must be an integer >= {minimum}")
