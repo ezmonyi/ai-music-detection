@@ -63,3 +63,41 @@ music**. The run is only an executable check of the policy-gradient pipeline.
 The next execution step is a **single-group real-GPU pilot**, not the 45-run grid.
 Preserve its failures and admission/timing/VRAM diagnostics, then decide whether
 to proceed or revise the protocol. The existing thesis conclusions are unchanged.
+
+## TensorBoard and A6000 preparation follow-up — 2026-10-03
+
+The historical 141-test report above is preserved. The current full suite passes
+**174 tests** (9.72 seconds), with the same Starlette/AnyIO deprecation warning.
+Runtime: macOS/Python 3.12.14, CPU PyTorch 2.8.0, TensorBoard 2.20.0 and
+setuptools 80.10.2 in an isolated `.tb-venv`. Existing local scientific packages
+are reused without changing the running detector application's environment.
+
+The follow-up adds text-only MusicCaps engineering-pilot preparation and
+TensorBoard monitoring; neither is a cleared external music test or a GPU result.
+Detailed metric definitions/remote startup are in [rl_tensorboard.md](rl_tensorboard.md).
+
+Verified monitoring contracts include real event files/scalars, resumed absolute
+group steps, policy/weighted-KL loss decomposition, held-out admitted-reward loss,
+no fabricated loss for all-invalid evaluation, explicit test namespace, validation
+provenance/overlap guards, and pinned validation SHA/IDs. Periodic validation
+preserves policy/optimizer/Torch RNG versus a no-validation run. Decoder train
+flags, NumPy/Python/Torch RNG are restored even when evaluation raises. GPU
+current/peak/capacity tag mapping is tested with mocked CUDA calls; CPU runs do
+not call CUDA memory APIs or create CUDA scalar events.
+
+The final CLI fixture used `configs/rl/toy_monitoring.json`: three optimizer
+updates and three periodic held-out evaluations completed. Standalone paired
+ODE validation also completed at checkpoint group 3. Final ignored output paths:
+
+- `.rl-runs/toy-tensorboard-verified-20261003/`
+- `.rl-runs/toy-tensorboard-verified-eval-20261003/`
+
+TensorBoard was started privately on `127.0.0.1:6006`; its HTTP scalar API returned
+the expected loss/gradient/LR/throughput event series. Older preview directories
+are retained as intermediate software-validation outputs. No pretrained model
+weights/audio downloads, GPU rental, or real ACE music training occurred.
+
+The A6000 template now enables a fixed 10-prompt ODE validation subset every 10
+groups and at the full configured budget, with separate validation input required.
+Formal GPU readiness and the historical/held-out prompt-clearance work remain
+unchanged and outstanding.

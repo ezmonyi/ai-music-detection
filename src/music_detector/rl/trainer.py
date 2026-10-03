@@ -7,12 +7,15 @@ policy gradient. CPU fixtures validate plumbing, not music quality or GPU fit.
 from __future__ import annotations
 
 from dataclasses import asdict, dataclass
+from contextlib import contextmanager
 import hashlib
 import json
 import math
 from pathlib import Path
 import platform
+import random
 import resource
+import sys
 import time
 from typing import Any
 
@@ -25,6 +28,7 @@ from .data import caption_hash, file_sha256
 from .flow import (clipped_policy_loss, gaussian_kl, gaussian_log_prob,
                    group_advantages, sample_transition, transition_mean)
 from .policy import configure_policy, export_adapter_state, load_adapter_state
+from .monitoring import RunMonitor
 
 
 def write_json(path: Path, value: Any) -> None:
@@ -174,9 +178,107 @@ def _memory(device: torch.device) -> dict:
     rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     result = {"host_peak_rss_bytes": int(rss if platform.system() == "Darwin" else rss * 1024)}
     if device.type == "cuda":
+        free, total = torch.cuda.mem_get_info(device)
         result.update(cuda_peak_allocated_bytes=torch.cuda.max_memory_allocated(device),
-                      cuda_peak_reserved_bytes=torch.cuda.max_memory_reserved(device))
+                      cuda_peak_reserved_bytes=torch.cuda.max_memory_reserved(device),
+                      cuda_allocated_bytes=torch.cuda.memory_allocated(device),
+                      cuda_reserved_bytes=torch.cuda.memory_reserved(device),
+                      cuda_device_free_bytes=free, cuda_device_total_bytes=total,
+                      cuda_device_used_bytes=total-free)
     return result
+
+
+def _memory_scalars(memory: dict) -> dict:
+    # An unavailable CUDA measurement is absent, never a fabricated zero.
+    return {"system/" + name.replace("_bytes", "_gib"): value / 2**30
+            for name, value in memory.items() if name.endswith("_bytes")}
+
+
+def _preflight_monitor(cfg: ExperimentConfig) -> None:
+    if cfg.monitoring.tensorboard:
+        try:
+            from torch.utils.tensorboard import SummaryWriter  # noqa: F401
+        except ImportError as error:
+            raise RuntimeError("TensorBoard is enabled; install the optional rl extra before loading a model") from error
+
+
+def _reject_overlap(records: list[dict], hashes: set, sources: set) -> None:
+    if any(caption_hash(r["caption"]) in hashes or
+           (r["source_dataset"], r["source_id"]) in sources for r in records):
+        raise ValueError("Evaluation overlaps training caption/source")
+
+
+@contextmanager
+def _evaluation_state(backend):
+    """Evaluation must not perturb future rollout RNG or decoder train modes."""
+    numpy_state, python_state = np.random.get_state(), random.getstate()
+    modes = [(module, module.training) for module in backend.decoder.modules()]
+    devices = list(range(torch.cuda.device_count())) if torch.cuda.is_available() else []
+    try:
+        with torch.random.fork_rng(devices=devices):
+            backend.decoder.eval()
+            yield
+    finally:
+        np.random.set_state(numpy_state)
+        random.setstate(python_state)
+        for module, mode in modes:
+            module.training = mode
+
+
+def _evaluate_records(cfg, records, backend, reward, output, *, split, step,
+                      stochastic=False, monitor=None, output_prepared=False) -> dict:
+    """Paired deployment-like validation; no fictitious supervised/GRPO loss."""
+    output = Path(output)
+    if not output_prepared:
+        output.mkdir(parents=True, exist_ok=False)
+    started = time.monotonic()
+    deltas, admitted_rewards, raw_scores = [], [], []
+    with _evaluation_state(backend), torch.no_grad():
+        for row in records:
+            if row["duration_s"] != cfg.sampling.duration_s:
+                raise ValueError("Evaluation duration differs from training contract")
+            condition = backend.condition(row)
+            seed = derive_seed(cfg.training.seed, row, 0, 0)
+            base, _ = rollout(backend, condition, cfg, seed, reference=True, stochastic=stochastic, collect=False)
+            candidate, _ = rollout(backend, condition, cfg, seed, stochastic=stochastic, collect=False)
+            if candidate.sample_rate != base.sample_rate:
+                raise RuntimeError("Evaluation candidate/reference sample rates disagree")
+            result = reward.score(candidate.samples, candidate.sample_rate, base.samples)
+            if not math.isfinite(result.reward):
+                raise RuntimeError("Nonfinite evaluation reward")
+            append_json(output / "pairs.jsonl", {"prompt_id": row["prompt_id"], "seed": seed, **asdict(result)})
+            safe_id = hashlib.sha256(row["prompt_id"].encode()).hexdigest()[:16]
+            _save_audio(output / f"{safe_id}_base.wav", base)
+            _save_audio(output / f"{safe_id}_candidate.wav", candidate)
+            if result.valid:
+                admitted_rewards.append(result.reward)
+                for name, values in (("raw_score_delta", deltas), ("raw_score", raw_scores)):
+                    value = result.diagnostics.get(name)
+                    if value is not None:
+                        if not math.isfinite(value):
+                            raise RuntimeError(f"Nonfinite evaluation diagnostic: {name}")
+                        values.append(value)
+    _sync(backend.device)
+    reward_mean = float(np.mean(admitted_rewards)) if admitted_rewards else None
+    summary = {"count": len(records), "valid_count": len(admitted_rewards),
+               "valid_fraction": len(admitted_rewards) / len(records),
+               "groups_completed": step, "split": split,
+               "solver": "SDE" if stochastic else "ODE",
+               "loss": -reward_mean if reward_mean is not None else None,
+               "loss_definition": "negative_mean_admitted_reward_not_policy_loss",
+               "reward_mean": reward_mean,
+               "raw_score_mean": float(np.mean(raw_scores)) if raw_scores else None,
+               "paired_raw_score_delta_mean": float(np.mean(deltas)) if deltas else None,
+               "elapsed_seconds": time.monotonic()-started,
+               "music_quality_validated": False,
+               "interpretation": "Eval loss is a frozen reward proxy, not policy/supervised loss or proof of better perceived music."}
+    write_json(output / "summary.json", summary)
+    if monitor is not None:
+        namespace = "eval" if split == "validation" else "test"
+        monitor.add_scalars({f"{namespace}/{key}": summary[key] for key in (
+            "loss", "reward_mean", "valid_count", "valid_fraction", "raw_score_mean", "paired_raw_score_delta_mean",
+            "elapsed_seconds")}, step)
+    return summary
 
 
 def _sync(device: torch.device) -> None:
@@ -192,7 +294,7 @@ def _save_audio(path: Path, audio: DecodedAudio) -> None:
 
 def _boundary(cfg: ExperimentConfig, data_path: Path, records: list[dict], backend) -> dict:
     source = Path(__file__).parent
-    modules = ["config.py", "data.py", "flow.py", "policy.py", "trainer.py", "backends.py", "rewards.py"]
+    modules = ["config.py", "data.py", "flow.py", "policy.py", "trainer.py", "backends.py", "rewards.py", "monitoring.py"]
     if cfg.model.backend == "acestep":
         modules.append("acestep_backend.py")
     return {"config_sha256": cfg.digest(), "data_sha256": file_sha256(data_path),
@@ -220,22 +322,43 @@ def save_checkpoint(path, cfg, boundary, backend, optimizer, groups, updates):
 
 def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
           resume: str | Path | None = None, max_updates: int | None = None,
-          backend: FlowBackend | None = None, reward=None) -> dict:
+          backend: FlowBackend | None = None, reward=None,
+          validation_data: str | Path | None = None) -> dict:
     validate_config(cfg)
     data_path, output = Path(data_path), Path(output)
     records = read_prompts(data_path, "train")
     if any(r["duration_s"] != cfg.sampling.duration_s for r in records):
         raise ValueError("Prompt and sampling durations disagree")
+    validation_records = []
+    if cfg.monitoring.evaluation_every:
+        if validation_data is None:
+            raise ValueError("Periodic evaluation requires --validation-data (validation split only)")
+        validation_records = read_prompts(validation_data, "validation")
+        _reject_overlap(validation_records, {caption_hash(r["caption"]) for r in records},
+                        {(r["source_dataset"], r["source_id"]) for r in records})
+        if any(r["duration_s"] != cfg.sampling.duration_s for r in validation_records):
+            raise ValueError("Validation duration differs from training contract")
+        # Deterministic subset independent of file order, pinned in manifest/resume.
+        validation_records = sorted(validation_records, key=lambda r: hashlib.sha256(
+            r["prompt_id"].encode()).hexdigest())[:cfg.monitoring.evaluation_prompts]
+    elif validation_data is not None:
+        raise ValueError("Set monitoring.evaluation_every > 0 to use --validation-data")
     if max_updates is not None and (type(max_updates) is not int or max_updates < 1):
         raise ValueError("max_updates must be a positive integer")
     if output.exists():
         raise FileExistsError("Use a new output directory, including when resuming")
+    _preflight_monitor(cfg)
     torch.manual_seed(cfg.training.seed)
     reward = reward or create_reward(cfg)  # Fail missing reward dependencies before loading a GPU model.
     backend = backend or create_backend(cfg)
     metadata, parameters = setup_policy(cfg, backend)
     optimizer = torch.optim.AdamW(parameters, lr=cfg.training.learning_rate, weight_decay=0.0)
     boundary = _boundary(cfg, data_path, records, backend)
+    if validation_records:
+        boundary["periodic_validation"] = {
+            "data_sha256": file_sha256(validation_data),
+            "prompt_ids": [r["prompt_id"] for r in validation_records],
+            "solver": "ODE", "loss_definition": "negative_mean_admitted_reward_not_policy_loss"}
     start, optimizer_updates = 0, 0
     if resume:
         checkpoint = torch.load(resume, map_location="cpu", weights_only=True)
@@ -262,12 +385,18 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
         torch.cuda.reset_peak_memory_stats(backend.device)
     completed = start
     started = time.monotonic()
+    monitor = RunMonitor(output / "tensorboard", enabled=cfg.monitoring.tensorboard)
     try:
+        monitor.add_text("run/config", json.dumps(cfg.to_dict(), indent=2), start)
+        monitor.add_text("run/semantics", "train/loss = policy loss + weighted reference KL; "
+                         "eval/loss = negative mean admitted validation reward, NOT policy loss. "
+                         "Gradient norm is pre-clipping; peaks cover this process since this run began. "
+                         "Toy runs are synthetic plumbing, not music evidence.", start)
         for group in range(start, stop):
+            group_start = time.monotonic()
             row = records[group % len(records)]
             with torch.no_grad():
                 condition = backend.condition(row)
-            group_start = time.monotonic()
             trajectories, rewards, diagnostics = [], [], []
             rollout_seconds = reward_seconds = 0.0
             for sample in range(cfg.training.group_size):
@@ -302,7 +431,7 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                                          clip=cfg.training.advantage_clip)
             optimizer.zero_grad(set_to_none=True)
             replay_start = time.monotonic()
-            loss_total, kl_total, ratio_deviation = 0.0, 0.0, 0.0
+            loss_total, policy_loss_total, kl_total, ratio_deviation = 0.0, 0.0, 0.0, 0.0
             grad_norm = 0.0
             skipped = not bool(advantage.abs().max() > 1e-7)
             if not skipped:
@@ -327,6 +456,7 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                             raise RuntimeError("Nonfinite policy objective; optimizer not stepped")
                         loss.backward()
                         loss_total += float(loss.detach())
+                        policy_loss_total += float(policy_loss.detach()) / count
                         kl_total += float(kl.detach()) / count
                         ratio_deviation += float((logprob.detach()-old).abs().mean()) / count
                 grad_norm = float(torch.nn.utils.clip_grad_norm_(parameters, cfg.training.max_grad_norm,
@@ -337,19 +467,51 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
                 optimizer_updates += 1
             _sync(backend.device)
             completed = group + 1
+            replay_seconds = time.monotonic()-replay_start
+            if completed % cfg.training.checkpoint_every == 0 or completed == stop:
+                save_checkpoint(output / "checkpoints" / f"group_{completed:06d}.pt", cfg, boundary,
+                                backend, optimizer, completed, optimizer_updates)
+            group_seconds = time.monotonic()-group_start
+            evaluation_seconds = 0.0
+            if validation_records and (completed % cfg.monitoring.evaluation_every == 0 or
+                                       completed == cfg.training.updates):
+                evaluated = _evaluate_records(cfg, validation_records, backend, reward,
+                    output / "validation" / f"group_{completed:06d}", split="validation",
+                    step=completed, monitor=monitor)
+                evaluation_seconds = evaluated["elapsed_seconds"]
+                append_json(output / "validation_metrics.jsonl", evaluated)
+            wall_seconds = time.monotonic()-group_start
+            throughput = {"candidate_clips_per_second": cfg.training.group_size / group_seconds,
+                          "generated_clips_per_second": 2*cfg.training.group_size / group_seconds,
+                          "audio_seconds_per_second": 2*cfg.training.group_size*cfg.sampling.duration_s / group_seconds,
+                          "groups_per_second": 1/group_seconds,
+                          "optimizer_updates_per_second": int(not skipped)/group_seconds,
+                          "end_to_end_groups_per_second": 1/wall_seconds}
+            memory = _memory(backend.device)
             entry = {"groups_completed": completed, "optimizer_updates": optimizer_updates,
                      "prompt_id": row["prompt_id"], "rewards": rewards,
                      "reward_mean": float(np.mean(rewards)), "reward_std": float(np.std(rewards)),
                      "valid_fraction": valid_count / len(rewards), "loss": loss_total,
+                     "policy_loss": policy_loss_total, "weighted_kl": cfg.training.kl_coefficient*kl_total,
+                     "learning_rate": optimizer.param_groups[0]["lr"],
                      "reference_kl": kl_total, "old_new_logprob_abs_difference": ratio_deviation,
                      "gradient_norm": grad_norm, "skipped_zero_advantage": skipped,
                      "rollout_seconds": rollout_seconds, "reward_seconds": reward_seconds,
-                     "replay_seconds": time.monotonic()-replay_start,
-                     "group_seconds": time.monotonic()-group_start, **_memory(backend.device)}
+                     "replay_seconds": replay_seconds, "evaluation_seconds": evaluation_seconds,
+                     "group_seconds": group_seconds, "whole_group_seconds": wall_seconds,
+                     "throughput": throughput, **memory}
             append_json(output / "metrics.jsonl", entry)
-            if completed % cfg.training.checkpoint_every == 0 or completed == stop:
-                save_checkpoint(output / "checkpoints" / f"group_{completed:06d}.pt", cfg, boundary,
-                                backend, optimizer, completed, optimizer_updates)
+            monitor.add_scalars({"train/loss": loss_total, "train/policy_loss": policy_loss_total,
+                "train/reference_kl": kl_total, "train/weighted_kl": entry["weighted_kl"],
+                "train/grad_norm": grad_norm, "train/learning_rate": entry["learning_rate"],
+                "train/reward_mean": entry["reward_mean"], "train/valid_fraction": entry["valid_fraction"],
+                "train/optimizer_updates": optimizer_updates, "train/skipped_zero_advantage": int(skipped),
+                "train/old_new_logprob_abs_difference": ratio_deviation,
+                "timing/rollout_seconds": rollout_seconds, "timing/reward_seconds": reward_seconds,
+                "timing/replay_seconds": replay_seconds, "timing/group_seconds": group_seconds,
+                "timing/whole_group_seconds": wall_seconds,
+                **{f"throughput/{key}": value for key, value in throughput.items()},
+                **_memory_scalars(memory)}, completed)
         summary = {"status": "complete" if completed == cfg.training.updates else "budget_slice_complete",
                    "groups_completed": completed, "optimizer_updates": optimizer_updates,
                    "elapsed_seconds": time.monotonic()-started, "music_quality_validated": False,
@@ -357,9 +519,24 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
         write_json(output / "summary.json", summary)
         return summary
     except Exception as error:
-        write_json(output / "failure.json", {"type": type(error).__name__, "message": str(error),
-                   "groups_completed": completed, "optimizer_updates": optimizer_updates})
+        failure = {"type": type(error).__name__, "message": str(error),
+                   "groups_completed": completed, "optimizer_updates": optimizer_updates}
+        try:
+            failure["memory"] = _memory(backend.device)
+            monitor.add_text("run/failure", json.dumps(failure, indent=2), completed)
+        except Exception as logging_error:
+            failure["monitoring_error"] = str(logging_error)
+        write_json(output / "failure.json", failure)
         raise
+    finally:
+        # A storage/writer failure must not hide the original model/OOM error.
+        if sys.exc_info()[0] is None:
+            monitor.close()
+        else:
+            try:
+                monitor.close()
+            except Exception:
+                pass
 
 
 def evaluate(cfg: ExperimentConfig, data_path, checkpoint_path, output, *,
@@ -376,14 +553,14 @@ def evaluate(cfg: ExperimentConfig, data_path, checkpoint_path, output, *,
     for name, expected in checkpoint["boundary"]["implementation_sha256"].items():
         if file_sha256(Path(__file__).parent / name) != expected:
             raise ValueError(f"Evaluation implementation differs from training: {name}")
-    train_hashes = set(checkpoint["boundary"]["training_caption_hashes"])
-    train_sources = {tuple(s) for s in checkpoint["boundary"]["training_sources"]}
-    if any(caption_hash(r["caption"]) in train_hashes or
-           (r["source_dataset"], r["source_id"]) in train_sources for r in records):
-        raise ValueError("Evaluation overlaps training caption/source")
+    _reject_overlap(records, set(checkpoint["boundary"]["training_caption_hashes"]),
+                    {tuple(s) for s in checkpoint["boundary"]["training_sources"]})
+    if any(r["duration_s"] != cfg.sampling.duration_s for r in records):
+        raise ValueError("Evaluation duration differs from training contract")
     output = Path(output)
     if output.exists():
         raise FileExistsError("Evaluation output must be a new directory")
+    _preflight_monitor(cfg)
     torch.manual_seed(cfg.training.seed)
     reward = reward or create_reward(cfg)
     backend = backend or create_backend(cfg)
@@ -395,26 +572,11 @@ def evaluate(cfg: ExperimentConfig, data_path, checkpoint_path, output, *,
     write_json(output / "manifest.json", {"config": cfg.to_dict(), "split": split,
                "data_sha256": file_sha256(data_path), "checkpoint_sha256": file_sha256(checkpoint_path),
                "solver": "windowed_SDE" if stochastic else "ODE", "backend": backend.provenance()})
-    deltas, valid = [], 0
-    for row in records:
-        if row["duration_s"] != cfg.sampling.duration_s:
-            raise ValueError("Evaluation duration differs from training contract")
-        with torch.no_grad():
-            condition = backend.condition(row)
-        seed = derive_seed(cfg.training.seed, row, 0, 0)
-        base, _ = rollout(backend, condition, cfg, seed, reference=True, stochastic=stochastic, collect=False)
-        candidate, _ = rollout(backend, condition, cfg, seed, stochastic=stochastic, collect=False)
-        result = reward.score(candidate.samples, candidate.sample_rate, base.samples)
-        append_json(output / "pairs.jsonl", {"prompt_id": row["prompt_id"], "seed": seed, **asdict(result)})
-        safe_id = hashlib.sha256(row["prompt_id"].encode()).hexdigest()[:16]
-        _save_audio(output / f"{safe_id}_base.wav", base)
-        _save_audio(output / f"{safe_id}_candidate.wav", candidate)
-        if result.valid:
-            valid += 1
-            deltas.append(result.diagnostics["raw_score_delta"])
-    summary = {"count": len(records), "valid_count": valid, "solver": "SDE" if stochastic else "ODE",
-               "paired_raw_score_delta_mean": float(np.mean(deltas)) if deltas else None,
-               "music_quality_validated": False,
-               "interpretation": "Negative delta lowers this frozen proxy only; not proof of better perceived music."}
-    write_json(output / "summary.json", summary)
+    with RunMonitor(output / "tensorboard", enabled=cfg.monitoring.tensorboard) as monitor:
+        monitor.add_text("run/eval_loss_definition", "Negative mean admitted held-out reward. "
+                         "This is not a policy loss, not comparable in scale to train/loss, "
+                         "and all-invalid evaluation has no loss value.", checkpoint["groups_completed"])
+        summary = _evaluate_records(cfg, records, backend, reward, output, split=split,
+                                    step=checkpoint["groups_completed"], stochastic=stochastic,
+                                    monitor=monitor, output_prepared=True)
     return summary

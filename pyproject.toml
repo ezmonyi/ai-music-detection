@@ -23,7 +23,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest==8.3.5", "httpx==0.28.1"]
-rl = ["torch>=2.8,<3"]
+rl = ["torch>=2.8,<3", "tensorboard==2.20.0", "setuptools>=70,<81"]
 
 [project.scripts]
 music-detector = "music_detector.cli:main"

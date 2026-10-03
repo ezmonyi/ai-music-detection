@@ -4,6 +4,7 @@ __pycache__/
 .rl-cache/
 *.pyc
 .venv/
+.tb-venv/
 venv/
 .env
 *.pem

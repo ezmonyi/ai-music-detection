@@ -51,6 +51,8 @@ def main(argv=None):
             sub.add_argument("--data", required=True, type=Path)
         if name == "train":
             sub.add_argument("--resume", type=Path)
+            sub.add_argument("--validation-data", type=Path,
+                             help="Separate validation JSONL required for periodic evaluation; never the test split")
             sub.add_argument("--max-updates", type=int,
                              help="Stop after N more prompt groups; retain the full config for exact resume")
         if name == "evaluate":
@@ -66,7 +68,8 @@ def main(argv=None):
         result = ablation_plan(config, args.output)
     elif args.command == "train":
         from .trainer import train
-        result = train(config, args.data, args.output, resume=args.resume, max_updates=args.max_updates)
+        result = train(config, args.data, args.output, resume=args.resume, max_updates=args.max_updates,
+                       validation_data=args.validation_data)
     else:
         from .trainer import evaluate
         result = evaluate(config, args.data, args.checkpoint, args.output,

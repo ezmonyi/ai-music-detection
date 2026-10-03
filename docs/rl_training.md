@@ -30,6 +30,7 @@ be measured on the intended machine before starting a large run.
 | LoRA/full parameter selection and serialization | `src/music_detector/rl/policy.py` |
 | Frozen artifact reward and admission checks | `src/music_detector/rl/rewards.py` |
 | Online rollout, replay, checkpoint/resume, paired evaluation | `src/music_detector/rl/trainer.py` |
+| TensorBoard events and monitoring semantics | `src/music_detector/rl/monitoring.py`, `docs/rl_tensorboard.md` |
 | CLI | `src/music_detector/rl/cli.py` |
 | CPU fixture / actual-GPU templates | `configs/rl/` |
 
@@ -263,7 +264,11 @@ Each training directory contains config/manifest hashes, exact parameter/module
 counts, per-sample reward diagnostics/seeds, group metrics, timing and peak-memory
 measurements, periodic paired FLOAT WAVs, checkpoints and summary/failure files.
 The failure log preserves the last completed group; resume only from a completed
-checkpoint. GPU memory figures are process peaks, not total board usage.
+checkpoint. CUDA allocated/reserved figures are PyTorch process measurements;
+separate device used/free/total figures include other processes and CUDA state.
+Process peaks reset at the start of each training invocation, including resume.
+TensorBoard logging is enabled in ACE templates; detailed setup, exact scalar
+definitions and a no-GPU preview are in [rl_tensorboard.md](rl_tensorboard.md).
 
 Evaluation defaults to same-seed paired **ODE** generation on validation/test,
 with optional `--stochastic` to examine the training sampler. It rejects training

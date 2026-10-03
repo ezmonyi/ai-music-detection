@@ -66,6 +66,14 @@ class RewardConfig:
 
 
 @dataclass(frozen=True)
+class MonitoringConfig:
+    # Opt-in for older configurations; all real pilot templates enable it.
+    tensorboard: bool = False
+    evaluation_every: int = 0
+    evaluation_prompts: int = 10
+
+
+@dataclass(frozen=True)
 class ExperimentConfig:
     schema_version: int = 1
     model: ModelConfig = field(default_factory=ModelConfig)
@@ -73,6 +81,7 @@ class ExperimentConfig:
     sampling: SamplingConfig = field(default_factory=SamplingConfig)
     training: TrainingConfig = field(default_factory=TrainingConfig)
     reward: RewardConfig = field(default_factory=RewardConfig)
+    monitoring: MonitoringConfig = field(default_factory=MonitoringConfig)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -93,14 +102,14 @@ def _construct(cls, value):
 
 def config_from_dict(value: dict) -> ExperimentConfig:
     if not isinstance(value, dict) or set(value) - {
-            "schema_version", "model", "policy", "sampling", "training", "reward"}:
+            "schema_version", "model", "policy", "sampling", "training", "reward", "monitoring"}:
         raise ValueError("Unknown experiment fields or non-object config")
     cfg = ExperimentConfig(
         schema_version=value.get("schema_version", 1),
         **{name: _construct(cls, value.get(name, {})) for name, cls in (
             ("model", ModelConfig), ("policy", PolicyConfig),
             ("sampling", SamplingConfig), ("training", TrainingConfig),
-            ("reward", RewardConfig))})
+            ("reward", RewardConfig), ("monitoring", MonitoringConfig))})
     validate_config(cfg)
     return cfg
 
@@ -118,6 +127,10 @@ def validate_config(cfg: ExperimentConfig) -> None:
         raise ValueError("Use explicit cpu or cuda device; no automatic fallback")
     if type(cfg.model.gradient_checkpointing) is not bool:
         raise ValueError("gradient_checkpointing must be boolean")
+    if type(cfg.monitoring.tensorboard) is not bool:
+        raise ValueError("monitoring.tensorboard must be boolean")
+    if type(cfg.monitoring.evaluation_every) is not int or cfg.monitoring.evaluation_every < 0:
+        raise ValueError("evaluation_every must be a nonnegative integer; 0 disables periodic validation")
     if cfg.model.precision not in {"float32", "bfloat16"}:
         raise ValueError("Only float32 and bfloat16 are supported")
     if cfg.policy.mode not in {"lora", "full"}:
@@ -130,6 +143,7 @@ def validate_config(cfg: ExperimentConfig) -> None:
         ("updates", cfg.training.updates, 1), ("group_size", cfg.training.group_size, 2),
         ("checkpoint_every", cfg.training.checkpoint_every, 1),
         ("save_audio_every", cfg.training.save_audio_every, 1),
+        ("evaluation_prompts", cfg.monitoring.evaluation_prompts, 1),
     ):
         if type(number) is not int or number < minimum:
             raise ValueError(f"{name} must be an integer >= {minimum}")
