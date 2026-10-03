@@ -505,6 +505,10 @@ class ArtifactReward:
                 "probability": scored.get("probability"),
                 "decision": scored.get("decision"),
             },
+            "feature_values": normalized_features,
+            "vocal_activity": result.get("provenance", {}).get(
+                "neural_measurement_metadata", {}).get("vocal_activity"),
+            "isolated_analyzer_receipt": result.get("isolated_analyzer_receipt"),
         }
 
     def score(

@@ -63,6 +63,12 @@ class RewardConfig:
     bundle_sha256: str | None = None
     device: str = "cpu"
     guards: dict = field(default_factory=dict)
+    # The released detector needs torch 2.8, whereas the ACE training runtime
+    # uses torch 2.10. Never relax the frozen detector's version checks.
+    analyzer_python: str | None = None
+    analyzer_cache_dir: str | None = None
+    analyzer_seed: int = 0
+    analyzer_timeout_s: int = 600
 
 
 @dataclass(frozen=True)
@@ -176,6 +182,17 @@ def validate_config(cfg: ExperimentConfig) -> None:
         raise ValueError("Initial adapter supports guidance_scale=1 only; CFG must be implemented and tested before enabling")
     if cfg.reward.kind not in {"toy", "artifact"}:
         raise ValueError("reward.kind must be toy or artifact")
+    if type(cfg.reward.analyzer_seed) is not int or cfg.reward.analyzer_seed < 0:
+        raise ValueError("reward.analyzer_seed must be a nonnegative integer")
+    if type(cfg.reward.analyzer_timeout_s) is not int or cfg.reward.analyzer_timeout_s < 1:
+        raise ValueError("reward.analyzer_timeout_s must be a positive integer")
+    if cfg.reward.analyzer_python is not None:
+        if cfg.reward.kind != "artifact" or not isinstance(cfg.reward.analyzer_python, str) or not Path(cfg.reward.analyzer_python).is_absolute():
+            raise ValueError("An isolated artifact analyzer requires an absolute Python executable path")
+        if not isinstance(cfg.reward.analyzer_cache_dir, str) or not Path(cfg.reward.analyzer_cache_dir).is_absolute():
+            raise ValueError("An isolated analyzer requires an absolute analysis cache path")
+    elif cfg.reward.analyzer_cache_dir is not None:
+        raise ValueError("analyzer_cache_dir requires analyzer_python")
     if (cfg.model.backend == "toy") != (cfg.reward.kind == "toy"):
         raise ValueError("Synthetic backend/reward must stay paired; synthetic runs are not music evidence")
     if cfg.model.backend == "acestep":

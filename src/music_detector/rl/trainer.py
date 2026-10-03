@@ -151,8 +151,12 @@ def create_reward(cfg: ExperimentConfig):
     if cfg.reward.kind == "toy":
         return ToyReward()
     from .rewards import ArtifactReward
+    analyzer = None
+    if cfg.reward.analyzer_python is not None:
+        from .isolated_analyzer import IsolatedAnalyzer
+        analyzer = IsolatedAnalyzer(cfg.reward)
     return ArtifactReward(cfg.reward.families, cfg.reward.bundle_sha256,
-                          device=cfg.reward.device, guard=cfg.reward.guards)
+                          device=cfg.reward.device, guard=cfg.reward.guards, analyzer=analyzer)
 
 
 def setup_policy(cfg: ExperimentConfig, backend: FlowBackend):
@@ -292,11 +296,13 @@ def _save_audio(path: Path, audio: DecodedAudio) -> None:
     sf.write(path, audio.samples, audio.sample_rate, subtype="FLOAT")
 
 
-def _boundary(cfg: ExperimentConfig, data_path: Path, records: list[dict], backend) -> dict:
+def _boundary(cfg: ExperimentConfig, data_path: Path, records: list[dict], backend, reward=None) -> dict:
     source = Path(__file__).parent
     modules = ["config.py", "data.py", "flow.py", "policy.py", "trainer.py", "backends.py", "rewards.py", "monitoring.py"]
     if cfg.model.backend == "acestep":
         modules.append("acestep_backend.py")
+    if cfg.reward.analyzer_python is not None:
+        modules.extend(["isolated_analyzer.py", "analyzer_worker.py"])
     return {"config_sha256": cfg.digest(), "data_sha256": file_sha256(data_path),
             "backend": backend.provenance(), "torch_version": str(torch.__version__),
             "implementation_sha256": {name: file_sha256(source / name) for name in modules},
@@ -305,6 +311,7 @@ def _boundary(cfg: ExperimentConfig, data_path: Path, records: list[dict], backe
                 "frozen_decoder": sorted({str(p.dtype) for p in backend.decoder.parameters() if not p.requires_grad}),
                 "configured_compute_precision": cfg.model.precision,
             },
+            "analysis_receipt": getattr(getattr(reward, "_analyzer", None), "receipt", None),
             "training_caption_hashes": sorted(caption_hash(r["caption"]) for r in records),
             "training_prompt_ids": sorted(r["prompt_id"] for r in records),
             "training_sources": sorted([r["source_dataset"], r["source_id"]] for r in records)}
@@ -355,7 +362,7 @@ def train(cfg: ExperimentConfig, data_path: str | Path, output: str | Path, *,
     backend = backend or create_backend(cfg)
     metadata, parameters = setup_policy(cfg, backend)
     optimizer = torch.optim.AdamW(parameters, lr=cfg.training.learning_rate, weight_decay=0.0)
-    boundary = _boundary(cfg, data_path, records, backend)
+    boundary = _boundary(cfg, data_path, records, backend, reward)
     if validation_records:
         boundary["periodic_validation"] = {
             "data_sha256": file_sha256(validation_data),
@@ -571,6 +578,8 @@ def evaluate(cfg: ExperimentConfig, data_path, checkpoint_path, output, *,
     _preflight_monitor(cfg)
     torch.manual_seed(cfg.training.seed)
     reward = reward or create_reward(cfg)
+    if getattr(getattr(reward, "_analyzer", None), "receipt", None) != checkpoint["boundary"].get("analysis_receipt"):
+        raise ValueError("Evaluation frozen analysis runtime differs from training checkpoint")
     backend = backend or create_backend(cfg)
     setup_policy(cfg, backend)
     if backend.provenance() != checkpoint["boundary"]["backend"]:
