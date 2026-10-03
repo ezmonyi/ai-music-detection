@@ -1,0 +1,8 @@
+{
+  "model": {"backend": "toy", "device": "cpu", "precision": "float32"},
+  "policy": {"mode": "lora", "rank": 4, "alpha": 8, "targets": "all_linear"},
+  "sampling": {"steps": 8, "train_timesteps": 3},
+  "training": {"updates": 3, "group_size": 4, "learning_rate": 0.001,
+    "checkpoint_every": 1, "save_audio_every": 3},
+  "reward": {"kind": "toy"}
+}

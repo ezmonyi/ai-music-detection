@@ -1,0 +1,48 @@
+{
+  "builder": "python -m music_detector.rl.data",
+  "total": 500,
+  "splits": {
+    "train": 400,
+    "validation": 50,
+    "test": 50
+  },
+  "seed": 0,
+  "duration_s": 30,
+  "canonical_fields": [
+    "prompt_id",
+    "caption",
+    "lyrics",
+    "vocal_language",
+    "duration_s",
+    "seed",
+    "source_dataset",
+    "source_revision",
+    "source_id",
+    "license",
+    "split"
+  ],
+  "local_source": {
+    "input": "path/to/prompts.jsonl",
+    "required_provenance": [
+      "source_dataset",
+      "source_revision",
+      "source_id",
+      "license"
+    ]
+  },
+  "musiccaps_hf_opt_in": {
+    "flag": "--musiccaps-hf",
+    "dataset": "google/MusicCaps",
+    "revision": "0a51889b340037bb75a9a0858af2e4ece21f7f89",
+    "license": "cc-by-sa-4.0",
+    "metadata_only": true,
+    "audio_downloaded": false
+  },
+  "notes": [
+    "duration_s30 is accepted as a legacy input alias; canonical output uses duration_s.",
+    "vocal_language is preserved when supplied and is unknown when absent; English is never inferred.",
+    "Input order does not affect grouping, split assignment, prompt IDs, or seeds.",
+    "Use --exclude-manifest for historical or held-out source IDs and caption hashes.",
+    "Output directories must be new; the builder refuses overwrite."
+  ]
+}

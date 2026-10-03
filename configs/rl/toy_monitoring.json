@@ -1,0 +1,16 @@
+{
+  "model": {"backend": "toy", "device": "cpu", "precision": "float32"},
+  "policy": {"mode": "lora", "rank": 4, "alpha": 8, "targets": "all_linear"},
+  "sampling": {
+    "duration_s": 30, "steps": 8, "time_shift": 1,
+    "noise_level": 0.7, "stochastic_t_min": 0.2, "stochastic_t_max": 0.8,
+    "train_timesteps": 4, "logprob_reduction": "mean", "guidance_scale": 1
+  },
+  "training": {
+    "updates": 3, "group_size": 4, "seed": 11, "learning_rate": 0.001,
+    "clip_range": 0.2, "kl_coefficient": 0.01, "advantage_clip": 5,
+    "max_grad_norm": 1, "checkpoint_every": 1, "save_audio_every": 2
+  },
+  "monitoring": {"tensorboard": true, "evaluation_every": 1, "evaluation_prompts": 1},
+  "reward": {"kind": "toy", "families": ["F", "SC"], "device": "cpu"}
+}

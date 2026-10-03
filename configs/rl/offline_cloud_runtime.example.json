@@ -1,0 +1,14 @@
+{
+  "model": {
+    "device": "cuda:0",
+    "upstream_dir": "/root/music-rl-20261003/ACE-Step-1.5",
+    "checkpoint_dir": "/mnt/ai-music-rl-20261003/checkpoints",
+    "gradient_checkpointing": true
+  },
+  "reward": {
+    "device": "cuda:0",
+    "analyzer_python": "/root/music-rl-20261003/analysis-py312/bin/python",
+    "analyzer_cache_dir": "/root/music-rl-20261003/neural-cache",
+    "analyzer_timeout_s": 900
+  }
+}
