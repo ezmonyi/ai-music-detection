@@ -281,7 +281,7 @@ those real runs are completed and reviewed.
 
 ## Additional frozen-policy offline cache (2026-10-03)
 
-The user-approved cache is **300 unused training prompts × 4 candidates**,
+The originally approved cache was **300 unused training prompts × 4 candidates**,
 not 1,200 independent prompts and not a replacement for the active online run.
 Select sorted train records `[100:400]`; reject overlap with the online first
 100 records and with validation/test prompt IDs, normalized captions or sources.
@@ -302,7 +302,9 @@ weights and a 1e-6 log-density tolerance.
 The two-group real-GPU probe completed: eight candidates, eight paired bases,
 all eight admitted; the replayed log-density maximum discrepancy was zero.
 That is an implementation check, not evidence of perceptual improvement.
-Full collection is still gated on a real checksum-verified Drive upload route.
+That original full collection did not start: a verified direct Drive upload
+route was unavailable. The user subsequently replaced it with the smaller
+persistent-disk collection described below; a proxy is explicitly not authorized.
 At 30 seconds/48 kHz/stereo, 1,200 paired candidates with complete trajectories
 contain approximately 39.4 GB of raw audio/latent payload. Budget 49–55 GB,
 excluding a second archive copy and environment snapshots. Actual probe files
@@ -342,3 +344,30 @@ local file's bytes/SHA-256 without holding both a local archive and extraction.
 Its receipt explicitly does not claim that the archive was locally downloaded.
 Backup, completed snap and exact-node stopped-billing verification are separate
 release gates; an upload attempt or a checkpoint alone is not completion.
+
+### Revised persistent-storage scope (2026-10-03, 16:31 China)
+
+The user declined a temporary local VPN tunnel and requested a smaller cache on
+the existing persistent disk. The active replacement is **24 new unused training
+prompts × 4 candidates**: 96 full FP32 trajectories and 192 paired native FLOAT
+WAVs, using sorted train[102:126]. The original two probe groups (train[100:102])
+remain separately preserved; they are not counted as newly generated samples.
+Online train[0:100], validation and test remain excluded. The original 300-group
+plan must not be reported as completed.
+
+[`scripts/run_matpool_offline_persistent.py`](../scripts/run_matpool_offline_persistent.py)
+is a dated, task-specific controller with explicit `/mnt` paths, not a generic
+launcher. It retains the same frozen online-v2 group-10 behavior policy, online
+configuration, sampler, reward, guards and collector implementation. It has no
+offline optimizer. No Drive upload or proxy is needed. Collection started;
+completion is established only by its final persistent verification receipt.
+
+The launch gate reserved 4,104,339,435 bytes for new data (including a 20% allowance),
+7,469,425,556 bytes for worst-case remaining online outputs at group 65,
+26,000,000,000 bytes for the environment snapshot, and a 4 GiB safety reserve.
+The disk reported 43,578,818,560 bytes free against 41,868,732,287 bytes required.
+These are launch observations and capacity estimates, not measured final payload
+or snapshot sizes. The controller validates closed-group identity, exact member
+coverage, sizes and SHA-256 after the worker exits successfully; all-invalid
+groups remain in the data. Final local backup and confirmed environment snapshot
+are still required before stopping the exact rented node.
