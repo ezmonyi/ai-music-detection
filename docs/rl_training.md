@@ -1,7 +1,8 @@
 # ACE-Step online artifact-reward RL: experimental training repository
 
-Status: implementation and CPU validation, **not a completed ACE-Step GPU training
-experiment**. No claim about improved perceived music, fit on a 5060, or LoRA/full
+Status: an actual RTX A6000 online pilot is in progress as of 2026-10-03;
+**it is not a completed GPU training experiment**. The original preparation
+plan is preserved separately. No claim about improved perceived music, fit on a 5060, or LoRA/full
 parity follows from the synthetic tests. See [the research review](rl_lora_vs_full.md).
 
 ## Scope and boundaries
@@ -277,3 +278,67 @@ raw-score delta. This is a minimal evaluation harness: bootstrap confidence
 intervals, source-stratified analysis and blinded listening remain required for
 publication-grade conclusions. No experiment result is added to the thesis until
 those real runs are completed and reviewed.
+
+## Additional frozen-policy offline cache (2026-10-03)
+
+The user-approved cache is **300 unused training prompts × 4 candidates**,
+not 1,200 independent prompts and not a replacement for the active online run.
+Select sorted train records `[100:400]`; reject overlap with the online first
+100 records and with validation/test prompt IDs, normalized captions or sources.
+Freeze the online v2 group-10 behavior-policy adapter. No optimizer is created.
+Keep the existing base model, S+R+F reward, sampler and admission thresholds.
+The standalone worker uses a copied runtime and does not mutate online source
+files. Its CUDA allocator ceiling is 25% of device capacity, with GPU/disk reserve
+checks. These controls do not themselves guarantee contention-free execution.
+
+Each candidate stores 51 unique FP32 latent states for the 50-step solver,
+timesteps, transition variances, dimension-mean old log densities, a likelihood
+mask, cached conditioning, caption/seed/provenance, reward/feature diagnostics,
+and candidate/base native FLOAT WAVs. Deterministic transitions are masked, not
+represented as valid Gaussian policy actions. Invalid samples and all-invalid
+groups remain present. First-two-group replay checks use unchanged behavior
+weights and a 1e-6 log-density tolerance.
+
+The two-group real-GPU probe completed: eight candidates, eight paired bases,
+all eight admitted; the replayed log-density maximum discrepancy was zero.
+That is an implementation check, not evidence of perceptual improvement.
+Full collection is still gated on a real checksum-verified Drive upload route.
+At 30 seconds/48 kHz/stereo, 1,200 paired candidates with complete trajectories
+contain approximately 39.4 GB of raw audio/latent payload. Budget 49–55 GB,
+excluding a second archive copy and environment snapshots. Actual probe files
+were 11,520,088 bytes/WAV and 9,796,301 bytes/full trajectory.
+
+Components: `offline_collect.py`, `offline_trajectory.py`, `offline_io.py` for
+collection; `offline_archive.py`, `offline_drive_store.py`, `offline_upload.py`
+for task-rooted immutable backup. Use a dedicated Drive profile rooted at the
+approved new dataset folder, mode 0600, never commit its OAuth token. The uploader
+packs only checksum-verified closed groups into 10-group shards; it never syncs
+or deletes other Drive contents. Payload transfers verify Drive size and MD5,
+while retaining source/member SHA-256 manifests. Tiny route and final receipt
+files additionally undergo actual remote SHA-256 readback. This distinction is
+explicit: full-payload remote SHA-256 readback is **not** claimed. Temporary
+credentials and large staging files must be excluded from the environment snap.
+
+```bash
+PYTHONPATH=src python -m music_detector.rl.offline_collect \
+  --config /path/to/unchanged_online_config.json \
+  --train-data /path/to/train.jsonl \
+  --validation-data /path/to/validation.jsonl --test-data /path/to/test.jsonl \
+  --checkpoint /path/to/group_000010.pt --checkpoint-sha256 EXACT_SHA256 \
+  --offset 100 --count 300 --max-groups 2 --output /path/to/new_cache
+```
+
+After a real upload-route round trip, continue with identical arguments and
+`--resume` instead of `--max-groups 2`; complete-prefix file checks must pass.
+Do not repeatedly reuse a fixed-policy cache and call it standard online GRPO:
+the official [Flow-GRPO loop](https://github.com/yifan123/flow_grpo/blob/main/scripts/train_sd3.py)
+recollects trajectories across outer iterations. This cache can support replay
+checks and separately declared off-policy experiments; no offline RL training
+has yet been run.
+
+For final online results, `scripts/download_rl_pilot_results.py` can copy the
+exact completed-package member allowlist using resumable rsync and verify every
+local file's bytes/SHA-256 without holding both a local archive and extraction.
+Its receipt explicitly does not claim that the archive was locally downloaded.
+Backup, completed snap and exact-node stopped-billing verification are separate
+release gates; an upload attempt or a checkpoint alone is not completion.
