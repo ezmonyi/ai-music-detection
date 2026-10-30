@@ -1,0 +1,373 @@
+{
+  "formal_optimizer_updates": 0,
+  "groups": [
+    {
+      "behavior": "g10",
+      "group": 5,
+      "key": "legacy24/g000005",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 10,
+      "key": "legacy24/g000010",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 13,
+      "key": "legacy24/g000013",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 14,
+      "key": "legacy24/g000014",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 21,
+      "key": "legacy24/g000021",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 23,
+      "key": "legacy24/g000023",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 4,
+      "key": "legacy26/g000004",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 5,
+      "key": "legacy26/g000005",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 8,
+      "key": "legacy26/g000008",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 10,
+      "key": "legacy26/g000010",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 17,
+      "key": "legacy26/g000017",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 20,
+      "key": "legacy26/g000020",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 475,
+      "key": "portable/g000475",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 477,
+      "key": "portable/g000477",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 480,
+      "key": "portable/g000480",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 483,
+      "key": "portable/g000483",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 488,
+      "key": "portable/g000488",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 490,
+      "key": "portable/g000490",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 854,
+      "key": "portable/g000854",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 857,
+      "key": "portable/g000857",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 861,
+      "key": "portable/g000861",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 862,
+      "key": "portable/g000862",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 869,
+      "key": "portable/g000869",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 870,
+      "key": "portable/g000870",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 3,
+      "key": "legacy24/g000003",
+      "shard": "legacy24",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 6,
+      "key": "legacy24/g000006",
+      "shard": "legacy24",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 9,
+      "key": "legacy24/g000009",
+      "shard": "legacy24",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 12,
+      "key": "legacy24/g000012",
+      "shard": "legacy24",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 16,
+      "key": "legacy24/g000016",
+      "shard": "legacy24",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 22,
+      "key": "legacy24/g000022",
+      "shard": "legacy24",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 0,
+      "key": "legacy26/g000000",
+      "shard": "legacy26",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 6,
+      "key": "legacy26/g000006",
+      "shard": "legacy26",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 11,
+      "key": "legacy26/g000011",
+      "shard": "legacy26",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 14,
+      "key": "legacy26/g000014",
+      "shard": "legacy26",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 23,
+      "key": "legacy26/g000023",
+      "shard": "legacy26",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g10",
+      "group": 25,
+      "key": "legacy26/g000025",
+      "shard": "legacy26",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 481,
+      "key": "portable/g000481",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 482,
+      "key": "portable/g000482",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 486,
+      "key": "portable/g000486",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 491,
+      "key": "portable/g000491",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 493,
+      "key": "portable/g000493",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 19,
+      "group": 495,
+      "key": "portable/g000495",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 850,
+      "key": "portable/g000850",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 851,
+      "key": "portable/g000851",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 855,
+      "key": "portable/g000855",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 865,
+      "key": "portable/g000865",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 868,
+      "key": "portable/g000868",
+      "shard": "portable",
+      "split": "calibration"
+    },
+    {
+      "behavior": "g100",
+      "block": 34,
+      "group": 873,
+      "key": "portable/g000873",
+      "shard": "portable",
+      "split": "calibration"
+    }
+  ],
+  "kind": "pre_registered_numerical_study_selection",
+  "options_sha256": "681e9c856a734ab7339198691fe5a461d7740e544003ccfb4eb920eff32c1222",
+  "portable_blocks": [
+    19,
+    34
+  ],
+  "production_protocol_activation": false,
+  "schema_version": 1
+}

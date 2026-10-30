@@ -1,0 +1,42 @@
+{
+  "audit_can_refit_budget": false,
+  "calibration_safety_multiplier": 2.0,
+  "candidate_absolute_logprob_budgets": [
+    1e-06,
+    3e-06,
+    1e-05,
+    3e-05,
+    9.999500033330834e-05
+  ],
+  "candidates_per_group": 4,
+  "formal_optimizer_updates": 0,
+  "gpu_timebox_seconds": 3000,
+  "groups_per_split_per_block": 6,
+  "groups_per_split_per_legacy_shard": 6,
+  "legacy_excluded_groups": {
+    "legacy24": [
+      0,
+      1
+    ],
+    "legacy26": []
+  },
+  "legacy_shard_groups": {
+    "legacy24": 24,
+    "legacy26": 26
+  },
+  "maximum_surrogate_ratio_relative_error": 0.0001,
+  "native_roundtrip_trajectories_per_behavior": 1,
+  "negative_logprob_shift": 0.01,
+  "original_replay_tolerance": 1e-06,
+  "portable_archive_blocks": 40,
+  "portable_blocks_to_sample": 2,
+  "portable_excluded_blocks": [
+    0
+  ],
+  "portable_groups_per_archive": 25,
+  "production_protocol_activation": false,
+  "schema_version": 1,
+  "seed": "music-numerical-calibration-20261031-v1",
+  "study": "cross_gpu_numerical_calibration_v1",
+  "timesteps_per_candidate": 8
+}

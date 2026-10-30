@@ -1,0 +1,96 @@
+{
+  "controls": [
+    {
+      "behavior": "g100",
+      "collection_runtime": {
+        "allow_bf16_reduced_precision_reduction": true,
+        "allow_tf32_matmul": false,
+        "capability": [
+          8,
+          6
+        ],
+        "cuda": "12.8",
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "float32_matmul_precision": "highest",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "torch": "2.10.0+cu128"
+      },
+      "original_backend_passed": true,
+      "original_backend_replay": {
+        "maximum_abs_logprob_difference": 0.0,
+        "steps_verified": 31,
+        "tolerance": 1e-06
+      },
+      "replay_runtime": {
+        "allow_bf16_reduced_precision_reduction": true,
+        "allow_tf32_matmul": false,
+        "capability": [
+          8,
+          6
+        ],
+        "cuda": "12.8",
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "float32_matmul_precision": "highest",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "torch": "2.10.0+cu128"
+      },
+      "same_staged_backend_passed": true,
+      "same_staged_backend_replay": {
+        "maximum_abs_logprob_difference": 0.0,
+        "steps_verified": 31,
+        "tolerance": 1e-06
+      },
+      "source_train_group": "portable/g000481"
+    },
+    {
+      "behavior": "g10",
+      "collection_runtime": {
+        "allow_bf16_reduced_precision_reduction": true,
+        "allow_tf32_matmul": false,
+        "capability": [
+          8,
+          6
+        ],
+        "cuda": "12.8",
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "float32_matmul_precision": "highest",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "torch": "2.10.0+cu128"
+      },
+      "original_backend_passed": true,
+      "original_backend_replay": {
+        "maximum_abs_logprob_difference": 0.0,
+        "steps_verified": 31,
+        "tolerance": 1e-06
+      },
+      "replay_runtime": {
+        "allow_bf16_reduced_precision_reduction": true,
+        "allow_tf32_matmul": false,
+        "capability": [
+          8,
+          6
+        ],
+        "cuda": "12.8",
+        "cudnn_benchmark": false,
+        "cudnn_deterministic": false,
+        "float32_matmul_precision": "highest",
+        "gpu": "NVIDIA GeForce RTX 3090",
+        "torch": "2.10.0+cu128"
+      },
+      "same_staged_backend_passed": true,
+      "same_staged_backend_replay": {
+        "maximum_abs_logprob_difference": 0.0,
+        "steps_verified": 31,
+        "tolerance": 1e-06
+      },
+      "source_train_group": "legacy24/g000003"
+    }
+  ],
+  "native_trajectories": 2,
+  "not_training_groups": true,
+  "optimizer_updates": 0,
+  "passed_original_tolerance": true
+}
