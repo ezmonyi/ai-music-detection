@@ -1,0 +1,40 @@
+\section{Independent audit of the reviewed receiver protocol}
+\label{sec:reviewed-receiver-v2}
+The failed initial cross-GPU budget study was retained unchanged. After reviewing
+its discovery observations, the experiment owner explicitly approved a new,
+receiver-specific absolute log-density budget of $3\times10^{-4}$, conditional on
+an independent audit. The budget and selection were fixed before this audit;
+the earlier audit was not reused to validate a post hoc threshold.
+
+Twenty-four new training prompt groups comprised twelve RTX5060/group-100
+behavior groups and twelve A6000/group-10 behavior groups. Four candidates and
+all 31 stochastic transitions yielded 2,976 observations. Their median, 95th
+percentile, 99th percentile and maximum absolute log-density errors were
+$9.05991\times10^{-6}$, $3.96371\times10^{-5}$,
+$6.06775\times10^{-5}$ and $1.02997\times10^{-4}$, respectively. All observations
+passed the reviewed budget, whereas only 183 passed the original $10^{-6}$
+budget. Repeated forwards and the two native 31-step controls had zero measured
+discrepancy, and corrupted-probability negative controls were rejected.
+
+These are dimension-mean Gaussian log densities. The reviewed budget bounds
+the multiplicative mean-density surrogate-ratio discrepancy by
+$\exp(3\times10^{-4})-1\simeq0.0300045\%$; the observed maximum corresponds to
+$0.0103002\%$. This does not guarantee exact joint-trajectory importance
+sampling or arbitrary cross-GPU equivalence. Original cached probabilities,
+FP32 trajectories, BF16 backbone, FP32 adapters, sampler, reward and quality
+guards were unchanged, and native/repeat controls retained $10^{-6}$.
+
+The explicit receiver wrapper preserves the original strict default and binds
+the reviewed allowance to raw audit evidence, authorization, receiver flags and
+model/runtime identities. The original scientific core remains identical to
+commit \texttt{1480889}; independent-audit and receiver-wrapper additions are
+commits \texttt{3fd46e8} and \texttt{8857c3e}. This zero-update audit establishes
+numerical admission only. Completion of 1,000 additional real optimizer updates,
+adequate valid training groups and any fixed-test audio improvement require
+separate evidence.
+
+Raw observations and controls are referenced by
+\texttt{REPORT\_INDEPENDENT\_V2\_AUDIT\_20261031.md} and the accompanying
+\texttt{v2/} directory. The verified persistent packet is
+\texttt{/mnt/ai-music-numerical-audit-v2-20261031-2128889}; the local report packet
+is under \texttt{music/rl\_results/numerical\_calibration\_20261031/v2}.

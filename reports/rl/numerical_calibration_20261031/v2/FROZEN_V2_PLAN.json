@@ -1,0 +1,194 @@
+{
+  "all_31_stochastic_steps": true,
+  "all_four_candidates": true,
+  "audit_may_increase_budget": false,
+  "basis": "Two times the maximum across the completed v1 observations, rounded upward to 3e-4. V1 observations are now discovery for this proposal, not its independent audit.",
+  "candidate_absolute_logprob_budget": 0.0003,
+  "final_requested_comparison_after_formal_RL": "50 fixed test prompts; new RL checkpoint versus official SFT; same seed/sampler; 100 WAVs and metrics to ~/Downloads with SHA verification before release",
+  "formal_optimizer_updates": 0,
+  "fresh_audit_groups": [
+    {
+      "behavior": "g100",
+      "group": 471,
+      "key": "portable/g000471",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 459,
+      "key": "portable/g000459",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 457,
+      "key": "portable/g000457",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 462,
+      "key": "portable/g000462",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 463,
+      "key": "portable/g000463",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 456,
+      "key": "portable/g000456",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 212,
+      "key": "portable/g000212",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 209,
+      "key": "portable/g000209",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 220,
+      "key": "portable/g000220",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 215,
+      "key": "portable/g000215",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 213,
+      "key": "portable/g000213",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g100",
+      "group": 207,
+      "key": "portable/g000207",
+      "shard": "portable",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 15,
+      "key": "legacy24/g000015",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 11,
+      "key": "legacy24/g000011",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 7,
+      "key": "legacy24/g000007",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 8,
+      "key": "legacy24/g000008",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 4,
+      "key": "legacy24/g000004",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 20,
+      "key": "legacy24/g000020",
+      "shard": "legacy24",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 3,
+      "key": "legacy26/g000003",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 24,
+      "key": "legacy26/g000024",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 15,
+      "key": "legacy26/g000015",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 22,
+      "key": "legacy26/g000022",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 12,
+      "key": "legacy26/g000012",
+      "shard": "legacy26",
+      "split": "audit"
+    },
+    {
+      "behavior": "g10",
+      "group": 13,
+      "key": "legacy26/g000013",
+      "shard": "legacy26",
+      "split": "audit"
+    }
+  ],
+  "native_and_repeated_forward_tolerance": 1e-06,
+  "options_or_sampling_precision_changed": false,
+  "planned_independent_audit_transitions": 2976,
+  "portable_blocks": [
+    18,
+    8
+  ],
+  "production_protocol_activation": false,
+  "ratio_relative_error_ceiling": 0.00030004500450033747,
+  "repeat_each_forward": true,
+  "requires_user_review_before_any_production_activation": true,
+  "schema_version": 2,
+  "status": "post_hoc_proposal_requires_user_review_and_fresh_independent_audit_NOT_EXECUTED",
+  "utc": "2026-10-30T18:16:21.660445+00:00",
+  "v1_failure_is_retained": true
+}
