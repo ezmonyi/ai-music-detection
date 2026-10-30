@@ -1,0 +1,14 @@
+[
+  {
+    "behavior": "g100",
+    "input_files_modified": false,
+    "variance_corruption_rejected": true,
+    "wrong_behavior_fingerprint_rejected": true
+  },
+  {
+    "behavior": "g10",
+    "input_files_modified": false,
+    "variance_corruption_rejected": true,
+    "wrong_behavior_fingerprint_rejected": true
+  }
+]

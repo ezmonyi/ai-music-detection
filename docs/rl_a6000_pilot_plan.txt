@@ -1,0 +1,137 @@
+ACE-Step artifact reward Flow-GRPO pilot on RTX A6000
+Prepared 2026-10-03 Asia/Shanghai
+
+This is an engineering and experimental plan, not a completed GPU benchmark.
+The training base is commit 6756c66 on branch codex/acestep-online-rl (draft PR 1).
+The additional pilot preparation files are local and are not yet pushed.
+Current code has an ACE adapter and group-relative stochastic-flow gradients,
+but real pretrained ACE loading/backward has not been validated on CUDA.
+
+Hardware and environment
+Use one exclusive RTX A6000, nominal 48 GB; inspect actual free VRAM, driver,
+BF16 support, CPU RAM and persistent disk via SSH. Hardware reference:
+https://www.nvidia.com/en-us/products/workstations/rtx-a6000/
+Provisioning is not part of this plan. Recommend >=64 GB CPU RAM and a 200 GB
+persistent experiment disk for the initial LoRA work, measured before launch.
+Use a separate Python 3.11/3.12 environment, pinned ACE source and dependencies.
+The required model components are SFT, VAE and Qwen3-Embedding-0.6B, not a music LM.
+Only LoRA is planned on this card. Full decoder fit on 48 GB is unverified.
+
+Prompt preparation
+The official google/MusicCaps CSV at revision
+0a51889b340037bb75a9a0858af2e4ece21f7f89 was fetched using hf-mirror direct,
+without Clash HTTP proxy, audio or model weights. CSV SHA-256:
+8cc109ac507b5e5aed8ea73a5c8f897a9d0793f7397427e000adf4c05f6021c7
+It matches the pinned mirror tree's LFS object. Metadata license: CC-BY-SA-4.0.
+Retain source attribution/share-alike obligations; this is not an audio license.
+
+The candidate preparation makes 500 text records (400 train, 50 validation,
+50 test), with stable ids/seeds and exact caption/source dependency grouping.
+The curated pilot excludes captions explicitly mentioning mono, degraded
+recording, noise or speech. It does not rewrite captions or label audio quality.
+Lexical false positives and style-selection bias are expected and recorded.
+Lyrics remain empty and vocal language remains unknown; vocals are not assured.
+Requested 30-second generation does not change the original 10-second source
+caption's annotation scope. No lyric or source audio is invented.
+
+Historical Muse and detector held-out exclusion manifests are not currently
+available locally. Thus the set is ENGINEERING PILOT ONLY, not a cleared external
+test. Before scientific use, retrieve both historical prompt and detector audio
+source/caption manifests, apply exclusions, regenerate a versioned split, audit
+semantic near-duplicates and freeze hashes. Never silently replace an active
+training split. The raw unscreened 500-record intermediate is not the curated
+training set.
+
+Initial training configuration
+ACE-Step 1.5 SFT 2B family, frozen VAE/text/condition encoders and tokenizer;
+train FM/DiT all-linear LoRA rank32, alpha64, BF16 compute, FP32 adapters/Adam.
+30-second native 48 kHz stereo output, 50 sampling steps, sequential batch1,
+four candidate trajectories plus four same-seed frozen-base references/group.
+Stochastic noise0.7 only within t=[0.2,0.8]; replay four timesteps/candidate.
+LR3e-5, KL coefficient0.01, clipping0.2, advantage clipping5, grad norm1.
+Reward = -tanh(frozen F+SC raw score / 2), after validity guards.
+VAE decoding and reward are not differentiated. No critic is required.
+One on-policy replay and one optimizer step/group; this is not multi-epoch PPO.
+CFG1 and ODE validation are fixed; no prompt rewriting or hidden postprocessing.
+F means phase features, NOT high-frequency vocal S.
+
+Execution stages and gates
+0. Local preparation: validate configs/data hashes and run RL unit/CPU tests.
+1. SSH setup: read-only machine audit, isolated dependency/model installation,
+   pinned source/weight verification. No change to existing services or weights.
+2. Real CUDA smoke: run at least three valid groups with optimizer states
+   initialized, save and resume, compare rollout/replay log densities, record
+   nonzero finite gradients and adapter changes, verify frozen weights stay fixed.
+   Profile representative and longest-caption loads; keep 15-25% VRAM headroom.
+   Reserve an initial 1-2 hour measurement window, not a completion promise.
+   Stop on OOM, invalid numeric gradients, persistent gate failures, incorrect
+   conditioning, or material rollout/replay mismatch; do not launch a long grid.
+3. Approximately 20 representative groups and small-prompt learning probe.
+   Measure reward/admission variation, zero-advantage skip rate, KL, throughput,
+   peak allocated/reserved memory, save/resume time and audible failure modes.
+   Proposed diagnostic targets are >=90% candidate admission and <=20% skipped
+   groups over the probe, not prevalidated music-quality thresholds. If failed,
+   inspect prompts/base output and guards before freezing a revised protocol;
+   never relax guards retrospectively to select favourable results.
+4. First pilot: one 100-group run, seed11, LR3e-5; if the basic loop is sound,
+   compare LR1e-4 in an independent run with the same budget/prompt seeds.
+   Each 100-group run generates 400 candidates and 400 paired base clips.
+   Count groups separately from actual optimizer updates (constant groups skip).
+   Evaluate the 50 validation prompts via paired deterministic ODE generation.
+   Do not inspect the 50 test prompts to choose LR or checkpoints.
+5. Only after dataset clearance, profiling and pilot quality review: selected
+   configuration, three independent seeds, 400 groups/seed (one train traversal).
+   Budget: 1200 groups, 4800 candidates plus 4800 base clips, before evaluation.
+   Longer repeat passes require a separate explicit budget, not a convergence claim.
+6. Vocal extension: curate and verify vocal prompts separately, establish native
+   S feature/admission coverage, install frozen Demucs, then compare F+SC with
+   S+F+SC at matched group budgets. Measure CPU reward bottleneck independently.
+   R/H/D/P remain diagnostics; P often lacks support in 30-second crops. BC is
+   never a predictive reward. Full-decoder contrast belongs on a larger or
+   explicitly memory-optimized, separately validated machine.
+
+Evaluation and scientific interpretation
+Report paired raw-score deltas, valid/invalid counts and reasons, all feature
+families' coverage, KL, diversity, prompt adherence and blinded listening.
+Paired base/current audio uses identical prompt and seed. Compare deployment
+ODE with the training SDE; do not evaluate only on training rollouts.
+Bootstrap confidence intervals by prompt (not treating candidates as independent),
+source/caption-stratified results and listening export are still to be added to
+the minimal evaluator. Independent adherence/quality models are not yet wired.
+Keep a frozen reward and untouched test set; add a no-RL control and a sham-reward
+diagnostic before claiming the artifact reward caused perceptual improvement.
+Lower detector score is an optimization result, not proof of human authorship
+or less AI-like sound. No new thesis result is claimed until real experiments.
+
+Storage and time
+Preserve config/source/data/weight hashes, per-candidate gate/reward records,
+group metrics, adapter/optimizer/RNG checkpoints and paired audio. Save every
+10 groups and at pilot boundaries; never overwrite a resume directory.
+GPU fit and seconds/group remain UNKNOWN until the A6000 profile.
+Training hours = group count * measured whole-group seconds / 3600, then add
+loading/conditioning/checkpoints/validation/restarts. CPU reward time occupies
+the GPU rental wall clock even while the card is idle. No purchase is made.
+
+Commands after replacing both /REPLACE paths in a local config
+PYTHONPATH=src python -m music_detector.rl.prepare_pilot --source-csv \
+  .rl-cache/musiccaps-source-20261003/musiccaps-public.csv \
+  --output .rl-data/musiccaps_a6000_curated_500_20261003
+PYTHONPATH=src python -m music_detector.rl.cli validate \
+  --config configs/rl/acestep_a6000_lora_pilot.json
+PYTHONPATH=src python -m music_detector.rl.cli train \
+  --config /path/to/resolved_a6000_config.json \
+  --data .rl-data/musiccaps_a6000_curated_500_20261003/train.jsonl \
+  --validation-data .rl-data/musiccaps_a6000_curated_500_20261003/validation.jsonl \
+  --output .rl-runs/a6000-first-probe --max-updates 3
+Config validation is schema-only and does not load/profile the GPU.
+TensorBoard is enabled in the pilot config. It records each completed group;
+fixed 10-prompt ODE validation runs every 10 groups and at the full configured
+budget, not automatically at a short --max-updates probe boundary. Run explicit
+evaluate after the three-group probe if needed. See docs/rl_tensorboard.md.
+Only the independent validation split is used during training; test stays held
+out. Eval loss is negative mean admitted reward, NOT the GRPO policy objective.
+
+SSH handoff still needed
+Hostname/IP, username, port, key path (not key contents in logs), GPU allocation,
+permitted persistent work directory and whether required checkpoints exist.
+Actual SSH, GPU inference/training and model downloads have not started.

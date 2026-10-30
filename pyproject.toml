@@ -23,9 +23,13 @@ dependencies = [
 
 [project.optional-dependencies]
 test = ["pytest==8.3.5", "httpx==0.28.1"]
+rl = ["torch>=2.8,<3", "tensorboard==2.20.0", "setuptools>=70,<81"]
 
 [project.scripts]
 music-detector = "music_detector.cli:main"
+music-rl = "music_detector.rl.cli:main"
+music-offline-rl = "music_detector.rl.offline_cli:main"
+music-5060 = "music_detector.rl.collector_cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

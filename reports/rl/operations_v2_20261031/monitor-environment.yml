@@ -1,0 +1,9 @@
+name: music-rl-monitor
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - tensorboard==2.20.0
+      - setuptools==80.9.0

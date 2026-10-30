@@ -1,0 +1,10 @@
+{
+  "policy": "beat_this_downbeat_subset_input_rejection_v1",
+  "actual_saved_failure_trace_recognized": true,
+  "standard_library_regressions_passed": 12,
+  "new_adapter_activated_in_failed_experiment": false,
+  "new_gpu_validation_performed": false,
+  "future_use_requires_explicit_policy_sidecar_and_real_reproduction": true,
+  "original_worker_and_bridge_files_unchanged": true,
+  "original_fatal_defaults_unchanged": true
+}

@@ -1,0 +1,35 @@
+{
+  "base_commit": "1480889d7b7098e27c3259193a9b16be031a37f0",
+  "files": [
+    {
+      "bytes": 994,
+      "path": "configs/rl/numerical_calibration_v1.json",
+      "sha256": "a5b46d39757513f828ce95169d0e71614e2834bda9975889e7578805ce3e3e79"
+    },
+    {
+      "bytes": 4791,
+      "path": "docs/rl_numerical_calibration.md",
+      "sha256": "d9a48aa1646f67d67687d8f33aeb145f349c5931ed4fa0394b6a0ad2b1904708"
+    },
+    {
+      "bytes": 10472,
+      "path": "src/music_detector/rl/numerical_calibration.py",
+      "sha256": "d9153659526300a3210f5993ec98592cc0f0020b4cdebf6417cb46acc10c14d9"
+    },
+    {
+      "bytes": 2530,
+      "path": "src/music_detector/rl/numerical_calibration_cli.py",
+      "sha256": "e0762ee3d6a460d519d30d4ed309ab3a465a2165d8db69f00e0d58626e16665c"
+    },
+    {
+      "bytes": 19491,
+      "path": "src/music_detector/rl/numerical_calibration_gpu.py",
+      "sha256": "90dba83c2c25647bc3cf5239e903a55920669a40a30a3b0b31cbea5286dffcaa"
+    },
+    {
+      "bytes": 5736,
+      "path": "tests/test_rl_numerical_calibration.py",
+      "sha256": "3699d009e2a74b54fafd281bd80c940d46172c3e35d18c0e5dbb846ffc977273"
+    }
+  ]
+}

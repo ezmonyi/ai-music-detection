@@ -1,0 +1,14 @@
+[
+  {
+    "behavior": "g100",
+    "maximum_abs_logprob_difference": 0.0,
+    "steps_verified": 31,
+    "tolerance": 1e-06
+  },
+  {
+    "behavior": "g10",
+    "maximum_abs_logprob_difference": 0.0,
+    "steps_verified": 31,
+    "tolerance": 1e-06
+  }
+]

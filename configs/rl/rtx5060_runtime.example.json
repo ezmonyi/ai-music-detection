@@ -1,0 +1,8 @@
+{
+  "model": {
+    "device": "cuda:0",
+    "upstream_dir": "/REPLACE/ACE-Step-1.5",
+    "checkpoint_dir": "/REPLACE/music-rl/checkpoints",
+    "gradient_checkpointing": false
+  }
+}

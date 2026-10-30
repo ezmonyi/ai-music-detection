@@ -1,0 +1,28 @@
+{
+  "model": {
+    "backend": "acestep", "device": "cuda:0", "precision": "bfloat16",
+    "upstream_dir": "/REPLACE/ACE-Step-1.5",
+    "checkpoint_dir": "/REPLACE/ACE-Step-1.5/checkpoints",
+    "checkpoint_name": "acestep-v15-sft",
+    "upstream_commit": "ca1e85fe9430179831e6bc6be790c332190a3866",
+    "gradient_checkpointing": true
+  },
+  "policy": {"mode": "lora", "rank": 32, "alpha": 64, "targets": "all_linear"},
+  "sampling": {
+    "duration_s": 30, "steps": 50, "time_shift": 1,
+    "noise_level": 0.7, "stochastic_t_min": 0.2, "stochastic_t_max": 0.8,
+    "train_timesteps": 4, "logprob_reduction": "mean", "guidance_scale": 1
+  },
+  "training": {
+    "updates": 100, "group_size": 4, "seed": 11,
+    "learning_rate": 0.00003, "clip_range": 0.2, "kl_coefficient": 0.01,
+    "advantage_clip": 5, "max_grad_norm": 1,
+    "checkpoint_every": 10, "save_audio_every": 10
+  },
+  "monitoring": {"tensorboard": true, "evaluation_every": 10, "evaluation_prompts": 10},
+  "reward": {
+    "kind": "artifact", "families": ["F", "SC"], "device": "cpu",
+    "bundle_sha256": "05dbe17a012bfec5391dd7c0b203549929e26d1f4612874332000403f71aaf53",
+    "guards": {}
+  }
+}

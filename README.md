@@ -4,6 +4,11 @@ A local audio-upload application and reproducible research code for a thesis
 on source-labelled AI-generated versus human music. Acoustic evidence is an
 association with a research dataset, not proof of a musician's authorship.
 
+RTX 5060 collection handoff: [setup, probe, data collection and cloud upload](docs/rtx5060_collection.md).
+The [session handoff](docs/SESSION_HANDOFF_OFFLINE_GRPO_20261004.md) records the
+completed A6000 pilot and the deferred offline continuation. No 5060 GPU fit or
+offline music-quality improvement is claimed by the CPU tests.
+
 ## Start the application
 
 Use Python 3.12 (the verified host uses 3.12.14):
@@ -197,3 +202,14 @@ redistribution license. The single final English manuscript is in the sibling
 Its source and PDF hashes are bound by `validation/thesis-qa/QA.json`.
 No audio is needed to start the service; reference audio is downloaded only
 when an explicit reproduction command requests it.
+
+## Experimental ACE-Step online RL
+
+An isolated training extension now supports frozen-VAE ACE-Step 1.5 SFT 2B
+FM/DiT LoRA **and full-decoder** policy modes, text-only prompt preparation,
+stochastic flow-policy replay, frozen artifact rewards, checkpoint/resume and
+paired held-out evaluation. This is research code, not evidence that RL has
+improved music quality or that it fits a particular GPU.
+
+See [the training runbook](docs/rl_training.md) and
+[the LoRA-versus-full research review](docs/rl_lora_vs_full.md).

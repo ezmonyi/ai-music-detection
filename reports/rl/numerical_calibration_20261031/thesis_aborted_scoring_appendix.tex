@@ -1,0 +1,52 @@
+\section{A measurement failure before offline optimization}
+\label{sec:offline-scoring-abort}
+The RTX3090 receiver passed the independent reviewed numerical audit, but the
+subsequent offline training experiment did not complete. Frozen S+R+F scoring
+closed 211 of the 1,000 new prompt groups before a rhythm measurement failed.
+The completed prefix contained 844 candidates, of which 516 were admitted and
+328 were rejected; eight prefix groups had no admitted candidates. These are
+ordered-prefix statistics, not an unbiased complete-cache estimate or a
+discrimination-accuracy benchmark.
+
+The full-cache CPU quality check identified 24 groups whose four candidates
+failed unchanged pre-analyzer quality gates. Combined with the known scored
+rejections and assuming all remaining groups and all 50 older groups were
+usable, the conservative signal-group upper bound was 1,025. Full merge and
+eligibility preflight remained incomplete; neither feasibility nor insufficient
+data for the fixed 1,000-update target was established.
+
+The immediate exception was \texttt{ValueError: Not all downbeats are beats.}
+from BeatThis's beat/downbeat export. The subprocess worker exited nonzero and
+the strict bridge converted its failure to \texttt{RuntimeError}, bypassing the
+reward bridge's existing measurement-invalid \texttt{ValueError} handling.
+This terminated scoring before any new optimizer update. There was no new RL
+checkpoint and no new fixed-test official/RL audio comparison. The precise
+candidate and underlying beat-array discrepancy require controlled reproduction.
+
+All 314 archived output members were reverified by SHA-256. The 42 original
+input archives, totaling 132,352,450,560 bytes, remained on persistent storage;
+the source audio/trajectory cache was not copied to the Mac. Protected closeout
+released the instance and official reads confirmed stopped compute billing,
+with a final bill of CNY9.86. However, releasing immediately on a terminal stage
+error was too aggressive for this recoverable measurement failure; future runs
+need a bounded diagnosis/recovery window before protected shutdown.
+
+A separate opt-in error adapter was prepared after release. It recognizes only
+the observed traceback, pins the original bridge/worker identities, rechecks
+the original runtime status and produces no synthetic feature or valid score.
+Twelve CPU contract tests passed, but no new GPU/audio validation or production
+activation occurred. Full scoring, 1,000 additional actual updates and the
+50-prompt held-out comparison remain future work rather than claimed results.
+
+Source, raw-output and analysis references are given in
+\texttt{REPORT\_ABORTED\_SCORING\_20261031.md}; the local artifact packet is
+\texttt{music/rl\_results/offline\_grpo1000\_v2\_20261031\_2128889} and the
+persistent packet is
+\texttt{/mnt/ai-music-offline-grpo1000-v2-20261031-2128889}.
+The recovery adapter is \texttt{src/music\_detector/rl/measurement\_rejections.py},
+with contract tests in \texttt{tests/test\_rl\_measurement\_rejections.py}.
+Raw terminal output is retained in the lossless \texttt{work.tar.gz.part000}
+archive; derived statistics are \texttt{SCORING\_FAILURE\_ANALYSIS.json} and
+\texttt{PREFIX\_GROUP\_SCORES.csv}. Protected-release and billing evidence is
+referenced by \texttt{FINAL\_CLOSEOUT.json}. These distinguish executable code,
+original outputs, derived analysis and resource-closeout evidence.

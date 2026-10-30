@@ -1,0 +1,28 @@
+{
+  "node_id": 2128889,
+  "actual_additional_optimizer_updates": 0,
+  "scored_prefix_groups": 211,
+  "scored_candidates": 844,
+  "valid_candidates": 516,
+  "valid_candidate_fraction": 0.6113744075829384,
+  "all_invalid_scored_groups": 8,
+  "invalid_candidate_failures": {
+    "lowpass": 84,
+    "clipping_peak": 187,
+    "baseline_ineligible": 44,
+    "baseline_analysis": 3,
+    "analysis": 9,
+    "stereo_collapse": 1
+  },
+  "full_quality_check_groups": 1000,
+  "all_quality_rejected_groups": 24,
+  "conservative_possible_signal_upper_bound": 1025,
+  "full_preflight_completed": false,
+  "archive_members_verified": 314,
+  "all_archived_member_sha256_verified_locally": true,
+  "archive_sha256": "eede88700c03f3b906bd3061a8042ee72428c2120114208cf77f17f4ba4341f6",
+  "local_archive_bytes": 1415656,
+  "failure": "BeatThis ValueError: Not all downbeats are beats. Worker failure wrapped as RuntimeError before reward input-invalid handling.",
+  "new_rl_checkpoint_exists": false,
+  "fixed_50_new_rl_test_pairs_exist": false
+}
